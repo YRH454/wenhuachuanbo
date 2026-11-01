@@ -1,0 +1,44 @@
+# 潍坊模板驱动 A/B 试拼交接 v1
+
+日期：2026-11-01。身份 cityId 370700，内部首批候选，非最终审美或地图审定。AI标识：**AI创意插画／想象场景**。
+
+## 文件与实际结果
+
+- A：[潍坊-A-水墨-v1.png](潍坊-A-水墨-v1.png)，1254×1254 原生 PNG，SHA-256 `e93efdf5bab0edef91f82655aaff982f82d3c1d3361e9328403ff2113ff7a540`。
+- B：[潍坊-B-工艺融合-v1.png](潍坊-B-工艺融合-v1.png)，1254×1254 原生 PNG，SHA-256 `587c58b84274af6c78af24d1f3988d2affe4080d558533e28d6b3f7ec9770f14`。
+- 原始画作完整保存，未裁剪、未缩放、未覆盖自由方图；文件可解码不等于裁切或审美通过。
+- A为水墨／彩墨泥虎，B为泥塑与木版套色艺术融合。风筝均靠右上，可能大部分落在市域遮罩以外；虎耳、尾和脚是否保留、地名遮挡及手机辨识均须 agent5 实际回拼。以上不是已验证的裁切结论。
+
+## 实际参考与映射
+
+使用内置 Image 的 image_gen__imagegen，每个版本各一次独立调用；调用时实际传入同一张轮廓图 `referenced_image_paths=[[本地路径已省略]/outline-reference.png]`，它只作为空间构图参考，不是成图边界：
+- 轮廓参考 SHA-256 `d68e518b20cdafff737fbfb6d066a110345fdccf558b3c553f31451ebc6a4b8c`。
+- 安全图 [本地路径已省略]/safe-reference.png，SHA-256 `a24ec27b7e568e8597885e61809cda04f44986a8de05f52e8159d83ddd65c870`，只用于人工查看和布置提示词，**没有传入生图工具**；绿色／黄色是制作辅助，不应作为艺术色块解释。
+- 模板版本 `map-base-v1`；清单 SHA-256 `9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e`；潍坊 pathD SHA-256 `52612b98458742d949e6f74d17b5a02e8e4449da2e479f9f22938bf19a0e0269`。
+- 完整原图对应方形 referenceFrame `[467.47766315789477,243.2527631578947,353.9269736842105,353.9269736842105]`，将图片等比置于该完整框后由唯一原始 SVG 市域遮罩裁切；不套用旧 cover、mapFocus、zoom，也不把主体建议当图层平移参数。
+- 提示词目标识别核心约 `(0.465,0.424)`，并非成图经遮罩后的通过结论。
+- 暂选底图为 [本地路径已省略]/地图板块规划与协作任务书-v3.md`。仅内部试拼，不代表用户审美定稿；数据的行政准确性、地图审定和公开许可仍待核。
+
+## 文化依据与边界
+
+- 聂家庄泥塑和泥叫虎：[中国非遗网](https://www.ihchina.cn/art/detail/id/27510.html)；潍坊风筝：[中国非遗网](https://www.ihchina.cn/project_details/29081.html)；杨家埠木版年画制作：[中国国家图书馆](https://memory.nlc.cn/topic/resource/194)。
+- 图中泥虎、风筝、村落、纹样和器物都是原创想象，不指称真实藏品、具体作者、现存年画或历史事件。参考资料支持文化题材，不证明画面中具体形状的真实性。
+- 区域组的最新模板预审见 `[本地路径已省略]/四城模板草包预审-20261101-v1.md`。按该建议保脸胸大形、虎身向下，实际生成效果和遮罩结果仍待检验。
+
+## 实际完整提示词
+
+### A 水墨
+
+Use case: stylized-concept. Asset: a full, square cultural illustration for the Weifang tile in an internal experimental Shandong map.
+
+INPUT IMAGE 1 is the actual Weifang map template. It is a spatial composition reference ONLY, not an artwork to reproduce: its entire square image including its margins corresponds to the full square output. Study the irregular region in its existing position without zooming, cropping, stretching, shifting or rotating the reference frame. Later the application will mask our picture to that shape; your image is a complete, richly painted square, not a map. Do NOT paint or preserve the outline, the flat bluish template fill, the off-white template surround, guide marks or any geographic border.
+
+Make a beautiful original Chinese ink-and-wash cultural painting, with visible xuan-paper fibers, varied wet and dry ink strokes, small touches of cinnabar and warm ochre. The one dominant, compact subject is a joyful imagined traditional painted clay tiger toy inspired by Gaomi's Nie-family-village clay sculpture / 泥叫虎. It is original creative art, not a photograph or a particular existing artifact. Locate the face and chest recognition features in the upper-middle interior of Image 1's shape, approximately x=0.465, y=0.424 in the FULL square reference coordinate system; the rounded body can extend below, maintaining readable large eye/nose/chest forms. Keep the key facial features comfortably away from the template outline. Do not force the entire tiger into a tiny circle. A small imagined Weifang kite can rise above and to the side of the tiger as a subordinate motif, with compact wings and no essential long thin tail. Original ink landscape, wind, flowers and a distant imagined village may fill the rest of the composition but must remain secondary. Continue painted texture, natural color and scene to all four square edges and through the template's outside-margin area: full bleed with no blank frame. Single coherent artwork, culturally rich and legible when reduced; not a webpage, map, badge, die-cut sticker, UI or photo. No city boundary line or map-shaped patch; no text, letters, numbers, signatures, watermarks, labels or seals.
+
+### B 工艺融合
+
+Use case: stylized-concept. Asset: a full, square cultural illustration for the Weifang tile in an internal experimental Shandong map.
+
+INPUT IMAGE 1 is the actual Weifang map template. Use it exclusively as a spatial composition guide, not as visual content: the COMPLETE square reference including its surrounding margins is the COMPLETE square output, with no zoom, crop, stretch, shift or rotation. The image will later be cut to the irregular region by a separate exact vector mask. Produce a complete edge-to-edge artwork, NOT a map, and do not retain or trace any map outline, flat gray-blue region, template background, border or geographic silhouette.
+
+Within that reference coordinate frame, feature one original imaginary folk clay tiger toy inspired by Nie-family-village 泥叫虎: its rounded face and chest, large readable eyes and confident silhouette should occupy the upper-middle interior near x=0.465, y=0.424, with the body expanding below. Keep core features away from the template's edge but make the tiger a generous, humanly expressive subject, not a tiny icon or circular badge. One small original kite above can be subordinate, its important form compact rather than dependent on an elongated tail. Style B: tactile hand-modeled matte clay integrated with original Yangjiabu woodblock New Year-print-inspired thick carved linework, imperfect registered cinnabar red, ginger yellow, touches of grass green and soot black on warm fibrous paper; distinctive material language and lively, sophisticated handmade Chinese folk artistry. Add restrained folk floral and wind motifs with beautiful texture extending continuously across every edge, including the region outside the reference outline. This is a new imagined work, not a copy or reconstruction of a known print, clay toy or artist's work. No blank page, labels, characters, letters, numbers, seals, signatures or watermark; no UI, no collage grid, no glossy 3D wallpaper and no drawn boundary.

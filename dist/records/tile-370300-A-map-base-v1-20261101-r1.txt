@@ -1,0 +1,137 @@
+淄博 A｜琉光入墨｜map-base-v1｜2026-11-01 r1
+AI创意插画／想象场景。内部候选，非实拍、馆藏原件、真实作者作品或历史复原。
+
+实际生成方式：
+先以view_image逐张加载并查看本市outline-reference.png与safe-reference.png。唯一传入内置Image的图片为outline-reference.png原文件，参数referenced_image_paths:["[本地路径已省略]/outline-reference.png"]；角色是固定全幅构图参考，不是要复制的轮廓/底色。safe只由助手目视和读取坐标，不传模型，绿圆黄带均不属于画面。不使用网上照片或历史自由方图作为输入。
+内置Image成功返回原图；这里记录实际输入方式，不声称模型理解或逐像素遵守模板。底层模型名称未返回，不猜测。
+工具：内置 Image / image_gen；transparent_background:false。未使用CLI或外部付费API。
+完整原生输出以字节相同方式复制到项目，内置源文件保留；未外部裁切、拉伸、重采样、去背景或锐化。未覆盖旧图。
+本版本仅一次新生成，没有定向编辑；如后续有编辑另发新revision，不覆盖。
+
+实际元数据（含解码尺寸/哈希/模板/实际参考角色/文化依据/状态）：
+{
+  "assetId": "tile-370300-A-map-base-v1-20261101-r1",
+  "cityId": "370300",
+  "city": "淄博",
+  "cityKey": "zibo",
+  "variant": "A",
+  "revision": "r1",
+  "title": "琉光入墨",
+  "imagePath": "[本地路径已省略]/zibo-template-A-ink-glass-map-base-v1-20261101-r1.png",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "bytes": 3514159,
+  "sha256": "cceead5ad3614b300658c42bc8471ec9992eb76009131651e84b2736aae7fd01",
+  "templateVersion": "map-base-v1",
+  "templateManifestSha256": "9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e",
+  "cityPathSha256": "44145f5d8ef3b641aa6caeafdcae0d0a30fc5fa5ca4c49ade24a46008fa7e6e2",
+  "referenceFrame": {
+    "viewBox": [
+      350.2716078947369,
+      253.2696578947368,
+      301.0986842105263,
+      301.0986842105263
+    ],
+    "imageWidth": 1024,
+    "imageHeight": 1024,
+    "visibleMaxSideFraction": 0.76,
+    "placementMode": "template-frame",
+    "x": 350.2716078947369,
+    "y": 253.2696578947368,
+    "width": 301.0986842105263,
+    "height": 301.0986842105263,
+    "note": "方形参考画布由真实bbox推导，原城市比例不变；AI按此模板构图，不是自由方图cover"
+  },
+  "referenceFiles": [
+    {
+      "kind": "outlineReference",
+      "path": "[本地路径已省略]/outline-reference.png",
+      "sha256": "d6a09ee896fc50bd69183d525a19b46357bb540e35612f94718071f1f96360c1",
+      "role": "primary-composition-reference-full-square-frame",
+      "viewedByAssistant": true,
+      "passedToImageTool": true,
+      "toolArgument": "referenced_image_paths"
+    },
+    {
+      "kind": "safeReference",
+      "path": "[本地路径已省略]/safe-reference.png",
+      "sha256": "18b11c717c6af1c25551429b603a0af6bd7324684bd2d389120ab80378aff874",
+      "role": "assistant-only-safety-coordinate-guide",
+      "viewedByAssistant": true,
+      "passedToImageTool": false
+    }
+  ],
+  "placementRecordPath": "[本地路径已省略]/placement.json",
+  "placementRecordSha256": "ea6ae44eae9f392cf8cf7df08c2646734d1688c774b6291ecfddcc57f00a2ec1",
+  "baseMapSelectionStatus": "user-confirmed-outline-direction-16-city-candidate-production",
+  "selectedBaseMapPath": "[本地路径已省略]/map-ink.svg",
+  "selectedBaseMapSha256": "9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc",
+  "confirmationRecordPath": "[本地路径已省略]/地图板块规划与协作任务书-v3.md",
+  "confirmationSection": "最新调整：用户确认分拆轮廓，精简为三会话协作",
+  "placementMode": "template-frame",
+  "canvasCorrespondence": "full-reference-frame",
+  "subjectCoreInReference": {
+    "x": 0.4562,
+    "y": 0.5
+  },
+  "subjectCoreStatus": "composition-intent-not-mask-verified",
+  "generationTool": "内置 Image",
+  "generationMethod": "new-text-plus-outline-reference",
+  "promptRecordPath": "[本地路径已省略]/zibo-template-A-ink-glass-map-base-v1-20261101-r1-完整提示词与生成记录.txt",
+  "aiLabel": "AI创意插画／想象场景",
+  "culturalBasis": [
+    {
+      "title": "新华网：薪火相传 “琉”光溢彩",
+      "url": "https://imgs.xinhuanet.com/photo/20260528/9d48e4bb6d824ed2a92c13c2f64672da/c.html",
+      "supports": "支持山东博山琉璃工坊、热成型和材料流动性等文化线索；仅用文字，不复制孙云浩或其他作者的作品、配方或照片，新器形无作者/馆藏/年代主张。"
+    }
+  ],
+  "imaginedElements": [
+    "原创窄身琉璃花器、色层和流料",
+    "想象工坊、炉火和烟气，不对应真实工坊或工艺参数"
+  ],
+  "knownRisks": [
+    "器腹比提示稍宽，瓶口与瓶足接近窄段，需要原遮罩检查是否仍保持连续；右侧大炉火应只作可裁辅助。",
+    "模型使用参考不保证主体逐像素落位；尚待agent5以原SVG/evenodd和固定referenceFrame实际裁切，不得用旧cover/mapFocus/zoom救图。",
+    "尚未完成手机尺度、地名标签遮挡、邻区配色及整省视觉验收；文件到达不代表艺术、行政地图或公开使用许可已通过。"
+  ],
+  "reviewStatus": "delivered-awaiting-template-mask-review",
+  "actualMaskReviewed": false,
+  "availableForInternalTemplateTest": true,
+  "selectedForIntegration": false,
+  "publicUseApproved": false,
+  "native4K": false,
+  "originalSourcePath": "[本地路径已省略]/exec-430bcf12-9f26-408d-ae8a-63819df7bfe2.png"
+}
+
+只读区域研究：
+[本地路径已省略]/四城AI文化板块方案.md
+[本地路径已省略]/四城模板草包预审意见.md
+
+原图目视观察：
+单瓶琥珀橙与墨紫有对比，干笔与墨气清楚，完整方幅，无可见行政轮廓或模板提示。
+
+文化与想象边界：
+只从文化来源取一般题材、地域和材料线索，不复制来源照片或具体作者作品。新图不继承实拍摄影者署名或许可。来源只支持culturalBasis各项列明范围；器形、装饰、场景与人物均可为原创想象，不给它们编造作者、年代、馆藏或奖项。界面另加AI标识、地名、来源和操作。
+用户确认的是市域分拆轮廓方向，不是全部最终画作或行政地图已审定。确认位置为上述confirmationRecordPath，旧预审中的暂停文字由统筹最新明确恢复/扩城授权覆盖。
+
+固定映射：
+完整实际方图对应referenceFrame全幅含留边。scale=f/实际宽= f/实际高；在固定frame.x/y绘制f×f，再用原global-mask和evenodd裁切。不先裁去留边，不自动cover、mapFocus、zoom、旋转或移动。subjectCoreInReference仅是生成意图，非实测遮罩结论。
+若返回非方形，必须保留实际尺寸并进入映射待核，不拉伸/裁切冒充。
+
+完整实际生成提示词：
+Use case: stylized-concept
+Asset type: ONE finished independent SQUARE 1:1 Chinese cultural artwork, full bleed, maximum available native clarity, made for a fixed city-template reference frame. Not a webpage background, poster, map, diagram, sticker, comparison board or multi-panel collage.
+Input image 1: the city's outline-reference.png, supplied as COMPOSITION REFERENCE ONLY. The ENTIRE square, including outside margins, is the fixed reference canvas. Preserve its full-square coordinate correspondence. Do not tightly crop the silhouette, zoom it, rotate or reframe. The pale silhouette only tells which parts of the painting will later remain visible.
+DO NOT paint the reference silhouette, pale fill, boundary line, blank outside field or any map shape. Instead make a natural complete cultural painting across ALL FOUR EDGES, with the important subject positioned as specified below. The exact administrative edge will be clipped independently by the frontend's original SVG, never by the image model. No green circles, yellow bands, safety markers, outlines, geographic shapes, frames or labels.
+One dominant cultural subject; supporting landscape, objects or people stay secondary. Original imagined scenes, buildings, figures and cultural objects are allowed, but not a real-site photograph, collection object, maker's work or historical reconstruction. Never copy a specific artist's composition or craft object.
+No text of any kind: no Chinese characters, calligraphy, inscriptions, signatures, seals, logos, numbers, watermarks, QR codes, city labels or UI.
+Series family: tangible handmade Chinese art, disciplined large shapes and legible silhouette, visible brush/material, differentiated city palette and arrangement but harmonious neutral fibers. No photorealistic product photography, glossy CGI, generic digital swirls or synthetic gradient wallpaper. Make the artwork fill a square canvas.
+Primary subject: ONE original slender glass art vessel inspired by Boshan liuli craft of Zibo, not any existing artist's work, museum piece or historical vessel. A simple open mouth, short neck and softly rounded tapered body; no handle, ear, long flower branch or extra bottle.
+Use the pale interior of input image 1 to choose a scale and position where the complete simple vessel is visible, WITHOUT making the vessel itself map-shaped. The essential bottle belly sits near (.456,.50), with a narrow vertical silhouette. Aim for mouth near (.49,.30), belly across approximately x=.40–.55 and y=.43–.59, and short base near (.49,.64). Total height about one third of the full square, maximum body width only about .15 of the full square. Do not blow the vase up to a giant full-canvas product.
+The surrounding complete painting carries lively handmade atmosphere and fills every edge: purple-gray workshop smoke, a restrained warm kiln ember or a single flowing glass ribbon. These are secondary original imagined craft-space elements, not the exact layout of a named workshop. The vessel must remain clearly separable from its background at small size; do not put a black vessel on black smoke. No people needed, no multiple cultural icons.
+A medium: Chinese INK PAINTING is unmistakably the main language: expressive brush pressure, charcoal-to-faint five ink tones, flying-white dry brush, wet ink blooms and controlled washes on visible absorbent xuan paper. Restrained color ink is allowed; do not substitute a watercolor-only puddle, glossy material study, paper-cut outline or print texture for true brushwork.
+Ink direction: transparent amber-orange color ink forms the vessel, pale paper-white internal light and a decisive dark purple-black brush contour establish its slender shape. Describe transparency with diluted ink layering and empty paper, NOT photographic gloss. Surround it with aubergine-gray wet ink smoke, broken dry-brush workshop marks and only a tiny rust ember. Strong hand movement, absorbent paper and a limited warm/cool contrast. No generic teal mountains or smooth mineral swirls. The bottle remains the recognizable main subject even if all small detail vanishes.
+
+

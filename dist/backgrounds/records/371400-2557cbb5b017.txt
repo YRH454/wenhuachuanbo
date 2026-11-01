@@ -1,0 +1,32 @@
+# 德州地域背景 A/B 交接
+
+日期：2026-11-01；用于城市详情页的内部候选。**AI创意背景／想象场景**，不是实景照片、真实食品、特定工艺品或历史复原。生成使用内置 Image（image_gen__imagegen），无付费 API 或 CLI，无输入参考图。A 先、B 后；按要求优先 B，A 保留。
+
+- A（水墨）：`[本地路径已省略]/德州-A-运河墨韵-20261101-v1.png`；1672×941 PNG，SHA-256 `49739c8338f2b776cd9ffe1617a19e72eb65ec7baacfce88946b48ac0403c644`。桌面建议 x=55%, y=50%；手机可先试 x=60%, y=55%，右下饮食物件很可能被裁；以真实布局复核。
+- B（黑陶与金丝彩贴融合）：`[本地路径已省略]/德州-B-陶金运河-20261101-v1.png`；1672×941 PNG，SHA-256 `50344c6aaa910d6c79b18a569e47a64215c8284804f0c7ca025329d41a7500da`。桌面建议 x=60%, y=55%；手机可先试 x=65%, y=60%，注意右侧器物和鸡形可能部分被裁；以真实布局复核。
+- B的鸡形带装饰性夸张，不能作为真实德州扒鸡外观或具体食材工艺的证明。A右下角食物在窄屏裁切时可能丢失。推荐坐标仅供起步，需实际手机及桌面页面检查裁切、叠层和文字对比度。
+- 本地研究：[本地路径已省略]/首轮调研摘录.md 和 扩展调研.md。文化背景分别参考中国非遗网德州扒鸡制作技艺、德州黑陶烧制技艺，以及德州金丝彩贴相关报道；不据此将画面认作真实地点、具体作品或实物。
+- 可追溯来源：[中国非遗网：德州扒鸡制作技艺](https://www.ihchina.cn/project_details/14758.html)；[德州黑陶烧制技艺](https://www.ihchina.cn/project_details/14466.html)；[金丝彩贴工作室报道](https://www.dzgcxy.com/2025/1105/c24a4748/page.htm)。文化材料与画面构想之间不能直接等同。
+
+## A 实际完整提示词
+
+Use case: stylized-concept.
+Asset type: ONE original wide landscape 16:9 cultural background illustration for the Dezhou city detail page of an experimental Shandong website, designed as a full-bleed background, not as a poster or a map.
+
+Create an imaginative Dezhou-inspired canal-side scene in expressive Chinese ink-and-wash on warm textured xuan paper. A calm horizontal waterway leads across a broad, low northern plain; suggest a small wooden cargo boat and understated vernacular roof silhouettes in the distance. On a low riverside worktable at the lower right, suggest an unbranded earthenware pot and a small, artistically painted platter of traditional braised chicken as a respectful allusion to Dezhou's food-making heritage; these objects are invented and subordinate to the peaceful setting, not product photography or an identifiable real shop. A few simple herb or willow-leaf brush marks may connect the foreground with the canal.
+
+Composition: genuinely wide landscape image, not square or portrait; use beautiful layered atmosphere and refined asymmetric spacing. Leave the central-left to upper-middle portion visually quiet and low-contrast for overlaid webpage text, while keeping the recognizable canal, boat and subtle craft motifs close enough to the central area to survive a centered narrow mobile crop. Extend the painting naturally to all edges. Tonal ink grays, warm ivory, soft muted willow green, with only a few touches of cinnabar and brown. Elegant fine brushwork with generous washes, beautiful material grain and human warmth; never generic blue-green mountain scenery.
+
+The setting, food and architecture are imaginative and must not depict or reconstruct a particular historical event, existing location, real artifact or person. No text, words, Chinese characters, numbers, seal, signature, brand, logo, watermark, borders, labels, buttons, website UI, map, administrative line or cartographic silhouette.
+
+## B 实际完整提示词
+
+Use case: stylized-concept.
+Asset type: ONE original wide landscape 16:9 Dezhou cultural background for a city detail page, full bleed, not a webpage screenshot.
+
+Create an imaginative contemporary Chinese craft-art interpretation of Dezhou's canal and food culture, using a material language clearly DIFFERENT from ink-wash painting. Build the picture from hand-burnished matte black ceramic textures, warm ochre and restrained cinnabar pigment inlays, and very fine warm gold-thread outlines reminiscent of the local decorative craft of jin-si-cai-tie. An abstract dark fired-clay serving vessel and a small, elegantly simplified, original braised-chicken form sit near the lower center-right; behind them a broad canal runs horizontally past a few imagined riverside roof silhouettes and a small boat. The vessel, food and all structures are invented visual metaphors, not a known ceramic artifact, brand, real shop or location.
+
+Compose as one sophisticated hand-made art piece: low, panoramic, layered geometry and gentle flowing canal lines, tactile paper-and-clay surfaces, limited earthy ink-charcoal, muted bronze, warm cream and deep russet, with luminous but restrained golden threads. Do not make this glossy CGI, a food advertisement or a literal photograph. Keep the left half and upper middle calm and low-contrast for readable webpage text; keep enough of the boat and the vessel's main silhouette around the center-right to survive a centered narrow mobile crop. Natural artwork continues through all four edges, with no actual blank frame.
+
+Genuinely horizontal 16:9 landscape composition. Do not portray any real identifiable person, cultural artifact, monument, shop, historical event, or falsely factual location. No words, Chinese characters, lettering, numbers, logos, brands, stamps, seals, signatures, watermark, borders, labels, buttons, website UI, map, administrative line or geographic shape.
+

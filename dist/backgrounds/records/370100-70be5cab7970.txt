@@ -1,0 +1,37 @@
+《一物见山东》济南 B融合版 候选 v1
+日期：2026-11-01（Asia/Shanghai）
+语义类别：B = 其他艺术形式/工艺融合版。B-v1是类别内部版本号，并不等于全项目历史v1。
+状态：B融合版候选
+真实性标识：AI创意插画，非真实器物/地理
+
+图片绝对路径：[本地路径已省略]/jinan-B-stone-rubbing-ai-20261101-v1.png
+实际尺寸：1672 × 941 像素，PNG；约16:9，不是严格整数16:9，非4K。
+字节数：3744111
+SHA-256：E03F267B0ADA2A314B36E19206FB193CE0E1F73BA70459FAC5C83C2026183DC6
+工具与方式：内置 image_gen 工具，原创文生图；本图单独调用，未直接调用外部付费API，未使用CLI/API回退。
+底层模型名称：工具未提供，不推测。
+原图保存：直接复制生成原图，未裁剪、增采样、改色；哈希与源图一致。未覆盖或改名原有A候选。
+本城市现有A候选：[本地路径已省略]/jinan-spring-lotus-ai-20261101-v1.png
+A完整提示词：[本地路径已省略]/生成说明与提示词-20261101-v1.txt
+A实际尺寸：1672 × 941
+A SHA-256：65B9E7EABD0266D13D608222757DA6A2A09309E40C157D91C2FD357918B0DEB3
+
+视觉与核查
+冷灰石拓/版刻视觉，泉纹与荷影构成左下和底部的横向节奏，有别于原A的青绿山水彩墨。石拓只是一种当代艺术表现方法，不代表某件济南历史石刻或专属地方非遗。中心/右上相对平静，但石粒纹理较密，密集小字可能需要浅灰承托层；避免把正文跨在左下黑色荷影上。
+地域视觉线索是任务指定的泉水与荷意；未使用参考图片，未仿造或拼接外站素材。
+现存A资格备注：济南旧A有彩墨晕染和山水虚实，可作为广义彩墨A候选，但仍含明显版刻线痕；尚需统筹确认风格分类。
+手机裁切和正文对比度尚未经过浏览器实测。全部只作AI氛围，不得作为真实地理、真实器物、年代或历史事实的证据。
+
+完整生成提示词（本图实际调用原文）
+Use case: stylized-concept
+Asset type: ONE original standalone cultural city-detail background illustration, B = craft-led fusion version, not a webpage mockup. One full-bleed 16:9 landscape image at maximum available native clarity. Never a contact sheet, comparison board, split screen or multi-panel picture.
+Primary objective: visibly Chinese handmade artistic expression grounded in the user's local cultural motifs. Make craft-specific marks, the way colors are printed and the spatial rhythm do the work; do not produce a generic digital wallpaper, smooth gradient, shiny CGI, stock vector pattern, or the same pale blue-green mountains recolored. This must differ in composition, palette and medium from the city's existing airy ink-wash candidate.
+Reading use: naturally integrate a spacious low-frequency reading area rather than a visible rectangular blank panel. Preserve a calm part of the central mobile-crop strip (x=35%-65%, y=15%-65%); no dense high-contrast motifs in its upper reading area. Let characteristic handmade detail survive near its lower edge so a center-cropped phone view still has identity. Foreground text and controls will be supplied separately.
+Hard exclusions: no text, Chinese characters, letters, numbers, calligraphy, inscriptions, carved writing, signatures, seals, logos, watermarks, QR codes, UI, frames, maps, administrative boundaries or cartographic silhouettes. No people, literal monuments, historical scenes, actual historical artifact reconstruction, archaeological objects, photographed craft products or specific real artwork. Do not copy any website or existing image. This is visibly AI-creative illustration, not a real artifact, geography or historical record.
+City: Jinan.
+Primary request: an original poetic fusion of hand-worked stone-rubbing / engraved print language and restrained ink wash, inspired by spring-water ripples and lotus leaves. Treat stone carving as an artistic rendering method, NOT as a claim that this represents a specific Jinan historic carving.
+Palette and ground: cool light silver-grey, soft flint, charcoal ink, and a very small amount of pale jade-green mineral wash. NO warm parchment, antique beige paper, cobalt/amber glass, red festival color or blue-green mountain landscape. A fine, subtly mottled printed stone-grain texture rather than a photograph of an actual rock, slab, stele or wall.
+Composition: an asymmetric low horizontal concentration of engraved spring-water curves flows across the LOWER quarter from left to right. Several large, elegantly cropped lotus-leaf impressions enter from the lower-left edge, defined by beautiful white incised veins in charcoal/smoke-grey printed masses. Some carving marks break naturally into diluted ink wash at their edges. Leave the upper-middle and center-right as an expansive softly lit silver-grey ground, with barely perceptible ink diffusion, calm enough for dark charcoal typography. No centered blank white sheet and no symmetrical ornamental border. A faint ripple echo can survive at the bottom of the central crop.
+Craft specificity: convincingly irregular hand-cut grooves, ink-rubbing broken edges, fine dry pressure marks, the alternation of pale engraved channels and dense flat ink, crisp but imperfect lotus ribs. The overall impression is a thoughtful contemporary Chinese rubbing-print composition with tactile restraint. Not a glossy carved 3D relief, not weathered historical stone, not generic marble, not a literal old rubbing displayed as a museum object.
+Mood: cool, fresh, quiet spring clarity, sophisticated broad rhythms. Do not paint hills, temples, lakeside buildings, naturalistic flowers or crashing sea waves.
+

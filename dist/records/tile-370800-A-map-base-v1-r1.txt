@@ -1,0 +1,39 @@
+# 济宁模板驱动 A/B 交接 v1
+
+日期：2026-11-01；cityId 370800；仅作内部候选。标注：**AI创意插画／想象场景**。
+
+- A：`济宁-A-水墨-v1.png`，1254×1254 PNG，SHA-256 `995deaecdba3a16c9c98cb78f0dfa56130f6119388dc19721a9c8e94e776d82a`。
+- B：`济宁-B-工艺融合-v1.png`，1254×1254 PNG，SHA-256 `70dc61da19bcc046e62e9712ececdd4d7ce50fd920eb050ca218492424634db5`。
+
+A为不规则石砚与墨池的水墨画，B增加织物与石纹质感；两版砚体均偏左上，整体较大。
+
+## 实际参考与映射
+
+- 两张图各一次内置 Image 调用，均通过 `referenced_image_paths` 实际传入本市轮廓图 `[本地路径已省略]/outline-reference.png`，SHA-256 `670fdfd66b980e547b198045c94fd9df45d53e3dfb6014c6dd9eccddae690451`，只作构图参考，不依赖模型描绘市界。
+- 安全图 `[本地路径已省略]/safe-reference.png`，SHA-256 `0eba7cfc07e51b3f730ed0867b20dffc961985fac1ff6b5773af4b088789b428`，仅供人工查看、调整提示词，**未传入生图工具**。提示颜色不规定作品配色。
+- 模板 `map-base-v1`；manifest SHA-256 `9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e`；城市 pathD SHA-256 `b555521192865b82bfd239061c8a5262ba0e308fce5d2f0582e06744f0ba2111`。固定 referenceFrame 对象详见同目录清单，viewBox 为 `[152.34563157894738,467.55513157894734,343.36223684210523,343.36223684210523]`，完整画作对应参考帧全幅，不使用旧cover、mapFocus或zoom。
+- 参考安全核心 `[0.43181512849135467,0.386]` 是构图建议，不等于已验证的成图主体坐标；不用于平移图片。两个原图为方形，未裁切、未缩放，供agent5按原SVG/evenodd裁切。
+- 统筹试拼底图 `[本地路径已省略]/map-ink.svg`，SHA-256 `9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc`。用户确认的是拆分轮廓方向，不代表成图审美、行政数据准确性、地图审定或公开许可已确定。
+
+## 文化依据与风险
+
+- [济宁市文化和旅游局：济宁非遗记录之曲阜尼山砚](https://whlyj.jining.gov.cn/art/2020/6/4/art_69980_2543640.html)：支持曲阜尼山砚、石材与制砚技艺文化背景，不证明生成器形是已知砚台。
+- [中国非遗网：鲁锦织造技艺](https://www.ihchina.cn/project_details/14488.html)：B版织物辅助的文化灵感；不把石砚称作织锦工艺。
+
+原创砚形、山水、织物和墨迹，不对应具体藏品、作者、墨迹或真实地点。以下风险仍需实际遮罩检查：
+- 石砚边缘和墨池可能被西侧凹口或下缘裁开，需检验主体是否完整可辨。
+- 两版都含山水和墨流，B版是否足够体现石雕工艺而非仅换底纹须审美复核。
+- 标签覆盖、邻区配色、手机尺度尚待原SVG实拼验证。
+- 数据的行政边界、地图审定与公开许可尚待核实。
+
+## 实际完整提示词
+
+### A 水墨
+Use case: stylized-concept. One complete square Jining cultural artwork for an internal experimental Shandong map. INPUT IMAGE 1 is the actual Jining template, used only for spatial composition. Its full square frame and margins correspond to the full output square; do not zoom, crop, stretch, shift or rotate the frame. A separate exact vector mask will later cut the painting to the irregular area. Do not trace or paint geographic borders, the template fill, its outside margin or any map-shaped patch. Finish a richly composed artwork extending to all edges.
+
+The primary protagonist is one original imagined Nishan-style stone inkstone, a compact natural stone form with a distinct ink pool, inspired by the inkstone carving tradition in Qufu, Jining. It is NOT a named existing artifact or reproduction. Place the inkstone's most recognizable stone/ink-pool core near normalized full-reference x=0.432, y=0.386, in the upper-left broad main interior of the supplied shape; let the rest of the stone and expressive strokes naturally extend into the broad region. Keep essential ink pool away from narrow southeastern projection, ragged edges or cutouts. The inkstone must have a generous, legible silhouette, not a tiny symbol; avoid showing any readable calligraphy, inscription or fake seal. Any imagined artisan's hand, woven textile hints or brush textures are secondary. No map outlines, labels, geographic marks, UI, numbers, text, signature, stamps or watermarks. Art direction A: classical yet fresh Chinese ink-wash on warm textured paper, black ink pond, subtle golden-ochre stone and a few expressive calligraphic-looking abstract brush strokes that are emphatically not writing, elegant tonal transitions and visible paper fibers. Avoid copying famous calligraphy or a real inkstone.
+
+### B 工艺融合
+Use case: stylized-concept. One complete square Jining cultural artwork for an internal experimental Shandong map. INPUT IMAGE 1 is the actual Jining template, used only for spatial composition. Its full square frame and margins correspond to the full output square; do not zoom, crop, stretch, shift or rotate the frame. A separate exact vector mask will later cut the painting to the irregular area. Do not trace or paint geographic borders, the template fill, its outside margin or any map-shaped patch. Finish a richly composed artwork extending to all edges.
+
+The primary protagonist is one original imagined Nishan-style stone inkstone, a compact natural stone form with a distinct ink pool, inspired by the inkstone carving tradition in Qufu, Jining. It is NOT a named existing artifact or reproduction. Place the inkstone's most recognizable stone/ink-pool core near normalized full-reference x=0.432, y=0.386, in the upper-left broad main interior of the supplied shape; let the rest of the stone and expressive strokes naturally extend into the broad region. Keep essential ink pool away from narrow southeastern projection, ragged edges or cutouts. The inkstone must have a generous, legible silhouette, not a tiny symbol; avoid showing any readable calligraphy, inscription or fake seal. Any imagined artisan's hand, woven textile hints or brush textures are secondary. No map outlines, labels, geographic marks, UI, numbers, text, signature, stamps or watermarks. Art direction B: earthy hand-carved stone with natural ochre mineral veining, subtle chisel texture and a few original muted indigo woven-strand patterns as secondary material contrast, inspired by local handcraft rather than describing stone as woven fabric. Design it as a tactile crafted illustration, not a photoreal online product shot.

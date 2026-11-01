@@ -1,0 +1,31 @@
+# 滨州地域背景 A/B 交接
+
+日期：2026-11-01；用于城市详情页的内部候选。**AI创意背景／想象场景**，不是实景照片、真实编织作品或历史复原。生成使用内置 Image（image_gen__imagegen），无付费 API 或 CLI，无输入参考图。A 先、B 后；按要求优先 B，A 保留。
+
+- A（水墨）：`[本地路径已省略]/滨州-A-苇岸水墨-20261101-v1.png`；1672×941 PNG，SHA-256 `033b3ce9d10a4cda92f47bb222b787cb1997a13fadbae13b22c137812b13b044`。桌面可从 x=60%, y=55% 试起；手机试 x=70%, y=60%；编篮偏右，窄屏可能被裁，需实机复核。
+- B（草柳编织艺术融合）：`[本地路径已省略]/滨州-B-草织河韵-20261101-v1.png`；1672×941 PNG，SHA-256 `0f4c5f0a1a91613fd5635fa3fcc6124dc91d27fbff5d693fab5ad84cdcb1a119`。桌面可从 x=60%, y=55% 试起；手机试 x=64%, y=60%；编篮偏中右，必须在真实布局检查裁切。
+- A编篮偏右，在窄屏可能丢失；B编织纹理较丰富，文字区域可能需要半透明底层。推荐焦点只是起步坐标，须以真实手机、桌面页面复核裁切和文字对比度。
+- 本地资料：`[本地路径已省略]/13956.html)；画面中编篮、河岸及纹路均为原创想象，不等于具体传承人作品或实际水域，不能凭图断言具体原材料。
+
+## A 实际完整提示词
+
+Use case: stylized-concept.
+Asset type: ONE original wide landscape 16:9 cultural background for the Binzhou city detail page of an experimental Shandong website, full bleed and suitable behind webpage text.
+
+Paint an imaginative northern Chinese river-and-wetland scene inspired by Binzhou's Yellow River cultural setting and the hand-weaving traditions associated with Boxing. Use an elegant Chinese ink-and-wash language on warm fibrous xuan paper: broad, slow horizontal water, low distant reeds and flat banks in gentle atmospheric layers, with a few expressive dark ink reeds rising from the lower edge. A modest original handwoven plant-fiber basket with a few loose weaving strands rests on the near bank just right of center; it is invented, not a particular artisan's work or a literal documentary depiction. Keep this river-and-weaving connection poetic and conceptual: do not imply that any particular basket, lake shore or landscape is an actual photographed site.
+
+Use a distinctly wide horizontal composition with a calm generous central-left and upper-middle area for legible overlay text. Keep the basket and an identifiable water-and-reed rhythm near the middle-right, not only at extreme edges, so some regional detail survives a centered narrow mobile crop. Finish naturally to all four edges. Palette: warm ivory, pale wheat ochre, restrained reed green, soft ink gray and a trace of muted river-clay gold; no towering mountains, no dazzling red sunrise, no generic blue seascape. Fine brush marks, gentle ink diffusion, subtle fiber and a sophisticated quiet rhythm, not a photorealistic landscape.
+
+Do not depict or reconstruct any specific real location, historical event, artist, artifact, person or licensed photo. No text, Chinese characters, letters, numbers, label, seal, signature, logo, watermark, border, buttons, interface, map, administrative outlines or geographic silhouette.
+
+## B 实际完整提示词
+
+Use case: stylized-concept.
+Asset type: ONE original wide landscape 16:9 cultural background for the Binzhou city detail page of an experimental Shandong website; full-bleed artwork, not a website screenshot.
+
+Create a sophisticated imaginative landscape IN THE PHYSICAL LANGUAGE OF HAND-WOVEN PLANT FIBER, clearly different from a conventional ink-and-wash landscape. Inspired by Boxing's local plant-fiber and willow weaving traditions, broad natural straw, pale reed and willow strands interlace into an original artful textile relief. The crossings and curves gradually suggest a broad, gently meandering river, flat waterside reed beds and a low horizon; an original modest rounded basket-like vessel emerges near the lower center-right. Let the large visual strokes of the weave describe the river itself instead of depicting a repeated stock basket pattern. The landscape and vessel are artistic inventions, not a named lake, precise riverbank, existing artifact or a specific craftsperson's work.
+
+Make an elegantly asymmetrical panorama, with layered woven texture, visible fibers and light handmade imperfections, but no dense high-contrast pattern underneath the upper-left and central-left text area. Keep the recognizable woven-river gesture and basket shape close enough to the middle of the picture to survive a centered narrow phone crop; do not confine everything important to an edge. Delicate warm ivory, straw gold, soft sage/reed green, quiet clay ochre and a few very restrained muted cinnabar accents. A refined, tactile Chinese folk-craft visual world, with broad breathing space and subtle depth, not glossy CGI, not a product advertisement, not photorealistic and not a copy of an existing weave.
+
+The invented image is cultural interpretation and is not evidence of the exact materials in any real object, nor an actual place, event or person. Continue the art naturally through all four edges. No lettering, words, Chinese characters, numerals, labels, seals, signatures, logos, watermarks, borders, buttons, UI, maps, administrative outlines, geographic silhouettes or infographic diagram.
+

@@ -1,0 +1,39 @@
+《一物见山东》威海城市背景 A/B 配对及生成记录
+
+素材声明：AI创意插画／想象场景，非真实器物、地理或历史照片。渔村、人物、茶壶及纹饰均为想象创作，建议页面标注“AI创意插画／想象场景”。
+生成方式：A、B 分别使用内置 Image 工具生成；B 对生成初稿又用内置工具调整为明显手绘风。未调用付费 API；交付图均为原生 PNG，未裁切或改尺寸。
+文化依据：[本地路径已省略]/art_13688_873882.html）。背景为艺术想象，不对应具体人、地点或器物。
+
+A 水墨：威海-A-渔岸墨韵.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：2879618 字节
+SHA-256：2E033F67D9085A85CE9DA3B19EA8DDF24CB15D69818C1205F37A6A45734E0E87
+风险：人物和渔网在右侧边缘，移动端裁切可能被裁掉；中央水面明暗不均，文字对比需实测。
+
+A 完整提示词：
+
+Use case: stylized-concept
+Asset type: Original standalone horizontal version A Chinese ink-wash background for a Weihai cultural page, not a website screenshot.
+Creative direction: An imagined coastal vignette influenced by Weihai's fishing communities and the region's tradition of mending fishing nets. At one far edge, include only a few small, delicately brush-painted figures repairing a net beside an imagined shore; these people and the village are fictional, not identifiable real individuals or places. Suggest sea mist and open water using unmistakable Chinese brush-and-ink painting: dry-brush breaks, ink bloom, watery gradations from pale gray to blue-black, rice-paper grain, varied gestural strokes. Use a restrained cool slate, ink-black and soft green palette with a whisper of warm ochre. This is a portrait of atmosphere, not a documentary scene; no famous landmarks.
+Composition: Asymmetrical, with activity small and mostly on one edge and a broad calm field across the central mobile-safe crop; keep the bottom visually open. Design the image to accommodate later text without hiding the artistic brushwork. Wide horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration / imagined scene, not real history, geography or a genuine artifact. No real landmarks, maps, borders, text, characters, numbers, signatures, seals, logos, watermarks, QR codes, UI or buttons. Do not copy existing images, layouts or identifiable objects; no collage or panels.
+
+B 锡镶工艺融合：威海-B-锡镶茶韵.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：2953532 字节
+SHA-256：C77742FC72D2EE804D21D2AC22252572BC2D6E9A93F0FE0B8FB7818BB98C5187
+风险：深色中部可尝试浅字；壶为想象的手绘装饰，不可当成真实作品或工艺样本；高对比银纹位于上缘，移动裁切及文字对比需实测。
+
+B 初次生成完整提示词：
+
+Use case: stylized-concept
+Asset type: Original standalone horizontal version B crafted-art background for a Weihai cultural page, not a website screenshot.
+Creative direction: An imaginative Chinese handmade artistic interpretation of Weihai tin-inlaid teaware, without copying any real vessel. Illustrate one small, clearly stylized invented clay-teapot silhouette near an edge, merging into elegant flowing hand-cut pewter-inlay lines and subtle kiln-clay surfaces. The craft itself should structure the whole design: irregular hand-chased silver-tin ribbons, delicate incised cutwork, aged dark earthenware texture and a little ink wash. Use deep muted plum-clay, smoky slate-blue and weathered pewter with restrained warm silver highlights, materially and compositionally different from a blue coastal ink landscape. It must look like an artistic illustration or hand-printed mixed-media design, not a product photo, a historic artifact or generic shiny digital wallpaper.
+Composition: Place concentrated craft detail in a diagonal arc along one edge/upper corner, with a large calm, low-contrast dark field across the center and mobile crop suitable for light text. Keep the bottom quiet and breathable. Elegant intentional Chinese art design. Wide horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration / imagined object and scene, not a documentary photo or proof of history. No authentic recognizable object, identifiable real place, map, border, text, characters, numbers, signatures, seals, logos, watermarks, QR codes, UI or buttons. No copied artwork, copied layouts, collage or panels.
+
+B 初稿转手绘风的完整调整提示词：
+
+Use case: style-transfer
+Asset type: An original illustrated crafted-art background for a Weihai cultural page. The supplied image is the edit target.
+Single targeted change: Render the teapot, its silver inlay and the adjoining metallic botanical scrolls unmistakably as a flat hand-drawn Chinese illustration / woodblock-and-pigment print, with ink outlines, matte pigment, hand-cut shapes and visible hand-printed texture. The teapot is an imagined decorative drawing, not a real or photographed cultural object. Remove photorealistic product-photography, three-dimensional studio lighting and photographic metallic reflections from those elements.
+Keep the same overall dark slate/plum palette, asymmetrical placement of the small teapot at the edge, expressive inlay-inspired sweeping curves, and the quiet dark central space for readable text. Preserve wide horizontal format.
+Constraints: AI creative illustration / imagined object, never an authentic artifact or documentary image. No real place, maps, borders, text, writing, numbers, seals, logos, watermarks, QR codes or UI.

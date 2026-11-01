@@ -1,0 +1,106 @@
+泰安 B｜影照岱石｜地域背景｜2026-11-01
+AI创意背景／想象场景。非实拍、非特定文物/真实地点/历史场景复原。
+
+实际方式：内置 Image，纯文本新生成，未传任何图片参考、编辑目标或地图模板；transparent_background:false。无CLI/付费API。原生完整输出字节相同复制到项目目录，内置源图保留，无外部裁切、插值、锐化或重采样，不冒称4K。只生成背景画面，不包含UI。
+
+A/B顺序：本张为本市第2张，A先生成并保留，B在A完成后生成。最终最新候选及供页面优先使用版本见AB配对清单，不能仅按文件mtime判断。
+
+实际完整记录：
+{
+  "schemaVersion": 1,
+  "assetId": "taian-B-shadow-leather-stone-ai-20261101-v1",
+  "assetRole": "city-detail-background",
+  "city": "泰安",
+  "cityId": "370900",
+  "variant": "B",
+  "title": "影照岱石",
+  "version": "v1",
+  "recordDate": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "generationOrderWithinCity": 2,
+  "generationStartedAtUtc": "2026-11-01T09:51:41.769Z",
+  "generationCompletedAtUtc": "2026-11-01T09:52:08.082Z",
+  "generationTool": "内置 Image",
+  "generationMethod": "built-in-image-text-to-image",
+  "inputImages": [],
+  "transparentBackground": false,
+  "completeNativeImage": true,
+  "externalPostProcessing": false,
+  "existingFilesOverwritten": false,
+  "cliOrPaidApiUsed": false,
+  "native4K": false,
+  "aiLabel": "AI创意背景／想象场景",
+  "path": "[本地路径已省略]/taian-B-shadow-leather-stone-ai-20261101-v1.png",
+  "originalSourcePath": "[本地路径已省略]/exec-09304a1f-8719-4954-8a12-f2b815ac9944.png",
+  "width": 1672,
+  "height": 941,
+  "format": "PNG",
+  "bytes": 2900297,
+  "sha256": "a1ea8ee179e90dab6461ed4fbd9601d236aea2710ef0ac655e9f1151ef693c74",
+  "promptRecordPath": "[本地路径已省略]/taian-B-shadow-leather-stone-ai-20261101-v1-生成说明与完整提示词.txt",
+  "generationRecordPath": "[本地路径已省略]/taian-B-shadow-leather-stone-ai-20261101-v1-生成记录.json",
+  "culturalBasis": [
+    {
+      "title": "泰山皮影戏｜泰山风景名胜区管理委员会",
+      "url": "https://tsgw.taian.gov.cn/art/2026/3/23/art_363610_10321001.html",
+      "supports": "泰山皮影的地域造型、雕刻和操纵表演技艺；石纹与新人物组合是AI视觉创作，不声称存在某种历史复合工艺。",
+      "accessStatus": "本会话已读取正文2026-11-01"
+    }
+  ],
+  "researchPaths": [
+    "[本地路径已省略]/泰安东营-背景文化线索-A水墨-B工艺融合.md"
+  ],
+  "authorization": {
+    "coordinatorThreadId": "01a12d90-efda-7b82-aa86-24d651aa35c3",
+    "humanRequestVerifiedInCoordinator": true,
+    "date": "2026-11-01",
+    "scope": "只补齐缺失的泰安、东营地域背景；每市先A后B，B为本次最新页面优先候选，完整保留A，不重画已有12市。"
+  },
+  "visualReview": "已亲看完整原图：B以暗炭石纹和透光朱砂/赭金皮影为主要语言，单一完整影人、可见关节与操纵杆形成工艺辨识，和A的冷墨云山在材质、明暗及构图上明显不同。左约四成暗色相对安静，主体及暖光在中右。无可见文字、印章、UI或行政地图。",
+  "placementSuggestions": {
+    "coordinateSystem": "normalized original image, top-left origin",
+    "desktopFocalPoint": {
+      "x": 0.67,
+      "y": 0.52
+    },
+    "mobileFocalPoint": {
+      "x": 0.67,
+      "y": 0.52
+    },
+    "quietReadingArea": {
+      "x": [
+        0.02,
+        0.38
+      ],
+      "y": [
+        0.08,
+        0.88
+      ],
+      "textPreference": "浅色文字，必要时独立深色衬层；需实装验证"
+    },
+    "mobileCaution": "影人双臂横向较开，窄屏cover会裁两侧手臂/杆件；可优先保留头躯干，或采用完整横幅加同色深底延展，不能称完整影人已通过手机实测。",
+    "status": "亲看原图后的建议，不是浏览器/手机已测坐标"
+  },
+  "knownRisks": [
+    "竖屏极窄cover可能裁掉影人外伸手臂或杆件，手机完整性未实测。",
+    "石纹、树影与山势均为AI创作环境，不是泰山某真实舞台、特定景点或馆藏皮影复原。",
+    "左侧暗纹适合浅字的建议仍需真实页面对比复核；生成文件不等于页面验收。"
+  ],
+  "browserVerified": false,
+  "mobileVerified": false,
+  "publicUseApproved": false,
+  "pairManifestPath": "[本地路径已省略]/AB配对清单-20261101-v1.json",
+  "selectionStatus": "delivered-candidate-final-newest-in-pair-manifest"
+}
+
+实际完整提示词：
+Use case: stylized-concept
+Asset type: ONE independent full-bleed HORIZONTAL 16:9 artwork used as a city cultural-detail webpage background. Highest available native clarity. NOT a webpage mockup, poster, UI, map, collage or comparison sheet.
+No reference image inputs; create an original imagined composition, not a replica of a painting, real cultural object, artisan's work, identifiable real venue or accurate geography.
+Website framing: keep the left 38–42 percent a continuous quiet low-contrast tonal field suitable for later HTML text, with gentle natural material texture, not a white rectangle or card. Integrate the cultural visual around the center-right, where a phone portrait crop can retain one clear connected composition. Details near the extreme edges are decorative, not essential. Text and image panels will be added independently by the website.
+No text of any kind, no calligraphy, pseudo-characters, inscriptions, seals, signatures, numbers, labels, logos, watermark, buttons, panels, frames, border, geographic outlines, administrative divisions or map routes. Do not create a template-shaped blank field. This is AI creative cultural artwork, not a documentary photo or historical reconstruction.
+Primary request: Tai'an-inspired SHADOW-PUPPET leather art fused with quiet carved-stone texture, a tangible original contemporary Chinese craft composition, unmistakably different from an ink landscape. Dark charcoal slate and muted black cloth, cinnabar red and honey-ochre translucent leather lit gently from behind.
+Scene: one original unnamed traditional-costume adult profile shadow figure in a modest animated pose occupies the center-right near x=0.66,y=0.54. Whole head, connected body, articulated arms and broad garment silhouette are legible. Handmade leather cutouts, restrained pierced details, small joints and slender operating rods make the shadow-play material language clear. The warm translucent figure casts a slight soft layered shadow onto a dim screen. It is a newly imagined figure, not any named opera role, historical person, copyrighted puppet, or a real performance by an identified maker.
+A few broad stone-like planes at the far right and bottom form subtle mountainous rhythm with shallow carved marks but absolutely NO letters, stone tablet, divine efficacy claim or fake ancient inscription. The leather figure and light are the focus, not a mountain vista or painting.
+Composition: large quiet matte charcoal zone across the left 40 percent for light HTML text; no bright glow there. Warm restrained light concentrated around the single full puppet, not a theatrical beam crossing the entire canvas. Avoid many tiny puppets, dense floral wallpaper, stage proscenium, display labels or framed product photography. Fine tactile leather edges and stone grain, controlled contrast, cinematic yet clearly handcrafted relief. Portrait phone crop around the figure should still contain a whole coherent silhouette. No glossy 3D/CGI, no ink-painting substitute.
+

@@ -1,0 +1,26 @@
+# 日照模板驱动 A/B 试拼交接 v1
+
+日期：2026-11-01。cityId 371100；AI标识：**AI创意插画／想象场景**。两图是候选，非真实文物照片、考古复原或审定地图。
+
+- A 水墨：`日照-A-水墨-v1.png`，1254×1254 PNG，SHA-256 `7bcb922ec1fce04353483b950eeea487ff2eb9afddbf00df6839d966ceba964a`。
+- B 工艺融合：`日照-B-工艺融合-v1.png`，1254×1254 PNG，SHA-256 `93f66782383f9989628a94f43e7a9e9655516297afea2a12830c37117913d2f0`。
+- 使用内置 Image，两个独立调用均将本市模板 `[本地路径已省略]/safe-reference.png` SHA-256 `24eddeeecd0afd944f486593038c429bd7ddac70292a148e2346519235c2a181` 仅人工查看并用于编写提示词，未传入模型。
+- 画作完整全幅对应模板 `map-base-v1` 及固定 referenceFrame `[542.2844447368421,473.45459473684207,214.8192105263158,214.8192105263158]`；manifest SHA-256 `9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e`，pathD SHA-256 `9eccbec34533c7077d5412b438a67153e61e3a5531708e2f70bf4bbac984f23a`。不使用旧 cover/mapFocus/zoom。提示词目标主体核心为完整参考帧约 `(0.500,0.462)`，不是确认通过的遮罩结果。
+- 统筹暂用墨线底图 `[本地路径已省略]/map-ink.svg`，SHA-256 `9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc`。用户确认了拆分轮廓方向，不等于作品审美、地图行政准确性、审图或公开许可已定。
+- 原图未裁切、未缩放、未覆盖历史稿。初看器口较宽，足柄向下延伸；真实市域边缘、标签遮挡和手机上的柄部辨识均待 agent5 以原 SVG/evenodd 实拼，不能提前称通过。
+
+文化依据：山东宣传网关于[东海峪黑陶高柄杯](https://www.sdxc.gov.cn/whql/whcc/202412/t20241205_15207857.htm)的报道、中国非遗网[莒县过门笺](https://www.ihchina.cn/project_details/13955)。生成的黑陶、纹样和海岸均为原创想象，不对应特定馆藏或真实历史场景。
+
+## 实际完整提示词
+
+### A 水墨
+Use case: stylized-concept. Asset: one complete square Rizhao cultural artwork for an internal experimental Shandong map.
+INPUT IMAGE 1 is the actual Rizhao city template, supplied solely as a spatial composition reference. Treat the entire square reference, including its margins, as the entire output canvas, retaining the same position and proportions; do not crop, zoom, shift or rotate it. The application will later mask this complete artwork to the referenced irregular region with a separate exact vector path. Do NOT copy or show the geographic outline, template fill or its beige margin. Paint one seamless full-bleed square artwork with texture and color extending through every edge.
+
+Make one clear, beautiful original Chinese ink-and-wash painting featuring a single imagined black-pottery high-stemmed vessel inspired by Longshan black-pottery heritage in the Rizhao region. This is not a specific museum artifact, archeological reconstruction, photograph or historical event. Make its cup bowl and sufficiently sturdy stem a simple bold ink silhouette. Place the bowl/identity core around x=0.50, y=0.462 of the full square reference canvas; design the complete vessel compactly within the broad central body of the referenced region, with the foot extending below the bowl, not into the narrow outer tips. Do not make the entire vessel a tiny icon. The subject must be recognizable on a small map without relying only on an extremely thin stem. Calm expressive washes of charcoal ink and muted ocean blue, light mineral-color accents, visible xuan-paper fibers and dry/wet brush character. A restrained original cut-paper rhythm inspired by Juxian festive door valances and flowing coastal light may accompany the hero but never compete; imaginary nature is atmospheric, not a claim about a specific location. No administrative outlines or map-shaped patches, no label, text, letters, digits, signature, seal, watermark, UI, frame or white margin; not a photo, poster or collage.
+
+### B 工艺融合
+Use case: stylized-concept. Asset: one complete square Rizhao cultural artwork for an internal experimental Shandong map.
+INPUT IMAGE 1 is the actual Rizhao city template, used ONLY as a spatial composition reference. The entire square reference including all margins maps to the entire output square: no zoom, crop, stretching, repositioning or rotation. A separate vector mask will later cut the finished painting to the irregular area. Do not draw, trace or preserve the map outline, the gray-blue region, guide colors or the beige surround. Make one full-bleed work with handmade texture and color continuous across all four canvas edges.
+
+The one dominant protagonist is an original imaginary black-pottery high-stemmed vessel, visually inspired by Longshan black-pottery heritage around Rizhao; it does NOT depict or reconstruct an actual archaeological object. Around full-reference position x=0.50, y=0.462, make the bowl and body striking and recognizable; fit the complete vessel compactly into the broad middle of the reference shape, with a sturdy leg and foot extending downward rather than into the narrow edges. Preserve a clear silhouette at small map size, without shrinking the subject to a badge. Style B combines tactile matte black fired clay and subtle original incised marks with a few Juxian-door-valance-inspired cut-paper shapes, hand-laid pigment, warm ochre, restrained cinnabar and deep blue-green on natural fibrous paper. This should have a materially distinct handmade identity from ink wash, not glossy CGI or a copy of an existing papercut. Flowing seaside motifs and paper fibers fill the surrounding scene as secondary creative atmosphere. No geographic boundary, no graphic frame, no template colors as guides, no letters, text, numerals, label, stamp, signature, watermark, UI or empty margin.

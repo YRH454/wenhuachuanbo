@@ -1,0 +1,21 @@
+《一物见山东》青岛 A 水墨版与 B 候选配对
+
+A：青岛-A-海岚水墨.png
+图像尺寸：1672 × 941 像素，PNG，约 16:9（非严格 16:9）
+大小：2,464,707 字节
+SHA-256：9AD84A609F607CF54283BE932B25D137946BD8CB692562772CDAE48C61CC23F5
+生成方式：内置 Image 工具根据下列提示词独立生成；未调用付费 API，未使用参考图片、未裁切或改尺寸。
+素材属性：AI创意插画，非真实器物/地理，不代表真实地点或历史文物；建议展示时标注“AI创意插画”。
+文化选题依据：[本地路径已省略]/扩展调研.md（青岛贝雕和贝壳材料；图像为抽象表现，不代表任何具体作品）。
+配对 B 候选：[本地路径已省略]/青岛-海蓝贝韵-方向更正前初稿.png
+B 说明及完整提示词：[本地路径已省略]/青岛背景-生成说明与完整提示词.txt
+B 版本尚待审美验收：扇形纹样有印刻感，但贝雕工艺与地域辨识度可能不够，不应称已完全通过。
+可读性与风险：A 中央偏右较浅，可尝试深色文字；左侧、左下笔触较密，移动端裁切及文字对比度须实测；画面不对应真实海岸。
+
+A 版完整提示词：
+
+Use case: stylized-concept
+Asset type: A single original horizontal version A Chinese ink-wash painting background for a Qingdao cultural page, artwork only, not a webpage.
+Creative direction: An airy coastal composition inspired by Qingdao's sea and the natural curved grain of shells, interpreted as expressive Chinese water-and-ink painting rather than digital wallpaper or woodblock pattern. Make real-looking brush gestures the main visual language: ink dilution, wet-on-wet diffusion, soft feathered edges, decisive dry-brush strokes, varied tonal values and natural ink on fine xuan paper. Use pale sea-blue ink and muted turquoise with selectively deeper blue-black brushwork. Hint at shell-like fan rhythms only as graceful brush arcs, not a literal shell object. A sweep of brush-painted shore and mist approaches diagonally from the left, leaving a quiet readable field in the center-right and within a narrow center crop. Keep the bottom calm; do not repeat heavy mountain-and-wave framing. Gentle, spacious, contemporary but unmistakably ink-wash painting.
+Usage: Dedicated website background with space for later text; suitable for mobile crops; wide horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration, not documentary geography, a real cultural artifact or a historical image. Do not depict an identifiable real landmark or a photorealistic artifact. No text, writing, numerals, seals, logos, watermarks, QR codes, maps, borders, UI or buttons. No copying existing artwork, website images or layouts; no panels or collage.

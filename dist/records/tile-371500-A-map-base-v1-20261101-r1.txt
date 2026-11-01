@@ -1,0 +1,137 @@
+聊城 A｜葫影运河｜map-base-v1｜2026-11-01 r1
+AI创意插画／想象场景。内部候选，非实拍、馆藏原件、真实作者作品或历史复原。
+
+实际生成方式：
+先以view_image逐张加载并查看本市outline-reference.png与safe-reference.png。唯一传入内置Image的图片为outline-reference.png原文件，参数referenced_image_paths:["[本地路径已省略]/outline-reference.png"]；角色是固定全幅构图参考，不是要复制的轮廓/底色。safe只由助手目视和读取坐标，不传模型，绿圆黄带均不属于画面。不使用网上照片或历史自由方图作为输入。
+内置Image成功返回原图；这里记录实际输入方式，不声称模型理解或逐像素遵守模板。底层模型名称未返回，不猜测。
+工具：内置 Image / image_gen；transparent_background:false。未使用CLI或外部付费API。
+完整原生输出以字节相同方式复制到项目，内置源文件保留；未外部裁切、拉伸、重采样、去背景或锐化。未覆盖旧图。
+本版本仅一次新生成，没有定向编辑；如后续有编辑另发新revision，不覆盖。
+
+实际元数据（含解码尺寸/哈希/模板/实际参考角色/文化依据/状态）：
+{
+  "assetId": "tile-371500-A-map-base-v1-20261101-r1",
+  "cityId": "371500",
+  "city": "聊城",
+  "cityKey": "liaocheng",
+  "variant": "A",
+  "revision": "r1",
+  "title": "葫影运河",
+  "imagePath": "[本地路径已省略]/liaocheng-template-A-ink-gourd-map-base-v1-20261101-r1.png",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "bytes": 3299794,
+  "sha256": "bdaf3e133c9c94bc8e125264b79e5fcf083d8f5ee7ac079c48e84113818793c6",
+  "templateVersion": "map-base-v1",
+  "templateManifestSha256": "9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e",
+  "cityPathSha256": "431b90369a69b8492f1e6d75c9277c36a4e79328f1f57db4645516f0b78483eb",
+  "referenceFrame": {
+    "viewBox": [
+      73.29566052631577,
+      298.2893105263157,
+      277.87907894736844,
+      277.87907894736844
+    ],
+    "imageWidth": 1024,
+    "imageHeight": 1024,
+    "visibleMaxSideFraction": 0.76,
+    "placementMode": "template-frame",
+    "x": 73.29566052631577,
+    "y": 298.2893105263157,
+    "width": 277.87907894736844,
+    "height": 277.87907894736844,
+    "note": "方形参考画布由真实bbox推导，原城市比例不变；AI按此模板构图，不是自由方图cover"
+  },
+  "referenceFiles": [
+    {
+      "kind": "outlineReference",
+      "path": "[本地路径已省略]/outline-reference.png",
+      "sha256": "16f449f424767fee099ed014288373246d023ba517bd10a94a951a777f8870df",
+      "role": "primary-composition-reference-full-square-frame",
+      "viewedByAssistant": true,
+      "passedToImageTool": true,
+      "toolArgument": "referenced_image_paths"
+    },
+    {
+      "kind": "safeReference",
+      "path": "[本地路径已省略]/safe-reference.png",
+      "sha256": "33c16b495223d49b4a237839a8323516311e1029d4a1df21892ec44d27260d6e",
+      "role": "assistant-only-safety-coordinate-guide",
+      "viewedByAssistant": true,
+      "passedToImageTool": false
+    }
+  ],
+  "placementRecordPath": "[本地路径已省略]/placement.json",
+  "placementRecordSha256": "c2ae529d9248f5d849190be56cba78094232f0bd494c67840c7d09feaf1c0670",
+  "baseMapSelectionStatus": "user-confirmed-outline-direction-16-city-candidate-production",
+  "selectedBaseMapPath": "[本地路径已省略]/map-ink.svg",
+  "selectedBaseMapSha256": "9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc",
+  "confirmationRecordPath": "[本地路径已省略]/地图板块规划与协作任务书-v3.md",
+  "confirmationSection": "2026-11-01 用户确认市域分拆轮廓并取消四城闸口；统筹扩至16市候选",
+  "placementMode": "template-frame",
+  "canvasCorrespondence": "full-reference-frame",
+  "subjectCoreInReference": {
+    "x": 0.4688,
+    "y": 0.462
+  },
+  "subjectCoreStatus": "composition-intent-not-mask-verified",
+  "generationTool": "内置 Image",
+  "generationMethod": "new-text-plus-outline-reference",
+  "promptRecordPath": "[本地路径已省略]/liaocheng-template-A-ink-gourd-map-base-v1-20261101-r1-完整提示词与生成记录.txt",
+  "aiLabel": "AI创意插画／想象场景",
+  "culturalBasis": [
+    {
+      "title": "中国非物质文化遗产网：葫芦雕刻（东昌葫芦雕刻）",
+      "url": "https://www.ihchina.cn/project_details/14147.html",
+      "supports": "支持东昌葫芦雕刻与聊城、东昌府堂邑镇和运河商贸文化的关联；生成器形/装饰、岸屋和小舟为原创想象，不对应某位作者作品、实景或馆藏原件。"
+    }
+  ],
+  "imaginedElements": [
+    "原创葫芦器形与叶水装饰",
+    "想象岸屋、小舟、柳枝、远山及圆日（如有），非真实地貌或具体地点"
+  ],
+  "knownRisks": [
+    "葫芦实际占幅比目标45%高度更大，枝叶靠近细腰；需检查下腹/顶端和腰部是否被遮罩或枝叶干扰。",
+    "模型使用参考不保证主体逐像素落位；尚待agent5以原SVG/evenodd和固定referenceFrame实际裁切，不得用旧cover/mapFocus/zoom救图。",
+    "尚未完成手机尺度、地名标签遮挡、邻区配色及整省视觉验收；文件到达不代表艺术、行政地图或公开使用许可已通过。"
+  ],
+  "reviewStatus": "delivered-awaiting-template-mask-review",
+  "actualMaskReviewed": false,
+  "availableForInternalTemplateTest": true,
+  "selectedForIntegration": false,
+  "publicUseApproved": false,
+  "native4K": false,
+  "originalSourcePath": "[本地路径已省略]/exec-33c5b3a6-4d33-43b0-a5df-bf931c31fd7f.png"
+}
+
+只读区域研究：
+[本地路径已省略]/聊城优先交接-待选草包.md
+
+原图目视观察：
+水墨笔触与杏黄实形清楚，但葫芦偏大、枝叶较多；岸屋和舟为低对比辅助。
+
+文化与想象边界：
+只从文化来源取一般题材、地域和材料线索，不复制来源照片或具体作者作品。新图不继承实拍摄影者署名或许可。来源只支持culturalBasis各项列明范围；器形、装饰、场景与人物均可为原创想象，不给它们编造作者、年代、馆藏或奖项。界面另加AI标识、地名、来源和操作。
+用户确认的是市域分拆轮廓方向，不是全部最终画作或行政地图已审定。确认位置为上述confirmationRecordPath，旧预审中的暂停文字由统筹最新明确恢复/扩城授权覆盖。
+
+固定映射：
+完整实际方图对应referenceFrame全幅含留边。scale=f/实际宽= f/实际高；在固定frame.x/y绘制f×f，再用原global-mask和evenodd裁切。不先裁去留边，不自动cover、mapFocus、zoom、旋转或移动。subjectCoreInReference仅是生成意图，非实测遮罩结论。
+若返回非方形，必须保留实际尺寸并进入映射待核，不拉伸/裁切冒充。
+
+完整实际生成提示词：
+Use case: stylized-concept
+Asset type: ONE finished independent SQUARE 1:1 Chinese cultural artwork, full bleed, maximum available native clarity, made for a fixed city-template reference frame. Not a webpage background, poster, map, diagram, sticker, comparison board or multi-panel collage.
+Input image 1: the city's outline-reference.png, supplied as COMPOSITION REFERENCE ONLY. The ENTIRE square, including outside margins, is the fixed reference canvas. Preserve its full-square coordinate correspondence. Do not tightly crop the silhouette, zoom it, rotate or reframe. The pale silhouette only tells which parts of the painting will later remain visible.
+DO NOT paint the reference silhouette, pale fill, boundary line, blank outside field or any map shape. Instead make a natural complete cultural painting across ALL FOUR EDGES, with the important subject positioned as specified below. The exact administrative edge will be clipped independently by the frontend's original SVG, never by the image model. No green circles, yellow bands, safety markers, outlines, geographic shapes, frames or labels.
+One dominant cultural subject; supporting landscape, objects or people stay secondary. Original imagined scenes, buildings, figures and cultural objects are allowed, but not a real-site photograph, collection object, maker's work or historical reconstruction. Never copy a specific artist's composition or craft object.
+No text of any kind: no Chinese characters, calligraphy, inscriptions, signatures, seals, logos, numbers, watermarks, QR codes, city labels or UI.
+Series family: tangible handmade Chinese art, disciplined large shapes and legible silhouette, visible brush/material, differentiated city palette and arrangement but harmonious neutral fibers. No photorealistic product photography, glossy CGI, generic digital swirls or synthetic gradient wallpaper. Make the artwork fill a square canvas.
+Primary subject: ONE ORIGINAL double-bellied gourd, inspired by the general Dongchang gourd-carving craft of Liaocheng. No named maker, no copied object or figure decoration. The short complete top, small upper belly, narrow waist and broad lower belly must form a connected, immediately legible silhouette.
+Precise placement in the FULL square reference frame: short top around y=.225–.27; upper belly center (.49,.34), width about .15 and height .17; narrow waist around (.48,.435); lower belly center (.47,.54), width about .25 and height .27. The entire gourd is about 45% of canvas HEIGHT and 25% WIDTH, slightly left of center. Its full bounding box is approximately x=.345–.595,y=.225–.675. Do NOT enlarge it to fill the canvas; there must be plenty of continuous scene above and below, not a giant gourd extending to top or bottom. This is a medium view, not a tight closeup.
+Only supporting scene: a subdued canal ribbon, ONE small boat and a few faint imagined low shore houses. They remain lower contrast than the gourd and do not cross or obscure its narrow waist. Flat lowland shore atmosphere, no dramatic high mountain peaks. It is a poetic nonliteral cultural still life integrated with an imagined canal, not an enormous real object standing at a real place. Scene and paper texture continue through the full outer margins. No second cultural icon, multiple gourds or museum pedestal.
+A medium: Chinese INK PAINTING is unmistakably the main language: expressive brush pressure, charcoal-to-faint five ink tones, flying-white dry brush, wet ink blooms and controlled washes on visible absorbent xuan paper. Restrained color ink is allowed; do not substitute a watercolor-only puddle, glossy material study, paper-cut outline or print texture for true brushwork.
+Palette and gesture: controlled apricot/ochre color ink gives the gourd a solid warm body, dense gray-black brush contours make both bellies clear, sparse original leaf-and-ripple strokes suggest decoration. Cool smoke-cyan and blue-gray canal washes recede behind it. Dry-brush accents and ink bleeding carry the painterly quality; the gourd must still read if its internal decoration disappears at small size.
+The rest of the square is a complete airy canal-side ink painting, with loose low banks, faint shore roofs, occasional willow gesture and lower water reflections, not broad blank space for webpage text. Keep the entire gourd inside the specified middle portion of the frame rather than moving the painting's focal subject to the bottom.
+
+

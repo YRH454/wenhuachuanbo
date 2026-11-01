@@ -1,0 +1,140 @@
+菏泽 B｜面塑扇影·丹彩牡韵｜map-base-v1｜2026-11-01 r1
+AI创意插画／想象场景。内部候选，非实拍、馆藏原件、真实作者作品或历史复原。
+
+实际生成方式：
+先以view_image逐张加载并查看本市outline-reference.png与safe-reference.png。唯一传入内置Image的图片为outline-reference.png原文件，参数referenced_image_paths:["[本地路径已省略]/outline-reference.png"]；角色是固定全幅构图参考，不是要复制的轮廓/底色。safe只由助手目视和读取坐标，不传模型，绿圆黄带均不属于画面。不使用网上照片或历史自由方图作为输入。
+内置Image成功返回原图；这里记录实际输入方式，不声称模型理解或逐像素遵守模板。底层模型名称未返回，不猜测。
+工具：内置 Image / image_gen；transparent_background:false。未使用CLI或外部付费API。
+完整原生输出以字节相同方式复制到项目，内置源文件保留；未外部裁切、拉伸、重采样、去背景或锐化。未覆盖旧图。
+本版本仅一次新生成，没有定向编辑；如后续有编辑另发新revision，不覆盖。
+
+实际元数据（含解码尺寸/哈希/模板/实际参考角色/文化依据/状态）：
+{
+  "assetId": "tile-371700-B-map-base-v1-20261101-r1",
+  "cityId": "371700",
+  "city": "菏泽",
+  "cityKey": "heze",
+  "variant": "B",
+  "revision": "r1",
+  "title": "面塑扇影·丹彩牡韵",
+  "imagePath": "[本地路径已省略]/heze-template-B-dough-fan-figurine-map-base-v1-20261101-r1.png",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "bytes": 3058797,
+  "sha256": "f767d3e2d7c17bf966a818096c6f543590d9a534dabd5d0423e5df7b9f8b1439",
+  "templateVersion": "map-base-v1",
+  "templateManifestSha256": "9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e",
+  "cityPathSha256": "57cc05713474c314e27ffad791e878fbef7868dabf6d08f006992f46ade94b22",
+  "referenceFrame": {
+    "viewBox": [
+      25.392897368421046,
+      491.98474736842104,
+      293.1321052631579,
+      293.1321052631579
+    ],
+    "imageWidth": 1024,
+    "imageHeight": 1024,
+    "visibleMaxSideFraction": 0.76,
+    "placementMode": "template-frame",
+    "x": 25.392897368421046,
+    "y": 491.98474736842104,
+    "width": 293.1321052631579,
+    "height": 293.1321052631579,
+    "note": "方形参考画布由真实bbox推导，原城市比例不变；AI按此模板构图，不是自由方图cover"
+  },
+  "referenceFiles": [
+    {
+      "kind": "outlineReference",
+      "path": "[本地路径已省略]/outline-reference.png",
+      "sha256": "70350cc3ea23f4e657682774954016457b0e6887b40ad82a44300113bf60f465",
+      "role": "primary-composition-reference-full-square-frame",
+      "viewedByAssistant": true,
+      "passedToImageTool": true,
+      "toolArgument": "referenced_image_paths"
+    },
+    {
+      "kind": "safeReference",
+      "path": "[本地路径已省略]/safe-reference.png",
+      "sha256": "cee66d23ef1b023c8b476f163d2174f9d9617c8de6dd840ab110d101a1ad8b09",
+      "role": "assistant-only-safety-coordinate-guide",
+      "viewedByAssistant": true,
+      "passedToImageTool": false
+    }
+  ],
+  "placementRecordPath": "[本地路径已省略]/placement.json",
+  "placementRecordSha256": "6f76be54247f2daee9829b11b3fce1da6407c7b23802f4ebec12bb9fff682399",
+  "baseMapSelectionStatus": "user-confirmed-outline-direction-16-city-candidate-production",
+  "selectedBaseMapPath": "[本地路径已省略]/map-ink.svg",
+  "selectedBaseMapSha256": "9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc",
+  "confirmationRecordPath": "[本地路径已省略]/地图板块规划与协作任务书-v3.md",
+  "confirmationSection": "最新调整：用户确认分拆轮廓，精简为三会话协作",
+  "placementMode": "template-frame",
+  "canvasCorrespondence": "full-reference-frame",
+  "subjectCoreInReference": {
+    "x": 0.5368294526807564,
+    "y": 0.5
+  },
+  "subjectCoreStatus": "composition-intent-not-mask-verified",
+  "generationTool": "内置 Image",
+  "generationMethod": "new-text-plus-outline-reference",
+  "promptRecordPath": "[本地路径已省略]/heze-template-B-dough-fan-figurine-map-base-v1-20261101-r1-完整提示词与生成记录.txt",
+  "aiLabel": "AI创意插画／想象场景",
+  "culturalBasis": [
+    {
+      "title": "中国非物质文化遗产网：面人（曹州面人）",
+      "url": "https://www.ihchina.cn/project_details/14087/",
+      "supports": "曹州面人与山东菏泽市牡丹区的地域关联、人物造型及捏塑艺术线索；不与另列曹县江米人混同。AI人物不是传承人实作、历史人物或戏曲角色复原。"
+    },
+    {
+      "title": "菏泽日报：九色牡丹入面塑 百年手艺正青春",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32940387",
+      "supports": "只支持面塑与牡丹题材相结合的当代地域文化线索，不复制李斌“花语小仙子”的形象、头身比、花饰系统或作品构图，AI人物不署为其作品。"
+    }
+  ],
+  "imaginedElements": [
+    "原创哑光面塑式成年持扇人物、朱红与孔雀蓝服装、少量牡丹和纸层；非食物，不照搬“花语小仙子”等作品，也不冒称作者、年代、奖项或馆藏。"
+  ],
+  "knownRisks": [
+    "B人物实际纵向同样显著放大，发顶与底部衣裙可能被裁；扇、脸、衣裙能否同时保留须固定市域实裁。",
+    "B面部比较光滑，需审其面塑/陶偶/CG感边界；仅为AI面塑式插画，不是真实传承人作品或实物照片。",
+    "B牡丹、枝叶与飘带偏多偏大，部分位于边缘，手机与相邻城市拼接时可能抢主角或形成杂纹。",
+    "模型使用参考不保证主体逐像素落位；尚待agent5以原SVG/evenodd和固定referenceFrame实际裁切，不得用旧cover/mapFocus/zoom救图。",
+    "尚未完成手机尺度、地名标签遮挡、邻区配色及整省视觉验收；文件到达不代表艺术、行政地图或公开使用许可已通过。"
+  ],
+  "reviewStatus": "delivered-awaiting-template-mask-review",
+  "actualMaskReviewed": false,
+  "availableForInternalTemplateTest": true,
+  "selectedForIntegration": false,
+  "publicUseApproved": false,
+  "native4K": false,
+  "originalSourcePath": "[本地路径已省略]/exec-e60248d6-cc66-458b-a529-c0a1c0796f56.png"
+}
+
+只读区域研究：
+[本地路径已省略]/四市板块概念.md
+
+原图目视观察：
+朱红衣、孔雀蓝内层、哑光塑作衣褶和持扇人物与A墨画形成材质区别，未画成现有大头花冠IP。人物仍为主角，但实际被放大到大半幅以上、头位偏高，裙摆与飘带外伸；牡丹和枝叶数量/占幅超出克制意图。无可见文字、市界或安全提示标记。
+
+文化与想象边界：
+只从文化来源取一般题材、地域和材料线索，不复制来源照片或具体作者作品。新图不继承实拍摄影者署名或许可。来源只支持culturalBasis各项列明范围；器形、装饰、场景与人物均可为原创想象，不给它们编造作者、年代、馆藏或奖项。界面另加AI标识、地名、来源和操作。
+用户确认的是市域分拆轮廓方向，不是全部最终画作或行政地图已审定。确认位置为上述confirmationRecordPath，旧预审中的暂停文字由统筹最新明确恢复/扩城授权覆盖。
+
+固定映射：
+完整实际方图对应referenceFrame全幅含留边。scale=f/实际宽= f/实际高；在固定frame.x/y绘制f×f，再用原global-mask和evenodd裁切。不先裁去留边，不自动cover、mapFocus、zoom、旋转或移动。subjectCoreInReference仅是生成意图，非实测遮罩结论。
+若返回非方形，必须保留实际尺寸并进入映射待核，不拉伸/裁切冒充。
+
+完整实际生成提示词：
+Use case: stylized-concept
+Asset type: ONE finished independent SQUARE 1:1 Chinese cultural artwork, full bleed, maximum available native clarity, made for a fixed city-template reference frame. Not a webpage background, poster, map, diagram, sticker, comparison board or multi-panel collage.
+Input image 1: the city's outline-reference.png, supplied as COMPOSITION REFERENCE ONLY. The ENTIRE square, including outside margins, is the fixed reference canvas. Preserve its full-square coordinate correspondence. Do not tightly crop the silhouette, zoom it, rotate or reframe. The pale silhouette only tells which parts of the painting will later remain visible.
+DO NOT paint the reference silhouette, pale fill, boundary line, blank outside field or any map shape. Instead make a natural complete cultural painting across ALL FOUR EDGES, with the important subject positioned as specified below. The exact administrative edge will be clipped independently by the frontend's original SVG, never by the image model. No green circles, yellow bands, safety markers, outlines, geographic shapes, frames or labels.
+One dominant cultural subject; supporting landscape, objects or people stay secondary. Original imagined scenes, buildings, figures and cultural objects are allowed, but not a real-site photograph, collection object, maker's work or historical reconstruction. Never copy a specific artist's composition or craft object.
+No text of any kind: no Chinese characters, calligraphy, inscriptions, signatures, seals, logos, numbers, watermarks, QR codes, city labels or UI.
+Series family: tangible handmade Chinese art, disciplined large shapes and legible silhouette, visible brush/material, differentiated city palette and arrangement but harmonious neutral fibers. No photorealistic product photography, glossy CGI, generic digital swirls or synthetic gradient wallpaper. Make the artwork fill a square canvas.
+City-specific primary request: Heze / Caozhou dough-figurine culture. ONE ORIGINAL unnamed adult female costumed figurine holding a compact folding fan near her torso. Continuous head, torso and flowing hem; calm lively expression. A newly imagined traditional-costume art character, not a named historical figure, opera role, real actor or a maker's existing artwork. Adult-like elegant proportions, NOT a large-headed cartoon fairy. Simple tied hair with one small hairpin, NO flower crown, flower-shaped head, extravagant headdress or copied character system. The fan stays close to chest/waist, not extended far away. One or at most two peony blossoms as small secondary accents around the lower side, never hiding her face or replacing the body. No extra people or tableau.
+Composition/framing: A wide, quiet composition of paper and subtle color atmosphere with a modest-size FULL FIGURE at the central point, not a portrait close-up. Use the ENTIRE fixed square reference including its margins. The connected figurine ideally spans x=0.43–0.64, y=0.32–0.67; face around (0.54,0.36), fan/torso recognition core near (0.537,0.50), hem around (0.54,0.64). Keep hands, fan and sleeves compact against the main silhouette so they do not rely on outcropping edges. Do not enlarge to a full-height cover portrait. Most of the canvas is quiet warm paper and restrained brush/petal atmosphere, naturally continuing to all four edges, not a blank map-shaped field. Broad elegant costume folds and legible head/hand/fan mass, avoid lace-like microdetails, too many flowers, dense jewelry or busy embroidered wallpaper. No geographic outline, framing line or template markers.
+B medium: a clearly handmade craft/material-led illustration, truly different from an ink painting. Visible original cut, carved, layered, modeled or fibrous material is primary, with selective ink contours or washes connecting it to Chinese art. Not a photo, photoreal product mockup or glossy CGI. Keep broad readable shapes instead of relying on tiny decoration.
+Specific medium/palette: hand-modeled DOUGH-ART-inspired illustrative figurine with smooth matte colored forms, subtle hand-rolled seams and a few hand-pressed folds. Elegant adult figure, expressive but not chibi. Vermilion-red robe with restrained peacock-blue underlayer and a little soft gold, dark tied hair and an off-white folded fan, all unmistakably tactile handcrafted form. No dense gold ornament or flower headdress. A small modeled peony at one lower side and quiet warm fiber-paper/petal collage support it. Selective Chinese ink shadow grounds the making. Not edible food, not a real photographed museum object, not ceramic porcelain sheen, photoreal skin, product mockup or CGI. The material fusion is a creative illustration, not an authenticated artisan sample.
+

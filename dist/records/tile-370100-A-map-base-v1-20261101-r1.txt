@@ -1,0 +1,109 @@
+济南 A｜泉眼生白｜map-base-v1｜2026-11-01 r1
+用途：内部四城模板驱动文化板块试拼；非用户最终审美定稿，不冒称真实实景、实物或历史复原。
+AI标识：AI创意插画／想象场景
+
+一、实际图像及工具
+图像路径：[本地路径已省略]/jinan-template-A-ink-spring-map-base-v1-20261101-r1.png
+内置工具源文件：[本地路径已省略]/exec-93a74cb9-8d08-42ad-af38-0d0d45f4cd4b.png
+原生解码尺寸：1254 × 1254 px（方形，非4K）
+实际格式：PNG；字节：3842913
+SHA256：4f72449ebd8344ffccc4ee19f615c79734fe78442d3c727de70e4f53daae4ad5
+工具：内置 Image / image_gen；调用中实际传入referenced_image_paths；未用CLI或外部付费API。工具未提供可核验底层模型名称，不猜测。
+方法：文字+轮廓参考图新生成完整画作，不是编辑旧自由方图。未做外部裁切、重采样、拉伸、锐化或透明化。
+透明参数：false。
+本版本没有后续编辑调用，完整实际提示词见文末。
+
+二、内部暂选与模板绑定
+内部暂选状态：coordinator-provisional-internal-four-city-test
+整图：[本地路径已省略]/map-ink.svg
+整图SHA256：9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc
+确认记录：[本地路径已省略]/地图板块规划与协作任务书-v3.md，“2026-11-01 14:55 统筹暂选：用于四城内部联调”
+恢复授权来自统筹本会话消息，限济南/聊城A/B。早期预审文件的暂停状态不代表本次新授权已被撤销。本次仍不是用户最终画风定稿、审图或公开许可。
+模板版本：map-base-v1
+清单：[本地路径已省略]/template-manifest-v1.json
+清单SHA256：9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e
+唯一几何：[本地路径已省略]/城市SVG路径.json
+几何SHA256：118b7c46e367ae1a25773597a04285a48d6ac58d8bdb5bbc7d7dbeb5a40bcd79
+cityId：370100；城市：济南
+cityPathSha256：17752c2b2ee61b669548eb5ed96dfdfa50673aa2836b726018bb72361932849b
+placement：[本地路径已省略]/placement.json
+placement SHA256：0bc7334382d4bfda1c5e672c069d2f3cd089e475e52025473eaa59360a786f5a
+referenceFrame（完整固定方形参考画布，含留边）：
+{
+  "viewBox": [
+    202.6091552631579,
+    206.13460526315788,
+    342.2232894736842,
+    342.2232894736842
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1024,
+  "visibleMaxSideFraction": 0.76,
+  "placementMode": "template-frame",
+  "x": 202.6091552631579,
+  "y": 206.13460526315788,
+  "width": 342.2232894736842,
+  "height": 342.2232894736842,
+  "note": "方形参考画布由真实bbox推导，原城市比例不变；AI按此模板构图，不是自由方图cover"
+}
+
+三、实际参考方式
+已先使用view_image逐张加载并实际查看本市outline-reference.png和safe-reference.png。
+唯一传给内置Image的参考文件：
+[本地路径已省略]/outline-reference.png
+SHA256：2acb4a8534259e187a9a35af8f43aab7695b74ad25901d9fa311104037107cfb
+角色：构图参考；不是要复制的轮廓、底色或权威行政边界。实际调用参数为referenced_image_paths:["[本地路径已省略]/outline-reference.png"]。
+安全图：
+[本地路径已省略]/safe-reference.png
+SHA256：b2dc0526600795ebc44f89e63d45045d806f6e09ee577395a39f3d11b14fcbeb
+角色：仅由助手目视和读取安全核心坐标辅助，不传入生图工具。绿圆/黄带不属于成图，不约束艺术配色。
+除上述outline图外，没有参考图片、旧自由方图或网上实拍作为输入。
+图像生成工具已成功返回方形PNG；这里只陈述实际输入方式，不声称模型将主体严格逐像素对齐模板。
+
+四、映射与辨识核心
+placementMode：template-frame
+canvasCorrespondence：full-reference-frame
+原生完整方图对应参考全幅；最终绘制在该referenceFrame.x/y/width/height，用原global-mask和evenodd精确裁边。不得先去留边、再cover、移动/拉伸/自动旋转、mapFocus、zoom或object-position重找焦点。
+subjectCoreInReference建议：{"x":0.535,"y":0.538}；来自构图意图，非实际遮罩验收。
+最亮中簇可作为辨识核心，三簇完整关系需实际回拼检查。安全圆不是整幅主角最大尺寸。
+当前状态：delivered-awaiting-template-mask-review；actualMaskReviewed=false。
+主角、画法和实际参考输入已目视核对，无可见模板轮廓/标记/地名；尚未作网页或行政遮罩视觉验收。
+
+五、文化依据和想象边界
+1. 中国天气网：趵突泉
+https://www.weather.com.cn/shandong/jinan/jnlyjdjs/07/5025.shtml
+支持范围：仅取济南泉水及三股泉涌的稳定景观线索；不复制照片，不沿用2009年的票价、水位、喷涌强度或具体园林布局。
+
+2. 中国国家博物馆：“济南刘家功夫针铺”广告青铜版
+https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247463.shtml
+支持范围：仅支持济南字号、广告刻版和印刷传播文化关联；B泉涌刻印为原创，非该铜版原有图像、宋代拓本或已核实地方纸艺非遗。
+本次已打开上述来源正文；只使用文字文化线索，不复制页面图片。当地来源不等于画中布局真实。
+区域组意见：
+[本地路径已省略]/四城模板草包预审意见.md
+[本地路径已省略]/济南-首批板块交接.md
+泉眼、石岸、荷叶、柳枝、水面布局和喷涌强度均为原创想象；不对应趵突泉实景布局、实时水势、某件馆藏、古代拓本、具体作者作品或工艺操作示意。
+B刻印与广告铜版仅为文化创作联想，不把新泉景说成古版内容或已核实本地纸艺非遗。不继承实拍照片摄影署名或许可。
+
+六、已知风险
+1. 只完成模板图像参考输入与原图目视检查，尚未由agent5按原SVG实际裁切回拼；模板参考不保证像素级主体位置。
+2. 实际左右副泉簇展开比提示的紧凑范围更宽，须检查三簇裁后是否只剩一簇、最亮水形是否跨济南下部凹口。
+3. 水墨纹理和水花较丰富，手机市域尺度下需检查是否仍可辨为泉涌而非一般水面。
+4. 市名标签可能遮住最亮泉眼；应由组装者按同一frame检查，不改用cover/mapFocus/zoom救图。
+5. 未完成四城A组/B组邻区配色、桌面/手机视觉验收；不等于最终艺术或公开地图许可通过。
+
+七、完整实际生成提示词（原文）
+Use case: stylized-concept
+Asset type: ONE new full-bleed SQUARE 1:1 Chinese cultural painting, made for a fixed city-template-frame composition. Create artwork, not a map, webpage, poster, comparison board, or diagram.
+Input image 1 role: COMPOSITION REFERENCE ONLY. It shows a pale city silhouette inside a square. Keep this EXACT full-square coordinate frame including its outer margins: the artwork's square must correspond to the reference image's ENTIRE square, not a tight crop around the silhouette. Do not zoom, rotate, or recenter the reference frame.
+CRITICAL: DO NOT reproduce the reference's pale fill, thin outline, map silhouette, administrative border or blank surrounding field. They are positional guidance, NOT content to paint. Make a natural complete painting across the entire square, including outside the silhouette; the frontend will later clip using an independent precise SVG. No template lines, visible mask, outer map-shaped edge, badges, circular safety markers or labels.
+Main subject: ONE coherent broad spring eye with THREE low, vigorously bubbling upwellings of luminous white water. It is an original imagined Jinan-inspired spring scene, not the literal layout of Baotu Spring park. The three white-water mounds belong to the same connected spring, not three isolated fountains or vertical pipes.
+Composition in the FULL reference square: put the bright, most identifying foam core around (x=.535,y=.538). The connected main spring cluster can span approximately x=.43–.66 and y=.45–.62, with the strongest white contrast near the core. Let ripple strokes and water flow naturally into the taller upper area and the side branches of the reference, while still painting the whole canvas. Do not bridge the deep lower notch with a complete circular stone pool, long railing, bridge or courtyard. Low-contrast peripheral water and sparse lotus leaves can be expendable when later clipped. No distant panorama that makes the spring tiny.
+Only one main cultural subject. A few lotus leaves/water plants are secondary. Do not add a row of relics, a large unrelated vessel or a second dominant building. No actual historical reconstruction or museum object.
+Text: NONE. No Chinese characters, calligraphy, inscriptions, signature, seal, numbers, watermarks, logos, labels or UI. No map border, grid, jigsaw silhouette or provincial outline. Clearly handmade illustration, never photography, glossy CGI, metallic product mockup or smooth generic digital wallpaper. No internal panels or comparison layout.
+
+Style/medium A: Chinese INK PAINTING is unmistakably primary. Supple brush pressure, dry-brush flying-white, rich charcoal through five ink tones, wet ink blooming and disciplined washes on visible absorbent xuan paper. Strong white negative brush shapes describe the three bubbling water mounds without outlines of perfect circles.
+Palette: luminous paper-white spring foam, deep ink-cyan/blue-black directly around the central water, lighter smoke-cyan ripples and a few restrained gray-green lotus leaves. Keep the brightest spring core substantially lighter than the surrounding ink. Nearby paper and water washes remain varied and alive, not a huge empty white reading zone.
+Surroundings: a poetic close-to-medium spring-water view, a few brushy bank stones and leaves in the periphery. No recognizable actual pavilion, railing or copied scenic photograph. Background water and airy ink motion continue naturally across all four edges. The central white water must remain instantly readable in a thumbnail.
+Family: handmade Chinese painting, assured large strokes rather than decorative micro-detail. Preserve the full reference-square composition. Do not turn it into a generic mountain landscape or a watercolor-only puddle.
+
+

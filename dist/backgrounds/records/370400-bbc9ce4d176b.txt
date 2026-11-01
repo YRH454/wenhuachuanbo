@@ -1,0 +1,39 @@
+《一物见山东》枣庄城市背景 A/B 配对及生成记录
+
+素材声明：AI创意插画／想象场景，非真实器物、地理或历史照片。陶坊、人物、陶器和器纹均为想象创作，不代表某位工艺者或具体作品，不应把所画纹样、场景当作当地技艺事实；建议展示时标注“AI创意插画／想象场景”。
+生成方式：A、B 分别使用内置 Image 工具生成；B 对初稿再用内置工具调整为手绘版刻风格。未调用付费 API；交付图为原生 PNG，未裁切或改尺寸。
+文化依据：[本地路径已省略]/article.html?articleId=440938ab6a1791ef4c6ce4b0c1ea9a92 。此处只取意泥料、陶艺，不复现具体作品。
+
+A 水墨：枣庄-A-陶乡墨景.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：2903514 字节
+SHA-256：5541E34D1B15AA09F30E0D129310F50F6F805C6F732C12C6FCD970A127685FCA
+风险：陶坊位于右侧，移动端中央裁切可能丢失主体；浅色区域适合尝试深字，文字对比需实测。
+
+A 完整提示词：
+
+Use case: stylized-concept
+Asset type: Original standalone horizontal version A Chinese ink-wash painting background for a Zaozhuang cultural page, not a website screenshot.
+Creative direction: Create a fictional hillside pottery-village vignette inspired by the Fuli earthenware tradition documented in Zaozhuang's Shanting area, without claiming to represent a specific village, pottery workshop or historical event. Suggest distant earth-toned hills, a tiny imagined pottery workshop and a trace of kiln smoke at the far right. Render everything as expressive Chinese ink wash: recognisable brush strokes, wet ink blooms, dry-brush contour work, ink dilution and breathing paper texture. Use warm clay ochre, muted burnt sienna and charcoal-gray ink, distinct from a blue coastal scene.
+Composition: Place the imagined workshop and strongest brushwork toward the right side, fading to an airy warm-paper/soft-ink field across the left and the central mobile-safe crop. Keep lower portions calm, so dark page text can be placed later. Make the atmosphere artistic, human and evocative, not a generic stock landscape. Horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration / imagined scene, not a documentary photograph, real geography, historic event or genuine cultural object. No identifiable real landmark, map or boundary. No text, characters, numbers, signature, seal, logo, watermark, QR code, UI or buttons. Do not copy existing artworks or layouts; no panels or collage.
+
+B 伏里土陶灵感融合：枣庄-B-伏里陶韵.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：3162404 字节
+SHA-256：9A6014CDCF096C6F8A108889B1E14FFEBE14DAB929E406C14E0D06D8013268E7
+风险：左侧陶艺描绘和器纹为虚构图案，不代表真实作品或伏里土陶的固定纹样；中心暖色区域可尝试深字，手机裁切和文字对比需实测。
+
+B 初次生成完整提示词：
+
+Use case: stylized-concept
+Asset type: Original standalone horizontal version B handcrafted-art background for a Zaozhuang cultural page, not a website screenshot.
+Creative direction: An imaginative Chinese folk-art image inspired by Fuli earthenware from Zaozhuang: model the visual language itself from warm red clay, dark clay and fingers' hand-formed marks, with incised curves and a little ink wash. A small, clearly illustrated invented pottery vessel and a potter's hands may appear at one edge as part of a fictional craft vignette, not a known historical or museum object. Let the clay surface, wheel-like arcs, uneven firing color and relief-like linework form the composition rather than just pasting an icon on a plain background. Distinct fired-clay terracotta, charcoal and subdued cream; tactility should feel hand-made, painterly and culturally grounded, never a photorealistic product photo.
+Composition: Put most sculpted detail on the upper left and side, with an open softly mottled terracotta/cream field across the mobile-safe center and right, and a largely quiet bottom. Keep text readable using the calm field or a light overlay. Sophisticated visual rhythm, unlike the airy ink A version. Horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration / invented craft scene, not documentary history or a genuine artifact. No identifiable real people, real place, specific ancient object, maps or administrative boundaries. No text, characters, numbers, signature, seal, logo, watermark, QR code, UI or buttons. Do not copy existing artworks or layouts; no panels or collage.
+
+B 初稿转手绘风的完整调整提示词：
+
+Use case: style-transfer
+Asset type: A handcrafted illustrated background for a Zaozhuang cultural page. The supplied image is the edit target.
+Single targeted change: Make the left-hand pottery vignette unmistakably a hand-painted folk illustration / colored woodblock print. Replace the photorealistic hands and pot with clearly drawn brush-and-pigment shapes, simplified natural hand outlines, flat hand-printed clay colors and visible carved-print texture. Preserve the sense of imaginary hands shaping a fictional pot, but remove photographic detail, studio lighting and lifelike object depiction. This is an artistic imagined vignette, never a real artifact or documentary photo.
+Keep the same overall clay-terracotta and charcoal color palette, decorative pottery curves at the upper left, and quiet spacious warm central and right text field. Maintain wide horizontal format.
+Constraints: AI creative illustration / imagined craft, no actual person or historical object; no text, writing, numbers, seals, logos, watermarks, QR codes, maps, boundaries or UI.

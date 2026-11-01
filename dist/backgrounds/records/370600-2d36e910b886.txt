@@ -1,0 +1,31 @@
+《一物见山东》烟台城市背景 A/B 配对及生成记录
+
+素材声明：AI创意插画／想象场景，非真实器物、地理或历史照片；画中房屋、海岸、帆船等均为想象画面，建议网页标注“AI创意插画／想象场景”。
+生成方式：A、B 各自单独调用内置 Image 图片生成工具，未调用付费 API；均为原生 PNG，未裁切或改尺寸；未使用参考图。
+文化依据：[本地路径已省略]/ 。画中编织是抽象艺术联想，不是某件真实作品，也不意味着草编只属于烟台。
+
+A 水墨：烟台-A-海岚墨景.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：3048166 字节
+SHA-256：5CCD7B89EC67812EA932F9954B0CFBBF8AA28B892D7EC837EF72D205D4A4654F
+风格与风险：胶东海岸想象、水墨浓淡与村舍帆影；左侧和下缘较密，中央海面明暗变化，文字及手机裁切需实测。
+
+A 完整提示词：
+
+Use case: stylized-concept
+Asset type: One original standalone wide version A Chinese ink-wash painting background for the Yantai city cultural page; not a website screenshot.
+Creative direction: An imagined Jiaodong coastal scene inspired by Yantai's sea and hills, with a tiny suggestion of a village nestled among distant slopes and a few small sail silhouettes. This is a fictional atmosphere, not a depiction of an identifiable place. Make expressive Chinese brush-and-ink painting unmistakable: layers of diluted ink, wet-on-wet feathering, distinct dry brush, paper grain and confident dark ink accents. Use a cool misty blue-gray palette with restrained warm apricot and ochre. Compose a lively diagonal coastline from the lower left toward the distant upper right, leaving the central and right portions restful enough for text; don't crowd the lower edge. Elegant artistic depth and a coherent imagined story without copying known places.
+Usage: A horizontal 16:9 atmospheric backdrop, clear at desktop size with a calm central area for mobile crops. Highest clear native resolution available.
+Constraints: AI creative illustration / imagined scene, never a documentary photograph or a depiction of a real historical object. No recognizable landmarks, actual historic events, maps or administrative boundaries. No text, characters, numerals, signatures, seals, logos, watermarks, QR codes, UI or buttons. No copied artwork or layouts, no panels or collage.
+
+B 草编融合：烟台-B-莱州草韵.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：3141489 字节
+SHA-256：325CF69C75E7B5CA51D0A5358771277B13DE5E856129224A0206A3810CCB0A48
+风格与风险：以草辫材质构成想象海岸，保留编织与水墨；左侧纤维密、右侧较静但色值变化，移动裁切和文字对比需实测，按需加遮罩。
+
+B 完整提示词：
+
+Use case: stylized-concept
+Asset type: One original standalone wide version B crafted-art background for the Yantai city cultural page; not a website screenshot.
+Creative direction: Create an inventive Chinese handmade visual world inspired by Laizhou straw braiding, a craft documented for Yantai's Laizhou region, and the nearby coastal landscape. Let interlaced golden wheat-straw braids actually construct the flowing contour of a stylized shoreline, hills and tiny imagined houses, mingled with sparse indigo ink-wash shadows. Individual fibers and slightly uneven handmade knots should be visible and convincing as an artistic material, not photorealistic product shots. Add restrained cinnabar and deep marine-blue accents; a warm golden-oat and indigo palette distinct from a cool ink landscape. Do not depict an identifiable real artifact or copy an existing design.
+Composition: Construct the densest braided shoreline in an asymmetric ribbon entering from one side and the upper margin, leaving a spacious quieter tone across the center and the lower right for mobile-safe text. No dense decorative band across the bottom. Rich crafted texture and beautiful Chinese artistic sensibility, not a generic digital pattern. Wide horizontal 16:9; highest clear native resolution available.
+Constraints: AI creative illustration / imagined scene, not a documentary photograph or proof of historical facts. No real landmark, authentic or photorealistic artifact, maps or administrative boundaries. No text, characters, numerals, signatures, seals, logos, watermarks, QR codes, UI or buttons. No copied artwork or layouts, no panels or collage.

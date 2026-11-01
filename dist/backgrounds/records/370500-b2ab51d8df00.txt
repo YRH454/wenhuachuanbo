@@ -1,0 +1,105 @@
+东营 B｜苇经墨纬｜地域背景｜2026-11-01
+AI创意背景／想象场景。非实拍、非特定文物/真实地点/历史场景复原。
+
+实际方式：内置 Image，纯文本新生成，未传任何图片参考、编辑目标或地图模板；transparent_background:false。无CLI/付费API。原生完整输出字节相同复制到项目目录，内置源图保留，无外部裁切、插值、锐化或重采样，不冒称4K。只生成背景画面，不包含UI。
+
+A/B顺序：本张为本市第2张，A先生成并保留，B在A完成后生成。最终最新候选及供页面优先使用版本见AB配对清单，不能仅按文件mtime判断。
+
+实际完整记录：
+{
+  "schemaVersion": 1,
+  "assetId": "dongying-B-reed-fiber-relief-ai-20261101-v1",
+  "assetRole": "city-detail-background",
+  "city": "东营",
+  "cityId": "370500",
+  "variant": "B",
+  "title": "苇经墨纬",
+  "version": "v1",
+  "recordDate": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "generationOrderWithinCity": 2,
+  "generationStartedAtUtc": "2026-11-01T09:57:05.114Z",
+  "generationCompletedAtUtc": "2026-11-01T09:57:47.249Z",
+  "generationTool": "内置 Image",
+  "generationMethod": "built-in-image-text-to-image",
+  "inputImages": [],
+  "transparentBackground": false,
+  "completeNativeImage": true,
+  "externalPostProcessing": false,
+  "existingFilesOverwritten": false,
+  "cliOrPaidApiUsed": false,
+  "native4K": false,
+  "aiLabel": "AI创意背景／想象场景",
+  "path": "[本地路径已省略]/dongying-B-reed-fiber-relief-ai-20261101-v1.png",
+  "originalSourcePath": "[本地路径已省略]/exec-d7ff2725-e015-4db9-9536-e5fc8173d917.png",
+  "width": 1672,
+  "height": 941,
+  "format": "PNG",
+  "bytes": 3461019,
+  "sha256": "9ae24a1f097774e4fdbfe94f064503c1f0b4fd55a039410b2c4e42b41eb13f58",
+  "promptRecordPath": "[本地路径已省略]/dongying-B-reed-fiber-relief-ai-20261101-v1-生成说明与完整提示词.txt",
+  "generationRecordPath": "[本地路径已省略]/dongying-B-reed-fiber-relief-ai-20261101-v1-生成记录.json",
+  "culturalBasis": [
+    {
+      "title": "广饶大码头苇编｜山东宣传网转载大众新闻客户端",
+      "url": "https://www.sdxc.gov.cn/whql/whqlsy/202412/t20241225_15300337.htm",
+      "supports": "东营广饶大码头苇编生活工艺及材料编织线索；不复制报道照片或传承人纹样，不声称此生成构成是现存传统样式。",
+      "accessStatus": "本会话已读取正文2026-11-01"
+    }
+  ],
+  "researchPaths": [
+    "[本地路径已省略]/泰安东营-背景文化线索-A水墨-B工艺融合.md"
+  ],
+  "authorization": {
+    "coordinatorThreadId": "01a12d90-efda-7b82-aa86-24d651aa35c3",
+    "humanRequestVerifiedInCoordinator": true,
+    "date": "2026-11-01",
+    "scope": "只补齐缺失的泰安、东营地域背景；每市先A后B，B为本次最新页面优先候选，完整保留A，不重画已有12市。"
+  },
+  "visualReview": "已亲看完整原图：宽苇纤维弧带与粗细交织集中在中右，天然草金色与深蓝底面形成材料近观，具有可见毛边、上下交错和压叠阴影；B不是A河口水墨换色，也不同于泰安B皮影舞台。左侧中部低对比，少量纤维与赭色擦痕在上下边缘伸入。无可见文字、印章、UI或行政地图。",
+  "placementSuggestions": {
+    "coordinateSystem": "normalized original image, top-left origin",
+    "desktopFocalPoint": {
+      "x": 0.72,
+      "y": 0.5
+    },
+    "mobileFocalPoint": {
+      "x": 0.77,
+      "y": 0.48
+    },
+    "quietReadingArea": {
+      "x": [
+        0.02,
+        0.32
+      ],
+      "y": [
+        0.15,
+        0.78
+      ],
+      "textPreference": "浅色文字，必要时独立深色衬层；需实装验证"
+    },
+    "mobileCaution": "手机可保留中右交织节点作为材料细节，但会自然舍弃部分弧带；这不是一件需完整展出的真实器物照片。",
+    "status": "亲看原图后的建议，不是浏览器/手机已测坐标"
+  },
+  "knownRisks": [
+    "实际低对比阅读区比提示的左42%略窄，顶部/底部有纤维和局部赭色擦痕伸入；建议叠字避开或用独立深衬。",
+    "编织形态是原创新创材料构成，不是对广饶某传承人实物、材料配方或历史工艺的准确复刻。",
+    "手机裁切、正文对比、真实照片叠层和背景加载回退均待实际页面测试。"
+  ],
+  "browserVerified": false,
+  "mobileVerified": false,
+  "publicUseApproved": false,
+  "pairManifestPath": "[本地路径已省略]/AB配对清单-20261101-v1.json",
+  "selectionStatus": "delivered-candidate-final-newest-in-pair-manifest"
+}
+
+实际完整提示词：
+Use case: stylized-concept
+Asset type: ONE independent full-bleed HORIZONTAL 16:9 artwork used as a city cultural-detail webpage background. Highest available native clarity. NOT a webpage mockup, poster, UI, map, collage or comparison sheet.
+No reference image inputs; create an original imagined composition, not a replica of a painting, real cultural object, artisan's work, identifiable real venue or accurate geography.
+Website framing: keep the left 38–42 percent a continuous quiet low-contrast tonal field suitable for later HTML text, with gentle natural material texture, not a white rectangle or card. Integrate the cultural visual around the center-right, where a phone portrait crop can retain one clear connected composition. Details near the extreme edges are decorative, not essential. Text and image panels will be added independently by the website.
+No text of any kind, no calligraphy, pseudo-characters, inscriptions, seals, signatures, numbers, labels, logos, watermark, buttons, panels, frames, border, geographic outlines, administrative divisions or map routes. Do not create a template-shaped blank field. This is AI creative cultural artwork, not a documentary photo or historical reconstruction.
+Primary request: an original Dongying Guangrao reed-weaving-inspired FIBER-RELIEF artwork fused with restrained Chinese pigment-print texture, close and tactile rather than another painted landscape. Natural straw, ochre and warm reed fibers against a deep muted petrol-indigo and charcoal field. The physical over-under plaiting, frayed fibers and soft contact shadows are unmistakably the dominant medium; NOT a watercolor scene or glossy CGI.
+Composition: a few broad handwoven reed bands bend and interlock into an open flowing arc across the center-right around x=0.65,y=0.55, with one readable coarse-and-fine weave intersection. They suggest the rhythm of estuary reeds and currents only through form, never an actual river shape or map. Some bare reed ends at the lower-right edge and small restrained clay-ochre pigment strokes give handmade warmth, without depicting an excavated artifact. No conventional basket product photo, no huge circular frame, no repeated all-over wallpaper.
+Keep the left 42 percent a quiet matte deep-indigo surface with only subtle fibers and extremely faint ink-print variation, suitable for light HTML text. Dense weave stays outside that reading field. Let one loose broad fiber sweep approach the central crop so a portrait phone composition retains recognizable plaiting and calm dark space together. Low-sheen natural materials, large deliberate shapes and sophisticated asymmetry, clear tactile depth. No shadow puppet, no mountain scenery, no figurine, no signs or factual historical tableau. This material fusion is new AI art, not a specific artisan's existing pattern or a claimed traditional combined technique.
+

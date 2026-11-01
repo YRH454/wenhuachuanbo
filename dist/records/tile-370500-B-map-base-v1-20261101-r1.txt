@@ -1,0 +1,137 @@
+东营 B｜苇丝成篮·纤维叠构｜map-base-v1｜2026-11-01 r1
+AI创意插画／想象场景。内部候选，非实拍、馆藏原件、真实作者作品或历史复原。
+
+实际生成方式：
+先以view_image逐张加载并查看本市outline-reference.png与safe-reference.png。唯一传入内置Image的图片为outline-reference.png原文件，参数referenced_image_paths:["[本地路径已省略]/outline-reference.png"]；角色是固定全幅构图参考，不是要复制的轮廓/底色。safe只由助手目视和读取坐标，不传模型，绿圆黄带均不属于画面。不使用网上照片或历史自由方图作为输入。
+内置Image成功返回原图；这里记录实际输入方式，不声称模型理解或逐像素遵守模板。底层模型名称未返回，不猜测。
+工具：内置 Image / image_gen；transparent_background:false。未使用CLI或外部付费API。
+完整原生输出以字节相同方式复制到项目，内置源文件保留；未外部裁切、拉伸、重采样、去背景或锐化。未覆盖旧图。
+本版本仅一次新生成，没有定向编辑；如后续有编辑另发新revision，不覆盖。
+
+实际元数据（含解码尺寸/哈希/模板/实际参考角色/文化依据/状态）：
+{
+  "assetId": "tile-370500-B-map-base-v1-20261101-r1",
+  "cityId": "370500",
+  "city": "东营",
+  "cityKey": "dongying",
+  "variant": "B",
+  "revision": "r1",
+  "title": "苇丝成篮·纤维叠构",
+  "imagePath": "[本地路径已省略]/dongying-template-B-woven-reed-map-base-v1-20261101-r1.png",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "bytes": 3497441,
+  "sha256": "c1e8600fe797e9580250cb05670f7bfb5daa5a07e5aa76fd3d2362e9d5d2a9e7",
+  "templateVersion": "map-base-v1",
+  "templateManifestSha256": "9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e",
+  "cityPathSha256": "539ed03317751e0383cecfdf5f984bfdf412306cb14fef8b67b135ea02518017",
+  "referenceFrame": {
+    "viewBox": [
+      456.86852105263154,
+      109.33992105263158,
+      270.90065789473687,
+      270.90065789473687
+    ],
+    "imageWidth": 1024,
+    "imageHeight": 1024,
+    "visibleMaxSideFraction": 0.76,
+    "placementMode": "template-frame",
+    "x": 456.86852105263154,
+    "y": 109.33992105263158,
+    "width": 270.90065789473687,
+    "height": 270.90065789473687,
+    "note": "方形参考画布由真实bbox推导，原城市比例不变；AI按此模板构图，不是自由方图cover"
+  },
+  "referenceFiles": [
+    {
+      "kind": "outlineReference",
+      "path": "[本地路径已省略]/outline-reference.png",
+      "sha256": "5badb27c93bb40ad6ce7fb472e08ca12f8aad11851bfd12ca688c8044764bf0d",
+      "role": "primary-composition-reference-full-square-frame",
+      "viewedByAssistant": true,
+      "passedToImageTool": true,
+      "toolArgument": "referenced_image_paths"
+    },
+    {
+      "kind": "safeReference",
+      "path": "[本地路径已省略]/safe-reference.png",
+      "sha256": "b288c7e6ac4cf3f77a442a964ab9e0f0f15cd1c0c96d5b693df980794993f168",
+      "role": "assistant-only-safety-coordinate-guide",
+      "viewedByAssistant": true,
+      "passedToImageTool": false
+    }
+  ],
+  "placementRecordPath": "[本地路径已省略]/placement.json",
+  "placementRecordSha256": "c384bd0610661db26557dacc9c07ca2f77fcd5cbae86fca852563f721d61d64e",
+  "baseMapSelectionStatus": "user-confirmed-outline-direction-16-city-candidate-production",
+  "selectedBaseMapPath": "[本地路径已省略]/map-ink.svg",
+  "selectedBaseMapSha256": "9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc",
+  "confirmationRecordPath": "[本地路径已省略]/地图板块规划与协作任务书-v3.md",
+  "confirmationSection": "最新调整：用户确认分拆轮廓，精简为三会话协作",
+  "placementMode": "template-frame",
+  "canvasCorrespondence": "full-reference-frame",
+  "subjectCoreInReference": {
+    "x": 0.5,
+    "y": 0.348
+  },
+  "subjectCoreStatus": "composition-intent-not-mask-verified",
+  "generationTool": "内置 Image",
+  "generationMethod": "new-text-plus-outline-reference",
+  "promptRecordPath": "[本地路径已省略]/dongying-template-B-woven-reed-map-base-v1-20261101-r1-完整提示词与生成记录.txt",
+  "aiLabel": "AI创意插画／想象场景",
+  "culturalBasis": [
+    {
+      "title": "山东宣传网／大众新闻：广饶大码头苇编",
+      "url": "https://www.sdxc.gov.cn/whql/whqlsy/202412/t20241225_15300337.htm",
+      "supports": "东营广饶大码头苇编及篮、筐、包等用品的地域关联；来源说明现代编织材料有所扩展。原创提篮不对应徐尊霞或工坊具体商品，不宣称全为纯苇材、特定工序或历史标准器形。"
+    }
+  ],
+  "imaginedElements": [
+    "原创纤维提篮器形、赭色边缘、纸层水纹和芦影；材料拼接是创意表现，不给具体商品、作者或传统纯料比例背书。",
+    "模型新增日轮和湿地岸线，不是景点地理实录。"
+  ],
+  "knownRisks": [
+    "B提篮实际也超过意图尺寸，篮底约落在全幅y≈0.53附近，下缘和右腹存在裁切风险；不移动/放大frame补救。",
+    "B织纹、芦苇和岸线偏密，手机可能损失篮口/提手区分；材料写实感较强但作为创意插画候选，不标作真实商品照片。",
+    "B另添日轮与湿地布局均为想象，不作为黄河口真实地点、朝向或日出纪录。",
+    "模型使用参考不保证主体逐像素落位；尚待agent5以原SVG/evenodd和固定referenceFrame实际裁切，不得用旧cover/mapFocus/zoom救图。",
+    "尚未完成手机尺度、地名标签遮挡、邻区配色及整省视觉验收；文件到达不代表艺术、行政地图或公开使用许可已通过。"
+  ],
+  "reviewStatus": "delivered-awaiting-template-mask-review",
+  "actualMaskReviewed": false,
+  "availableForInternalTemplateTest": true,
+  "selectedForIntegration": false,
+  "publicUseApproved": false,
+  "native4K": false,
+  "originalSourcePath": "[本地路径已省略]/exec-f5c296b8-2a81-486a-b7cd-72bfadb5cf46.png"
+}
+
+只读区域研究：
+[本地路径已省略]/四城AI文化板块方案.md
+[本地路径已省略]/四城模板草包预审意见.md
+
+原图目视观察：
+宽苇条、包缠提手和赭红篮口具有可见纤维材料感，叠纸湿地与A水墨有媒介区别；篮子仍是主角，没有第二器物。实际篮体更大、更低，芦苇和湿地细节比稀疏要求密；另加想象日轮。画面无可见模板边线/提示色/文字。
+
+文化与想象边界：
+只从文化来源取一般题材、地域和材料线索，不复制来源照片或具体作者作品。新图不继承实拍摄影者署名或许可。来源只支持culturalBasis各项列明范围；器形、装饰、场景与人物均可为原创想象，不给它们编造作者、年代、馆藏或奖项。界面另加AI标识、地名、来源和操作。
+用户确认的是市域分拆轮廓方向，不是全部最终画作或行政地图已审定。确认位置为上述confirmationRecordPath，旧预审中的暂停文字由统筹最新明确恢复/扩城授权覆盖。
+
+固定映射：
+完整实际方图对应referenceFrame全幅含留边。scale=f/实际宽= f/实际高；在固定frame.x/y绘制f×f，再用原global-mask和evenodd裁切。不先裁去留边，不自动cover、mapFocus、zoom、旋转或移动。subjectCoreInReference仅是生成意图，非实测遮罩结论。
+若返回非方形，必须保留实际尺寸并进入映射待核，不拉伸/裁切冒充。
+
+完整实际生成提示词：
+Use case: stylized-concept
+Asset type: ONE finished independent SQUARE 1:1 Chinese cultural artwork, full bleed, maximum available native clarity, made for a fixed city-template reference frame. Not a webpage background, poster, map, diagram, sticker, comparison board or multi-panel collage.
+Input image 1: the city's outline-reference.png, supplied as COMPOSITION REFERENCE ONLY. The ENTIRE square, including outside margins, is the fixed reference canvas. Preserve its full-square coordinate correspondence. Do not tightly crop the silhouette, zoom it, rotate or reframe. The pale silhouette only tells which parts of the painting will later remain visible.
+DO NOT paint the reference silhouette, pale fill, boundary line, blank outside field or any map shape. Instead make a natural complete cultural painting across ALL FOUR EDGES, with the important subject positioned as specified below. The exact administrative edge will be clipped independently by the frontend's original SVG, never by the image model. No green circles, yellow bands, safety markers, outlines, geographic shapes, frames or labels.
+One dominant cultural subject; supporting landscape, objects or people stay secondary. Original imagined scenes, buildings, figures and cultural objects are allowed, but not a real-site photograph, collection object, maker's work or historical reconstruction. Never copy a specific artist's composition or craft object.
+No text of any kind: no Chinese characters, calligraphy, inscriptions, signatures, seals, logos, numbers, watermarks, QR codes, city labels or UI.
+Series family: tangible handmade Chinese art, disciplined large shapes and legible silhouette, visible brush/material, differentiated city palette and arrangement but harmonious neutral fibers. No photorealistic product photography, glossy CGI, generic digital swirls or synthetic gradient wallpaper. Make the artwork fill a square canvas.
+City-specific primary request: Dongying, an ORIGINAL reed-weaving-inspired handled basket, one basket only, with quiet secondary water and reeds. No ceramic vessel, no product label, no flowers in the basket, no people or additional craft hero.
+Composition/framing: Coordinates refer to the ENTIRE square reference, not its silhouette bounding box. This city has a broad upper body and a long narrowing lower extension. Put the entire ONE basket conspicuously in the UPPER THIRD, not the usual middle or bottom of a picture: combined handle+body rectangle approximately x=0.35–0.65, y=0.20–0.46. The recognition core of the open rim, woven body and handle connection is near (0.50,0.348). A distinct arch handle rises above the open bowl, with an easily read empty opening. Keep body largely inside x=0.36–0.63, y=0.32–0.45; approximately 30 percent of full canvas width, not an oversized basket filling 60 percent. Basket mouth and handle must stay together, not separated decorative loops. Woven body is the dominant focus, large enough to read at map scale, not a miniature icon. Sparse reed stems and quiet water-brush curves lead DOWNWARD through the lower frame, not another subject. Natural pale water, fibrous paper and reed-shadow atmosphere fills all four square edges; no blank map-shaped surround. Do not paint a shape resembling the administrative outline. Use a few larger readable material rhythms, not dense tiny weave marks.
+B medium: a clearly handmade craft/material-led illustration, truly different from an ink painting. Visible original cut, carved, layered, modeled or fibrous material is primary, with selective ink contours or washes connecting it to Chinese art. Not a photo, photoreal product mockup or glossy CGI. Keep broad readable shapes instead of relying on tiny decoration.
+Specific medium/palette: materially led handmade fiber-and-paper illustration. The basket is constructed visually from broad, matte, slightly uneven pale reed/tan strips with sparse tactile crossings and a wrapped arch handle, an original woven object illustrated as art. A warm terracotta rim accent and a few muted indigo ink-water strokes distinguish it from A. The open mouth, handle attachment and curved basket belly are visible, with several broad weave cells rather than hundreds of tiny lines. Selective ink shadows connect the physical strips to the quiet water, softly layered cream fibers across the square. Not a realistic photographed commodity, not CGI, not a woven texture wallpaper. Reeds remain just a few narrow supporting forms below.
+

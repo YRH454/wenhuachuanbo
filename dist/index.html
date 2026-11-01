@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="一物见山东：沿着十六城的文化画作，走近山东的山海与手艺。">
+  <title>一物见山东 · 文化地图</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="zibo-guide.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body data-view="map">
+<!-- ZIBO-GUIDE-v1: Local extension, not a new visual world.
+THESIS: The painting leads; a voluntary reading layer explains one craft with sources.
+OWN-WORLD: Existing paper, blue-green ink, fine borders and plain reading typography.
+STORY: Enter Zibo, choose to read three passages, explore five editorial answers, return.
+FIRST VIEWPORT: Unchanged full-screen background; one small entry at lower right.
+FORM: Brief-pinned right reading sheet; native dialog protects keyboard focus.
+FINISH: Bounded desktop/mobile checks, then the coordinator's independent review.
+No generated images, model calls, extra city content or new public release. -->
+<div id="city-background" class="city-background" aria-hidden="true" data-state="home"></div>
+<!-- SURFACE: Experience. The user's selected shanhai painting carries the setting.
+The enlarged, centered same-source map leads; the complete-original city shelf supports.
+Only the shelf moves below the map on narrow screens. No city geometry, frame, or tile
+crop changes. One finite ink-scroll navigation moment, immediate under reduced motion.
+Previous interface and evidence are retained separately; no old PASS is inherited. -->
+<a class="skip" href="#main">跳到地图与城市内容</a>
+<header class="topbar">
+  <a class="identity" href="#/map" aria-label="一物见山东，返回地图">一物见山东</a>
+  <p class="header-line">循一物，见一城。</p>
+  <div class="controls" aria-label="画作风格">
+    <div class="variants" role="group" aria-label="选择画作风格">
+      <button type="button" data-variant="A" aria-pressed="true">水墨</button>
+      <button type="button" data-variant="B" aria-pressed="false">工艺融合</button>
+    </div>
+    <label id="labels-control"><input id="labels-toggle" type="checkbox">市名</label>
+  </div>
+</header>
+<main id="main" tabindex="-1" aria-busy="true">
+  <div id="load-error" class="status paper" hidden>
+    <h1>画作暂时未能载入</h1>
+    <p>请确认本地服务和作品文件，再重新载入。</p>
+    <button id="retry" type="button">重新载入</button>
+  </div>
+  <section id="map-view" class="map-view" aria-labelledby="map-heading" hidden>
+    <h1 id="map-heading" class="sr-only" tabindex="-1">山东十六城文化地图</h1>
+    <figure class="map-figure">
+      <svg id="map" class="map-canvas" viewBox="0 0 1200 880" role="group" aria-label="山东十六市地图，选择市域了解当地文化">
+        <defs id="map-defs"></defs>
+        <g id="city-art" aria-hidden="true"></g>
+        <g id="city-links"></g>
+        <g id="city-labels" aria-hidden="true"></g>
+      </svg>
+      <figcaption id="map-caption">在地图中，选择想走近的城市。</figcaption>
+    </figure>
+    <aside class="art-shelf" aria-labelledby="shelf-title">
+      <div class="shelf-heading"><h2 id="shelf-title">十六城原图</h2><span>点画读城</span></div>
+      <nav id="city-list" class="city-list" aria-label="十六市完整画作与城市入口"></nav>
+    </aside>
+    <div class="map-status">
+      <p id="progress">正在载入十六城画作…</p>
+      <p id="image-status" hidden></p>
+      <button id="retry-images" type="button" hidden>重试画作</button>
+    </div>
+  </section>
+  <section id="city-view" class="city-view" aria-labelledby="city-title" hidden>
+    <h1 id="city-title" class="sr-only" tabindex="-1"></h1>
+    <aside id="zibo-guide-entry" class="zibo-guide-entry" hidden>
+      <button id="zibo-guide-open" type="button" aria-haspopup="dialog" aria-controls="zibo-guide" aria-expanded="false">走近琉璃<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+    </aside>
+    <!-- Reserved content remains hidden until the user supplies the next brief. -->
+    <div class="city-landscape" hidden>
+      <div class="landscape-content">
+        <div class="landscape-top">
+        <a class="back" href="#/map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>返回山东地图</a>
+        <div class="background-feedback"><p id="background-status" role="status" hidden></p><button id="retry-background" type="button" hidden>重试地域背景</button></div>
+        </div>
+      </div>
+    </div>
+    <details id="city-info" class="city-content paper" hidden>
+    <summary><span id="city-panel-title">画作与文化介绍</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></summary>
+    <div class="city-panel-scroll">
+    <div class="city-hero">
+      <figure class="city-artwork">
+        <div class="original-frame"><img id="original-image" alt="" hidden><p id="original-placeholder">正在载入本市画作…</p></div>
+        <figcaption id="original-caption"></figcaption>
+      </figure>
+      <div class="city-intro">
+        <h2 id="culture-title"></h2>
+        <p id="culture-intro"></p>
+        <p id="culture-reading"></p>
+        <a class="source-jump" href="#work-details">作品说明与文化来源<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></a>
+      </div>
+    </div>
+    <p id="city-image-error" class="status" hidden></p>
+    <button id="retry-detail" type="button" hidden>重试本市图片</button>
+    <p id="city-empty" class="status" hidden>本市这一组画作尚未到达。可以切换另一种风格，或返回地图；不会以别市画作替代。</p>
+    <details id="work-details" class="work-details">
+      <summary>作品说明与文化来源</summary>
+      <p id="city-subtitle"></p>
+      <p>画作为AI创意插画／想象场景，并非实景照片、特定馆藏或历史复原。以下文化线索来自生成方交接资料，网页内容与使用权仍需逐条核实。</p>
+      <h2>本市地域背景</h2>
+      <p id="background-description"></p>
+      <dl id="background-details" class="background-details"></dl>
+      <div id="background-links" class="asset-links"></div>
+      <div id="city-record" class="city-record">
+        <section><h2>这件物与这座城</h2><ul id="basis-list"></ul><ul id="imagined-list"></ul></section>
+        <section><h2>画作与版本</h2><dl id="asset-details"></dl><div id="asset-links" class="asset-links"></div></section>
+      </div>
+      <figure class="mask-review"><img id="masked-image" alt="" hidden><figcaption>固定构图框下的原SVG裁切预检，仅作制作比较；未改变市域或原图位置。</figcaption></figure>
+      <h2>制作记录与待核事项</h2>
+      <p>下列为交付时的原记录，不代表当前技术检查结论。技术接收不等于艺术通过。底图未经行政审定，边界、海岛、时效与公开使用条件仍待核。</p>
+      <ul id="risk-list"></ul>
+    </details>
+    </div>
+    </details>
+  </section>
+  <section id="not-found" class="status paper" hidden>
+    <h1 tabindex="-1">未找到这座城市</h1><p>请从地图或十六市原图入口重新选择。</p><a class="back" href="#/map">返回山东地图</a>
+  </section>
+</main>
+<dialog id="zibo-guide" class="zibo-guide" aria-labelledby="zibo-guide-title" aria-describedby="zibo-guide-intro">
+  <header class="zibo-guide-header">
+    <h2 id="zibo-guide-title" tabindex="-1">淄博：炉火里的琉光</h2>
+    <button id="zibo-guide-close" type="button" aria-label="关闭导览，回到画面">关闭<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  </header>
+  <div id="zibo-guide-reading" class="zibo-guide-reading" tabindex="0" role="region" aria-label="淄博琉璃导览正文">
+    <p id="zibo-guide-intro" class="zibo-guide-intro">从受热的料，到有颜色、有线条的形体，走近博山琉璃。</p>
+    <p class="zibo-guide-boundary">背景为AI创意画，不对应已鉴定的真实器物、人物或作坊。</p>
+    <div id="zibo-guide-passages" class="zibo-guide-passages"></div>
+    <section class="zibo-guide-questions" aria-labelledby="zibo-guide-questions-title">
+      <h3 id="zibo-guide-questions-title">导览问答</h3>
+      <p class="zibo-guide-editorial">以下为编辑整理的固定资料解答，未接入模型。</p>
+      <div id="zibo-guide-answers"></div>
+    </section>
+    <section class="zibo-guide-sources" aria-labelledby="zibo-guide-sources-title">
+      <h3 id="zibo-guide-sources-title">资料出处</h3>
+      <ul id="zibo-guide-source-list"></ul>
+      <p>仅链接资料页，不复制新闻照片；单件作品的身份、年代和价格需另有可靠依据。</p>
+    </section>
+  </div>
+  <footer class="zibo-guide-footer"><a id="zibo-guide-map" href="#/map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>返回山东地图</a><span>可按 Esc 收起导览</span></footer>
+</dialog>
+<noscript><p class="status paper">此文化地图需要JavaScript才能切换城市。请启用后重新载入；原始作品与来源记录仍保留在本地项目中。</p></noscript>
+<p id="live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

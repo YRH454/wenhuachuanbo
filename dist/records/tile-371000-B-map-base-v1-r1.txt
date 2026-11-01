@@ -1,0 +1,38 @@
+# 威海模板驱动 A/B 交接 v1
+
+日期：2026-11-01；cityId 371000；仅作内部候选。标注：**AI创意插画／想象场景**。
+
+- A：`威海-A-水墨-v1.png`，1254×1254 PNG，SHA-256 `ca32105ec1bb69bccf209c94edc87bb29159f8a993aa4db99a9e68ca9f3981e4`。
+- B：`威海-B-工艺融合-v1.png`，1254×1254 PNG，SHA-256 `3b0386942d18302b9189faef0586150e54bfd30f748bc9042f4ab4a074dd9094`。
+
+A 为水墨海景与较写实的锡饰茶壶，B 突出锡镶纹理但整体近似写实静物；两版是否足够区分及A的水墨强度需后续审美复核。
+
+## 实际参考与映射
+
+- 两张图各一次内置 Image 调用，均通过 `referenced_image_paths` 实际传入本市轮廓图 `[本地路径已省略]/outline-reference.png`，SHA-256 `35475101065ef5214bff31367213656ec3fa438f2bc7e18f97daeea5043cace3`，只作构图参考，不依赖模型描绘市界。
+- 安全图 `[本地路径已省略]/safe-reference.png`，SHA-256 `56509c9240f0a746a9504a53c940a027be134e878cf2a5f6c821e6d7576deb01`，仅供人工查看、调整提示词，**未传入生图工具**。提示颜色不规定作品配色。
+- 模板 `map-base-v1`；manifest SHA-256 `9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e`；城市 pathD SHA-256 `ffceb11cf30c38c139e838f30bd23c0a3dca33e72947627b42a686ffd473e290`。固定 referenceFrame 对象详见同目录清单，viewBox 为 `[894.2070315789474,175.8601815789474,274.7647368421052,274.7647368421052]`，完整画作对应参考帧全幅，不使用旧cover、mapFocus或zoom。
+- 参考安全核心 `[0.6139999999999998,0.47376411877721236]` 是构图建议，不等于已验证的成图主体坐标；不用于平移图片。两个原图为方形，未裁切、未缩放，供agent5按原SVG/evenodd裁切。
+- 统筹试拼底图 `[本地路径已省略]/map-ink.svg`，SHA-256 `9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc`。用户确认的是拆分轮廓方向，不代表成图审美、行政数据准确性、地图审定或公开许可已确定。
+
+## 文化依据与风险
+
+- [威海日报／齐鲁网：威海锡镶：百年技艺 万物可“锡”](https://sdxw.iqilu.com/share/YS0yMS0xNTAyMTAxNw%3D%3D.html)：支持威海锡镶工艺及器物文化关联，不表明生成茶壶为报道中具体作品。
+
+原创锡镶茶壶、工具、海景和工坊，不对应真实作者、馆藏或具体地点。以下风险仍需实际遮罩检查：
+- 壶把向画面右侧延伸，壶嘴及壶把根部可能被异形边界或凹口切掉，须原SVG实拼。
+- 壶身深色、纹饰较细，小尺寸和城市标签下的识别尚未验证。
+- 标签覆盖、邻区配色、手机尺度尚待原SVG实拼验证。
+- 数据的行政边界、地图审定与公开许可尚待核实。
+
+## 实际完整提示词
+
+### A 水墨
+Use case: stylized-concept. One complete square Weihai cultural artwork for an internal experimental Shandong map. INPUT IMAGE 1 is the actual Weihai outline template used only for spatial composition. The complete square reference including the margins is the complete square output, without crop, zoom, shift, rotation or distortion. Later an exact vector mask cuts the artwork to the referenced shape. Do not draw, trace, preserve or include the geographic outline, flat template fill, margin or city shape. Make a complete seamless full-bleed illustration with texture across all four edges.
+
+The sole main subject is an original imaginary teapot inspired by Weihai tin-inlay craft, with a compact rounded dark clay body and handmade tin-inlaid decoration. Place the pot BODY at normalized full-reference canvas approximately x=0.614, y=0.474, in the broad right-hand interior; a short spout may extend left toward x=0.50 and a compact handle may turn inward toward x=0.73. Keep lid, body, spout root and handle root in the broad interior, not long narrow edge projections. Use a readable big silhouette and a small amount of imaginative, secondary workshop atmosphere, never a table of tiny cups. The teapot and setting are entirely imagined, not a photograph or an existing master's artifact. No city boundary, map silhouette, text, numbers, stamp, seal, labels, watermark, signature, graphic frame or UI. Style A: elegant Chinese ink-and-wash on textured xuan paper, low three-quarter still-life view. Use rich black ink, soft violet-brown washes and pale areas to separate the dark clay body from the delicate tin highlights. Convey concentrated brush marks, atmosphere and restrained handmade quality, not shiny commercial product photography.
+
+### B 工艺融合
+Use case: stylized-concept. One complete square Weihai cultural artwork for an internal experimental Shandong map. INPUT IMAGE 1 is the actual Weihai outline template used only for spatial composition. The complete square reference including the margins is the complete square output, without crop, zoom, shift, rotation or distortion. Later an exact vector mask cuts the artwork to the referenced shape. Do not draw, trace, preserve or include the geographic outline, flat template fill, margin or city shape. Make a complete seamless full-bleed illustration with texture across all four edges.
+
+The sole main subject is an original imaginary teapot inspired by Weihai tin-inlay craft, with a compact rounded dark clay body and handmade tin-inlaid decoration. Place the pot BODY at normalized full-reference canvas approximately x=0.614, y=0.474, in the broad right-hand interior; a short spout may extend left toward x=0.50 and a compact handle may turn inward toward x=0.73. Keep lid, body, spout root and handle root in the broad interior, not long narrow edge projections. Use a readable big silhouette and a small amount of imaginative, secondary workshop atmosphere, never a table of tiny cups. The teapot and setting are entirely imagined, not a photograph or an existing master's artifact. No city boundary, map silhouette, text, numbers, stamp, seal, labels, watermark, signature, graphic frame or UI. Style B: tactile metal-inlay craft rendered artistically, graphite and muted silver hammered/tin-etched highlights on a purple-brown matte clay teapot, visible fine but restrained engraved and inlaid handwork. Restrained asymmetric workshop textures and fibrous paper, broad distinguishable shape. Luxurious but human-made; avoid neon black-gold, chrome CGI, ubiquitous glitter, or copying an existing artwork.

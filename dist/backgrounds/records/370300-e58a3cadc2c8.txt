@@ -1,0 +1,46 @@
+《一物见山东》淄博 A水墨版 v1：窑烟墨韵
+日期：2026-11-01（Asia/Shanghai）
+真实性：AI创意插画／想象场景，非真实器物、真实地理或历史照片。
+文件：[本地路径已省略]/zibo-A-ink-kiln-ai-20261101-v1.png
+实际尺寸：1672 × 941 PNG，约16:9，非严格整数16:9，非4K。
+字节数：2845160
+SHA-256：3C2B7E7DC4FA1D70BD1671B7C192192AF99D48BA148625B0BB769B4937C39ACA
+工具：内置 image_gen，单张原创文生图，无参考图输入。未直接调用外部付费API，未用CLI/API回退；底层模型名称未提供。
+原生输出直接复制，未裁剪、放大或改色；复制哈希一致，旧作均保留。
+视觉：以枯湿墨势表现想象中的窑作聚落、炉火与烟气，灰墨为主体，少量赭墨暖点，不是任何真实窑址或历史场景。
+目视意见：水墨干湿、墨色层次、笔势与虚实已成为本图主要视觉语言，可填补上轮A缺口为水墨候选；不把此判断当作统筹已批准。
+窑房、工匠与器物都是原创想象，服装、建筑和制作姿态不用于断言年代、真实窑址或可核实工序。
+阅读建议：正文优先在右上至中右淡墨留白；左下窑作和墨烟较密，手机裁切应保留上半部低反差区。细字必要时加浅灰承托，未作浏览器实测。
+
+文化资料（先读区域组既有记录；不使用其照片）
+区域资料：[本地路径已省略]/城市内容-原型候选.json
+a3-zibo-01 临淄出土龙耳簋
+文化依据：https://zibo.iqilu.com/zbminsheng/2024/0304/5611203.shtml
+限定：报道将这件龙耳簋与淄博临淄的考古发现联系起来，器物两侧可见龙形把手。具体单件身份与馆藏编号仍待馆方复核。
+a3-zibo-02 孙云毅鸡油黄镌刻鼻烟壶《雅集》
+文化依据：https://wh.zibo.gov.cn/gongkai/channel_c_5f9fa491ab327f36e4c13060_n_1605682651.8111/doc_632291e1281f20b1bc4ee8fe.html
+限定：淄博市文旅局介绍孙云毅创作的鸡油黄镌刻鼻烟壶《雅集》。本条从黄色琉璃与壶面镌刻出发，不把技艺名录等级直接套为单件作品等级。
+a3-zibo-03 雨点釉作品《早雨的钟声》六罐组作
+文化依据：https://wh.zibo.gov.cn/gongkai/channel_c_5f9fa491ab327f36e4c13060_n_1605682651.8111/doc_632291e1281f20b1bc4ee8fe.html
+限定：周祖毅与项丹合作的《早雨的钟声》由六个不同形体的雨点釉陶瓷罐组成。本条为一个组作项目，不把六罐计成六个文化项目。
+淄博文旅原页本轮打开超时；沿用区域组已记录的作品/地方关联，不冒称重新核验了原页内容。
+上述作品仅用于理解地方文化线索，不临摹具体作品、不移用授权待核的照片，文化关联不等于独有文化。
+
+对应B候选（旧图原样保留）
+B图：[本地路径已省略]/zibo-cobalt-amber-ai-20261101-v2.png
+B完整提示词/元数据：[本地路径已省略]/zibo-cobalt-amber-生成说明与提示词-20261101-v2.txt
+B实际尺寸：1672 × 941
+B SHA-256：7EA59835E7AFBC211554868837783A674D47585BEF53BDA63FC83513E552594A
+B风险：旧B深钴蓝和琥珀釉层，正文宜放左中深蓝区用浅字；右下亮纹和手机底部有干扰。中国手作辨识度偏弱、仍有泛用釉纹壁纸风险，保留候选不宣称已审美通过。
+本轮配对清单：[本地路径已省略]/AB配对清单-20261101-v1.json
+网页、手机裁切、真实文案及对比度尚未测试，A/B应各自使用不同阅读区域与字色。背景不得阻塞中央真实照片地图。
+
+完整生成提示词（本A实际调用）
+Use case: stylized-concept
+Asset type: ONE standalone horizontal 16:9 artistic background for a Chinese city cultural webpage; maximum available native clarity, full bleed. Not a webpage screenshot, not a comparison board, no multiple panels.
+Creative boundary: original imagined scenes, villagers, artisans, architecture, kites and ordinary craft objects MAY be depicted artistically when they enrich the composition. They are NOT a specific real place, a museum collection object, a historical reconstruction or documentary photography. Clearly illustrated, never presented as evidence. Do not reproduce a particular artist's known work or copy reference imagery. No map or invented administrative boundary.
+Background use: compose rich handmade detail away from a naturally quiet reading area, without drawing blank rectangles, cards or UI. Keep a usable calm area within the central vertical mobile-crop strip; exact crop and foreground text will be tested later by the frontend.
+No text, characters, calligraphy, inscriptions, signatures, seals, watermarks, logos, QR code, labels, numbers or UI. No photographic rendering, glossy CGI, generic digital wallpaper or smooth synthetic gradients. The only output is the artwork.
+A-version medium requirement: Chinese ink painting must be the unmistakable PRIMARY visual language. Show expressive brush pressure, dry-brush flying-white strokes, wet ink blooming into paper, a convincing range from dense black through five ink tones to faint washes, and meaningful empty space. Restrained color ink is allowed. Do NOT substitute watercolor-only mineral puddles, cut-paper outlines, print texture or a shiny material study for ink brushwork. Do not copy a historical painting.
+City: Zibo. Paint a cultured, original ink evocation of a ceramic-and-glass craft settlement, using the user's verified local glass and rain-spotted glaze traditions only as a loose cultural starting point. An IMAGINED low kiln/workshop cluster and two tiny loosely brushed artisan figures sit near the lower-left edge, never a real kiln site or identified people. Broad lively charcoal-ink sweeps, rising smoky wet washes and a few dry broken strokes make a diagonal rhythm from that lower-left cluster toward the upper-left. A very small diluted warm-ochre kiln-light accent breathes through the ink; no literal dramatic flames, no shiny blue glass pools. A few irregular quiet ink dots may echo rain-glaze rhythm, but hand brushwork stays dominant. The broad RIGHT and upper-central field should be pale cool grey paper haze, naturally spacious for dark text, with only faint receding ink wash. Palette: rich soot black, ash grey, a touch of blue-grey ink, and extremely sparse umber/ochre. No mountain panorama, no blue-green landscape template, no gold-veined texture, no photoreal pottery product. Painterly imaginary objects or village forms are welcome, but not a reconstruction of a named vessel, artist's work or historical event. This A must be immediately distinguishable from the existing dark cobalt/amber glaze-material B.
+

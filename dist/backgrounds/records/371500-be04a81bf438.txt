@@ -1,0 +1,27 @@
+《一物见山东》聊城城市背景 A/B 对应及 B 版生成说明
+
+素材声明：AI创意插画，非真实器物/地理。素材为抽象创作，不应当作实景、真实器物或历史事实的照片。建议页面标注“AI创意插画”。
+
+A：现有水墨山水风候选《运水葫纹》
+文件：[本地路径已省略]/聊城-运水葫纹.png
+实际尺寸：1672 × 941 像素，PNG（近似 16:9，非严格 16:9）
+SHA-256：3BC52CB32CC16FF62C2A71C90215B9C050B1995583B5751DD73CD8F1039744FD
+完整提示词与生成过程：[本地路径已省略]/聊城-运水葫纹-生成说明与提示词.txt
+A 版说明：水墨山水与版画结合，版刻成分较明显；按本轮要求作为 A 候选配对，是否满足严格的纯水墨标准仍须审美验收。
+
+B：手作融合版《运河刻韵》
+文件：[本地路径已省略]/聊城-B-运河刻韵.png
+实际尺寸：1672 × 941 像素，PNG，24 位 RGB（近似 16:9，非严格 16:9）
+大小：3,616,253 字节
+SHA-256：FA354C8F0D2910D3BCAA4101E24B9301E50C81507081114029ACF917775F6FAF
+生成方式：以文本提示词单独调用内置 Image 图片生成工具；未调用付费 API；没有输入参考图片；原生图片未裁切或改尺寸。
+设计：东昌葫芦刻纹的抽象刀痕与运河水线融合，蜂蜜琥珀、棕褐和少量深墨绿构图；并非实物或历史作品。
+可读性风险：左中暖色区域较安静，可尝试深色文字，但实际对比度仍须测试；顶部和右侧纹饰密集，手机裁切后可能挤占文字空间，必要时加局部遮罩。A 版下缘也较繁复。
+
+B 版完整生成提示词（原文）：
+
+Use case: stylized-concept
+Asset type: One original horizontal city cultural-page background, version B, art only and not a website screenshot.
+Creative idea: Liaocheng's canal currents interpreted through the abstract incised pattern language and warm shell-like material of Dongchang gourd carving, optionally softened by a little ink wash. Make the craft medium the foundation: broad, gently curving bands of canal water emerge from fine, hand-gouged lines, delicate scraped and incised botanical curls, and warm matte gourd-shell-like grain. The channels, curls and double-curved decorative rhythms should flow into one another as a continuous surface, not be a small icon pasted on a generic landscape. A rich honey-amber, tobacco, warm umber and restrained ink-black palette, with tiny touches of muted jade if useful. The result should feel like an original handmade Chinese decorative print and carved surface, with fine irregular tool marks and quiet cultural depth.
+Composition: A long, elegant diagonal river-like sweep crosses the upper right and flows along one edge; the opposing left-center offers an uncluttered warm matte tonal field suitable for later dark text or a gentle overlay. Make the mobile-center crop readable and keep the bottom airy rather than filling it with decoration. Asymmetrical and visually different in color and construction from an indigo fishing-net textile image; not a conventional mountains-and-waves composition. Wide horizontal 16:9, highest clear native resolution available.
+Constraints: Imaginative AI-created illustration only, not a photograph or historical representation. Do not depict actual carved gourds, identifiable artifacts, ancient inscriptions, known historical works or photorealistic fake objects; craft is suggested only by abstract carved surface and pattern. No identifiable real-world place, geographic outline, map or boundaries. No text, characters, numerals, seals, logos, watermarks, QR codes, buttons or user interface. No existing images, copied layouts, panels or collage.

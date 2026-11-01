@@ -1,0 +1,46 @@
+《一物见山东》菏泽 A水墨版 v1：牡丹疏影
+日期：2026-11-01（Asia/Shanghai）
+真实性：AI创意插画／想象场景，非真实器物、真实地理或历史照片。
+文件：[本地路径已省略]/heze-A-ink-peony-ai-20261101-v1.png
+实际尺寸：1672 × 941 PNG，约16:9，非严格整数16:9，非4K。
+字节数：2508909
+SHA-256：BAD07E2CA961C68A6547CCEED71CCEF1D60BF334FF0C506EC7D0E70E72C24497
+工具：内置 image_gen，单张原创文生图，无参考图输入。未直接调用外部付费API，未用CLI/API回退；底层模型名称未提供。
+原生输出直接复制，未裁剪、放大或改色；复制哈希一致，旧作均保留。
+视觉：以淡紫灰与浓淡墨绘写意牡丹，右侧枝势和花叶虚实为主，保留左中阅读场，区别于旧红紫纸刻/织物B。
+目视意见：水墨干湿、墨色层次、笔势与虚实已成为本图主要视觉语言，可填补上轮A缺口为水墨候选；不把此判断当作统筹已批准。
+牡丹花形、枝叶及远景为原创写意想象，不指认花卉品种或菏泽实际地貌；写意改编不等于复刻巨野工笔非遗技法。
+阅读建议：正文优先左上至中左浅墨空场；右侧花枝与下缘浓墨不压密集小字。手机可略偏左裁切，未作浏览器实测。
+
+文化资料（先读区域组既有记录；不使用其照片）
+区域资料：[本地路径已省略]/城市内容-原型候选.json
+a6-heze-01 曹州面塑（黄色“花语小仙子”）
+文化依据：https://m.thepaper.cn/newsDetail_forward_32940387
+限定：菏泽日报社报道介绍了李斌创作的“花语小仙子”面塑系列，作品融入牡丹元素。配图为其中的黄色单件，属于当代工艺创作而非古代文物。
+a6-heze-02 鲁锦织造技艺（共享文化）
+文化依据：https://www.ihchina.cn/project_details/14489
+限定：鲁锦以彩色棉线经纬交织形成纹样，流传于菏泽、济宁及周边，鄄城是代表地区之一。配图织物的逐件作者、制作地和拍摄地未核。
+a6-heze-03 曹县草柳编
+文化依据：https://news.iqilu.com/shandong/yuanchuang/2022/0509/5128564.shtml
+限定：齐鲁网报道介绍了曹县魏湾镇的草柳编加工与传承实践。配图为编织手部近景，不能据此确认单件器物的材料或作者。
+补充文字来源：山东宣传网“跟着央视开启山东沿黄非遗之旅” https://www.sdxc.gov.cn/sy/xcdt/202403/t20240330_13915649.htm ，其菏泽段介绍牡丹绘画关联。只读取文字、不复制图片。
+上述作品仅用于理解地方文化线索，不临摹具体作品、不移用授权待核的照片，文化关联不等于独有文化。
+
+对应B候选（旧图原样保留）
+B图：[本地路径已省略]/heze-carmine-cut-silk-ai-20261101-v2.png
+B完整提示词/元数据：[本地路径已省略]/heze-carmine-cut-silk-生成说明与提示词-20261101-v2.txt
+B实际尺寸：1672 × 941
+B SHA-256：AB8335714F654AA54B5C9FAD868E0DC4645B9B04B0C41C7ACAEC00CD06D44689
+B风险：旧B胭脂/绛紫牡丹与织物肌理，正文宜放右上浅粉区用深字；浓红花面抢字、手机偏右裁切需实测。不是某件真实剪纸或织物复刻。
+本轮配对清单：[本地路径已省略]/AB配对清单-20261101-v1.json
+网页、手机裁切、真实文案及对比度尚未测试，A/B应各自使用不同阅读区域与字色。背景不得阻塞中央真实照片地图。
+
+完整生成提示词（本A实际调用）
+Use case: stylized-concept
+Asset type: ONE standalone horizontal 16:9 artistic background for a Chinese city cultural webpage; maximum available native clarity, full bleed. Not a webpage screenshot, not a comparison board, no multiple panels.
+Creative boundary: original imagined scenes, villagers, artisans, architecture, kites and ordinary craft objects MAY be depicted artistically when they enrich the composition. They are NOT a specific real place, a museum collection object, a historical reconstruction or documentary photography. Clearly illustrated, never presented as evidence. Do not reproduce a particular artist's known work or copy reference imagery. No map or invented administrative boundary.
+Background use: compose rich handmade detail away from a naturally quiet reading area, without drawing blank rectangles, cards or UI. Keep a usable calm area within the central vertical mobile-crop strip; exact crop and foreground text will be tested later by the frontend.
+No text, characters, calligraphy, inscriptions, signatures, seals, watermarks, logos, QR code, labels, numbers or UI. No photographic rendering, glossy CGI, generic digital wallpaper or smooth synthetic gradients. The only output is the artwork.
+A-version medium requirement: Chinese ink painting must be the unmistakable PRIMARY visual language. Show expressive brush pressure, dry-brush flying-white strokes, wet ink blooming into paper, a convincing range from dense black through five ink tones to faint washes, and meaningful empty space. Restrained color ink is allowed. Do NOT substitute watercolor-only mineral puddles, cut-paper outlines, print texture or a shiny material study for ink brushwork. Do not copy a historical painting.
+City: Heze. Paint a genuinely freehand Chinese ink peony composition, not a paper-cut flower, textile print, realistic botanical plate or a known historical painting. One powerful but airy branch enters from the UPPER-RIGHT, bends downward along the right edge and releases two loose peony blooms and expressive leaves toward the lower-right. Petals are formed by changing brush pressure, soft wet edges, broken ink, and overlapping pale-grey/pale-lilac washes, with a few dense black leaf strokes and delicate dry stems. Their rhythm must feel spontaneous, varied and alive, not evenly outlined or symmetrical. Leave the LEFT and central-left field broadly open with faint cool paper tone and almost imperceptible washed ink; a little petal mist can reach the bottom of the central phone-crop strip, but its middle remains readable. Palette: black ink, cool pearl-grey, very restrained lavender/mauve ink and almost white paper; no carmine floral wall, no decorative stamp, no antique beige parchment. The cultural cue is the user's Heze peony art context; this is an original imagined floral painting, not an exact local cultivar, actual collection object or specific artist's work. Fine layers of ink value, strong empty-space design and true brush energy. Different orientation and medium from the existing left-heavy red/plum cut-silk B.
+

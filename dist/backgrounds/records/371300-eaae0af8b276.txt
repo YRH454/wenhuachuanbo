@@ -1,0 +1,39 @@
+《一物见山东》临沂城市背景 A/B 配对及生成记录
+
+素材声明：AI创意插画／想象场景，非真实器物、地理或历史照片。山水、人物、房屋、鸟形玩具与纹样均为想象创作，不代表具体历史作品或真实人物；建议展示时标注“AI创意插画／想象场景”。
+生成方式：A、B 分别使用内置 Image 工具生成；B 初稿又用内置工具调整成更明显的手绘民间木版风格。未调用付费 API；交付图为原生 PNG，未裁切或改尺寸。
+文化依据：[本地路径已省略]/ 。仅为艺术启发，不复现具体作品，也不声称虚构玩具纹样为传统原样。
+
+A 水墨：临沂-A-沂水柳烟.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：2860101 字节
+SHA-256：00AFBA24D125B300429D5D61BD127F32EE49288D72A4F61656EC99F23D913BB9
+风险：柳枝上方较密、房舍靠右缘；移动端裁切可能失去场景，文字对比需实测。
+
+A 完整提示词：
+
+Use case: stylized-concept
+Asset type: Original standalone horizontal version A Chinese ink-wash painting background for a Linyi cultural page, not a website screenshot.
+Creative direction: An imagined Yimeng foothill river scene with the graceful drooping branches of willow, drawing atmospheric inspiration from Linyi's landscape and Linshu willow-weaving tradition, without depicting a real village or a specific artifact. Suggest a small fictional riverside dwelling or distant person beneath willow branches at one edge. Make Chinese brush-and-ink expression primary: confident willow brushstrokes, ink diffusion, dry-brush textures, varied dark-to-pale ink tones and layered washes on xuan paper. Use restrained moss green, ink-black and a hint of warm ivory, not a blue maritime or terracotta kiln scene.
+Composition: A few gestural willow branches descend from an upper edge, with a light river winding toward distant ink hills. Leave the central mobile-safe crop visually calm and sufficiently open for later dark text, with details intentionally away from the busiest reading area and no solid crowded band along the bottom. Original, atmospheric and elegant. Horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration / imagined scene, not a real place, history or genuine artifact. No identifiable landmark, map, boundary, text, characters, numbers, signature, seal, logo, watermark, QR code, UI or buttons. Do not copy existing artworks or layouts; no panels or collage.
+
+B 木旋玩具灵感融合：临沂-B-木旋童韵.png
+尺寸：1672 × 941 像素（约16:9，非严格16:9）；大小：3240876 字节
+SHA-256：72A02F5C515183A202B5499F398C43E601E1CFE97A006932808045A7A3954575
+风险：鸟形玩具和纹样为虚构图案，不代表实际历史作品；左中深底可尝试浅字，但局部木纹色值变化、手机裁切和文字对比需实测。
+
+B 初次生成完整提示词：
+
+Use case: stylized-concept
+Asset type: Original standalone horizontal version B handcrafted-art background for a Linyi cultural page, not a website screenshot.
+Creative direction: Invent a sophisticated Chinese folk-art composition inspired by Tancheng's wood-turned toy tradition, documented in Linyi. Let the language of hand-turned wood shape the whole composition: concentric lathe-cut woodgrain rings, carved curved silhouettes, hand-painted cinnabar and ochre pigment, and visible imperfect brush marks on warm wood. At one edge include a small whimsical imaginary painted wooden bird or toy form, clearly illustrated and not a real historical object or copy of an existing toy. Build a coherent original hand-printed / carved-wood artistic scene with muted cinnabar, warm honey-yellow, deep ink-blue and walnut-brown. It should look distinctly handmade and graphic, not a photorealistic product picture or generic gradient wallpaper.
+Composition: A playful asymmetrical arc of woodgrain and painted carved forms enters from the upper right, fading into a calm low-contrast warm or dark field across the center and left for readable text and mobile cropping. Keep the lower edge spacious. Make it visually and materially different from the moss-green ink landscape A. Horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration / imagined toy, not an authentic artifact, real historical fact or documentary photo. No identifiable real person or place, maps or boundaries. No text, characters, numbers, signature, seal, logo, watermark, QR code, UI or buttons. Do not copy existing artworks or layouts; no panels or collage.
+
+B 初稿转手绘风的完整调整提示词：
+
+Use case: style-transfer
+Asset type: An original handcrafted illustrated background for a Linyi cultural page. The supplied image is the edit target.
+Single targeted change: Render the bird and curved wood-turned shapes unmistakably as a flat, hand-painted Chinese folk woodblock illustration, with visible printed outlines, hand-applied matte cinnabar and ochre pigments and intentional stylized shapes. The bird is an imaginary drawn toy, never an actual historical object. Remove photorealistic carved-product photography, 3D studio shadows and lifelike object rendering.
+Keep the broad asymmetrical composition, woodgrain-inspired circular rhythms, deep ink-blue and warm wood color palette, and quiet dark central reading space. Maintain wide horizontal format.
+Constraints: AI creative illustration / imagined toy, not an authentic artifact, real historical fact or documentary photograph. No real people, real places, maps, boundaries, text, numbers, seals, logos, watermarks, QR codes or UI.

@@ -1,0 +1,39 @@
+# 临沂模板驱动 A/B 交接 v1
+
+日期：2026-11-01；cityId 371300；仅作内部候选。标注：**AI创意插画／想象场景**。
+
+- A：`临沂-A-水墨-v1.png`，1254×1254 PNG，SHA-256 `b84017120a2afbf22a02e02fd13a750482446cbf2bed1412eb33187ff16f4878`。
+- B：`临沂-B-工艺融合-v1.png`，1254×1254 PNG，SHA-256 `892c8d4590fff698820ab81d346a73d7d9f1db2e1d00852ba28d9a2b06dadc68`。
+
+A为木鸟与彩墨工坊，B强调彩绘木纹和旋木结构；鸟身较大并向画面边缘展开。
+
+## 实际参考与映射
+
+- 两张图各一次内置 Image 调用，均通过 `referenced_image_paths` 实际传入本市轮廓图 `[本地路径已省略]/outline-reference.png`，SHA-256 `ae66d3438b05a363fe0617bd0a173ffeb774f0072574f5605099681642dcfdea`，只作构图参考，不依赖模型描绘市界。
+- 安全图 `[本地路径已省略]/safe-reference.png`，SHA-256 `55cb26ecd84784af465c6fee4d2bbbf9a15681b66ad503baf915daf504d7d9ae`，仅供人工查看、调整提示词，**未传入生图工具**。提示颜色不规定作品配色。
+- 模板 `map-base-v1`；manifest SHA-256 `9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e`；城市 pathD SHA-256 `fd6d7bfaeb78ad238ebcc25b463c925655f9a9cfb61ad6c6814a3567c3662a25`。固定 referenceFrame 对象详见同目录清单，viewBox 为 `[335.0967447368421,422.15069473684207,405.91171052631574,405.91171052631574]`，完整画作对应参考帧全幅，不使用旧cover、mapFocus或zoom。
+- 参考安全核心 `[0.41050014311512534,0.4619999999999999]` 是构图建议，不等于已验证的成图主体坐标；不用于平移图片。两个原图为方形，未裁切、未缩放，供agent5按原SVG/evenodd裁切。
+- 统筹试拼底图 `[本地路径已省略]/map-ink.svg`，SHA-256 `9df0ab368debc86e6f36e39c161de2d691e03075cc21fe8db34f07118ec4c3fc`。用户确认的是拆分轮廓方向，不代表成图审美、行政数据准确性、地图审定或公开许可已确定。
+
+## 文化依据与风险
+
+- [中国非遗网：传统玩具（郯城木旋玩具）](https://www.ihchina.cn/project_details/14253/)：支持郯城木旋玩具的项目及其地域文化背景，不证明生成木鸟是具体传承人作品。
+- [中国非遗网：临沭柳编](https://www.ihchina.cn/project_details/23724.html)：B版织物辅助的文化线索，木旋与柳编是不同工艺。
+
+原创木旋鸟、木轮、工坊和辅助编织纹样，不对应具体作者或真实场所。以下风险仍需实际遮罩检查：
+- 鸟嘴、双翼、轮轴和车轮可能被市域凹边切开，需以原SVG核查主体连贯性。
+- A主角偏写实质感，水墨表现主要在背景，需与B的材质区别一起审美复核。
+- 标签覆盖、邻区配色、手机尺度尚待原SVG实拼验证。
+- 数据的行政边界、地图审定与公开许可尚待核实。
+
+## 实际完整提示词
+
+### A 水墨
+Use case: stylized-concept. One complete square Linyi cultural artwork for an internal experimental Shandong map. INPUT IMAGE 1 is the actual Linyi template, provided only as a spatial composition reference. The entire square reference including margins maps to the entire output square with no crop, zoom, shift or rotation; the application will use an exact independent vector mask later. Do not trace, draw, retain or imitate the irregular city outline, flat template fill, margin or map. Make a full-bleed square artwork with natural texture continuing to all edges.
+
+Create a single original imaginative bird-shaped hand-turned wooden toy inspired by Tancheng wood-turned toy making, with a plump recognizable bird body, circular turned-wood parts and lively painted details. The bird body and face are the identity core, located near x=0.4105, y=0.462 in the full reference frame, inside the broad left-central interior. Its wings and short beak may extend naturally, but don't depend on a long thin tail or spindle in outer notches to communicate the main idea; do not reduce the subject to a tiny badge. A few imaginary wooden wheels, twig / woven arcs or a quiet workshop may be subordinate. The toy and scene are newly imagined, not a specific artisan's work, historical object, real location or photograph. No geographic border or map-shaped patch, no text, digits, labels, seal, signature, watermark, frame or UI. Style A: expressive Chinese ink and colored wash on visible paper, poetic simplified contours with playful vermilion and indigo accents, hand-painted marks and soft atmospheric brushwork, keeping the rounded wooden bird as the clear hero. Not an all-blue landscape.
+
+### B 工艺融合
+Use case: stylized-concept. One complete square Linyi cultural artwork for an internal experimental Shandong map. INPUT IMAGE 1 is the actual Linyi template, provided only as a spatial composition reference. The entire square reference including margins maps to the entire output square with no crop, zoom, shift or rotation; the application will use an exact independent vector mask later. Do not trace, draw, retain or imitate the irregular city outline, flat template fill, margin or map. Make a full-bleed square artwork with natural texture continuing to all edges.
+
+Create a single original imaginative bird-shaped hand-turned wooden toy inspired by Tancheng wood-turned toy making, with a plump recognizable bird body, circular turned-wood parts and lively painted details. The bird body and face are the identity core, located near x=0.4105, y=0.462 in the full reference frame, inside the broad left-central interior. Its wings and short beak may extend naturally, but don't depend on a long thin tail or spindle in outer notches to communicate the main idea; do not reduce the subject to a tiny badge. A few imaginary wooden wheels, twig / woven arcs or a quiet workshop may be subordinate. The toy and scene are newly imagined, not a specific artisan's work, historical object, real location or photograph. No geographic border or map-shaped patch, no text, digits, labels, seal, signature, watermark, frame or UI. Style B: cheerful, beautifully crafted turned and painted wood, visible warm wood grain, circular tool marks, folk hand-painted vermilion, ochre, leaf-green and indigo, subtle paper-print and woven-line background details. Strong handcrafted material character, lively large forms and no glossy plastic or generic 3D product render.

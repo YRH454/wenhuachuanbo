@@ -1,0 +1,27 @@
+《一物见山东》日照城市背景 A/B 对应及 B 版生成说明
+
+素材声明：AI创意插画，非真实器物/地理。素材为抽象创作，不应当作实景、真实器物或历史事实的照片。建议页面标注“AI创意插画”。
+
+A：现有水墨山水风候选《海光网韵》
+文件：[本地路径已省略]/日照-海光网韵.png
+实际尺寸：1672 × 941 像素，PNG（近似 16:9，非严格 16:9）
+SHA-256：93D2BB569F2B7F9E7D1627CF2AC0B3D361E6A446155881BCC22444729EB78DD7
+完整提示词与生成过程：[本地路径已省略]/日照-海光网韵-生成说明与提示词.txt
+A 版说明：水墨山水与版画结合，版刻成分较明显；按本轮要求作为 A 候选配对，是否满足严格的纯水墨标准仍须审美验收。
+
+B：手作融合版《渔网版织》
+文件：[本地路径已省略]/日照-B-渔网版织.png
+实际尺寸：1672 × 941 像素，PNG，24 位 RGB（近似 16:9，非严格 16:9）
+大小：4,218,504 字节
+SHA-256：4091D33DCB882282BC512147DC1F74B95CD8FE051B718058DA9777BA866E9D35
+生成方式：以文本提示词单独调用内置 Image 图片生成工具；未调用付费 API；没有输入参考图片；原生图片未裁切或改尺寸。
+设计：海浪版刻结合抽象渔网和织物肌理，以靛蓝、米色和少量锈红表现；不描绘真实文物或具体地点。
+可读性风险：深蓝区域可考虑浅色文字；左侧及左下纹理较密，手机裁切可能把纹理带入文字区，须在实际页面检查并按需加局部遮罩。A 版下缘也较繁复。
+
+B 版完整生成提示词（原文）：
+
+Use case: stylized-concept
+Asset type: One original horizontal city cultural-page background, version B, art only and not a website screenshot.
+Creative idea: Rizhao's sea and fishing-net rhythms reimagined primarily through Chinese handmade relief printmaking and woven fibers, with restrained ink-wash accents. Make the craft medium the foundation, not merely a decorative icon: interlock the geometry of coarse net knots, woven warp and weft, and hand-cut ocean-current marks so that they become one organic flowing composition. Deep natural indigo and weathered marine blue on visible raw-fiber textile, with sparing warm rust-red thread and pale flax. Surface evidence should feel handmade: irregular carved grooves, imperfect ink transfer, subtle textile fibers and honest tactile variation. This is an original artistic interpretation, not a reproduction of any known craft or object.
+Composition: A dramatic asymmetrical woven-net-and-wave structure enters from the left edge and the upper left, then dissolves gradually into a quiet, mid-to-deep indigo fabric field on the right and in the center. Keep the central mobile-safe crop and a generous text area calm enough for later light-colored type or an unobtrusive overlay. Keep the bottom edge open, not packed with waves or ornament. Rich, restrained and sophisticated, unmistakably handcrafted rather than a generic digital ocean wallpaper; do not repeat a traditional paper landscape composition. Wide horizontal 16:9, highest clear native resolution available.
+Constraints: Imaginative AI-created illustration only, not a photograph or a historical representation. No historical claims or real or fake photorealistic artifacts. No actual fishing equipment displayed as a product, no identifiable real-world place, no geographic outline, map or boundaries. No text, characters, numerals, seals, logos, watermarks, QR codes, buttons or user interface. No existing images, copied layouts, panels or collage.

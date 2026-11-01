@@ -1,0 +1,66 @@
+《一物见山东》潍坊 B融合版修正版 v2：套色风骨
+日期：2026-11-01（Asia/Shanghai）
+类别：B = 其他艺术形式/工艺融合版
+状态：经过一次针对性内置图像编辑修正的交付候选，仍需统筹视觉验收和前端实测。
+真实性标识：AI创意插画，非真实器物/地理
+
+原生交付图片
+绝对路径：[本地路径已省略]/weifang-B-color-woodcut-ai-20261101-v2.png
+实际尺寸：1672 × 941 像素；PNG；约16:9，非严格整数16:9，非4K。
+字节数：2749733
+SHA-256：3AFE71885E1D6D0B391204696776DCC4283C6D8A1742A9FBF0D4C0870C3FE72D
+文件直接复制编辑工具原生输出，未后续裁剪、改色或增采样，保存副本与生成输出哈希一致。
+
+生成过程与旧稿保留
+工具：Codex 内置 image_gen。流程：一次原创文生图得到B首稿，再一次内置图像编辑移除不需要的虚构场景与完整器物形状。
+没有直接调用外部付费API，没有使用CLI/API回退，没有写网页代码；具体底层模型工具未提供，不推测。
+文生图首稿完整保留：[本地路径已省略]/weifang-B-color-woodcut-ai-20261101-v1.png
+首稿提示词与未通过原因：[本地路径已省略]/weifang-B-color-woodcut-生成说明与提示词-20261101-v1.txt
+编辑调用的参考图片输入：[本地路径已省略]/weifang-B-color-woodcut-ai-20261101-v1.png
+无外部图片输入，未照搬某一具体风筝、年画或历史作品。
+修正版目视检查：虚构村落、建筑、山野和完整小风筝形状已移除；右缘保留的只是被裁切、夸张的弧线/版刻色面，不是某件真实器物。无文字、印章、水印、地图或UI。
+旧A、首稿和旧提示词均未被覆盖或删除。
+
+与本城市现有A候选配对
+A图片：[本地路径已省略]/weifang-wind-print-ai-20261101-v1.png
+A完整提示词：[本地路径已省略]/生成说明与提示词-20261101-v1.txt
+A原生尺寸：1672 × 941
+A SHA-256：3029893D7F0AF61CAA5922C1FFAC8F98E697D07F26EF8E8DC7573969AB86C704
+A资格保留意见：旧A有淡墨远山，但主图已混合较多版刻/套色纹样，水墨主导性偏弱。本轮按任务沿用为“彩墨A候选”参与比较，不能把“已配对”说成“纯水墨已通过”。
+本B以朱红/藤黄/黑线和右侧上扬的刀版节奏区别于浅纸青绿的旧A。
+
+文化依据与艺术转译
+技法文字参考：国家图书馆《中国记忆》“杨家埠木版年画” https://memory.nlc.cn/topic/resource/194
+仅依据其线版/色版和手工套印流程的文字信息理解艺术结构。没有下载、复制、描摹或输入该页面图片；配色、弧线和色块是原创设计，不宣称某件杨家埠历史作品的复刻。
+“手工版画/套色”在此描述AI图像的视觉语言，不代表实物经过人工雕版印刷。
+
+阅读与手机裁切风险
+优先在左上至中左较平静的藤黄/杏黄区域使用深墨色文字，避开右侧高反差黑红版纹和下沿风线。
+底色较鲜亮，长文时可能显得活跃；建议前端使用同色浅透承托层或独立阅读卡，不要把整张图简单降透明度而失去印色特征。
+手机宜保留左中阅读区，避免向右裁切使黑红纹样占满背景。小屏中央裁切会损失部分右侧手工细节，需由前端按真实文案检查。
+未进行浏览器、手机裁切或文字对比度实测。本文件建议不是已验收结论。
+展示时请在图外注明“AI创意插画，非真实器物/地理”。
+
+完整提示词链
+
+第一步：文生图首稿实际提示词
+Use case: stylized-concept
+Asset type: ONE original standalone cultural city-detail background illustration, B = craft-led fusion version, not a webpage mockup. One full-bleed 16:9 landscape image at maximum available native clarity. Never a contact sheet, comparison board, split screen or multi-panel picture.
+Primary objective: visibly Chinese handmade artistic expression grounded in the user's local cultural motifs. Make craft-specific marks, the way colors are printed and the spatial rhythm do the work; do not produce a generic digital wallpaper, smooth gradient, shiny CGI, stock vector pattern, or the same pale blue-green mountains recolored. This must differ in composition, palette and medium from the city's existing airy ink-wash candidate.
+Reading use: naturally integrate a spacious low-frequency reading area rather than a visible rectangular blank panel. Preserve a calm part of the central mobile-crop strip (x=35%-65%, y=15%-65%); no dense high-contrast motifs in its upper reading area. Let characteristic handmade detail survive near its lower edge so a center-cropped phone view still has identity. Foreground text and controls will be supplied separately.
+Hard exclusions: no text, Chinese characters, letters, numbers, calligraphy, inscriptions, carved writing, signatures, seals, logos, watermarks, QR codes, UI, frames, maps, administrative boundaries or cartographic silhouettes. No people, literal monuments, historical scenes, actual historical artifact reconstruction, archaeological objects, photographed craft products or specific real artwork. Do not copy any website or existing image. This is visibly AI-creative illustration, not a real artifact, geography or historical record.
+City: Weifang.
+Primary request: an original contemporary hand-pulled multi-block color woodcut composition inspired by the LINE-BLOCK / COLOR-BLOCK separation and hand-registration process of Yangjiabu New Year prints, combined with abstract kite-string tension and kite-rib rhythms. Borrow a craft principle, never reproduce a known historic print, named motif or identifiable historic kite.
+Palette and ground: confident vermilion red, warm golden saffron-yellow, carbon-black linework, small deep leaf-green and muted aubergine accents. The main quiet ground is a warm muted apricot/saffron printed field, NOT an ivory blank sheet. Rich folk-print colors in a sophisticated limited palette, with visible ink absorption, occasional slight color misregistration and purposeful imperfect cut edges. No blue-green landscape, teal waves, antique parchment, gradients, neon or glossy surfaces.
+Composition: a bold asymmetrical VERTICAL, rising arc of abstract rib-like fan shapes and sweeping taut lines lives mainly along the RIGHT third and lower-right. It should feel like wind lifting hand-cut color forms, with clearly cut thick-and-thin black contours and a few inventive leaf/cloud-like carved countershapes. These are new abstract decorative forms, not a complete kite object, dragon, deity, mascot, artifact or traditional print copied from a reference. Let a few restrained curved lines cross near the lower edge. Keep the upper-left, left-middle and upper part of the central mobile-crop strip mostly quiet warm apricot color, suitable for dark ink typography. Do not make a symmetric border, evenly repeated folk-art wallpaper, two matching corner clusters or a centered blank paper clearing.
+Craft specificity: a strong black key block, imperfect but intentional registration of a handful of flat color layers, tiny gouge traces and ink pressure variations. A little pale ink-wash dissolution may soften selected outer edges, but the woodcut should remain the dominant medium. The artistic identity is warm, rhythmic and graphic, emphatically distinct from Jinan's cool horizontal stone-rubbing and from Weifang's previous pale mountain-and-ribbon candidate.
+
+第二步：针对首稿的实际图像编辑提示词
+Use case: precise-object-edit
+Edit target: the supplied Weifang B draft, a saffron/vermilion hand-pulled woodcut-inspired background.
+Make ONE targeted correction: remove the unintended representational scenery and complete craft-object depictions, so the artwork becomes entirely abstract printed wind/rib ornament.
+Specifically remove ALL village scenery, buildings, rooftops, trees, fields, boats, skyline, hills and any depicted geographic place from the lower-left and lower-middle. Replace those areas naturally with the same warm apricot/saffron hand-printed ground and a few spare broken gouge marks / sweeping abstract ink strokes near the bottom, keeping them quiet enough for reading.
+Remove every small complete standalone kite shape. Where necessary dissolve them into partial asymmetrical cut-color fragments and open curved lines with no closed kite silhouette. The large right-edge color structure should remain as cropped ABSTRACT woodcut arcs, fans and layered cut-color planes, without recognizable whole kites or objects.
+Preserve all essential strengths of the target: its 16:9 single-image framing, warm apricot/saffron ground, vermilion and carbon-black key-block character, small dark green/aubergine accents, asymmetric rising energy on the RIGHT, intentional hand-ink irregularities, fine gouge traces and slight color registration offsets. Retain the spacious quiet upper-left and central reading area. Do not turn it into blue-green mountains, white paper, a flat vector placeholder, a shiny render or a generic gradient wallpaper. Do not add motifs, scenes, characters, or new objects.
+No text, writing, letters, numbers, calligraphy, signature, seal, logo, watermark, UI, map, diagram, actual historical artifact or copied historic artwork. It must remain visibly AI-creative original handcraft-style illustration, not a print document, geography or factual record.
+

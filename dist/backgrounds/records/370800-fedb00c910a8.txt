@@ -1,0 +1,21 @@
+《一物见山东》济宁 A 水墨版与 B 候选配对
+
+A：济宁-A-运水墨痕.png
+图像尺寸：1672 × 941 像素，PNG，约 16:9（非严格 16:9）
+大小：2,688,410 字节
+SHA-256：DD6544F5D73C0C7D5588F6A5A07C2136810E7D5060F74C3C0149CA1178272368
+生成方式：内置 Image 工具根据下列提示词独立生成；未调用付费 API，未使用参考图片、未裁切或改尺寸。
+素材属性：AI创意插画，非真实器物/地理，不代表真实地点或历史文物；建议展示时标注“AI创意插画”。
+文化选题依据：[本地路径已省略]/扩展调研.md（碑刻相关资料）；水线与笔墨是艺术联想，不是具体碑刻或地理图像。
+配对 B 候选：[本地路径已省略]/济宁-玄石运痕-新版.png
+B 说明及完整提示词：[本地路径已省略]/济宁背景-生成说明与完整提示词.txt
+B 版本尚待审美验收：深色石材刀痕明显，但运河及济宁地域辨识度偏弱，不应称已完全通过。
+可读性与风险：A 右侧和中部可尝试深色文字；左侧山石笔触较密。A 的运河/碑刻地方线索也比较抽象，视觉验收和移动端裁切、对比度均需实测。
+
+A 版完整提示词：
+
+Use case: stylized-concept
+Asset type: A single original horizontal version A Chinese ink-wash painting background for a Jining cultural page, artwork only, not a webpage.
+Creative direction: A contemplative, highly expressive Chinese ink-wash interpretation of a canal and the tactile idea of stone rubbing. Use genuine visible brushwork and ink dilution as the central medium: layered washes from soft pale gray to rich charcoal, wet feathering, dry-brush breaks, rhythmic brush contours and warm-gray xuan paper. Suggest a meandering waterway with minimal washes and a few earthy-brown accents; small groups of abstract short brush marks may evoke carved stone without forming writing. Asymmetrical composition with a quiet, breathable reading area across the middle and center mobile crop. Keep the lower edge light and spare. The result should be a Chinese ink painting with depth and brush dynamics, not a block print, a photorealistic stone surface or a generic digital wallpaper. Different mood and palette from a blue maritime image.
+Usage: Dedicated website background with space for later text; suitable for mobile crops; wide horizontal 16:9, highest clear native resolution available.
+Constraints: AI creative illustration, not documentary geography, a real cultural artifact or a historical image. No identifiable real monument or historic object, inscription, calligraphy, text, numerals, seals, logos, watermarks, QR codes, maps, borders, UI or buttons. No copying existing artwork, website images or layouts; no panels or collage.
