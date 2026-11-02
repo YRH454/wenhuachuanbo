@@ -42,7 +42,11 @@ def main() -> None:
     if not (DIST / "index.html").is_file():
         raise SystemExit("Expected a repository-local dist directory")
     changed_records = 0
-    for path in DIST.rglob("*.txt"):
+    # Guides retain their source/provenance records as Markdown; those records
+    # may also contain absolute paths on the machine where artwork was made.
+    record_paths = list(DIST.rglob("*.txt"))
+    record_paths.extend((DIST / "guides").glob("*/records/*.md"))
+    for path in record_paths:
         original = path.read_text(encoding="utf-8-sig")
         redacted = clean_string(original)
         if redacted != original:
@@ -62,7 +66,39 @@ def main() -> None:
                     city.setdefault("originalRecordSha256", city["recordSha256"])
                     city["recordSha256"] = digest
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
-    print(f"Sanitized {changed_records} record files and two manifests; image files unchanged.")
+    # The city guide records carry their own content digest. Recompute it for
+    # the redacted repository copy while preserving the source-record digest.
+    for path in (DIST / "guides").glob("*/*.json"):
+        data = clean_value(json.loads(path.read_text(encoding="utf-8-sig")))
+        for media in data.get("media", []):
+            if not isinstance(media, dict) or not media.get("record") or not media.get("recordSha256"):
+                continue
+            record = (path.parent / media["record"]).resolve()
+            if not record.is_relative_to(path.parent.resolve()) or not record.is_file():
+                raise ValueError("Missing or unsafe city guide record")
+            digest = hashlib.sha256(record.read_bytes()).hexdigest()
+            if digest != media["recordSha256"]:
+                media.setdefault("originalRecordSha256", media["recordSha256"])
+                media["recordSha256"] = digest
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+
+    # A public repository must not serve portraits explicitly marked for
+    # internal review with no public-reuse permission. Their source images
+    # remain in the private workspace; the public snapshot uses missing state.
+    omitted_portraits = 0
+    for path in (DIST / "people-culture-v1" / "data").glob("*.json"):
+        data = clean_value(json.loads(path.read_text(encoding="utf-8-sig")))
+        changed = False
+        for person in data.get("people", []):
+            portrait = person.get("portrait", {})
+            if portrait.get("kind") == "candidate" and portrait.get("publicReuse") is False:
+                portrait["kind"] = "missing"
+                portrait["src"] = None
+                changed = True
+                omitted_portraits += 1
+        if changed:
+            path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    print(f"Sanitized {changed_records} record files, manifests and guide record hashes; omitted {omitted_portraits} unapproved portrait references.")
 
 
 if __name__ == "__main__":

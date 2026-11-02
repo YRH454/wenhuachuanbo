@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371000",
+  "objectId": "wh-object-seagrass-house",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Edit the supplied original AI illustration of a fictional Rongcheng coastal seagrass house. Return ONE wide horizontal 3:2 cultural editorial illustration, preserving the hand-painted watercolor/gouache mood, quiet coastline, low stone courtyard wall and non-photographic treatment, but substantially CORRECT THE HOUSE FORM. Replace the old compact four-sided hipped golden thatch cottage with an invented LONG RECTANGULAR single-story stone-walled house viewed from a clear three-quarter angle. Give it a visibly long straight roof ridge, two substantial steep sloping main roof planes meeting along that ridge, and a clearly visible TRIANGULAR STONE GABLE at one short end. Its roof should be thick and softly piled, weathered SEAGRASS in grey-white, muted grey-brown and soft silver-grey, not neat bright-yellow grain straw or a mushroom-like four-pitch roof. The illustrated gable and ridge must be genuinely legible and the building must remain complete near the center of the canvas; use a few simple unmarked doors or windows. This is one imaginative design based on broad documented coastal-building traits, not a claim that all local houses have identical forms, not an architectural survey, construction plan, real village or specific heritage building. Do not reproduce any source photograph, exact house, identifiable site or layout. No people, words, place names, signage, brands, captions, stamps, logos, watermark, frame or collage. Keep the picture original and clearly an AI-created illustration.",
+  "startedAt": "2026-11-02T11:39:15.958+08:00",
+  "finishedAt": "2026-11-02T11:39:58.564+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 cultural editorial illustration inspired by the coastal seagrass-roof houses of Rongcheng, Shandong. Depict one invented, complete small coastal dwelling with a very thick, softly textured dark golden-brown layered seagrass-thatched roof, generous deep rounded eaves, simple muted stone walls and a tiny unmarked door, in a simple windswept seaside setting. The roof is the most immediately legible feature; keep the whole house compact and centered so the full roof and house are visible in a narrow center crop. Use a tasteful contemporary hand-painted gouache and watercolor style, soft blue-grey sea, warm straw ochre and natural stone. This is a fictional cultural illustration, not a picture of a specific house, actual village, architectural heritage building, inn, documented place or construction instruction; do not imitate a particular photograph or artist. No people, signage, place names, writing, logos, seal, watermark, photo collage, panels or UI. One coherent original imaginative image.",
+      "startedAt": "2026-11-02T10:54:02.233+08:00",
+      "finishedAt": "2026-11-02T10:54:30.066+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Edit the supplied original AI illustration of a fictional Rongcheng coastal seagrass house. Return ONE wide horizontal 3:2 cultural editorial illustration, preserving the hand-painted watercolor/gouache mood, quiet coastline, low stone courtyard wall and non-photographic treatment, but substantially CORRECT THE HOUSE FORM. Replace the old compact four-sided hipped golden thatch cottage with an invented LONG RECTANGULAR single-story stone-walled house viewed from a clear three-quarter angle. Give it a visibly long straight roof ridge, two substantial steep sloping main roof planes meeting along that ridge, and a clearly visible TRIANGULAR STONE GABLE at one short end. Its roof should be thick and softly piled, weathered SEAGRASS in grey-white, muted grey-brown and soft silver-grey, not neat bright-yellow grain straw or a mushroom-like four-pitch roof. The illustrated gable and ridge must be genuinely legible and the building must remain complete near the center of the canvas; use a few simple unmarked doors or windows. This is one imaginative design based on broad documented coastal-building traits, not a claim that all local houses have identical forms, not an architectural survey, construction plan, real village or specific heritage building. Do not reproduce any source photograph, exact house, identifiable site or layout. No people, words, place names, signage, brands, captions, stamps, logos, watermark, frame or collage. Keep the picture original and clearly an AI-created illustration.",
+      "startedAt": "2026-11-02T11:39:15.958+08:00",
+      "finishedAt": "2026-11-02T11:39:58.564+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组已撤回AI初稿，定向编辑输入",
+          "sha256": "2c2312f7764951e9bed1af115c48dcb01584c9867d8905d2329287bdd0ef3235"
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3479756,
+  "sha256": "9ba487292547327a440a222caaef2b0617a713afbe5cfb462fa2b4ae4b51dbe8",
+  "sourceRecordSha256": "5c0ba8d2ec1531c2f801de9b1ea0221c3f54948b45aa3339c03e940b55351582",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

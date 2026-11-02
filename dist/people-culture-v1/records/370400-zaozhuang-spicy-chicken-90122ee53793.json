@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370400",
+  "objectId": "zaozhuang-spicy-chicken",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an interactive expanding panel about Zaozhuang spicy chicken, Shandong.\n\nCreate an imagined local-food still life, inspired by a dish of tender chicken pieces and fresh green and red peppers in a glossy, warmly colored savory sauce. Use one simple ceramic serving bowl, with the chicken and fresh peppers recognizable as food. This is a fictional interpretation, not a particular restaurant's dish, exact recipe, real meal or cooking scene; do not make it a Sichuan-style mound of dry chilies. No preparation sequence.\nComposition: a compact plate or shallow bowl centered in a wide landscape composition; focus the food in the central 30–35% so an interactive panel's narrow central crop retains the key color and texture, with breathing room in the full image. Render as expressive Chinese brush-and-gouache illustration with textured paper, warm earthenware, deep red, green pepper, ochre and dark brown. Inviting and local in tone, visually distinct from an elegant pale formal banquet.\nConstraints: no people, hands, chefs, stove, kitchen, shop, brand, signboard, recipe, text, Chinese characters, numerals, logo, signature, seal, watermark, frame or user interface. Fictional cultural illustration only; not an exact representation of ingredients or a particular local preparation.",
+  "startedAt": "2026-11-02T10:15:21.309+08:00",
+  "finishedAt": "2026-11-02T10:15:49.812+08:00",
+  "width": 1774,
+  "height": 887,
+  "sha256": "90122ee537939b0bb9db97d451a8d1a0cb4283ecf8b1635a563775cb62a167c0",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

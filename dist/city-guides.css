@@ -1,0 +1,219 @@
+/* Registered city topics; explicit Yantai/Taian entry labels. Never Zibo or map geometry. */
+:is(#city-entry-370600,#city-entry-370900) .cg-entry-note{display:block;font-size:12px;line-height:1.6;color:var(--muted)}
+@font-face{font-family:"City Display";src:url("fonts/city-display-v1.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+body[data-view=city][data-city-guide]{height:auto;min-height:100svh;overflow:visible;display:block}
+body[data-view=city][data-city-guide] #main{display:block;min-height:100svh}
+body[data-view=city][data-city-guide] .city-view{height:auto;min-height:100svh}
+.cg-scene{position:relative;height:100svh;height:100dvh}
+.cg-scene-back{position:absolute;left:clamp(20px,3.5vw,56px);top:clamp(20px,3.5vh,36px);display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:7px 14px;background:#f7f6f0;color:#173e48;text-decoration:none;font-size:14px}
+.cg-scene-open{position:absolute;left:50%;bottom:max(36px,env(safe-area-inset-bottom));transform:translateX(-50%);max-width:calc(100% - 40px);min-width:min(230px,calc(100% - 40px));min-height:94px;padding:12px 24px;display:grid;justify-items:center;gap:3px;background:#f7f6f0;color:#173e48;border:0;border-radius:0}
+.cg-scene-open span{font-family:"City Display","Songti SC",SimSun,serif;font-size:22px;line-height:1.5}
+.cg-scene-open small{font-size:12px;line-height:1.5;color:#45616a}
+.cg-scene-open:disabled{cursor:wait}
+.cg-scene-open:hover,.cg-scene-back:hover{background:#e5ece6}
+.cg-scene-caption{position:absolute;left:clamp(20px,3.5vw,56px);bottom:20px;font-size:12px;background:#f7f6f0;color:#173e48;padding:3px 8px}
+#city-guide-host svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.cg-topic{--cg-paper:#fbfbf8;--cg-ink:#173e48;--cg-muted:#45616a;--cg-accent:#204c57;--cg-rule:#ced8d3;position:relative;z-index:2;min-height:100svh;background:var(--cg-paper);color:var(--cg-ink);font-size:18px;line-height:1.9;scrollbar-color:var(--cg-muted) var(--cg-paper)}
+.cg-topic ::selection{background:var(--cg-ink);color:var(--cg-paper)}
+.cg-topic a{color:var(--cg-accent);overflow-wrap:anywhere}
+.cg-topic button{color:var(--cg-accent);background:transparent;border:0;border-radius:0}
+.cg-topic :is(a,button,summary,h2,h3):focus-visible{outline:3px solid var(--cg-accent);outline-offset:5px}
+.cg-topic :is(a,button,summary):hover{text-decoration:underline;text-underline-offset:6px}
+.cg-topic h2,.cg-topic h3,.cg-brand{font-family:"City Display","Songti SC",SimSun,serif;font-weight:400}
+.cg-topic h2{font-size:clamp(34px,4vw,54px);line-height:1.4;text-wrap:balance}
+.cg-topic h2>span:first-child{display:inline-block;max-width:100%}
+.cg-title-variant{display:inline-block;font-size:.82em;max-width:100%}
+.cg-topic h3{font-size:29px;line-height:1.5;text-wrap:balance}
+.cg-bar{position:sticky;top:0;z-index:5;background:var(--cg-paper);border-bottom:1px solid var(--cg-rule)}
+.cg-bar-inner{width:min(1200px,calc(100% - 80px));margin:auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.cg-brand{font-size:28px;text-decoration:none;white-space:nowrap}
+.cg-actions{display:flex;align-items:center;gap:28px}
+.cg-actions a,.cg-text-button{display:inline-flex;align-items:center;gap:7px;min-height:44px;font-size:14px;line-height:1.5;white-space:nowrap;text-decoration:none}
+.cg-text-button{padding:6px 2px}
+.cg-inner{width:min(1120px,calc(100% - 96px));margin:auto}
+.cg-heading{padding:60px 0 40px;text-align:center}
+.cg-location{font-size:14px;color:var(--cg-muted);margin-top:16px;line-height:1.8}
+.cg-intro{max-width:68ch;margin:20px auto 0}
+.cg-citations{font-size:13px;line-height:1.9;color:var(--cg-muted);margin-top:18px}
+.cg-citations a{display:inline-block;padding-block:4px}
+.cg-chapters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding-block:6px;border-block:1px solid var(--cg-rule)}
+.cg-chapters button{font-size:15px;line-height:1.7;min-height:48px;padding:8px 4px;max-width:100%;text-wrap:balance}
+.cg-passage{padding-block:46px;border-bottom:1px solid var(--cg-rule);scroll-margin-top:100px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px}
+.cg-passage-body{max-width:72ch;min-width:0;overflow-wrap:anywhere}
+.cg-passage-body>p+p{margin-top:18px}
+.cg-archive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:0 0 16px;font-size:15px;line-height:1.9;font-variant-numeric:tabular-nums}
+.cg-archive>div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:10px;padding:14px 0;border-bottom:1px solid var(--cg-rule);min-width:0}
+.cg-archive dt{color:var(--cg-muted)}
+.cg-archive dd{margin:0;overflow-wrap:anywhere}
+.cg-questions,.cg-sources{padding-block:44px;scroll-margin-top:100px}
+.cg-editorial{font-size:14px;color:var(--cg-muted);margin:12px 0 20px;line-height:1.9}
+.cg-question{border-top:1px solid var(--cg-rule)}
+.cg-question:last-child{border-bottom:1px solid var(--cg-rule)}
+.cg-question summary{list-style:none;cursor:pointer;min-height:64px;padding:16px 0;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:17px;line-height:1.8}
+.cg-question summary::-webkit-details-marker{display:none}
+.cg-question summary::marker{content:""}
+.cg-question summary::after{content:"";flex-shrink:0;width:8px;height:8px;margin-inline:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
+.cg-question[open] summary::after{transform:rotate(225deg)}
+.cg-answer{max-width:72ch;padding-bottom:24px;font-size:17px;line-height:1.9}
+.cg-sources{border-top:1px solid var(--cg-rule)}
+.cg-sources ul{padding-left:22px;font-size:16px;margin-top:20px}
+.cg-sources li{margin-block:18px}
+.cg-sources a{display:inline-block;padding-block:5px}
+.cg-source-scope{font-size:13px;line-height:1.9;color:var(--cg-muted);max-width:80ch}
+.cg-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:88px;border-top:1px solid var(--cg-rule);font-size:13px;color:var(--cg-muted)}
+.cg-media{margin-block:28px}
+.cg-media img{display:block;max-width:100%;height:auto}
+.cg-media figcaption,.cg-material figcaption{font-size:12px;line-height:1.8;color:var(--cg-muted);padding-top:7px}
+.cg-material{min-width:0;text-align:left;margin:0;align-self:center}
+.cg-art-frame{position:relative;width:100%;aspect-ratio:var(--cg-image-ratio)}
+.cg-art-frame img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.cg-art-frame img[hidden]{display:none}
+.cg-art-error:not([hidden]){position:absolute;inset:0;display:grid;place-content:center;padding:24px;font-size:15px;text-align:center;border:1px solid var(--cg-rule);color:var(--cg-muted)}
+/* Body illustrations retain their own native proportions at every breakpoint. */
+.cg-topic[data-layout=archive][data-has-body-art] .cg-heading{display:grid;grid-template-columns:1fr 1fr;gap:24px 56px;text-align:left;align-items:center}
+.cg-topic[data-layout=archive] .cg-identity{grid-column:1;grid-row:1}
+.cg-topic[data-layout=archive] .cg-intro{grid-column:1;grid-row:2;margin:0}
+.cg-topic[data-layout=archive] .cg-material{grid-column:2;grid-row:1/3}
+/* Archive identity opens at full reading width before the narrow title/body columns. */
+.cg-topic[data-layout=archive] .cg-passage:first-child{display:block}
+.cg-topic[data-layout=archive] .cg-passage:first-child h3{margin-bottom:28px}
+.cg-topic[data-layout=archive] .cg-passage:first-child .cg-passage-body{max-width:none}
+.cg-topic[data-layout=archive] .cg-passage:first-child .cg-passage-body>p{max-width:72ch}
+/* Woven: broad horizontal opening, a real image-material band and offset measures. */
+.cg-topic[data-layout=woven] .cg-heading{display:grid;grid-template-columns:1.05fr 1fr;align-items:end;gap:28px 56px;text-align:left;padding-block:66px 36px}
+.cg-topic[data-layout=woven] .cg-intro{margin:0;max-width:52ch}
+.cg-topic[data-layout=woven] .cg-material{grid-column:1/-1;margin-top:8px}
+.cg-topic[data-layout=woven] .cg-material{width:min(100%,840px)}
+.cg-topic[data-layout=woven] .cg-chapters{justify-content:flex-start;gap:12px 36px}
+.cg-topic[data-layout=woven] .cg-passage{display:block;padding-block:52px}
+.cg-topic[data-layout=woven] .cg-passage h3{max-width:22em;margin-bottom:28px}
+.cg-topic[data-layout=woven] .cg-passage-body{max-width:70ch}
+.cg-topic[data-layout=woven] .cg-passage:nth-child(2) .cg-passage-body{margin-left:18%}
+.cg-topic[data-layout=woven] .cg-passage:nth-child(3) .cg-passage-body{margin-left:8%}
+.cg-topic[data-layout=woven] .cg-archive{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;margin-bottom:26px;max-width:none}
+.cg-topic[data-layout=woven] .cg-archive>div{display:block;padding-block:17px}
+.cg-topic[data-layout=woven] .cg-archive dd{margin-top:8px}
+/* Folio: an illustrated opening opposite the identity; long passages read as pages. */
+.cg-topic[data-layout=folio] .cg-heading{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:24px 56px;text-align:left;align-items:center;padding-block:64px 44px}
+.cg-topic[data-layout=folio] .cg-identity{grid-column:2;grid-row:1}
+.cg-topic[data-layout=folio] .cg-intro{grid-column:2;grid-row:2;margin:0}
+.cg-topic[data-layout=folio] .cg-material{grid-column:1;grid-row:1/3;align-self:center}
+.cg-topic[data-layout=folio] .cg-chapters{justify-content:flex-start}
+.cg-topic[data-layout=folio] .cg-passage{display:block;padding-block:52px}
+.cg-topic[data-layout=folio] .cg-passage h3{max-width:25em;margin-bottom:26px}
+.cg-topic[data-layout=folio] .cg-passage-body{margin-left:16%;max-width:68ch}
+.cg-topic[data-layout=folio] .cg-archive{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:26px}
+.cg-topic[data-layout=folio] .cg-heading:not([data-has-art]){display:block}
+.cg-topic[data-layout=folio] .cg-heading:not([data-has-art]) .cg-intro{margin-top:20px}
+/* Regional composition, not theme recolors. Mobile keeps a shared reading order. */
+@media(min-width:701px){
+  .cg-topic[data-signature=jinan-spring-folio] .cg-heading{grid-template-columns:1.2fr .8fr;gap:32px 72px}
+  .cg-topic[data-signature=jinan-spring-folio] .cg-identity{grid-column:1;grid-row:1}
+  .cg-topic[data-signature=jinan-spring-folio] .cg-intro{grid-column:1;grid-row:2}
+  .cg-topic[data-signature=jinan-spring-folio] .cg-material{grid-column:2;grid-row:1/3}
+  .cg-topic[data-signature=jinan-spring-folio] .cg-passage:nth-child(2){padding-block:76px}
+  .cg-topic[data-signature=qingdao-shell-sea-folio] .cg-heading{grid-template-columns:.7fr 1.3fr}
+  .cg-topic[data-signature=qingdao-shell-sea-folio] .cg-heading{grid-template-columns:1.05fr .95fr}
+  .cg-topic[data-signature=qingdao-shell-sea-folio] .cg-passage:last-child .cg-passage-body{margin-left:4%;max-width:72ch}
+  .cg-topic[data-signature=zaozhuang-fuli-clay-archive] .cg-passage:last-child{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);padding-block:72px}
+  .cg-topic[data-signature=dongying-reed-weave] .cg-passage:first-child .cg-passage-body{max-width:none}
+  .cg-topic[data-signature=dongying-reed-weave] .cg-passage:first-child .cg-passage-body>p{max-width:70ch}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-heading{grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:32px;align-items:start}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-identity{grid-column:1;grid-row:1}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-intro{grid-column:2;grid-row:1}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-material{grid-column:2;grid-row:2;margin:0;width:100%}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-passage:first-child .cg-passage-body{max-width:none}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-passage:nth-child(2) .cg-passage-body{margin-left:0;max-width:72ch}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-passage:nth-child(3) .cg-passage-body{margin-left:26%;max-width:60ch}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-passage h3{color:var(--cg-accent)}
+  .cg-topic[data-signature=weifang-clay-print-archive][data-has-body-art] .cg-heading{grid-template-columns:.8fr 1.2fr;gap:24px 48px}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-identity{grid-column:1/-1;grid-row:1}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-intro{grid-column:1;grid-row:2}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-material{grid-column:2;grid-row:2}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-passage:nth-child(2){grid-template-columns:280px minmax(0,1fr);gap:48px}
+  .cg-topic[data-signature=jining-nishan-inkstone-folio] .cg-identity{grid-column:1/-1;grid-row:1}
+  .cg-topic[data-signature=jining-nishan-inkstone-folio] .cg-intro{grid-column:2;grid-row:2}
+  .cg-topic[data-signature=jining-nishan-inkstone-folio] .cg-material{grid-column:1;grid-row:2}
+  .cg-topic[data-signature=jining-nishan-inkstone-folio] .cg-passage{display:grid;grid-template-columns:220px minmax(0,1fr);gap:56px;padding-block:64px}
+  .cg-topic[data-signature=jining-nishan-inkstone-folio] .cg-passage-body{margin-left:0}
+  .cg-topic[data-signature=taian-shadow-stage-notes] .cg-passage:nth-child(2){display:block;padding-block:68px}
+  .cg-topic[data-signature=taian-shadow-stage-notes][data-has-body-art] .cg-heading{grid-template-columns:.9fr 1.1fr}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-material{grid-column:1;grid-row:1/3}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-identity{grid-column:2;grid-row:1}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-intro{grid-column:2;grid-row:2}
+  .cg-topic[data-signature=taian-shadow-stage-notes] .cg-passage:nth-child(2) h3{margin-bottom:28px}
+  .cg-topic[data-signature=taian-shadow-stage-notes] .cg-passage:nth-child(2) .cg-passage-body{margin-left:18%}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-passage:nth-child(2){display:block;padding-block:64px}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-passage:nth-child(2) h3{margin-bottom:28px}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-passage:nth-child(2) .cg-passage-body{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-passage:nth-child(2) .cg-passage-body>p{margin-top:0}
+  .cg-topic[data-signature=weihai-tin-clay-archive] .cg-passage:nth-child(2) .cg-citations{grid-column:1/-1}
+  .cg-topic[data-signature=rizhao-black-pottery-dark-folio] .cg-heading{grid-template-columns:1fr 1fr;gap:28px 72px}
+  .cg-topic[data-signature=rizhao-black-pottery-dark-folio] .cg-passage:nth-child(2) .cg-passage-body{max-width:52ch;margin-left:30%}
+  .cg-topic[data-signature=rizhao-black-pottery-dark-folio] .cg-passage:last-child .cg-passage-body{max-width:72ch;margin-left:0}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-heading{grid-template-columns:1.1fr .9fr;align-items:start}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-identity{grid-column:1;grid-row:1/3}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-intro{grid-column:2;grid-row:1}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-material{grid-column:2;grid-row:2;margin:0}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-passage:first-child .cg-passage-body{max-width:none}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-passage:first-child .cg-passage-body>p{max-width:72ch}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-passage:nth-child(2) .cg-passage-body{margin-left:0;max-width:72ch}
+  .cg-topic[data-signature=linyi-turned-wood-bright-woven] .cg-passage:nth-child(3) .cg-passage-body{margin-left:30%;max-width:62ch}
+  .cg-topic[data-signature=dezhou-taste-vessel] .cg-passage:nth-child(2){grid-template-columns:280px minmax(0,1fr);gap:56px;padding-block:72px}
+  .cg-topic[data-signature=dezhou-taste-vessel][data-has-body-art] .cg-heading{grid-template-columns:1.1fr .9fr}
+  .cg-topic[data-signature=liaocheng-canal-incision] .cg-passage:last-child .cg-passage-body{margin-left:8%;max-width:72ch}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-heading{grid-template-columns:1fr 1.4fr;align-items:center}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-identity{grid-column:1;grid-row:1}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-intro{grid-column:2;grid-row:1/3}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-material{grid-column:1;grid-row:2;margin:0;max-width:none;width:100%}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-passage:first-child .cg-passage-body{max-width:none}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-passage:first-child .cg-passage-body>p{max-width:68ch}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-passage:nth-child(2) .cg-passage-body{margin-left:20%;max-width:68ch}
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-passage:nth-child(3) .cg-passage-body{margin-left:0;max-width:72ch}
+  .cg-topic[data-signature=heze-palm-stories] .cg-identity{grid-column:1/-1;grid-row:1}
+  .cg-topic[data-signature=heze-palm-stories] .cg-intro{grid-column:2;grid-row:2}
+  .cg-topic[data-signature=heze-palm-stories] .cg-material{grid-column:1;grid-row:2}
+  .cg-topic[data-signature=heze-palm-stories] .cg-passage .cg-passage-body{margin-left:0;max-width:72ch}
+  .cg-topic[data-signature=heze-palm-stories] .cg-passage:last-child .cg-passage-body{margin-left:18%}
+}
+@media(min-width:1100px){
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-archive,
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-archive,
+  .cg-topic[data-signature=binzhou-reed-weft] .cg-archive{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-archive>div{display:block}
+  .cg-topic[data-signature=weifang-clay-print-archive] .cg-archive dd{margin-top:8px}
+}
+@media(min-width:701px) and (max-width:1000px){
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-heading{grid-template-columns:.8fr 1.2fr}
+  .cg-topic[data-signature=yantai-wheat-braid-woven] .cg-material{grid-column:1/-1;grid-row:2}
+}
+@media(max-width:700px){
+  .cg-topic{font-size:17px}
+  .cg-inner{width:calc(100% - 40px)}
+  .cg-bar-inner{width:calc(100% - 36px);min-height:68px;gap:10px}
+  .cg-brand{font-size:22px}
+  .cg-actions{gap:14px}
+  .cg-actions a,.cg-text-button{font-size:12px;gap:4px}
+  .cg-actions svg{width:16px!important;height:16px!important}
+  .cg-topic h2{font-size:34px}
+  .cg-topic h3{font-size:26px}
+  .cg-location{font-size:13px}
+  .cg-topic .cg-heading,.cg-topic[data-layout=archive][data-has-body-art] .cg-heading,.cg-topic[data-layout=woven] .cg-heading,.cg-topic[data-layout=folio] .cg-heading{display:block;padding-block:36px 28px;text-align:left}
+  .cg-topic .cg-intro,.cg-topic[data-layout=woven] .cg-intro,.cg-topic[data-layout=folio] .cg-intro{margin-top:20px;font-size:16px}
+  .cg-topic .cg-material{margin-top:24px;width:100%}
+  .cg-chapters{justify-content:flex-start;gap:0 18px}
+  .cg-chapters button{font-size:14px;text-align:left}
+  .cg-topic .cg-passage,.cg-topic[data-layout=woven] .cg-passage,.cg-topic[data-layout=folio] .cg-passage{display:block;padding-block:34px;scroll-margin-top:86px}
+  .cg-passage h3{margin-bottom:20px}
+  .cg-topic[data-layout=woven] .cg-passage .cg-passage-body,.cg-topic[data-layout=folio] .cg-passage .cg-passage-body{margin-left:0}
+  .cg-topic .cg-archive,.cg-topic[data-layout=woven] .cg-archive,.cg-topic[data-layout=folio] .cg-archive{grid-template-columns:1fr;font-size:15px}
+  .cg-topic .cg-archive>div,.cg-topic[data-layout=woven] .cg-archive>div{display:grid;grid-template-columns:98px minmax(0,1fr);gap:8px;padding-block:14px}
+  .cg-topic[data-layout=woven] .cg-archive dd{margin-top:0}
+  .cg-questions,.cg-sources{padding-block:32px;scroll-margin-top:86px}
+  .cg-question summary,.cg-answer,.cg-sources ul{font-size:16px}
+  .cg-footer{font-size:12px}
+}
+@media(max-width:359px){.cg-brand{font-size:20px}.cg-actions{gap:8px}.cg-actions svg{display:none}}
+@media(forced-colors:active){.cg-topic,.cg-bar{background:Canvas;color:CanvasText}.cg-topic *{border-color:CanvasText}}
+/* PEOPLE-CULTURE-v1: an explicit local preview entry, not a new topic layout. */
+.cg-people-link{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;font-size:14px;line-height:1.7;text-underline-offset:5px}

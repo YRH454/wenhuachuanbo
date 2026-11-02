@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370200",
+  "city": "青岛",
+  "deliveryStatus": "ready",
+  "route": "#/city/370200",
+  "topic": {
+    "name": "贝雕制作技艺",
+    "location": "山东省青岛市市南区",
+    "category": "传统技艺",
+    "intro": "从天然贝壳的色泽与层次，走近青岛贝雕的材料之美。",
+    "sources": [
+      "qd-district",
+      "qd-culture"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370200",
+    "label": "AI意境图",
+    "entryLabel": "走近青岛贝雕"
+  },
+  "visual": {
+    "signature": "qingdao-shell-sea-folio",
+    "layout": "folio",
+    "description": "继承“海岚水墨”首屏左密右静的冷海蓝与留白，以清浅海雾色阅读面接入贝雕专题；海岸意境与贝雕事实分层，不凭画面认定实物或地标。",
+    "composition": "画页式对开：独立题名与短导语先建立对象，既有AI海岚局部与首段错位对照，文字置于不透明静区；五项已核事实轻量成列，不硬凑八格。材料段作为连续观察文字，青年探访段再转宽行，与烟台的事实带和宽窄编织不同。无获准贝雕照片时仅用已登记意境局部并标AI，手机按题名、事实、三段顺序堆叠，不留假图框。",
+    "palette": {
+      "paper": "#f2f6f7",
+      "ink": "#213e4b",
+      "muted": "#425f6e",
+      "accent": "#175f78",
+      "rule": "#c2d3da"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "已核入选记录",
+      "value": "2023年市南区第七批区级名录（历史记录，非最高级别结论）",
+      "sources": [
+        "qd-district"
+      ]
+    },
+    {
+      "label": "名录类别",
+      "value": "传统技艺",
+      "sources": [
+        "qd-district"
+      ]
+    },
+    {
+      "label": "地域关联",
+      "value": "青岛市市南区",
+      "sources": [
+        "qd-district",
+        "qd-culture"
+      ]
+    },
+    {
+      "label": "地方产业史",
+      "value": "1963年在市南区东平路成立青岛贝雕工艺品厂（2024年文化馆记载）",
+      "sources": [
+        "qd-culture"
+      ]
+    },
+    {
+      "label": "主要材料",
+      "value": "天然贝壳",
+      "sources": [
+        "qd-district"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "把海的材料，做成可看的物件",
+      "paragraphs": [
+        "青岛的贝雕制作借用天然贝壳的色泽、纹理与形状，形成挂画、首饰等作品。市南区文化馆记载了1963年当地建厂的经历，可以沿着这个具体的城市片段，认识贝材背后的制作与传习生活。"
+      ],
+      "sources": [
+        "qd-district",
+        "qd-culture"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "看色泽，也看层次怎样接合",
+      "paragraphs": [
+        "贝雕并非把完整贝壳原样摆放。地方资料介绍了切割、打磨、镶嵌与粘接等制作方式。欣赏时可从贝材本身的光泽，再看到层次和接合；看盘也不只有深蓝一种底色。"
+      ],
+      "sources": [
+        "qd-district",
+        "qd-culture"
+      ],
+      "media": []
+    },
+    {
+      "id": "people",
+      "title": "从工匠的车间，到青年的提问",
+      "paragraphs": [
+        "在中国石油大学2025年的一次探访中，学生走进青岛企业车间观察工匠制作，并采访刘武。贴近材料与制作现场，再听手艺人的讲述，是年轻人认识贝雕的一条路径。"
+      ],
+      "sources": [
+        "qd-visit"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "贝雕是不是把捡到的贝壳直接贴起来？",
+      "body": "不只是原样拼贴。资料介绍利用贝材色泽与纹理，并通过切割、打磨、镶嵌或粘接等方式形成画面与层次。",
+      "kind": "fact",
+      "sources": [
+        "qd-district",
+        "qd-culture"
+      ]
+    },
+    {
+      "title": "青岛贝雕看盘一定是深蓝底吗？",
+      "body": "不是。市南区文化馆2024年介绍已提到多种看盘底色；不能把一种常见样式当成全部作品的固定标准。",
+      "kind": "fact",
+      "sources": [
+        "qd-culture"
+      ]
+    },
+    {
+      "title": "贝雕可以做成哪些日用或装饰物件？",
+      "body": "市南区名录介绍列有贝雕挂画、首饰，文化馆的介绍还提到看盘。它不只有一种产品形态，可以从装饰与生活用品两方面认识。",
+      "kind": "fact",
+      "sources": [
+        "qd-district",
+        "qd-culture"
+      ]
+    },
+    {
+      "title": "贝雕与青岛市南有什么联系？",
+      "body": "市南区资料载有该项目，文化馆还记录1963年在东平路成立青岛贝雕工艺品厂。历史厂址记录不等于当前可预约地址。",
+      "kind": "fact",
+      "sources": [
+        "qd-district",
+        "qd-culture"
+      ]
+    },
+    {
+      "title": "年轻人怎样走近这门手艺？",
+      "body": "2025年高校探访展示了车间观察和人物访谈的学习路径：先看贝材怎样被处理，再听手艺人讲制作与设计。若计划参观，开放安排应以场馆最新信息为准。",
+      "kind": "fact",
+      "sources": [
+        "qd-visit"
+      ]
+    }
+  ],
+  "sources": {
+    "qd-district": {
+      "title": "青岛市南区文化馆：新增13项！市南区第七批非物质文化遗产代表性项目名录来了",
+      "short": "2023年区级项目记录",
+      "url": "https://www.qdsnqwhg.cn/html/feiwuzhiwenhuayichan/2023/0710/2614.html",
+      "kind": "official",
+      "supports": "贝雕制作技艺正式名称、传统技艺类别、2023年市南区第七批名录记录和天然贝材加工；不证明当前最高名录级别、项目编号或保护单位。",
+      "checkedAt": "2026-11-01"
+    },
+    "qd-culture": {
+      "title": "青岛市南区文化馆：见证61载潮起潮落，青岛贝雕五代人的岁月传承",
+      "short": "2024年地方文化介绍",
+      "url": "https://www.qdsnqwhg.cn/html/feiwuzhiwenhuayichan/feiyihuodong/2024/1230/5239.html",
+      "kind": "official",
+      "supports": "1963年市南建厂的地方产业史、加工方式和看盘底色变化；文末称市级，但不是本包已核的市级正式名录表。旧年龄与品种数不延用。",
+      "checkedAt": "2026-11-01"
+    },
+    "qd-visit": {
+      "title": "中国石油大学：匠心传承，数字对话——学院青风遗韵传扬队开展贝雕非遗探访活动",
+      "short": "2025年高校探访记录",
+      "url": "https://cj.upc.edu.cn/_t1048/2025/0704/c3727a465888/pagem.htm",
+      "kind": "research",
+      "supports": "2025-06-29学生车间观察、采访刘武及数字化讨论；不以文末国家级泛称认定青岛项目级别，不将愿景当既有功能或采访对象当已核国家级传承人。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370200-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：深海青底上的虹彩贝片与扇形花纹。",
+      "caption": "螺光镶色 · AI虚构贝片构成，非青岛贝雕实物或传承人作品。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "413f264f4ab80e8140515cdf371581aa59ff403268cba3189977d440c2a314bd",
+      "record": "records/370200-body-b.md",
+      "recordSha256": "f3606d7f69b7ceac32c20b917f074a6b10eb00a8849ba223cc91740d686655cd",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "8ed32bafd9c68526b46f41d87163e51998c65c35d65ea059b3b1fbecb3564b02"
+    }
+  ],
+  "unresolved": []
+}

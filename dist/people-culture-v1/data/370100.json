@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370100",
+  "city": "济南",
+  "status": "draft",
+  "people": [
+    {
+      "id": "jinan-yang-feng",
+      "name": "杨峰",
+      "connection": "济南人，在当地制作兔子王泥塑，将泉水元素融入作品。",
+      "intro": "兔子王泥塑制作人。其创作把济南泉水景观等元素融入泥塑，希望让这一地方文化符号继续走进城市生活。",
+      "sources": [
+        {
+          "title": "央广网：泉城“兔子王”——用泥塑诠释泉水文化",
+          "url": "https://www.cnr.cn/sd/gd/20211026/t20211026_525643341.shtml"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 799,
+        "height": 603,
+        "alt": "杨峰在工作台前绘制兔子王泥塑的报道照片",
+        "caption": "杨峰绘制兔子王泥塑，2021年央广网报道配图。",
+        "sourcePage": "https://www.cnr.cn/sd/gd/20211026/t20211026_525643341.shtml",
+        "credit": "来源：央广网；摄影：潘可鑫",
+        "identityStatus": "原报道图注明示杨峰；2026-11-02已核原图及工作台画面，未裁切水印。",
+        "rightsStatus": "仅内部研究候选；原页有版权限制，未取得比赛展示及公开复用许可。",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "jinan-yao-yongqin",
+      "name": "姚永琴",
+      "connection": "从事济阳鼓子秧歌传习与教学，与父亲姚大新共同探索舞蹈传承。",
+      "intro": "济阳鼓子秧歌传习者。她把专业舞蹈学习与地方秧歌教学结合，重视节拍、动作分解及舞台呈现。",
+      "sources": [
+        {
+          "title": "山东宣传网转载大众日报：鼓声一通 群歌竞作 弥日不绝——舞出土地的“灵魂”",
+          "url": "https://www.sdxc.gov.cn/whql/whqlsy/202302/t20230213_11407476.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "jinan-spring-water",
+      "name": "趵突泉与泉水生活",
+      "category": "泉水景观·城市生活",
+      "connection": "趵突泉位于济南市；同城黑虎泉报道呈现另一处泉边生活，二者不混作同一现场。",
+      "intro": "从趵突泉的泉涌、泉纹和池岸认识泉城，再走近黑虎泉边的赏泉日常。水景与城市生活彼此相连，不同泉池也有各自的观看方式。",
+      "sources": [
+        {
+          "title": "文化和旅游部数据服务：济南市天下第一泉景区",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=34947"
+        },
+        {
+          "title": "央广网：雨后黑虎泉水位抬升21厘米 更增泉城泉韵",
+          "url": "https://www.cnr.cn/sd/ksd/20250725/t20250725_527280917.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370100-jinan-spring-water-aba10df9c5df.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：淡墨浅青的想象泉涌、涟漪与疏荷影，非趵突泉或黑虎泉实景。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非实拍。",
+        "rightsStatus": "已核复用副本及原记录，供内部联调；publicUseApproved=false，待选用、实装及发布审查。",
+        "record": "records/370100-jinan-spring-water-aba10df9c5df-4cddc2288bbf.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "jinan-rabbit-king-clay",
+      "name": "兔子王泥塑",
+      "category": "地方泥塑·民俗文化",
+      "connection": "济南兔子王制作人的作品融入泉水景观、泉字脸谱等本地元素。",
+      "intro": "兔面人身的泥塑承载地方记忆，制坯、上彩与当代设计让这一形象延续。泉水等本地元素也在制作人的探索中进入泥塑。",
+      "sources": [
+        {
+          "title": "央广网：泉城“兔子王”——用泥塑诠释泉水文化",
+          "url": "https://www.cnr.cn/sd/gd/20211026/t20211026_525643341.shtml"
+        },
+        {
+          "title": "齐鲁网：芙蓉街的兔子王不见了？原来搬到了这儿",
+          "url": "https://jinan.iqilu.com/news/2018/1113/4108529.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370100-jinan-rabbit-king-clay-6c2e6b3c27d2.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：兔面袍服泥塑的原创主题造型，非杨峰具体作品、真实产品或地方标准式样。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非杨峰作品或产品实拍。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370100-jinan-rabbit-king-clay-6c2e6b3c27d2-aabf7148b70c.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "jinan-jiyang-yangge",
+      "name": "济阳鼓子秧歌",
+      "category": "传统舞蹈·表演道具",
+      "connection": "秧歌（济阳鼓子秧歌）项目申报地为山东省济阳县，现保护单位为济阳区文化馆。",
+      "intro": "伞、鼓、棒、花组成表演队伍。领伞人的动作与队形变化相连，一把伞由此成为理解这门地方舞蹈的入口。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：秧歌（济阳鼓子秧歌）",
+          "url": "https://www.ihchina.cn/project_details/12821.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370100-jinan-jiyang-yangge-8e0f81eb8300.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意概念插画：红伞、鼓与抽象动势表现济阳鼓子秧歌主题；非真实道具规格、队形动作示范或演出记录。",
+        "credit": "AI创意概念插画；生图1使用内置image_gen生成，非真实道具、排练或演出照片。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370100-jinan-jiyang-yangge-8e0f81eb8300-e2fe0e66cc71.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "jinan-liu-needle-ad-plate",
+      "name": "刘家针铺广告青铜版",
+      "category": "历史器物·商业传播",
+      "connection": "版面字号写有“济南刘家功夫针铺”；地域联系来自铭文，不据此推断出土地。",
+      "intro": "广告印版把店铺字号、白兔捣药图和商品说明放在一起。它提供了观察宋代商家如何用图文帮助顾客辨认店铺的入口。",
+      "sources": [
+        {
+          "title": "中国国家博物馆：“济南刘家功夫针铺”广告青铜版",
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247463.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370100-jinan-liu-needle-ad-plate-dc6c83cf816b.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意概念插画：无铭文虚构青铜版、白兔、纸张和双针的广告主题意象；非国博文物复刻、历史商标原貌、拓片或出土现场。",
+        "credit": "AI创意概念插画；生图1使用内置image_gen生成与构图编辑，非馆藏原件、拓片或复原。",
+        "rightsStatus": "已核选定修正图、题材与完整生成/编辑记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370100-jinan-liu-needle-ad-plate-dc6c83cf816b-f1052e6cbbb8.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "杨峰真实报道照片已本地保存、核实图注并列为candidate；央广网页面有版权限制，未取得比赛展示及公开复用许可。姚永琴暂无逐图身份已核的本地肖像；不以生成肖像替代真人。",
+    "四项图各一张已回传并核对文件、题材及生成记录；泉水严格复用既有A图的字节相同副本，旧A/B及广告版未选初稿均保留。publicUseApproved=false，待选用、发布及网页验收。",
+    "兔子王仅是原创兔面袍服泥塑意象，不当作杨峰作品或济南传统造型标准；地域识别仍须配合题名及已核文字。",
+    "济阳秧歌伞鼓为主题概念，非真实道具规格或动作教学；主体接近上下画边，四图均按完整3:2/contain展示，不能强裁或据图解释表演结构。",
+    "广告版选定的是纸张四角入画的修正图；虚构白兔和空白版面不是原文物、原商标、铭文、拓印或出土证据，不使用未选初稿替代。",
+    "泉景不补非遗编号，不把黑虎泉取水报道移植为趵突泉现场，不提供实时水位或饮水判断。",
+    "来源核验并未给兔子王补写项目级别；人物报道中姚永琴与其父的身份及批次不可互换。"
+  ]
+}

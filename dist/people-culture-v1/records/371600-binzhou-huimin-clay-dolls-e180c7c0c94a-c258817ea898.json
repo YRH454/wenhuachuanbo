@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371600",
+  "objectId": "binzhou-huimin-clay-dolls",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE original imagined painted CLAY folk doll for the Huimin clay-sculpture topic, Binzhou, Shandong. A visibly handcrafted stout toy-like doll with a simple rounded body, broad stable base, matte clay surface, bright simplified painted front, a pale face with sparse black curved facial strokes and restrained red, pink, green and yellow decoration. This is a sculpted toy, never a real child, photograph of a person or portrait. Do not reproduce Zhang Kai's doll, a specific local design or another city's Niejiazhuang clay toy.\nComposition: single doll upright slightly off-centre on a quiet warm cream paper surface, entire head, arms, base and silhouette visible with substantial margins. Keep body shapes simple and boldly painted, not the elaborate miniature costume and layered ribbons of a Caozhou dough figurine. Hint a little natural clay grain and brushstroke unevenness. No human maker, tools, workshop, whistle mechanism, springs, folk ritual or making steps.\nStyle: warm editorial gouache-and-clay material illustration with gentle soft shadows, not glossy porcelain, jade, food dough, photorealism or a generic plastic cartoon mascot. Invent all decoration, no specific existing artwork.\nAuthenticity: clay appearance and painted patterns are imaginative, not evidence of actual material, age, provenance, technique, sound-producing capability or named maker. The single figure is a fictional craft-object silhouette, not a substitute for a real person's portrait.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:16:53.897Z",
+  "finishedAt": "2026-11-02T02:17:47.645Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE original imagined painted CLAY folk doll for the Huimin clay-sculpture topic, Binzhou, Shandong. A visibly handcrafted stout toy-like doll with a simple rounded body, broad stable base, matte clay surface, bright simplified painted front, a pale face with sparse black curved facial strokes and restrained red, pink, green and yellow decoration. This is a sculpted toy, never a real child, photograph of a person or portrait. Do not reproduce Zhang Kai's doll, a specific local design or another city's Niejiazhuang clay toy.\nComposition: single doll upright slightly off-centre on a quiet warm cream paper surface, entire head, arms, base and silhouette visible with substantial margins. Keep body shapes simple and boldly painted, not the elaborate miniature costume and layered ribbons of a Caozhou dough figurine. Hint a little natural clay grain and brushstroke unevenness. No human maker, tools, workshop, whistle mechanism, springs, folk ritual or making steps.\nStyle: warm editorial gouache-and-clay material illustration with gentle soft shadows, not glossy porcelain, jade, food dough, photorealism or a generic plastic cartoon mascot. Invent all decoration, no specific existing artwork.\nAuthenticity: clay appearance and painted patterns are imaginative, not evidence of actual material, age, provenance, technique, sound-producing capability or named maker. The single figure is a fictional craft-object silhouette, not a substitute for a real person's portrait.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:16:53.897Z",
+      "finishedAt": "2026-11-02T02:17:47.645Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2094294,
+  "sha256": "e180c7c0c94acd7f132442be7b4df6b1474c734f0938c8446888c56604f90df9",
+  "sourceRecordSha256": "2ab27e7e0283aa55d06e88c7eca72f40ad9d71dd264151bb30798a6e40c71885",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

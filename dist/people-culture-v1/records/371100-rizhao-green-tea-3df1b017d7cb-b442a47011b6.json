@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371100",
+  "objectId": "rizhao-green-tea",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original, landscape-format editorial illustration for the cultural subject “日照绿茶手工炒制”, intended for a Shandong cultural web page. A quiet, refined still life: a simple unmarked celadon ceramic cup with pale green infusion, a small scatter of fresh green tea leaves, and the suggestion of a low coastal breeze through broad, soft jade-green and silver-grey color shapes. Place the cup and the most recognizable leaves together close to the center so their identity survives a narrow central crop. Use tactile watercolor and ink-wash illustration, warm paper texture, restrained greens; beautiful but clearly an invented illustration, not a documentary or product photograph. The image is only a conceptual visual association with Rizhao green tea: DO NOT portray or claim to demonstrate hand roasting, actual craftsmanship, a real tea garden, a real location, a specific product, producer, or certified geographical-origin label. No people, hands, harvesting, roasters or roasting pans; no packages, trademarks, labels, typography, writing, calligraphy, watermark, fake seal, or logo. No collages, panels, frames, interfaces or words. One unified image only.",
+  "startedAt": "2026-11-02T10:31:12.806+08:00",
+  "finishedAt": "2026-11-02T10:31:46.119+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original, landscape-format editorial illustration for the cultural subject “日照绿茶手工炒制”, intended for a Shandong cultural web page. A quiet, refined still life: a simple unmarked celadon ceramic cup with pale green infusion, a small scatter of fresh green tea leaves, and the suggestion of a low coastal breeze through broad, soft jade-green and silver-grey color shapes. Place the cup and the most recognizable leaves together close to the center so their identity survives a narrow central crop. Use tactile watercolor and ink-wash illustration, warm paper texture, restrained greens; beautiful but clearly an invented illustration, not a documentary or product photograph. The image is only a conceptual visual association with Rizhao green tea: DO NOT portray or claim to demonstrate hand roasting, actual craftsmanship, a real tea garden, a real location, a specific product, producer, or certified geographical-origin label. No people, hands, harvesting, roasters or roasting pans; no packages, trademarks, labels, typography, writing, calligraphy, watermark, fake seal, or logo. No collages, panels, frames, interfaces or words. One unified image only.",
+      "startedAt": "2026-11-02T10:31:12.806+08:00",
+      "finishedAt": "2026-11-02T10:31:46.119+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1672,
+  "height": 941,
+  "bytes": 3064243,
+  "sha256": "3df1b017d7cbd62d5e8d182935cd60a54c63ef31126738787ad3ad23088d0447",
+  "sourceRecordSha256": "899e4113a2cbb9a31db1763733c5130ed60d5741aa6c487321e8e15bb7aa9d64",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370100",
+  "objectId": "jinan-jiyang-yangge",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: an original PEOPLE-FREE cultural editorial image evoking Jiyang guzi yangge through an umbrella, drum and energetic rhythm. Show ONE complete modest red fabric dance umbrella with a slender wooden shaft, together with ONE small round double-headed hand drum with a reddish wooden shell and pale skin surface. The umbrella and drum are stylized imagined props, not a certified design specification for this tradition. A few original cloth streamers and sparse sweeping brush arcs suggest group-dance energy without depicting or diagramming any exact step or formation.\nComposition: a compact oblique still life, the complete umbrella canopy and its shaft leaning diagonally above the drum, all ends clearly in frame. Muted vermilion, honey wood and warm cream with a small indigo accent on a spacious parchment ground. The canopy is modest and cloth-like, not a gigantic decorative parasol, luxury umbrella, paper lantern or umbrella advertisement. Movement is conveyed by asymmetrical spacing and a few painterly ribbons, not by blurred actors.\nStyle: bold tactile gouache and cut-paper editorial art, warm celebratory but sparse and legible. No performer, face, stage audience, hands, headwear, costumes, specific teacher or student, real rehearsal photo, music score, title or costume guide. No claim that the invented prop details or motion arcs document actual Jiyang performance practice.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:46:14.676Z",
+  "finishedAt": "2026-11-02T02:47:11.565Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: an original PEOPLE-FREE cultural editorial image evoking Jiyang guzi yangge through an umbrella, drum and energetic rhythm. Show ONE complete modest red fabric dance umbrella with a slender wooden shaft, together with ONE small round double-headed hand drum with a reddish wooden shell and pale skin surface. The umbrella and drum are stylized imagined props, not a certified design specification for this tradition. A few original cloth streamers and sparse sweeping brush arcs suggest group-dance energy without depicting or diagramming any exact step or formation.\nComposition: a compact oblique still life, the complete umbrella canopy and its shaft leaning diagonally above the drum, all ends clearly in frame. Muted vermilion, honey wood and warm cream with a small indigo accent on a spacious parchment ground. The canopy is modest and cloth-like, not a gigantic decorative parasol, luxury umbrella, paper lantern or umbrella advertisement. Movement is conveyed by asymmetrical spacing and a few painterly ribbons, not by blurred actors.\nStyle: bold tactile gouache and cut-paper editorial art, warm celebratory but sparse and legible. No performer, face, stage audience, hands, headwear, costumes, specific teacher or student, real rehearsal photo, music score, title or costume guide. No claim that the invented prop details or motion arcs document actual Jiyang performance practice.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:46:14.676Z",
+      "finishedAt": "2026-11-02T02:47:11.565Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3089718,
+  "sha256": "8e0f81eb8300d2a201cfd26e54c934c2b9d845dd3d94e3e9e4fa0b64affcc643",
+  "sourceRecordSha256": "cdb07337d326eb02a454b254f1239a616119453a8b0f5c24f4090dd710b4d3a7",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

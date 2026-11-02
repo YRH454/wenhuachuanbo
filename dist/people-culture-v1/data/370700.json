@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370700",
+  "city": "潍坊",
+  "status": "draft",
+  "people": [
+    {
+      "id": "wf-person-zhangxiaodong",
+      "name": "张效东",
+      "connection": "潍坊风筝制作艺人，国家级代表性传承人档案的申报地区为潍坊市。",
+      "intro": "在传统扎制之外，他尝试将机械和声光电元素带入风筝，也从年画、泥塑中吸收装饰语言。",
+      "sources": [
+        {
+          "title": "张效东｜中国非物质文化遗产网人物档案",
+          "url": "https://www.ihchina.cn/ccr_detail/3362.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "wf-person-niexiwei",
+      "name": "聂希蔚",
+      "connection": "高密聂家庄泥塑艺人，官方档案列为该项目国家级代表性传承人。",
+      "intro": "他的泥塑创作注重夸张、写意的形象，也将制作经验传授给徒弟和爱好者。",
+      "sources": [
+        {
+          "title": "聂希蔚｜中国非物质文化遗产网人物档案",
+          "url": "https://www.ihchina.cn/ccr_detail/2795.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "wf-person-xiameihua",
+      "name": "夏美华",
+      "connection": "高密茂腔演员，官方人物档案列为茂腔国家级代表性传承人。",
+      "intro": "长期从事茂腔旦角表演，形成鲜明的老旦唱腔风格，并参与青年演员的培养。",
+      "sources": [
+        {
+          "title": "夏美华｜中国非物质文化遗产网人物档案",
+          "url": "https://www.ihchina.cn/ccr_detail/2203.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "wf-person-niepeng",
+      "name": "聂鹏",
+      "connection": "2023年人民日报工坊报道记述其在潍坊高密聂家庄从事泥塑制作。",
+      "intro": "报道中的他制作、彩绘泥塑，也尝试借助直播介绍这门手艺。",
+      "sources": [
+        {
+          "title": "非遗工坊——老手艺绽放新魅力｜人民日报，中国非遗网转载",
+          "url": "https://www.ihchina.cn/art/detail/id/27510.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "wf-object-kite",
+      "name": "潍坊风筝",
+      "category": "传统技艺与器物",
+      "connection": "国家级项目“风筝制作技艺（潍坊风筝）”申报地区为潍坊市。",
+      "intro": "竹骨、彩绘与放飞相互配合。风筝既有平面的板式，也有串式和立体造型，呈现鲜明的民间装饰趣味。",
+      "sources": [
+        {
+          "title": "风筝制作技艺（潍坊风筝）｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/14434/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370700-wf-object-kite-385acd7dc9fc.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：彩绘纸翼、竹骨与线绳组成的想象风筝，不是真实作品或可用的结构示意。",
+        "credit": "AI创意插画｜生图2单图候选",
+        "rightsStatus": "原记录待人工确认；公开使用及第三方相似性待核，须保留AI说明",
+        "record": "records/370700-wf-object-kite-385acd7dc9fc-04fa3b879d75.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wf-object-niejiazhuang-clay",
+      "name": "聂家庄泥塑",
+      "category": "传统美术与民间玩具",
+      "connection": "国家级项目的申报地区为高密市；聂家庄位于高密姜庄镇。",
+      "intro": "夸张造型与鲜艳彩绘是观看入口，“泥叫虎”是代表形象之一。有些作品还把玩耍中的声音和动作融入造型。",
+      "sources": [
+        {
+          "title": "泥塑（聂家庄泥塑）｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/14046.html"
+        },
+        {
+          "title": "非遗工坊——老手艺绽放新魅力｜人民日报，中国非遗网转载",
+          "url": "https://www.ihchina.cn/art/detail/id/27510.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370700-wf-object-niejiazhuang-clay-243149efbf76.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI创意插画：以木版套色语言重新诠释泥叫虎题材，不是真实泥塑、历史年画或传承人作品。",
+        "credit": "AI创意插画｜原记录生成会话：生图2",
+        "rightsStatus": "既有AI候选，原记录approved=false；须保留AI标注，待集成确认，不等于实物或工艺证据",
+        "record": "records/370700-wf-object-niejiazhuang-clay-243149efbf76-6277a13bed76.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wf-object-gaomi-maoqiang",
+      "name": "高密茂腔",
+      "category": "传统戏剧",
+      "connection": "茂腔高密申报项目的保护单位为高密市艺术剧院；此项选取高密的地方传承。",
+      "intro": "从民间小调发展而来的地方戏曲，以质朴唱词和富有抒情性的唱腔贴近生活。高密是重要传承地，茂腔也在青岛、日照等地流传。",
+      "sources": [
+        {
+          "title": "茂腔（高密申报项目）｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/13300/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370700-wf-object-gaomi-maoqiang-c5cd28f8ba9e.png",
+        "width": 1916,
+        "height": 821,
+        "alt": "AI创意插画：空戏台、戏服与乐器的原创组合，不是真实剧照、演员肖像或高密茂腔专属服制证据。",
+        "credit": "AI创意插画｜生图2单图候选",
+        "rightsStatus": "原记录待人工确认；公开使用及第三方相似性待核，须保留AI说明",
+        "record": "records/370700-wf-object-gaomi-maoqiang-c5cd28f8ba9e-5c3f491e8c59.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wf-object-chaotianguo",
+      "name": "潍坊朝天锅",
+      "category": "地方饮食",
+      "connection": "齐鲁晚报、大众网均将朝天锅作为潍坊地方美食介绍。",
+      "intro": "名字里有“锅”，入口却常是薄饼卷肉，佐以热汤。它连着老潍县集市生活，也延续在今天的街巷餐桌上。",
+      "sources": [
+        {
+          "title": "潍坊朝天锅何以香飘三百年｜齐鲁晚报，2025-08-28",
+          "url": "https://sjb.qlwb.com.cn/qlwb/content/20250828/ArticelA06002FM.htm"
+        },
+        {
+          "title": "In Shandong｜Weifang Chaotian pot: not literally a pot but a wrap｜大众网",
+          "url": "https://www.dzwww.com/2023/inshandong/lwfy/202312/t20231228_13414725.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370700-wf-object-chaotianguo-cf7099cae23c.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI创意插画：柔软薄饼卷碎肉与独立清汤碗的虚构静物，不是真实餐馆出品、历史现场、精确食谱或食品安全证据。",
+        "credit": "AI创意插画｜定向修订完整记录随图保留",
+        "rightsStatus": "定向修订已完成资料组静态复核，仅暂列AI候选；公开使用及第三方相似性待核，不作为真实菜品或精确食谱",
+        "record": "records/370700-wf-object-chaotianguo-cf7099cae23c-9430b02bddd9.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "四位人物文字身份已核，但尚无取得本项目复用许可的肖像；人物区必须保留缺图回退，不自动热链imageUrl。",
+    "聂鹏照片为内部候选；已定位来源页中的原图URL，本次直接读取原图返回403，未完成源图与旧本地文件的字节比对；旧本地候选路径、尺寸、哈希见核验说明。",
+    "四项暂列AI展示候选；朝天锅初稿曾因饼皮层叠酥饼感退出media，现经一次必要定向修正并实际查看，仅改选单层薄饼修订，初稿留档不展示；文件完整性核验不等于公开使用或网页裁切验收。",
+    "泥塑图复用已有修订候选；保留原记录approved=false，需由集成者确认实际展示及裁切。",
+    "朝天锅修订饼边较薄、酥层感减少、碎肉卷口与独立清汤可读，初始/编辑记录及输入输出哈希已核；仍是AI饮食意象，不认定精确食谱、具体商家、营养功效或食品安全。原记录审批字段未改，公开与页面验收待核。",
+    "仅交文化界面资料；尚未改共享页面，也未进行浏览器验收。"
+  ]
+}

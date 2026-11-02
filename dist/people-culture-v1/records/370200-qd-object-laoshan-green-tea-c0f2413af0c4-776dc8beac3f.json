@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370200",
+  "objectId": "qd-object-laoshan-green-tea",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for the local cultural subject “崂山绿茶”. Use a quiet overhead still-life composition distinct from a landscape: one small, plain, unbranded ivory ceramic tea cup containing pale tea, with a few loose green tea leaves and very restrained sea-green ink-wash ripples arranged close around it. The cup and leaves sit together in the middle; dark blue-grey stone-like background and softly textured paper, a considered sophisticated contemporary Chinese watercolor and graphic-design sensibility. Keep it a recognizably illustrated creative depiction, not a photograph of a real product or a proof of actual origin. Do not depict actual landscapes, tea gardens, tea-roasting procedures, factories or identifiable handmade tea wares; the ceramic design is ordinary and imaginary. No tea pot, tin inlay, packages, health claims, geographic certification signs, labels, writing, lettering, seal, logos, watermarks or people. No collage, panel or border. One coherent image only.",
+  "startedAt": "2026-11-02T10:37:51.917+08:00",
+  "finishedAt": "2026-11-02T10:38:21.559+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for the local cultural subject “崂山绿茶”. Use a quiet overhead still-life composition distinct from a landscape: one small, plain, unbranded ivory ceramic tea cup containing pale tea, with a few loose green tea leaves and very restrained sea-green ink-wash ripples arranged close around it. The cup and leaves sit together in the middle; dark blue-grey stone-like background and softly textured paper, a considered sophisticated contemporary Chinese watercolor and graphic-design sensibility. Keep it a recognizably illustrated creative depiction, not a photograph of a real product or a proof of actual origin. Do not depict actual landscapes, tea gardens, tea-roasting procedures, factories or identifiable handmade tea wares; the ceramic design is ordinary and imaginary. No tea pot, tin inlay, packages, health claims, geographic certification signs, labels, writing, lettering, seal, logos, watermarks or people. No collage, panel or border. One coherent image only.",
+      "startedAt": "2026-11-02T10:37:51.917+08:00",
+      "finishedAt": "2026-11-02T10:38:21.559+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3233905,
+  "sha256": "c0f2413af0c424a14af1fa6d367dc934167b033c723858caf30ec16a251d38e5",
+  "sourceRecordSha256": "3b6b5b651d0b74c153d3ca199bb257e191e1ecf7857febca710584b5032c2d22",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

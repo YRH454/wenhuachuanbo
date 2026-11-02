@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370600",
+  "city": "烟台",
+  "deliveryStatus": "ready",
+  "route": "#/city/370600",
+  "topic": {
+    "name": "草编（莱州草辫）",
+    "location": "山东省烟台市莱州市",
+    "category": "传统美术",
+    "intro": "从几根麦草的交错，认识莱州草辫怎样走进日常生活。",
+    "sources": [
+      "yt-project",
+      "yt-exhibition"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370600",
+    "label": "AI意境图",
+    "entryLabel": "走近莱州草辫"
+  },
+  "visual": {
+    "signature": "yantai-wheat-braid-woven",
+    "layout": "woven",
+    "description": "沿用“莱州草韵”金色编织想象山海首屏，正文以麦草暖纸、靛灰文字和交错阅读宽度接续；材料感在文字之外，不把生成纹样说成真实编法。",
+    "composition": "题名占窄列，短导语沿右侧横向展开，八项事实组成可换行档案带。以本市麦草AI画的纵向窄幅局部作外缘并标AI，而非通栏铺底；三节按短概况、较宽技艺观察、独立连贯的生活段推进。烟台以细长草辫方向和留白为主，须与同用woven的东营分别处理标题比例、素材幅面和段间节奏，不仅换色。窄屏恢复单列，材料区域不能压字，不强制横滑。",
+    "palette": {
+      "paper": "#f8f1df",
+      "ink": "#273b3b",
+      "muted": "#5d604e",
+      "accent": "#775023",
+      "rule": "#c8b78b"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "830",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅶ-54",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2008年（第二批）",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统美术",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "新增项目",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省莱州市",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "莱州市文化馆",
+      "sources": [
+        "yt-project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "从莱州的麦草出发",
+      "paragraphs": [
+        "莱州草辫是当地传统编结手艺，与沙河一带的乡土生活相连。几根麦草经过手指的交错编结，可以成为日用和装饰物件；认识它，可以从材料、辫纹和器物一起看起。"
+      ],
+      "sources": [
+        "yt-project",
+        "yt-exhibition"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "几根草，怎样交错成纹",
+      "paragraphs": [
+        "项目资料区分三根、五根和七根草掐法，以手指配合压、挑形成不同辫纹。阅读的重点是材料怎样在交错中获得结构；首屏想象画的纹样不能拿来作真实技法图解。"
+      ],
+      "sources": [
+        "yt-project"
+      ],
+      "media": []
+    },
+    {
+      "id": "people",
+      "title": "手艺走进展览，也走进生活",
+      "paragraphs": [
+        "官方项目页的关联人物栏列有杨玉兴。莱州市文旅局2025年专题展记录还展示了草编包、收纳盒与麦草贴画，让人看到编结与日用、装饰的联系。该展览记载在2025年6月结束，不代表今天仍可前往。"
+      ],
+      "sources": [
+        "yt-project",
+        "yt-exhibition"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "莱州草辫的正式项目名称是什么？",
+      "body": "国家级项目页使用“草编（莱州草辫）”，2008年第二批公布，编号Ⅶ-54。烟台在本专题中通过莱州与这门手艺相连。",
+      "kind": "fact",
+      "sources": [
+        "yt-project",
+        "yt-exhibition"
+      ]
+    },
+    {
+      "title": "草辫只有一种编法吗？",
+      "body": "不是。项目介绍区分三根、五根和七根草掐法；压、挑的配合会形成不同辫纹，不宜只凭AI图复原编法。",
+      "kind": "fact",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "title": "莱州草辫与莱州哪里有关？",
+      "body": "官方项目介绍把莱州草辫与沙河一带的农村联系起来。了解它的地方性，可以从这里的麦草编结传统入手。",
+      "kind": "fact",
+      "sources": [
+        "yt-project"
+      ]
+    },
+    {
+      "title": "草辫只能用来编帽子吗？",
+      "body": "2025年文旅局专题展记录还介绍了草编包、收纳盒和麦草贴画，可从日用与装饰两个方向认识它。",
+      "kind": "fact",
+      "sources": [
+        "yt-exhibition"
+      ]
+    },
+    {
+      "title": "资料里提到的草辫展现在还开放吗？",
+      "body": "不能据这条旧通知判断。通知写明展期截至2025年6月26日；它是展示方式的历史记录，不是当前开放或预约信息。",
+      "kind": "fact",
+      "sources": [
+        "yt-exhibition"
+      ]
+    }
+  ],
+  "sources": {
+    "yt-project": {
+      "title": "中国非遗网：草编（莱州草辫）",
+      "short": "莱州草辫项目档案",
+      "url": "https://www.ihchina.cn/project_details/14100",
+      "kind": "official",
+      "supports": "正式名称、八项国家级项目档案、莱州沙河关联、三/五/七根掐法及关联人物栏杨玉兴；不把据说的起源、旧品种统计或奖誉当作已核实时事实。",
+      "checkedAt": "2026-11-01"
+    },
+    "yt-exhibition": {
+      "title": "莱州市文化和旅游局：“指尖上的艺术—莱州草辫专题展”",
+      "short": "2025年草辫专题展",
+      "url": "https://www.laizhou.gov.cn/art/2025/6/6/art_44730_2982172.html",
+      "kind": "official",
+      "supports": "2025年6月烟台东山宾馆专题展、麦草及包/收纳盒/贴画品类；通知展期截至2025-06-26，不证明2026年仍开放，不提供图像复用许可。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370600-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：紫红底上的麦穗与草金色几何编辫。",
+      "caption": "草金拼艺 · AI虚构麦草构成，非莱州草辫实物或具体编结示范。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6a3fae3c4b6514caeeae6d0190e575fd6ed3b88872ba4fd75bd8e887cdf19a6b",
+      "record": "records/370600-body-b.md",
+      "recordSha256": "4b1d8d98a10487351be6cc3bb2136f38b593fa004110388f5c93105625a65532",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "491e1c827e957b0827ce1177e0788e8c603e6a6de4a49b52459437cc5eaa0e17"
+    }
+  ],
+  "unresolved": []
+}

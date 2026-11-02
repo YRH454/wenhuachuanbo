@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371600",
+  "city": "滨州",
+  "status": "draft",
+  "people": [
+    {
+      "id": "binzhou-wang-derong",
+      "name": "王德荣",
+      "connection": "剪纸（滨州民间剪纸）第五批国家级代表性传承人，与滨州剪纸的创作和传授相关。",
+      "intro": "她自幼随母亲学习剪纸，后来学习人物剪纸与构图。创作常从记忆和生活经验出发，以剪刀表达乡土生活，也参与民间剪纸的传承活动。",
+      "sources": [
+        {
+          "title": "中国非遗网：王德荣代表性传承人档案",
+          "url": "https://www.ihchina.cn/ccr_detail/2843.html"
+        },
+        {
+          "title": "国家图书馆：剪纸（滨州民间剪纸）·王德荣",
+          "url": "https://ich.nlc.cn/detail/626"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "binzhou-zhang-kai",
+      "name": "张凯",
+      "connection": "滨州市惠民县河南张村的惠民泥塑传承人。",
+      "intro": "张凯以泥娃娃等作品延续当地泥塑手艺。他在公开讲述中介绍选泥、塑形和彩绘的经验，以及泥娃娃与当地民俗的联系；具体作品和做法不泛化到所有制作者。",
+      "sources": [
+        {
+          "title": "新华网：惠民泥塑传承五百年",
+          "url": "https://www.xinhuanet.com/photo/2021-03/13/c_1127207523.htm"
+        },
+        {
+          "title": "中国非遗网转载光明日报：中国好手艺·泥娃娃",
+          "url": "https://www.ihchina.cn/project_details/24815.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 900,
+        "height": 600,
+        "alt": "张凯在工作台前给泥娃娃上彩的报道照片",
+        "caption": "张凯制作惠民泥塑，2021年新华社报道配图。",
+        "sourcePage": "https://www.xinhuanet.com/photo/2021-03/13/c_1127207523.htm",
+        "credit": "来源：新华社、新华网；摄影署名待核",
+        "identityStatus": "原报道逐图图注明示张凯；2026-11-02已核原图并实看，保留新华网水印。",
+        "rightsStatus": "仅内部研究候选；未取得新华社照片比赛展示及公开复用许可。",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "binzhou-boxing-weaving",
+      "name": "博兴柳编",
+      "category": "植物编织／日用器物",
+      "connection": "主要分布于滨州市博兴县麻大湖畔和锦秋街道一带。",
+      "intro": "柔韧的植物材料被编成垫子、收纳器物等日用品。当地草柳编使用不止一种植物，不能把所有编织品都断定为柳条，也不能用一张想象插画证明具体编法。",
+      "sources": [
+        {
+          "title": "中国非遗网：柳编（博兴柳编）",
+          "url": "https://www.ihchina.cn/project_details/14108.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371600-binzhou-boxing-weaving-0d46d50546fb.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：博兴柳编主题的虚构编织收纳器物；非实物、艺人作品或编法示范。",
+        "credit": "AI创意插画（复用内置图像生成原图）",
+        "rightsStatus": "待核；内部候选，不将复用或资料组建议当作公开使用获批",
+        "record": "records/371600-binzhou-boxing-weaving-0d46d50546fb-0badc5ce9893.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "binzhou-folk-paper-cutting",
+      "name": "滨州民间剪纸",
+      "category": "传统美术／剪纸",
+      "connection": "流传于滨州黄河、徒骇河流域的城乡地区。",
+      "intro": "剪纸与当地节令、礼俗和日常生活相伴。纸上题材丰富，既有生活故事，也有美好祝愿；特定纹样的意义和作品作者应逐件核对。",
+      "sources": [
+        {
+          "title": "中国非遗网：剪纸（滨州民间剪纸）",
+          "url": "https://www.ihchina.cn/project_details/13956.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371600-binzhou-folk-paper-cutting-1b8387314760.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：滨州民间剪纸主题的原创红纸花鸟构图；非王德荣作品或可直接使用的剪纸样板。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；内部候选，不冒充真实作品或工艺证据",
+        "record": "records/371600-binzhou-folk-paper-cutting-1b8387314760-10ae400409d9.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "binzhou-huimin-clay-dolls",
+      "name": "惠民泥塑",
+      "category": "传统美术／泥塑玩具",
+      "connection": "以惠民县河南张村及周边为主要分布地，也称河南张泥塑。",
+      "intro": "黄河淤泥经过制坯、晾干和彩绘，成为娃娃、动物或故事人物。有的作品带哨子或活动结构，但不是每件泥塑都能发声，也并非都采用相同造型。",
+      "sources": [
+        {
+          "title": "中国非遗网：泥塑（惠民泥塑）",
+          "url": "https://www.ihchina.cn/project_details/14051.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371600-binzhou-huimin-clay-dolls-e180c7c0c94a.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：惠民泥塑主题的想象彩绘泥娃娃，圆体、花饰与泥质表面完整可辨；不是张凯作品、真人肖像、地域造型谱系或工艺证据。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；内部候选，不冒充真实作品或工艺证据",
+        "record": "records/371600-binzhou-huimin-clay-dolls-e180c7c0c94a-c258817ea898.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "binzhou-zhanhua-winter-jujube",
+      "name": "沾化冬枣",
+      "category": "地方物产／鲜果与种植生活",
+      "connection": "滨州市沾化区的代表性物产，与当地种植、节庆和乡村生活相关。",
+      "intro": "沾化冬枣以鲜果形态进入当地生活，也带动枣园、采摘和节庆活动。它是地方物产，不直接称作非遗项目；冬枣也并非只在沾化种植。",
+      "sources": [
+        {
+          "title": "齐鲁网权威发布：滨州市沾化区推进冬枣产业提质增效",
+          "url": "https://www.iqilu.com/html/shouquan/sqsxwfb/jinan/2023/0725/5476972.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371600-binzhou-zhanhua-winter-jujube-62c3b71bca7c.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：沾化冬枣主题的青黄红晕鲜果与枝叶意象，非皱缩枣干；不能据图确认冬枣品种、实际产地或品质。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；内部候选，不冒充真实作品或工艺证据",
+        "record": "records/371600-binzhou-zhanhua-winter-jujube-62c3b71bca7c-810e93ee3f92.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "张凯有明确逐图姓名图注的真实报道照片已本地保存并列为candidate；比赛展示及公开复用许可未取得，默认不展示。王德荣有专题报道现场图片线索，但无独立逐图姓名图注，仍不接入肖像。",
+    "张凯报道中的个人级别表述存在混淆风险，当前只写惠民泥塑传承人，不认定其国家级个人身份。王德荣的出生地表述在官方页面间不同，本稿不写出生地或据此推断籍贯。",
+    "滨州4项已逐张查看正式原生PNG并回填正式记录：博兴柳编复用，民间剪纸、惠民泥塑、沾化冬枣各1张新图，均1536×1024。完整contain，剪纸顶端尖叶靠近上边不宜裁切；泥娃娃造型与冬枣品种均不能据AI图作真实性认定。旧AB保留，非页面验收或公开使用获批。",
+    "现有来源描述为沾化产的枣干照片无法确认冬枣品种，不适合代替沾化冬枣鲜果图片。",
+    "惠民泥塑具体起源年代在名录与报道间不一致，本稿不写固定起源年代，不从泥娃娃照片推断全部工艺。",
+    "资料核查日期2026-11-02；本轮新增一张张凯本地照片候选，未改公共代码或新增图像生成。"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371400",
+  "objectId": "dezhou-braised-chicken",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: standalone body illustration for 德州扒鸡制作技艺, Dezhou braised-chicken craft; cultural food-table art, not a menu, recipe, advertisement or city hero.\n\nCreate ONE original colour-woodcut and opaque-gouache-style illustration of a quiet Chinese meal. A compact cooked whole braised chicken with tucked limbs sits fully within a simple dark oval serving plate, seen from a slightly overhead angle. Show warm golden-brown food with cream cut-line highlights, broad umber shadows and stylised carved-grain marks. Food is clearly cooked, non-graphic, not a raw carcass or western turkey. A couple of plain small bowls and one pair of simple chopsticks suggest the tabletop nearby, without people.\n\nMake this decisively different from watery ink: confident flat colour blocks, dry gouache surfaces, rough woodcut-like edge texture and warm table geometry. Use muted brick/vermilion red, dark warm charcoal, wheat gold and cream, with a tiny subdued jade accent if useful. The table is an imagined domestic arrangement, not a restaurant's recognisable set, a famous painting, historical reconstruction, branded product photo or exact standard plating. No copied logo, decorative mark or advertising packaging. No gilt luxury frame or glossy food render.\n\nONE complete native horizontal3:2 artwork, ideally1536×1024. Keep the plate and essential meal objects fully inset in a central compact group, roughly within the middle46% of width and middle60% of height, with generous simple coloured margins. Slightly overhead, graphic and angular table organisation, not an oblique white-paper product still life. Mobile should preferably show the complete artwork without forced cropping.\nNo recipe stages, kitchen equipment in use, flames, ingredient chart, quantities, temperatures, nutrition, health or food-safety claims. AI creative interpretation only, not actual craft evidence or identified pottery.\nAbsolutely no text, letters, Chinese characters, calligraphy, signature, seals, shop sign, prices, logos, watermark, pseudo-writing, borders, device frames, UI or multiple panels.",
+  "startedAt": "2026-11-01T16:12:22.15Z",
+  "finishedAt": "2026-11-01T16:14:26.875Z",
+  "generationDate": null,
+  "timePrecision": "原记录时间及偏移原样保留；本轮复制不是重新生成",
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone body illustration for 德州扒鸡制作技艺, Dezhou braised-chicken craft; cultural food-table art, not a menu, recipe, advertisement or city hero.\n\nCreate ONE original colour-woodcut and opaque-gouache-style illustration of a quiet Chinese meal. A compact cooked whole braised chicken with tucked limbs sits fully within a simple dark oval serving plate, seen from a slightly overhead angle. Show warm golden-brown food with cream cut-line highlights, broad umber shadows and stylised carved-grain marks. Food is clearly cooked, non-graphic, not a raw carcass or western turkey. A couple of plain small bowls and one pair of simple chopsticks suggest the tabletop nearby, without people.\n\nMake this decisively different from watery ink: confident flat colour blocks, dry gouache surfaces, rough woodcut-like edge texture and warm table geometry. Use muted brick/vermilion red, dark warm charcoal, wheat gold and cream, with a tiny subdued jade accent if useful. The table is an imagined domestic arrangement, not a restaurant's recognisable set, a famous painting, historical reconstruction, branded product photo or exact standard plating. No copied logo, decorative mark or advertising packaging. No gilt luxury frame or glossy food render.\n\nONE complete native horizontal3:2 artwork, ideally1536×1024. Keep the plate and essential meal objects fully inset in a central compact group, roughly within the middle46% of width and middle60% of height, with generous simple coloured margins. Slightly overhead, graphic and angular table organisation, not an oblique white-paper product still life. Mobile should preferably show the complete artwork without forced cropping.\nNo recipe stages, kitchen equipment in use, flames, ingredient chart, quantities, temperatures, nutrition, health or food-safety claims. AI creative interpretation only, not actual craft evidence or identified pottery.\nAbsolutely no text, letters, Chinese characters, calligraphy, signature, seals, shop sign, prices, logos, watermark, pseudo-writing, borders, device frames, UI or multiple panels.",
+      "startedAt": "2026-11-01T16:12:22.15Z",
+      "finishedAt": "2026-11-01T16:14:26.875Z",
+      "generationDate": null,
+      "timePrecision": "原记录时间及偏移原样保留；本轮复制不是重新生成",
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2902270,
+  "sha256": "392d6080b4a0d1de13ea44b40251638230092c01c930b4ab474ce8736d7529b7",
+  "sourceRecordSha256": "25065a1a9a4855b5c909022d6f79eeb98b761f7a57b2f55ced5d1ef26114388e",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

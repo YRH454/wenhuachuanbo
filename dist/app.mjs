@@ -2,8 +2,10 @@ import {MOTION,NavigationCycle,routeSpec} from './navigation.mjs';
 import {stories} from './city-stories.mjs';
 import {HOME_BACKGROUND,BackgroundCycle,backgroundSpec,validBackgroundData} from './backgrounds.mjs';
 import {createZiboGuide} from './zibo-guide.mjs';
+import {createCityGuide} from './city-guides.mjs';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const ziboGuide=createZiboGuide(document);
+const cityGuide=createCityGuide(document,{getBackground:id=>backgroundData?.cities.find(c=>c.cityId===id)});
 const expectedHash='9b7f711c65cd10af31a70b9a61b63867fcafaf7c1680a335e3240419c893228e';
 // The user's current stage is background-only; content is reserved, not displayed.
 const backgroundOnly=true;
@@ -78,7 +80,7 @@ function drawMap(){
       img.setAttribute('href',tile.src);art.append(img);
     }
     $('city-art').append(art);
-    const link=svg('a',{href:'#/city/'+cid,id:'map-link-'+cid,tabindex:'0',class:'city-link','aria-label':city.city+'，'+story.object+'，进入城市文化介绍','data-city':cid});
+    const link=svg('a',{href:'#/city/'+cid,id:'map-link-'+cid,tabindex:'0',class:'city-link','aria-label':cid==='370600'?'烟台，剪纸意象画作，阅读莱州草辫专题':cid==='370900'?'泰安，泰山山岳意象画作，阅读泰山皮影戏专题':city.city+'，'+story.object+'，进入城市文化介绍','data-city':cid});
     link.append(svg('path',{d:city.pathD,class:'boundary-under','fill-rule':'evenodd','clip-rule':'evenodd'}),svg('path',{d:city.pathD,class:'city-hit','fill-rule':'evenodd','clip-rule':'evenodd'}));
     link.addEventListener('click',event=>enter(event,link,city));
     link.addEventListener('keydown',event=>{
@@ -88,13 +90,13 @@ function drawMap(){
       const at=event.key==='Home'?0:event.key==='End'?data.cities.length-1:(index+(['ArrowRight','ArrowDown'].includes(event.key)?1:-1)+data.cities.length)%data.cities.length;
       $('map-link-'+data.cities[at].cityId).focus();
     });
-    const caption=()=>text('map-caption',city.city+' · '+story.object+' · 选择此城，走近一物');
+    const caption=()=>text('map-caption',cid==='370600'?'烟台｜剪纸意象画作 · 阅读莱州草辫专题':cid==='370900'?'泰安｜泰山山岳意象画作 · 阅读泰山皮影戏专题':city.city+' · '+story.object+' · 选择此城，走近一物');
     link.addEventListener('mouseenter',caption);link.addEventListener('focus',caption);
     link.addEventListener('mouseleave',()=>text('map-caption','在地图中，选择想走近的城市。'));
     $('city-links').append(link);
     const label=svg('text',{x:city.labelPoint[0],y:city.labelPoint[1],class:'map-label'});label.textContent=city.city;$('city-labels').append(label);
     const entry=document.createElement('a');entry.href='#/city/'+cid;entry.id='city-entry-'+cid;entry.className='city-entry';
-    entry.setAttribute('aria-label',city.city+'，'+story.object+'，完整画作与城市文化');
+    entry.setAttribute('aria-label',cid==='370600'?'烟台，剪纸意象画作，阅读莱州草辫专题':cid==='370900'?'泰安，泰山山岳意象画作，阅读泰山皮影戏专题':city.city+'，'+story.object+'，完整画作与城市文化');
     const frame=document.createElement('span');frame.className='thumb-frame';
     const fallback=document.createElement('span');fallback.className='thumb-fallback';fallback.textContent=tile?'画作载入中':'画作暂未到达';fallback.setAttribute('aria-hidden','true');frame.append(fallback);
     if(tile&&safeAsset(tile.src)){
@@ -104,6 +106,7 @@ function drawMap(){
       thumb.src=tile.src;frame.append(thumb);
     }
     const name=document.createElement('span');name.className='city-name';name.textContent=city.city;entry.append(frame,name);
+    if(['370600','370900'].includes(cid)){const note=document.createElement('span');note.className='cg-entry-note';note.textContent=cid==='370600'?'剪纸意象画作 · 阅读莱州草辫专题':'山岳意象画作 · 阅读泰山皮影戏专题';name.append(note);}
     entry.addEventListener('click',event=>enter(event,entry,city));$('city-list').append(entry);
   }
   $('map').setAttribute('aria-busy',String(pending>0));text('progress',pending?'正在载入十六城画作…':'');
@@ -117,13 +120,13 @@ function clearBackground(spec){
 }
 function describeBackground(spec){
   const entry=backgroundData?.cities.find(c=>c.cityId===spec.key),ready=entry?.status==='ready';
-  text('background-description',ready?entry.city+' · '+entry.title+' · '+entry.aiLabel+'。按本市最后完成稿选用，与上方画作风格切换无关；非真实地点、器物或历史还原。':'本市地域背景尚未到达，当前使用首页山海背景，不借用其他城市图片。');
+  text('background-description',ready?entry.city+' · '+entry.title:'本市地域背景尚未到达，当前使用首页山海背景。');
   $('background-details').replaceChildren();$('background-links').replaceChildren();
   if(!ready)return;
-  for(const[label,value]of[['背景版本',entry.revision],['生成工具',entry.generationTool],['原生尺寸',entry.width+' × '+entry.height],['原图SHA-256',entry.sha256],['来源原图',entry.sourcePath]]){
+  for(const[label,value]of[['画作版本',entry.revision],['画面尺寸',entry.width+' × '+entry.height]]){
     const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value;$('background-details').append(dt,dd);
   }
-  for(const[label,src]of[['查看完整背景原图',entry.src],['查看背景生成记录',entry.promptSrc]]){
+  for(const[label,src]of[['查看完整背景原图',entry.src]]){
     const a=document.createElement('a');a.href=src;a.textContent=label;a.target='_blank';a.rel='noopener';$('background-links').append(a);
   }
 }
@@ -163,11 +166,11 @@ function renderCity(city){
   $('city-empty').hidden=!!tile;$('city-record').hidden=!tile;$('work-details').hidden=!tile;$('city-image-error').hidden=true;$('retry-detail').hidden=true;
   $('original-placeholder').hidden=false;text('original-placeholder',tile?'正在载入本市画作…':'本组画作尚未到达');
   for(const id of['original-image','masked-image']){$(id).hidden=true;$(id).removeAttribute('src');}
-  text('city-subtitle',tile?tile.aiLabel+' · 原生 '+tile.width+' × '+tile.height+' · 版本 '+tile.revision:'');
+  text('city-subtitle',tile?'画作 '+tile.width+' × '+tile.height+' · 版本 '+tile.revision:'');
   if(!tile)return;
   const failures=new Set();
   for(const[id,key,description]of[['original-image','src','完整画作'],['masked-image','maskedSrc','裁切预检']]){
-    const img=$(id);img.dataset.state='loading';img.alt=city.city+story.object+'主题'+description+'，AI创意插画';
+    const img=$(id);img.dataset.state='loading';img.alt=city.city+story.object+'主题'+description;
     img.onload=()=>{
       if(token!==detailToken)return;img.dataset.state='loaded';img.hidden=false;
       if(id==='original-image')$('original-placeholder').hidden=true;
@@ -190,11 +193,11 @@ function renderCity(city){
   }
   addList('imagined-list',tile.imaginedElements);addList('risk-list',tile.knownRisks);
   $('asset-details').replaceChildren();
-  for(const[label,value]of[['候选身份',tile.assetId],['生成工具',tile.generationTool],['模板版本','map-base-v1'],['原图SHA-256',tile.sha256],['固定frame',city.referenceFrame.viewBox.map(n=>n.toFixed(4)).join(' / ')]]){
+  for(const[label,value]of[['画作版本',tile.revision],['画面尺寸',tile.width+' × '+tile.height]]){
     const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value;$('asset-details').append(dt,dd);
   }
   $('asset-links').replaceChildren();
-  for(const[title,key]of[['下载完整原图','src'],['下载裁切预检','maskedSrc'],['查看完整提示词记录','promptSrc']]){
+  for(const[title,key]of[['下载完整原图','src'],['下载裁切预检','maskedSrc']]){
     if(key==='promptSrc'?!textRecord(tile[key]):!safeAsset(tile[key]))continue;
     const a=document.createElement('a');a.href=tile[key];a.textContent=title;
     if(key!=='promptSrc')a.download='';else{a.target='_blank';a.rel='noopener';}
@@ -210,6 +213,8 @@ function commit(spec){
     if(changed){$('work-details').open=false;$('city-info').open=false;document.querySelector('.city-panel-scroll').scrollTop=0;}
     renderCity(spec.city);
   }
+  ziboGuide.sync(spec);
+  void cityGuide.sync(spec);
   panel(spec).hidden=false;active=spec;
   document.body.dataset.view=spec.kind;$('labels-control').hidden=spec.kind!=='map';
   document.title=spec.kind==='city'?spec.city.city+' · 一物见山东':spec.kind==='map'?'一物见山东 · 文化地图':'未找到城市 · 一物见山东';
@@ -230,7 +235,6 @@ function focusView(spec){
 async function route({immediate=false,focus=true,refresh=false}={}){
   if(!data)return;
   const token=cycle.begin(),spec=routeSpec(location.hash,data.cities),previous=active;
-  ziboGuide.sync(spec);
   document.body.dataset.transition='idle';
   for(const id of['map-view','city-view','not-found'])$(id).inert=false;
   selectCity(spec.kind==='city'?spec.key:null);
@@ -283,7 +287,7 @@ async function load(){
     const incomingBackgrounds=await backgroundRequest;
     if(token!==loadToken)return;data=incoming;backgroundData=validBackgroundData(incomingBackgrounds,incoming.cities)?incomingBackgrounds:null;setVariant(variant);
   }catch{
-    if(token!==loadToken)return;ziboGuide.sync(null);cycle.begin();backdropCycle.cancel();clearBackground({key:'home',src:HOME_BACKGROUND,status:'home'});active=null;data=null;
+    if(token!==loadToken)return;ziboGuide.sync(null);cityGuide.sync(null);cycle.begin();backdropCycle.cancel();clearBackground({key:'home',src:HOME_BACKGROUND,status:'home'});active=null;data=null;
     for(const id of['map-view','city-view','not-found'])$(id).hidden=true;
     $('load-error').hidden=false;$('main').setAttribute('aria-busy','false');text('live','画作未能载入，请使用重新载入按钮重试。');
   }

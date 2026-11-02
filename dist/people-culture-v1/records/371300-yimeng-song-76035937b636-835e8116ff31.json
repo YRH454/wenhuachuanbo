@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371300",
+  "objectId": "yimeng-song",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: illustration-story\nAsset type: one original AI cultural illustration for a wide interactive screen about the song Yimeng Mountain Melody in Linyi, Shandong.\n\nCreate a lyrical, entirely imagined mountain landscape as a visual metaphor for a local song, not a depiction of any actual site, performance, singer or historical event. Layer soft rolling green and blue mountains around a warm pale sun; one broad, flowing ribbon-like line travels through the center like a sung melody, with a few simple leaves and abstract rhythms. No notation, lyrics or musical symbols. It is an illustration of mood, not a record of the song's history.\nComposition: a distinctive vertical cluster of layered mountain shapes and flowing ribbon sits at the center 30% of a wide horizontal canvas, keeping the essential silhouette readable inside a narrow accordion-screen crop while leaving atmospheric landscape around it. Medium: hand-printed folk woodcut and translucent watercolor on textured ivory paper, muted pine green, mountain blue, warm ochre and a quiet terracotta accent. Gentle, open and hopeful; distinctly different from a realistic map or monument.\nConstraints: no people, singers, historical figures, actual place or landmark, real folk scene, instruments representing an exact score, lyrics, musical notes, writing, Chinese characters, numbers, signature, logo, seals, watermark, frame or interface.",
+  "startedAt": "2026-11-02T10:20:54.806+08:00",
+  "finishedAt": "2026-11-02T10:21:23.916+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: illustration-story\nAsset type: one original AI cultural illustration for a wide interactive screen about the song Yimeng Mountain Melody in Linyi, Shandong.\n\nCreate a lyrical, entirely imagined mountain landscape as a visual metaphor for a local song, not a depiction of any actual site, performance, singer or historical event. Layer soft rolling green and blue mountains around a warm pale sun; one broad, flowing ribbon-like line travels through the center like a sung melody, with a few simple leaves and abstract rhythms. No notation, lyrics or musical symbols. It is an illustration of mood, not a record of the song's history.\nComposition: a distinctive vertical cluster of layered mountain shapes and flowing ribbon sits at the center 30% of a wide horizontal canvas, keeping the essential silhouette readable inside a narrow accordion-screen crop while leaving atmospheric landscape around it. Medium: hand-printed folk woodcut and translucent watercolor on textured ivory paper, muted pine green, mountain blue, warm ochre and a quiet terracotta accent. Gentle, open and hopeful; distinctly different from a realistic map or monument.\nConstraints: no people, singers, historical figures, actual place or landmark, real folk scene, instruments representing an exact score, lyrics, musical notes, writing, Chinese characters, numbers, signature, logo, seals, watermark, frame or interface.",
+      "startedAt": "2026-11-02T10:20:54.806+08:00",
+      "finishedAt": "2026-11-02T10:21:23.916+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1916,
+  "height": 821,
+  "bytes": 3238176,
+  "sha256": "76035937b6367cb05f65d3247b25875696ad6cf2575dfb2891514f4f6428228f",
+  "sourceRecordSha256": "1c646f1a23ae953a686db5c77f707274bcfd0d522a9810a60425e17b7f667329",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371000",
+  "objectId": "wh-object-rushan-ginger-honey",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Precisely edit the supplied original AI illustration for the local-food subject “乳山姜蜜”. Keep the existing wide horizontal composition, warm painted-gouache style, simple ceramic bowl, wooden table, and fresh ginger pieces OUTSIDE the bowl. Correct only the contents of the bowl: remove the heap of coarse, long visible ginger shreds and large pieces, and show a relatively smooth, uniform, thick golden amber ginger-honey preserve with a gently glossy surface. It should have the viscosity of a concentrated food paste, not clear watery tea, and may have subtle natural variation, without claiming that real products can contain no fibers. The bowl should remain plainly a food still life and the small amount of fresh ginger beside it only a symbolic ingredient, not a complete recipe. Avoid adding ingredients, process steps, medicine, health or nutritional claims, brand, product packaging, labels, text, people, hands, logo, seal or watermark. This is an invented AI creative illustration, not a real product, certified origin, exact recipe, food safety proof, or copy of a specific producer's work. Return one complete wide horizontal image.",
+  "startedAt": "2026-11-02T11:32:50.403+08:00",
+  "finishedAt": "2026-11-02T11:33:31.499+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for the cultural food subject “乳山姜蜜”. A compact, appealing, imaginary tabletop still life: one small shallow unmarked ceramic bowl containing thick golden amber ginger-honey preserve (not a clear cup of tea), with a short piece of fresh ginger root and two cut ginger slices beside the bowl; a modest plain wooden spoon is optional. Emphasize a rich, viscous, glossy preserve while retaining a clearly hand-painted gouache/watercolor illustration style, with warm amber, ivory, ginger yellow and soft slate blue accents. Put bowl and ginger together in the central third so the subject survives a narrow crop. This is fictional, not a photograph of an actual product, not an exact recipe, specific ingredients claim, local origin certificate, medical treatment, or health/safety claim. No medicines, supplement imagery, branding, jars, packaging, labels, certification marks, text, logos, seals, watermark, people, hands, process instructions, collage, panels or UI. Do not mimic another named artist's work.",
+      "startedAt": "2026-11-02T10:56:54.615+08:00",
+      "finishedAt": "2026-11-02T10:57:31.586+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Precisely edit the supplied original AI illustration for the local-food subject “乳山姜蜜”. Keep the existing wide horizontal composition, warm painted-gouache style, simple ceramic bowl, wooden table, and fresh ginger pieces OUTSIDE the bowl. Correct only the contents of the bowl: remove the heap of coarse, long visible ginger shreds and large pieces, and show a relatively smooth, uniform, thick golden amber ginger-honey preserve with a gently glossy surface. It should have the viscosity of a concentrated food paste, not clear watery tea, and may have subtle natural variation, without claiming that real products can contain no fibers. The bowl should remain plainly a food still life and the small amount of fresh ginger beside it only a symbolic ingredient, not a complete recipe. Avoid adding ingredients, process steps, medicine, health or nutritional claims, brand, product packaging, labels, text, people, hands, logo, seal or watermark. This is an invented AI creative illustration, not a real product, certified origin, exact recipe, food safety proof, or copy of a specific producer's work. Return one complete wide horizontal image.",
+      "startedAt": "2026-11-02T11:32:50.403+08:00",
+      "finishedAt": "2026-11-02T11:33:31.499+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组已撤回AI初稿，定向编辑输入",
+          "sha256": "1fbfc5da91ee22fa4e707ac68f5efc2b29d627dfb4409cfe55868742b7b8ed2e"
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2707454,
+  "sha256": "9ab0f71b130a83acdc0aaba7208201bf4dcf329b25ead09ed04bdb6bcedab623",
+  "sourceRecordSha256": "f9139bddc4e2b2aada52648e83c48208f6288681fa81e9e5689f436a81a1ef48",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

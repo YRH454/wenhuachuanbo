@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "cityId": "371500",
+  "city": "聊城",
+  "deliveryStatus": "ready",
+  "route": "#/city/371500",
+  "topic": {
+    "name": "葫芦雕刻（东昌葫芦雕刻）",
+    "location": "山东省聊城市，以东昌府区堂邑镇一带为重要传承地域",
+    "category": "传统美术",
+    "intro": "从运河沿岸的农家器物，到承载吉祥纹样的手工艺品，一只葫芦连接着聊城的商贸往来与日常生活。走近东昌葫芦雕刻，先认识地域与传承，再分辨不同的表现技法。",
+    "sources": [
+      "official-project",
+      "official-culture"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "371500",
+    "label": "AI意境图",
+    "entryLabel": "走近东昌葫芦雕刻"
+  },
+  "visual": {
+    "signature": "liaocheng-canal-incision",
+    "layout": "folio",
+    "description": "保留既有《运河刻韵》首屏；专题以低明度墨绿、暖壳色阅读面和少量赭褐标记呼应画面。标题保留宋体、正文用黑体，靠偏左题名与图文对开区别于淄博居中档案式外观。装饰只承担章节连接，不冒充真实葫芦纹样或工艺图。",
+    "composition": "首屏完整呈现既有地域画，自然下滑进入宽版专题。folio题名偏左，地域短引与既有画面局部对开并标AI意境图，局部仅作材质呼应。档案形成可换行的信息带；正文依次展开运河与堂邑、技法辨识、人物与当代生活。技法用并列文字而非步骤编号；问答与来源收束为单列。窄屏按标题、图、档案、正文排布；返回地图和回到画面始终可达，不拦截滚轮。",
+    "palette": {
+      "paper": "#EFE3C5",
+      "ink": "#213C32",
+      "muted": "#4F5D4C",
+      "accent": "#70421F",
+      "rule": "#BDAA7F"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "837",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅶ-61",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2008年（第二批）",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统美术",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "新增项目",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省聊城市",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "聊城市东昌府区文化馆",
+      "sources": [
+        "official-project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "堂邑与运河，把手艺带入生活",
+      "paragraphs": [
+        "东昌葫芦雕刻以聊城东昌府区堂邑镇一带为重要传承地域。官方项目资料将它与运河商贸联系起来：雕刻葫芦曾作为沿岸农家的商品，随往来交流进入更广的生活场景。",
+        "葫芦既承载吉祥纹样，也曾以器具和手工艺品的身份进入日常生活。从一只小物件读起，可以看见地方材料、审美与往来交流的联系。"
+      ],
+      "sources": [
+        "official-project",
+        "official-culture"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "先辨技法，再读纹样",
+      "paragraphs": [
+        "葫芦表面可以承载吉祥题材和装饰纹样。观看时，可以先留意纹样如何顺应器形，再分辨线条、色彩与表面处理；具体图案的含义，可结合作者或作品说明继续了解。",
+        "官方专题与传承人档案提到刀刻、针雕、彩绘、烙画等不同表现。它们提供了几种认识表面处理的入口，而不是每件作品依次经历的一套固定工序。"
+      ],
+      "sources": [
+        "official-culture",
+        "official-person"
+      ],
+      "media": []
+    },
+    {
+      "id": "living",
+      "title": "从传承人档案，走向今天的日常",
+      "paragraphs": [
+        "中国非物质文化遗产网收录李玉成为该项目第五批国家级代表性传承人。档案记载他自幼随李尚贤学习，并介绍其多种表现技法，让传承落实为具体的学习关系与手上功夫。",
+        "国家民委网站2026年7月15日刊发的报道，记录了堂邑镇路庄村的葫芦种植、加工、销售与文创实践，并提到茶叶罐、挂件、胸针等产品方向。一项地方手艺，由此与今天的生活建立新的连接。"
+      ],
+      "sources": [
+        "official-person",
+        "contemporary-life"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "为什么把东昌葫芦雕刻放在聊城专题？",
+      "body": "国家级非遗项目档案的申报地区为山东省聊城市，传承地域以东昌府区堂邑镇一带为重要中心。这是从聊城理解地方手艺的一条具体线索。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "葫芦与运河有什么关系？",
+      "body": "官方文化专题把雕刻葫芦的流传与运河商贸联系起来，提到它曾是沿岸农家的商品。可以沿着这条线索，理解一只物件怎样连接农家生活与往来交流。",
+      "kind": "fact",
+      "sources": [
+        "official-culture"
+      ]
+    },
+    {
+      "title": "刀刻、针雕和彩绘是一套固定工序吗？",
+      "body": "这些资料列举的是不同表现技法，而不是每件作品必须经历的连续步骤。可以先分辨线刻、色彩与表面处理，再结合具体作品说明了解做法。",
+      "kind": "fact",
+      "sources": [
+        "official-person",
+        "official-culture"
+      ]
+    },
+    {
+      "title": "可以从谁的档案了解这项手艺的传承？",
+      "body": "可以从李玉成的官方代表性传承人档案入手。档案载有其国家级代表性传承人批次、随李尚贤学习的经历与技法信息，提供了具体的传承线索。",
+      "kind": "fact",
+      "sources": [
+        "official-person"
+      ]
+    },
+    {
+      "title": "这项手艺与今天的生活还有哪些连接？",
+      "body": "2026年7月的官方报道记录了路庄村的种植、加工、销售，以及茶叶罐、挂件、胸针等文创方向。这些是当时的生活与创作实例；当前活动安排仍需另核。以上问答为依据来源编辑的固定解答，未接入模型。",
+      "kind": "fact",
+      "sources": [
+        "contemporary-life"
+      ]
+    }
+  ],
+  "sources": {
+    "official-project": {
+      "title": "中国非物质文化遗产网：葫芦雕刻（东昌葫芦雕刻）项目档案",
+      "short": "国家级项目档案",
+      "url": "https://www.ihchina.cn/project_details/14147/",
+      "kind": "official",
+      "supports": "正式项目名、八项基本档案、聊城与堂邑一带的地域关联、运河商贸及日常用途。项目不是单件馆藏作品；页面不据此推断单件作者、年代或价格。",
+      "checkedAt": "2026-11-01"
+    },
+    "official-culture": {
+      "title": "中国非物质文化遗产网：雕福塑瑞·东昌葫芦雕刻",
+      "short": "官方文化专题",
+      "url": "https://www.ihchina.cn/niansu/html/diaoFuSuRui_dongChangHuLuDiaoKe.html",
+      "kind": "official",
+      "supports": "地域、运河交流、吉祥题材及不同表现技法。该旧专题的人物级别不作为当前级别依据；照片及作品图未获得本项目复用授权，不嵌入。",
+      "checkedAt": "2026-11-01"
+    },
+    "official-person": {
+      "title": "中国非物质文化遗产网：李玉成代表性传承人档案",
+      "short": "传承人官方档案",
+      "url": "https://www.ihchina.cn/Article/Index/detail?id=2927",
+      "kind": "official",
+      "supports": "第五批国家级代表性传承人身份、随李尚贤学习的经历，以及刀刻、针雕、彩绘、烙画等表现。不能支持对本页AI画面作者、真实器物或当前现场活动的认定。",
+      "checkedAt": "2026-11-01"
+    },
+    "contemporary-life": {
+      "title": "国家民委：山东聊城东昌府区·葫芦藤上结硕果 民族团结绽新花（2026-07-15）",
+      "short": "2026年当代生活报道",
+      "url": "https://www.neac.gov.cn/seac/xwzx/202607/1192617.shtml",
+      "kind": "official",
+      "supports": "堂邑镇路庄村的葫芦种植、加工、销售和文创实践，茶叶罐、挂件、胸针等方向；限报道时点，不保证活动持续开放，不采用收益、占比或最大等营销性判断。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/371500-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：暖黄色葫芦、叶片与弯曲水路的纸雕构成。",
+      "caption": "暖壳水路 · AI虚构葫芦构成，非东昌实物、刀刻针雕示范或李玉成作品。",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8c2f2d0dc77a0814971081edcfda0abc2af1eb4cdaf6a572a461e8cddce5b63e",
+      "record": "records/371500-body-b.md",
+      "recordSha256": "b5ab262b6b628c3359b5731c267e515e93a67ad175b7042ac5afc952080cc189",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "df7c09e1ecda3da8e32d8e952e781f03d272ad1d865aec1bdff4e74126f12187"
+    }
+  ],
+  "unresolved": []
+}

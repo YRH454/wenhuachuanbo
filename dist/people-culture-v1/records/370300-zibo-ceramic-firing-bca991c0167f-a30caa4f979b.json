@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370300",
+  "objectId": "zibo-ceramic-firing",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE original imagined glazed CERAMIC vessel for the Zibo ceramic-firing cultural topic. A broad rounded opaque ceramic bowl-vase with a thick readable rim, simple stable foot and mineral blue-green glaze flowing across a warm off-white ceramic body. It must look distinctly opaque and pottery-like, NOT translucent glass; do not reuse a glass-bottle silhouette or abstract glaze wallpaper.\nComposition: one broad low vessel in a softly top-oblique three-quarter view, so its opening, thickness and full base are visible. Compact central group and generous plain margins, a very quiet warm stone-coloured paper surface, no workshop or kiln. The vessel shape and glaze variation are invented, with subtle hand-shaped irregularity, not a copied maker's work.\nMedium: contemporary ceramic-and-gouache editorial material illustration, softly mottled opaque glaze, restrained turquoise, blue-gray, warm white and earthy notes, tactile paper ground. Clear complete vessel silhouette and glazed surface, not glossy CGI, metal, ancient ruin, museum artifact photo or scientific firing diagram.\nAuthenticity: not a specific museum piece, master ceramic, excavated object or real firing result. It does not prove glaze formula, kiln atmosphere, period or craft stages. No inscriptions, seals, maker marks or supposed archaeological dating.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:31:35.481Z",
+  "finishedAt": "2026-11-02T02:32:09.844Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE original imagined glazed CERAMIC vessel for the Zibo ceramic-firing cultural topic. A broad rounded opaque ceramic bowl-vase with a thick readable rim, simple stable foot and mineral blue-green glaze flowing across a warm off-white ceramic body. It must look distinctly opaque and pottery-like, NOT translucent glass; do not reuse a glass-bottle silhouette or abstract glaze wallpaper.\nComposition: one broad low vessel in a softly top-oblique three-quarter view, so its opening, thickness and full base are visible. Compact central group and generous plain margins, a very quiet warm stone-coloured paper surface, no workshop or kiln. The vessel shape and glaze variation are invented, with subtle hand-shaped irregularity, not a copied maker's work.\nMedium: contemporary ceramic-and-gouache editorial material illustration, softly mottled opaque glaze, restrained turquoise, blue-gray, warm white and earthy notes, tactile paper ground. Clear complete vessel silhouette and glazed surface, not glossy CGI, metal, ancient ruin, museum artifact photo or scientific firing diagram.\nAuthenticity: not a specific museum piece, master ceramic, excavated object or real firing result. It does not prove glaze formula, kiln atmosphere, period or craft stages. No inscriptions, seals, maker marks or supposed archaeological dating.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:31:35.481Z",
+      "finishedAt": "2026-11-02T02:32:09.844Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2578556,
+  "sha256": "bca991c0167fd05cb914d59646eedb771bef6837f53a94644bbdaa79decaffb8",
+  "sourceRecordSha256": "e97b37901a330b9c07aa152d58263af587e0ef8cde43be517f818878f6fdc7af",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

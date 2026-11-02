@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370700",
+  "objectId": "wf-object-kite",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit\nEdit the supplied original AI image to make the central butterfly-like design unambiguously read as a handmade Weifang-style KITE rather than a living butterfly. Keep the same kite silhouette, bright folk colors, patterned paper wings, pale teal background, central placement, and full horizontal composition. Add a subtle but clearly visible fine kite bridle attached near the center and one continuous thin kite string descending from the body into the lower foreground, with the object plainly made from painted paper and slender bamboo spars. Keep the pattern itself and all visual elements fictional; do not copy a real craftsperson's design.\nDo not add any people, hands, kite makers, text, characters, numbers, logo, signatures, seals, watermark, border, or user interface. This is an invented AI illustration, not a technical diagram or documentary record of a real kite.",
+  "startedAt": "2026-11-02T09:54:33.929+08:00",
+  "finishedAt": "2026-11-02T09:55:32.837+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an interactive expanding screen about Weifang kites in Shandong.\n\nCreate one invented symmetrical Chinese folk-art kite, inspired by the decorative spirit of Weifang kite-making but not copying any actual kite, named artist's design, museum object or photograph. Make it an obviously recognizable, complete butterfly-like kite: a narrow upright body, paired balanced wings, a few suggested slender bamboo-like spars and painted paper surfaces. Crisp simple folk ornament, joyous but refined, not an actual engineering pattern or craft demonstration.\nComposition: full kite near the center of a wide horizontal picture with clear silhouette and breathing room; put its central body and unmistakable patterned wing roots in the middle 25–30% of image width so an accordion panel's narrow center crop retains the kite identity. The outer wings are allowed to extend to either side for the full landscape composition. Background: light pale teal sky, gentle paper-cloud shapes and subtle texture. Emphasize an original palette of vermilion, warm gold, indigo, leaf green and ivory, as in an elevated hand-painted paper-cut illustration.\nConstraints: imaginary artwork only, no person, hands, kite making, identifiable place or actual sky event. No replica of a known traditional pattern or an artist's work. No text, Chinese characters, numerals, signage, logos, signatures, seals, watermark, frame, or user-interface elements.",
+      "startedAt": "2026-11-02T09:53:35.311+08:00",
+      "finishedAt": "2026-11-02T09:54:03.857+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit\nEdit the supplied original AI image to make the central butterfly-like design unambiguously read as a handmade Weifang-style KITE rather than a living butterfly. Keep the same kite silhouette, bright folk colors, patterned paper wings, pale teal background, central placement, and full horizontal composition. Add a subtle but clearly visible fine kite bridle attached near the center and one continuous thin kite string descending from the body into the lower foreground, with the object plainly made from painted paper and slender bamboo spars. Keep the pattern itself and all visual elements fictional; do not copy a real craftsperson's design.\nDo not add any people, hands, kite makers, text, characters, numbers, logo, signatures, seals, watermark, border, or user interface. This is an invented AI illustration, not a technical diagram or documentary record of a real kite.",
+      "startedAt": "2026-11-02T09:54:33.929+08:00",
+      "finishedAt": "2026-11-02T09:55:32.837+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组AI原稿，用于定向修正风筝绳索",
+          "sha256": "2fd4fc91c910220a14e898bf13576326336eaed8b2e3b1721006b9190c32a832"
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2548789,
+  "sha256": "385acd7dc9fcfcd7fe8b0b43f6d5dd64071996f440fd05e4fdfb415825b5b416",
+  "sourceRecordSha256": "6263f9593ac6336f8d7fb309d1734a1dd26641b930997af59c71e93b6eb975c3",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

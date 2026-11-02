@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370900",
+  "objectId": "taian-xujiazhuang-woodblock",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: an ORIGINAL woodblock-print-themed editorial composition for Xujiazhuang New Year prints in Taian. One small inked warm-brown woodblock and one complete cream paper print lie next to each other at gentle angles. Invent a NEW bold decorative design of two small anonymous birds, broad flower leaves and a simple rhythmic mountain-shaped arc; use broad black carved outlines, sparse vermilion and soft ochre colour areas, paper-cut-like negative spaces and a few imperfect ink edges. This imagined flower/bird/mountain design is not asserted to be an authentic regional pattern.\nThe paper print should visibly feel woodblock-printed, with woodgrain and slightly irregular ink transfer, not a painting, digital poster or purely cut-paper window ornament. The adjacent block is a simplified material echo, not a functional carving plan or exact mirrored matrix. Show full outer paper edges and full woodblock, not multiple comic panels or an instruction sheet.\nAuthenticity: do NOT copy Wang Lianyang's Hundred-Longevity work, any actual maker's art, Shou or Fu characters, named deity, famous folk image, recognisable print from another region, or a museum exhibit. No characters, labels, seals or fake calligraphy. No claim that the imagined blocks demonstrate the actual production sequence, registration technique or exact local stylistic canon.\nStyle and setting: tactile matte black ink, mineral-red gouache, natural wood and warm ivory paper, editorial still life with quiet directional light and broad calm background. Distinct from a fish-themed print: the new subject is birds and botanical shapes. No workshop, hands, people or carving tools; no dramatic landscape beyond the small invented printed motif.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:48:53.496Z",
+  "finishedAt": "2026-11-02T02:49:57.849Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: an ORIGINAL woodblock-print-themed editorial composition for Xujiazhuang New Year prints in Taian. One small inked warm-brown woodblock and one complete cream paper print lie next to each other at gentle angles. Invent a NEW bold decorative design of two small anonymous birds, broad flower leaves and a simple rhythmic mountain-shaped arc; use broad black carved outlines, sparse vermilion and soft ochre colour areas, paper-cut-like negative spaces and a few imperfect ink edges. This imagined flower/bird/mountain design is not asserted to be an authentic regional pattern.\nThe paper print should visibly feel woodblock-printed, with woodgrain and slightly irregular ink transfer, not a painting, digital poster or purely cut-paper window ornament. The adjacent block is a simplified material echo, not a functional carving plan or exact mirrored matrix. Show full outer paper edges and full woodblock, not multiple comic panels or an instruction sheet.\nAuthenticity: do NOT copy Wang Lianyang's Hundred-Longevity work, any actual maker's art, Shou or Fu characters, named deity, famous folk image, recognisable print from another region, or a museum exhibit. No characters, labels, seals or fake calligraphy. No claim that the imagined blocks demonstrate the actual production sequence, registration technique or exact local stylistic canon.\nStyle and setting: tactile matte black ink, mineral-red gouache, natural wood and warm ivory paper, editorial still life with quiet directional light and broad calm background. Distinct from a fish-themed print: the new subject is birds and botanical shapes. No workshop, hands, people or carving tools; no dramatic landscape beyond the small invented printed motif.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:48:53.496Z",
+      "finishedAt": "2026-11-02T02:49:57.849Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3444446,
+  "sha256": "1ea07816f9586273d603b7dc7054af8b534f79de9ac24a5334eb2b37f1f601ed",
+  "sourceRecordSha256": "4f5e5111cad7a409fa8a9f906465e1b1d07787eb4b81b1f3953ab82c710aef5a",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

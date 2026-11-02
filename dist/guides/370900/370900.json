@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370900",
+  "city": "泰安",
+  "deliveryStatus": "ready",
+  "route": "#/city/370900",
+  "topic": {
+    "name": "皮影戏（泰山皮影戏）",
+    "location": "山东省泰安市",
+    "category": "传统戏剧",
+    "intro": "从一件影偶出发，走近造型、唱念与伴奏共同完成的泰山皮影戏。",
+    "sources": [
+      "project",
+      "person"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370900",
+    "label": "AI意境图",
+    "entryLabel": "走近泰山皮影"
+  },
+  "visual": {
+    "signature": "taian-shadow-stage-notes",
+    "layout": "archive",
+    "description": "从既有深石色影人首屏进入清楚可读的灯幕札记。保留暗场与暖光的明暗关系，阅读面用平整深石蓝，浅色正文和小范围暖色标注；不在文字背后铺裂石纹。",
+    "composition": "以正式项目身份和八项真实档案为中心开场，之后栏目标题与正文分栏，形成影、声、人的对读。表演段较宽，人物段回到连贯叙述，问答和来源顺接；不复用东营的横向材料带，也不伪造演出截图。手机归为单列，长题名和保护单位自然换行。",
+    "palette": {
+      "paper": "#171B20",
+      "ink": "#F2F0E7",
+      "muted": "#BBB8AE",
+      "accent": "#F3B878",
+      "rule": "#454A50"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "235",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅳ-91",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2008年（第二批）",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统戏剧",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "扩展项目",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省泰安市",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "泰安市泰山皮影艺术研究院",
+      "sources": [
+        "project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "一件影偶，连着一台戏",
+      "paragraphs": [
+        "从平面的影偶走近泰安，可以看见一门把造型、声音与表演连在一起的艺术。泰山皮影戏的角色形象吸收当地剪纸与戏曲脸谱的特点，《泰山石敢当》系列是官方介绍列举的代表题材之一。山城的故事由此进入灯幕。"
+      ],
+      "sources": [
+        "project"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "影在动，声音也在场",
+      "paragraphs": [
+        "看皮影不只看轮廓，还可以留意操纵、唱念与伴奏如何配合。范正安的官方条目介绍了他以手脚协调影人与乐器的表演实践。人、影、声共同完成戏剧；“十不闲”的单人表演有其特定传习背景，不等于每场戏都必须只有一人。"
+      ],
+      "sources": [
+        "person",
+        "practice"
+      ],
+      "media": []
+    },
+    {
+      "id": "people",
+      "title": "从观演走向参与",
+      "paragraphs": [
+        "传承不只发生在舞台一端。文旅部刊载的2021年报道记录了泰山皮影的展演、传习、亲子体验与高校合作，让观众从看戏进一步接触这门艺术。这是当时实践的记录，具体活动仍要查当期公告。"
+      ],
+      "sources": [
+        "practice",
+        "person"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "为什么叫“泰山皮影戏”？",
+      "body": "这是官方项目档案使用的地方项目名，申报地区为山东省泰安市。全国多地都有皮影，别处的名录、人物和造型不能直接替代本项目资料。",
+      "kind": "fact",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "title": "影偶造型可以从哪里看起？",
+      "body": "可以留意人物脸部与轮廓。官方介绍指出，泰山皮影的造型借鉴地方剪纸和传统戏曲脸谱；本页AI影人只是创意演绎，不能当作标准样本或具名作品照片。",
+      "kind": "fact",
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "title": "一台戏一定由一个人完成吗？",
+      "body": "不一定。资料介绍过两人配合，也介绍了兼顾操纵、唱念和伴奏的单人表演。“十不闲”是理解特定表演实践的入口，不是所有皮影演出的统一人数规定。",
+      "kind": "fact",
+      "sources": [
+        "person",
+        "practice"
+      ]
+    },
+    {
+      "title": "范正安与这个项目有什么关系？",
+      "body": "中国非遗网的代表性传承人条目将他列为皮影戏（泰山皮影戏）的第三批国家级代表性传承人，并介绍其制作和表演实践。人物认定批次与项目公布批次是两类信息；本页未使用他的肖像或具名作品照片。",
+      "kind": "fact",
+      "sources": [
+        "person",
+        "project"
+      ]
+    },
+    {
+      "title": "今天可以怎样了解这门戏？",
+      "body": "可以先看官方项目与人物资料，再了解有明确时间和主办方的展演或体验活动。2021年报道记录过展演、传习、亲子研学和高校合作；具体开放情况须另查当期公告。",
+      "kind": "fact",
+      "sources": [
+        "project",
+        "person",
+        "practice"
+      ]
+    }
+  ],
+  "sources": {
+    "project": {
+      "title": "中国非物质文化遗产网：皮影戏（泰山皮影戏）",
+      "short": "泰山皮影项目档案",
+      "url": "https://www.ihchina.cn/project_details/13411/",
+      "kind": "official",
+      "supports": "支持项目序号235、Ⅳ-91、2008年第二批扩展项目、传统戏剧、山东省泰安市及保护单位等档案；支持造型、声腔与题材概况。不证明AI影偶的作者、角色、年代或真实舞台身份。",
+      "checkedAt": "2026-11-01"
+    },
+    "person": {
+      "title": "中国非物质文化遗产网：范正安代表性传承人条目",
+      "short": "范正安人物条目",
+      "url": "https://www.ihchina.cn/ccr_detail/1947.html",
+      "kind": "official",
+      "supports": "支持范正安与本项目的对应、第三批国家级代表性传承人身份及制作、表演、伴奏实践。03-1081是人物序号，不替代项目编号；不证明本页影人为其作品，不补写现时演出或健康情况。",
+      "checkedAt": "2026-11-01"
+    },
+    "practice": {
+      "title": "文旅部：山东泰安：用“非遗+”讲好中国故事（来源：中国文化报，2021-08-06）",
+      "short": "当代传习报道",
+      "url": "https://www.mct.gov.cn/whzx/qgwhxxlb/sd/202108/t20210806_926979.htm",
+      "kind": "media",
+      "supports": "支持报道当时的单人或合作表演、展演、传习、亲子体验和高校合作。不是今天的场次、票价或预约开放承诺，不延用当时“唯一”表述为现时结论；不代表配图可免费复用。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370900-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：暖光中侧身的镂空影偶，头饰、长袖与脚部完整可见。",
+      "caption": "灯幕影偶 · AI想象角色，非真实皮影、具体剧目角色或范正安作品。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f63a8e8f319a26ceea5d9a22addbfb91b9ac883dff72e919ce03ebd7d50bdb9e",
+      "record": "records/370900-body-b.md",
+      "recordSha256": "8d0973745027845bc310f1e988d068545f94e0492f8032408c8a838e89ea5491",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "60be4f1d316a663c2d9de5a6a2669ba0c286522a059aebec8cd24300150acca8"
+    }
+  ],
+  "unresolved": []
+}

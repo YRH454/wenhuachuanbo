@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370500",
+  "city": "东营",
+  "deliveryStatus": "ready",
+  "route": "#/city/370500",
+  "topic": {
+    "name": "大码头苇编",
+    "location": "山东省东营市广饶县大码头镇",
+    "category": "地方传统编织技艺",
+    "intro": "从一只提篮出发，看苇席编织如何进入今天的携带、陈设与收纳生活。",
+    "sources": [
+      "workshop",
+      "award"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370500",
+    "label": "AI意境图",
+    "entryLabel": "走近大码头苇编"
+  },
+  "visual": {
+    "signature": "dongying-reed-weave",
+    "layout": "woven",
+    "description": "苇丝横向展开，正文像打开一片平整的编织面。沿用本城深蓝草金的现有地域首屏，进入浅苇灰阅读面；密集纤维只在图像区域，不铺在长段文字背后。",
+    "composition": "题名与导语横向展开，接简洁事实带；材料段集中、器用段舒展、人物段回到连贯文字，宽窄交替而非三张等大卡片。可在文字之外使用已登记的本城AI背景局部并标明身份。器物名称的并列不是工序图；手机归为一个自然阅读列，不强制横向滑屏。",
+    "palette": {
+      "paper": "#F4F6F3",
+      "ink": "#183B43",
+      "muted": "#526365",
+      "accent": "#6A421C",
+      "rule": "#CCD4CE"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "地方称呼",
+      "value": "大码头苇编",
+      "sources": [
+        "workshop",
+        "teaching"
+      ]
+    },
+    {
+      "label": "所在地区",
+      "value": "山东省东营市广饶县大码头镇",
+      "sources": [
+        "workshop",
+        "teaching"
+      ]
+    },
+    {
+      "label": "传统用品线索",
+      "value": "苇席及编织日用品",
+      "sources": [
+        "workshop",
+        "award"
+      ]
+    },
+    {
+      "label": "当代产品线索",
+      "value": "手提包、花篮、收纳篮等",
+      "sources": [
+        "workshop"
+      ]
+    },
+    {
+      "label": "传习人物线索",
+      "value": "徐尊霞（报道中的大码头苇编传承人）",
+      "sources": [
+        "workshop",
+        "teaching"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "从苇席走近大码头",
+      "paragraphs": [
+        "在东营广饶的大码头镇，苇编与家庭生活相连。沿着一只提篮，可以回看苇席等日用品，也能看见这门手艺怎样进入今天的携带与收纳场景。这里介绍的是地方编织，而不是一件已有鉴定档案的藏品。"
+      ],
+      "sources": [
+        "workshop",
+        "award"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "看苇片，也看交织",
+      "paragraphs": [
+        "观察苇编，不妨先看细长材料怎样交错，再看编纹怎样贴合器形。大码头工坊已有提包、花篮等不同产品，部分设计还使用柳皮、木片或竹子。材料和做法随作品而异，不能把一张创意画当作统一工序图。"
+      ],
+      "sources": [
+        "workshop",
+        "teaching"
+      ],
+      "media": []
+    },
+    {
+      "id": "people",
+      "title": "手艺留在生活里",
+      "paragraphs": [
+        "报道记录了徐尊霞带学员练习编织的情景，也介绍了培训后居家制作、工坊回收销售的合作方式。从练习一条苇片到做出可用的器物，传习与日常工作在这里相遇。"
+      ],
+      "sources": [
+        "workshop",
+        "teaching"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "大码头苇编与东营哪里有关？",
+      "body": "这里指东营市广饶县大码头镇的地方编织实践，不是河口区的地名，也不代表其他地方没有苇编。",
+      "kind": "fact",
+      "sources": [
+        "workshop",
+        "teaching"
+      ]
+    },
+    {
+      "title": "过去的苇席与今天的提包有什么联系？",
+      "body": "当地工坊在苇席编织的基础上发展日用和工艺产品。提包、花篮、收纳篮是报道记录的当代用品，不是把所有传统苇席都改成同一种包。",
+      "kind": "fact",
+      "sources": [
+        "workshop",
+        "award"
+      ]
+    },
+    {
+      "title": "苇编产品一定只用芦苇吗？",
+      "body": "不能一概而论。报道记有增加柳皮、木片、竹子等材料的产品线；某只包的实际材料仍须查看它自己的制作记录。",
+      "kind": "fact",
+      "sources": [
+        "workshop"
+      ]
+    },
+    {
+      "title": "谁在教这门手艺？",
+      "body": "2022年报道记录徐尊霞在大码头工坊指导学员；2024年报道继续介绍她组织培训及居家编织的实践。这里不据媒体称呼增写她的代表性传承人认定级别。",
+      "kind": "fact",
+      "sources": [
+        "workshop",
+        "teaching"
+      ]
+    },
+    {
+      "title": "首屏画中的篮子就是获奖的“大码头苇编包”吗？",
+      "body": "不是。东营日报报道的是2024年比赛中的具名参赛作品；本页AI意境图没有该获奖实物的身份资料，不能借用其奖项，也不是真实工序照片。",
+      "kind": "disclaimer",
+      "sources": [
+        "award"
+      ]
+    }
+  ],
+  "sources": {
+    "workshop": {
+      "title": "山东宣传网：广饶大码头苇编：一根芦苇的价值放大了成百上千倍（来源：大众新闻客户端，2024-12-25）",
+      "short": "大码头工坊报道",
+      "url": "https://www.sdxc.gov.cn/whql/whqlsy/202412/t20241225_15300337.htm",
+      "kind": "media",
+      "supports": "支持广饶县大码头镇、徐尊霞的报道身份、提包等产品、部分扩展材料和培训后居家制作方式。不作为现行名录、保护单位、传承人认定级别或本页AI物件身份的证明；不沿用当时收入、产量为实时数值。",
+      "checkedAt": "2026-11-01"
+    },
+    "teaching": {
+      "title": "山东宣传网：山东手造：如何“创”出大市场？（来源：大众日报，2022-04-20）",
+      "short": "工坊传习记录",
+      "url": "https://www.sdxc.gov.cn/sy/xcdt/202204/t20220420_10126135.htm",
+      "kind": "media",
+      "supports": "支持徐尊霞指导学员、苇片处理与日用产品实践。不是每件作品的统一完整工序，也不证明照片已获本页复用许可或人物当下官方职务。",
+      "checkedAt": "2026-11-01"
+    },
+    "award": {
+      "title": "东营日报：“大码头苇编包”荣获中国特色旅游商品大赛铜奖（2024-10-18）",
+      "short": "苇编产品报道",
+      "url": "https://news.dongyingnews.cn/system/2024/10/18/010856889.shtml",
+      "kind": "media",
+      "supports": "支持具名获奖作品以及码头苇席编织向当代产品转化的报道。该奖项不属于本页AI图，不能泛指所有篮子。网站保留版权，本页不复制新闻照片或全文。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370500-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：橙蓝纸层之间的一圈扁苇编织环。",
+      "caption": "纤维与河流 · AI抽象编织构成，非提篮、获奖苇编包或工序记录。",
+      "width": 1672,
+      "height": 941,
+      "sha256": "68407ccf7e63ca986a4b55170ae1417995103d3e54acd99a47fcdac20e7452bd",
+      "record": "records/370500-body-b.md",
+      "recordSha256": "32b8b7f204f4d2bce8857cc2bf2d0a152f3149e7a830e2c0c102f00f946fe05b",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "ae11033fe876630f1c6fa775f5934794468758362b5ee449343285a03345c3c1"
+    }
+  ],
+  "unresolved": []
+}

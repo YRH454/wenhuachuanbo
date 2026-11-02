@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "cityId": "371700",
+  "city": "菏泽",
+  "deliveryStatus": "ready",
+  "route": "#/city/371700",
+  "topic": {
+    "name": "面人（曹州面人）",
+    "location": "山东省菏泽市牡丹区，传统流传地域为曹州一带",
+    "category": "传统美术",
+    "intro": "一团彩面，塑出人物的神情，也容纳神话、戏曲与生活故事。从手指塑形到竹刀刻画，走近曹州面人的掌心世界，再看传承人如何把熟悉的题材带进今天。",
+    "sources": [
+      "official-project",
+      "official-person",
+      "contemporary-creation"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "371700",
+    "label": "AI意境图",
+    "entryLabel": "走近曹州面人"
+  },
+  "visual": {
+    "signature": "heze-palm-stories",
+    "layout": "folio",
+    "description": "保留《牡丹疏影》地域首屏；专题用淡藕紫阅读面、深梅色文字和较大题名回应花色，但叙事主角是曹州面人。宋体标题、黑体正文保持共同分工。以掌心塑作和人物故事为阅读中心，不画假面人、不复制报道角色，也不把牡丹水墨称为真实面塑。",
+    "composition": "folio采用独立跨列题名，再以短引与既有AI牡丹局部对开，图注明确其地域意境身份；档案紧接题名与短引，正文保持较连贯的叙述。概况短、技法段按整体塑形与局部神情展开，人物与当代段留出更宽篇幅连接师承、教学和题材探索。相较聊城的地域与技法辨识，菏泽以人物故事推进，不做逐步工序卡。窄屏单列保持语义顺序，来源与返回不藏进画面。",
+    "palette": {
+      "paper": "#F1EAF0",
+      "ink": "#382539",
+      "muted": "#665365",
+      "accent": "#863D67",
+      "rule": "#D3C3CF"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "828",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅶ-52",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2008年（第二批）",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统美术",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "新增项目",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省菏泽市牡丹区",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "菏泽市牡丹区文化馆",
+      "sources": [
+        "official-project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "掌心小人，也装得下故事",
+      "paragraphs": [
+        "曹州面人是流传于曹州地区的民间面塑艺术，国家级项目档案的申报地区为菏泽市牡丹区。官方介绍将它的发展与民间“花供”相联系，并记述其逐渐成为观赏性工艺品的过程。",
+        "动物、神话、历史故事和地方戏曲人物，都可以成为面人的题材。小小的衣饰与神情，把人们熟悉的故事转化成可观看的形象，也留下地方生活的审美趣味。"
+      ],
+      "sources": [
+        "official-project"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "先塑形，再见神情",
+      "paragraphs": [
+        "官方资料对一般面人制作的介绍，可以从整体与局部两层来读：先用捏、搓、揉等手法塑出大体形态，再借竹刀刻画面部、手脚和神情，配合衣饰等部件完成形象。",
+        "观看时，先看人物的姿态和比例，再留意表情与衣纹怎样呼应题材。曹州面人的生动，不只在细节多少，也在对形象的概括和表达；具体作品的手法，应结合作者说明继续了解。"
+      ],
+      "sources": [
+        "official-project"
+      ],
+      "media": []
+    },
+    {
+      "id": "living",
+      "title": "一双手教会另一双手",
+      "paragraphs": [
+        "第五批国家级代表性传承人陈素景的官方档案记载，她从1986年起随父亲李芳清学习面塑，并向弟子、学生和爱好者传授手艺。人物档案让传承不再只是一个抽象词，而是具体的学习与教习关系。",
+        "2026年4月，菏泽日报社报道李斌将牡丹题材与卡通面塑结合，并走进校园和公共文化场所教学。传统题材与当代兴趣在这里相遇，也给年轻人留下亲手认识面塑的入口。"
+      ],
+      "sources": [
+        "official-person",
+        "contemporary-creation"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "曹州面人与今天的菏泽有什么关系？",
+      "body": "项目介绍的传统流传地域为曹州一带，国家级名录申报地区为山东省菏泽市牡丹区。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "人物的神情和衣饰怎样塑出来？",
+      "body": "官方资料介绍的一般做法，是先用手塑出整体形态，再借竹刀刻画局部细节，配上衣饰等部件。实际手法因作品而异，可以从整体姿态与局部表情的关系开始观看。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "用面粉做的观赏面人可以食用吗？",
+      "body": "不能把观赏性面塑当作食品。官方介绍说明，陈设类面人可能加入用于防裂、防虫、防霉的添加剂；材料名称不等于成品可以食用。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "从谁的档案可以了解传承关系？",
+      "body": "可从陈素景的官方代表性传承人档案入手。档案记载她随父亲李芳清学习，并向弟子、学生和爱好者传授制作技艺，提供了具体的师承与教习线索。",
+      "kind": "fact",
+      "sources": [
+        "official-person"
+      ]
+    },
+    {
+      "title": "为什么从牡丹意境进入面人故事？",
+      "body": "2026年4月的菏泽日报社报道记录了李斌将牡丹题材与面塑结合的创作，提供了两者联系的当代实例。现有首屏只是AI地域意境，不是这组作品的照片或仿作。问答为依据来源编辑的固定解答，未接入模型。",
+      "kind": "fact",
+      "sources": [
+        "contemporary-creation"
+      ]
+    }
+  ],
+  "sources": {
+    "official-project": {
+      "title": "中国非物质文化遗产网：面人（曹州面人）项目档案",
+      "short": "国家级项目档案",
+      "url": "https://www.ihchina.cn/project_details/14087/",
+      "kind": "official",
+      "supports": "正式项目名、八项档案、菏泽牡丹区与曹州地域、花供和观赏工艺品背景、题材与一般面人塑作手法，以及陈设类添加剂提示。一般技法不能变成每件作品的完整固定流程。",
+      "checkedAt": "2026-11-01"
+    },
+    "official-person": {
+      "title": "中国非物质文化遗产网：陈素景代表性传承人档案",
+      "short": "传承人官方档案",
+      "url": "https://www.ihchina.cn/ccr_detail/2901.html",
+      "kind": "official",
+      "supports": "第五批国家级代表性传承人身份、1986年起随父亲李芳清学习及传授弟子学生等经历。不替AI图署名，不推断当前任职或现场活动。",
+      "checkedAt": "2026-11-01"
+    },
+    "contemporary-creation": {
+      "title": "菏泽日报社：九色牡丹入面塑 百年手艺正青春（官方澎湃号，2026-04-10）",
+      "short": "牡丹题材与当代教习",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32940387",
+      "kind": "media",
+      "supports": "李斌将牡丹题材与卡通面塑相结合，以及校园、公共文化场所教习的报道。作品名称仅作资料识别，不复制角色造型、照片或署名；报道中的节会不改写成正在举办。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/371700-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：花饰衣冠的两个虚构面塑风格人物与牡丹纹样。",
+      "caption": "彩面花影 · AI虚构人物造型，非真人、李斌作品或报道中面塑；观赏面人不作食品。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3bdeeac8e52713f3aaf7b2b9101cf3756cf62574eadcbae8b4458596cf586826",
+      "record": "records/371700-body-b.md",
+      "recordSha256": "86d1c57cf34ecdc9b10cc757df997d255d7d85dc92753ff043feaee00dd6c5cf",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "81b2dc31563bb030152b0195f8056b1a9021f734f2a9940d5bb1326fb8c6da95"
+    }
+  ],
+  "unresolved": []
+}

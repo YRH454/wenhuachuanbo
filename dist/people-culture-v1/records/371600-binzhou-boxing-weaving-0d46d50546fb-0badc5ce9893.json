@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371600",
+  "objectId": "binzhou-boxing-weaving",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create one original horizontal editorial illustration for a Shandong regional-culture article about Boxing willow weaving, Binzhou. All forms are imaginative and invented: do not copy a real object, artist, historical artifact or photograph and do not show a real workshop or production step.\n\nVISUAL DIRECTION B — refined textured paper collage with natural fiber-like relief and a calm graphic design, visually different from ink-wash. Show a compact square-ish open-topped woven willow storage basket angled in three-quarter view, with recognizable interlacing of thin, round, twig-like woody strands and a simple solid-looking rim. A few cropped abstract willow leaf silhouettes and small geometry create a sophisticated background, but leave the entire basket completely inside the frame. Prioritize the distinct basket volume and linear willow texture. Use an original muted palette of sage green, pale sand, natural light olive-brown, soft mineral grey and cream. Avoid flat strips, straw braids, sweeping horizontal woven waves, and bright red/navy/orange patchwork. The result should look like a poetic illustration rather than a documentary product photograph, and remain legible when fitted as a full image on a phone. Horizontal image.\n\nNo people, hands, tools, weaving action, process diagram, printed labels, Chinese characters, letters, numbers, seals, logo, signature, watermark, border or frame. Do not suggest that the fictional pattern documents a particular weaving technique or an authentic local object.",
+  "startedAt": "2026-11-02T00:32:01.31+08:00",
+  "finishedAt": "2026-11-02T00:34:13.265+08:00",
+  "generationDate": null,
+  "timePrecision": "原记录起止时间及偏移原样保留",
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create one original horizontal editorial illustration for a Shandong regional-culture article about Boxing willow weaving, Binzhou. All forms are imaginative and invented: do not copy a real object, artist, historical artifact or photograph and do not show a real workshop or production step.\n\nVISUAL DIRECTION B — refined textured paper collage with natural fiber-like relief and a calm graphic design, visually different from ink-wash. Show a compact square-ish open-topped woven willow storage basket angled in three-quarter view, with recognizable interlacing of thin, round, twig-like woody strands and a simple solid-looking rim. A few cropped abstract willow leaf silhouettes and small geometry create a sophisticated background, but leave the entire basket completely inside the frame. Prioritize the distinct basket volume and linear willow texture. Use an original muted palette of sage green, pale sand, natural light olive-brown, soft mineral grey and cream. Avoid flat strips, straw braids, sweeping horizontal woven waves, and bright red/navy/orange patchwork. The result should look like a poetic illustration rather than a documentary product photograph, and remain legible when fitted as a full image on a phone. Horizontal image.\n\nNo people, hands, tools, weaving action, process diagram, printed labels, Chinese characters, letters, numbers, seals, logo, signature, watermark, border or frame. Do not suggest that the fictional pattern documents a particular weaving technique or an authentic local object.",
+      "startedAt": "2026-11-02T00:32:01.31+08:00",
+      "finishedAt": "2026-11-02T00:34:13.265+08:00",
+      "generationDate": null,
+      "timePrecision": "原记录起止时间及偏移原样保留",
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3472011,
+  "sha256": "0d46d50546fb23342ec87e968db8bd8fa2363e12555c593878086cda2c5ef62a",
+  "sourceRecordSha256": "caef23a9cf72f7203dabca455f8adde6ee592e16c452553c4907e810aa267ae7",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

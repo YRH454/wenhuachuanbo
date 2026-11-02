@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370500",
+  "objectId": "dongying-guangrao-qi-brush",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: ONE complete original Chinese writing brush as a material illustration for the Guangrao Qi-brush cultural topic. A long simple natural-brown bamboo/wood-toned shaft ends in a tapered soft cream-grey bristle tuft with visible fine fibres and a calm pointed tip. Clearly distinguish the warm solid shaft from the soft bristle material. The new unbranded brush is an imagined topic object, NOT an authentic Guo Mingchang product, collector's antique, museum brush or exact specification for Qi-brush manufacture.\nComposition: one complete diagonal brush, shaft end and bristle tip both well inside broad margins, resting lightly above a plain small ink-grey stone support on a blank warm paper ground. A very faint ink wash nearby may suggest the relationship to writing but must contain NO strokes resembling letters, characters, calligraphy or handwriting. No inkstone construction diagram, extra brush set, workshop, process tools, hands or people. No metal ferrule, Western flat paintbrush, toothbrush, feather quill or branded pen.\nStyle and palette: spare contemporary ink-and-gouache editorial material study, rich wood grain, visible soft hair fibres, matte surfaces, restrained earth-brown, warm white and ink-grey. Not glossy e-commerce photography or an advertisement. Do not infer actual bristle species, exact assembly, measuring dimensions or craft steps from the imagined material design.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:54:00.272Z",
+  "finishedAt": "2026-11-02T02:54:34.244Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: ONE complete original Chinese writing brush as a material illustration for the Guangrao Qi-brush cultural topic. A long simple natural-brown bamboo/wood-toned shaft ends in a tapered soft cream-grey bristle tuft with visible fine fibres and a calm pointed tip. Clearly distinguish the warm solid shaft from the soft bristle material. The new unbranded brush is an imagined topic object, NOT an authentic Guo Mingchang product, collector's antique, museum brush or exact specification for Qi-brush manufacture.\nComposition: one complete diagonal brush, shaft end and bristle tip both well inside broad margins, resting lightly above a plain small ink-grey stone support on a blank warm paper ground. A very faint ink wash nearby may suggest the relationship to writing but must contain NO strokes resembling letters, characters, calligraphy or handwriting. No inkstone construction diagram, extra brush set, workshop, process tools, hands or people. No metal ferrule, Western flat paintbrush, toothbrush, feather quill or branded pen.\nStyle and palette: spare contemporary ink-and-gouache editorial material study, rich wood grain, visible soft hair fibres, matte surfaces, restrained earth-brown, warm white and ink-grey. Not glossy e-commerce photography or an advertisement. Do not infer actual bristle species, exact assembly, measuring dimensions or craft steps from the imagined material design.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:54:00.272Z",
+      "finishedAt": "2026-11-02T02:54:34.244Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2681807,
+  "sha256": "e6d425ce328d784af4f59c1468b87d5e0551502c9130cef4241d3a1a04af83b0",
+  "sourceRecordSha256": "267737968fa1236ec7e7b482b96fb825b57c36f98cde25a564be0c6b38d0352b",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370300",
+  "objectId": "zibo-liaozhai-liqu",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one NON-LITERAL original editorial concept about Liaozhai liqu local sung storytelling and voice rhythm in Zichuan, Zibo. An open blank paper booklet is the quiet anchor while several graceful brush-and-paper ribbons rise rhythmically from its pages and curl through the air like phrases of a sung story. Express the relationship between oral voice, local tunes and page memory, not merely a book product illustration.\nComposition: a small complete open blank booklet with visible curled pages sits in the lower central area, and airy mineral-indigo and muted russet brush ribbons weave above it in a balanced wave rhythm. Keep the complete booklet and major ribbon loops inside ample margins, no performer, character, face, portrait, puppet, historical figure, ghost story scene or actual instrument. The voice ribbons are abstract art, not musical notation, sound-wave measurements or a transcription.\nStyle: refined ink-gouache and folded-paper visual language with soft mineral colour, warm ivory handmade-paper texture, rhythmic light-and-dark spacing and quiet shadow. A poetic impression of local sung storytelling, not a stage photograph, UI music player or generic Western music-note poster.\nAuthenticity: no Pu Songling portrait, real singer, actual show, copied score, historic manuscript or readable page. Do not depict the cover of Liaozhai Zhiyi or claim that a literary book itself is the performing-art object. No invented instruments or sheet-music notes.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:31:35.481Z",
+  "finishedAt": "2026-11-02T02:33:03.305Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one NON-LITERAL original editorial concept about Liaozhai liqu local sung storytelling and voice rhythm in Zichuan, Zibo. An open blank paper booklet is the quiet anchor while several graceful brush-and-paper ribbons rise rhythmically from its pages and curl through the air like phrases of a sung story. Express the relationship between oral voice, local tunes and page memory, not merely a book product illustration.\nComposition: a small complete open blank booklet with visible curled pages sits in the lower central area, and airy mineral-indigo and muted russet brush ribbons weave above it in a balanced wave rhythm. Keep the complete booklet and major ribbon loops inside ample margins, no performer, character, face, portrait, puppet, historical figure, ghost story scene or actual instrument. The voice ribbons are abstract art, not musical notation, sound-wave measurements or a transcription.\nStyle: refined ink-gouache and folded-paper visual language with soft mineral colour, warm ivory handmade-paper texture, rhythmic light-and-dark spacing and quiet shadow. A poetic impression of local sung storytelling, not a stage photograph, UI music player or generic Western music-note poster.\nAuthenticity: no Pu Songling portrait, real singer, actual show, copied score, historic manuscript or readable page. Do not depict the cover of Liaozhai Zhiyi or claim that a literary book itself is the performing-art object. No invented instruments or sheet-music notes.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:31:35.481Z",
+      "finishedAt": "2026-11-02T02:33:03.305Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2872532,
+  "sha256": "812b5b0645af23f763b9714851b3669b6ddc119e6a617555ac2ba109eebe2593",
+  "sourceRecordSha256": "79e42553bacd0cdd5565d15e8c0eba8aa336c93001d3f2813db2577b3a44c452",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

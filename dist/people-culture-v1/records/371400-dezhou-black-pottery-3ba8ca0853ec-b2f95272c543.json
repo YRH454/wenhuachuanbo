@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371400",
+  "objectId": "dezhou-black-pottery",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: original cultural-object illustration for Dezhou black pottery, Shandong.\nPrimary request: ONE complete invented black earthenware vessel as a contemplative material portrait; creative concept, not a real archaeological or museum artifact.\nSubject: a stable broad-shouldered, gently tapering rounded vessel with a short open neck, modest foot and a restrained flowing carved-looking decorative band. Black opaque ceramic body, softly burnished highlights and subtle handmade variation; not glass, black metal, lacquer, painted porcelain or a glazed mirror. No handles or precarious thin stem. Keep the full rim, shoulders and base visible, with clear negative space all around.\nComposition and style: a single sculptural silhouette slightly off-centre, charcoal-to-warm-gray wash backdrop, quiet sand-coloured base, atmospheric graphite and ink-gouache interpretation with tactile clay-like surface and controlled soft light. Refined shape clarity, not a glossy branded product photograph or a dark shape lost in a black background. Invent the form and decoration; do not replicate a named design or imply this is a typical documented historic form.\nAuthenticity: not a Longshan excavation, dated antique, specific collection or Liangzi branded work. Surface appearance is artistic, not proof of origin, date, clay composition, production process or a continuous ancient lineage. No fake inscription or provenance.\nSingle standalone creative artwork, not a page, diagram, contact sheet or UI. Horizontal 3:2, ideally native 1536x1024. Keep complete subject silhouettes and generous safe margins; fully readable when shown with contain on mobile. No people, real faces, hands, text, pseudo-writing, labels, numbers, seals, signatures, brands, logos or watermark. No copied artwork, named craftsperson's work, museum object or process documentation.",
+  "startedAt": "2026-11-02T02:00:33.784Z",
+  "finishedAt": "2026-11-02T02:00:56.514Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: original cultural-object illustration for Dezhou black pottery, Shandong.\nPrimary request: ONE complete invented black earthenware vessel as a contemplative material portrait; creative concept, not a real archaeological or museum artifact.\nSubject: a stable broad-shouldered, gently tapering rounded vessel with a short open neck, modest foot and a restrained flowing carved-looking decorative band. Black opaque ceramic body, softly burnished highlights and subtle handmade variation; not glass, black metal, lacquer, painted porcelain or a glazed mirror. No handles or precarious thin stem. Keep the full rim, shoulders and base visible, with clear negative space all around.\nComposition and style: a single sculptural silhouette slightly off-centre, charcoal-to-warm-gray wash backdrop, quiet sand-coloured base, atmospheric graphite and ink-gouache interpretation with tactile clay-like surface and controlled soft light. Refined shape clarity, not a glossy branded product photograph or a dark shape lost in a black background. Invent the form and decoration; do not replicate a named design or imply this is a typical documented historic form.\nAuthenticity: not a Longshan excavation, dated antique, specific collection or Liangzi branded work. Surface appearance is artistic, not proof of origin, date, clay composition, production process or a continuous ancient lineage. No fake inscription or provenance.\nSingle standalone creative artwork, not a page, diagram, contact sheet or UI. Horizontal 3:2, ideally native 1536x1024. Keep complete subject silhouettes and generous safe margins; fully readable when shown with contain on mobile. No people, real faces, hands, text, pseudo-writing, labels, numbers, seals, signatures, brands, logos or watermark. No copied artwork, named craftsperson's work, museum object or process documentation.",
+      "startedAt": "2026-11-02T02:00:33.784Z",
+      "finishedAt": "2026-11-02T02:00:56.514Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2672515,
+  "sha256": "3ba8ca0853ec1c2e3d7a55622fa7169113975b955807ea34805af6adb30e6b31",
+  "sourceRecordSha256": "c0af56274ba1020711a0913f726b056e817ab8f46ff7ece211470ab0900a1194",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370200",
+  "city": "青岛",
+  "status": "draft",
+  "people": [
+    {
+      "id": "qd-person-liuwu",
+      "name": "刘武",
+      "connection": "中国石油大学2025年探访青岛贝雕企业和艺术馆时采访的人物。",
+      "intro": "在青年学生的探访中，他介绍贝雕的传承，并与实践队交流数字化展示的设想。",
+      "sources": [
+        {
+          "title": "匠心传承，数字对话——学院青风遗韵传扬队开展贝雕非遗探访活动｜中国石油大学，2025-07-04",
+          "url": "https://cj.upc.edu.cn/_t1048/2025/0704/c3727a465888/pagem.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "qd-person-wuyingmin",
+      "name": "吴英民",
+      "connection": "山东胶州人，胶州秧歌国家级代表性传承人档案的申报地区为胶州市。",
+      "intro": "向多位民间艺人学习，整理秧歌的舞蹈与音乐，也通过组建队伍和教学推动传承。",
+      "sources": [
+        {
+          "title": "吴英民｜中国非物质文化遗产网人物档案",
+          "url": "https://www.ihchina.cn/ccr_detail/1223.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "qd-object-shell-carving",
+      "name": "青岛贝雕",
+      "category": "传统技艺与装饰艺术",
+      "connection": "青岛市市南区文化馆介绍其本地传承，并公布贝雕制作技艺的区级名录记录。",
+      "intro": "贝壳自带的色泽、纹理与形状，经过打磨、镶嵌和层叠组合，成为挂画与装饰品中可以细看的材料语言。",
+      "sources": [
+        {
+          "title": "新增13项！市南区第七批非物质文化遗产代表性项目名录来了｜市南区文化馆，2023-07-10",
+          "url": "https://www.qdsnqwhg.cn/html/feiwuzhiwenhuayichan/2023/0710/2614.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370200-qd-object-shell-carving-413f264f4ab8.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：原创珠母贝色层叠构成，不是真实贝雕、特定作者作品或工艺证据。",
+        "credit": "AI创意插画｜原生成记录随图保留",
+        "rightsStatus": "既有AI候选，原记录approved=false、publicUseApproved=false；待集成确认，须保留AI说明",
+        "record": "records/370200-qd-object-shell-carving-413f264f4ab8-7048259b4cc1.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "qd-object-jiaozhou-yangge",
+      "name": "胶州秧歌",
+      "category": "传统舞蹈",
+      "connection": "国家级项目“秧歌（胶州秧歌）”申报地区为胶州市，保护单位为胶州市文化服务中心。",
+      "intro": "来自乡土的舞蹈把腰身、步伐、扇与鼓连成有韧性的节奏。不同角色各有姿态，表演也包含队形变化与小戏。",
+      "sources": [
+        {
+          "title": "秧歌（胶州秧歌）｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/12815.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370200-qd-object-jiaozhou-yangge-a86528be2201.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：完整持扇的匿名民间舞者，以贴地步伐和腰身曲线作艺术化表达，不是吴英民、真实演出、指定角色或标准动作。",
+        "credit": "AI创意插画｜定向修订完整记录随图保留",
+        "rightsStatus": "定向修订已完成资料组静态复核，仅暂列AI候选；公开使用及第三方相似性待核，不作为胶州标准服制或舞谱",
+        "record": "records/370200-qd-object-jiaozhou-yangge-a86528be2201-d86f3e6d93a0.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "qd-object-laoshan-stories",
+      "name": "崂山民间故事",
+      "category": "民间文学",
+      "connection": "国家级项目申报地区为青岛市崂山区，内容连接当地山海与民间生活。",
+      "intro": "山川风物、海洋生活和民间想象，在一代代讲述中交织。这里看的是口头故事的传承，不是把神话场景当作历史现场。",
+      "sources": [
+        {
+          "title": "崂山民间故事｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/12287/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370200-qd-object-laoshan-stories-6ad8e75d7603.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：虚构山海夜色中的灯与金色光线，不是崂山实景、具体传说情节、历史现场或古籍插图。",
+        "credit": "AI创意插画｜完整生成记录随图保留",
+        "rightsStatus": "原记录待人工确认，公开使用及第三方相似性待核；仅作叙事意象，须保留AI说明",
+        "record": "records/370200-qd-object-laoshan-stories-6ad8e75d7603-bbb12bf94ee3.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "qd-object-laoshan-green-tea",
+      "name": "崂山绿茶",
+      "category": "地方茶饮",
+      "connection": "青岛市市场监管部门将崂山绿茶列入当地地理标志保护产品。",
+      "intro": "从一撮茶叶到一杯清茶，崂山绿茶为认识青岛的日常风物打开另一个入口。这里介绍地方茶饮，不为某一包商品作认证。",
+      "sources": [
+        {
+          "title": "新增发明专利1.45万件！青岛发布知识产权发展和保护情况｜青岛市市场监督管理局，2023-04-28",
+          "url": "https://amr.qingdao.gov.cn/zt/fwxzfjxs/202304/t20230428_7163609.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370200-qd-object-laoshan-green-tea-c0f2413af0c4.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：素白茶杯、淡茶与茶叶置于海绿色抽象水纹间，不证明茶种、产地、功效或茶具的本地制作。",
+        "credit": "AI创意插画｜完整生成记录随图保留",
+        "rightsStatus": "原记录待人工确认，公开使用及第三方相似性待核；仅作茶饮静物意象，不作为产地或产品认证",
+        "record": "records/370200-qd-object-laoshan-green-tea-c0f2413af0c4-776dc8beac3f.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "两位真实人物的文字身份已核；未取得可供本项目公开使用的肖像，均以localPath=null交付。刘武采访原图URL仅供内部核源，不能自动热链。",
+    "贝雕仅复用既有AI候选，须确认实际容器适配；原记录建议完整3:2展示，竖裁可能截断端部。",
+    "胶州秧歌初稿的1024×1536竖幅与泛化古装飞带问题已留档，不再选用。现仅以1536×1024贴地横幅修订暂列media候选，已实看、核对初始/编辑记录及输入输出哈希；不据此认定标准服制、具体角色或单帧动作，仍需配文说明。详见本目录胶州秧歌-候选复核-20261102.md的修订增量。",
+    "崂山民间故事、崂山绿茶各一张已收并实际查看，暂列AI展示候选；公开权利与实际页面适配待核，不等于批准。故事图的灯笼是生成叙事意象，不是当地讲述习俗的事实依据；茶图不证明茶种或产地。每项仅1张，不追加A/B。",
+    "本包不推定青岛贝雕现今最高名录级别，也不把崂山绿茶称作国家级非遗。",
+    "未改共享运行代码，未进行浏览器验收或人物照片裁切。"
+  ]
+}

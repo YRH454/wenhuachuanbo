@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370200",
+  "objectId": "qd-object-shell-carving",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one standalone body illustration for a Qingdao cultural feature on 贝雕制作技艺, shell carving and inlay; not a webpage or replacement first-screen background.\n\nPrimary request: Create an original tactile nacre-inlay art composition, visibly unlike a pale ink painting. Thin shell-like tesserae with natural milky pearl lustre overlap in an inventive asymmetrical sweep, with small raised layers and carefully spaced dark gaps. Their organic shapes loosely evoke a folded wave or open fan but do not form a real existing work, named coastal landmark or map. Preserve a compact focal assembly, not scattered loose shells across the entire image.\n\nMedium: a contemporary material-art illustration of imaginative shell inlay, matte mineral relief with finely striated nacre, delicately iridescent edges and shallow oblique light. Use a deep desaturated sea-teal field and a few muted coral/copper accents to contrast with ivory, pink-grey and blue-green shell reflections. The substrate is a simple imagined art surface, not an antique tray, commercial jewellery, photographed museum piece or a copy of a specific maker's design. Do not add metal filigree, gems or an actual brand.\n\nComposition: ONE full landscape 3:2 artwork, ideally native 1536×1024. A strong diagonal cluster near the centre, with most essential shell layers inside the central 44% of width and 64% of height, broad quiet darker margins, clear silhouette and visible material depth. Not a circular reed ring, coastline panorama, paper river map, stage or symmetrical decorative plate. A centred mobile 4:5 view should still show a coherent inlay motif. No frame, border, contact sheet, product mockup or multiple panels.\n\nAuthenticity limits: AI creative interpretation only, not a real artefact, a specific artist's work or evidence of actual Qingdao craft steps, joint structure, shell species or approved pattern. No tools, making steps, hands, people or real architecture. No famous artwork imitation.\nText: NONE. No letters, Chinese characters, calligraphy, signature, red seals, watermark, logos, labels, museum numbers, pseudo-writing, UI or device frame.",
+  "startedAt": "2026-11-01T15:58:14.717Z",
+  "finishedAt": "2026-11-01T15:59:13.228Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: one standalone body illustration for a Qingdao cultural feature on 贝雕制作技艺, shell carving and inlay; not a webpage or replacement first-screen background.\n\nPrimary request: Create an original tactile nacre-inlay art composition, visibly unlike a pale ink painting. Thin shell-like tesserae with natural milky pearl lustre overlap in an inventive asymmetrical sweep, with small raised layers and carefully spaced dark gaps. Their organic shapes loosely evoke a folded wave or open fan but do not form a real existing work, named coastal landmark or map. Preserve a compact focal assembly, not scattered loose shells across the entire image.\n\nMedium: a contemporary material-art illustration of imaginative shell inlay, matte mineral relief with finely striated nacre, delicately iridescent edges and shallow oblique light. Use a deep desaturated sea-teal field and a few muted coral/copper accents to contrast with ivory, pink-grey and blue-green shell reflections. The substrate is a simple imagined art surface, not an antique tray, commercial jewellery, photographed museum piece or a copy of a specific maker's design. Do not add metal filigree, gems or an actual brand.\n\nComposition: ONE full landscape 3:2 artwork, ideally native 1536×1024. A strong diagonal cluster near the centre, with most essential shell layers inside the central 44% of width and 64% of height, broad quiet darker margins, clear silhouette and visible material depth. Not a circular reed ring, coastline panorama, paper river map, stage or symmetrical decorative plate. A centred mobile 4:5 view should still show a coherent inlay motif. No frame, border, contact sheet, product mockup or multiple panels.\n\nAuthenticity limits: AI creative interpretation only, not a real artefact, a specific artist's work or evidence of actual Qingdao craft steps, joint structure, shell species or approved pattern. No tools, making steps, hands, people or real architecture. No famous artwork imitation.\nText: NONE. No letters, Chinese characters, calligraphy, signature, red seals, watermark, logos, labels, museum numbers, pseudo-writing, UI or device frame.",
+      "startedAt": "2026-11-01T15:58:14.717Z",
+      "finishedAt": "2026-11-01T15:59:13.228Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3059444,
+  "sha256": "413f264f4ab80e8140515cdf371581aa59ff403268cba3189977d440c2a314bd",
+  "sourceRecordSha256": "cdbe63b40012dfadd4050ce6984b17d31880af3a13ade5f5bd89004389ede452",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

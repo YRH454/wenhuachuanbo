@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370500",
+  "objectId": "dongying-lvju",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: a NON-LITERAL PEOPLE-FREE editorial concept for Lvju theatre in Dongying. A complete flowing original stage robe is suggested through layered draped cloth and an elegant pair of long pale sleeves; the sleeves curve gently outward as if retaining a gesture after a performance. There is NO visible person, no body inside, head, face, hands, feet, mannequin, mask, headdress or portrait. Let the cloth itself carry an abstract theatrical posture, with a quiet single warm stage-light oval and sparse deep-indigo curtain folds behind it.\nCloth and colour: soft muted teal robe panels, warm ivory sleeves and a restrained russet-red lining, subtle original botanical stitch-like accents rather than a copied character costume. Do not assert that these invented colours, garment shapes or embroidery are a verified Lvju costume specification. They are a general imaginative association with theatrical clothing and gesture.\nComposition: one complete central cloth-and-sleeve silhouette, all sleeve tips and robe hem comfortably inside broad margins; quiet theatrical dark-to-light contrast on a parchment-textured ground. Painterly folded-paper and gouache textile illustration, not a realistic scene of a floating costume, documentary stage photograph, actor publicity still, lesson image or performance reconstruction.\nAuthenticity: no Wang Lingling, child performer or other real person, no photo-based likeness, no identifiable role from Selling Water or any named production, no actual stage set, score, lyrics, musical notation or invented musical instrument. No mask collection, Beijing-opera face paint, dramatic martial headwear or audience. Do not turn it into a generic costume catalogue or museum exhibit.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:54:00.272Z",
+  "finishedAt": "2026-11-02T02:55:05.127Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: a NON-LITERAL PEOPLE-FREE editorial concept for Lvju theatre in Dongying. A complete flowing original stage robe is suggested through layered draped cloth and an elegant pair of long pale sleeves; the sleeves curve gently outward as if retaining a gesture after a performance. There is NO visible person, no body inside, head, face, hands, feet, mannequin, mask, headdress or portrait. Let the cloth itself carry an abstract theatrical posture, with a quiet single warm stage-light oval and sparse deep-indigo curtain folds behind it.\nCloth and colour: soft muted teal robe panels, warm ivory sleeves and a restrained russet-red lining, subtle original botanical stitch-like accents rather than a copied character costume. Do not assert that these invented colours, garment shapes or embroidery are a verified Lvju costume specification. They are a general imaginative association with theatrical clothing and gesture.\nComposition: one complete central cloth-and-sleeve silhouette, all sleeve tips and robe hem comfortably inside broad margins; quiet theatrical dark-to-light contrast on a parchment-textured ground. Painterly folded-paper and gouache textile illustration, not a realistic scene of a floating costume, documentary stage photograph, actor publicity still, lesson image or performance reconstruction.\nAuthenticity: no Wang Lingling, child performer or other real person, no photo-based likeness, no identifiable role from Selling Water or any named production, no actual stage set, score, lyrics, musical notation or invented musical instrument. No mask collection, Beijing-opera face paint, dramatic martial headwear or audience. Do not turn it into a generic costume catalogue or museum exhibit.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:54:00.272Z",
+      "finishedAt": "2026-11-02T02:55:05.127Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2982131,
+  "sha256": "2dbfc69e36f23b3c58ffdcc4ef7b1a33f2004d9fcfc07e67336909b186622d83",
+  "sourceRecordSha256": "86cf102e5feddcdf4b972f764b70d00b4b24f643fec5043e5804a1dc4130ef3a",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

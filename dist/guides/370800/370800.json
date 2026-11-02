@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370800",
+  "city": "济宁",
+  "deliveryStatus": "ready",
+  "route": "#/city/370800",
+  "topic": {
+    "name": "曲阜尼山砚",
+    "location": "济宁市曲阜市尼山",
+    "category": "传统技艺",
+    "intro": "尼山砚因石料产于曲阜尼山而得名。制砚讲究依石形、顺石纹安排墨堂与墨池，在材料本色和人工取舍之间形成朴素的文房意境。省级名录项目名称为“曲阜尼山砚制作技艺”。",
+    "sources": [
+      "jining-nishan",
+      "jining-register",
+      "sdxc-nishan"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370800",
+    "label": "AI意境图",
+    "entryLabel": "读懂曲阜尼山砚"
+  },
+  "visual": {
+    "signature": "jining-nishan-inkstone-folio",
+    "layout": "folio",
+    "description": "以低饱和砚石暗底、暖纸白文字和浅金强调构成静读画页，避免把尼山砚误写成通体黑色：暗底只承担文房氛围，不承担石材鉴定。宋体标题配黑体正文，文字与底色均满足4.5:1以上对比。现有《运水墨痕》只作为济宁AI场景，不称砚实景，不以运河意象解释制砚。",
+    "composition": "采用folio画页式阅读：题名与地域独立成页眉，六条简短档案收为边注；桌面以章节题和材料提示为左页、连贯正文为右页，三节由认识对象、理解取舍进入文房意味，章间保留较宽间隔。手机依题名、档案、三节正文顺序合为单栏，正文不横向滑动。无新图时不建空图框；如使用本市已登记AI画局部，仅取370800并明确标识AI，绝不裁成貌似真实砚台的产品图或工序图。",
+    "palette": {
+      "paper": "#172321",
+      "ink": "#f2e9d2",
+      "muted": "#c1c0ae",
+      "accent": "#d6b579",
+      "rule": "#5b6b62"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "展示对象",
+      "value": "曲阜尼山砚",
+      "sources": [
+        "jining-nishan"
+      ]
+    },
+    {
+      "label": "产石地域",
+      "value": "曲阜尼山",
+      "sources": [
+        "jining-nishan"
+      ]
+    },
+    {
+      "label": "省级名录名称",
+      "value": "曲阜尼山砚制作技艺",
+      "sources": [
+        "jining-register"
+      ]
+    },
+    {
+      "label": "所载名录类别",
+      "value": "山东省第二批省级非物质文化遗产名录；传统技艺；申报单位曲阜市",
+      "sources": [
+        "jining-register"
+      ]
+    },
+    {
+      "label": "设计取向",
+      "value": "顺应石料天然形状与纹理，因材施艺",
+      "sources": [
+        "jining-nishan",
+        "sdxc-nishan"
+      ]
+    },
+    {
+      "label": "器物构成",
+      "value": "依据石形安排墨堂与墨池",
+      "sources": [
+        "jining-nishan",
+        "sdxc-nishan"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "由尼山之石认识一方砚",
+      "paragraphs": [
+        "尼山砚因所用石料产于曲阜尼山而得名，是鲁砚的一个品种。沿着曲阜尼山的产石地域，可以把一方砚与当地制作技艺联系起来。",
+        "济宁党史史志网所载省级名录将“曲阜尼山砚制作技艺”列在第二批的传统技艺类别下，申报单位为曲阜市。从地方石料到文房器物，材料与制作在这里有了具体的名字。"
+      ],
+      "sources": [
+        "jining-nishan",
+        "jining-register"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "shape-and-grain",
+      "title": "相石，是雕刻前的取舍",
+      "paragraphs": [
+        "尼山砚的制作并非先用一个固定外形去套所有石料。资料记述的相石与设计，要观察砚坯的形状、花纹，再安排砚形、墨堂与墨池。天然纹理不是必须磨掉的痕迹，也可以成为构图的一部分。",
+        "济宁市文化和旅游局的工艺记录还列出雕刻、打磨、配盒、刻砚铭等环节。从设计到砚铭，材料的自然形态与制作者的取舍始终相伴。"
+      ],
+      "sources": [
+        "jining-nishan",
+        "sdxc-nishan"
+      ],
+      "media": []
+    },
+    {
+      "id": "reading-the-inkstone",
+      "title": "留给石纹的文房意味",
+      "paragraphs": [
+        "大众日报在2020年的报道中，从当代制砚实践解释了因纹就砚的审美：适度雕饰，让自然石形与纹理参与表达。所谓朴素，不是没有设计，而是设计的分寸藏在留下什么、减少什么之中。",
+        "济宁市文化和旅游局的记录同时介绍了砚铭与儒家文化的联系。石纹与文字相伴，也为阅读一方砚留下了文房意味。"
+      ],
+      "sources": [
+        "sdxc-nishan",
+        "jining-nishan"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "为什么叫尼山砚？它和鲁砚是什么关系？",
+      "body": "名称来自曲阜尼山的砚石产地。济宁市文化和旅游局将尼山砚介绍为鲁砚的一个重要品种；“鲁砚”不是尼山砚的同义名称。",
+      "kind": "fact",
+      "sources": [
+        "jining-nishan"
+      ]
+    },
+    {
+      "title": "为什么要先看石形和石纹？",
+      "body": "相石与设计需要根据石料形状、花纹决定构思，再安排墨堂、墨池和雕饰。公开记录强调利用自然条件，而不是把每块石料雕成同一模板。",
+      "kind": "fact",
+      "sources": [
+        "jining-nishan",
+        "sdxc-nishan"
+      ]
+    },
+    {
+      "title": "尼山砚制作只包括雕刻吗？",
+      "body": "不只雕刻。文旅部门的记录还介绍了选料、设计、打磨、配盒和刻砚铭等环节。这些环节让天然石料逐渐成为文房器物。",
+      "kind": "fact",
+      "sources": [
+        "jining-nishan"
+      ]
+    },
+    {
+      "title": "省级名录里登记的究竟是什么？",
+      "body": "济宁党史史志网所载第二批省级名录登记的是“曲阜尼山砚制作技艺”，类别为传统技艺，申报单位为曲阜市。名录登记的是制作技艺；代表性传承人的认定则有各自的人物档案。",
+      "kind": "fact",
+      "sources": [
+        "jining-register"
+      ]
+    },
+    {
+      "title": "首屏的运河意境与尼山砚是什么关系？",
+      "body": "首屏《运水墨痕》是济宁城市主题的AI意境表达，用运河与水墨建立地域氛围；尼山砚的产地、器形与制作技艺应沿所列资料阅读。首屏不是尼山砚、石料产地或制砚现场的照片。这里是固定资料问答，未接入实时模型，也不能凭AI画鉴定砚石、作者或年代。",
+      "kind": "disclaimer",
+      "sources": []
+    }
+  ],
+  "sources": {
+    "jining-nishan": {
+      "title": "济宁非遗记录之曲阜尼山砚（2020-06-04，济宁市文化和旅游局）",
+      "short": "济宁文旅·尼山砚记录",
+      "url": "https://whlyj.jining.gov.cn/art/2020/6/4/art_69980_2543640.html",
+      "kind": "official",
+      "supports": "支持尼山砚名称、曲阜尼山石料产地、鲁砚品种关系、因材施艺、墨堂墨池、相石设计至配盒及砚铭等工艺记录，以及砚铭和儒家文化联系。本版不转述该文的古史年限、地质年代、材料性能和获奖概括，不作具体实物鉴定或统一制作规范；未复用文中照片。",
+      "checkedAt": "2026-11-01"
+    },
+    "jining-register": {
+      "title": "济宁市非物质文化遗产项目名录（2025-02-15，济宁党史史志网；信息来源：中共济宁市委党史研究室）",
+      "short": "济宁党史史志·项目名录",
+      "url": "https://zgjnds.jining.gov.cn/art/2025/2/15/art_62662_2681277.html",
+      "kind": "official",
+      "supports": "支持文中山东省第二批省级名录表的项目正式名称“曲阜尼山砚制作技艺”、传统技艺类别、曲阜市申报单位及该批于2009年9月公布的历史记录。它是地方史志公开整理页，并非本版取得的省政府原始批复或当前保护单位名单；不用于填写项目编号、保护单位或人物认定级别。",
+      "checkedAt": "2026-11-01"
+    },
+    "sdxc-nishan": {
+      "title": "曲阜尼山砚：一方块石上尽显儒风韵（2020-04-09，山东宣传网转载大众日报）",
+      "short": "大众日报·因纹就砚",
+      "url": "https://www.sdxc.gov.cn/whql/whcc/202004/t20200409_11578744.htm",
+      "kind": "media",
+      "supports": "支持报道所述当代制砚的因纹就砚、顺应自然形状和花纹、依形安排墨堂墨池，以及选料、设计、雕刻等工艺观察。虽刊于政务域名，原文来源是大众日报，按媒体材料使用；不把报道中称号转换为本页的人物级别或名录原始证明，未复用作品图片。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370800-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：矿色拼贴山形中的随形砚、毛笔与纸。",
+      "caption": "石纹成砚 · AI虚构文房构成，不能据画面鉴定尼山石材、器物或作者。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5011fac806a8b2e9c3a7baac4c93dbce788198437578c325144a3e44a4623410",
+      "record": "records/370800-body-b.md",
+      "recordSha256": "08eb4da76b2d095f6d5a118c414f8a1873c6ba8d921576c0c0eb8a2427336a9e",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "8a4e20c2a354bf64ee8d834cbfea580cec75ec68c357d32aef70c17931dbc404"
+    }
+  ],
+  "unresolved": []
+}

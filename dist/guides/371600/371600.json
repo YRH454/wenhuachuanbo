@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "cityId": "371600",
+  "city": "滨州",
+  "deliveryStatus": "ready",
+  "route": "#/city/371600",
+  "topic": {
+    "name": "柳编（博兴柳编）",
+    "location": "山东省滨州市博兴县，主要分布于麻大湖畔和锦秋街道一带",
+    "category": "传统美术",
+    "intro": "植物材料在手中交织，成为垫、套、箱与更多日常器物。走近博兴柳编，从湿地材料与地方生活读起，再看手艺人怎样把编织带向新的造型和使用场景。",
+    "sources": [
+      "official-project",
+      "craft-report"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "371600",
+    "label": "AI意境图",
+    "entryLabel": "走近博兴柳编"
+  },
+  "visual": {
+    "signature": "binzhou-reed-weft",
+    "layout": "woven",
+    "description": "保留《草织河韵》首屏，以画中编织材质与水带的交错关系组织专题。阅读面采用浅灰绿、深苇色文字和少量草褐标记，文字区域不叠加草纹。宋体标题、黑体正文保持共同分工；宽窄章节与题文横向展开构成节奏，不做篮筐图标卡片阵列。",
+    "composition": "woven入口将题名与地域导语横向展开，档案成为可换行的事实带；概况较窄，材料与用途段较宽，人物段再回到连续阅读。现有AI背景局部只在正文之外作为编织意境穿插并标身份，不冒充编法示意或真实器物。窄屏将题名、图、档案与正文依次排列，关闭交错栏而不改变语义顺序。固定问答、来源和返回入口保持共同行为，不设强制横向滑动。",
+    "palette": {
+      "paper": "#E8EEE2",
+      "ink": "#263F36",
+      "muted": "#52624E",
+      "accent": "#78562A",
+      "rule": "#BBC6AE"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "831",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅶ-55",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2011年（第三批）",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统美术",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "扩展项目",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省博兴县",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "博兴县文化馆",
+      "sources": [
+        "official-project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "湖畔的材料，日常的手艺",
+      "paragraphs": [
+        "博兴柳编主要分布于滨州市博兴县的麻大湖畔和锦秋街道一带。官方项目介绍记载，当地草柳编曾在家庭副业与日常劳作中流传，后来逐渐形成更多生产与交流场景。",
+        "从家庭手艺到日用器物，编织把地方材料与生活需要连接起来。官方资料中的茶垫、坐垫、箱与套，都是认识这项传统美术的具体入口。"
+      ],
+      "sources": [
+        "official-project"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "先看材料，再看它怎样被使用",
+      "paragraphs": [
+        "名称里有“柳”，当地草柳编使用的却不只有柳条。项目资料还列举蒲草、苇草、玉米皮、麦秆等植物原料，柔韧的材料给手中的编织留下不同的可能。",
+        "观看一件编织器物，可以同时留意三个问题：它用了什么材料，条材怎样形成结构，又服务于哪一种日常用途。茶垫、坐垫、储物箱和瓶套，各有不同的使用需要；具体材料则以作品说明为准。"
+      ],
+      "sources": [
+        "official-project"
+      ],
+      "media": []
+    },
+    {
+      "id": "living",
+      "title": "手艺人把编织带向新场景",
+      "paragraphs": [
+        "2022年《人民日报》的博兴报道介绍了贾流远对柳编造型的探索、孙建光参与建筑编织的经历，以及王贵芝将编织与摄影、电商联系起来的实践。一门手艺，在不同人的生活中找到了不同的表达。",
+        "2023年，青岛农业大学的调研报道记录了对当地文化创意产业园与非遗展馆的走访。从手中的器物走向展馆、设计与交流，编织也在寻找被更多人看见的方式。"
+      ],
+      "sources": [
+        "craft-report",
+        "university-visit"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "博兴柳编为什么放在滨州专题？",
+      "body": "博兴县属于滨州市。官方项目介绍将麻大湖畔和锦秋街道一带列为主要分布地，名录的申报地区为山东省博兴县；本专题由此讲述当地材料与手艺的关系。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "博兴柳编是不是只能用柳条？",
+      "body": "不能这样概括当地的草柳编。官方介绍还列有蒲草、苇草、玉米皮、麦秆等植物原料；具体作品的材料需要逐件确认，不能从AI画面中的条纹作鉴定。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "它与日常生活有哪些联系？",
+      "body": "官方资料列举茶垫、坐垫、储物箱和瓶套等家居用品。它们把材料、结构和用途结合起来，让编织与喝茶、收纳等日常生活保持联系。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "有哪些人物在探索新的表达？",
+      "body": "2022年的人民日报报道介绍了贾流远、孙建光和王贵芝，分别记录了造型、建筑与摄影电商等实践。可以顺着他们的采访，了解同一门手艺如何走向不同的生活场景。",
+      "kind": "fact",
+      "sources": [
+        "craft-report"
+      ]
+    },
+    {
+      "title": "想继续了解，可以先从哪里读起？",
+      "body": "可先读官方项目页，再结合人民日报的手艺人采访和青岛农业大学2023年的当地走访报道。报道中的走访是当时的记录，实际参观请另核最新公告。以上为依据来源编辑的固定解答，未接入模型。",
+      "kind": "fact",
+      "sources": [
+        "official-project",
+        "craft-report",
+        "university-visit"
+      ]
+    }
+  ],
+  "sources": {
+    "official-project": {
+      "title": "中国非物质文化遗产网：柳编（博兴柳编）项目档案",
+      "short": "国家级项目档案",
+      "url": "https://www.ihchina.cn/project_details/14108/",
+      "kind": "official",
+      "supports": "正式名、八项档案、博兴麻大湖畔和锦秋街道的地域关联、草柳编多种植物原料及日用产品类型。不采用旧销售数字，不将其他地区柳编替作博兴实物。",
+      "checkedAt": "2026-11-01"
+    },
+    "craft-report": {
+      "title": "人民日报：匠心编柳 妙手生花（护文化遗产 彰时代新义，2022-09-27）",
+      "short": "博兴手艺人采访",
+      "url": "https://paper.people.com.cn/rmrbwap/html/2022-09/27/nw.D110000renmrb_20220927_1-13.htm",
+      "kind": "media",
+      "supports": "贾流远、孙建光、王贵芝的具体实践，以及编织在造型、建筑、摄影电商方面的探索。人物的名录认定级别、当前年龄任职和AI画面作者不由该报道推定；照片许可另核。",
+      "checkedAt": "2026-11-01"
+    },
+    "university-visit": {
+      "title": "青岛农业大学：艺术学院赴博兴开展非遗产业创新发展调研（2023-08-18）",
+      "short": "产业园与展馆走访",
+      "url": "https://news.qau.edu.cn/content/zonghe/664e87c611ad455ca27a36ebe39aa07c",
+      "kind": "official",
+      "supports": "2023年8月对博兴文化创意产业园、非遗展馆及相关交流的走访记录；不支持当前开放时间、预约、持续展览或具体商品的承诺。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/371600-body-a.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：柳叶下的浅绿椭圆编篮。",
+      "caption": "柳叶与篮 · AI虚构编织意象，非博兴实物、具体编法或报道人物作品。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4c0adecb100669c2ccb7364e035107c0af3c67f97427db1bf266f1039b4a0476",
+      "record": "records/371600-body-a.md",
+      "recordSha256": "c93476960d15e5bd4cd8253500428810fab4e216c235389231971958b013844e",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "e5dc3c374c462b2d9138a2045593b198faea440ab805325643715ea6870bc074"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370800",
+  "objectId": "nishan-inkstone",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create one original horizontal editorial illustration for a Chinese regional-culture article about Qufu's Nishan inkstone in Jining, Shandong, in a DIFFERENT visual medium and composition from ink-wash. Create a fictional interpretation, not a copy of an actual cultural relic, identifiable artist's work, photographed item, manufacturing process or real event.\n\nVISUAL DIRECTION B — tactile cut-paper and mineral-pigment collage with refined lithographic grain, flat overlapping shapes and understated relief. Place a low, irregular oval slab of natural grey-green and earthy-brown stone slightly left of center, with a clearly legible dark recessed ink well. A slender writing brush rests diagonally beside it on blank ivory paper; asymmetrical layered mineral shapes and an abstract quiet study surface provide context. Use a quiet palette of mineral sage, warm stone, parchment, smoky umber and a small deep-ink accent. Emphasize the material richness of stone rather than presenting an entirely black object. The result must read as a writing INKSTONE, not a pottery bowl or a black jar. Clear graphic hierarchy, sophisticated editorial still life, no decorative clutter. Show all objects uncropped with breathable margins so the entire image remains legible at mobile width. Horizontal image.\n\nAll pictured forms are invented; this is not evidence of any specimen or technique. No person, hands, craft process, workshop, inscriptions, letters, numbers, Chinese characters, calligraphy, labels, seals, logos, watermark, frame or border. The paper is completely blank. Do not imitate a real artist or a known object.",
+  "startedAt": "2026-11-02T00:11:17.464+08:00",
+  "finishedAt": "2026-11-02T00:12:29.654+08:00",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "5011fac806a8b2e9c3a7baac4c93dbce788198437578c325144a3e44a4623410",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

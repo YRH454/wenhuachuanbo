@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370600",
+  "objectId": "yt-object-laizhou-straw",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: standalone body art for Yantai's 草编（莱州草辫）, Laizhou wheat-straw braiding; not a webpage or a new first-screen background.\n\nCreate ONE original wheat-straw appliqué and fine-braid material illustration. Combine several slender, slightly raised plaits with angular flat straw-mosaic pieces into a compact upright folded fan or sprig. Show fine tubular or split wheat-straw texture, lengthwise golden sheen, delicately irregular edges and a few open woven crossings. The weave is artistic invention, not a tutorial or authenticated Laizhou pattern. No bulky reed strips, round woven ring, wicker basket, shell inlay or water landscape.\n\nClearly different from light ink painting: tactile cut-straw marquetry, crisp geometric edge rhythms, shallow relief shadows and directional fibre lustre on a matte muted mulberry/plum ground. Restrained honey-gold, pale straw and warm umber accents; no blue river-map paper layers, orange terracotta estuary collage, charcoal stage spotlight or glossy luxury jewellery. Contemporary cultural material art, not a real product photo, archaeological object, specific artist's work or copy of a named design.\n\nONE complete horizontal3:2 native artwork, ideally1536×1024. Keep the main vertical cluster in the middle42% of width and middle64% of height, allowing generous quiet coloured margins. Make a coherent compact wheat-braid motif that can be seen intact in a mobile4:5 view; do not sprawl into a wide horizontal ribbon or circular wreath.\nNo tools, hands, faces, scenery, step-by-step construction, technical arrows, museum identity or branding.\nAbsolutely no text, letters, Chinese characters, signatures, calligraphy, seals, logos, watermark or pseudo-writing. No frame, board, device, UI, multiple panels or mockup.",
+  "startedAt": "2026-11-01T16:03:36.708Z",
+  "finishedAt": "2026-11-01T16:05:02.643Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone body art for Yantai's 草编（莱州草辫）, Laizhou wheat-straw braiding; not a webpage or a new first-screen background.\n\nCreate ONE original wheat-straw appliqué and fine-braid material illustration. Combine several slender, slightly raised plaits with angular flat straw-mosaic pieces into a compact upright folded fan or sprig. Show fine tubular or split wheat-straw texture, lengthwise golden sheen, delicately irregular edges and a few open woven crossings. The weave is artistic invention, not a tutorial or authenticated Laizhou pattern. No bulky reed strips, round woven ring, wicker basket, shell inlay or water landscape.\n\nClearly different from light ink painting: tactile cut-straw marquetry, crisp geometric edge rhythms, shallow relief shadows and directional fibre lustre on a matte muted mulberry/plum ground. Restrained honey-gold, pale straw and warm umber accents; no blue river-map paper layers, orange terracotta estuary collage, charcoal stage spotlight or glossy luxury jewellery. Contemporary cultural material art, not a real product photo, archaeological object, specific artist's work or copy of a named design.\n\nONE complete horizontal3:2 native artwork, ideally1536×1024. Keep the main vertical cluster in the middle42% of width and middle64% of height, allowing generous quiet coloured margins. Make a coherent compact wheat-braid motif that can be seen intact in a mobile4:5 view; do not sprawl into a wide horizontal ribbon or circular wreath.\nNo tools, hands, faces, scenery, step-by-step construction, technical arrows, museum identity or branding.\nAbsolutely no text, letters, Chinese characters, signatures, calligraphy, seals, logos, watermark or pseudo-writing. No frame, board, device, UI, multiple panels or mockup.",
+      "startedAt": "2026-11-01T16:03:36.708Z",
+      "finishedAt": "2026-11-01T16:05:02.643Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2897316,
+  "sha256": "6a3fae3c4b6514caeeae6d0190e575fd6ed3b88872ba4fd75bd8e887cdf19a6b",
+  "sourceRecordSha256": "dc06d98fb8a7d4b6cc86483742fa2d2a270c6b41794f01d4c3d465251388a30b",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

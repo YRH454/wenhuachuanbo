@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370600",
+  "objectId": "yt-object-haiyang-yangge",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Edit the supplied original AI illustration as a targeted correction for “海阳大秧歌”. Return ONE wide horizontal 3:2 image. Remove the oversized stationary center drum and the previous generic jumping dancers as the main focus; instead show one clearly central anonymous, stylized adult folk-dance LEADER, with two or three much smaller simplified faceless followers in the background to suggest a group dance. The leader has ONE recognizable open ordinary umbrella carried in the leader's LEFT hand (viewer’s right) and a separate SHORT HORSEHAIR DANCE WHISK with a wooden handle and long pale soft hair carried in the leader's RIGHT hand (viewer’s left). Both props must be visibly separate and attached to two naturally coherent arms and hands. The whisk is a folk-dance directing prop, not a sword, weapon, magic wand, broom or religious symbol. The leader's complete head, body, arms, both legs and both feet should fit near the central third; feet low and close to the ground with a lively running-and-twisting rhythm rather than a midair ballet leap. A simple cloth headscarf and invented modest folk-inspired short jacket and loose trousers may suggest a festival without claiming a verified standard costume. No Taoist ritual attire, religious symbols, alchemical props, medicine labels, long floating fairy sleeves, magical effects or giant central drum. Keep the original warm cream, vermilion, muted blue and charcoal cut-paper/woodblock texture and celebratory editorial illustration atmosphere; background can contain simple decorative rhythm rather than a real location. The entirely fictional figures are not Xiu Jianguo or other actual people, actual costumes, a recorded performance, a standard dance step or a photograph; do not copy any specific photo or existing artwork. Do not assert that umbrellas, fans or drums alone establish the locality. No text, lettering, numbers, musical notation, sign, logo, seal, watermark, collage, panel or border.",
+  "startedAt": "2026-11-02T11:36:42.111+08:00",
+  "finishedAt": "2026-11-02T11:37:19.610+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 cultural editorial illustration inspired by “海阳大秧歌”, conceived as a symbolic folk-festival rhythm rather than documentation of an actual performance. Show a large round flower drum with red cloth streamers as the main central visual, flanked by two small anonymous faceless adult dancer silhouettes in balanced, lively stepping poses. Their whole bodies including hands and feet are complete, not overlapping or cut off. Do not use a fan or depict the narrow waist/fan composition of a different dance. The scene should convey communal music, dance and theater using drum, movement and festive red, with cut-paper, woodblock and simple hand-painted textures on warm off-white; blue and charcoal accents, energetic but sophisticated, clear graphic shapes. Invent the clothes and setting: they are not exact local costume, specific routine, a named person, true event, instructional pose or a particular existing work. Keep drum and dancers near the middle so a central crop still reads. No identifiable faces, photographs, stage signage, words, Chinese characters, numbers, music notation, seals, logos, watermarks, panel divisions or collage.",
+      "startedAt": "2026-11-02T10:50:47.813+08:00",
+      "finishedAt": "2026-11-02T10:51:31.945+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Edit the supplied original AI illustration as a targeted correction for “海阳大秧歌”. Return ONE wide horizontal 3:2 image. Remove the oversized stationary center drum and the previous generic jumping dancers as the main focus; instead show one clearly central anonymous, stylized adult folk-dance LEADER, with two or three much smaller simplified faceless followers in the background to suggest a group dance. The leader has ONE recognizable open ordinary umbrella carried in the leader's LEFT hand (viewer’s right) and a separate SHORT HORSEHAIR DANCE WHISK with a wooden handle and long pale soft hair carried in the leader's RIGHT hand (viewer’s left). Both props must be visibly separate and attached to two naturally coherent arms and hands. The whisk is a folk-dance directing prop, not a sword, weapon, magic wand, broom or religious symbol. The leader's complete head, body, arms, both legs and both feet should fit near the central third; feet low and close to the ground with a lively running-and-twisting rhythm rather than a midair ballet leap. A simple cloth headscarf and invented modest folk-inspired short jacket and loose trousers may suggest a festival without claiming a verified standard costume. No Taoist ritual attire, religious symbols, alchemical props, medicine labels, long floating fairy sleeves, magical effects or giant central drum. Keep the original warm cream, vermilion, muted blue and charcoal cut-paper/woodblock texture and celebratory editorial illustration atmosphere; background can contain simple decorative rhythm rather than a real location. The entirely fictional figures are not Xiu Jianguo or other actual people, actual costumes, a recorded performance, a standard dance step or a photograph; do not copy any specific photo or existing artwork. Do not assert that umbrellas, fans or drums alone establish the locality. No text, lettering, numbers, musical notation, sign, logo, seal, watermark, collage, panel or border.",
+      "startedAt": "2026-11-02T11:36:42.111+08:00",
+      "finishedAt": "2026-11-02T11:37:19.610+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组已撤回AI初稿，定向编辑输入",
+          "sha256": "a2b6808ddfc86033b28daf1ad97affab37663648be470a0b6a8cdb808b394849"
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3143367,
+  "sha256": "8510b93425ca1d8b84b0070cda30cfc6b6ac4d12a3901e822f93e08b8d305814",
+  "sourceRecordSha256": "51f359e339e47b43185ce5c461c1d8f4817bb8f46e86223e2775dfcbe9a77004",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370300",
+  "city": "淄博",
+  "status": "draft",
+  "people": [
+    {
+      "id": "zibo-wang-chunhua",
+      "name": "王春花",
+      "connection": "山东省淄博市人，从事周村烧饼制作与传习。",
+      "intro": "周村烧饼制作技艺国家级代表性传承人。在制作实践中改进产品，并向年轻从业者传授技艺。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：王春花",
+          "url": "https://www.ihchina.cn/ccr_detail/3440/"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "zibo-ren-bo",
+      "name": "任波",
+      "connection": "在淄博从事琉璃灯工、玻璃编织与授课传艺。",
+      "intro": "以琉璃灯工和玻璃编织开展创作、传习。新华社报道记录了他的制作实践及向学员教授技艺的经历。",
+      "sources": [
+        {
+          "title": "新华社：文化中国行丨淄博琉璃巧编织 千年技艺传四方",
+          "url": "https://www.xinhuanet.com/20260617/25adbcd489be40cab5f21c823aa12c36/c.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "zibo-ceramic-firing",
+      "name": "淄博陶瓷烧制技艺",
+      "category": "传统技艺·陶瓷",
+      "connection": "淄博市申报的国家级非遗项目，项目编号Ⅷ-190。",
+      "intro": "从日用器到陈设瓷，成型与烧成共同构成淄博陶瓷的材料语言。器形与釉面的变化，让生活器用也成为认识地方手艺的入口。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：淄博陶瓷烧制技艺",
+          "url": "https://www.ihchina.cn/project_details/14706/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370300-zibo-ceramic-firing-bca991c0167f.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：蓝绿色釉面的想象不透明陶瓷器物，非馆藏、具名大师作品或烧制工艺证据。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非实拍或大师作品。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；原记录publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370300-zibo-ceramic-firing-bca991c0167f-a30caa4f979b.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "zibo-boshan-glass",
+      "name": "博山琉璃",
+      "category": "传统技艺·琉璃",
+      "connection": "琉璃烧制技艺项目的申报地区为淄博市博山区，项目编号Ⅷ-90。",
+      "intro": "琉璃的透光、色彩和造型呈现博山的玻璃工艺。从一件器物的光泽与层次感，可以认识它与陶瓷不同的材料特点。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：琉璃烧制技艺",
+          "url": "https://www.ihchina.cn/project_details/14445/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370300-zibo-boshan-glass-87b9d0ec3767.png",
+        "width": 1254,
+        "height": 1254,
+        "alt": "AI创意插画：博山琉璃主题的想象透光花器、炉火与烟气；非具名作品、真实工坊或工艺现场。",
+        "credit": "AI创意插画；复用生图1的内置生成原图，非真实艺人作品或工坊照片。",
+        "rightsStatus": "已核复用副本及原记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370300-zibo-boshan-glass-87b9d0ec3767-7ef4e766e365.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "zibo-zhou-cun-shaobing",
+      "name": "周村烧饼制作技艺",
+      "category": "饮食·传统制作技艺",
+      "connection": "淄博市申报的国家级非遗项目，项目编号Ⅷ-162。",
+      "intro": "面粉与芝麻经过延展成型、烘烤，成为薄圆酥脆的周村烧饼。薄片边缘与芝麻颗粒，提供了观察这门地方饮食技艺的细节。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：周村烧饼制作技艺",
+          "url": "https://www.ihchina.cn/project_details/14649/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370300-zibo-zhou-cun-shaobing-af8def02ded3.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：薄圆芝麻脆饼、薄片边缘和碎片，非真实商家产品或制作工艺记录。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非品牌产品实拍。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；原记录publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370300-zibo-zhou-cun-shaobing-af8def02ded3-49983610baa6.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "zibo-liaozhai-liqu",
+      "name": "聊斋俚曲",
+      "category": "地方说唱·曲艺",
+      "connection": "淄川区学校与蒲松龄纪念馆开展传习活动，保留本地方言与曲调的学习。",
+      "intro": "淄川方言与地方曲调构成聊斋俚曲的声韵。学校与蒲松龄纪念馆的合作，让孩子们通过演唱和学习接触地方说唱。",
+      "sources": [
+        {
+          "title": "淄博市教育局：淄川区洪山镇松龄小学——聊斋俚曲润童声 馆校协同共传承",
+          "url": "https://edu.zibo.gov.cn/art/2025/4/1/art_225_2905109.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370300-zibo-liaozhai-liqu-812b5b0645af.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意概念插画：空白书页、抽象声韵长带与想象山水；非蒲松龄像、古谱、真实演出或淄川实景。",
+        "credit": "AI创意概念插画；生图1使用内置image_gen生成，非演出、古谱或真实地貌。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；原记录publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370300-zibo-liaozhai-liqu-812b5b0645af-d1bc8620d77f.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "王春花、任波的真实肖像尚未完成图中身份、摄影署名和使用许可核验；前端应使用明确缺图回退，禁止AI真人替身。",
+    "四项文化图各一张已由生图1交付、本组实看并核对记录；仍须图外AI标识、选用与发布审查、网页完整显示和交互验收。",
+    "两张既有淄博AI地域背景仅呈现抽象釉色、水纹，不适合作为陶瓷与琉璃的独立具象主图。",
+    "琉璃复用原图1254×1254，按完整1:1或contain显示，不搬用原地图mask/cover/坐标；原生成记录只有2026-11-01日期，未补造秒级时间。",
+    "陶瓷、烧饼、俚曲均为1536×1024，优先完整3:2或contain。俚曲长带有出画延展，书页非古谱，想象山水非淄川实景。",
+    "公开网页可阅读不等于照片可公开复用；本文件没有交付任何已获授权的真实照片。"
+  ]
+}

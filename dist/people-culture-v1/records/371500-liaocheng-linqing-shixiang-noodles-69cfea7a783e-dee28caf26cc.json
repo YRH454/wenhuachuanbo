@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371500",
+  "objectId": "liaocheng-linqing-shixiang-noodles",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit\nInput image: edit target = the supplied Linqing Shixiang noodles AI gouache illustration.\nChange ONLY the framing and spacing: create a slightly wider, zoomed-out view at the same horizontal 3:2 canvas, reducing the whole food arrangement's visual scale enough that the FULL noodle bowl and EVERY surrounding small side bowl are completely visible. In particular restore the cut-off LEFT side-dish bowl, with a clear margin of tabletop all around the full arrangement; also give the top, right and bottom bowls comfortable edge margins. Keep the centre noodle bowl clearly dominant.\nPreserve the existing warm gouache/rice-paper style, blue-green floral ceramics, pale wheat noodles separated from toppings, the overall food types and quiet daylight mood. Do not add new dishes, people, hands, tools, brands, labels or text. Do not change this into ramen, soup, a recipe diagram or a photograph. The toppings remain illustrative possibilities, not an authenticated fixed ingredient list. This is a creative food-topic illustration, not a merchant's actual dish.\nOutput one complete native horizontal image. No border, frame, watermark, letters, numbers, pseudo-writing, seal, signature, UI or contact sheet.",
+  "startedAt": "2026-11-02T02:00:33.784Z",
+  "finishedAt": "2026-11-02T02:02:26.329Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit\nInput image: edit target = the supplied Linqing Shixiang noodles AI gouache illustration.\nChange ONLY the framing and spacing: create a slightly wider, zoomed-out view at the same horizontal 3:2 canvas, reducing the whole food arrangement's visual scale enough that the FULL noodle bowl and EVERY surrounding small side bowl are completely visible. In particular restore the cut-off LEFT side-dish bowl, with a clear margin of tabletop all around the full arrangement; also give the top, right and bottom bowls comfortable edge margins. Keep the centre noodle bowl clearly dominant.\nPreserve the existing warm gouache/rice-paper style, blue-green floral ceramics, pale wheat noodles separated from toppings, the overall food types and quiet daylight mood. Do not add new dishes, people, hands, tools, brands, labels or text. Do not change this into ramen, soup, a recipe diagram or a photograph. The toppings remain illustrative possibilities, not an authenticated fixed ingredient list. This is a creative food-topic illustration, not a merchant's actual dish.\nOutput one complete native horizontal image. No border, frame, watermark, letters, numbers, pseudo-writing, seal, signature, UI or contact sheet.",
+      "startedAt": "2026-11-02T02:00:33.784Z",
+      "finishedAt": "2026-11-02T02:02:26.329Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "生成参考输入（本地路径不公开）",
+          "sha256": null
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3316459,
+  "sha256": "69cfea7a783e770457c8e4171be31f52d428590a0cd3575129ce3decc8701f96",
+  "sourceRecordSha256": "6fef9578522a6985753a6a9774fac44eb12304bca961256454213c6d726ccb79",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "cityId": "371300",
+  "city": "临沂",
+  "deliveryStatus": "ready",
+  "route": "#/city/371300",
+  "topic": {
+    "name": "传统玩具（郯城木旋玩具）",
+    "location": "山东省临沂市郯城县；项目页所载核心传承地为港上镇樊埝村",
+    "category": "传统美术",
+    "intro": "从旋床上的圆形木坯，到红、绿、黄交织的玩具，郯城木旋把木作和彩绘连在一起。这里先认识名为“耍货”的地方手艺，再读它如何从年集走向新的玩耍方式。",
+    "sources": [
+      "ihchina-project",
+      "xinhua-newyear-2021",
+      "sdxc-renewal-2022"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "371300",
+    "label": "AI意境图",
+    "entryLabel": "向下读木旋童韵"
+  },
+  "visual": {
+    "signature": "linyi-turned-wood-bright-woven",
+    "layout": "woven",
+    "description": "明朗的木作阅读页：米黄色底、近黑正文、砖红重点，保留既有“木旋童韵”AI画的温暖材质；宋体题名与黑体正文分工明确。不套用黑陶展签，不把木鸟轮廓当作真实作品署名。",
+    "composition": "题名与短导语在页首横向展开，下一行以六项事实带收束身份。overview用通栏短段建立地名，craft用较宽正文解释旋制和彩绘，today收回窄栏，形成宽—宽—窄的阅读节奏；现有371300背景的木纹或木鸟局部只置于文字之外，并持续标AI意境图，不画分步工序。手机依次排题名、事实带、正文、AI局部，不保留空图框；来源和固定问答回到连续文字流。",
+    "palette": {
+      "paper": "#FBF2DC",
+      "ink": "#28251F",
+      "muted": "#63553E",
+      "accent": "#A12E25",
+      "rule": "#D8C6A6"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "正式项目",
+      "value": "传统玩具（郯城木旋玩具）",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "label": "名录类别",
+      "value": "传统美术",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "label": "公布批次",
+      "value": "2014年，第四批国家级非物质文化遗产代表性项目名录",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "label": "申报地区",
+      "value": "山东省郯城县",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "label": "项目页所载传承地",
+      "value": "郯城县港上镇樊埝村",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "label": "地方俗称",
+      "value": "耍货",
+      "sources": [
+        "ihchina-project",
+        "xinhua-newyear-2021"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "小小耍货，来自郯城",
+      "paragraphs": [
+        "郯城木旋玩具是临沂郯城县的一门地方手艺。国家非遗项目页把它的发源和主要传承地落在港上镇樊埝村；“耍货”则是当地对这类玩具的俗称。它把木制部件的加工与民间绘画结合起来，首先是可以拿在手中玩耍的物件。",
+        "2021年新华网的年集报道记录了当地艺人赶制木旋玩具的情景。年集的节令气息，把一件小玩具与地方生活连接起来。"
+      ],
+      "sources": [
+        "ihchina-project",
+        "xinhua-newyear-2021"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "先旋出形，再绘上色",
+      "paragraphs": [
+        "“木旋”说的是主要部件的成形方式：木料在旋床上加工，常见造型由球体、柱体或环形等基本形构成。项目页记录的制作还包括磨整、底层处理和彩绘等环节；成形并不是全部，表面的纹样同样参与了玩具的表达。",
+        "红、绿、黄是项目页概括的主要用色。2024年中国新闻网的现场报道分别记录了旋制毛坯和绘制玩具，把形体加工与表面彩绘这两个观察角度放在一起，可以更完整地认识木旋玩具。"
+      ],
+      "sources": [
+        "ihchina-project",
+        "cns-workshop-2024"
+      ],
+      "media": []
+    },
+    {
+      "id": "today",
+      "title": "玩具还在寻找新的玩法",
+      "paragraphs": [
+        "传统木旋并不只停留在年集里的老款式。山东宣传网转载的2022年大众日报报道，记述郯城木旋企业开发新玩偶、幼儿启蒙玩具，并尝试网络销售的经历。这些报道中的尝试，让地方玩具与新的玩法相遇。",
+        "读到这里，可以把两种线索并置：一边是地方玩具的造型和彩绘，另一边是当代使用者对玩法的新期待。从年集到新的使用场景，手艺仍在与玩耍的人相互回应。"
+      ],
+      "sources": [
+        "sdxc-renewal-2022",
+        "xinhua-newyear-2021"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "为什么叫“木旋玩具”？",
+      "body": "项目页解释，名字来自多数部件在旋床上加工的方式。它不只有旋制，也把彩绘等手工环节结合起来。",
+      "kind": "fact",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "title": "这门手艺与临沂的哪里有关？",
+      "body": "专题地域是临沂市郯城县。国家非遗项目页所载发源和主要传承地为郯城县港上镇樊埝村；这里引用项目页表述，不据此核定现行行政区划。",
+      "kind": "fact",
+      "sources": [
+        "ihchina-project",
+        "xinhua-newyear-2021"
+      ]
+    },
+    {
+      "title": "木旋玩具常见什么颜色？",
+      "body": "国家非遗项目页以红、绿、黄概括主要用色。这是对项目传统风格的介绍，不意味着所有年代、所有作者的作品只有这三种颜色。",
+      "kind": "fact",
+      "sources": [
+        "ihchina-project"
+      ]
+    },
+    {
+      "title": "今天的木旋还只是年集玩具吗？",
+      "body": "不能只这样理解。2021年新华网记录了赶制年集玩具；2022年大众日报报道则介绍了郯城企业开发新玩偶、幼儿启蒙玩具的尝试。这里说的是已有报道的案例，不是整个行业的现状统计。",
+      "kind": "fact",
+      "sources": [
+        "xinhua-newyear-2021",
+        "sdxc-renewal-2022"
+      ]
+    },
+    {
+      "title": "首屏木鸟是某位传承人的真实作品吗？",
+      "body": "不能这样认定。“木旋童韵”首屏及其局部是AI意境图，不是馆藏、实物鉴定图或工序照片；本版不为画中木鸟署上任何具体艺人姓名。问答为固定资料整理，不是联网模型即时回答。",
+      "kind": "disclaimer",
+      "sources": []
+    }
+  ],
+  "sources": {
+    "ihchina-project": {
+      "title": "中国非物质文化遗产网：传统玩具（郯城木旋玩具）",
+      "short": "国家非遗项目页",
+      "url": "https://www.ihchina.cn/project_details/14253/",
+      "kind": "official",
+      "supports": "支持正式项目名、传统美术类别、2014年第四批公布、申报地区、项目页所载樊埝村传承地域、耍货俗称、旋制与彩绘及主要用色。未采用该页历史年数、代数推算，也不以其地域用语核定现行行政区划；不支持AI画中器物的作者或实物身份。",
+      "checkedAt": "2026-11-01"
+    },
+    "xinhua-newyear-2021": {
+      "title": "新华网：山东郯城：赶制木旋玩具（2021年1月16日）",
+      "short": "新华网·年集记录",
+      "url": "https://www.xinhuanet.com/2021-01/16/c_1126990597.htm",
+      "kind": "media",
+      "supports": "支持临沂市郯城县地域、耍货俗称，以及2021年春节前艺人为年集赶制木旋玩具的场景。仅引用报道事实，不复用照片，不将当年现场记述当作2026年经营现状或人物级别证明。",
+      "checkedAt": "2026-11-01"
+    },
+    "sdxc-renewal-2022": {
+      "title": "山东宣传网转载大众日报：临沂市郯城县：老手艺向“潮”而生（2022年12月14日）",
+      "short": "大众日报·新玩法",
+      "url": "https://www.sdxc.gov.cn/sy/xcdt/202212/t20221214_11173148.htm",
+      "kind": "media",
+      "supports": "支持报道中郯城木旋企业开发新玩偶、幼儿启蒙玩具和尝试网络销售的具体案例。不把企业营收、出口数字和观点外推为行业统计；不将报道中的中国结与木旋合为一个非遗项目。",
+      "checkedAt": "2026-11-01"
+    },
+    "cns-workshop-2024": {
+      "title": "中国新闻网：山东郯城：非遗传承人制作郯城木旋玩具（2024年12月10日）",
+      "short": "中新网·制作记录",
+      "url": "https://www.chinanews.com/tp/2024/12-10/10333992.shtml",
+      "kind": "media",
+      "supports": "支持2024年12月郯城木旋玩具旋制毛坯、绘制玩具的新闻记录。本版不采用人物级别、产业规模或历史年数，也不复制新闻照片及其署名为本页AI画署名。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/371300-body-a.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：红绿黄彩绘陀螺、圆环玩偶与木球。",
+      "caption": "旋转的色彩 · AI虚构玩具组合，非郯城实物、樊埝村实景或制作示范。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "80a886041b538dc04a61e05a867863c3fca186508dd9470f2f8d11d91bd0980e",
+      "record": "records/371300-body-a.md",
+      "recordSha256": "15aba4d1874d055c39c472b8d568be0821662b80da92292c99f3378b8032ac0f",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "36c7d7a100fedd0c741eb20418adaf6ff1ec891d435cda8415f6abc5657906f2"
+    }
+  ],
+  "unresolved": []
+}

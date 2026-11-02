@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371400",
+  "city": "德州",
+  "status": "draft",
+  "people": [
+    {
+      "id": "dezhou-liu-junchang",
+      "name": "刘俊昌",
+      "connection": "德州市宁津县人，宁津杂技第五批国家级代表性传承人。",
+      "intro": "出自宁津杂技世家，幼时随家人练习，后进入宁津县杂技艺术学校和杂技团。他既参与演出，也从事教学，将练功和舞台经验传给后辈。",
+      "sources": [
+        {
+          "title": "中国非遗网：刘俊昌代表性传承人档案",
+          "url": "https://www.ihchina.cn/ccr_detail/2580.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "dezhou-li-aimin",
+      "name": "李爱民",
+      "connection": "在德州从事金丝彩贴创作与传授，山东宣传网报道其为省级非遗金丝彩贴传承人。",
+      "intro": "他把金丝彩贴带入团扇、挎包等生活用品，也向参观工作室的师生介绍技艺与设计思路，让手工装饰与当代使用场景发生联系。",
+      "sources": [
+        {
+          "title": "山东宣传网：德州市·传统文化赋能美好生活",
+          "url": "https://www.sdxc.gov.cn/sy/xcdt/202204/t20220414_10098672.htm"
+        },
+        {
+          "title": "德州工程职业学院：艺术设计学院组织学生参观金丝彩贴非遗工作室",
+          "url": "https://www.dzgcxy.com/2025/1105/c24a4748/page.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "dezhou-black-pottery",
+      "name": "德州黑陶",
+      "category": "传统技艺／陶器",
+      "connection": "德州黑陶烧制技艺以德州市为中心流传，并见于国家级代表性项目名录。",
+      "intro": "从红胶泥塑形，到无釉压光和烧制，黑陶呈现出沉静的黑色与光泽。名录介绍了手工轮制和渗碳还原等工艺，但不能仅凭外观断定一件陶器的产地、年代或实际做法。",
+      "sources": [
+        {
+          "title": "中国非遗网：陶器烧制技艺（德州黑陶烧制技艺）",
+          "url": "https://www.ihchina.cn/project_details/14466.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371400-dezhou-black-pottery-3ba8ca0853ec.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：德州黑陶主题的一件原创想象黑陶器；非龙山出土文物、具体馆藏或品牌作品。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不冒充真实实物、馆藏、艺人作品或工艺证据",
+        "record": "records/371400-dezhou-black-pottery-3ba8ca0853ec-b2f95272c543.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "dezhou-braised-chicken",
+      "name": "德州扒鸡",
+      "category": "地方饮食／烹饪技艺",
+      "connection": "制作技艺发源于德州，主要流布于德州及周边。",
+      "intro": "德州扒鸡与当地饮食生活相伴，其制作包含腌制、整形、油炸、煮制和焖煨等环节。列入国家级非遗名录的是制作技艺，不是每一只成品；本页不提供配方、疗效或食品品质保证。",
+      "sources": [
+        {
+          "title": "中国非遗网：德州扒鸡制作技艺",
+          "url": "https://www.ihchina.cn/project_details/14758.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371400-dezhou-braised-chicken-392d6080b4a0.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：德州扒鸡主题木刻暖宴餐桌；非真实菜品、标准摆盘或品牌背书。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不据生成行为推定公开展示或第三方权利许可",
+        "record": "records/371400-dezhou-braised-chicken-392d6080b4a0-2029c1e44967.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "dezhou-gold-wire-color-paste",
+      "name": "金丝彩贴装饰画",
+      "category": "装饰工艺／金丝彩贴",
+      "connection": "德州本地工作室开展金丝彩贴创作、展示和教学，不据此称技艺德州独有。",
+      "intro": "彩色材料拼贴与金丝勾边，在平面上形成有层次的装饰画面。德州的创作者也将这门手艺用于生活用品；不同作品的材料与做法须逐件核对，不能从想象插画反推工艺。",
+      "sources": [
+        {
+          "title": "德州工程职业学院：艺术设计学院组织学生参观金丝彩贴非遗工作室",
+          "url": "https://www.dzgcxy.com/2025/1105/c24a4748/page.htm"
+        },
+        {
+          "title": "大众网：两河潮生×德州非遗周末亲子创艺营首期启幕（2026-04-19）",
+          "url": "https://dezhou.dzwww.com/news/202604/t20260419_17649896.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371400-dezhou-gold-wire-color-paste-4ac778a3492e.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：细金线轮廓与彩色片材质感的原创花叶装饰画；非李爱民作品、真实材料鉴定或工艺示范。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不冒充真实实物、馆藏、艺人作品或工艺证据",
+        "record": "records/371400-dezhou-gold-wire-color-paste-4ac778a3492e-64b353fba9a7.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "dezhou-ningjin-acrobatics",
+      "name": "宁津杂技",
+      "category": "表演艺术／传统杂技",
+      "connection": "申报地区为德州市宁津县，是国家级代表性项目。",
+      "intro": "宁津杂技在长期训练与演出中形成多样节目，名录列有蹬板凳、舞中幡和小花旦抖空竹等。它依靠演员、教师和学员的实践延续，高难动作需专业训练，不能依据插画模仿。",
+      "sources": [
+        {
+          "title": "中国非遗网：宁津杂技",
+          "url": "https://www.ihchina.cn/project_details/13860/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371400-dezhou-ningjin-acrobatics-24c472404d04.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：木凳、空竹与抽象动势构成宁津杂技主题道具意象；非刘俊昌肖像、真实演出或动作教程。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不冒充真实实物、馆藏、艺人作品或工艺证据",
+        "record": "records/371400-dezhou-ningjin-acrobatics-24c472404d04-6d2745b2a298.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "两位真实人物及其德州关联有已核来源，但暂无可公开接入的肖像；李爱民候选为未逐人标注的活动照片，刘俊昌尚缺可靠单图候选。portrait.localPath均null，禁止自动热链或生成真人替身。",
+    "李爱民依据报道写作省级传承人，不将国家级项目身份或机构级别移给个人；不从工作室活动图推定具体作品作者。",
+    "四项对象的单张图片及完整记录已回填，已逐张审看；扒鸡复用，黑陶、金丝彩贴与宁津杂技补图。只选择各一张，旧稿及修正稿留档，不是公开页面验收。",
+    "黑陶不直接写成龙山出土文物或四千年连续家族传承；杂技插画不署为刘俊昌本人、真实演出或可模仿的动作教程。",
+    "资料核查日期2026-11-02；未改公共代码、未生成图片、未取得公开照片许可。",
+    "金丝彩贴材料在学院概述与2026年现场报道中有不同表达，本文采用彩色材料拼贴与金丝勾边的谨慎概述。当前花叶图仅为材料意象，不是彩色丝绸或具体作品的真实记录。",
+    "刘俊昌新增2010年齐鲁晚报训练现场的检索线索，但电子报HTML和PDF均HTTP403，未核读版面或实图；不将摘要中的身份或摄影线索升级为已核肖像，详见本组人物照片核查补记-v1.json。"
+  ]
+}

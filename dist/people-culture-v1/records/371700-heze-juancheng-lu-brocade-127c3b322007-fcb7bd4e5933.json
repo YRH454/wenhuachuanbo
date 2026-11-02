@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371700",
+  "objectId": "heze-juancheng-lu-brocade",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE folded and softly draped piece of colourful woven COTTON cloth for the Juancheng Lu brocade topic, Heze, Shandong. Show a new restrained rhythmic arrangement of small geometric checks, stepped bands and intersecting colour lines produced visually by WARP AND WEFT. The pattern is wholly invented; do not reproduce Liu Aiyu's cloth, a collaborating brand's pattern or any recognizable maker's work.\nComposition: a single cloth partly folded so one broad face reveals the woven geometric pattern while one soft fold and short fringe show the cotton material. Entire cloth including fringe inside generous negative-space margins, three-quarter near-overhead view on a quiet warm-paper base. Clear cotton threads and interlacing at a readable scale; modest irregularities rather than a perfect vector texture.\nStyle and palette: tactile editorial textile-and-gouache illustration, muted indigo, warm red, ochre, dusty pink, cream and charcoal arranged in balanced small-scale geometry. Soft matte cotton, not satin silk, shiny metallic gold thread, embroidery stitches, printed polyester, wall tapestry or gold-wire colour paste. No loom, hands, weaving tutorial or multiple sample board.\nAuthenticity: this is an original imaginative textile motif, not a verified traditional pattern, artist's work, museum object or structural weaving diagram. No claim that Lu brocade belongs only to Heze, and no named motif or ritual meaning.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:24:40.686Z",
+  "finishedAt": "2026-11-02T02:25:20.340Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE folded and softly draped piece of colourful woven COTTON cloth for the Juancheng Lu brocade topic, Heze, Shandong. Show a new restrained rhythmic arrangement of small geometric checks, stepped bands and intersecting colour lines produced visually by WARP AND WEFT. The pattern is wholly invented; do not reproduce Liu Aiyu's cloth, a collaborating brand's pattern or any recognizable maker's work.\nComposition: a single cloth partly folded so one broad face reveals the woven geometric pattern while one soft fold and short fringe show the cotton material. Entire cloth including fringe inside generous negative-space margins, three-quarter near-overhead view on a quiet warm-paper base. Clear cotton threads and interlacing at a readable scale; modest irregularities rather than a perfect vector texture.\nStyle and palette: tactile editorial textile-and-gouache illustration, muted indigo, warm red, ochre, dusty pink, cream and charcoal arranged in balanced small-scale geometry. Soft matte cotton, not satin silk, shiny metallic gold thread, embroidery stitches, printed polyester, wall tapestry or gold-wire colour paste. No loom, hands, weaving tutorial or multiple sample board.\nAuthenticity: this is an original imaginative textile motif, not a verified traditional pattern, artist's work, museum object or structural weaving diagram. No claim that Lu brocade belongs only to Heze, and no named motif or ritual meaning.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:24:40.686Z",
+      "finishedAt": "2026-11-02T02:25:20.340Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3221234,
+  "sha256": "127c3b32200767107dfd83c6293945482bf8869af91ff1747f2027de45f81fe2",
+  "sourceRecordSha256": "e0c6bb0eb982511991054e41270077e8f4f9a9507cd8be81965de5f7498a3c41",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

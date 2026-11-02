@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370600",
+  "objectId": "yt-object-eight-immortals",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for “八仙传说（蓬莱）”, treating it explicitly as folklore rather than history. Convey a magical imagined sea voyage through a luminous, simple unmarked gourd and one unfurled palm-leaf fan resting as symbolic motifs amid stylized rolling blue-green sea waves and cloud ribbons, with a distant, completely imaginary island in mist. Place the gourd and fan together near the center for narrow crop legibility. Evocative sophisticated mineral-pigment and ink illustration on warm paper, teal, indigo, soft gold and cream, airy and poetic. Do not depict people, faces, specific immortals, any claim of showing all eight, real Penglai Pavilion or another identifiable landmark. It is an imagined cultural metaphor, not a historical event, museum artifact, antique book, authentic old painting, or illustration copying a named artist. No text, numbers, characters, logos, marks, seals, watermark, borders, triptych or collage. One single coherent landscape image.",
+  "startedAt": "2026-11-02T10:49:25.823+08:00",
+  "finishedAt": "2026-11-02T10:49:56.957+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for “八仙传说（蓬莱）”, treating it explicitly as folklore rather than history. Convey a magical imagined sea voyage through a luminous, simple unmarked gourd and one unfurled palm-leaf fan resting as symbolic motifs amid stylized rolling blue-green sea waves and cloud ribbons, with a distant, completely imaginary island in mist. Place the gourd and fan together near the center for narrow crop legibility. Evocative sophisticated mineral-pigment and ink illustration on warm paper, teal, indigo, soft gold and cream, airy and poetic. Do not depict people, faces, specific immortals, any claim of showing all eight, real Penglai Pavilion or another identifiable landmark. It is an imagined cultural metaphor, not a historical event, museum artifact, antique book, authentic old painting, or illustration copying a named artist. No text, numbers, characters, logos, marks, seals, watermark, borders, triptych or collage. One single coherent landscape image.",
+      "startedAt": "2026-11-02T10:49:25.823+08:00",
+      "finishedAt": "2026-11-02T10:49:56.957+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3344969,
+  "sha256": "a0c355a71053314fb1900e6872c53833cd09eef74091506196ce92d16c29c3b7",
+  "sourceRecordSha256": "2081146d6b9c6f810a03356ae2b1db2a7c820e8a0a6e4ef6089c4b9616a1bac3",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

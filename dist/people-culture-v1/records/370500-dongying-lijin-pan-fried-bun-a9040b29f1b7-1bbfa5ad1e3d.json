@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370500",
+  "objectId": "dongying-lijin-pan-fried-bun",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: an original food-topic illustration of Lijin pan-fried buns in Dongying. Show FOUR complete softly plump LEAVENED DOUGH buns on a simple shallow cream plate. Three upright buns have soft off-white steamed sides and modest pinched folded tops; one bun is gently tilted on its side to clearly reveal a broad crisp toasted GOLDEN-BROWN FRIED BASE contrasting with the pale soft dough. They should feel like substantial fluffy pan-fried bao, not tiny translucent soup dumplings, jiaozi, sesame-cracker discs or thick flat meat pies.\nKeep the buns whole; do not invent a filling recipe, cutaway, sauce, meat spill, claim of a specific merchant's pleating or exact authentic dimensions. No oil-splash action, skillet process demonstration, chef, hands, chopsticks, brand packaging or restaurant. One tiny quiet wisp of painted warmth is acceptable, not excessive photoreal steam.\nComposition and style: complete plate and all buns comfortably inside a broad warm paper surround, softly oblique overhead view. Tactile handmade gouache with cream, toasted honey-gold and muted russet shadows; readable fluffy dough and crisp base, restrained appetising editorial painting, not a glossy commercial food photo. No authenticity certificate, nutrition, health, royal-history or exact recipe claim.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:54:00.272Z",
+  "finishedAt": "2026-11-02T02:55:39.997Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: an original food-topic illustration of Lijin pan-fried buns in Dongying. Show FOUR complete softly plump LEAVENED DOUGH buns on a simple shallow cream plate. Three upright buns have soft off-white steamed sides and modest pinched folded tops; one bun is gently tilted on its side to clearly reveal a broad crisp toasted GOLDEN-BROWN FRIED BASE contrasting with the pale soft dough. They should feel like substantial fluffy pan-fried bao, not tiny translucent soup dumplings, jiaozi, sesame-cracker discs or thick flat meat pies.\nKeep the buns whole; do not invent a filling recipe, cutaway, sauce, meat spill, claim of a specific merchant's pleating or exact authentic dimensions. No oil-splash action, skillet process demonstration, chef, hands, chopsticks, brand packaging or restaurant. One tiny quiet wisp of painted warmth is acceptable, not excessive photoreal steam.\nComposition and style: complete plate and all buns comfortably inside a broad warm paper surround, softly oblique overhead view. Tactile handmade gouache with cream, toasted honey-gold and muted russet shadows; readable fluffy dough and crisp base, restrained appetising editorial painting, not a glossy commercial food photo. No authenticity certificate, nutrition, health, royal-history or exact recipe claim.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:54:00.272Z",
+      "finishedAt": "2026-11-02T02:55:39.997Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2849114,
+  "sha256": "a9040b29f1b7259c1466f4c3262ed47c2a932714aa07359ac1a35ed1d87d99ca",
+  "sourceRecordSha256": "e771e9410c81713e05de961dc044f7565a6801f414cee7c82fea6f86e439cc2a",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

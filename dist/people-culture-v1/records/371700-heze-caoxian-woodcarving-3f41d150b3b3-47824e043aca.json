@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371700",
+  "objectId": "heze-caoxian-woodcarving",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE invented WOODEN decorative object with shallow-relief flower-and-leaf carving for the Caoxian woodcarving cultural topic, Heze, Shandong. A simple gently curved standing oval wooden plaque on a modest integrated stable base, entirely natural warm wood, no painted colours. Original broad botanical shapes and a small quiet abstract bird silhouette emerge in shallow relief, visibly carved-looking rather than printed or stuck-on.\nComposition: a single compact object in a clear three-quarter near-front view with the full top, sides and base visible inside generous margins. Fine natural wood grain travels across the object and relief, warm soft side light reveals the cut depth, quiet pale warm-gray ground. Keep the carved design contemporary and invented, not an elaborate historic shrine, deity, religious effigy or a specific cultural relic.\nStyle: refined material-led wood-and-gouache editorial illustration, honey-brown wood, matte carved surfaces, deliberate broad cuts and tactile texture, restrained hand-worked variation. Not gold-wire enamel, paper-cutting, ceramic, glossy souvenir CGI or a photograph of a real artwork. No tools, hands, workshop or carving sequence.\nAuthenticity: not a named artisan's work, copied news photograph, antiquity, specific regional named pattern or evidence of an exact carving technique. No festival or worship scene, historical origin claim or provenance implied.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:24:40.687Z",
+  "finishedAt": "2026-11-02T02:25:53.713Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one COMPLETE invented WOODEN decorative object with shallow-relief flower-and-leaf carving for the Caoxian woodcarving cultural topic, Heze, Shandong. A simple gently curved standing oval wooden plaque on a modest integrated stable base, entirely natural warm wood, no painted colours. Original broad botanical shapes and a small quiet abstract bird silhouette emerge in shallow relief, visibly carved-looking rather than printed or stuck-on.\nComposition: a single compact object in a clear three-quarter near-front view with the full top, sides and base visible inside generous margins. Fine natural wood grain travels across the object and relief, warm soft side light reveals the cut depth, quiet pale warm-gray ground. Keep the carved design contemporary and invented, not an elaborate historic shrine, deity, religious effigy or a specific cultural relic.\nStyle: refined material-led wood-and-gouache editorial illustration, honey-brown wood, matte carved surfaces, deliberate broad cuts and tactile texture, restrained hand-worked variation. Not gold-wire enamel, paper-cutting, ceramic, glossy souvenir CGI or a photograph of a real artwork. No tools, hands, workshop or carving sequence.\nAuthenticity: not a named artisan's work, copied news photograph, antiquity, specific regional named pattern or evidence of an exact carving technique. No festival or worship scene, historical origin claim or provenance implied.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:24:40.687Z",
+      "finishedAt": "2026-11-02T02:25:53.713Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2296690,
+  "sha256": "3f41d150b3b3c16f8aa46da3cc59d6b5f99c4eb2cd061b08bcec464d702f1ec9",
+  "sourceRecordSha256": "d4663f6067bd087d5f36338e2f389b8b3613f85cca4391e6a77d0b6c9b66736f",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

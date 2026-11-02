@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371100",
+  "objectId": "rizhao-peasant-painting",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: illustration-story\nAsset type: one original AI cultural illustration for an interactive expanding screen about Rizhao folk peasant painting, Shandong.\n\nCreate a newly invented, cheerful coastal folk-art scene: one brightly decorated imagined fishing boat surrounded by stylized fish, sun, waves and a few distant simple village-house shapes. Use bold flat hand-painted color, joyful pattern, naive folk composition and visible paper texture, with blue sea, clear turquoise sky, warm red, yellow and grass green. This is an original fictional tribute to the idea of coastal folk painting, not a copy of any painting, named artist's style, real village, specific vessel or documented activity. No fishermen or portraits.\nComposition: keep the central boat and one large decorative fish within the central 30% of a wide landscape image so a narrow centered accordion crop retains the main identity, with varied rhythmic wave-and-fish patterns around it. Strong legibility at screen scale; full frame cohesive and balanced.\nConstraints: no real person, specific geographic landmark, documentary scene, words, Chinese characters, letters, numbers, signature, artist's seal, logo, watermark, frame or interface. Do not imitate any specific painter or copyrighted image.",
+  "startedAt": "2026-11-02T10:27:54.163+08:00",
+  "finishedAt": "2026-11-02T10:28:31.084+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: illustration-story\nAsset type: one original AI cultural illustration for an interactive expanding screen about Rizhao folk peasant painting, Shandong.\n\nCreate a newly invented, cheerful coastal folk-art scene: one brightly decorated imagined fishing boat surrounded by stylized fish, sun, waves and a few distant simple village-house shapes. Use bold flat hand-painted color, joyful pattern, naive folk composition and visible paper texture, with blue sea, clear turquoise sky, warm red, yellow and grass green. This is an original fictional tribute to the idea of coastal folk painting, not a copy of any painting, named artist's style, real village, specific vessel or documented activity. No fishermen or portraits.\nComposition: keep the central boat and one large decorative fish within the central 30% of a wide landscape image so a narrow centered accordion crop retains the main identity, with varied rhythmic wave-and-fish patterns around it. Strong legibility at screen scale; full frame cohesive and balanced.\nConstraints: no real person, specific geographic landmark, documentary scene, words, Chinese characters, letters, numbers, signature, artist's seal, logo, watermark, frame or interface. Do not imitate any specific painter or copyrighted image.",
+      "startedAt": "2026-11-02T10:27:54.163+08:00",
+      "finishedAt": "2026-11-02T10:28:31.084+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1942,
+  "height": 809,
+  "bytes": 3016718,
+  "sha256": "cc438429d1d851299bd9deebfe10bdf8b68937d085cdd847bc758925b3d22b87",
+  "sourceRecordSha256": "a6cc981cbfd81f1faa96ff58e974bd95f9acd58aa8b19581a6eebedd406b00a4",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

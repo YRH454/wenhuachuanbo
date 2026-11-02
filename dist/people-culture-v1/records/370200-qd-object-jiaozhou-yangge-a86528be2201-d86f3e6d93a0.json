@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370200",
+  "objectId": "qd-object-jiaozhou-yangge",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Edit the supplied original AI dance illustration as a substantial targeted correction for the cultural subject “胶州秧歌”. The OUTPUT MUST BE A TRUE WIDE HORIZONTAL LANDSCAPE 3:2 IMAGE, wider than tall, not portrait; redesign the canvas and framing if needed. Keep an original restrained cut-paper and ink visual language but replace the old floating ancient-costume silhouette and its trailing sleeves/ribbons. Center a single anonymous, non-photographic folk-dance figure, shown completely head to feet within a compact central area with generous space above and below. Both feet are firmly on the ground in a small grounded stepping stance, knees softly bent; convey supple, connected curves through waist and body with a modest open hand fan held close to the torso. The artistically suggested posture is not a specific exact step or dance tutorial. The entire person, both arms, both legs, feet and fan must be visible and anatomically coherent. Simple invented modest folk-inspired short jacket and loose trousers, no elaborate historical costume or claim of authentic local uniform; no long sleeves, floating sashes, ballet pose, leaps, midair feet, angelic or fairy imagery, big drum, theatrical water sleeves, or generic fantasy landscape. Use warm cream, subdued cinnabar, indigo and charcoal; graphic uncluttered backdrop, no specific actual place. The original person must be completely fictional and faceless, not Wu Yingmin or any actual performer, not an actual performance photograph, not a claim of standard Jiaozhou costume, character or pose, and not copying any existing stage photo or contemporary artwork. No people other than this single symbolic figure; no words, characters, lettering, signage, music notation, seals, logo, watermark, montage or panels.",
+  "startedAt": "2026-11-02T11:16:47.575+08:00",
+  "finishedAt": "2026-11-02T11:17:34.843+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original landscape editorial illustration for “胶州秧歌”, a Chinese regional traditional-dance theme. Make an imaginative, clearly non-photographic folk-art scene of one anonymous adult dancer, shown as a simple faceless silhouette with a graceful, gently curved waist and a single open fan; show the whole body, both arms and both legs anatomically complete within the frame, with a rhythmically flowing, balanced posture. Gather fan and figure near the center so the main visual remains legible in a narrow vertical crop. The figure is an invented generic dance symbol, not a depiction or portrait of any named person, living performer, recorded production, historical event, or specific traditional costume; do not claim exact demonstration of a traditional dance step. Sophisticated cut-paper and painted-ink aesthetic with muted cinnabar, warm cream, ink black and touches of indigo; expressive but not childish, clean, strong silhouette, ample negative space. Avoid literal other dance genres, crowded troupe, or reference to specific existing artworks. No typography, letters, caption, musical notes, signage, fake seal, logo, watermark, montage or multi-panel layout. One unified image only.",
+      "startedAt": "2026-11-02T10:34:35.066+08:00",
+      "finishedAt": "2026-11-02T10:35:13.653+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Edit the supplied original AI dance illustration as a substantial targeted correction for the cultural subject “胶州秧歌”. The OUTPUT MUST BE A TRUE WIDE HORIZONTAL LANDSCAPE 3:2 IMAGE, wider than tall, not portrait; redesign the canvas and framing if needed. Keep an original restrained cut-paper and ink visual language but replace the old floating ancient-costume silhouette and its trailing sleeves/ribbons. Center a single anonymous, non-photographic folk-dance figure, shown completely head to feet within a compact central area with generous space above and below. Both feet are firmly on the ground in a small grounded stepping stance, knees softly bent; convey supple, connected curves through waist and body with a modest open hand fan held close to the torso. The artistically suggested posture is not a specific exact step or dance tutorial. The entire person, both arms, both legs, feet and fan must be visible and anatomically coherent. Simple invented modest folk-inspired short jacket and loose trousers, no elaborate historical costume or claim of authentic local uniform; no long sleeves, floating sashes, ballet pose, leaps, midair feet, angelic or fairy imagery, big drum, theatrical water sleeves, or generic fantasy landscape. Use warm cream, subdued cinnabar, indigo and charcoal; graphic uncluttered backdrop, no specific actual place. The original person must be completely fictional and faceless, not Wu Yingmin or any actual performer, not an actual performance photograph, not a claim of standard Jiaozhou costume, character or pose, and not copying any existing stage photo or contemporary artwork. No people other than this single symbolic figure; no words, characters, lettering, signage, music notation, seals, logo, watermark, montage or panels.",
+      "startedAt": "2026-11-02T11:16:47.575+08:00",
+      "finishedAt": "2026-11-02T11:17:34.843+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组已撤回AI初稿，定向编辑输入",
+          "sha256": "7df0532573a23a7e1f55d79e547c448fb674b473b8b54de015af7687a0e6ef41"
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3055253,
+  "sha256": "a86528be2201a9c28d88ede2148e4989003b410f0db209283c3150bc00a97066",
+  "sourceRecordSha256": "dfb3ed3b651f47f3272651da0baa07ef3141e03bfd12e62c0473e8b2b183c0f1",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

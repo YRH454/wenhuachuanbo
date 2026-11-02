@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371400",
+  "objectId": "dezhou-gold-wire-color-paste",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: original material-led illustration for gold-wire colour-paste decorative art in Dezhou, Shandong.\nPrimary request: ONE complete original decorative panel with thin gold-coloured wire-like boundaries enclosing gently textured coloured fill, arranged as an invented abstract flower-and-leaf design. This is an AI imagination about the materials, not an actual workshop artwork or evidence of a precise technique.\nSubject and composition: one landscape panel rests almost face-on against a quiet warm-paper ground. Its full outer edge is visible with roomy margins. Within it, a restrained asymmetrical spray of broad flowers and leaves curves through open negative space. Very thin raised golden contour lines enclose matte granular colour-filled shapes; visible small-scale paste or pigment texture, subtle shadows where the wire meets the fill, quiet ivory, mineral blue-green, dusky coral and a few restrained gold highlights. Keep the coloured areas tactile and matte, not jewel-encrusted metal. The panel is flat decorative art, not a vase, rug, fabric sample, woven tapestry, jewellery or metal casting.\nStyle: contemporary editorial material illustration, shallow relief, natural soft light, beautiful readable thin boundaries, clearly different from woven gold thread. Do not turn it into a cloisonne-enamel manufacturing explanation or show tools, glue bottles, hands or work steps. Invent all motifs and no known artist's style or existing work is copied.\nAuthenticity: do not attribute to Li Aimin or a local studio; no ownership, age, heritage-level or technique claims in the image. The physical appearance is creative, not a verified recipe or production method.\nSingle standalone creative artwork, not a page, diagram, contact sheet or UI. Horizontal 3:2, ideally native 1536x1024. Keep complete subject silhouettes and generous safe margins; fully readable when shown with contain on mobile. No people, real faces, hands, text, pseudo-writing, labels, numbers, seals, signatures, brands, logos or watermark. No copied artwork, named craftsperson's work, museum object or process documentation.",
+  "startedAt": "2026-11-02T02:00:33.784Z",
+  "finishedAt": "2026-11-02T02:01:25.512Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: original material-led illustration for gold-wire colour-paste decorative art in Dezhou, Shandong.\nPrimary request: ONE complete original decorative panel with thin gold-coloured wire-like boundaries enclosing gently textured coloured fill, arranged as an invented abstract flower-and-leaf design. This is an AI imagination about the materials, not an actual workshop artwork or evidence of a precise technique.\nSubject and composition: one landscape panel rests almost face-on against a quiet warm-paper ground. Its full outer edge is visible with roomy margins. Within it, a restrained asymmetrical spray of broad flowers and leaves curves through open negative space. Very thin raised golden contour lines enclose matte granular colour-filled shapes; visible small-scale paste or pigment texture, subtle shadows where the wire meets the fill, quiet ivory, mineral blue-green, dusky coral and a few restrained gold highlights. Keep the coloured areas tactile and matte, not jewel-encrusted metal. The panel is flat decorative art, not a vase, rug, fabric sample, woven tapestry, jewellery or metal casting.\nStyle: contemporary editorial material illustration, shallow relief, natural soft light, beautiful readable thin boundaries, clearly different from woven gold thread. Do not turn it into a cloisonne-enamel manufacturing explanation or show tools, glue bottles, hands or work steps. Invent all motifs and no known artist's style or existing work is copied.\nAuthenticity: do not attribute to Li Aimin or a local studio; no ownership, age, heritage-level or technique claims in the image. The physical appearance is creative, not a verified recipe or production method.\nSingle standalone creative artwork, not a page, diagram, contact sheet or UI. Horizontal 3:2, ideally native 1536x1024. Keep complete subject silhouettes and generous safe margins; fully readable when shown with contain on mobile. No people, real faces, hands, text, pseudo-writing, labels, numbers, seals, signatures, brands, logos or watermark. No copied artwork, named craftsperson's work, museum object or process documentation.",
+      "startedAt": "2026-11-02T02:00:33.784Z",
+      "finishedAt": "2026-11-02T02:01:25.512Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3404452,
+  "sha256": "4ac778a3492e584c1410fdfd8a1375e3eefcd36f058653ead9c9d594a7ec011e",
+  "sourceRecordSha256": "bf0688c7ee8c2ca0f0b8c2c94a45f7fed92e61f1ca13a8d6a250ad0ce3ad5462",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

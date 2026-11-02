@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371600",
+  "objectId": "binzhou-zhanhua-winter-jujube",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: an original FRESH winter-jujube fruit still life for the Zhanhua winter-jujube cultural topic in Binzhou, Shandong. Show a modest complete cluster of plump smooth-skinned fresh round-to-oval jujubes, pale green and yellow-green with warm russet-red blush patches, and a short simple twig with a few small green leaves. These are fresh fruit, NOT shrivelled dried red dates, cherries, tomatoes or olives.\nComposition: compact airy arrangement on a quiet pale sand paper ground, a few fruits resting separately beside the twig so their smooth fresh skins are clearly readable. Entire fruit and twig group inside broad margins, softly top-oblique view, no large container needed, no farm panorama or packaging.\nStyle: refined botanical gouache and delicate watercolour with restrained paper grain, soft natural highlights, believable rounded volume without photorealistic product polish. Fresh green, yellow and rusty blush against warm neutral space. No labels, cutaway diagrams, orchard workers, harvest actions or measuring tools.\nAuthenticity: an imaginative subject illustration, not evidence of an actual orchard, variety identification, cultivation method, certification, nutritional value, flavour, health effect or quality. Do not use dried-fruit appearance or make exclusive-origin claims.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:16:53.897Z",
+  "finishedAt": "2026-11-02T02:18:18.157Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: an original FRESH winter-jujube fruit still life for the Zhanhua winter-jujube cultural topic in Binzhou, Shandong. Show a modest complete cluster of plump smooth-skinned fresh round-to-oval jujubes, pale green and yellow-green with warm russet-red blush patches, and a short simple twig with a few small green leaves. These are fresh fruit, NOT shrivelled dried red dates, cherries, tomatoes or olives.\nComposition: compact airy arrangement on a quiet pale sand paper ground, a few fruits resting separately beside the twig so their smooth fresh skins are clearly readable. Entire fruit and twig group inside broad margins, softly top-oblique view, no large container needed, no farm panorama or packaging.\nStyle: refined botanical gouache and delicate watercolour with restrained paper grain, soft natural highlights, believable rounded volume without photorealistic product polish. Fresh green, yellow and rusty blush against warm neutral space. No labels, cutaway diagrams, orchard workers, harvest actions or measuring tools.\nAuthenticity: an imaginative subject illustration, not evidence of an actual orchard, variety identification, cultivation method, certification, nutritional value, flavour, health effect or quality. Do not use dried-fruit appearance or make exclusive-origin claims.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:16:53.897Z",
+      "finishedAt": "2026-11-02T02:18:18.157Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2593684,
+  "sha256": "62c3b71bca7c8c36a8f77d8e7e6a0c4fa4954f55859552f95e2e8d56ab72678e",
+  "sourceRecordSha256": "e6f0321db7d937f9a74ad05853077f5445118310b7509daf7262a287706202f0",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

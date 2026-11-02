@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370400",
+  "city": "枣庄",
+  "status": "draft",
+  "people": [
+    {
+      "id": "gan-yandi",
+      "name": "甘言地",
+      "connection": "伏里土陶传承人，与枣庄山亭区伏里村土陶技艺相关。",
+      "intro": "枣庄学院报道过甘言地介绍伏里土陶、带领学生体验土陶制作的活动。",
+      "sources": [
+        {
+          "title": "枣庄学院：非遗校园 向美而行",
+          "url": "https://mssj.uzz.edu.cn/info/1013/2127.htm"
+        },
+        {
+          "title": "大众网：伏里土陶出新作品",
+          "url": "https://sd.dzwww.com/sdxwjxs/zz_132277/201608/t20160829_14841267.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 600,
+        "height": 340,
+        "alt": "甘言地的真实报道照片；仅供本机待授权候选预览",
+        "caption": "甘言地雕刻陶瓶；大众网2016年报道配图。",
+        "sourcePage": "https://sd.dzwww.com/sdxwjxs/zz_132277/201608/t20160829_14841267.htm",
+        "credit": "来源：大众网；报道作者孙姝华，摄影署名未单列，待核",
+        "identityStatus": "原报道图注明示甘言地，原图已查看",
+        "rightsStatus": "待核，仅内部候选；原站标识不得故意裁去",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wang-chuanling",
+      "name": "王传玲",
+      "connection": "与枣庄柳琴戏相关的表演者和传承人。",
+      "intro": "王传玲的柳琴戏表演与传承活动有枣庄学院和中国非物质文化遗产网资料记录。",
+      "sources": [
+        {
+          "title": "枣庄学院：柳琴小戏内部试演座谈会",
+          "url": "https://www.uzz.edu.cn/info/1026/26272.htm"
+        },
+        {
+          "title": "中国非物质文化遗产网：王传玲",
+          "url": "https://www.ihchina.cn/ccr_detail/1920/"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "li-hao",
+      "name": "李浩",
+      "connection": "滕州鲁班锁制作技艺传承人。",
+      "intro": "公开报道记述了李浩在滕州以鲁班锁开展制作与传播活动。",
+      "sources": [
+        {
+          "title": "中国孔子网：聚文化两创之力，古城枣庄焕发新风采",
+          "url": "https://www.chinakongzi.org/zt/5737/zj/zz/202209/t20220909_552062.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "fuli-pottery",
+      "name": "伏里土陶",
+      "category": "民间陶艺",
+      "connection": "枣庄市山亭区伏里村的土陶手艺。",
+      "intro": "伏里土陶把当地泥土塑成陶器，也在校园体验中传递地方手艺。",
+      "sources": [
+        {
+          "title": "枣庄学院：非遗校园 向美而行",
+          "url": "https://mssj.uzz.edu.cn/info/1013/2127.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370400-fuli-pottery-60d2c3f6b583.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：鸟形陶意与温润土色。",
+        "credit": "AI创意插画；非真实伏里土陶实物或特定作者作品",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370400-fuli-pottery-60d2c3f6b583.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "liuqin-opera",
+      "name": "柳琴戏",
+      "category": "传统戏剧",
+      "connection": "枣庄是柳琴戏的申报地区之一。",
+      "intro": "柳琴戏是鲁南一带的地方戏曲，唱腔与表演富有乡土气息。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：柳琴戏（枣庄）",
+          "url": "https://www.ihchina.cn/project_details/13287.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370400-liuqin-opera-1a43117c16a3.png",
+        "width": 1916,
+        "height": 821,
+        "alt": "AI创意插画：虚构戏曲人物剪影、流动长袖与弦乐器轮廓。",
+        "credit": "AI创意插画：虚构戏曲意象，非真实演出、人物、服饰或乐器形制",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370400-liuqin-opera-1a43117c16a3.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "luban-lock",
+      "name": "滕州鲁班锁",
+      "category": "传统木工与益智玩具",
+      "connection": "枣庄滕州地区的鲁班锁制作与传播实践。",
+      "intro": "木质构件通过榫卯相互咬合，拆装之间呈现传统手作与巧思。",
+      "sources": [
+        {
+          "title": "山东公共文化云：鲁班锁制作技艺",
+          "url": "https://www.sdpcc.com/article/18211"
+        },
+        {
+          "title": "中国孔子网：古城枣庄焕发新风采",
+          "url": "https://www.chinakongzi.org/zt/5737/zj/zz/202209/t20220909_552062.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370400-luban-lock-d6e017c3c6a2.png",
+        "width": 1774,
+        "height": 887,
+        "alt": "AI创意插画：交错木条构成的鲁班锁意象。",
+        "credit": "AI创意插画：虚构木构意象，不是真实鲁班锁或拆装教程",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370400-luban-lock-d6e017c3c6a2.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "zaozhuang-spicy-chicken",
+      "name": "枣庄辣子鸡",
+      "category": "地方饮食",
+      "connection": "枣庄特色饮食与地方烹饪技艺。",
+      "intro": "枣庄辣子鸡是当地常见的特色饮食，可从一盘菜认识地方风味。",
+      "sources": [
+        {
+          "title": "山东省邮政管理局：枣庄辣子鸡",
+          "url": "https://sd.spb.gov.cn/sdsyzglj/c103568/c103570/202411/248ff49e46714023bc3da175e4b1cf7f.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370400-zaozhuang-spicy-chicken-90122ee53793.png",
+        "width": 1774,
+        "height": 887,
+        "alt": "AI创意插画：碗中鸡块与红绿辣椒的地方饮食意象。",
+        "credit": "AI创意插画：虚构饮食意象，非真实菜品或具体食谱",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370400-zaozhuang-spicy-chicken-90122ee53793.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "甘言地候选照片已保存并查看，有原报道图注，摄影署名和公开复用权待核；其他两人肖像待核。",
+    "四项文化图均为AI创意候选，屏风收合态与手机裁切待测；柳琴戏图不是实际人物或戏服，鲁班锁图不是可拆装结构，辣子鸡图不代表具体食谱或真实菜品。",
+    "此为内部联调草稿，公开权利及人物细节仍需复核。"
+  ]
+}

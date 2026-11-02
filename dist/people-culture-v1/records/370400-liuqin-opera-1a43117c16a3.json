@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370400",
+  "objectId": "liuqin-opera",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for a wide interactive expanding screen about Liuqin opera in Zaozhuang, Shandong.\n\nCreate an imaginative Chinese folk-opera visual metaphor, not a real performance or photo. In the center show a small, deliberately faceless paper-cut silhouette of a fictional stage figure in motion, with long bright flowing sleeves forming a dynamic S-curve, beside a simplified small traditional string-instrument silhouette and an abstract round stage light. No identifiable actor, no portrait and no attempt to depict a documented costume or specific performance. Convey lively rural theatrical rhythm rather than a literal historical scene.\nComposition: vertical gestural figure-and-sleeves form centered in a wide horizontal picture; place the essential silhouette within the middle 30% of the width so it remains recognizable in a narrow central accordion crop. Use hand-cut layered paper and folk woodblock textures, a restrained palette of deep persimmon red, inky blue-green, warm ivory and touches of gold. Surround it with abstract curves like theatrical drapery and sound rather than a realistic venue. Avoid an empty robe-and-drum still life. Keep the art distinct from a generic photoreal opera stage.\nConstraints: entirely fictional, not an image of any actual performer, theatrical role, play, real event, landmark, garment or musical performance. No readable script, lyrics, characters, musical notes, letters, numerals, signage, logos, seal, signature, watermark, border or interface.",
+  "startedAt": "2026-11-02T10:04:03.385+08:00",
+  "finishedAt": "2026-11-02T10:04:36.822+08:00",
+  "width": 1916,
+  "height": 821,
+  "sha256": "1a43117c16a3e3ad8468f24f6ac1db8f770c5e5e9cae3158fb58b6e8f09c5eb2",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

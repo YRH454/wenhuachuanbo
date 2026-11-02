@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370500",
+  "city": "东营",
+  "status": "draft",
+  "people": [
+    {
+      "id": "dongying-xu-zunxia",
+      "name": "徐尊霞",
+      "connection": "在东营市广饶县大码头镇从事苇编传习与产品发展。",
+      "intro": "大码头苇编传习者，推动苇编从苇席等日用品走向手提包、收纳篮等产品，并组织有编织基础的居民培训与居家制作。",
+      "sources": [
+        {
+          "title": "山东宣传网转载大众新闻：广饶大码头苇编——一根芦苇的价值放大了成百上千倍",
+          "url": "https://www.sdxc.gov.cn/whql/whqlsy/202412/t20241225_15300337.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "dongying-guo-mingchang",
+      "name": "郭明昌",
+      "connection": "从事广饶齐笔制作技艺传习，并面向不同年龄学生开展教学。",
+      "intro": "广饶齐笔制作技艺传承人，以识材料、动手制作和核心工序学习等方式，让学生逐步认识一支毛笔的制作。",
+      "sources": [
+        {
+          "title": "山东宣传网转载东营日报：东营——让非遗“住”进日常",
+          "url": "https://www.sdxc.gov.cn/sy/xcdt/202606/t20260629_17881473.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "dongying-wang-lingling",
+      "name": "王玲玲",
+      "connection": "参与东营的吕剧传习，指导青少年练习身段和唱腔。",
+      "intro": "吕剧传习者。东营日报报道记录了她指导学生排练、逐段回看练唱视频并纠正细节的教学实践。",
+      "sources": [
+        {
+          "title": "山东宣传网转载东营日报：东营——让非遗“住”进日常",
+          "url": "https://www.sdxc.gov.cn/sy/xcdt/202606/t20260629_17881473.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "dongying-damatou-reed-weaving",
+      "name": "大码头苇编",
+      "category": "传统编织·生活器用",
+      "connection": "东营市广饶县大码头镇的地方编织实践，不是河口区地名。",
+      "intro": "细长苇片的交织连接着苇席、提包、花篮与收纳用品。当地工坊把传统编织带入新的生活用途，具体用料仍随产品而异。",
+      "sources": [
+        {
+          "title": "山东宣传网转载大众新闻：广饶大码头苇编——一根芦苇的价值放大了成百上千倍",
+          "url": "https://www.sdxc.gov.cn/whql/whqlsy/202412/t20241225_15300337.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370500-dongying-damatou-reed-weaving-68407ccf7e63.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI创意插画：赭橙与深蓝纸艺中的想象苇片交织环，不是提篮、获奖包或真实编法样本。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非真实苇编产品照片。",
+        "rightsStatus": "已核复用副本及原记录，供内部联调；publicUseApproved=false，待选用、实装及发布审查。",
+        "record": "records/370500-dongying-damatou-reed-weaving-68407ccf7e63-c44f835b2840.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "dongying-guangrao-qi-brush",
+      "name": "广饶齐笔",
+      "category": "传统技艺·毛笔",
+      "connection": "广饶齐笔制作技艺在东营广饶开展传习，报道记为省级非遗项目。",
+      "intro": "从梳理笔毛到认识成笔，一支齐笔连接书写工具与手工劳动。传习者把识材料、动手制作等内容带入分层教学。",
+      "sources": [
+        {
+          "title": "山东宣传网转载东营日报：东营——让非遗“住”进日常",
+          "url": "https://www.sdxc.gov.cn/sy/xcdt/202606/t20260629_17881473.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370500-dongying-guangrao-qi-brush-e6d425ce328d.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：一支完整无品牌毛笔，棕色笔杆与浅色笔毫清楚；非具名艺人原作、笔毫种属鉴定或工艺教学。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非郭明昌作品、真实古笔或制作工序照片。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370500-dongying-guangrao-qi-brush-e6d425ce328d-ea60d2feb98c.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "dongying-lvju",
+      "name": "吕剧在东营",
+      "category": "地方戏剧·传习实践",
+      "connection": "东营区开展吕剧校园教学、教师培养与青少年排练，牛庄镇学校亦有相关实践。",
+      "intro": "唱腔、身段和日复一日的排练，让地方戏曲从舞台走进课堂。东营的校园传习让年轻学习者逐步接触吕剧表演。",
+      "sources": [
+        {
+          "title": "山东宣传网转载东营日报：东营——让非遗“住”进日常",
+          "url": "https://www.sdxc.gov.cn/sy/xcdt/202606/t20260629_17881473.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370500-dongying-lvju-2dbfc69e36f2.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意概念插画：空戏衣、浅色长袖与虚构灯幕形成抽象身段，无真人；非《卖水》剧照、标准吕剧戏服或教学动作。",
+        "credit": "AI创意概念插画；生图1使用内置image_gen生成，非真实演员、学生或演出剧照。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370500-dongying-lvju-2dbfc69e36f2-075131e35fa7.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "dongying-lijin-pan-fried-bun",
+      "name": "利津水煎包",
+      "category": "饮食·传统制作",
+      "connection": "东营利津的地方面食，地方报道记录其发面与水煮油煎的制作特点。",
+      "intro": "发面的松软与底部煎香相遇，形成利津水煎包的饮食入口。不同店家与口味有差别，一只包子也能连起街巷中的日常生活。",
+      "sources": [
+        {
+          "title": "东营日报：弘扬黄河文化 讲好黄河故事——东营美食 经典味道",
+          "url": "https://news.dongyingnews.cn/system/2023/04/11/010799398.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370500-dongying-lijin-pan-fried-bun-a9040b29f1b7.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：完整盘子与四只松软发面包，一只侧翻显示金黄煎底；非小笼汤包、具体店家产品或统一馅料证明。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非品牌实拍、固定配方或烹饪流程记录。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370500-dongying-lijin-pan-fried-bun-a9040b29f1b7-1bbfa5ad1e3d.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "徐尊霞、郭明昌、王玲玲的真实肖像仍缺图中身份、摄影者与许可复核；portrait均null，不使用AI真人替身。",
+    "四项图各一张已回传并核对文件、题材及生成记录；苇编严格复用旧B图字节相同副本，旧A/B不删；publicUseApproved=false，待选用、发布及网页验收。",
+    "苇编是抽象交织环，不能称提篮实拍、获奖包或标准编法；完整1672×941或contain展示，不以手机裁图冒已验收。",
+    "齐笔、吕剧、利津水煎包三张新图均原生1536×1024，完整3:2或contain；齐笔非郭明昌作品或材料鉴定，吕剧无真人且非《卖水》剧照、标准戏服或教学动作，水煎包不代表统一馅料或配方。",
+    "大码头苇编与码头苇席编织等名录称谓的对应、现行编号和保护单位待核，不把不同地方苇编项目混同。",
+    "2026年传习报道的数据不代表实时规模或收入；不将儿童学生的奖项移给教师，也不使用未成年人照片凑人物图。",
+    "新闻照片未取得比赛网页复用许可；本交付没有照片授权或实际网页视觉验收结论。"
+  ]
+}

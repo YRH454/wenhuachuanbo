@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371300",
+  "objectId": "langya-straw-weaving",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI illustration for an interactive expanding screen about Langya grass weaving in Tancheng, Linyi, Shandong.\n\nShow an invented pair of pale straw-woven slippers resting on a small flat woven mat, evoking everyday grass-woven articles. The flat fibrous ribbons are narrow, light straw-gold and cream, with a few muted soft-blue woven accents. The objects and pattern are fictional, not a copy of a real maker's work or an actual historical object; they must not be treated as evidence of the exact material or method.\nComposition: place both small slippers and the central woven texture in the middle 30–35% of a wide horizontal composition, so the object and texture remain recognizable in the centered narrow crop of an accordion panel. Add a few abstract pale reeds at the edge and a quiet matte paper background; no basket, no woody willow rods and no large looping rope-braid landscape. Elegant tactile paper-and-fiber collage, natural oat, cream, washed indigo, subtle warm grey; original and different from a willow basket scene.\nConstraints: no people, hands, feet, weaving action, tools, authentic process, named artist, text, characters, numbers, logos, signatures, seals, watermark, border or interface.",
+  "startedAt": "2026-11-02T10:18:33.421+08:00",
+  "finishedAt": "2026-11-02T10:19:03.572+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: one original AI illustration for an interactive expanding screen about Langya grass weaving in Tancheng, Linyi, Shandong.\n\nShow an invented pair of pale straw-woven slippers resting on a small flat woven mat, evoking everyday grass-woven articles. The flat fibrous ribbons are narrow, light straw-gold and cream, with a few muted soft-blue woven accents. The objects and pattern are fictional, not a copy of a real maker's work or an actual historical object; they must not be treated as evidence of the exact material or method.\nComposition: place both small slippers and the central woven texture in the middle 30–35% of a wide horizontal composition, so the object and texture remain recognizable in the centered narrow crop of an accordion panel. Add a few abstract pale reeds at the edge and a quiet matte paper background; no basket, no woody willow rods and no large looping rope-braid landscape. Elegant tactile paper-and-fiber collage, natural oat, cream, washed indigo, subtle warm grey; original and different from a willow basket scene.\nConstraints: no people, hands, feet, weaving action, tools, authentic process, named artist, text, characters, numbers, logos, signatures, seals, watermark, border or interface.",
+      "startedAt": "2026-11-02T10:18:33.421+08:00",
+      "finishedAt": "2026-11-02T10:19:03.572+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1891,
+  "height": 831,
+  "bytes": 2910777,
+  "sha256": "23acd5d8de30fd0cbe2671fc68963006c135e3e3260d723f764c1ef311e53ec3",
+  "sourceRecordSha256": "e9772142782888ad2b85c83fa3689ee00e12ea1218ff66008859107f13bfda1d",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

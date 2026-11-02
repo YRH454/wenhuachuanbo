@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370800",
+  "objectId": "qufu-kaimu-carving",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one wide original AI cultural illustration for an interactive, expanding screen panel about Qufu kaimu wood carving, Jining, Shandong.\n\nSubject: an imagined, unbranded piece of pale warm honey-gold wood, bearing one elegant botanical openwork relief: a circular carved medallion of curling leaves and a simple blossom. Its wood grain, layered carved depth and a few genuine-looking openings are visually legible. The design is invented, not a copy of any real artwork, object, historic relic, craftsperson's work or photograph. Do not depict a religious or historical person.\nComposition: sophisticated Chinese artisan-inspired contemporary editorial artwork, square-ish central medallion dominating the CENTER of a horizontal image, the most identifiable carved flower and grain concentrated in the central 30% of the frame's width. Leave harmonious natural-wood background and muted shadow beyond it. The design must remain recognizable when an expanding interactive panel crops to a narrow centered vertical strip, and look good when fully displayed at its original aspect ratio. No scene outside the illustration, no UI mockup.\nVisual language: warm golden-yellow and soft brown fine-grained wood with subtle relief, tactile shadows, restrained ink-dark accents, artistic finish; contrast and structure distinct from the grey-green Nishan inkstone. Elevated and refined, not product photography, not luxury marketing.\nConstraints: This is a fictional AI illustration inspired by a cultural subject, not documentary proof of material species or making technique. No maker, hands, carving process, tools, identifiable historical object, temple, human face, title, writing, Chinese characters, letters, numerals, logo, seal, watermark or frame.",
+  "startedAt": "2026-11-02T09:28:36.239+08:00",
+  "finishedAt": "2026-11-02T09:28:59.484+08:00",
+  "width": 1774,
+  "height": 887,
+  "sha256": "57cecdedfd51f0f27498cb58c67778c335b2abd20929a46010327aea2b91b726",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

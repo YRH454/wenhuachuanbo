@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370900",
+  "objectId": "taian-pancake",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: a food-topic editorial illustration of a VERY THIN Taian-style pancake sheet, emphasising thinness and folded flexibility. Show one complete large pale golden grain pancake sheet loosely folded back on itself on a plain ivory plate, with a lifted curled edge and a softly rolled corner revealing a paper-thin, slightly translucent, porous toasted surface. It is an UNFILLED thin sheet, not a thick cake, bun, round sesame cracker, crepe stuffed with meat, egg-filled wrap or packaged snack. No sesame covering.\nComposition: one compact quiet near-overhead plate, the whole plate and all important pancake edges in frame with broad margins. A tiny shallow dish of a few pale millet grains may sit beside it as an ingredient suggestion, not a fixed recipe or sole-ingredient claim. Keep the rolled part hollow and delicate, with no filling, sauces, meat, onion or elaborate restaurant garnish.\nStyle and palette: warm handmade gouache with tactile cream-paper grain and fine toasted speckling, pale ochre, wheat and warm ivory; delicate thin edges and soft small shadows. Calm everyday-food still life, not glossy product photography, commercial packaging or a cooking tutorial. No brand, nutrition, medical, royal-tribute, historic-age or heritage-certification claims; the picture does not prove any exact regional recipe or technique.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:48:53.496Z",
+  "finishedAt": "2026-11-02T02:50:27.055Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: a food-topic editorial illustration of a VERY THIN Taian-style pancake sheet, emphasising thinness and folded flexibility. Show one complete large pale golden grain pancake sheet loosely folded back on itself on a plain ivory plate, with a lifted curled edge and a softly rolled corner revealing a paper-thin, slightly translucent, porous toasted surface. It is an UNFILLED thin sheet, not a thick cake, bun, round sesame cracker, crepe stuffed with meat, egg-filled wrap or packaged snack. No sesame covering.\nComposition: one compact quiet near-overhead plate, the whole plate and all important pancake edges in frame with broad margins. A tiny shallow dish of a few pale millet grains may sit beside it as an ingredient suggestion, not a fixed recipe or sole-ingredient claim. Keep the rolled part hollow and delicate, with no filling, sauces, meat, onion or elaborate restaurant garnish.\nStyle and palette: warm handmade gouache with tactile cream-paper grain and fine toasted speckling, pale ochre, wheat and warm ivory; delicate thin edges and soft small shadows. Calm everyday-food still life, not glossy product photography, commercial packaging or a cooking tutorial. No brand, nutrition, medical, royal-tribute, historic-age or heritage-certification claims; the picture does not prove any exact regional recipe or technique.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:48:53.496Z",
+      "finishedAt": "2026-11-02T02:50:27.055Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2842289,
+  "sha256": "eab2cea624bb3561a4e49de2f5f1a81ea317d57c6e03f9770f222490fdd20a6d",
+  "sourceRecordSha256": "97587fe6618aae0a6bd7a89724036aeaa311028654bbd670d720ccea5ddccd92",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

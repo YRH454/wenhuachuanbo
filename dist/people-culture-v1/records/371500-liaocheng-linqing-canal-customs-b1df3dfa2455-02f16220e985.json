@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371500",
+  "objectId": "liaocheng-linqing-canal-customs",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: single conceptual editorial artwork for the Linqing Canal Customs cultural topic in Liaocheng, Shandong. This MUST NOT resemble a photograph, tourist-scene reconstruction or accurate drawing of the actual Linqing Customs buildings.\nPrimary request: an explicitly symbolic original paper-relief illustration about canal commerce and customs paperwork, with NO ARCHITECTURE. Do not invent a generic old gate or hall and imply it is the historic site.\nScene and composition: a quiet abstract indigo canal band curves diagonally through a warm sand-coloured paper field. One simple invented small cargo-boat silhouette with a compact covered bundle glides along this symbolic waterway. Beside the water is a small group of blank folded parchment rectangles, one partially unrolled blank paper, and a few restrained geometric paper blocks that evoke the administration of trade without showing any real document, stamp, script, coin or accounting symbol. The boat and blank-paper group form a clear complete central composition with generous margins. The water is not an actual map or route; the boat is not an archaeological reconstruction. No landscape panorama, named landmark, human, architecture, bridge, pagoda, gate, plaque or geographic labels.\nStyle and materials: sophisticated flat cut-paper relief and mineral-pigment graphic art, tactile uncoated paper edges, shallow crafted-looking shadows, sparse linework, deep ink indigo, quiet pale blue, mineral gray, muted sand and small russet accents. Distinct river/document concept, not a collage of tourist sights or a realistic scene. Calm editorial clarity and balanced negative space.\nAuthenticity: this is a non-site-specific AI concept for the historical customs theme. It depicts no real building, terrain, historic customs archive or authentic paperwork. Do not imply exact tax procedures or period-correct vessel design. No seals, inscriptions or diagrams that claim evidence.\nText: none anywhere, especially no writing on the paper.\nOne single standalone artwork, not a webpage, contact sheet, comparison board or UI. Horizontal 3:2 canvas, ideally 1536 by 1024, native output. Keep every main subject within generous edge margins so it can be shown fully on mobile with contain; do not rely on cropping. No readable text in any language, letters, numbers, pseudo-writing, seals, signatures, logo, watermark or identifying label. No real people, portraits, hands, named artist's work or copied museum objects.",
+  "startedAt": "2026-11-02T01:54:12.170Z",
+  "finishedAt": "2026-11-02T01:55:40.868Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: single conceptual editorial artwork for the Linqing Canal Customs cultural topic in Liaocheng, Shandong. This MUST NOT resemble a photograph, tourist-scene reconstruction or accurate drawing of the actual Linqing Customs buildings.\nPrimary request: an explicitly symbolic original paper-relief illustration about canal commerce and customs paperwork, with NO ARCHITECTURE. Do not invent a generic old gate or hall and imply it is the historic site.\nScene and composition: a quiet abstract indigo canal band curves diagonally through a warm sand-coloured paper field. One simple invented small cargo-boat silhouette with a compact covered bundle glides along this symbolic waterway. Beside the water is a small group of blank folded parchment rectangles, one partially unrolled blank paper, and a few restrained geometric paper blocks that evoke the administration of trade without showing any real document, stamp, script, coin or accounting symbol. The boat and blank-paper group form a clear complete central composition with generous margins. The water is not an actual map or route; the boat is not an archaeological reconstruction. No landscape panorama, named landmark, human, architecture, bridge, pagoda, gate, plaque or geographic labels.\nStyle and materials: sophisticated flat cut-paper relief and mineral-pigment graphic art, tactile uncoated paper edges, shallow crafted-looking shadows, sparse linework, deep ink indigo, quiet pale blue, mineral gray, muted sand and small russet accents. Distinct river/document concept, not a collage of tourist sights or a realistic scene. Calm editorial clarity and balanced negative space.\nAuthenticity: this is a non-site-specific AI concept for the historical customs theme. It depicts no real building, terrain, historic customs archive or authentic paperwork. Do not imply exact tax procedures or period-correct vessel design. No seals, inscriptions or diagrams that claim evidence.\nText: none anywhere, especially no writing on the paper.\nOne single standalone artwork, not a webpage, contact sheet, comparison board or UI. Horizontal 3:2 canvas, ideally 1536 by 1024, native output. Keep every main subject within generous edge margins so it can be shown fully on mobile with contain; do not rely on cropping. No readable text in any language, letters, numbers, pseudo-writing, seals, signatures, logo, watermark or identifying label. No real people, portraits, hands, named artist's work or copied museum objects.",
+      "startedAt": "2026-11-02T01:54:12.170Z",
+      "finishedAt": "2026-11-02T01:55:40.868Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3197328,
+  "sha256": "b1df3dfa2455c0c46673520e645077295e15e9713b638ca49ee4c54b283fe564",
+  "sourceRecordSha256": "aa14480a8a257813f9c87baf0590a7775e299b59dbf000e737e4a90f180bd972",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

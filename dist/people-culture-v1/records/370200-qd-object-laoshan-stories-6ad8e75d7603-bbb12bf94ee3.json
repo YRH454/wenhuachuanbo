@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370200",
+  "objectId": "qd-object-laoshan-stories",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for the cultural subject “崂山民间故事” (oral folk stories, not historical fact). Imagine a hand-held traditional storytelling lantern glowing beside an unmarked winding footpath, with layered mythical mountains, a moon and sea beyond; the lantern's warm light forms subtle curling shapes like a story being told, but no written characters. This is a fictional symbolic landscape, not a depiction of any real mountain, temple, landmark, person, historic event, book illustration or specific artist's work. Narrative visual atmosphere: elegant ink wash and textured mineral pigment with navy sea, grey-green hills and a warm gold lantern; contemporary cultural editorial illustration. Put the lantern and most distinctive mountain curve at the central third of the picture, preserving recognizable content during narrow crops. No people, faces, text, lettering, symbols resembling script, seal, watermark, maps, signage, branding or UI. Do not make an actual antique page or historical artifact. No collage or separate panels. One coherent, landscape composition.",
+  "startedAt": "2026-11-02T10:36:29.969+08:00",
+  "finishedAt": "2026-11-02T10:37:03.345+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for the cultural subject “崂山民间故事” (oral folk stories, not historical fact). Imagine a hand-held traditional storytelling lantern glowing beside an unmarked winding footpath, with layered mythical mountains, a moon and sea beyond; the lantern's warm light forms subtle curling shapes like a story being told, but no written characters. This is a fictional symbolic landscape, not a depiction of any real mountain, temple, landmark, person, historic event, book illustration or specific artist's work. Narrative visual atmosphere: elegant ink wash and textured mineral pigment with navy sea, grey-green hills and a warm gold lantern; contemporary cultural editorial illustration. Put the lantern and most distinctive mountain curve at the central third of the picture, preserving recognizable content during narrow crops. No people, faces, text, lettering, symbols resembling script, seal, watermark, maps, signage, branding or UI. Do not make an actual antique page or historical artifact. No collage or separate panels. One coherent, landscape composition.",
+      "startedAt": "2026-11-02T10:36:29.969+08:00",
+      "finishedAt": "2026-11-02T10:37:03.345+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3419920,
+  "sha256": "6ad8e75d76033dc26cb89f6a1e0243da467c8d9e55ca90f3fb360fdc85c66f81",
+  "sourceRecordSha256": "3f6396d9a2781a8b1a34835101d45c7ed52629580191ba5837279503df9532cd",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

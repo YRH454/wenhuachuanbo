@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370400",
+  "city": "枣庄",
+  "deliveryStatus": "ready",
+  "route": "#/city/370400",
+  "topic": {
+    "name": "伏里土陶",
+    "location": "枣庄市山亭区西集镇伏里村",
+    "category": "民间土陶艺术（展示分类）",
+    "intro": "伏里土陶因伏里村而得名，当地泥土经手工成形与烧制，成为赏玩摆件和日用器物。从用土、成器到校园传习，本页以公开资料介绍这门乡土手艺。",
+    "sources": [
+      "ichina-campus",
+      "xinhua-fuli"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370400",
+    "label": "AI意境图",
+    "entryLabel": "读懂伏里土陶"
+  },
+  "visual": {
+    "signature": "zaozhuang-fuli-clay-archive",
+    "layout": "archive",
+    "description": "以陶土浅色作阅读底、深褐作正文、赭红作可读强调色，呼应现有《伏里陶韵》的乡土材料意象，不模仿真实陶片或制作照片。宋体题名与黑体正文分工清楚，以少量细线组织资料，不增加仿古印章、裂纹纹理或工序图。首屏及其任何局部均标明AI身份。",
+    "composition": "沿用首屏画面后自然下滑的结构。题名与地域居中，六条有据档案宽版展开，先让读者确认对象与材料；overview为短导读，后两节采用窄章节题与宽正文的档案分栏，材料段紧凑、传习段留白较多。手机按同一阅读顺序收为单栏，长地名可换行。media为空时不设置空图框；若整合者使用已登记背景局部，只能取370400并保留AI意境图标识，不作器物或工艺证据。",
+    "palette": {
+      "paper": "#f4ebdc",
+      "ink": "#33251c",
+      "muted": "#675345",
+      "accent": "#87452d",
+      "rule": "#c9b39e"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "展示对象",
+      "value": "伏里土陶",
+      "sources": [
+        "ichina-campus"
+      ]
+    },
+    {
+      "label": "地域",
+      "value": "枣庄市山亭区西集镇伏里村",
+      "sources": [
+        "ichina-campus",
+        "xinhua-fuli"
+      ]
+    },
+    {
+      "label": "报道所列用土",
+      "value": "当地黑立土、红胶泥等原料",
+      "sources": [
+        "xinhua-fuli"
+      ]
+    },
+    {
+      "label": "报道所见环节",
+      "value": "去杂、拉坯、塑形、上色与烧制",
+      "sources": [
+        "xinhua-fuli"
+      ]
+    },
+    {
+      "label": "成品用途",
+      "value": "赏玩摆件、生活用品等",
+      "sources": [
+        "xinhua-fuli"
+      ]
+    },
+    {
+      "label": "当代传习",
+      "value": "活态传承土陶技艺课、手把手教学及校园活动",
+      "sources": [
+        "ichina-campus",
+        "iqilu-campus"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "一村之名，一门土陶",
+      "paragraphs": [
+        "伏里土陶的名字连着它的产地——枣庄市山亭区西集镇伏里村。理解它，可以先从村庄与制陶生活的联系入手，而不是只把它当作一种表面颜色或造型。",
+        "当地泥土经过手工成形与烧制，成为赏玩摆件和生活用品。沿着材料、器物与传习三条线索，可以继续认识伏里村的制陶生活。"
+      ],
+      "sources": [
+        "ichina-campus",
+        "xinhua-fuli"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "clay-to-vessel",
+      "title": "泥土怎样成为器物",
+      "paragraphs": [
+        "新华网2025年的报道记录了当地用土、手工成形和入窑烧制等环节，也介绍了赏玩摆件与生活用品两类用途。从当地用土到成形与烧制，材料在手中逐渐变成可用、可赏的物件。"
+      ],
+      "sources": [
+        "xinhua-fuli"
+      ],
+      "media": []
+    },
+    {
+      "id": "learning-by-hand",
+      "title": "手艺如何走进课堂",
+      "paragraphs": [
+        "中国非物质文化遗产网2021年的报道介绍，山亭区开设活态传承土陶技艺课，由传承人手把手教学，并把土陶主题歌曲和展演纳入传播方式。学习不只停在观看，也包括亲手接触材料与造型。",
+        "齐鲁网2023年的新闻发布会报道进一步记录，山亭区申报的“伏里土陶创新性传承进校园活动”入选2021年山东省“非遗进校园”典型实践案例。这些发生在课堂与校园的实践，让地方手艺与新一代的学习生活相遇。"
+      ],
+      "sources": [
+        "ichina-campus",
+        "iqilu-campus"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "为什么叫伏里土陶？",
+      "body": "因为它出产于枣庄市山亭区西集镇伏里村。中国非物质文化遗产网的报道明确说明了这一名称与产地的关系。",
+      "kind": "fact",
+      "sources": [
+        "ichina-campus"
+      ]
+    },
+    {
+      "title": "它用什么泥，经过哪些环节？",
+      "body": "新华网2025年报道提到黑立土、红胶泥，以及去杂、拉坯、塑形、上色和烧制。这里仅作报道内容的简要说明，不把某次记录当成所有作品的统一制作标准。",
+      "kind": "fact",
+      "sources": [
+        "xinhua-fuli"
+      ]
+    },
+    {
+      "title": "土陶只供观赏吗？",
+      "body": "不只供观赏。新华网报道介绍的用途包括赏玩摆件和生活用品；本页不据此承诺某件器物适合盛食、耐热或具有特定性能。",
+      "kind": "fact",
+      "sources": [
+        "xinhua-fuli"
+      ]
+    },
+    {
+      "title": "这门手艺怎样传给年轻人？",
+      "body": "公开报道记录了土陶技艺课、传承人手把手教学及校园活动。山亭区的相关进校园活动还入选2021年省级典型实践案例。这些是有日期的传习记录，不是本页发布的报名项目。",
+      "kind": "fact",
+      "sources": [
+        "ichina-campus",
+        "iqilu-campus"
+      ]
+    },
+    {
+      "title": "首屏是伏里土陶实物照片吗？这里能实时问AI吗？",
+      "body": "不是。首屏《伏里陶韵》是AI意境图，不能据其判断某件实物的形制、年代、作者或制作工序。本页问答是依据所列来源预先编写的固定内容，不是联网模型回答，也不提供自动鉴定。",
+      "kind": "disclaimer",
+      "sources": []
+    }
+  ],
+  "sources": {
+    "ichina-campus": {
+      "title": "山东：学堂春光烂漫，非遗欣欣向荣（2021-11-10，中国非物质文化遗产网刊载，来源文旅中国）",
+      "short": "中国非遗网·校园传习",
+      "url": "https://www.ihchina.cn/news_1_details/24174.html",
+      "kind": "official",
+      "supports": "支持伏里土陶与山亭区西集镇伏里村的名称、产地联系，以及活态技艺课、手把手教学、歌曲与展演等传习方式。该平台由中国艺术研究院·中国非物质文化遗产保护中心主办；本文是传习报道，不是省级名录原始公告，不用于认定名录批次、编号或人物级别。",
+      "checkedAt": "2026-11-01"
+    },
+    "xinhua-fuli": {
+      "title": "千城百县看中国·传承｜伏里土陶（2025-07-02，新华网客户端）",
+      "short": "新华网·伏里土陶",
+      "url": "https://app.xinhuanet.com/news/article.html?articleId=440938ab6a1791ef4c6ce4b0c1ea9a92",
+      "kind": "media",
+      "supports": "支持枣庄市山亭区西集镇伏里村地域、当地黑立土与红胶泥等用土、去杂至烧制的报道所见环节及赏玩摆件、生活用品用途。供稿为山亭区融媒体中心。仅引用报道概述，不转化为统一工艺标准、产品性能承诺或名录原始证明；未复用文中图片。",
+      "checkedAt": "2026-11-01"
+    },
+    "iqilu-campus": {
+      "title": "枣庄市山亭区三方面发力 加强非遗传承人队伍建设（2023-08-11，齐鲁网·闪电新闻）",
+      "short": "齐鲁网·山亭传习发布会",
+      "url": "https://zaozhuang.iqilu.com/zzyaowen/2023/0811/5489775.shtml",
+      "kind": "media",
+      "supports": "支持2023年山亭区人民政府新闻办发布会上介绍的校园传习措施，以及“伏里土陶创新性传承进校园活动”入选2021年山东省“非遗进校园”典型实践案例的记录。不外推为今天仍在开放的课程、场馆预约或项目／人物认定。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370400-body-a.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：暖赭鸟形陶器与淡墨山景。",
+      "caption": "鸟形陶意 · AI虚构器物，非伏里土陶实物、出土器物或特定作者作品。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "60d2c3f6b583b5a254f85df6fb699ddd5c1dc2de521516ca864d9e3c8decbc1b",
+      "record": "records/370400-body-a.md",
+      "recordSha256": "7c4b92fd848b0e03d92efb4db5df7db41e17fac84b6ee5d73c98dd22bf8de93b",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "4d7aa5b0d930c1b92a00da467acb90083dfeec04b57a399ad164a35a63742c74"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "cityId": "371400",
+  "city": "德州",
+  "deliveryStatus": "ready",
+  "route": "#/city/371400",
+  "topic": {
+    "name": "德州扒鸡制作技艺",
+    "location": "山东省德州市及周边地区",
+    "category": "传统技艺",
+    "intro": "扒鸡不只是一道成品，也是由选料、整形与火候共同构成的地方手艺。从运河商贸到节日餐桌，认识它的地域记忆，也分清技艺名录、具体品牌和一只成品之间的不同。",
+    "sources": [
+      "official-project",
+      "festival-life"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "371400",
+    "label": "AI意境图",
+    "entryLabel": "走近德州扒鸡制作技艺"
+  },
+  "visual": {
+    "signature": "dezhou-taste-vessel",
+    "layout": "archive",
+    "description": "沿用《陶金运河》首屏的食艺主体与深色器皿联想，专题采用炭褐阅读面、浅麦色正文与克制的熟铜色标记。宋体标题、黑体正文保持共同分工，靠深底宽档案与材料、形态、火候的文字编排形成饮食主题，不做菜单、商品广告或金边发光界面。",
+    "composition": "首屏保持既有AI画，自然下滑进入archive：正式项目身份居中，八项档案横向展开；正文由较窄的栏目名与宽正文对应。技艺段按选料与整形、上色与炸制、煮制与焖煨的理解线索分组，不伪排全套配方。人物与生活段重新回到连贯文字，单列问答和来源结尾。窄屏全部顺序堆叠，档案值换行，长标题不限为单行；保留两种返回及可见焦点。",
+    "palette": {
+      "paper": "#26231F",
+      "ink": "#F6E7CD",
+      "muted": "#D0C0A5",
+      "accent": "#E7AC64",
+      "rule": "#665B4C"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "1347",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅷ-233",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2014年（第四批）",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统技艺",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "新增项目",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省德州市",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "山东德州扒鸡股份有限公司",
+      "sources": [
+        "official-project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "从往来商贸，到一城风味",
+      "paragraphs": [
+        "德州扒鸡制作技艺发源于德州，主要在德州市及周边地区流传，由烧鸡制作技艺发展而来。官方项目介绍把它的历史与运河交通、码头和集市联系起来；这一线索帮助我们理解食物如何进入城市生活。"
+      ],
+      "sources": [
+        "official-project"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "形与火候，共同成就风味",
+      "paragraphs": [
+        "可以从三组关系理解这项技艺：选料与整形决定制作的起点和成品形态；上色与油炸参与外观形成；煮制与焖煨则体现对火候的掌握。形与色、时间与火候，共同参与地方风味的形成。",
+        "项目介绍与2025年《人民日报》的门店报道，对工序有不同的拆分口径。阅读这些资料时，可以把重点放在材料、造型和火候的关系上，认识地方饮食积累的制作经验。"
+      ],
+      "sources": [
+        "official-project",
+        "festival-life"
+      ],
+      "media": []
+    },
+    {
+      "id": "living",
+      "title": "手艺的记忆，也需要被保存",
+      "paragraphs": [
+        "2026年5月23日，德州市广播电视台报道，崔学平向市档案馆捐赠扒鸡技艺史料。传承除了手上经验，也包含对资料与记忆的保存，让后来者有机会追问一门手艺的来路。",
+        "2025年春节的《人民日报》报道记录了当地市民年节购买、返岗携带扒鸡的生活场景，以及部分门店对口味的探索。除了技艺档案，地方饮食也存在于家庭团聚与往来馈赠的记忆中。"
+      ],
+      "sources": [
+        "archive-donation",
+        "festival-life"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "被列入非遗名录的是扒鸡成品吗？",
+      "body": "正式项目名是“德州扒鸡制作技艺”，名录对象为传统技艺，而非每一只成品或每一家店铺。认识这项非遗，可以从地方制作经验和传承关系读起。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "为什么用运河线索介绍这道地方风味？",
+      "body": "官方项目介绍将德州的商贸交通、码头集市与烧鸡及扒鸡的发展相联系。运河是一条理解物品流通和城市生活的历史线索。",
+      "kind": "fact",
+      "sources": [
+        "official-project"
+      ]
+    },
+    {
+      "title": "可以把网页介绍当作完整配方吗？",
+      "body": "不可以。本页仅概述选料、整形、油炸、煮制和焖煨等环节；项目介绍与具体门店报道的工序划分也有不同。它不提供用量、温度、时长或食品安全操作规范，更不判定哪家配方正宗。",
+      "kind": "fact",
+      "sources": [
+        "official-project",
+        "festival-life"
+      ]
+    },
+    {
+      "title": "有哪些具体人物参与了手艺记忆的保存？",
+      "body": "2026年5月的地方广电报道记录了崔学平向德州市档案馆捐赠扒鸡技艺史料的事件。这是从具体人物和资料保存理解传承的一个实例。",
+      "kind": "fact",
+      "sources": [
+        "archive-donation"
+      ]
+    },
+    {
+      "title": "扒鸡与今天的日常生活有什么关系？",
+      "body": "2025年春节报道中，市民在年节购买扒鸡，也有人返岗时携带家乡风味；部分门店尝试不同口味。这些当时的生活实例，把饮食与团聚、往来联系起来。问答为依据来源编辑的固定解答，未接入模型。",
+      "kind": "fact",
+      "sources": [
+        "festival-life"
+      ]
+    }
+  ],
+  "sources": {
+    "official-project": {
+      "title": "中国非物质文化遗产网：德州扒鸡制作技艺项目档案",
+      "short": "国家级项目档案",
+      "url": "https://www.ihchina.cn/project_details/14758.html",
+      "kind": "official",
+      "supports": "正式项目名称、八项名录档案、德州与周边地域、运河商贸背景、选料至焖煨等工艺概述。不将民间传说当作独立证实史实，不采用养生功效、品质第一或特定产品认证等推广性结论。",
+      "checkedAt": "2026-11-01"
+    },
+    "archive-donation": {
+      "title": "德州市广播电视台：传承百年非遗·德州扒鸡技艺档案正式入藏市档案馆（2026-05-23）",
+      "short": "2026年史料捐赠报道",
+      "url": "https://www.dztv.tv/5239/2026/05/43645497.html",
+      "kind": "media",
+      "supports": "2026年5月22日崔学平捐赠扒鸡技艺史料的具体事件。报道中的传承人称谓不等于已核定国家级代表性传承人资格，不能扩大为当前开放信息。",
+      "checkedAt": "2026-11-01"
+    },
+    "festival-life": {
+      "title": "人民日报：品非遗美食 晒家乡风味·山东德州段（2025-02-06）",
+      "short": "春节餐桌与日常往来",
+      "url": "https://paper.people.com.cn/rmrb/pad/content/202502/06/content_30055011.html",
+      "kind": "media",
+      "supports": "德州段市民年节购买、返岗携带与部分门店口味探索的报道。该店工序数与官方概述不强行合并；不使用其他城市段落、价格或照片作本页证据。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/371400-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：朱赭餐桌上的金黄整鸡、深盘、杯碗与筷子。",
+      "caption": "暖宴版刻 · AI想象餐桌，非品牌产品、标准整形、配方示范或特定黑陶器皿。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "392d6080b4a0d1de13ea44b40251638230092c01c930b4ab474ce8736d7529b7",
+      "record": "records/371400-body-b.md",
+      "recordSha256": "0d71e797eb4328720985eaae5a976369546f262b34028524e3381e84652c7cd8",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "31a5747f0b8a64ba9f3e57648d9fb00ac1903a4a7913a98a271e10ba8e4389af"
+    }
+  ],
+  "unresolved": []
+}

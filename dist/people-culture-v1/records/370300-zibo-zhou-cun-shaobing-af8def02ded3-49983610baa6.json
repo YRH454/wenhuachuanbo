@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370300",
+  "objectId": "zibo-zhou-cun-shaobing",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: an original food-topic illustration of Zhoucun shaobing from Zibo: VERY THIN, round, crisp sesame crackers, not thick bread or filled meat pies. Show a modest loose stack of flat golden sesame-covered discs with one tilted wafer-like disc to reveal its extremely thin crisp edge, and a small broken edge fragment showing brittle structure. No filling, meat, puff pastry layers, bread roll or thick bun.\nComposition: compact near-overhead still life on a plain small ivory plate; the whole plate and every main cracker fit inside broad margins, quiet warm paper table with a few unobtrusive sesame seeds. No brand packaging, commercial box, restaurant, oven, hands or cooking steps.\nStyle and palette: warm Chinese editorial gouache with subtle paper grain, delicate toasted-gold and cream textures, individual readable sesame grains without photographic product polish. Controlled soft light and airy composition, not an advertising food photo or a claimed authentic merchant's serving.\nAuthenticity: the drawing is an invented representation of the thin sesame-cracker theme, not a standard recipe, quality guarantee, brand endorsement, royal-tribute story or documentation of the making technique. Do not add heritage emblems, certificates, seals or health claims.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:31:35.481Z",
+  "finishedAt": "2026-11-02T02:32:33.746Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: an original food-topic illustration of Zhoucun shaobing from Zibo: VERY THIN, round, crisp sesame crackers, not thick bread or filled meat pies. Show a modest loose stack of flat golden sesame-covered discs with one tilted wafer-like disc to reveal its extremely thin crisp edge, and a small broken edge fragment showing brittle structure. No filling, meat, puff pastry layers, bread roll or thick bun.\nComposition: compact near-overhead still life on a plain small ivory plate; the whole plate and every main cracker fit inside broad margins, quiet warm paper table with a few unobtrusive sesame seeds. No brand packaging, commercial box, restaurant, oven, hands or cooking steps.\nStyle and palette: warm Chinese editorial gouache with subtle paper grain, delicate toasted-gold and cream textures, individual readable sesame grains without photographic product polish. Controlled soft light and airy composition, not an advertising food photo or a claimed authentic merchant's serving.\nAuthenticity: the drawing is an invented representation of the thin sesame-cracker theme, not a standard recipe, quality guarantee, brand endorsement, royal-tribute story or documentation of the making technique. Do not add heritage emblems, certificates, seals or health claims.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:31:35.481Z",
+      "finishedAt": "2026-11-02T02:32:33.746Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2803497,
+  "sha256": "af8def02ded3d5d5a1712067a6c0684ea96592e4344b5a434c8a461c3cc60b79",
+  "sourceRecordSha256": "0d13a40c14001d18af158e6d3b344ff648ed99e6d891f814ecbb92eeda0208f0",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371600",
+  "objectId": "binzhou-folk-paper-cutting",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one original red paper-cut artwork for the Binzhou folk paper-cutting cultural topic. A complete airy rounded composition of two invented small birds among flowing stems, broad flowers and leaves, all made visually from a single red paper sheet with readable cut-out negative spaces. Do not copy Wang Derong's work or claim these are named traditional symbols.\nComposition and medium: show the entire paper-cut silhouette with a wide margin of warm ivory paper around it, near face-on, slight natural edge lift and quiet shallow shadows. Controlled vermilion red, no gold border or multicolour collage, graceful flowing curves and a few strong simple interior cuts, tactile fine paper rather than plastic lace or laser-cut metal. One coherent craft-object portrait, no scissors, cutting hands, process steps, ruler, template numbers or festive lettering.\nAuthenticity: all decorative motifs and cut connections are invented; not an actual local artist's creation, historical pattern or guaranteed feasible cutting template. Do not label it an authentic specimen. No scenes of rituals or claims of a particular motif meaning.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:16:53.896Z",
+  "finishedAt": "2026-11-02T02:17:18.477Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one original red paper-cut artwork for the Binzhou folk paper-cutting cultural topic. A complete airy rounded composition of two invented small birds among flowing stems, broad flowers and leaves, all made visually from a single red paper sheet with readable cut-out negative spaces. Do not copy Wang Derong's work or claim these are named traditional symbols.\nComposition and medium: show the entire paper-cut silhouette with a wide margin of warm ivory paper around it, near face-on, slight natural edge lift and quiet shallow shadows. Controlled vermilion red, no gold border or multicolour collage, graceful flowing curves and a few strong simple interior cuts, tactile fine paper rather than plastic lace or laser-cut metal. One coherent craft-object portrait, no scissors, cutting hands, process steps, ruler, template numbers or festive lettering.\nAuthenticity: all decorative motifs and cut connections are invented; not an actual local artist's creation, historical pattern or guaranteed feasible cutting template. Do not label it an authentic specimen. No scenes of rituals or claims of a particular motif meaning.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:16:53.896Z",
+      "finishedAt": "2026-11-02T02:17:18.477Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2678671,
+  "sha256": "1b838731476084e71d34bd6ef42a70337e5c22da3616131274c8c4e8000c2466",
+  "sourceRecordSha256": "578bebaaa27320afd3bed02f3e6b80c5b154ae55299f5698fd873d775d6a6597",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

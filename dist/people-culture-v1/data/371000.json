@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371000",
+  "city": "威海",
+  "status": "draft",
+  "people": [
+    {
+      "id": "wh-person-lijiangyu",
+      "name": "李江玉",
+      "connection": "威海日报2023年报道的威海锡镶技艺传承人，工作室场景与环翠区相关。",
+      "intro": "从金属纹饰的錾刻到新载体的探索，她在制作与传授中延续锡镶手艺。",
+      "sources": [
+        {
+          "title": "威海锡镶：百年技艺 万物可“锡”｜威海日报，齐鲁网转载，2023-09",
+          "url": "https://sdxw.iqilu.com/share/YS0yMS0xNTAyMTAxNw%3D%3D.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 900,
+        "height": 600,
+        "alt": "李江玉在庭院工作台前制作锡镶工艺品的报道照片",
+        "caption": "李江玉制作锡镶工艺品，2023年威海日报报道配图。",
+        "sourcePage": "https://sdxw.iqilu.com/share/YS0yMS0xNTAyMTAxNw%3D%3D.html",
+        "credit": "来源：威海日报，齐鲁网转载；摄影：杨正",
+        "identityStatus": "原报道逐图图注写明李江玉；2026-11-02成功解码原图并实看，原始字节保留。",
+        "rightsStatus": "仅内部研究候选；原页公开不代表复用授权，比赛展示、摄影及肖像相关许可待核。",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wh-person-xiyingchun",
+      "name": "席英春",
+      "connection": "齐鲁晚报2022年报道的荣成渔网修补手艺人。",
+      "intro": "从渔业生产中的补网出发，也将织网经验用于杯套、网兜等生活用品。",
+      "sources": [
+        {
+          "title": "山东手造推荐官｜修补渔网妙手回春｜齐鲁晚报官方账号，2022-03-26",
+          "url": "https://k.sina.cn/article_2011075080_77de9208020016fhw.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 400,
+        "height": 267,
+        "alt": "席英春坐在渔网旁修补渔网的报道照片",
+        "caption": "席英春修补渔网，2022年齐鲁晚报报道配图。",
+        "sourcePage": "https://k.sina.cn/article_2011075080_77de9208020016fhw.html",
+        "credit": "来源：齐鲁晚报，新浪转载；摄影署名待核",
+        "identityStatus": "原报道图注明示席英春；2026-11-02已实看人物与补网画面，平台图400×267。",
+        "rightsStatus": "仅内部研究候选；未找到开放许可，摄影及比赛展示、公开复用条件待核。",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wh-person-liuyuqi",
+      "name": "刘玉启",
+      "connection": "2020年威海非遗展馆报道中讲述海草房民居建筑技艺的人物。",
+      "intro": "展馆记录里的讲述，把海草房苫盖手艺与沿海人家的居住记忆联系起来。",
+      "sources": [
+        {
+          "title": "来非物质文化遗产展馆，寻最有韵味的威海记忆｜Hi威海客户端，齐鲁网转载，2020-09-09",
+          "url": "https://weihai.iqilu.com/whgushi/2020/0909/4643396.shtml"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "wh-object-tin-inlay",
+      "name": "威海锡镶",
+      "category": "传统技艺与器物装饰",
+      "connection": "威海文旅部门介绍当地锡镶技艺；以茶具上的金属装饰作为观察入口。",
+      "intro": "紫砂等底胎与锡合金纹饰相遇，壶身、壶盖和壶嘴出现不同的装饰层次。看的是材料组合，不是把一把壶认作整件纯锡。",
+      "sources": [
+        {
+          "title": "威海非遗—锡镶技艺｜威海市文化和旅游局，2017-02-07",
+          "url": "https://wlj.weihai.gov.cn/art/2017/2/7/art_13688_873882.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371000-wh-object-tin-inlay-f840aaddba35.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：想象茶器与银色镶饰，不是真实锡镶壶、李江玉作品、材料成分或接合工艺证据。",
+        "credit": "AI创意插画｜原生成记录随图保留",
+        "rightsStatus": "既有AI候选，原记录approved=false、publicUseApproved=false；待集成确认，须保留AI说明",
+        "record": "records/371000-wh-object-tin-inlay-f840aaddba35-a0e018061b0e.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wh-object-seagrass-house",
+      "name": "海草房（荣成）",
+      "category": "传统民居与营造",
+      "connection": "威海新闻网将海草房与荣成石岛沿海民居联系；威海官方发布亦关注海草房保护与苫盖技艺传承。",
+      "intro": "层层海草苫起屋顶，保存着沿海人家的居住记忆。与海相关的不只有船和网，也有遮风避雨的家。",
+      "sources": [
+        {
+          "title": "石岛风景里的海草房｜威海新闻网，2022-05-21",
+          "url": "https://www.whnews.cn/news/node/2022-05/21/content_-11764.htm"
+        },
+        {
+          "title": "来非物质文化遗产展馆，寻最有韵味的威海记忆｜齐鲁网",
+          "url": "https://weihai.iqilu.com/whgushi/2020/0909/4643396.shtml"
+        },
+        {
+          "title": "权威发布｜《威海市传统村落保护传承利用条例》11月1日起施行｜威海市政府网站，2026-09-30",
+          "url": "https://www.weihai.gov.cn/art/2026/9/30/art_58817_6655545.html"
+        },
+        {
+          "title": "荣成海草房：古老的人间童话 悠悠的渔家乡愁｜国家发改委，2020-09-09，文末署威海市发展改革委",
+          "url": "https://www.ndrc.gov.cn/fggz/nyncjj/xczx/202009/t20200909_1237854.html"
+        },
+        {
+          "title": "山东荣成传统村落海草房——展现古风古韵焕发生机活力｜人民日报，2024-07-14",
+          "url": "https://paper.people.com.cn/rmrbwap/html/2024-07/14/nw.D110000renmrb_20240714_1-06.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371000-wh-object-seagrass-house-9ba487292547.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：虚构长条石墙民居、灰褐厚草顶、长脊与一端三角山墙，不是具体荣成村落、真实遗产建筑或施工图。",
+        "credit": "AI创意插画｜定向修订完整记录随图保留",
+        "rightsStatus": "定向修订已完成资料组静态复核，仅暂列AI候选；公开使用及第三方相似性待核，不作为真实建筑、材料或苫盖构造证明",
+        "record": "records/371000-wh-object-seagrass-house-9ba487292547-4789292a06e4.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wh-object-fishing-net-mending",
+      "name": "荣成渔网修补",
+      "category": "渔业生产技艺",
+      "connection": "威海市政府2023年第七批市级名录列“渔网修补技艺”，申报地区为荣成市。",
+      "intro": "网具破损后，需要顺着网目与纲绳重新修补。它是渔业生产中的经验，也能延伸成网兜、杯套等生活编织。",
+      "sources": [
+        {
+          "title": "威海市人民政府关于公布第七批市级非物质文化遗产代表性项目名录的通知｜威政字〔2023〕41号",
+          "url": "https://www.weihai.gov.cn/art/2023/7/21/art_103284_27973.html"
+        },
+        {
+          "title": "山东手造推荐官｜修补渔网妙手回春｜齐鲁晚报官方账号",
+          "url": "https://k.sina.cn/article_2011075080_77de9208020016fhw.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371000-wh-object-fishing-net-mending-cd65346ef47b.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：蓝灰渔网、绳线与木质梭形工具的虚构静物，不是席英春作品、实际修网操作或可照做的网结教程。",
+        "credit": "AI创意插画｜完整生成记录随图保留",
+        "rightsStatus": "原记录待人工确认，公开使用及第三方相似性待核；仅作渔网与工具意象，不证明网结或网梭构造准确",
+        "record": "records/371000-wh-object-fishing-net-mending-cd65346ef47b-e37b525547eb.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "wh-object-rushan-ginger-honey",
+      "name": "乳山姜蜜",
+      "category": "地方食品与饮品",
+      "connection": "威海文旅部门2024年介绍乳山姜蜜制作技艺及其省级项目入选记录。",
+      "intro": "以姜、蜂蜜等材料制作的浓稠食品，可以直接品尝，也可调水饮用。它提供了认识乳山地方饮食的另一种滋味。",
+      "sources": [
+        {
+          "title": "威海新增8项省级非遗代表性项目｜威海市文化和旅游局，2024-12-23",
+          "url": "https://wlj.weihai.gov.cn/art/2024/12/23/art_158356_5126947.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371000-wh-object-rushan-ginger-honey-9ab0f71b130a.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：一碗较均匀金黄浓膏，碗外有少量鲜姜与切片，不是真实商品、完整食谱、产地认证或食用安全证据。",
+        "credit": "AI创意插画｜定向修订完整记录随图保留",
+        "rightsStatus": "定向修订已完成资料组静态复核，仅暂列AI候选；公开使用及第三方相似性待核，不作为配方、医疗功效或商品认证",
+        "record": "records/371000-wh-object-rushan-ginger-honey-9ab0f71b130a-566c48e2cf68.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "李江玉和席英春真实照片已本地保存、核实逐图姓名并列为candidate；均未取得比赛展示、摄影及肖像相关公开复用许可，默认不展示。刘玉启尚无逐图身份已核的本地肖像。",
+    "李江玉图片本轮按原始字节成功识别为900×600 PNG，已实看；席英春为400×267平台展示版本，不声称最高分辨率原件。新原URL与哈希见参赛展示-v1人物照片来源记录。",
+    "四项均暂列AI候选，每对象只选一张，完整记录与旧稿保留；公开使用及实际页面适配待核。",
+    "海草房与姜蜜初稿因地域屋形及粗姜丝表达问题撤回留档，现只选长脊山墙修订与浓膏修订，已实看及核对初始/编辑记录、输入和原生输出哈希。海草房背坡未完整显露、屋脊绑扎与草纹仍是生成细节，不作为建筑证明；姜蜜图也不证明成品绝无纤维或精确配方。详见本目录威海新增候选复核-20261102.md的修订增量。",
+    "本包不把锡镶填成国家级项目；海草房也不虚构国家级身份、当前房屋数量或民宿开放状态。",
+    "尚未进行新页面实际裁切、键盘触屏、窄屏及缺图等浏览器验收；没有共享代码变更。"
+  ]
+}

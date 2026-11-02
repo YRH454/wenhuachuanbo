@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370400",
+  "objectId": "fuli-pottery",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: a complete landscape AI creative illustration for the body of a Zaozhuang cultural article about Fuli earthenware, suitable for full-proportion display on desktop and mobile; not a webpage or city background.\nPrimary request: Paint an original, imagined folk earthenware form evoking the warmth and hand-shaped spirit of Fuli pottery. Show one round, softly irregular reddish-earth clay vessel with a small whimsical bird-like sculptural feature integrated into its form and a few simple raised decorative lines. Make the subject unmistakably a stylized earthy clay vessel, rather than a realistic animal, modern black pottery, or a generic landscape. It is an invented object, not a real work, museum object, historical reconstruction, or a specific artist's design.\nComposition and medium: Expressive Chinese ink-and-wash painting on warm ivory paper, sparing translucent terracotta and raw-umber washes, dark ink accents, visible soft brush edges, generous asymmetric whitespace. The whole vessel is prominent near the right of center with its silhouette and modest foot fully visible; a few understated brush marks balance the left. Quiet rural folk-art spirit, alive and warm; one clear subject rather than a row of products.\nConstraints: This is visual imagination, not a photograph of pottery or a teaching diagram. No craftspeople, hands making pottery, potter's wheel, tools, kiln, historical scene, or production steps. No copy of any named maker or known object. No written characters of any language, numbers, calligraphy, seal, signature, logo, watermark, label, frame, website or interface. Preserve the complete composition with space around the object so it remains legible when shown uncropped on mobile.",
+  "startedAt": "2026-11-02T00:06:42+08:00",
+  "finishedAt": "2026-11-02T00:07:19+08:00",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "60d2c3f6b583b5a254f85df6fb699ddd5c1dc2de521516ca864d9e3c8decbc1b",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

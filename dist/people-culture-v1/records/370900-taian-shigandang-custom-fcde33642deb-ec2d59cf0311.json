@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370900",
+  "objectId": "taian-shigandang-custom",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: ONE quiet original material illustration evoking the Taishan Shigandang custom through a modest upright stone marker. Show a complete simple rough grey-beige STONE STELE with a gently rounded irregular top and a visibly rough natural stone edge, its broad front deliberately UNINSCRIBED and uncarved. It rests on a low small stone base near a sparse invented wall-corner suggestion. The stone is the subject; no stone human, warrior, statue, idol or shadow-puppet character.\nAuthenticity: this blank stone is a deliberately simplified visual metaphor, not a reconstruction or identification of a real Shigandang stone. Do not invent inscriptions, religious symbols, precise archaeological age, geological identity, excavation site, temple, village, monument or historic location. No supernatural light, protective force field, exorcism, ritual demonstration or efficacy claim. No writing is needed.\nStyle: tactile ink-and-gouache mineral study, warm slate and sand-grey with subtle dry-brush stone grain, soft side light and quiet ivory paper. Clear weight and simple silhouette, not shiny black pottery, jade, a polished tombstone catalogue, a landscape photo or monumental architecture. Compact entire stone and its small base centred with ample air all around; an unobtrusive corner shadow provides spatial context without reconstructing a building.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:48:53.496Z",
+  "finishedAt": "2026-11-02T02:49:26.205Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: ONE quiet original material illustration evoking the Taishan Shigandang custom through a modest upright stone marker. Show a complete simple rough grey-beige STONE STELE with a gently rounded irregular top and a visibly rough natural stone edge, its broad front deliberately UNINSCRIBED and uncarved. It rests on a low small stone base near a sparse invented wall-corner suggestion. The stone is the subject; no stone human, warrior, statue, idol or shadow-puppet character.\nAuthenticity: this blank stone is a deliberately simplified visual metaphor, not a reconstruction or identification of a real Shigandang stone. Do not invent inscriptions, religious symbols, precise archaeological age, geological identity, excavation site, temple, village, monument or historic location. No supernatural light, protective force field, exorcism, ritual demonstration or efficacy claim. No writing is needed.\nStyle: tactile ink-and-gouache mineral study, warm slate and sand-grey with subtle dry-brush stone grain, soft side light and quiet ivory paper. Clear weight and simple silhouette, not shiny black pottery, jade, a polished tombstone catalogue, a landscape photo or monumental architecture. Compact entire stone and its small base centred with ample air all around; an unobtrusive corner shadow provides spatial context without reconstructing a building.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:48:53.496Z",
+      "finishedAt": "2026-11-02T02:49:26.205Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3056155,
+  "sha256": "fcde33642deb1e4d09dc928e41ef24da9d29a95f9930b89d3b5bc22b93148b61",
+  "sourceRecordSha256": "48eae3d10d0650ea40d2a0d4cbb0372161823c8aa0b80075dff804fd18ce233a",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

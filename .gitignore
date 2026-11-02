@@ -6,3 +6,17 @@ __pycache__/
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Portrait candidates and rejected research images with no public-reuse grant.
+/dist/people-culture-v1/assets/370100-jinan-yang-feng-08b3ade81adf.jpg
+/dist/people-culture-v1/assets/370300-zibo-ren-bo-b98478f6ad22.png
+/dist/people-culture-v1/assets/370300-zibo-ren-bo-f95630ddc357.png
+/dist/people-culture-v1/assets/370300-zibo-wang-chunhua-f6aa04063f43.jpg
+/dist/people-culture-v1/assets/370400-gan-yandi-b2cfa33c265b.jpg
+/dist/people-culture-v1/assets/370800-du-qingshou-48b88e2cf4f1.jpg
+/dist/people-culture-v1/assets/371000-wh-person-lijiangyu-948fe3a6d241.png
+/dist/people-culture-v1/assets/371000-wh-person-xiyingchun-0db28c35a71f.jpg
+/dist/people-culture-v1/assets/371100-qin-huimin-9d62b6405a5b.jpg
+/dist/people-culture-v1/assets/371300-fan-shiwei-28391a4bdf77.jpg
+/dist/people-culture-v1/assets/371300-fan-shiwei-cad2d71c64a7.jpg
+/dist/people-culture-v1/assets/371600-binzhou-zhang-kai-cce8e2a56308.jpg

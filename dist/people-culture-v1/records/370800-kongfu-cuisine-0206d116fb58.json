@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370800",
+  "objectId": "kongfu-cuisine",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: illustration-story\nAsset type: one original AI cultural illustration for a wide interactive expanding screen about Kongfu cuisine in Qufu, Jining, Shandong.\n\nSubject: an imagined elegant Chinese banquet plate, presented as a quiet visual metaphor for a refined regional food culture. In the center, show one porcelain platter with an artistically arranged, obviously edible assortment of cooked seasonal vegetables, tofu and mushrooms, a few small carved carrot blossoms and greens. The plate is a fictional creative arrangement, NOT a named dish, recipe, actual meal, authentic historical table, specific restaurant's plating or a documentary record of culinary technique. Do not suggest rare or endangered animal products.\nComposition: one recognizable complete central plate, slightly elevated three-quarter or near-overhead viewpoint; keep the most distinctive central food and plate within the central 30–35% of a wide horizontal frame so they remain legible in a narrow centered accordion panel. Use a soft unfussy table surface and restrained botanical color accents beyond it. It should also look cohesive in a full-frame landscape view. No interface or overlay.\nVisual language: refined Chinese ink-and-color wash with translucent watercolor layering and subtle xuan-paper texture, rather than a food photograph; calm ivory and warm parchment with delicate jade green, warm amber and a few soft vermilion accents. More airy and elegant than a brightly colored woodblock print; clearly distinguish it from the inkstone, wooden carving and musical instrument illustrations.\nConstraints: fiction only, no people, hands, kitchen, chefs, cooking procedure or historically identifiable setting. No text, characters, calligraphy, numbers, labels, logo, seal, watermark, signature or frame.",
+  "startedAt": "2026-11-02T09:49:36.767+08:00",
+  "finishedAt": "2026-11-02T09:50:03.916+08:00",
+  "width": 1942,
+  "height": 809,
+  "sha256": "0206d116fb58bc04dbb9bde881fde90ebc61a5b998507e44ac50d0cba0b6736e",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

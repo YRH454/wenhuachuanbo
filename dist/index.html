@@ -8,17 +8,43 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="zibo-guide.css">
+  <link rel="stylesheet" href="city-guides.css">
+  <link rel="stylesheet" href="site-flow.css">
+  <link rel="stylesheet" href="xiaoqi-guide.css">
   <script type="module" src="app.mjs"></script>
+  <script type="module" src="site-flow.mjs"></script>
+  <script type="module" src="xiaoqi-guide.mjs"></script>
 </head>
 <body data-view="map">
-<!-- ZIBO-GUIDE-v1: Local extension, not a new visual world.
-THESIS: The painting leads; a voluntary reading layer explains one craft with sources.
-OWN-WORLD: Existing paper, blue-green ink, fine borders and plain reading typography.
-STORY: Enter Zibo, choose to read three passages, explore five editorial answers, return.
-FIRST VIEWPORT: Unchanged full-screen background; one small entry at lower right.
-FORM: Brief-pinned right reading sheet; native dialog protects keyboard focus.
-FINISH: Bounded desktop/mobile checks, then the coordinator's independent review.
-No generated images, model calls, extra city content or new public release. -->
+<!-- XIAOQI-SCROLL-A-v1 / XIAOQI-COMPANION-v1: user-approved edge companion.
+THESIS: The selected paper spirit drifts, rests and responds along the page edge.
+OWN-WORLD: Unframed native A artwork, inherited ink, paper and rust focus.
+STORY: Notice the guide, move or pause it, open voluntarily and read the current city.
+FIRST VIEWPORT: A larger free silhouette, one brief greeting, no automatic panel.
+FORM: Approved edge-roaming companion; drag-to-dock, reduced-motion and collapse controls.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<!-- SITE-ASSEMBLY-v1: established-world navigation extension, 2026-11-02.
+THESIS: Join the existing map, city story, people and four objects without orphan pages.
+OWN-WORLD: Preserve existing artwork, local palettes, type and reading layouts.
+STORY: Choose a city, follow its three reading entries, return to the same city or map.
+FIRST VIEWPORT: Unchanged city artwork and reading cue; two small top-right text links.
+FORM: Local extension of confirmed surfaces; no new visual world or generated comp.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<!-- CITY-GUIDES-v1, established-world extension, 2026-11-01.
+THESIS: Keep the Zibo model and map; read each city's own sourced cultural story.
+OWN-WORLD: Existing city painting, local paper/ink roles and three real reading layouts.
+STORY: See the registered scene, scroll to the local subject, follow accountable sources.
+FIRST VIEWPORT: One unchanged city background viewport with return and reading controls.
+FORM: User-pinned scene-to-article; regional archive, woven or folio, not a new brand.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<!-- ZIBO-SCROLL-v2: User-pinned two-screen sequence, 2026-11-01.
+THESIS: First experience the existing Zibo painting, then read the heritage project.
+OWN-WORLD: Unchanged ink-map artwork; near-white article, ink-teal type, Song headings.
+STORY: See the city, scroll into project identity and craft, follow the cited sources.
+FIRST VIEWPORT: One viewport of the existing painting, map return and a small down cue.
+FORM: User-selected vertical scene-to-article sequence; reference ihchina.cn/project_details/14445/.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+No generated comp is being marked approved. No image, geometry or other-city replacement. -->
 <div id="city-background" class="city-background" aria-hidden="true" data-state="home"></div>
 <!-- SURFACE: Experience. The user's selected shanhai painting carries the setting.
 The enlarged, centered same-source map leads; the complete-original city shelf supports.
@@ -66,9 +92,49 @@ Previous interface and evidence are retained separately; no old PASS is inherite
   </section>
   <section id="city-view" class="city-view" aria-labelledby="city-title" hidden>
     <h1 id="city-title" class="sr-only" tabindex="-1"></h1>
-    <aside id="zibo-guide-entry" class="zibo-guide-entry" hidden>
-      <button id="zibo-guide-open" type="button" aria-haspopup="dialog" aria-controls="zibo-guide" aria-expanded="false">走近琉璃<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
-    </aside>
+    <div id="zibo-guide-entry" class="zibo-scene" hidden>
+      <a class="zibo-scene-back" href="#/map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>返回地图</a>
+      <button id="zibo-guide-open" class="zibo-scene-open" type="button" aria-controls="zibo-guide"><span>走近博山琉璃</span><small>向下阅读</small><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></button>
+    </div>
+    <article id="zibo-guide" class="zibo-topic" aria-labelledby="zibo-guide-title" hidden>
+      <div class="zibo-topic-bar">
+        <div class="zibo-topic-bar-inner">
+          <a class="zibo-wordmark" href="#/map">一物见山东</a>
+          <div class="zibo-topic-actions">
+            <button id="zibo-guide-close" class="zibo-text-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m-6 6 6-6 6 6"/></svg>回到画面</button>
+            <a id="zibo-guide-map" href="#/map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>返回地图</a>
+          </div>
+        </div>
+      </div>
+      <div class="zibo-topic-inner">
+        <header class="zibo-topic-heading">
+          <h2 id="zibo-guide-title" tabindex="-1">琉璃烧制技艺</h2>
+          <p class="zibo-topic-location">山东省淄博市博山区 · 传统技艺</p>
+          <p id="zibo-guide-intro">从一件琉璃出发，走近淄博博山的传统技艺。</p>
+        </header>
+        <nav class="zibo-chapters" aria-label="淄博专题章节">
+          <button type="button" data-zibo-target="zibo-overview">项目概况</button>
+          <button type="button" data-zibo-target="zibo-craft">看见技艺</button>
+          <button type="button" data-zibo-target="zibo-people">当代传承</button>
+          <button type="button" data-zibo-target="zibo-guide-sources">资料来源</button>
+        </nav>
+        <div id="zibo-guide-reading" class="zibo-topic-body">
+          <div id="zibo-guide-passages"></div>
+          <section class="zibo-questions" aria-labelledby="zibo-guide-questions-title">
+            <h3 id="zibo-guide-questions-title">资料问答</h3>
+            <p class="zibo-editorial">从这些问题开始，继续认识博山琉璃。</p>
+            <div id="zibo-guide-answers"></div>
+          </section>
+          <section id="zibo-guide-sources" class="zibo-sources" aria-labelledby="zibo-guide-sources-title">
+            <h3 id="zibo-guide-sources-title" tabindex="-1">资料来源</h3>
+            <ul id="zibo-guide-source-list"></ul>
+            <p>沿着项目档案、人物条目与工坊报道，继续了解博山琉璃。</p>
+          </section>
+        </div>
+        <footer class="zibo-topic-footer"><span>一物见山东 · 淄博</span><button class="zibo-text-button" type="button" data-zibo-target="scene">回到画面<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m-6 6 6-6 6 6"/></svg></button></footer>
+      </div>
+    </article>
+    <div id="city-guide-host" hidden></div>
     <!-- Reserved content remains hidden until the user supplies the next brief. -->
     <div class="city-landscape" hidden>
       <div class="landscape-content">
@@ -99,7 +165,7 @@ Previous interface and evidence are retained separately; no old PASS is inherite
     <details id="work-details" class="work-details">
       <summary>作品说明与文化来源</summary>
       <p id="city-subtitle"></p>
-      <p>画作为AI创意插画／想象场景，并非实景照片、特定馆藏或历史复原。以下文化线索来自生成方交接资料，网页内容与使用权仍需逐条核实。</p>
+      <p>从画作中的色彩与造型出发，沿文化来源继续认识这座城市。</p>
       <h2>本市地域背景</h2>
       <p id="background-description"></p>
       <dl id="background-details" class="background-details"></dl>
@@ -120,29 +186,38 @@ Previous interface and evidence are retained separately; no old PASS is inherite
     <h1 tabindex="-1">未找到这座城市</h1><p>请从地图或十六市原图入口重新选择。</p><a class="back" href="#/map">返回山东地图</a>
   </section>
 </main>
-<dialog id="zibo-guide" class="zibo-guide" aria-labelledby="zibo-guide-title" aria-describedby="zibo-guide-intro">
-  <header class="zibo-guide-header">
-    <h2 id="zibo-guide-title" tabindex="-1">淄博：炉火里的琉光</h2>
-    <button id="zibo-guide-close" type="button" aria-label="关闭导览，回到画面">关闭<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
-  </header>
-  <div id="zibo-guide-reading" class="zibo-guide-reading" tabindex="0" role="region" aria-label="淄博琉璃导览正文">
-    <p id="zibo-guide-intro" class="zibo-guide-intro">从受热的料，到有颜色、有线条的形体，走近博山琉璃。</p>
-    <p class="zibo-guide-boundary">背景为AI创意画，不对应已鉴定的真实器物、人物或作坊。</p>
-    <div id="zibo-guide-passages" class="zibo-guide-passages"></div>
-    <section class="zibo-guide-questions" aria-labelledby="zibo-guide-questions-title">
-      <h3 id="zibo-guide-questions-title">导览问答</h3>
-      <p class="zibo-guide-editorial">以下为编辑整理的固定资料解答，未接入模型。</p>
-      <div id="zibo-guide-answers"></div>
-    </section>
-    <section class="zibo-guide-sources" aria-labelledby="zibo-guide-sources-title">
-      <h3 id="zibo-guide-sources-title">资料出处</h3>
-      <ul id="zibo-guide-source-list"></ul>
-      <p>仅链接资料页，不复制新闻照片；单件作品的身份、年代和价格需另有可靠依据。</p>
-    </section>
-  </div>
-  <footer class="zibo-guide-footer"><a id="zibo-guide-map" href="#/map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>返回山东地图</a><span>可按 Esc 收起导览</span></footer>
-</dialog>
 <noscript><p class="status paper">此文化地图需要JavaScript才能切换城市。请启用后重新载入；原始作品与来源记录仍保留在本地项目中。</p></noscript>
 <p id="live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+<div id="xiaoqi-root" class="xiaoqi" hidden>
+  <div id="xiaoqi-actor" class="xiaoqi-actor">
+    <p id="xiaoqi-greeting" class="xiaoqi-greeting" role="status" hidden>我是小齐，陪你逛山东。</p>
+    <button id="xiaoqi-launcher" class="xiaoqi-launcher" type="button" aria-label="打开小齐文化向导" aria-controls="xiaoqi-panel" aria-expanded="false" aria-describedby="xiaoqi-drag-help">
+      <span id="xiaoqi-sway" class="xiaoqi-sway"><img id="xiaoqi-figure" src="assets/xiaoqi/xiaoqi-scroll-a-d9cf1a109245.png" width="112" height="112" alt="" aria-hidden="true" draggable="false"></span>
+      <span class="xiaoqi-name">小齐<span>文化向导</span></span>
+    </button>
+    <div class="xiaoqi-companion-controls" role="group" aria-label="小齐动效与显示">
+      <button id="xiaoqi-motion-toggle" type="button" aria-label="暂停小齐动效" aria-pressed="false">暂停</button>
+      <button id="xiaoqi-minimize" type="button" aria-label="收起小齐">收起</button>
+    </div>
+  </div>
+  <button id="xiaoqi-restore" class="xiaoqi-restore" type="button" aria-label="展开小齐文化向导" hidden>小齐</button>
+  <p id="xiaoqi-drag-help" class="sr-only">点击打开向导，也可拖动换边。下方可以暂停动效或收起；面板内也提供换边按钮。</p>
+  <section id="xiaoqi-panel" class="xiaoqi-panel" role="dialog" aria-modal="false" aria-labelledby="xiaoqi-title" aria-describedby="xiaoqi-availability" hidden>
+    <header class="xiaoqi-panel-header">
+      <h2 id="xiaoqi-title" tabindex="-1">小齐 · 文化向导</h2>
+      <button id="xiaoqi-close" class="xiaoqi-close" type="button" aria-label="关闭小齐文化向导"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </header>
+    <div class="xiaoqi-welcome">
+      <img class="xiaoqi-portrait" src="assets/xiaoqi/xiaoqi-scroll-a-d9cf1a109245.png" width="112" height="112" alt="" aria-hidden="true">
+      <h3>你好，我是小齐。</h3>
+      <p class="xiaoqi-intro">陪你循着一件物，走近山东十六城。</p>
+      <p id="xiaoqi-context" class="xiaoqi-context"></p>
+      <button id="xiaoqi-primary" class="xiaoqi-primary" type="button"><span id="xiaoqi-action-label">在地图上选一城</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+      <a id="xiaoqi-map" class="xiaoqi-map" href="#/map">返回十六城地图</a>
+    </div>
+    <p id="xiaoqi-availability" class="xiaoqi-availability">智能问答尚未接通，先一起看看已有的文化故事。</p>
+    <div class="xiaoqi-panel-settings"><button id="xiaoqi-switch-side" type="button">移到左侧</button><span>也可以拖动小齐换边</span></div>
+  </section>
+</div>
 </body>
 </html>

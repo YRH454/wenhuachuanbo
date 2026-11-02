@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371100",
+  "city": "日照",
+  "status": "draft",
+  "people": [
+    {
+      "id": "qin-huimin",
+      "name": "秦慧敏",
+      "connection": "日照黑陶手艺人与传承人。",
+      "intro": "新华网记录了秦慧敏在日照介绍黑陶文化和制作陶器的场景。",
+      "sources": [
+        {
+          "title": "新华网：山东日照让黑陶非遗在传承中焕发生机",
+          "url": "https://www.xinhuanet.com/ci/20240527/3da913f1ea7a426b976d763b14c8e3b4/c.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 990,
+        "height": 660,
+        "alt": "秦慧敏在灯下绘制黑陶器的报道照片",
+        "caption": "秦慧敏制作黑陶，2024年新华社报道配图。",
+        "sourcePage": "https://www.xinhuanet.com/ci/20240527/3da913f1ea7a426b976d763b14c8e3b4/c.html",
+        "credit": "来源：新华社、新华网；摄影署名待核",
+        "identityStatus": "原报道对应图注明示秦慧敏；2026-11-02已实看单人制作画面，不与同组邢葆东照片混用。",
+        "rightsStatus": "仅内部研究候选；未取得新华社照片比赛展示及公开复用许可。",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "zhao-jie",
+      "name": "赵洁",
+      "connection": "日照农民画传承人。",
+      "intro": "中国侨网报道了赵洁向学生介绍日照农民画的活动。",
+      "sources": [
+        {
+          "title": "国务院侨务办公室转载：中国侨网日照农民画体验活动",
+          "url": "https://www.gqb.gov.cn/news/2023/0818/57627.shtml"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "rizhao-black-pottery",
+      "name": "日照黑陶",
+      "category": "陶艺",
+      "connection": "日照的黑陶制作与陶文化。",
+      "intro": "日照黑陶以深色陶器与当地制陶技艺为线索，连接陶土与人的创造。",
+      "sources": [
+        {
+          "title": "新华网：山东日照让黑陶非遗在传承中焕发生机",
+          "url": "https://www.xinhuanet.com/ci/20240527/3da913f1ea7a426b976d763b14c8e3b4/c.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371100-rizhao-black-pottery-2529797cc71f.png",
+        "width": 1672,
+        "height": 940,
+        "alt": "AI创意插画：炭纸肌理中的黑陶意象。",
+        "credit": "AI创意插画；非出土器物、馆藏或当代作者作品",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/371100-rizhao-black-pottery-2529797cc71f-ac9e4ec8e0d0.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "rizhao-peasant-painting",
+      "name": "日照农民画",
+      "category": "民间绘画",
+      "connection": "日照地方民间绘画，常表现乡村与渔家生活。",
+      "intro": "日照农民画用鲜活的色彩描绘乡土生活与海边风情。",
+      "sources": [
+        {
+          "title": "山东宣传网：日照民俗文化名片",
+          "url": "https://www.sdxc.gov.cn/whql/whcc/201910/t20191021_11511187.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371100-rizhao-peasant-painting-cc438429d1d8.png",
+        "width": 1942,
+        "height": 809,
+        "alt": "AI创意插画：明快蓝海、虚构渔船和鱼的民间绘画意象。",
+        "credit": "AI创意插画：虚构民间绘画意象，非真实画家作品或渔事记录",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/371100-rizhao-peasant-painting-cc438429d1d8-55a77f76b266.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "rizhao-green-tea",
+      "name": "日照绿茶手工炒制",
+      "category": "茶与传统技艺",
+      "connection": "日照的绿茶与手工炒制实践。",
+      "intro": "从一片茶叶到一杯绿茶，可以认识日照与茶相伴的生活。",
+      "sources": [
+        {
+          "title": "山东宣传网转载中国文化报：日照乡村旅游",
+          "url": "https://www.sdxc.gov.cn/fzgg/fzggsy/202509/t20250929_16536177.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371100-rizhao-green-tea-3df1b017d7cb.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI创意插画：虚构海岸背景中的素色茶盏和绿茶叶。",
+        "credit": "AI创意插画：虚构茶盏与海岸意象，未展示手工炒制过程",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/371100-rizhao-green-tea-3df1b017d7cb-b442a47011b6.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "lanshan-fisherfolk-chants",
+      "name": "岚山渔民号子",
+      "category": "民间劳动歌声",
+      "connection": "日照岚山区的渔民号子与海洋生活。",
+      "intro": "岚山渔民号子将劳动节奏与海边人们的集体歌声联系起来。",
+      "sources": [
+        {
+          "title": "山东宣传网：守正创新推动东夷文化绽放时代光彩",
+          "url": "https://www.sdxc.gov.cn/zbsh/llbt/202403/t20240320_13859641.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371100-lanshan-fisherfolk-chants-bc13094faa3d.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：深蓝海浪中的虚构空船与绳索，以律动形状暗示渔歌。",
+        "credit": "AI创意插画：虚构空船与海浪，非真实渔事或号子演出",
+        "rightsStatus": "公开使用及第三方相似性待核；号子音频及其权利未收集",
+        "record": "records/371100-lanshan-fisherfolk-chants-bc13094faa3d-f1f624014130.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "秦慧敏照片已有新华社原报道逐图图注，本轮本地保存并列为candidate；比赛展示及公开复用许可未取得，默认不展示。赵洁肖像身份与许可待核。",
+    "四项文化图为AI候选，屏风与手机裁切待测；农民画图非画家作品，绿茶静物未展示炒制工艺，渔民号子图仅为海上节奏意象。",
+    "此为内部联调草稿；渔民号子音频及其权利未收集。"
+  ]
+}

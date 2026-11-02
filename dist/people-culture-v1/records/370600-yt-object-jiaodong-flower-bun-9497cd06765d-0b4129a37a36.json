@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370600",
+  "objectId": "yt-object-jiaodong-flower-bun",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original, wide horizontal 3:2 cultural editorial illustration inspired by “胶东花饽饽”, the festive shaped steamed flour food. In the center show one imaginary large flower-shaped steamed bun with soft ivory matte flour-dough texture, layered petals and modest naturally colored red and green dough accents, resting on an undecorated ceramic plate; one smaller, simple peach-shaped steamed bun beside it. The shapes should read as edible soft steamed dough, not glossy plastic toys, ceramics or a frosted cake. View from a gentle three-quarter angle on a quiet warm linen table; elegant hand-painted gouache/watercolor, warm cream, red and soft jade, refined and welcoming. Main bun compact and centered for narrow vertical crops. Invent the design from scratch: do not reproduce or imitate a particular craftsperson's existing work or imply one design represents all local rituals. No real people, hands, production steps, packaging, brand, letters, seals, logo, watermark, caption, photo-real product advertisement, montage or panels. The picture is an imaginative AI illustration, not a documentary image of a real item.",
+  "startedAt": "2026-11-02T10:48:05.257+08:00",
+  "finishedAt": "2026-11-02T10:48:39.711+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original, wide horizontal 3:2 cultural editorial illustration inspired by “胶东花饽饽”, the festive shaped steamed flour food. In the center show one imaginary large flower-shaped steamed bun with soft ivory matte flour-dough texture, layered petals and modest naturally colored red and green dough accents, resting on an undecorated ceramic plate; one smaller, simple peach-shaped steamed bun beside it. The shapes should read as edible soft steamed dough, not glossy plastic toys, ceramics or a frosted cake. View from a gentle three-quarter angle on a quiet warm linen table; elegant hand-painted gouache/watercolor, warm cream, red and soft jade, refined and welcoming. Main bun compact and centered for narrow vertical crops. Invent the design from scratch: do not reproduce or imitate a particular craftsperson's existing work or imply one design represents all local rituals. No real people, hands, production steps, packaging, brand, letters, seals, logo, watermark, caption, photo-real product advertisement, montage or panels. The picture is an imaginative AI illustration, not a documentary image of a real item.",
+      "startedAt": "2026-11-02T10:48:05.257+08:00",
+      "finishedAt": "2026-11-02T10:48:39.711+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2625206,
+  "sha256": "9497cd06765d5fadbee686604064955c090136047d1bc198f9ca69378f0f3208",
+  "sourceRecordSha256": "3d113a63a97445ee8d08d8aeed9f429b2b52e01c130bfc3e5ff6af4de7510e9f",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

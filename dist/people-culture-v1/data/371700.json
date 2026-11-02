@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371700",
+  "city": "菏泽",
+  "status": "draft",
+  "people": [
+    {
+      "id": "heze-chen-sujing",
+      "name": "陈素景",
+      "connection": "菏泽马岭岗镇曹州面人传承人，新华财经报道明确其国家级代表性传承人身份。",
+      "intro": "陈素景从事曹州面人创作与传承。2025年，她与李斌参加苏州的非遗迎春活动，让来自菏泽的面塑创作走进面向公众的展演。",
+      "sources": [
+        {
+          "title": "新华财经：菏泽鲁西新区国家级非遗曹州面人苏州秀技艺",
+          "url": "https://www.cnfin.com/cmjj-lb/detail/20250127/4180871_1.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "heze-liu-aiyu",
+      "name": "刘爱玉",
+      "connection": "与菏泽鄄城鲁锦织造技艺传承相关，中国非遗网鄄城县申报项目列有其姓名。",
+      "intro": "刘爱玉参与鲁锦的当代传承。2025年，山东艺术学院团队与她合作在菏泽采集织造流程、纹样和口述资料，将手艺经验带入研究与设计实践。",
+      "sources": [
+        {
+          "title": "中国非遗网：鲁锦织造技艺（鄄城县申报）",
+          "url": "https://www.ihchina.cn/project_details/14489"
+        },
+        {
+          "title": "山东艺术学院科研处：城艺学院赴菏泽开展鲁锦创新实践活动",
+          "url": "https://kyc.sdca.edu.cn/info/1013/4926.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "heze-juancheng-lu-brocade",
+      "name": "鄄城鲁锦",
+      "category": "传统织造／棉织物",
+      "connection": "鄄城是鲁锦织造的代表地区之一；技艺也见于济宁及周边，不称菏泽独有。",
+      "intro": "彩色棉线以经纬交织出富有节奏的几何纹样。鲁锦曾用于嫁妆等生活场景，今天仍可从布料、家居和设计中认识这门手艺；不同地区的纹样与做法不直接套用。",
+      "sources": [
+        {
+          "title": "中国非遗网：鲁锦织造技艺（鄄城县申报）",
+          "url": "https://www.ihchina.cn/project_details/14489"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371700-heze-juancheng-lu-brocade-127c3b322007.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：鄄城鲁锦主题的折叠棉织物意象、几何色纹与流苏；非刘爱玉织物、合作品牌纹样、材料鉴定或织造图谱。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；内部候选，不冒充真实作品或工艺证据",
+        "record": "records/371700-heze-juancheng-lu-brocade-127c3b322007-fcb7bd4e5933.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "heze-caozhou-dough-figurines",
+      "name": "曹州面人",
+      "category": "传统美术／面塑",
+      "connection": "流传于菏泽曹州地区，名录申报地区为菏泽市牡丹区。",
+      "intro": "手艺人把面团塑成动物、戏曲或故事人物，再刻画神情和衣饰。曹州面人在民俗与生活中发展，逐渐成为观赏性工艺品；观赏面塑不能默认可食用，也不与曹县江米人混作同一名录项目。",
+      "sources": [
+        {
+          "title": "中国非遗网：面人（曹州面人）",
+          "url": "https://www.ihchina.cn/art/detail/id/14087.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371700-heze-caozhou-dough-figurines-3bdeeac8e527.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：曹州面人主题的两尊虚构人物造型；非陈素景作品、真实面塑或真人。",
+        "credit": "AI创意插画（复用内置图像生成原图）",
+        "rightsStatus": "待核；内部候选，不将复用或资料组建议当作公开使用获批",
+        "record": "records/371700-heze-caozhou-dough-figurines-3bdeeac8e527-a387863f0feb.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "heze-caoxian-woodcarving",
+      "name": "曹县木雕",
+      "category": "雕刻工艺／木雕",
+      "connection": "流传于菏泽曹县及周边地区。",
+      "intro": "曹县木雕与地方节日、祭祀等习俗有关，也被用于当代文创摆件。木料上的纹理与刻痕可以成为理解手工雕刻的入口，具体作品题材、作者和年代仍须独立核实。",
+      "sources": [
+        {
+          "title": "山东宣传网：不止牡丹·菏泽地方技艺报道",
+          "url": "https://www.sdxc.gov.cn/whql/whcc/202606/t20260624_17868535.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371700-heze-caoxian-woodcarving-3f41d150b3b3.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：曹县木雕主题的一件原创想象木雕摆件；非文物、具名艺人作品或雕刻步骤。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；内部候选，不冒充真实作品或工艺证据",
+        "record": "records/371700-heze-caoxian-woodcarving-3f41d150b3b3-47824e043aca.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "heze-shanxian-mutton-soup",
+      "name": "单县羊肉汤",
+      "category": "地方饮食／汤食",
+      "connection": "菏泽单县的代表性地方饮食。",
+      "intro": "一碗羊肉汤连接着单县街巷与日常餐桌。可以从汤食认识地方饮食文化，但不以一张插画规定所有店家的配方、器皿或口味，也不宣传医疗保健作用。",
+      "sources": [
+        {
+          "title": "山东宣传网：不止牡丹·菏泽地方技艺报道",
+          "url": "https://www.sdxc.gov.cn/whql/whcc/202606/t20260624_17868535.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371700-heze-shanxian-mutton-soup-90902b2cdf6d.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：单县羊肉汤主题的浅色汤碗与羊肉意象；非商家实拍、标准配方或营养品质证据。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；内部候选，不冒充真实作品或工艺证据",
+        "record": "records/371700-heze-shanxian-mutton-soup-90902b2cdf6d-9ac695679ceb.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "两位人物及菏泽文化关联均有已核来源，尚无本项目已获许可的公开肖像。陈素景新增大众网2019年明确单图图注与原图候选，单张摄影者及许可未核；刘爱玉仍为含姓名的活动拼图，另有官方2009年具名图注线索但原图403未看清。localPath均null，不自动热链、不裁取或生成真人替身。",
+    "陈素景官方个人档案2901、刘爱玉个人档案30535本轮正文未成功读取；当前采用已实际读到的新华财经、官方项目名单及山东艺术学院资料，不能把失败请求列作成功复核。",
+    "人物简介不写未复核的师承、具体国家级批次或亲属关系；旧报道对部分师承的说法有差异，不据姓名猜亲缘。",
+    "菏泽4项正式单张PNG及完整记录已逐项复核回填：曹州面人复用，其余3项各1张新图，均1536×1024。完整contain；鲁锦、木雕纹样和汤食只作主题意象，不认作具名作品、材料/技法/品质证据。旧AB保留，非网页或公开使用验收。",
+    "曹县木雕官方项目23730本轮超时，因此依据已读山东宣传网报道作有限概述，不据此细化名录批次或雕刻技法。",
+    "AI图不冒充真实面塑、刘爱玉织物、文物、特定店家菜品或工艺证据。资料核查日期2026-11-02；未改公共代码、未新增下载或生成图片。"
+  ]
+}

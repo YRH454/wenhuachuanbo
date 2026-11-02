@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370100",
+  "objectId": "jinan-liu-needle-ad-plate",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit the attached original AI cultural-concept illustration. Make one framing correction only: pull the entire still-life grouping inward and slightly smaller so the full outer contour and ALL FOUR corners of the ivory paper sheet are clearly visible, at least 8 percent canvas width away from every edge. Also keep the complete bronze rabbit-relief plate and both complete sewing needles visible with comfortable margins. Remove the incidental dried flowers at lower left. Preserve the original invented rabbit motifs, muted bronze material, paper grain, warm palette, soft light and overall horizontal 3:2 composition. Keep the central bronze plate UNINSCRIBED with only the original rabbit relief; do not invent text or change this into a replica of the historical Liu-family needle-shop plate. This remains an imagined editorial concept, not an actual artifact, facsimile, rubbing or museum photo. Do not add people, hands, inscriptions, calligraphy, labels, letters, numbers, signatures, logos, seals or watermark. Return one complete native artwork, ideally 1536x1024, not a board or UI.",
+  "startedAt": "2026-11-02T02:48:53.496Z",
+  "finishedAt": "2026-11-02T02:51:00.119Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: a NON-REPLICA original conceptual illustration about the Jinan Liu-family needle-shop bronze advertising plate, combining a bronze printing surface, paper and an imagined white-rabbit recognition motif. Show a simple small broad rectangular BRONZE printing-plate-like object at an oblique angle, with an original uncomplicated rabbit-outline relief in its centre and otherwise BLANK uninscribed fields. Beside it, an ivory sheet carries a simple pale white rabbit silhouette bordered by quiet ink-colour shadow, and two tiny plain sewing needles lie discreetly nearby. The rabbit is a newly invented calm side-view silhouette, not the historical rabbit pounding medicine image or a copied trademark.\nImportant: invent a clearly simplified editorial assemblage, NOT a reproduction, facsimile, rubbing, reconstruction, exact layout, archaeological artifact or museum photo. The bronze is muted warm olive-brown with subtle matte material texture but no manufactured ancient corrosion, false excavation damage, accession number, frame or display tag. Do not copy the actual historical plate's inscriptions or advertising paragraphs. Do not use fake characters or line-like pseudo-writing to fill blank space.\nStyle and composition: refined print-and-gouache material illustration on warm off-white paper, restrained dark bronze, charcoal and cream, low tactile depth. Entire plate, entire paper sheet and needles inside ample margins, one readable compact group. Not a commercial logo board, merchant shop scene or historical street. No world-first, origin, excavation, dating or authenticity claims anywhere in the image.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:46:14.676Z",
+      "finishedAt": "2026-11-02T02:47:40.451Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "image_gen.imagegen",
+      "prompt": "Edit the attached original AI cultural-concept illustration. Make one framing correction only: pull the entire still-life grouping inward and slightly smaller so the full outer contour and ALL FOUR corners of the ivory paper sheet are clearly visible, at least 8 percent canvas width away from every edge. Also keep the complete bronze rabbit-relief plate and both complete sewing needles visible with comfortable margins. Remove the incidental dried flowers at lower left. Preserve the original invented rabbit motifs, muted bronze material, paper grain, warm palette, soft light and overall horizontal 3:2 composition. Keep the central bronze plate UNINSCRIBED with only the original rabbit relief; do not invent text or change this into a replica of the historical Liu-family needle-shop plate. This remains an imagined editorial concept, not an actual artifact, facsimile, rubbing or museum photo. Do not add people, hands, inscriptions, calligraphy, labels, letters, numbers, signatures, logos, seals or watermark. Return one complete native artwork, ideally 1536x1024, not a board or UI.",
+      "startedAt": "2026-11-02T02:48:53.496Z",
+      "finishedAt": "2026-11-02T02:51:00.119Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "生成参考输入（本地路径不公开）",
+          "sha256": null
+        }
+      ]
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2637123,
+  "sha256": "dc6c83cf816be34fe3f1b47048e706cfef48547bc52dd9c9e50f6669057ab8ba",
+  "sourceRecordSha256": "4bf4c1d88b993167a4f2216a16dc95fc9e3215bad33cc7cdb954b290c4c25274",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

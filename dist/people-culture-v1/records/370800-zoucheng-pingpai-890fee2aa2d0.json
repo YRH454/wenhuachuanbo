@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370800",
+  "objectId": "zoucheng-pingpai",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for a wide interactive expanding panel about Zoucheng Pingpai guchui music, Jining, Shandong.\n\nSubject: one invented Chinese SUONA, shown as an upright woodwind instrument, with a slender warm dark wooden tapered body, a few simple finger holes and an unmistakable flared brass bell at its lower end. It is an imaginary object, not a depiction of a specific instrument, performer, ensemble, live performance or historical event. Suggest the energy of folk wind music through broad rhythmic paper-cut arcs and hand-printed ink textures, not written music.\nComposition: the upright suona is centrally placed. Keep the instrument's most recognizable bell, body and finger holes in the central 30% of a wide horizontal frame; make those features readily legible even if an interactive accordion screen covers the image and shows a narrow vertical middle strip. Breathing room around the instrument allows the uncropped original to work as a full landscape illustration as well. No UI mockup.\nVisual language: refined Chinese folk-inspired paper-cut and color-woodblock illustration rather than photorealism, with richly textured handmade paper, deep muted cinnabar and charcoal, warm brass and a small subdued indigo accent. Lively, dignified and contemporary, with simple original abstract rhythm shapes. Clearly distinct from the stone-green inkstone and warm golden floral woodcarving.\nConstraints: this is a fictional AI creative interpretation, not a documentary representation of the specific music tradition or a performance. No people, faces, hands, performers, stage, musical process demonstration, Western trumpet valves or saxophone keys, sheet music, text, letters, Chinese characters, numbers, signs, musical-note glyphs, logo, signature, seal, watermark, border or frame. Do not copy any known artwork or real instrument.",
+  "startedAt": "2026-11-02T09:33:58.524+08:00",
+  "finishedAt": "2026-11-02T09:34:22.525+08:00",
+  "width": 1916,
+  "height": 821,
+  "sha256": "890fee2aa2d07f26f2874752e39bfc3c7c09ee4befaaa486c1c619d9b3ef6abc",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

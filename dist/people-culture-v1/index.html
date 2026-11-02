@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="按城市认识山东的真实文化人物与四项地方文化，沿资料来源继续阅读。">
+  <title>人物与四物 · 一物见山东</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<!-- PEOPLE-CULTURE-v1
+THESIS: 真实人物与本城四项文化并置，不把不同城市混成一座城，也不以生成画代替真人肖像。
+OWN-WORLD: 继承用户认可的 interaction-preview-v1：暖灰纸面、墨绿宋体、细线、姓名页签与横展屏风。
+STORY: 选择城市，认识有出处的人，展开本城文化对象，再读介绍与资料来源。
+FIRST VIEWPORT: 顶部返回与选城；紧凑导语后接大幅人物/姓名介绍，四物屏风在下一段自然展开。
+FORM: 用户已指定样板结构，不抽签、不生成新的构图方案；十六城独立读取内部草稿，未齐资料明确回退。
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="../?variant=A#/map">一物见山东</a>
+    <nav aria-label="页面导航">
+      <a href="#people">手艺与人</a><a href="#objects">本城四物</a>
+      <a id="topic-link" href="../?variant=A#/map">城市专题</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="city-bar">
+      <form id="city-form">
+        <label for="city-select">选择城市</label>
+        <select id="city-select" name="city"><option value="">请选择</option></select>
+        <button type="submit">查看</button>
+      </form>
+      <nav class="city-return-links" aria-label="同城与地图返回">
+        <a id="scene-link" href="../?variant=A#/map" hidden>城市画卷</a>
+        <a id="map-link" href="../?variant=A#/map">返回文化地图</a>
+      </nav>
+    </div>
+    <header class="intro">
+      <h1 id="page-title" tabindex="-1">物有来处，手艺有人。</h1>
+      <p id="page-intro">选择一座城市，从真实人物与四项地方文化，继续认识山东。</p>
+    </header>
+    <p id="load-status" class="load-status" role="status" aria-live="polite"></p>
+    <div id="city-content" aria-busy="false"></div>
+    <noscript><p class="empty-copy">此页需要 JavaScript 来切换城市和资料。你仍可<a href="../?variant=A#/map">返回文化地图</a>。</p></noscript>
+  </main>
+  <footer class="site-footer"><span>一物见山东</span><a href="#main">回到页首</a></footer>
+</body>
+</html>

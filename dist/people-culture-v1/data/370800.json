@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370800",
+  "city": "济宁",
+  "status": "draft",
+  "people": [
+    {
+      "id": "du-qingshou",
+      "name": "杜庆收",
+      "connection": "曲阜尼山石雕创作者，公开资料亦记述其尼山砚作品。",
+      "intro": "杜庆收从事尼山石雕创作。济宁市文化和旅游局的报道记录了他的尼山石雕和尼山砚作品；大众网曾记录他雕刻尼山石的场景。",
+      "sources": [
+        {
+          "title": "济宁市文化和旅游局：杜庆收获评山东省工艺美术大师",
+          "url": "https://whlyj.jining.gov.cn/art/2023/2/23/art_32530_2708507.html"
+        },
+        {
+          "title": "大众网：感受曲阜非遗之美｜取尼山圣石 刻万千世界",
+          "url": "https://jining.dzwww.com/xsq/qfs/202207/t20220717_10542790.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null,
+        "width": 750,
+        "height": 563,
+        "alt": "杜庆收的真实报道照片；仅供本机待授权候选预览",
+        "caption": "杜庆收雕刻尼山石；大众网2022年报道配图。",
+        "sourcePage": "https://jining.dzwww.com/xsq/qfs/202207/t20220717_10542790.htm",
+        "credit": "来源：大众网，报道作者孔潇；照片摄影署名未单列，待核",
+        "identityStatus": "原报道图片相邻图注明示为杜庆收；需保留原场景和说明",
+        "rightsStatus": "待核；仅内部候选，不代表获准公开复用。图含原站标识，不得为展示故意裁去。",
+        "identityVerified": true,
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "chu-desheng",
+      "name": "褚德胜",
+      "connection": "与曲阜楷木雕刻相关的手艺人。",
+      "intro": "济宁市文化和旅游局转载的报道记述了褚德胜在曲阜进行楷木雕刻的实践。",
+      "sources": [
+        {
+          "title": "济宁市文化和旅游局：曲阜楷木，从笔杆到雕刻的非遗之路",
+          "url": "https://whlyj.jining.gov.cn/art/2026/4/14/art_32446_2711940.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "sun-huayang",
+      "name": "孙化洋",
+      "connection": "中国非物质文化遗产网所列唢呐艺术（邹城平派鼓吹乐）相关传承人。",
+      "intro": "孙化洋与邹城平派鼓吹乐相关，其姓名和项目关联可在中国非物质文化遗产网人物档案中查阅。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：孙化洋",
+          "url": "https://www.ihchina.cn/ccr_detail/29916.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "nishan-inkstone",
+      "name": "曲阜尼山砚",
+      "category": "传统技艺与文房器物",
+      "connection": "以济宁曲阜尼山产石与当地制砚为线索。",
+      "intro": "尼山砚因石料产于曲阜尼山而得名；制砚时会观察石料形状和纹理，再安排砚形与墨池。",
+      "sources": [
+        {
+          "title": "济宁市文化和旅游局：济宁非遗记录之曲阜尼山砚",
+          "url": "https://whlyj.jining.gov.cn/art/2020/6/4/art_69980_2543640.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370800-nishan-inkstone-5011fac806a8.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：矿物色纸张拼贴中的一方砚与毛笔。",
+        "credit": "AI创意插画；非真实砚台或制作现场",
+        "rightsStatus": "现有AI原图，公开使用及第三方相似性待核",
+        "record": "records/370800-nishan-inkstone-5011fac806a8.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "qufu-kaimu-carving",
+      "name": "曲阜楷木雕刻",
+      "category": "传统雕刻",
+      "connection": "曲阜地方手工雕刻，以楷木为材料。",
+      "intro": "曲阜楷木雕刻把当地木材与雕刻技艺相结合，可从木纹、刻刀和雕饰认识这项手艺。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：国家级非物质文化遗产系列报道之曲阜楷木雕",
+          "url": "https://www.ihchina.cn/project_details/11317"
+        },
+        {
+          "title": "济宁市文化和旅游局：曲阜楷木，从笔杆到雕刻的非遗之路",
+          "url": "https://whlyj.jining.gov.cn/art/2026/4/14/art_32446_2711940.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370800-qufu-kaimu-carving-57cecdedfd51.png",
+        "width": 1774,
+        "height": 887,
+        "alt": "AI创意插画：木纹中的花叶雕刻意象。",
+        "credit": "AI创意插画；非真实楷木实物或艺人作品",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370800-qufu-kaimu-carving-57cecdedfd51.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "zoucheng-pingpai",
+      "name": "邹城平派鼓吹乐",
+      "category": "传统音乐",
+      "connection": "流传于济宁邹城一带的民间鼓吹乐。",
+      "intro": "邹城平派鼓吹乐以唢呐等乐器演奏，属于当地民间生活中延续的传统音乐。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：唢呐艺术（邹城平派鼓吹乐）",
+          "url": "https://www.ihchina.cn/art/detail/id/12513.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370800-zoucheng-pingpai-890fee2aa2d0.png",
+        "width": 1916,
+        "height": 821,
+        "alt": "AI创意插画：唢呐与红黑色波纹组成的音乐意象。",
+        "credit": "AI创意插画；虚构乐器及背景，非真实形制或演奏记录",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370800-zoucheng-pingpai-890fee2aa2d0.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "kongfu-cuisine",
+      "name": "孔府菜烹饪技艺",
+      "category": "饮食与烹饪技艺",
+      "connection": "以曲阜为中心的传统饮食技艺，与济宁地域文化相关。",
+      "intro": "孔府菜以曲阜为中心流传；从一席菜肴，可以认识当地饮食与礼俗的联系。",
+      "sources": [
+        {
+          "title": "济宁市文化和旅游局：济宁非遗记录之孔府菜烹饪技艺",
+          "url": "https://whlyj.jining.gov.cn/art/2020/4/29/art_69979_2488143.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370800-kongfu-cuisine-0206d116fb58.png",
+        "width": 1942,
+        "height": 809,
+        "alt": "AI创意插画：水墨山水背景中的一盘想象菜肴。",
+        "credit": "AI创意插画；虚构菜式与器皿，非真实菜品或制作记录",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/370800-kongfu-cuisine-0206d116fb58.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "杜庆收候选图已保存并查看，人物身份依据原报道图注；摄影署名及公开复用权待核，原站标识不得故意裁去。其他两人肖像待核。",
+    "四项均已有AI候选图；楷雕、餐盘地域特征需文字解释，唢呐及菜品不可当作真实形制或做法依据，四图均需检查屏风裁切效果。",
+    "本稿为内部首批联调用资料，须由集成者和统筹复核；不可将AI画认作真实工序或特定作品。"
+  ]
+}

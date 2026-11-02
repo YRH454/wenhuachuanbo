@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371300",
+  "objectId": "tancheng-wood-toy",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create one original horizontal editorial illustration for a Shandong regional-culture article about Tancheng wood-turned toys, Linyi. The subject is an invented, playful toy composition inspired by the idea of wood turning, not a depiction of any actual product, existing artist's design, traditional specimen, workshop, event or manufacturing procedure.\n\nVISUAL DIRECTION A — Chinese ink-wash and light watercolor on warm ivory paper, with lively but controlled folk accents in vermilion red, grass green and golden yellow. Show a small group of imaginary WOODEN SPINNING TOP TOYS and a simple cheerful peg toy, made from visibly rounded turned-wood cylinders, spheres, rings and tapering forms, with natural light wood grain and hand-painted geometric color. Make them clearly read as toys rather than vases or pottery, and give the toys enough scale to remain recognizable at phone width. The composition is airy and asymmetrical with nuanced ink outlines and gentle brush washes, visually warm and joyful, not a photographic scene. Keep all toys completely within the frame with breathing room. Horizontal image.\n\nNo potter's vessel, animals on a jar, people, hands, lathe, cutting, crafting actions, factory, tools, famous toy design, historical claim, writing, characters, numbers, signs, seals, signature, logo, watermark, border or frame. The toys are fictional illustrative forms; this is not evidence of exact traditional techniques or real objects.",
+  "startedAt": "2026-11-02T00:22:08.939+08:00",
+  "finishedAt": "2026-11-02T00:22:39.680+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create one original horizontal editorial illustration for a Shandong regional-culture article about Tancheng wood-turned toys, Linyi. The subject is an invented, playful toy composition inspired by the idea of wood turning, not a depiction of any actual product, existing artist's design, traditional specimen, workshop, event or manufacturing procedure.\n\nVISUAL DIRECTION A — Chinese ink-wash and light watercolor on warm ivory paper, with lively but controlled folk accents in vermilion red, grass green and golden yellow. Show a small group of imaginary WOODEN SPINNING TOP TOYS and a simple cheerful peg toy, made from visibly rounded turned-wood cylinders, spheres, rings and tapering forms, with natural light wood grain and hand-painted geometric color. Make them clearly read as toys rather than vases or pottery, and give the toys enough scale to remain recognizable at phone width. The composition is airy and asymmetrical with nuanced ink outlines and gentle brush washes, visually warm and joyful, not a photographic scene. Keep all toys completely within the frame with breathing room. Horizontal image.\n\nNo potter's vessel, animals on a jar, people, hands, lathe, cutting, crafting actions, factory, tools, famous toy design, historical claim, writing, characters, numbers, signs, seals, signature, logo, watermark, border or frame. The toys are fictional illustrative forms; this is not evidence of exact traditional techniques or real objects.",
+      "startedAt": "2026-11-02T00:22:08.939+08:00",
+      "finishedAt": "2026-11-02T00:22:39.680+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2680822,
+  "sha256": "80a886041b538dc04a61e05a867863c3fca186508dd9470f2f8d11d91bd0980e",
+  "sourceRecordSha256": "a973b49f54909e971109565967f1f9cee5a539b4737f1a767c1da813bf961e55",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371400",
+  "objectId": "dezhou-ningjin-acrobatics",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: single symbolic performance-topic illustration for Ningjin acrobatics, Dezhou, Shandong.\nPrimary request: an original theatrical STILL LIFE of a wooden bench and a clearly recognizable diabolo with two modest hand sticks and loose string, framed by abstract flowing motion arcs. NO PERFORMER OR HUMAN BODY. It is a concept about performance energy, not a real show, a training sequence or a diagram for a stunt.\nComposition: a low sturdy natural-wood bench stands safely upright on the stage floor. A compact red diabolo with two balanced cup-like halves and central axle rests nearby with two slim plain sticks and slack cord; do not show a person balancing on or juggling it. A few broad vermilion and muted warm-gold painterly arcs sweep behind the full, clearly separated props to suggest rhythm without numbered steps, dotted trajectory arrows or body silhouettes. Every prop completely fits inside the canvas. Avoid towers of stacked benches, ladders, fire, weapons, high wire, airborne people or circus tents.\nMedium and mood: sophisticated flat theatrical gouache and cut-paper-inspired shapes, deep mineral-blue background, restrained warm wood and vermilion accents, a quiet central spotlight suggested by matte colour and shallow paper texture. Strong readable prop silhouettes at mobile size; graceful cultural-performance feeling, not a generic carnival poster or photorealistic stage photograph.\nAuthenticity: not Liu Junchang, not a real performance, not the exact props of any troupe. The motion marks are invented decoration, not physics or technical instructions. No factual event, historical scene or exercise instruction is asserted.\nSingle standalone creative artwork, not a page, diagram, contact sheet or UI. Horizontal 3:2, ideally native 1536x1024. Keep complete subject silhouettes and generous safe margins; fully readable when shown with contain on mobile. No people, real faces, hands, text, pseudo-writing, labels, numbers, seals, signatures, brands, logos or watermark. No copied artwork, named craftsperson's work, museum object or process documentation.",
+  "startedAt": "2026-11-02T02:00:33.784Z",
+  "finishedAt": "2026-11-02T02:01:51.189Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: single symbolic performance-topic illustration for Ningjin acrobatics, Dezhou, Shandong.\nPrimary request: an original theatrical STILL LIFE of a wooden bench and a clearly recognizable diabolo with two modest hand sticks and loose string, framed by abstract flowing motion arcs. NO PERFORMER OR HUMAN BODY. It is a concept about performance energy, not a real show, a training sequence or a diagram for a stunt.\nComposition: a low sturdy natural-wood bench stands safely upright on the stage floor. A compact red diabolo with two balanced cup-like halves and central axle rests nearby with two slim plain sticks and slack cord; do not show a person balancing on or juggling it. A few broad vermilion and muted warm-gold painterly arcs sweep behind the full, clearly separated props to suggest rhythm without numbered steps, dotted trajectory arrows or body silhouettes. Every prop completely fits inside the canvas. Avoid towers of stacked benches, ladders, fire, weapons, high wire, airborne people or circus tents.\nMedium and mood: sophisticated flat theatrical gouache and cut-paper-inspired shapes, deep mineral-blue background, restrained warm wood and vermilion accents, a quiet central spotlight suggested by matte colour and shallow paper texture. Strong readable prop silhouettes at mobile size; graceful cultural-performance feeling, not a generic carnival poster or photorealistic stage photograph.\nAuthenticity: not Liu Junchang, not a real performance, not the exact props of any troupe. The motion marks are invented decoration, not physics or technical instructions. No factual event, historical scene or exercise instruction is asserted.\nSingle standalone creative artwork, not a page, diagram, contact sheet or UI. Horizontal 3:2, ideally native 1536x1024. Keep complete subject silhouettes and generous safe margins; fully readable when shown with contain on mobile. No people, real faces, hands, text, pseudo-writing, labels, numbers, seals, signatures, brands, logos or watermark. No copied artwork, named craftsperson's work, museum object or process documentation.",
+      "startedAt": "2026-11-02T02:00:33.784Z",
+      "finishedAt": "2026-11-02T02:01:51.189Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2798898,
+  "sha256": "24c472404d045dba6b96ea8dc37bd456d9e4f2358f4aac6871f0bad46caf9c0c",
+  "sourceRecordSha256": "7db76b04944acbb57009af42210dd582a6c6e8ef7a06903374f112735a1507f6",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

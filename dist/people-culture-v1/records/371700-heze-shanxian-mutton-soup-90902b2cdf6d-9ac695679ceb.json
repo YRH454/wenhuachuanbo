@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371700",
+  "objectId": "heze-shanxian-mutton-soup",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: one original comforting food illustration for Shanxian mutton soup, Heze, Shandong. A COMPLETE plain ceramic bowl of pale milky broth with a few clearly readable tender mutton slices and a very modest scattering of green herb pieces, a gentle trace of steam above, on a simple quiet table. This is a culinary-topic imagination, not a named restaurant's meal or a verified fixed recipe.\nComposition: one bowl clearly dominant in a calm three-quarter tabletop view. Entire rim, foot and bowl silhouette inside broad margins; airy space above the soft steam. Restrained ivory bowl with an unmarked rim, warm linen and pale mineral-gray paper background. No large feast, noodle bowl, hotpot burner, red chilli-oil pool, garnish overload, branded bread packet or preparation tools.\nMedium: warm lyrical gouache with fine paper texture and softly modelled ceramics and food, appetising yet visibly illustrated rather than photographic advertising. Off-white broth, natural warm meat tones and tiny restrained green accents. Do not claim a particular cut, broth method, nutrition or medical benefit.\nAuthenticity: no merchant, origin certification, standard presentation, food-quality guarantee, heritage-level assertion or health claim is conveyed. No persons, animals being slaughtered, cooking process or recipe steps.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+  "startedAt": "2026-11-02T02:24:40.687Z",
+  "finishedAt": "2026-11-02T02:26:21.550Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: one original comforting food illustration for Shanxian mutton soup, Heze, Shandong. A COMPLETE plain ceramic bowl of pale milky broth with a few clearly readable tender mutton slices and a very modest scattering of green herb pieces, a gentle trace of steam above, on a simple quiet table. This is a culinary-topic imagination, not a named restaurant's meal or a verified fixed recipe.\nComposition: one bowl clearly dominant in a calm three-quarter tabletop view. Entire rim, foot and bowl silhouette inside broad margins; airy space above the soft steam. Restrained ivory bowl with an unmarked rim, warm linen and pale mineral-gray paper background. No large feast, noodle bowl, hotpot burner, red chilli-oil pool, garnish overload, branded bread packet or preparation tools.\nMedium: warm lyrical gouache with fine paper texture and softly modelled ceramics and food, appetising yet visibly illustrated rather than photographic advertising. Off-white broth, natural warm meat tones and tiny restrained green accents. Do not claim a particular cut, broth method, nutrition or medical benefit.\nAuthenticity: no merchant, origin certification, standard presentation, food-quality guarantee, heritage-level assertion or health claim is conveyed. No persons, animals being slaughtered, cooking process or recipe steps.\nOne standalone horizontal 3:2 native artwork, ideally 1536x1024, not a UI, poster, map or contact sheet. Main object(s) fully visible with ample margins; not cropped at canvas edges. No real people, portraits, hands, readable text, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. No existing artist's work, museum object, verified craft process or named product is copied.",
+      "startedAt": "2026-11-02T02:24:40.687Z",
+      "finishedAt": "2026-11-02T02:26:21.550Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3031837,
+  "sha256": "90902b2cdf6d6120a3d1c9b6964fa438e94d5ba1c2208085321df6721f04018e",
+  "sourceRecordSha256": "4c8bf704e28c5bbf269d2ce5ca52455993f988b976eaaa371d4f829cfb0ea3a8",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

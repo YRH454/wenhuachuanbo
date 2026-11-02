@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371300",
+  "objectId": "yimeng-pancake",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an expanding screen about Yimeng pancakes, Linyi, Shandong.\n\nShow a simple fictional food still life: two or three very thin, broad, soft, pale golden grain pancakes, lightly folded in loose quarters on a plain wooden platter. Their delicate thin single-sheet edges and slightly mottled grain texture must be clear; they are NOT flaky layered pastry, not stuffed burritos or tacos, and not thick flatbread. A small bundle of green scallions rests separately to suggest everyday food culture. This is a creative visual, not a photograph, exact recipe, actual meal, real maker's work or demonstration of the cooking process.\nComposition: the recognizably thin folded pancakes are centered in the middle 30–35% of a wide horizontal picture so they remain visible in an accordion's narrow center crop; simple oat-paper background, warm shadow, modest hints of grain. Refined hand-painted folk gouache and paper collage, natural golden grain, muted brown, cream and a small green accent; warm and homely.\nConstraints: no people, hands, chef, griddle, stove, preparation process, restaurant, brand, text, Chinese characters, letters, numbers, logos, seal, signature, watermark, border or interface. No specific recipes, historical settings or copyrighted artist references.",
+  "startedAt": "2026-11-02T10:23:04.315+08:00",
+  "finishedAt": "2026-11-02T10:23:50.978+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an expanding screen about Yimeng pancakes, Linyi, Shandong.\n\nShow a simple fictional food still life: two or three very thin, broad, soft, pale golden grain pancakes, lightly folded in loose quarters on a plain wooden platter. Their delicate thin single-sheet edges and slightly mottled grain texture must be clear; they are NOT flaky layered pastry, not stuffed burritos or tacos, and not thick flatbread. A small bundle of green scallions rests separately to suggest everyday food culture. This is a creative visual, not a photograph, exact recipe, actual meal, real maker's work or demonstration of the cooking process.\nComposition: the recognizably thin folded pancakes are centered in the middle 30–35% of a wide horizontal picture so they remain visible in an accordion's narrow center crop; simple oat-paper background, warm shadow, modest hints of grain. Refined hand-painted folk gouache and paper collage, natural golden grain, muted brown, cream and a small green accent; warm and homely.\nConstraints: no people, hands, chef, griddle, stove, preparation process, restaurant, brand, text, Chinese characters, letters, numbers, logos, seal, signature, watermark, border or interface. No specific recipes, historical settings or copyrighted artist references.",
+      "startedAt": "2026-11-02T10:23:04.315+08:00",
+      "finishedAt": "2026-11-02T10:23:50.978+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1916,
+  "height": 821,
+  "bytes": 3254122,
+  "sha256": "55fbf4ed1691b492749b495cb7216c3d9b1833b27210acf322609198e61b4544",
+  "sourceRecordSha256": "a64a6fbcfa3774e6f0735105dc40840ecbcffa3fb16fee779ce6c9e889efa9f3",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

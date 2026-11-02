@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371500",
+  "city": "聊城",
+  "status": "draft",
+  "people": [
+    {
+      "id": "liaocheng-li-yucheng",
+      "name": "李玉成",
+      "connection": "聊城市人，葫芦雕刻（东昌葫芦雕刻）第五批国家级代表性传承人。",
+      "intro": "自幼跟随李尚贤学习葫芦雕刻，掌握刀刻、针雕、彩绘和烙画等表现方式。他的经历呈现了东昌葫芦手艺在人与人之间的传承。",
+      "sources": [
+        {
+          "title": "中国非遗网：李玉成代表性传承人档案",
+          "url": "https://www.ihchina.cn/Article/Index/detail?id=2927"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "liaocheng-luan-xikui",
+      "name": "栾喜魁",
+      "connection": "聊城市人，木版年画（东昌府木版年画）第五批国家级代表性传承人。",
+      "intro": "出自木版雕刻家庭，少年时跟随父亲学艺。其创作涉及戏曲、传说和日常生活题材，也向爱好者传授刻版技艺。",
+      "sources": [
+        {
+          "title": "中国非遗网：栾喜魁代表性传承人档案",
+          "url": "https://www.ihchina.cn/ccr_detail/2931/"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "liaocheng-dongchang-gourd-carving",
+      "name": "东昌葫芦雕刻",
+      "category": "传统美术／雕刻器物",
+      "connection": "以聊城市东昌府区堂邑镇一带为主要流传区域。",
+      "intro": "葫芦外壳承载着线条与纹样。东昌葫芦雕刻的题材多样，常表达吉祥祝愿，也与当地运河沿岸的生活和贸易相联系。雕刻、烙画等技法应分别说明，不能只凭图片认定工艺。",
+      "sources": [
+        {
+          "title": "中国非遗网：雕福塑瑞·葫芦雕刻（东昌葫芦雕刻）",
+          "url": "https://www.ihchina.cn/niansu/html/diaoFuSuRui_dongChangHuLuDiaoKe.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371500-liaocheng-dongchang-gourd-carving-8c2f2d0dc77a.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI创意插画：东昌葫芦雕刻主题的虚构暖壳色葫芦与水路纸雕构图；不是实物、真实地图或李玉成作品。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不据生成行为推定公开展示或第三方权利许可",
+        "record": "records/371500-liaocheng-dongchang-gourd-carving-8c2f2d0dc77a-3c7bdf9eb29d.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "liaocheng-dongchangfu-woodblock-print",
+      "name": "东昌府木版年画",
+      "category": "传统美术／木版套印",
+      "connection": "流传于聊城市东昌府区城乡，国家级代表性项目的申报地区为聊城市。",
+      "intro": "木版分色套印形成明快的民间年画。题材包括生活、戏曲和传说，画面以鲜明色彩与夸张人物造型传达节日里的祝愿。东昌府与张秋木版年画是不同的名录项目，不混称。",
+      "sources": [
+        {
+          "title": "中国非遗网：木版年画（东昌府木版年画）",
+          "url": "https://www.ihchina.cn/project_details/14157/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371500-liaocheng-dongchangfu-woodblock-print-a2de004b96b2.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：东昌府木版年画主题的原创鱼花年画与虚构木版意象；不是现存作品、栾喜魁原作或工艺记录。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不冒充真实实物、馆藏、艺人作品或工艺证据",
+        "record": "records/371500-liaocheng-dongchangfu-woodblock-print-a2de004b96b2-90c7e54b33e4.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "liaocheng-linqing-canal-customs",
+      "name": "临清运河钞关",
+      "category": "历史建筑／运河文化",
+      "connection": "位于聊城市临清市，是当地运河历史的建筑载体。",
+      "intro": "临清钞关曾承担明清运河关税管理职能。今天可以从这处全国重点文物保护单位了解漕运、商贸和城市发展的关系；它是历史建筑，不将其称为非遗技艺。",
+      "sources": [
+        {
+          "title": "文化和旅游部：山东·春运来临 千年运河文化之旅",
+          "url": "https://zhuanti.mct.gov.cn/mmyghcyt2023/hjgn/detail/4996.html"
+        },
+        {
+          "title": "齐鲁网·闪电新闻：在运河钞关读懂临清的繁华",
+          "url": "https://liaocheng.iqilu.com/lcminsheng/2026/0427/5909909.shtml"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371500-liaocheng-linqing-canal-customs-b1df3dfa2455.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意概念插画：以虚构水路、商船和空白文书意象表现临清运河钞关主题；非钞关实景、历史复原、真实地图或档案。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不冒充真实实物、馆藏、艺人作品或工艺证据",
+        "record": "records/371500-liaocheng-linqing-canal-customs-b1df3dfa2455-02f16220e985.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "liaocheng-linqing-shixiang-noodles",
+      "name": "临清什香面",
+      "category": "地方饮食／面食",
+      "connection": "文化和旅游部临清线路将其列为当地特色美食。",
+      "intro": "什香面的“什”取什锦之意，读shí，也称十香面。多样菜码与面食共同构成这一临清风味，不把十香误解为必须固定十种配料，也不凭旅游推荐认定其非遗级别。",
+      "sources": [
+        {
+          "title": "文化和旅游部：山东·春运来临 千年运河文化之旅",
+          "url": "https://zhuanti.mct.gov.cn/mmyghcyt2023/hjgn/detail/4996.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371500-liaocheng-linqing-shixiang-noodles-69cfea7a783e.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：临清什香面主题的面条与分置多样菜码；非特定商家照片，所画配料不是固定传统配方。",
+        "credit": "AI创意插画（内置图像生成）",
+        "rightsStatus": "待核；不冒充真实实物、馆藏、艺人作品或工艺证据",
+        "record": "records/371500-liaocheng-linqing-shixiang-noodles-69cfea7a783e-dee28caf26cc.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "两位人物的身份和照片候选已核，但没有本项目可公开展示的照片许可；portrait.localPath保留null，页面应显示缺图回退，不自动热链候选imageUrl。",
+    "李玉成照片含其他人物，且拍摄于新疆；未经许可不下载、转载或裁切成单人肖像。栾喜魁候选的具体摄影者未署明。",
+    "四项对象的单张图片及完整记录已回填，已逐张审看；葫芦复用，另三项补图。钞关仅是运河商贸概念插画，必须可见标注非实景，不能作为建筑照片。",
+    "复用葫芦图片是本组建议，不代表统筹验收；完整原图1672×941，茎顶靠近上缘，窄屏使用contain，不强制裁切。",
+    "AI图片必须在图外标AI创意插画；不是实物、历史现场、真实地图、特定传承人原作或工艺证据。",
+    "已核来源日期为2026-11-02；东昌葫芦项目档案14147页面本轮超时，采用已成功核读的官方专题，不把超时页算作本轮复核成功。"
+  ]
+}

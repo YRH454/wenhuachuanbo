@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371500",
+  "objectId": "liaocheng-dongchangfu-woodblock-print",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: standalone cultural-object editorial illustration for the Dongchangfu woodblock New Year print topic, Liaocheng, Shandong; a single image, not a website mockup.\nPrimary request: one imaginative finished folk New Year print accompanied by one carved wooden-block visual motif, clearly an original AI creative composition rather than an existing print or a real printing demonstration.\nScene and composition: a clean, tactile warm-paper still life seen at a gentle overhead angle. One complete paper sheet, modestly angled, carries a bold original fish-and-flower festive design. A compact dark wooden relief-block motif sits partly beside it with a related but not technically exact carved rhythm. Both entire silhouettes fit comfortably within the canvas, forming one balanced compact group. No tools, people, process arrows or printing action. The invented cheerful fish has a rounded body, confident curved black outlines and rhythmic decorative fins, surrounded by a few invented floral shapes; do not copy a known traditional print or identifiable artist's composition.\nMedium and palette: visibly woodblock-inspired layered spot-colour illustration, flat vermilion red, ochre yellow, muted cyan, gray and black on warm off-white handmade paper. Convincing coarse ink edges, carved-looking curved lines and paper fibres; sparse background and strong subject readability. Make the material language clearly different from gourd-shell paper sculpture. This is a poetic design about the medium, not documentary evidence that a particular design, block or printing procedure exists in Dongchangfu.\nAuthenticity: not a Luan Xikui work, historical print, museum artifact, product photograph, authenticated printing block or named auspicious pattern. No fake age marks or provenance. All motifs are new inventions. Do not substitute another city's named New Year-print artwork.\nText: none, including on the paper and wood block.\nOne single standalone artwork, not a webpage, contact sheet, comparison board or UI. Horizontal 3:2 canvas, ideally 1536 by 1024, native output. Keep every main subject within generous edge margins so it can be shown fully on mobile with contain; do not rely on cropping. No readable text in any language, letters, numbers, pseudo-writing, seals, signatures, logo, watermark or identifying label. No real people, portraits, hands, named artist's work or copied museum objects.",
+  "startedAt": "2026-11-02T01:54:12.170Z",
+  "finishedAt": "2026-11-02T01:54:49.704Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: standalone cultural-object editorial illustration for the Dongchangfu woodblock New Year print topic, Liaocheng, Shandong; a single image, not a website mockup.\nPrimary request: one imaginative finished folk New Year print accompanied by one carved wooden-block visual motif, clearly an original AI creative composition rather than an existing print or a real printing demonstration.\nScene and composition: a clean, tactile warm-paper still life seen at a gentle overhead angle. One complete paper sheet, modestly angled, carries a bold original fish-and-flower festive design. A compact dark wooden relief-block motif sits partly beside it with a related but not technically exact carved rhythm. Both entire silhouettes fit comfortably within the canvas, forming one balanced compact group. No tools, people, process arrows or printing action. The invented cheerful fish has a rounded body, confident curved black outlines and rhythmic decorative fins, surrounded by a few invented floral shapes; do not copy a known traditional print or identifiable artist's composition.\nMedium and palette: visibly woodblock-inspired layered spot-colour illustration, flat vermilion red, ochre yellow, muted cyan, gray and black on warm off-white handmade paper. Convincing coarse ink edges, carved-looking curved lines and paper fibres; sparse background and strong subject readability. Make the material language clearly different from gourd-shell paper sculpture. This is a poetic design about the medium, not documentary evidence that a particular design, block or printing procedure exists in Dongchangfu.\nAuthenticity: not a Luan Xikui work, historical print, museum artifact, product photograph, authenticated printing block or named auspicious pattern. No fake age marks or provenance. All motifs are new inventions. Do not substitute another city's named New Year-print artwork.\nText: none, including on the paper and wood block.\nOne single standalone artwork, not a webpage, contact sheet, comparison board or UI. Horizontal 3:2 canvas, ideally 1536 by 1024, native output. Keep every main subject within generous edge margins so it can be shown fully on mobile with contain; do not rely on cropping. No readable text in any language, letters, numbers, pseudo-writing, seals, signatures, logo, watermark or identifying label. No real people, portraits, hands, named artist's work or copied museum objects.",
+      "startedAt": "2026-11-02T01:54:12.170Z",
+      "finishedAt": "2026-11-02T01:54:49.704Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3548460,
+  "sha256": "a2de004b96b22fcb35a86ae94e736a04e1d65da17e8801639a9c7b50bd6f7734",
+  "sourceRecordSha256": "cd39829db45a2b7dae2c1adb1f0119ee89b3c21d65c6d518e1ebacc6703a9969",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

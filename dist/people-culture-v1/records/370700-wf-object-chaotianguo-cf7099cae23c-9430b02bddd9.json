@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370700",
+  "objectId": "wf-object-chaotianguo",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Edit the supplied original AI illustration of Weifang chaotianguo as a precise subject correction. Keep the wide horizontal composition, painterly warm paper-collage style, simple tabletop, separate clear broth bowl, and overall wrap-plus-soup idea. Correct the WRAPS: replace all puffy, flaky, thick-edged layered pastry surfaces with a single soft, thin, pliable wheat pancake for each roll. Show the pancake naturally wrapped into a compact cylinder with a thin flexible rolled edge and a matte cooked wheat-dough surface. It must not look like puff pastry, mille-feuille, layers of stacked pancakes, a crispy flatbread, a bun, translucent rice paper, or a spring-roll wrapper. At an open end show a modest amount of small chopped cooked meat and a little scallion, not large slabs of meat; keep the soup in an independent small bowl, clear broth with a few herbs, no hot pot or cooking process. Preserve a recognizable central grouping suitable for a crop, leave all elements original and imaginary. This is a fictional AI cultural illustration, not a real restaurant dish, recipe, historic scene, branded product, food-safety proof, or an imitation of a specific shop or artist. No people, hands, lettering, characters, signs, packaging, marks, seal, logo or watermark. One complete wide horizontal image.",
+  "startedAt": "2026-11-02T11:14:12.763+08:00",
+  "finishedAt": "2026-11-02T11:14:46.095+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an interactive expanding panel about Weifang Chaotianguo, Shandong.\n\nDepict a fictional appetizing FOOD STILL LIFE inspired by the idea of this local dish: two soft thin pancake rolls visibly folded around sliced braised meat and scallion, with a small adjacent bowl of clear hot broth. The food must read as a wrap plus soup, NOT a hot pot, not a pot of boiling ingredients. This is an invented composition, not an exact authentic recipe, real restaurant dish, merchant, historic stall or photograph.\nComposition: compact central grouping of one clearly visible open wrap with meat and the nearby soup bowl, placed in the central 35% of a wide horizontal frame so the ingredients remain identifiable within an expanding screen's center crop. Simple warm tabletop and restrained rising steam; full image remains attractive and uncropped. Sophisticated illustrative gouache and textured paper collage, warm wheat gold, brick red, dark umber, muted jade, gentle light and confident shapes. A welcoming local-food mood, visibly different from a delicate formal banquet setting.\nConstraints: no people, hands, chef, kitchen, cooking process, hotpot or table fire, identified shop, signboard, historic figure, text, Chinese characters, numbers, logos, signatures, seal, watermark, frame or user interface. Do not claim this imagined plate documents a precise recipe.",
+      "startedAt": "2026-11-02T09:59:58.981+08:00",
+      "finishedAt": "2026-11-02T10:00:30.796+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Edit the supplied original AI illustration of Weifang chaotianguo as a precise subject correction. Keep the wide horizontal composition, painterly warm paper-collage style, simple tabletop, separate clear broth bowl, and overall wrap-plus-soup idea. Correct the WRAPS: replace all puffy, flaky, thick-edged layered pastry surfaces with a single soft, thin, pliable wheat pancake for each roll. Show the pancake naturally wrapped into a compact cylinder with a thin flexible rolled edge and a matte cooked wheat-dough surface. It must not look like puff pastry, mille-feuille, layers of stacked pancakes, a crispy flatbread, a bun, translucent rice paper, or a spring-roll wrapper. At an open end show a modest amount of small chopped cooked meat and a little scallion, not large slabs of meat; keep the soup in an independent small bowl, clear broth with a few herbs, no hot pot or cooking process. Preserve a recognizable central grouping suitable for a crop, leave all elements original and imaginary. This is a fictional AI cultural illustration, not a real restaurant dish, recipe, historic scene, branded product, food-safety proof, or an imitation of a specific shop or artist. No people, hands, lettering, characters, signs, packaging, marks, seal, logo or watermark. One complete wide horizontal image.",
+      "startedAt": "2026-11-02T11:14:12.763+08:00",
+      "finishedAt": "2026-11-02T11:14:46.095+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组已撤回AI初稿，定向编辑输入",
+          "sha256": "4905cef4e7691425181940269c3e65914a108f0dbf7f5dc0ff91b226ffde70f7"
+        }
+      ]
+    }
+  ],
+  "width": 1672,
+  "height": 941,
+  "bytes": 2910222,
+  "sha256": "cf7099cae23cf191a12465378792c476fb305c38f1beb0a0d2c4752fd2399e45",
+  "sourceRecordSha256": "66e8aab6437d4f308c9a647020860de0e9f7b3dace9a2888d93635f6ac944d58",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370900",
+  "city": "泰安",
+  "status": "draft",
+  "people": [
+    {
+      "id": "taian-fan-zhengan",
+      "name": "范正安",
+      "connection": "山东省泰安市人，从事泰山皮影的制作、表演与创新。",
+      "intro": "皮影戏（泰山皮影戏）国家级代表性传承人，熟悉影偶制作、操纵、演唱与伴奏，并在表演实践中发展手脚协调的表现方式。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：范正安",
+          "url": "https://www.ihchina.cn/ccr_detail/1947.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "taian-wang-lianyang",
+      "name": "王连阳",
+      "connection": "徐家庄木版年画代表性传承人，在泰安石敢当文化周现场展示雕版。",
+      "intro": "从事徐家庄木版年画创作。2026年泰安文化周报道记录了他现场雕刻木板、展示制作流程的实践。",
+      "sources": [
+        {
+          "title": "中共泰安市委统战部：第十六届海峡两岸泰山石敢当文化周启幕",
+          "url": "https://tzb.taian.gov.cn/art/2026/9/7/art_75777_10213332.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "taian-shadow-theatre",
+      "name": "泰山皮影戏",
+      "category": "传统戏剧·影偶",
+      "connection": "正式项目名皮影戏（泰山皮影戏），申报地区山东省泰安市，项目编号Ⅳ-91。",
+      "intro": "影偶的轮廓、唱念与伴奏共同完成一台戏。泰山皮影造型吸收地方剪纸和戏曲脸谱的特点，地方故事也随灯幕进入表演。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：皮影戏（泰山皮影戏）",
+          "url": "https://www.ihchina.cn/project_details/13411/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370900-taian-shadow-theatre-f63a8e8f319a.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：暗石色背景与暖光中的一件想象透革影偶，无特定剧目角色或真实作者身份。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非实拍或范正安作品。",
+        "rightsStatus": "已核复用副本及原记录，供内部联调；publicUseApproved=false，待选用、实装及发布审查。",
+        "record": "records/370900-taian-shadow-theatre-f63a8e8f319a-58622b779cba.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "taian-shigandang-custom",
+      "name": "泰山石敢当习俗",
+      "category": "民俗·石刻载体",
+      "connection": "与泰山文化相连，2006年列入第一批国家级非物质文化遗产名录；习俗亦流传于多地。",
+      "intro": "石碑或石人及其文字寄托人们祈安、守护的愿望。认识石敢当，重在理解民俗载体与生活观念，不把祈愿当成已证实的效力。",
+      "sources": [
+        {
+          "title": "泰山风景名胜区管理委员会：泰山石敢当习俗",
+          "url": "https://tsgw.taian.gov.cn/art/2026/3/23/art_363610_10321003.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370900-taian-shigandang-custom-fcde33642deb.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意概念插画：无铭文素石、底座与想象墙角；非真实碑刻、古物复原、皮影角色或祈安效力证据。",
+        "credit": "AI创意概念插画；生图1使用内置image_gen生成，非真实石敢当古物或现场照片。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370900-taian-shigandang-custom-fcde33642deb-ec2d59cf0311.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "taian-xujiazhuang-woodblock",
+      "name": "徐家庄木版年画",
+      "category": "民间美术·木版印刷",
+      "connection": "泰山文化相关的地方木版年画，作品题材与流传范围涉及泰山周边。",
+      "intro": "木版、印痕与民间图像把节令愿望带入纸面。徐家庄木版年画吸收剪纸等民间艺术元素，呈现鲜明的地方美术特点。",
+      "sources": [
+        {
+          "title": "泰山风景名胜区管理委员会：徐家庄木版年画",
+          "url": "https://tsgw.taian.gov.cn/art/2026/3/23/art_363610_10320990.html"
+        },
+        {
+          "title": "中共泰安市委统战部：第十六届海峡两岸泰山石敢当文化周启幕",
+          "url": "https://tzb.taian.gov.cn/art/2026/9/7/art_75777_10213332.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370900-taian-xujiazhuang-woodblock-1ea07816f958.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：原创花鸟山形与木版、纸张主题意象；非《百寿图》、地方标准纹样、真实雕版矩阵或套印示范。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非王连阳作品或实际木版、印张。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370900-taian-xujiazhuang-woodblock-1ea07816f958-e94e43b6f22d.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "taian-pancake",
+      "name": "泰安煎饼",
+      "category": "饮食·地方生活",
+      "connection": "泰安市发改委2026年城市介绍以“一张煎饼”呈现本地饮食，小米是其原料之一。",
+      "intro": "从一张可卷起的煎饼走近泰安的日常饮食。谷物与面食的关系，为认识山城生活提供了不同于灯幕和石刻的入口。",
+      "sources": [
+        {
+          "title": "泰安市发展和改革委员会：山东泰安——一座因山而生的城市",
+          "url": "https://fgw.taian.gov.cn/art/2026/1/26/art_339298_10312911.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370900-taian-pancake-eab2cea624bb.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：薄片煎饼的卷折边、盘子与少量谷物意象，无馅；非厚饼、品牌实拍或固定配方。",
+        "credit": "AI创意插画；生图1使用内置image_gen生成，非品牌产品、固定配方或制作工序实拍。",
+        "rightsStatus": "已核文件、题材与生成记录，供内部联调；publicUseApproved=false，待选用及发布审查。",
+        "record": "records/370900-taian-pancake-eab2cea624bb-2f382e496d43.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "范正安、王连阳的真实肖像待图中身份、摄影署名和使用许可核验；禁止AI真人替身。",
+    "四项图各一张已回传并核对文件、题材及生成记录；皮影严格复用既有B图字节相同副本，旧A/B不删；publicUseApproved=false，待选用、发布及网页验收。",
+    "皮影B影偶高度约占原图90%，必须优先完整3:2或contain展示，16:9居中cover会裁头饰或脚；实际网页仍待验收。",
+    "新制素石无字、花鸟山形原创、煎饼薄片无馅，均仅为主题意象；不将AI图署名真实传承人作品或认定为实物证据。全部完整3:2/contain展示。",
+    "石敢当图无铭文且为虚构墙角，不能作真实遗物鉴定；年画图不代表徐家庄地方标准纹样，木版与纸张也不是可操作的雕版矩阵或套印流程。",
+    "石敢当的名录身份属于习俗；煎饼本交付仅作地方饮食，不补品牌、功效、统一配方或非遗级别。"
+  ]
+}

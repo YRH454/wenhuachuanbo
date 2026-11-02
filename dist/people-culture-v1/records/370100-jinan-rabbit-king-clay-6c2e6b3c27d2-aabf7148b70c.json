@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370100",
+  "objectId": "jinan-rabbit-king-clay",
+  "kind": "ai",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nPrimary request: ONE original painted-clay figurine inspired by the Jinan Tuzi Wang theme. The figure must clearly have a RABBIT FACE with two upright ears and a HUMAN-BODIED robed silhouette, not a natural rabbit or generic plush bunny. Create a new simple rounded seated figure, soft white clay rabbit face, small unadorned facial features, terracotta-red and muted turquoise robe, simplified clay hands and feet, and a plain low clay base. No real person is portrayed.\nVisual construction: tactile matte clay, tiny handmade irregularities, restrained original colour blocks and a few simple curved accents, broad readable shapes. Do not reproduce Yang Feng's individual works, his distinctive spring-character face design, spring-name seals or poetry. Do not relabel a recognisable Beijing Tu'er Ye product as Jinan. No tiger mount, branded mascot or elaborate royal iconography.\nComposition and style: one complete figurine in a gentle three-quarter view on a warm ivory paper ground, large quiet margins, soft small grounding shadow. Contemporary gouache-and-clay editorial illustration with visible material grain, not glossy plastic, souvenir advertising, documentary product photography or a museum display. The design is an imagined topic illustration, not evidence of the exact local sculpting process or a maker's authentic piece. No magical healing or religious-effect depiction.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+  "startedAt": "2026-11-02T02:46:14.676Z",
+  "finishedAt": "2026-11-02T02:46:44.052Z",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nPrimary request: ONE original painted-clay figurine inspired by the Jinan Tuzi Wang theme. The figure must clearly have a RABBIT FACE with two upright ears and a HUMAN-BODIED robed silhouette, not a natural rabbit or generic plush bunny. Create a new simple rounded seated figure, soft white clay rabbit face, small unadorned facial features, terracotta-red and muted turquoise robe, simplified clay hands and feet, and a plain low clay base. No real person is portrayed.\nVisual construction: tactile matte clay, tiny handmade irregularities, restrained original colour blocks and a few simple curved accents, broad readable shapes. Do not reproduce Yang Feng's individual works, his distinctive spring-character face design, spring-name seals or poetry. Do not relabel a recognisable Beijing Tu'er Ye product as Jinan. No tiger mount, branded mascot or elaborate royal iconography.\nComposition and style: one complete figurine in a gentle three-quarter view on a warm ivory paper ground, large quiet margins, soft small grounding shadow. Contemporary gouache-and-clay editorial illustration with visible material grain, not glossy plastic, souvenir advertising, documentary product photography or a museum display. The design is an imagined topic illustration, not evidence of the exact local sculpting process or a maker's authentic piece. No magical healing or religious-effect depiction.\nOutput: ONE standalone native horizontal 3:2 artwork, ideally 1536x1024. No UI, poster, map, collage board or multiple panels. Keep all essential objects fully inside generous margins. No real people, faces, portraits or human hands. No readable text, Chinese characters, letters, numbers, pseudo-writing, inscriptions, seals, signature, brand, logo or watermark. Invent the design rather than copying any specific artist's existing work, museum object, trademarked product, photograph or verified craft-process diagram. This is AI creative editorial illustration, not documentation.",
+      "startedAt": "2026-11-02T02:46:14.676Z",
+      "finishedAt": "2026-11-02T02:46:44.052Z",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2268602,
+  "sha256": "6c2e6b3c27d2093de91e6c7dacc48647b597fade6e29571640650d9d5ef73239",
+  "sourceRecordSha256": "b0a84a53f0295c062a4d9c50daa80132fbbd0a4f55627b713835736665b9be99",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

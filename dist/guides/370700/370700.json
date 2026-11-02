@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370700",
+  "city": "潍坊",
+  "deliveryStatus": "ready",
+  "route": "#/city/370700",
+  "topic": {
+    "name": "泥塑（聂家庄泥塑）",
+    "location": "山东省潍坊市高密市姜庄镇聂家庄",
+    "category": "传统美术",
+    "intro": "从一只泥叫虎，走近潍坊高密的泥塑手艺。",
+    "sources": [
+      "wf-project",
+      "wf-report"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370700",
+    "label": "AI意境图",
+    "entryLabel": "走近聂家庄泥塑"
+  },
+  "visual": {
+    "signature": "weifang-clay-print-archive",
+    "layout": "archive",
+    "description": "沿用现有藤黄、黑红绿抽象套色首屏，正文以浅印纸阅读面和朱红节奏承接；抽象画与泥塑项目分别说明身份。",
+    "composition": "正式项目名居中建立身份，八项档案先行；正文按物件、形色与发声、共同传习展开。观察词“看形、看色、听声”只作文字，不伪装播放控件。与淄博区别来自套色首屏的高密度到档案的停顿、朱红章首与三种观察顺序；窄屏档案转单列。暂无获准新图，不留空框。",
+    "palette": {
+      "paper": "#fbf4df",
+      "ink": "#2b2520",
+      "muted": "#66594e",
+      "accent": "#9b3028",
+      "rule": "#d3b886"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "项目序号",
+      "value": "346",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "项目编号",
+      "value": "Ⅶ-47",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "公布时间",
+      "value": "2008年（第二批）",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统美术",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "所属地区",
+      "value": "山东省",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "类型",
+      "value": "扩展项目",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "申报地区或单位",
+      "value": "山东省高密市",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "label": "保护单位",
+      "value": "高密市公共文化服务中心",
+      "sources": [
+        "wf-project"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "一只泥玩具，不只有外形",
+      "paragraphs": [
+        "聂家庄泥塑与潍坊高密的乡土生活相连，泥叫虎是其中的代表形象之一。认识这门手艺，可以同时留意造型、彩绘，以及部分泥玩具可动、可发声的结构，而不只把它当成静止摆件。"
+      ],
+      "sources": [
+        "wf-project",
+        "wf-report"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "看形、看色，也留意声音",
+      "paragraphs": [
+        "2023年工坊报道记录了泥坯成形、修整、装哨和彩绘等环节。报道中的叫虎以柔性材料连接前后部分，推拉可以发声；这不代表所有泥塑都有同样结构。观察它，可以先看圆实轮廓，再看色块怎样突出面部和胸部。"
+      ],
+      "sources": [
+        "wf-report",
+        "wf-project"
+      ],
+      "media": []
+    },
+    {
+      "id": "people",
+      "title": "从个人手艺走向共同传习",
+      "paragraphs": [
+        "官方聂希蔚人物条目记录了创作与授艺经历。2023年的工坊案例还介绍了培训、合作研发和线上销售：物件背后也有人学习、制作和谋生的生活。这些是当时的记录，不把旧人数、产值或人物年龄当作今天的数据。"
+      ],
+      "sources": [
+        "wf-person",
+        "wf-workshop"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "泥叫虎和聂家庄泥塑是什么关系？",
+      "body": "泥叫虎是聂家庄泥塑的代表形象之一；正式项目名称是“泥塑（聂家庄泥塑）”，不是全项目只制作老虎。",
+      "kind": "fact",
+      "sources": [
+        "wf-project",
+        "wf-workshop"
+      ]
+    },
+    {
+      "title": "泥做的老虎为什么能够发声？",
+      "body": "2023年报道中的叫虎有柔性连接与内部发声结构，推拉时会响。不能只凭照片认定某件泥虎也一定能响。",
+      "kind": "fact",
+      "sources": [
+        "wf-report"
+      ]
+    },
+    {
+      "title": "这个项目何时进入国家级名录？",
+      "body": "官方项目页记载为2008年第二批，类型为扩展项目，类别为传统美术。项目公布批次与传承人认定批次不能混用。",
+      "kind": "fact",
+      "sources": [
+        "wf-project"
+      ]
+    },
+    {
+      "title": "聂家庄泥塑只有老虎一种造型吗？",
+      "body": "不是。2023年工坊案例还介绍了摇猴、抱鱼娃等品类。泥叫虎只是本专题的观察入口。",
+      "kind": "fact",
+      "sources": [
+        "wf-workshop"
+      ]
+    },
+    {
+      "title": "可以从哪些资料了解传习与生活？",
+      "body": "可以从聂希蔚人物条目了解授艺记录，再读2023年工坊案例中的培训与研发实践。本固定导览不提供实时预约、销量或价格。",
+      "kind": "fact",
+      "sources": [
+        "wf-person",
+        "wf-workshop"
+      ]
+    }
+  ],
+  "sources": {
+    "wf-project": {
+      "title": "中国非遗网：泥塑（聂家庄泥塑）",
+      "short": "国家级项目档案",
+      "url": "https://www.ihchina.cn/project_details/14046",
+      "kind": "official",
+      "supports": "正式名称、八项项目档案、高密地域和项目形态；不证明单件作品身份，不将据传起源及旧现状当作2026年事实。",
+      "checkedAt": "2026-11-01"
+    },
+    "wf-person": {
+      "title": "中国非遗网：聂希蔚",
+      "short": "聂希蔚人物条目",
+      "url": "https://www.ihchina.cn/ccr_detail/2795.html",
+      "kind": "official",
+      "supports": "代表性传承人的创作与授艺记录；不推断当前在世、健康或授课状态，也不证明画中作品由其亲制。",
+      "checkedAt": "2026-11-01"
+    },
+    "wf-workshop": {
+      "title": "中国非遗网：聂家庄泥塑工坊典型案例",
+      "short": "2023年工坊案例",
+      "url": "https://www.ihchina.cn/character_detail/26806.html",
+      "kind": "official",
+      "supports": "2023年记录的泥塑品类、培训、研发与经营方式，不作为2026年实时统计。",
+      "checkedAt": "2026-11-01"
+    },
+    "wf-report": {
+      "title": "中国非遗网转载人民日报：非遗工坊——老手艺绽放新魅力",
+      "short": "2023年山东工坊报道",
+      "url": "https://www.ihchina.cn/art/detail/id/27510.html",
+      "kind": "media",
+      "supports": "仅使用山东聂家庄泥塑段：潍坊高密联系、报道所见制作与叫虎发声结构，不引用前段陕西刺绣为潍坊事实。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370700-body-b-revised.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：红黄绿套色风格的圆眼泥虎与花朵，额头为分离圆点。",
+      "caption": "泥虎与花 · AI跨媒介创意插画，借用木版套色视觉，不代表泥塑采用木版工艺，非聂希蔚作品。",
+      "width": 1672,
+      "height": 941,
+      "sha256": "243149efbf769a7cf72a1d0fa30e1a6c5167768ef5e547905bb2ad375ba77988",
+      "record": "records/370700-body-b-revised.md",
+      "recordSha256": "4726d3ae84bf1d52497b651bd2e9abea9e7573c5db693a9f0d06aab6e5b45921",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1918c-cfc8-7773-a282-eee1f74f6949",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "3fe3bc41e7a8d0c67c8e415ddaf0d74fc99196f544158e7fce050b86db28a88f"
+    }
+  ],
+  "unresolved": []
+}

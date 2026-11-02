@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370700",
+  "objectId": "wf-object-gaomi-maoqiang",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an interactive expanding screen about Gaomi Maoqiang local opera, Weifang, Shandong.\n\nCreate an imagined, unoccupied folk-opera stage as a poetic visual metaphor, not a depiction of any real venue, performer, historical play, historical costume or event. In the center, a graceful folded embroidered opera robe with long flowing sleeves is displayed beside a small bowed Chinese opera fiddle and a modest drum, with an arched crimson curtain behind. The scene should read as theatrical stage imagery without showing any real or imaginary person's face, body or silhouette. Costume ornament is invented and must not imply documented exclusive Maoqiang clothing.\nComposition: centered compact arrangement, with the folded sleeve, instrument and curtain concentrated in the middle 30–35% of a wide horizontal frame; looks good both at full width and inside a narrow centered accordion crop. Keep enough room around the main forms. Use original layered-paper and subtle woodblock print textures, restrained indigo, deep cinnabar, faded gold and ivory; a theatrical, elegant contrast of light and shadow. The image must be an artistic illustration, not a photograph, poster or webpage.\nConstraints: no people, actors, likenesses, faces, actual theatres, copyrighted stage imagery, script, lyrics, musical notation, words, Chinese characters, numbers, labels, logo, signature, seal, watermark or border. The objects and setting are invented and are not evidence of a particular opera costume or performance.",
+  "startedAt": "2026-11-02T09:57:44.216+08:00",
+  "finishedAt": "2026-11-02T09:58:15.374+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an interactive expanding screen about Gaomi Maoqiang local opera, Weifang, Shandong.\n\nCreate an imagined, unoccupied folk-opera stage as a poetic visual metaphor, not a depiction of any real venue, performer, historical play, historical costume or event. In the center, a graceful folded embroidered opera robe with long flowing sleeves is displayed beside a small bowed Chinese opera fiddle and a modest drum, with an arched crimson curtain behind. The scene should read as theatrical stage imagery without showing any real or imaginary person's face, body or silhouette. Costume ornament is invented and must not imply documented exclusive Maoqiang clothing.\nComposition: centered compact arrangement, with the folded sleeve, instrument and curtain concentrated in the middle 30–35% of a wide horizontal frame; looks good both at full width and inside a narrow centered accordion crop. Keep enough room around the main forms. Use original layered-paper and subtle woodblock print textures, restrained indigo, deep cinnabar, faded gold and ivory; a theatrical, elegant contrast of light and shadow. The image must be an artistic illustration, not a photograph, poster or webpage.\nConstraints: no people, actors, likenesses, faces, actual theatres, copyrighted stage imagery, script, lyrics, musical notation, words, Chinese characters, numbers, labels, logo, signature, seal, watermark or border. The objects and setting are invented and are not evidence of a particular opera costume or performance.",
+      "startedAt": "2026-11-02T09:57:44.216+08:00",
+      "finishedAt": "2026-11-02T09:58:15.374+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1916,
+  "height": 821,
+  "bytes": 2925014,
+  "sha256": "c5cd28f8ba9ef30f838aabdb61405fa536b17b734669c0ea18eb1cba32acc3eb",
+  "sourceRecordSha256": "e5467be20a7def61b765a525120197b3ce8d26c80dc0a8fe570410a82fe4039b",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

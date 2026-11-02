@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v1",
+  "cityId": "370400",
+  "objectId": "luban-lock",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: one original AI cultural illustration for an interactive expanding panel about the Luban interlocking wooden puzzle associated with Tengzhou, Zaozhuang, Shandong.\n\nShow one invented three-dimensional, compact interlocking wooden puzzle at rest: a cross-like assembly of several rectangular wooden bars meeting at right angles, with warm natural wood grain and clearly distinguishable overlapping ends. It should read as a wooden puzzle object, not as a lock with a keyhole. It is an imaginative visual metaphor, not a copy of a real puzzle, not evidence that its exact assembly is functional, and not an instructional assembly diagram.\nComposition: a single object centered within a wide horizontal frame, with its central intersection and arms occupying the middle 30% of image width. Gentle surrounding negative space, small shadows, quiet workshop-inspired texture but no actual workshop or tools; sufficient detail to read as interlocking solid wood on a narrow center-cropped accordion panel. Editorial cut-paper and matte pigmented wood-grain illustration, rather than photoreal product shot, in tawny honey wood, ink-brown, muted terracotta and cream. Compose differently from a floral wood carving.\nConstraints: no people, hands, maker, wood tools, disassembly steps, exploded diagram, historical figure or scene. No text, characters, numbers, seals, logo, watermark, frame or interface. Fictional forms only, not a real person's work or exact historical design.",
+  "startedAt": "2026-11-02T10:10:18.213+08:00",
+  "finishedAt": "2026-11-02T10:10:48.283+08:00",
+  "width": 1774,
+  "height": 887,
+  "sha256": "d6e017c3c6a269e91854f6aefbd3aecf2851723657b53fd2a8ebec16dc7ac86a",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

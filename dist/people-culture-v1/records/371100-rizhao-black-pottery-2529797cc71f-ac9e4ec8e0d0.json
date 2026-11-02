@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371100",
+  "objectId": "rizhao-black-pottery",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create one original horizontal editorial illustration for the body of an article about Rizhao black pottery, Shandong, as a fictional modern artistic interpretation. The image is not a photograph of a real object, historic artifact, museum piece, real maker's work, authentic process or site, and must not copy a known pottery work.\n\nVISUAL DIRECTION B — matte charcoal paper-cut collage with fine grain and refined woodblock-inspired flat shapes, a DIFFERENT medium and spatial structure from water-ink painting. On a soft stone-white field, use a large asymmetrical vertical plane of near-black at one side and an invented dark charcoal vessel in three-quarter view slightly away from center. The pottery silhouette is simple and modern with a low oval body and a short understated rim, with restrained smoky highlights to define the material; add just one pale arc or shadow for contrast. Keep an editorial, spacious, graphic composition and a limited palette of black, slate grey, warm ivory and a trace of muted mineral blue. No animal motifs or reddish-orange pottery, and avoid warm terracotta craft motifs. Do not resemble a specific archaeological specimen: no egg-shell stem cup, long-stem goblet, perforated foot or recognizable ancient ritual object. Keep the entire vessel uncropped and easy to identify when the whole image is fitted on a phone screen. Horizontal image.\n\nNo people, hands, making, kiln, tools, actual work scene, scenic landmark, elaborate ornament, labels, writing, Chinese characters, letters, numbers, logos, stamps, signatures, watermark, borders or frame.",
+  "startedAt": "2026-11-02T00:13:50.739+08:00",
+  "finishedAt": "2026-11-02T00:18:58.116+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create one original horizontal editorial illustration for the body of an article about Rizhao black pottery, Shandong, as a fictional modern artistic interpretation. The image is not a photograph of a real object, historic artifact, museum piece, real maker's work, authentic process or site, and must not copy a known pottery work.\n\nVISUAL DIRECTION B — matte charcoal paper-cut collage with fine grain and refined woodblock-inspired flat shapes, a DIFFERENT medium and spatial structure from water-ink painting. On a soft stone-white field, use a large asymmetrical vertical plane of near-black at one side and an invented dark charcoal vessel in three-quarter view slightly away from center. The pottery silhouette is simple and modern with a low oval body and a short understated rim, with restrained smoky highlights to define the material; add just one pale arc or shadow for contrast. Keep an editorial, spacious, graphic composition and a limited palette of black, slate grey, warm ivory and a trace of muted mineral blue. No animal motifs or reddish-orange pottery, and avoid warm terracotta craft motifs. Do not resemble a specific archaeological specimen: no egg-shell stem cup, long-stem goblet, perforated foot or recognizable ancient ritual object. Keep the entire vessel uncropped and easy to identify when the whole image is fitted on a phone screen. Horizontal image.\n\nNo people, hands, making, kiln, tools, actual work scene, scenic landmark, elaborate ornament, labels, writing, Chinese characters, letters, numbers, logos, stamps, signatures, watermark, borders or frame.",
+      "startedAt": "2026-11-02T00:13:50.739+08:00",
+      "finishedAt": "2026-11-02T00:18:58.116+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1672,
+  "height": 940,
+  "bytes": 2628609,
+  "sha256": "2529797cc71f5f3d9f852a65b58cb1ab251b719eeae6f2cf0c187a05b1daf447",
+  "sourceRecordSha256": "2a15965c96775ae1c51bc51a1c404c05767933c2b037fb9f8294dcda18c24548",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

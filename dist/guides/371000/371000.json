@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "cityId": "371000",
+  "city": "威海",
+  "deliveryStatus": "ready",
+  "route": "#/city/371000",
+  "topic": {
+    "name": "威海锡镶制作工艺",
+    "location": "山东省威海市环翠区",
+    "category": "传统技艺",
+    "intro": "从器物上的金属纹饰，认识底胎与镶饰相遇的手艺。",
+    "sources": [
+      "wh-register",
+      "wh-craft"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "371000",
+    "label": "AI意境图",
+    "entryLabel": "走近威海锡镶"
+  },
+  "visual": {
+    "signature": "weihai-tin-clay-archive",
+    "layout": "archive",
+    "description": "沿用“锡镶茶韵”深石墨、紫褐与手绘银纹的首屏。阅读面承接深石板色，以浅银白文字与暖锡色强调；这是本市局部夜色材料关系，不覆盖地图或其他城市。",
+    "composition": "居中正式身份后，以七项有层级标识的市级档案停顿；技艺阅读保留窄栏目名与宽正文，正文明确拆成“先看底胎、再看贴合”的连续两段，随后转人物与学生实践。与潍坊的玩具形色/发声观察不同，威海围绕器物曲面与纹饰接合，材质纹样只在首屏，不给长文铺花纹，不伪造爆炸图。手机档案单列，两种观察保持先后，深色阅读和键盘焦点需实看。",
+    "palette": {
+      "paper": "#242b30",
+      "ink": "#f3eee5",
+      "muted": "#c9c6bf",
+      "accent": "#e1ba78",
+      "rule": "#556067"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "已核名录记录",
+      "value": "2008年第二批市级非物质文化遗产名录",
+      "sources": [
+        "wh-register"
+      ]
+    },
+    {
+      "label": "市级正式名称",
+      "value": "威海锡镶制作工艺",
+      "sources": [
+        "wh-register"
+      ]
+    },
+    {
+      "label": "市级项目编号",
+      "value": "Ⅷ―1（本市名录编号，非国家级编号）",
+      "sources": [
+        "wh-register"
+      ]
+    },
+    {
+      "label": "类别",
+      "value": "传统技艺",
+      "sources": [
+        "wh-register"
+      ]
+    },
+    {
+      "label": "申报地区",
+      "value": "环翠区",
+      "sources": [
+        "wh-register"
+      ]
+    },
+    {
+      "label": "通知日期",
+      "value": "2008年12月4日",
+      "sources": [
+        "wh-register"
+      ]
+    },
+    {
+      "label": "通知文号",
+      "value": "威政发〔2008〕57号",
+      "sources": [
+        "wh-register"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "一件器物，两种材料相遇",
+      "paragraphs": [
+        "威海锡镶把金属纹饰与器物结合。文旅部门介绍的茶具以锡合金作镶饰，底胎可为宜兴紫砂茶具或博山茶花具；认识它，先把底胎与表面装饰分开看，而不是把整件器物理解为纯锡铸成。"
+      ],
+      "sources": [
+        "wh-craft"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "craft",
+      "title": "先看底胎，再看纹饰怎样贴合",
+      "paragraphs": [
+        "先看底胎：茶壶的嘴、身、盖等部位具有不同曲面，为纹饰提供不同位置。文旅资料介绍的底胎联系着宜兴紫砂与博山茶花具，威海的锡镶则为它们加上金属纹饰。",
+        "再看贴合：金属图案经制作后，要顺应器物弧度连接、固定并打光。沿着曲面的转折，可以观察纹饰与器物的关系；欣赏装饰并不能代替对具体器物材质和使用条件的确认。"
+      ],
+      "sources": [
+        "wh-craft"
+      ],
+      "media": []
+    },
+    {
+      "id": "people",
+      "title": "从工作室的敲击，到学生的体验",
+      "paragraphs": [
+        "2023年报道记录了李江玉的制作，以及杜佳慧尝试不同载体的探索。同年教育部门还记录了学生亲手体验錾刻的活动。工作室里的敲击声，也把一门手艺与当代的学习、交流联系在一起。"
+      ],
+      "sources": [
+        "wh-story",
+        "wh-education"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "锡镶茶壶是不是整把壶都用锡做的？",
+      "body": "不是。文旅资料介绍的是把锡合金纹饰镶在紫砂或其他茶花具底胎上；底胎与金属装饰需要分别认识。",
+      "kind": "fact",
+      "sources": [
+        "wh-craft"
+      ]
+    },
+    {
+      "title": "锡镶只能用于茶壶吗？",
+      "body": "不是。文旅部门还介绍其他生活用品；2023年报道也记录了书签、笔筒等载体，不宜以一种壶型概括全部锡镶。",
+      "kind": "fact",
+      "sources": [
+        "wh-craft",
+        "wh-story"
+      ]
+    },
+    {
+      "title": "欣赏锡镶时，可以留意什么？",
+      "body": "可以先区分底胎与金属纹饰，再看图案怎样沿壶身等曲面贴合，以及连接与打光后的整体关系。若用于饮用，还应单独确认具体器物的材质和使用条件。",
+      "kind": "fact",
+      "sources": [
+        "wh-craft"
+      ]
+    },
+    {
+      "title": "纹饰通常安排在茶壶的哪些部位？",
+      "body": "文旅部门介绍，壶嘴、壶身、壶盖、壶颈等处可以安排镶饰。不同部位的弧度不同，观察时可以留意纹饰怎样顺着器形展开。",
+      "kind": "fact",
+      "sources": [
+        "wh-craft"
+      ]
+    },
+    {
+      "title": "有没有面向学生的学习记录？",
+      "body": "有。威海市教育局2023年研学记录提到学生体验锡镶錾刻；它是当时的学习案例，不是当前课程、开放时间或预约保证。",
+      "kind": "fact",
+      "sources": [
+        "wh-education"
+      ]
+    }
+  ],
+  "sources": {
+    "wh-register": {
+      "title": "威海市人民政府关于公布第二批市级非物质文化遗产名录的通知",
+      "short": "2008年市级正式名录",
+      "url": "https://www.weihai.gov.cn/art/2008/12/4/art_103284_15538.html",
+      "kind": "official",
+      "supports": "威政发〔2008〕57号、2008-12-04、市级第二批、正式名称威海锡镶制作工艺、市级编号Ⅷ―1、传统技艺与环翠区申报；不提供国家级身份或省级编号，也未列保护单位。",
+      "checkedAt": "2026-11-01"
+    },
+    "wh-craft": {
+      "title": "威海市文化和旅游局：威海非遗—锡镶技艺",
+      "short": "文旅部门技艺介绍",
+      "url": "https://wlj.weihai.gov.cn/art/2017/2/7/art_13688_873882.html",
+      "kind": "official",
+      "supports": "锡合金纹饰、宜兴紫砂/博山茶花具底胎、部位及沿曲面连接固定打光、其他载体；不证明单件作品身份、纯锡成分或食品接触安全。",
+      "checkedAt": "2026-11-01"
+    },
+    "wh-story": {
+      "title": "威海日报：威海锡镶：百年技艺 万物可“锡”",
+      "short": "2023年人物与载体记录",
+      "url": "https://sdxw.iqilu.com/share/YS0yMS0xNTAyMTAxNw%3D%3D.html",
+      "kind": "media",
+      "supports": "2023年李江玉制作、杜佳慧参与创新及生活载体的记录；不延用旧人数、销量、年龄、专利或当年计划，不把照片公开当作复用许可。",
+      "checkedAt": "2026-11-01"
+    },
+    "wh-education": {
+      "title": "威海市教育局：寻古非遗，讲读东方——实践中心开展非遗研学实践教育活动",
+      "short": "2023年学生研学记录",
+      "url": "https://jyj.weihai.gov.cn/art/2023/12/13/art_54133_4193088.html",
+      "kind": "official",
+      "supports": "2023年学生锡镶錾刻体验，文中对2009年省级的说明；并非省级正式名录附件，不证明今日可预约或国家级身份。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/371000-body-b.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：蓝色纸质场景中带银色花枝纹饰的茶壶。",
+      "caption": "锡线浮光 · AI虚构器物，非威海锡镶实物、工序照片或材料安全证明。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f840aaddba35ccd4e0503ca588cb02915308dccb2b19342b699e00ea953eaf3f",
+      "record": "records/371000-body-b.md",
+      "recordSha256": "c06e6efe1db513a7d28593db25151ee836bcd36dcd087b4ebd9ef903611fb86a",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "ea77317ff64737b23d5eb9e34d3341863a1d80aca7219fab28dbf333dfaa52a4"
+    }
+  ],
+  "unresolved": []
+}

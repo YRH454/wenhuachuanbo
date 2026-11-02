@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371000",
+  "objectId": "wh-object-fishing-net-mending",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for “荣成渔网修补” (the subject of fishing-net repair). Show an imaginative, unoccupied worktable still life: a small open section of blue-grey fishing net with clearly visible diamond meshes and loose net cord, beside a single simple wooden netting shuttle carrying cord, arranged together close to the center. Include a restrained suggestion of maritime atmosphere through indigo shadows and natural off-white textured paper; use refined hand-painted gouache, ink and woodcut textures, elegant and tactile rather than photorealistic. The net and shuttle should visibly read as fishing equipment, NOT golden straw braid, a basket, woven textile, loom or sewing machine. This is an original AI illustration, not a specific craftsperson's work, actual equipment, real port, a repair procedure, or a usable knot-tying or fishing-safety tutorial; do not imply the generated mesh or tool is technically accurate. No hands, people, labels, letters, numbers, knots diagram, arrows, diagrams, branding, seals, watermarks, frames or multiple panels. Keep the recognizable net and shuttle grouped centrally for a narrow crop.",
+  "startedAt": "2026-11-02T10:55:21.873+08:00",
+  "finishedAt": "2026-11-02T10:55:52.154+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original wide horizontal 3:2 editorial illustration for “荣成渔网修补” (the subject of fishing-net repair). Show an imaginative, unoccupied worktable still life: a small open section of blue-grey fishing net with clearly visible diamond meshes and loose net cord, beside a single simple wooden netting shuttle carrying cord, arranged together close to the center. Include a restrained suggestion of maritime atmosphere through indigo shadows and natural off-white textured paper; use refined hand-painted gouache, ink and woodcut textures, elegant and tactile rather than photorealistic. The net and shuttle should visibly read as fishing equipment, NOT golden straw braid, a basket, woven textile, loom or sewing machine. This is an original AI illustration, not a specific craftsperson's work, actual equipment, real port, a repair procedure, or a usable knot-tying or fishing-safety tutorial; do not imply the generated mesh or tool is technically accurate. No hands, people, labels, letters, numbers, knots diagram, arrows, diagrams, branding, seals, watermarks, frames or multiple panels. Keep the recognizable net and shuttle grouped centrally for a narrow crop.",
+      "startedAt": "2026-11-02T10:55:21.873+08:00",
+      "finishedAt": "2026-11-02T10:55:52.154+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3894337,
+  "sha256": "cd65346ef47b266ef6204432d5e68e06636853f3662a7772ad5440981684cf35",
+  "sourceRecordSha256": "85b1519bc6ea5f645256fc73c5d36b481788c01d6039db9a750fcd3941786cd8",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

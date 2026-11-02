@@ -1,0 +1,62 @@
+/* XIAOQI-COMPANION-v1: free silhouette; motion is isolated from the map. */
+.xiaoqi{position:fixed;inset:0;z-index:40;pointer-events:none;color:var(--ink)}
+.xiaoqi-actor{position:absolute;top:0;left:0;width:128px;pointer-events:auto}
+.xiaoqi-launcher{display:flex;flex-direction:column;align-items:center;gap:4px;width:100%;min-height:0;padding:0;border:0;border-radius:2px;background:transparent;color:var(--ink);cursor:grab;touch-action:none;user-select:none}
+.xiaoqi-launcher:hover,.xiaoqi-launcher[aria-expanded=true]{background:transparent;color:var(--ink)}
+.xiaoqi[data-dragging=true] .xiaoqi-launcher{cursor:grabbing}
+.xiaoqi-sway{display:block;width:112px;height:112px;transform-origin:50% 72%;pointer-events:none}
+.xiaoqi-launcher img{display:block;width:112px;height:112px;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.xiaoqi-name{display:flex;align-items:center;gap:7px;padding:3px 9px;border:1px solid var(--line);border-radius:2px;background:var(--paper);font-size:15px;font-weight:500;line-height:1.6;white-space:nowrap}
+.xiaoqi-name>span{font-size:12px;font-weight:400;color:var(--muted)}
+.xiaoqi-companion-controls{display:flex;justify-content:center;gap:2px;margin-top:3px;background:var(--paper);border-radius:2px}
+.xiaoqi-companion-controls button{flex:1;min-width:44px;min-height:44px;padding:5px 6px;border:0;background:transparent;color:var(--ink);font-size:12px}
+.xiaoqi-companion-controls button:hover{background:#e5ece6}
+.xiaoqi-companion-controls button[aria-pressed=true]{background:#e5ece6;color:var(--ink)}
+.xiaoqi-companion-controls button:disabled{cursor:default;color:var(--muted)}
+.xiaoqi-greeting{position:absolute;right:0;bottom:calc(100% + 12px);width:208px;padding:12px 15px;border:1px solid var(--line);border-radius:4px;background:var(--paper);font-size:15px;line-height:1.7;pointer-events:none}
+.xiaoqi[data-side=left] .xiaoqi-greeting{left:0;right:auto}
+.xiaoqi[data-greeting-below=true] .xiaoqi-greeting{top:calc(100% + 12px);bottom:auto}
+.xiaoqi-restore{position:absolute;top:var(--xiaoqi-restore-y,60%);right:0;min-width:44px;min-height:76px;padding:12px 10px;border:1px solid var(--line);border-right:0;border-radius:4px 0 0 4px;background:var(--paper);color:var(--ink);writing-mode:vertical-rl;font-size:14px;letter-spacing:.12em;pointer-events:auto}
+.xiaoqi[data-side=left] .xiaoqi-restore{right:auto;left:0;border-left:0;border-right:1px solid var(--line);border-radius:0 4px 4px 0}
+.xiaoqi-panel{position:absolute;left:12px;top:12px;width:min(360px,calc(100% - 24px));max-height:calc(100svh - 24px);max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain;background:var(--paper);border:1px solid var(--line);border-radius:4px;box-shadow:0 8px 28px rgb(23 62 72 / .16);text-align:start;pointer-events:auto}
+.xiaoqi-panel-header{position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:10px 14px 10px 24px;border-bottom:1px solid var(--line);background:var(--paper)}
+.xiaoqi-panel-header h2{font-size:16px;font-weight:500;line-height:1.6}
+.xiaoqi-panel-header h2:focus-visible{outline:2px solid var(--focus);outline-offset:5px}
+.xiaoqi-close{display:grid;place-items:center;flex:0 0 44px;width:44px;min-height:44px;padding:10px;border:0;border-radius:2px;background:transparent;color:var(--ink)}
+.xiaoqi-close:hover{background:#e5ece6}
+.xiaoqi-close svg,.xiaoqi-primary svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.xiaoqi-welcome{padding:24px 24px 12px}
+.xiaoqi-portrait{display:block;width:112px;height:112px;margin:0 auto 18px;object-fit:contain}
+.xiaoqi-welcome h3{font-family:"Zibo Display","Songti SC",SimSun,serif;font-size:28px;font-weight:400;line-height:1.5;text-wrap:balance}
+.xiaoqi-intro{margin-top:10px;font-size:16px;line-height:1.8}
+.xiaoqi-context{margin-top:24px;margin-bottom:10px;color:var(--muted);font-size:14px;line-height:1.7;overflow-wrap:anywhere}
+.xiaoqi-primary{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;min-height:48px;padding:10px 14px;border:1px solid var(--ink);border-radius:2px;background:var(--ink);color:var(--paper);font-size:15px;text-align:start}
+.xiaoqi-primary:hover{background:var(--primary);color:var(--on-ink)}
+.xiaoqi-primary:disabled{cursor:not-allowed;border-color:var(--line);background:#e5ece6;color:var(--muted)}
+.xiaoqi-map{display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:6px;font-size:14px;text-decoration:none}
+.xiaoqi-map:hover{text-decoration:underline}
+.xiaoqi-availability{padding:16px 24px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.8}
+.xiaoqi-panel-settings{display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px;padding:0 20px 12px}
+.xiaoqi-panel-settings button{min-height:44px;padding:6px 8px;border:0;background:transparent;color:var(--primary);font-size:13px;text-decoration:underline}
+.xiaoqi-panel-settings span{font-size:12px;color:var(--muted)}
+@media(max-width:1179px){body[data-view=map] #map-view{padding-bottom:196px}}
+@media(max-width:700px){
+  .xiaoqi-actor{width:108px}
+  .xiaoqi-sway,.xiaoqi-launcher img{width:88px;height:88px}
+  .xiaoqi-name{gap:5px;padding:3px 6px;font-size:14px}
+  .xiaoqi-name>span{font-size:11px}
+  .xiaoqi-greeting{width:188px;font-size:14px}
+  .xiaoqi-panel-header{min-height:60px;padding-inline:20px 10px}
+  .xiaoqi-welcome{padding:20px 20px 10px}
+  .xiaoqi-portrait{width:88px;height:88px;margin-bottom:14px}
+  .xiaoqi-welcome h3{font-size:25px}
+  .xiaoqi-context{margin-top:20px}
+  .xiaoqi-availability{padding:14px 20px 16px}
+}
+@media(forced-colors:active){
+  .xiaoqi-panel,.xiaoqi-panel-header,.xiaoqi-primary,.xiaoqi-name,.xiaoqi-companion-controls,.xiaoqi-greeting,.xiaoqi-restore{background:Canvas;color:CanvasText;border-color:CanvasText;box-shadow:none}
+  .xiaoqi-launcher{background:transparent;color:CanvasText}
+  .xiaoqi-context,.xiaoqi-availability{color:CanvasText}
+  .xiaoqi-close{color:ButtonText}
+  .xiaoqi-primary:disabled{color:GrayText}
+}

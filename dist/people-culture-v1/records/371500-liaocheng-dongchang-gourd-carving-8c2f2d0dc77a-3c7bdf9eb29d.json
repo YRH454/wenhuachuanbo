@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371500",
+  "objectId": "liaocheng-dongchang-gourd-carving",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: optional AI creative illustration for a Liaocheng cultural feature article, shown in full landscape proportion on desktop and mobile; not a webpage or a city-entry background.\nPrimary request: Create an original imaginative double-gourd and canal illustration for the Dongchang gourd-carving cultural topic, expressed as warm gourd-shell-colored incised and layered-paper relief. It must not represent any particular real artifact, museum object, named craftsperson's work, historic artwork, real site, or production method.\nComposition: Put one whole tall double-gourd shape slightly left of center, clearly showing its two lobes and stem, with generous space around the silhouette. Use a calm asymmetrical arrangement different from an ink-wash still life: the gourd's invented flowing linework and a compact, abstract canal curve are interleaved with shallow layered-paper forms to the right. The water curve is symbolic and not a map. The entire drawing should remain easy to read when the whole landscape image is scaled down on mobile.\nMedium and palette: Illustration-like tactile relief made from matte warm ochre, honey-shell, pale sand and restrained muted dark-ink-green paper layers; gently incised organic lines and a few original botanical motifs, shallow cut-paper depth, delicate edge shadows, quiet cultural-art editorial quality. The surface pattern is pure invention and should not replicate a known work. Make the difference from ink wash obvious. Avoid a glossy 3D product photograph.\nConstraints: The imaginary decorations and relief are not historical designs, an example of any artisan's work, or evidence of actual gourd-carving technique. No humans, hands, tools, workshop, real landmarks, real canal map, historical reconstruction, text in any language, characters, numbers, calligraphy, seal, signature, logo, watermark, frame, webpage, or interface. No reed-weaving strips, basket, tiger, or bright patchwork waves.",
+  "startedAt": "2026-11-01T23:25:43+08:00",
+  "finishedAt": "2026-11-01T23:27:50+08:00",
+  "generationDate": null,
+  "timePrecision": "原记录时间及偏移原样保留；本轮复制不是重新生成",
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: optional AI creative illustration for a Liaocheng cultural feature article, shown in full landscape proportion on desktop and mobile; not a webpage or a city-entry background.\nPrimary request: Create an original imaginative double-gourd and canal illustration for the Dongchang gourd-carving cultural topic, expressed as warm gourd-shell-colored incised and layered-paper relief. It must not represent any particular real artifact, museum object, named craftsperson's work, historic artwork, real site, or production method.\nComposition: Put one whole tall double-gourd shape slightly left of center, clearly showing its two lobes and stem, with generous space around the silhouette. Use a calm asymmetrical arrangement different from an ink-wash still life: the gourd's invented flowing linework and a compact, abstract canal curve are interleaved with shallow layered-paper forms to the right. The water curve is symbolic and not a map. The entire drawing should remain easy to read when the whole landscape image is scaled down on mobile.\nMedium and palette: Illustration-like tactile relief made from matte warm ochre, honey-shell, pale sand and restrained muted dark-ink-green paper layers; gently incised organic lines and a few original botanical motifs, shallow cut-paper depth, delicate edge shadows, quiet cultural-art editorial quality. The surface pattern is pure invention and should not replicate a known work. Make the difference from ink wash obvious. Avoid a glossy 3D product photograph.\nConstraints: The imaginary decorations and relief are not historical designs, an example of any artisan's work, or evidence of actual gourd-carving technique. No humans, hands, tools, workshop, real landmarks, real canal map, historical reconstruction, text in any language, characters, numbers, calligraphy, seal, signature, logo, watermark, frame, webpage, or interface. No reed-weaving strips, basket, tiger, or bright patchwork waves.",
+      "startedAt": "2026-11-01T23:25:43+08:00",
+      "finishedAt": "2026-11-01T23:27:50+08:00",
+      "generationDate": null,
+      "timePrecision": "原记录时间及偏移原样保留；本轮复制不是重新生成",
+      "inputImages": []
+    }
+  ],
+  "width": 1672,
+  "height": 941,
+  "bytes": 2892897,
+  "sha256": "8c2f2d0dc77a0814971081edcfda0abc2af1eb4cdaf6a572a461e8cddce5b63e",
+  "sourceRecordSha256": "d8bef0cca7a200ef8644906b9c01d7d5a83ceabaf092c575654e7013776c43bb",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371700",
+  "objectId": "heze-caozhou-dough-figurines",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: stylized-concept\nAsset type: optional AI creative illustration for a Heze cultural feature article about Caozhou dough figurines; a complete landscape artwork to be shown without forced cropping on desktop or mobile, not a webpage or a city-entry background.\nPrimary request: An original imaginative interpretation of Caozhou dough-figurine art through richly colored matte modeled forms and layered Chinese paper-art textures. Create TWO unnamed invented folk-human figurines sharing a friendly glance, with expressive but naturally proportioned faces. They do not represent real people, artisans, existing sculptures, famous literary or operatic characters, historical or religious figures, or any identifiable story. This is not a photograph of real dough sculpture or a tutorial.\nSubject and composition: Place a larger figure left of center, with the second figure slightly behind and to the right, both completely visible and easy to understand when the whole image is scaled down. Give each a distinct, lively expression and an ordinary, invented folk-inspired outfit with no distinctive stage costume. Their poses and the asymmetrical colored-paper composition should feel noticeably different from a solitary, quiet ink-wash image. Surround them with a few abstract, original curved paper layers that suggest movement; no recognizable location or narrative props.\nMedium and palette: Tactile matte color-dough-like modeling combined with carefully layered paper-cut illustration, subtly uneven hand-shaped edges, understated dimensional shadows and refined Chinese folk-art spirit. Use a lively but harmonious palette of cinnabar, muted teal-green, warm gold, ivory and touches of plum against a light warm-paper ground. Avoid plastic gloss and avoid a photorealistic product shot.\nConstraints: This is wholly imaginative and not an image of a particular work or accurate craft method. Do not show craftspeople, hands making objects, tools, ingredients, workshop, or production steps; no fairy, mascot or copied iconic design. Absolutely no writing in any language, Chinese characters, numbers, calligraphy, seal, signature, logo, watermark, labels, border, or user interface.",
+  "startedAt": "2026-11-01T23:49:27+08:00",
+  "finishedAt": "2026-11-01T23:52:25+08:00",
+  "generationDate": null,
+  "timePrecision": "原记录起止时间及偏移原样保留",
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: optional AI creative illustration for a Heze cultural feature article about Caozhou dough figurines; a complete landscape artwork to be shown without forced cropping on desktop or mobile, not a webpage or a city-entry background.\nPrimary request: An original imaginative interpretation of Caozhou dough-figurine art through richly colored matte modeled forms and layered Chinese paper-art textures. Create TWO unnamed invented folk-human figurines sharing a friendly glance, with expressive but naturally proportioned faces. They do not represent real people, artisans, existing sculptures, famous literary or operatic characters, historical or religious figures, or any identifiable story. This is not a photograph of real dough sculpture or a tutorial.\nSubject and composition: Place a larger figure left of center, with the second figure slightly behind and to the right, both completely visible and easy to understand when the whole image is scaled down. Give each a distinct, lively expression and an ordinary, invented folk-inspired outfit with no distinctive stage costume. Their poses and the asymmetrical colored-paper composition should feel noticeably different from a solitary, quiet ink-wash image. Surround them with a few abstract, original curved paper layers that suggest movement; no recognizable location or narrative props.\nMedium and palette: Tactile matte color-dough-like modeling combined with carefully layered paper-cut illustration, subtly uneven hand-shaped edges, understated dimensional shadows and refined Chinese folk-art spirit. Use a lively but harmonious palette of cinnabar, muted teal-green, warm gold, ivory and touches of plum against a light warm-paper ground. Avoid plastic gloss and avoid a photorealistic product shot.\nConstraints: This is wholly imaginative and not an image of a particular work or accurate craft method. Do not show craftspeople, hands making objects, tools, ingredients, workshop, or production steps; no fairy, mascot or copied iconic design. Absolutely no writing in any language, Chinese characters, numbers, calligraphy, seal, signature, logo, watermark, labels, border, or user interface.",
+      "startedAt": "2026-11-01T23:49:27+08:00",
+      "finishedAt": "2026-11-01T23:52:25+08:00",
+      "generationDate": null,
+      "timePrecision": "原记录起止时间及偏移原样保留",
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2980875,
+  "sha256": "3bdeeac8e52713f3aaf7b2b9101cf3756cf62574eadcbae8b4458596cf586826",
+  "sourceRecordSha256": "b268165fed237567ae88c72220fd9fcd31c6d75272f47a5c9e55bce5944f51ad",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

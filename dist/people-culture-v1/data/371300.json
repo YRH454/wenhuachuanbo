@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "371300",
+  "city": "临沂",
+  "status": "draft",
+  "people": [
+    {
+      "id": "fan-shiwei",
+      "name": "樊士伟",
+      "connection": "临沂郯城木旋玩具传承人。",
+      "intro": "中国新闻网报道过樊士伟旋制和展示郯城木旋玩具的场景。",
+      "sources": [
+        {
+          "title": "中国新闻网：山东郯城非遗传承人制作郯城木旋玩具",
+          "url": "https://www.chinanews.com/tp/2024/12-10/10333992.shtml"
+        },
+        {
+          "title": "临沂市人民政府：山东手造·产自临沂手造技艺传承人名单",
+          "url": "https://www.linyi.gov.cn/info/3440/325740.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "liu-yunhua",
+      "name": "刘运花",
+      "connection": "临沂沂水县沂蒙煎饼制作技艺传承人。",
+      "intro": "临沂市政府报道了刘运花制作与传授沂蒙煎饼技艺的经历。",
+      "sources": [
+        {
+          "title": "临沂市人民政府：马站三枝花",
+          "url": "https://www.linyi.gov.cn/info/9316/436929.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "tancheng-wood-toy",
+      "name": "郯城木旋玩具",
+      "category": "民间玩具",
+      "connection": "临沂郯城县的木旋和彩绘玩具。",
+      "intro": "郯城木旋玩具俗称耍货，将木料旋制与民间彩绘结合。",
+      "sources": [
+        {
+          "title": "中国非物质文化遗产网：传统玩具（郯城木旋玩具）",
+          "url": "https://www.ihchina.cn/project_details/14253/"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371300-tancheng-wood-toy-80a886041b53.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：木旋玩具意象与明快色彩。",
+        "credit": "AI创意插画；非真实木旋玩具、特定作品或制作示范",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/371300-tancheng-wood-toy-80a886041b53-935af2fed0aa.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "langya-straw-weaving",
+      "name": "琅琊草编",
+      "category": "草编手作",
+      "connection": "临沂郯城县的草编技艺。",
+      "intro": "琅琊草经过整理和编织，可制成篮、席与其他生活用品。",
+      "sources": [
+        {
+          "title": "临沂市文化和旅游局：传统技艺琅琊草编",
+          "url": "https://wgxj.linyi.gov.cn/info/1013/31549.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371300-langya-straw-weaving-23acd5d8de30.png",
+        "width": 1891,
+        "height": 831,
+        "alt": "AI创意插画：淡黄色草编拖鞋与草席意象。",
+        "credit": "AI创意插画：虚构草编意象，不代表真实作品或编法",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/371300-langya-straw-weaving-23acd5d8de30-05626663bfda.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "yimeng-song",
+      "name": "沂蒙山小调",
+      "category": "地方歌曲",
+      "connection": "与临沂费县文化记忆相关的地方歌曲。",
+      "intro": "沂蒙山小调与沂蒙山地域记忆相连，是可以从歌声认识的一种地方文化。",
+      "sources": [
+        {
+          "title": "临沂市文化和旅游局：沂蒙山小调相关建议答复",
+          "url": "https://wgxj.linyi.gov.cn/info/1325/65227.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371300-yimeng-song-76035937b636.png",
+        "width": 1916,
+        "height": 821,
+        "alt": "AI创意插画：想象山水中蜿蜒如旋律的彩色曲线。",
+        "credit": "AI创意插画：想象山水与旋律意象，非具体地点或演出",
+        "rightsStatus": "公开使用及第三方相似性待核；歌曲音频及其权利未收集",
+        "record": "records/371300-yimeng-song-76035937b636-835e8116ff31.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "yimeng-pancake",
+      "name": "沂蒙煎饼",
+      "category": "地方饮食",
+      "connection": "沂蒙山区传统饮食，临沂多地有相关制作实践。",
+      "intro": "一张薄薄的煎饼承载着沂蒙山区的家常饮食与生活记忆。",
+      "sources": [
+        {
+          "title": "临沂市文化和旅游局：沂蒙山煎饼相关建议答复",
+          "url": "https://wgxj.linyi.gov.cn/info/1325/58535.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/371300-yimeng-pancake-55fbf4ed1691.png",
+        "width": 1916,
+        "height": 821,
+        "alt": "AI创意插画：木盘中薄而折叠的煎饼与旁边的葱。",
+        "credit": "AI创意插画：虚构饮食意象，不代表真实菜品或食谱",
+        "rightsStatus": "公开使用及第三方相似性待核",
+        "record": "records/371300-yimeng-pancake-55fbf4ed1691-98639a5e9509.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "樊士伟照片为新闻图片内部候选，标识、摄影署名须保留，公开许可待核；刘运花肖像待核。",
+    "四项文化图为AI候选，窄屏风与手机裁切待测；草编图不证明实际编法，山水为抽象歌声意象并非实景，煎饼不是食谱或真实菜品。",
+    "此为内部联调草稿；歌曲音频及其权利未收集。"
+  ]
+}

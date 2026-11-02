@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "cityId": "370100",
+  "city": "济南",
+  "deliveryStatus": "ready",
+  "route": "#/city/370100",
+  "topic": {
+    "name": "趵突泉与泉水生活",
+    "location": "山东省济南市",
+    "category": "泉水景观与城市生活",
+    "intro": "从一眼泉涌和一道泉纹出发，看趵突泉的水景，也走近济南泉边的日常。",
+    "sources": [
+      "spring",
+      "landscape",
+      "life"
+    ]
+  },
+  "scene": {
+    "backgroundCityId": "370100",
+    "label": "AI意境图",
+    "entryLabel": "走近济南泉水"
+  },
+  "visual": {
+    "signature": "jinan-spring-folio",
+    "layout": "folio",
+    "description": "泉面留白的画页笔记。保留本城银灰荷影首屏，以澄亮的泉白阅读面衔接；蓝灰正文与疏朗留白承接水纹，不把密集石粒纹铺在长文后，也不伪造古拓本。",
+    "composition": "独立标题、简短地点侧注与画页式图文对开。无新增授权照片时，在文字之外使用已登记AI背景局部并保留AI标识，不出空图框。概况、泉池环境和黑虎泉生活段连贯展开，短段与留白交替；明确区分两处泉景，不画虚构水系线路。手机单列且先标题后正文，不强制滑屏。",
+    "palette": {
+      "paper": "#F1F7FA",
+      "ink": "#153F52",
+      "muted": "#4D6773",
+      "accent": "#155E75",
+      "rule": "#CEDCE2"
+    }
+  },
+  "questionMode": "fixed-source",
+  "archive": [
+    {
+      "label": "观察对象",
+      "value": "趵突泉",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "label": "所在城市",
+      "value": "山东省济南市",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "label": "泉眼位置",
+      "value": "趵突泉公园内泺源堂前",
+      "sources": [
+        "spring"
+      ]
+    },
+    {
+      "label": "水景线索",
+      "value": "三个出水口／三股泉水",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "label": "近旁景观",
+      "value": "泺源堂、观澜亭等",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "label": "生活段地点",
+      "value": "黑虎泉及护城河一带",
+      "sources": [
+        "life"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "overview",
+      "title": "从一眼泉涌认识济南",
+      "paragraphs": [
+        "趵突泉位于济南市中心，是走近泉城的一处具体入口。地下泉水由三个出水口涌出，形成分股涌起的水景。凭栏看泉，可以先留意水向上涌起的动态，再看池面渐次舒展的波纹。"
+      ],
+      "sources": [
+        "spring",
+        "landscape"
+      ],
+      "media": [
+        "body-art"
+      ]
+    },
+    {
+      "id": "landscape",
+      "title": "泉池之外，也有观看的方式",
+      "paragraphs": [
+        "泉池北临泺源堂，西傍观澜亭，水景与近旁建筑相互映照。看泉之后，再把目光移向池岸与亭堂：水面有起伏，建筑有静定的轮廓，动与静一起构成赏泉的层次。"
+      ],
+      "sources": [
+        "spring",
+        "landscape"
+      ],
+      "media": []
+    },
+    {
+      "id": "life",
+      "title": "泉水进入日常",
+      "paragraphs": [
+        "同在济南，黑虎泉边的取水又呈现另一种生活关系。央广网2025年的报道记录了市民带着水桶、水壶来接水，以及游客沿泉河观赏的场景。这里与前文的趵突泉是不同地点；一壶水、一程沿岸步行，让泉水进入城市日常。取水和饮用请遵守现场管理与供水说明。"
+      ],
+      "sources": [
+        "life"
+      ],
+      "media": []
+    }
+  ],
+  "questions": [
+    {
+      "title": "趵突泉在济南哪里？",
+      "body": "趵突泉位于济南市中心，泉眼在趵突泉公园内的泺源堂前。从这处泉池出发，可以一同认识泉涌和近旁的亭堂景观。",
+      "kind": "fact",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "title": "“三股泉水”是什么意思？",
+      "body": "它描述趵突泉分股涌出的水景。文旅部的介绍写有三个出水口；看泉时，可以留意泉水涌起的动态和周围水面的波纹。",
+      "kind": "fact",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "title": "泉边还可以留意什么？",
+      "body": "趵突泉北临泺源堂，西傍观澜亭。把水面与这些近旁建筑一起看，既能留意泉涌的动态，也能体会亭堂与池岸形成的赏泉环境。",
+      "kind": "fact",
+      "sources": [
+        "spring",
+        "landscape"
+      ]
+    },
+    {
+      "title": "济南人的取水生活，可以从哪里看见？",
+      "body": "央广网2025年记录的地点是黑虎泉及护城河一带，市民带着水桶、水壶取水，游客沿岸赏泉。这里与前文的趵突泉是不同地点，也是认识济南泉水生活的一处入口。",
+      "kind": "fact",
+      "sources": [
+        "spring",
+        "life"
+      ]
+    },
+    {
+      "title": "泉水的水位一直不变吗？",
+      "body": "水位会有变化。央广网2025年的报道记录了一次降雨后黑虎泉水位上升的情况。本页介绍景观与生活，不显示实时水位；当期水情应以监测发布为准。",
+      "kind": "fact",
+      "sources": [
+        "life"
+      ]
+    }
+  ],
+  "sources": {
+    "spring": {
+      "title": "文化和旅游部数据服务：济南市天下第一泉景区",
+      "short": "景区与泉眼资料",
+      "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=34947",
+      "kind": "official",
+      "supports": "支持济南地域、趵突泉泉眼位置、三个出水口及附近人文景观；景区2013年5A评定是旅游档案，不是非遗等级。本文不沿用其流量、尺寸等为当前实测，不据此判断AI画面身份。",
+      "checkedAt": "2026-11-01"
+    },
+    "landscape": {
+      "title": "中国天气网：趵突泉（2009-07-07）",
+      "short": "趵突泉景观介绍",
+      "url": "https://www.weather.com.cn/shandong/jinan/jnlyjdjs/07/5025.shtml",
+      "kind": "official",
+      "supports": "支持市中心位置、三股泉水、观澜亭与泺源堂等景观。只取稳定基本信息，不引用旧票价、当期运营、泉池尺寸或“永不停喷”结论；网站图片许可未取得。",
+      "checkedAt": "2026-11-01"
+    },
+    "life": {
+      "title": "央广网：雨后黑虎泉水位抬升21厘米 更增泉城泉韵（2025-07-25）",
+      "short": "黑虎泉生活报道",
+      "url": "https://www.cnr.cn/sd/ksd/20250725/t20250725_527280917.shtml",
+      "kind": "media",
+      "supports": "支持黑虎泉及护城河一带的市民取水、游客赏泉和当次降雨后的水位变化。不是趵突泉现场或今日水位，不支持天然泉池水可直接饮用；未复制原文全文和版权照片。",
+      "checkedAt": "2026-11-01"
+    }
+  },
+  "media": [
+    {
+      "id": "body-art",
+      "src": "media/370100-body-a.png",
+      "kind": "ai",
+      "role": "section",
+      "alt": "AI创意插画：浅青水面上涌起的泉水、波纹与荷叶。",
+      "caption": "泉水与荷影 · AI创意插画，非趵突泉或黑虎泉实景，不表示真实泉眼数量。",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "aba10df9c5df815c9492ae66a72ef484b172423d0ef68f629deb15b48dcf4543",
+      "record": "records/370100-body-a.md",
+      "recordSha256": "ba9a9650c7ecb1924c30ce59bfdc81dafea4903978daec1a17bd2b8b1960a85c",
+      "generationTool": "image_gen.imagegen",
+      "generatorThreadId": "01a1916a-77a5-7490-b6fe-80d589a41d6c",
+      "sourceUrl": null,
+      "rights": "仅本机原型预览选用；未确认公开发布与第三方相似性，不声明开放许可。",
+      "credit": null,
+      "reviewStatus": "checked",
+      "originalRecordSha256": "8204fb7e60d3705278c138a38cc7172fe6423120a7f56f587ec57670c7146749"
+    }
+  ],
+  "unresolved": []
+}

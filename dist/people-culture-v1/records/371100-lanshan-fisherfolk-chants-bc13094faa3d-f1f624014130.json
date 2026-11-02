@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "371100",
+  "objectId": "lanshan-fisherfolk-chants",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Create ONE original landscape editorial illustration for a Chinese regional cultural page about “岚山渔民号子” (fisherfolk work chants associated with Lanshan). Treat it as a poetic, fictional visualization of collective maritime rhythm, NOT a historical scene or a documented work process. Show a small empty, unmarked wooden fishing boat as the clear central focal shape, with a loosely coiled rope nearby and broad repetitive arcs of imagined wind and sea that suggest call-and-response cadence. Restrained indigo, charcoal ink and muted ochre on textured handmade paper; subtle woodblock-print character, arresting high-contrast central silhouette and a spare composition, aesthetically distinct from bright folk paintings. The motif should survive a narrow vertical crop near the center. No figures, faces, portraits, performers, identifiable locations, actual events, precise knot-making or fishing instructions. Do not write or invent any chant lyrics, musical score, musical notation, letters, numbers, calligraphy, seal, watermark, brand or other text. No collage, frame, interface, triptych or visual reference to a specific artist. One coherent imaginative image only.",
+  "startedAt": "2026-11-02T10:32:23.256+08:00",
+  "finishedAt": "2026-11-02T10:32:56.022+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Create ONE original landscape editorial illustration for a Chinese regional cultural page about “岚山渔民号子” (fisherfolk work chants associated with Lanshan). Treat it as a poetic, fictional visualization of collective maritime rhythm, NOT a historical scene or a documented work process. Show a small empty, unmarked wooden fishing boat as the clear central focal shape, with a loosely coiled rope nearby and broad repetitive arcs of imagined wind and sea that suggest call-and-response cadence. Restrained indigo, charcoal ink and muted ochre on textured handmade paper; subtle woodblock-print character, arresting high-contrast central silhouette and a spare composition, aesthetically distinct from bright folk paintings. The motif should survive a narrow vertical crop near the center. No figures, faces, portraits, performers, identifiable locations, actual events, precise knot-making or fishing instructions. Do not write or invent any chant lyrics, musical score, musical notation, letters, numbers, calligraphy, seal, watermark, brand or other text. No collage, frame, interface, triptych or visual reference to a specific artist. One coherent imaginative image only.",
+      "startedAt": "2026-11-02T10:32:23.256+08:00",
+      "finishedAt": "2026-11-02T10:32:56.022+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "bytes": 3926713,
+  "sha256": "bc13094faa3d3a2d357d1f2e23ed99e360be88a32fd0a3fba2123d04103b59c3",
+  "sourceRecordSha256": "26d8a99e324af655059694140ee8cc58fb48d770f7bb9e65fc479e3240914704",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

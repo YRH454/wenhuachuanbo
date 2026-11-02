@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "people-culture-runtime-image-v2",
+  "cityId": "370700",
+  "objectId": "wf-object-niejiazhuang-clay",
+  "kind": "ai",
+  "tool": "内置 image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit\nEdit only the character-like black marks in the center of the tiger's forehead. Replace those marks with a small asymmetric scatter of three separate, rounded coral-red and golden-yellow spots, with clear empty space between them. The spots must not connect, align into a character, form strokes, or resemble a letter, number, symbol, or calligraphy.\nPreserve everything else from the input image as closely as possible: the original full wide composition and framing, tiger facial expression and pose, chest flower, vibrant woodblock-inspired color layers, paper texture, palette, and all other details. This remains an original AI creative cross-medium illustration, not a real artifact, a historical print, or a craft-process record.\nDo not add any writing, Chinese characters, lettering, logo, signature, seal, watermark, border or UI.",
+  "startedAt": "2026-11-01T23:09:57+08:00",
+  "finishedAt": "2026-11-01T23:12:37+08:00",
+  "generationDate": null,
+  "timePrecision": null,
+  "steps": [
+    {
+      "kind": "generate",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: stylized-concept\nAsset type: original AI creative illustration for a Weifang cultural feature article, usable as a desktop landscape banner with a mobile portrait focal crop.\nPrimary request: Create one imaginative folk-art tiger inspired by the expressive, toy-like spirit of Nie Jiazhuang clay sculpture and its “mud-calling tiger” in Gaomi, Weifang. Reinterpret this clay-tiger theme through an ORIGINAL color-overprinted woodblock New Year print visual language inspired by Yangjiabu, without copying any historical print, named artisan's work, actual clay sculpture, or documented craft process. This is a cross-medium visual interpretation, not a claim that the clay tiger itself is made using woodblock printing.\nSubject and composition: One round, squat, spirited clay-tiger figure seen in a dynamic three-quarter view, with bold rounded eyes, prominent brows, short sturdy paws, a stylized chest blossom and original abstract tiger markings; clearly a folk toy rather than a real tiger. Keep the complete main figure very near the center, with face, chest, body and paws inside the center 35% of the landscape width and with headroom and footroom, preserving the focal subject in a centered 9:16 mobile crop and a shallower desktop banner. Create an asymmetric diagonal sweep of oversized abstract floral forms and color blocks from lower left to upper right, so the overall composition differs substantially from a quiet ink-wash image; edge details can be cropped away.\nStyle and material: Bold carved black linework and layered matte color blocks with subtle woodgrain, uneven ink transfer and gently imperfect registration on warm textured paper. A vivid but sophisticated folk palette of cinnabar, coral red, warm golden yellow, leaf green and deep ink; handcrafted, flat print-like visual depth, celebratory yet refined, full-bleed landscape illustration, not a webpage or poster.\nConstraints: Original imagined art only; do not depict a specific person, actual object, real village, museum scene or historical event, and do not show production steps. Absolutely no Chinese or Latin lettering, calligraphy, numerals, forehead character, labels, logo, seal, signature, watermark, border, webpage interface, photography, or glossy 3D rendering.",
+      "startedAt": "2026-11-01T23:06:17+08:00",
+      "finishedAt": "2026-11-01T23:07:25+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": []
+    },
+    {
+      "kind": "edit",
+      "tool": "内置 image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit\nEdit only the character-like black marks in the center of the tiger's forehead. Replace those marks with a small asymmetric scatter of three separate, rounded coral-red and golden-yellow spots, with clear empty space between them. The spots must not connect, align into a character, form strokes, or resemble a letter, number, symbol, or calligraphy.\nPreserve everything else from the input image as closely as possible: the original full wide composition and framing, tiger facial expression and pose, chest flower, vibrant woodblock-inspired color layers, paper texture, palette, and all other details. This remains an original AI creative cross-medium illustration, not a real artifact, a historical print, or a craft-process record.\nDo not add any writing, Chinese characters, lettering, logo, signature, seal, watermark, border or UI.",
+      "startedAt": "2026-11-01T23:09:57+08:00",
+      "finishedAt": "2026-11-01T23:12:37+08:00",
+      "generationDate": null,
+      "timePrecision": null,
+      "inputImages": [
+        {
+          "role": "本组AI初稿，仅作为定向编辑的目标图",
+          "sha256": "08edfc57a4788143a0d7ef558e71521f7cc5bcf6bc128da155f1534c9fbd9c53"
+        }
+      ]
+    }
+  ],
+  "width": 1672,
+  "height": 941,
+  "bytes": 3159649,
+  "sha256": "243149efbf769a7cf72a1d0fa30e1a6c5167768ef5e547905bb2ad375ba77988",
+  "sourceRecordSha256": "df0f4df9ecba746c24848ccd55df8b5a752f4eeb274fdf05f689d630cd0604c0",
+  "notice": "AI创意插画；不是实物、艺人作品、真实场景或工艺过程的证据。公开权利及相似性待核。"
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "people-culture-v1",
+  "runtimeVersion": 1,
+  "cityId": "370600",
+  "city": "烟台",
+  "status": "draft",
+  "people": [
+    {
+      "id": "yt-person-yangyuxing",
+      "name": "杨玉兴",
+      "connection": "莱州草辫艺人；烟台市文化和旅游局2025年公告其入选第六批国家级代表性传承人。",
+      "intro": "在草辫传统上探索材料、编法与日常用途，让麦草编织进入新的生活场景。",
+      "sources": [
+        {
+          "title": "烟台四人入选第六批国家级非物质文化遗产代表性传承人名单｜烟台市文化和旅游局，2025-03-18",
+          "url": "https://www.yantai.gov.cn/art/2025/3/18/art_43277_3244612.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "yt-person-jiayuping",
+      "name": "贾雨萍",
+      "connection": "烟台文旅部门介绍的胶东花饽饽习俗代表性传承人，新华社亦记录其在栖霞的传承活动。",
+      "intro": "不只制作花饽饽，也向学生讲述食物造型背后的地方礼俗，让手艺与生活记忆一起传下去。",
+      "sources": [
+        {
+          "title": "我市胶东花饽饽习俗项目受邀参加“中泰情 一家亲”友好交流活动｜烟台市文化和旅游局，2025-04-14",
+          "url": "https://www.yantai.gov.cn/art/2025/4/14/art_43277_3248885.html"
+        },
+        {
+          "title": "胶东花饽饽：蒸出来的“艺术品”｜新华网，2021-02-25",
+          "url": "https://www.xinhuanet.com/local/2021-02/25/c_1127137511.htm"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    },
+    {
+      "id": "yt-person-xiujianguo",
+      "name": "修建国",
+      "connection": "海阳大秧歌“乐大夫”表演者，官方人物档案申报地区为海阳市。",
+      "intro": "在海阳大秧歌表演中研究“乐大夫”角色，把习练螳螂拳的经验融入身体表达。",
+      "sources": [
+        {
+          "title": "修建国｜中国非物质文化遗产网人物档案",
+          "url": "https://www.ihchina.cn/ccr_detail/29976.html"
+        },
+        {
+          "title": "烟台四人入选第六批国家级非物质文化遗产代表性传承人名单｜烟台市文化和旅游局，2025-03-18",
+          "url": "https://www.yantai.gov.cn/art/2025/3/18/art_43277_3244612.html"
+        }
+      ],
+      "portrait": {
+        "kind": "missing",
+        "src": null
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "yt-object-laizhou-straw",
+      "name": "莱州草辫",
+      "category": "传统美术与生活编织",
+      "connection": "国家级项目“草编（莱州草辫）”申报地区为莱州市；莱州文旅部门记述本地草编展览。",
+      "intro": "麦草在指间编成草辫，再进入包、收纳盒和贴画等物件。从田间材料到日用之物，可以看见编织怎样改变生活。",
+      "sources": [
+        {
+          "title": "草编（莱州草辫）｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/14100/"
+        },
+        {
+          "title": "“指尖上的艺术—莱州草辫专题展”邀您共赏非遗之美｜莱州市文化和旅游局，2025-06-06",
+          "url": "https://www.laizhou.gov.cn/art/2025/6/6/art_44730_2982172.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370600-yt-object-laizhou-straw-6a3fae3c4b65.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：想象麦草编辫与拼贴构成，不是真实草编器物、杨玉兴作品或编法教程。",
+        "credit": "AI创意插画｜原生成记录随图保留",
+        "rightsStatus": "既有AI候选，原记录approved=false、publicUseApproved=false；待集成确认，须保留AI说明",
+        "record": "records/370600-yt-object-laizhou-straw-6a3fae3c4b65-86bf271fa602.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "yt-object-jiaodong-flower-bun",
+      "name": "胶东花饽饽",
+      "category": "饮食与民俗",
+      "connection": "烟台文旅部门记录胶东花饽饽习俗项目的当地传承与展示；胶东多地均有相关习俗。",
+      "intro": "面团被塑成花鸟、寿桃等形象，装点节庆与人生礼仪。它既是食物，也承载家人之间的祝愿。",
+      "sources": [
+        {
+          "title": "我市胶东花饽饽习俗项目受邀参加“中泰情 一家亲”友好交流活动｜烟台市文化和旅游局",
+          "url": "https://www.yantai.gov.cn/art/2025/4/14/art_43277_3248885.html"
+        },
+        {
+          "title": "让展览“活”起来：烟台市文化馆如何用“在地性”与“共创性”重塑公共文化空间｜烟台市文化和旅游局，2025-10-17",
+          "url": "https://www.yantai.gov.cn/art/2025/10/17/art_43277_3294167.html"
+        },
+        {
+          "title": "胶东花饽饽：蒸出来的“艺术品”｜新华网",
+          "url": "https://www.xinhuanet.com/local/2021-02/25/c_1127137511.htm"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370600-yt-object-jiaodong-flower-bun-9497cd06765d.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：盘中的虚构花形与寿桃形蒸面食，不是贾雨萍作品、真实食品或可照做的配方。",
+        "credit": "AI创意插画｜完整生成记录随图保留",
+        "rightsStatus": "原记录待人工确认，公开使用及第三方相似性待核；原创面食造型，不指认艺人作品或统一礼俗",
+        "record": "records/370600-yt-object-jiaodong-flower-bun-9497cd06765d-0b4129a37a36.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "yt-object-eight-immortals",
+      "name": "八仙传说（蓬莱）",
+      "category": "民间文学",
+      "connection": "国家级项目“八仙传说”的申报地在档案中记作蓬莱市；本市交付采用烟台蓬莱地方传承语境。",
+      "intro": "八仙过海的故事，在山海之间一再被讲述，也进入民间文艺与工艺创作。看见的是传说的流传，不是神话事件的实证。",
+      "sources": [
+        {
+          "title": "八仙传说｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/12271.html"
+        },
+        {
+          "title": "第144602号：“关于加强城市文化输出-蓬莱八仙的提案”答复｜烟台市政府网站",
+          "url": "https://www.yantai.gov.cn/art/2025/6/19/art_45949_3294936.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370600-yt-object-eight-immortals-a0c355a71053.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：葫芦、折扇与虚构海浪仙山，不表现八位仙人，不是蓬莱实景、古籍原图或传说情节的考据。",
+        "credit": "AI创意插画｜完整生成记录随图保留",
+        "rightsStatus": "原记录待人工确认，公开使用及第三方相似性待核；仅作神话意象，不指认八位仙人或具体法器",
+        "record": "records/370600-yt-object-eight-immortals-a0c355a71053-59e9cbf658cc.json",
+        "publicReuse": false
+      }
+    },
+    {
+      "id": "yt-object-haiyang-yangge",
+      "name": "海阳大秧歌",
+      "category": "传统舞蹈",
+      "connection": "国家级项目“秧歌（海阳大秧歌）”申报地区为海阳市，保护单位为海阳市文化馆。",
+      "intro": "歌、舞与戏在民间社火中相遇，角色和队伍一起带动热闹的节奏。它与胶州秧歌各有地方传承，不是同一种表演的两个名字。",
+      "sources": [
+        {
+          "title": "秧歌（海阳大秧歌）｜中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/12816/"
+        },
+        {
+          "title": "海阳秧歌｜中国地情网，来源烟台市情网",
+          "url": "https://www.zhongguodiqing.cn/mfms/201910/t20191018_5016767.shtml"
+        },
+        {
+          "title": "山东秧歌扭起来｜烟台日报，2026-06-26",
+          "url": "https://www.shm.com.cn/szb/ytrb/paper/pc/content/202606/26/content_273007.html"
+        }
+      ],
+      "media": {
+        "kind": "ai",
+        "src": "assets/370600-yt-object-haiyang-yangge-8510b93425ca.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI创意插画：匿名领舞者手持伞和马尾形甩子，身后有简化随行舞者，不是修建国、真实演出或经核定的舞蹈动作。",
+        "credit": "AI创意插画｜定向修订完整记录随图保留",
+        "rightsStatus": "定向修订已完成资料组静态复核，仅暂列AI候选；公开使用及第三方相似性待核，不作为标准服制、队形或舞谱",
+        "record": "records/370600-yt-object-haiyang-yangge-8510b93425ca-f72125ccb83b.json",
+        "publicReuse": false
+      }
+    }
+  ],
+  "unresolved": [
+    "三位人物文字身份已核，但没有取得复用许可、可公开接入的真实肖像；人物区缺图回退。",
+    "四项均暂列AI候选，每对象只选一张；公开使用与实际页面适配未批准。",
+    "海阳大秧歌初稿的大鼓与泛化舞者已撤回留档；现仅选领舞修订，已实际查看伞、马尾形甩子与完整主角，并核初始/编辑提示词及输入输出哈希。残留红飘带与虚构服装不能当地方标准；详见本目录海阳大秧歌-候选复核-20261102.md的修订增量。",
+    "八仙是传说角色，不属于真实人物；蓬莱档案中的旧行政地名予以保留说明。",
+    "跨市共有文化只写本地可证关联，不把胶东花饽饽或秧歌统称为烟台独有。",
+    "待新页面实际媒体适配与浏览器验收；本包只交资料，不改共享代码。"
+  ]
+}
