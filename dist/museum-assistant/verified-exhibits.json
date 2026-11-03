@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "checkedOn": "2026-11-03",
+  "records": {
+    "sdu-egg": {
+      "facts": ["山东大学博物馆将这件蛋壳陶高柄杯标为龙山文化的黑陶器。", "馆方记载该器物于1981年在山东日照东海峪征集。", "馆方描述其杯柄中空、有透雕，器壁很薄。"],
+      "source": {"label": "山东大学博物馆 · 蛋壳陶高柄杯", "url": "https://museum.sdu.edu.cn/info/1075/7023.htm"}
+    },
+    "met-42698": {
+      "facts": ["美国大都会艺术博物馆将这件高柄杯列为新石器时代山东龙山文化的陶器。", "馆藏编号为1993.198.1；不能据文化归属推断具体出土地点。"],
+      "source": {"label": "大都会艺术博物馆 · 高柄杯", "url": "https://www.metmuseum.org/art/collection/search/42698"}
+    },
+    "met-49379": {
+      "facts": ["美国大都会艺术博物馆将这件陶鬹列为新石器时代大汶口文化的陶器。", "馆藏编号为1993.198.2；不能据文化归属推断具体出土地点。"],
+      "source": {"label": "大都会艺术博物馆 · 陶鬹", "url": "https://www.metmuseum.org/art/collection/search/49379"}
+    },
+    "met-42753": {
+      "facts": ["美国大都会艺术博物馆将这件玉斧列为新石器时代大汶口至龙山文化的玉器。", "馆藏编号为16.144.2；不能据文化归属推断具体出土地点。"],
+      "source": {"label": "大都会艺术博物馆 · 玉斧", "url": "https://www.metmuseum.org/art/collection/search/42753"}
+    },
+    "met-51280": {
+      "facts": ["美国大都会艺术博物馆将这件有牙玉璧列为新石器时代龙山文化的玉器。", "馆藏编号为1999.302；不能据文化归属推断具体出土地点。"],
+      "source": {"label": "大都会艺术博物馆 · 有牙玉璧", "url": "https://www.metmuseum.org/art/collection/search/51280"}
+    },
+    "met-36441": {
+      "facts": ["美国大都会艺术博物馆将这件礼仪性玉斧列为新石器时代大汶口文化晚期至龙山文化早期的玉器。", "馆藏编号为1991.250；不能据文化归属推断具体出土地点。"],
+      "source": {"label": "大都会艺术博物馆 · 玉斧", "url": "https://www.metmuseum.org/art/collection/search/36441"}
+    },
+    "met-52532": {
+      "facts": ["美国大都会艺术博物馆将这件陶杯列为新石器时代龙山文化，材质为经磨光的黑陶。", "馆藏编号为50.61.8；不能据文化归属推断具体出土地点。"],
+      "source": {"label": "大都会艺术博物馆 · 黑陶杯", "url": "https://www.metmuseum.org/art/collection/search/52532"}
+    },
+    "cma-1985-73": {
+      "facts": ["克利夫兰艺术博物馆将这件车马出行画像石列为东汉时期的石刻。", "馆方将其风格与山东嘉祥武氏祠石刻比较，不能因此断言具体出土地点。"],
+      "source": {"label": "克利夫兰艺术博物馆 · 车马出行画像石", "url": "https://www.clevelandart.org/art/1985.73"}
+    }
+  }
+}

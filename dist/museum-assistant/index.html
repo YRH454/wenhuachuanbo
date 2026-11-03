@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小齐 · 博物馆对话组件预览</title>
+  <link rel="stylesheet" href="../museum/museum.css">
+  <style>
+    .preview-banner { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px max(4vw,22px); color:#f7f8f0; background:#29493d; }
+    .preview-brand { font-family:CityDisplay,"Songti SC",serif; font-size:24px; letter-spacing:.04em; }
+    .preview-banner a { font-size:13px; color:#f7f8f0; }
+    .preview-page { max-width:1250px; margin:auto; padding:68px 32px 110px; }
+    .preview-page h1 { font-family:CityDisplay,"Songti SC",serif; font-weight:500; font-size:36px; line-height:1.3; }
+    .preview-page > p { max-width:600px; margin-top:14px; color:#566c5e; line-height:1.9; }
+    .preview-notice { display:inline-block; padding:7px 10px; color:#405c4c; background:#e5ede2; font-size:12px; }
+    .preview-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; max-width:750px; margin-top:40px; }
+    .preview-item img { display:block; width:100%; height:240px; object-fit:cover; background:#e6e8df; }
+    .preview-item h2 { margin-top:14px; font-family:CityDisplay,"Songti SC",serif; font-size:21px; font-weight:500; }
+    .preview-item p { margin-top:8px; color:#5c6e62; font-size:13px; line-height:1.8; }
+    @media(max-width:600px) { .preview-banner{padding:19px 18px}.preview-brand{font-size:19px}.preview-page{padding:42px 18px 100px}.preview-page h1{font-size:28px}.preview-grid{gap:14px;margin-top:30px}.preview-item img{height:170px}.preview-item h2{font-size:17px}.preview-item p{font-size:12px} }
+  </style>
+</head>
+<body>
+<!--
+THESIS: A cultural companion makes room for visitors' questions without obscuring the exhibition.
+OWN-WORLD: The museum's deep green, pale paper, fine rules, existing Xiaoqi figure, and readable task controls.
+STORY: Open Xiaoqi, ask a question, consult related material, and return to the exhibition.
+FIRST VIEWPORT: Museum context remains behind a right-hand dialogue; on a phone the dialogue becomes a compact bottom sheet.
+FORM: A scoped extension of the established museum surface; no independent visual-world selection.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<header class="preview-banner"><span class="preview-brand">齐鲁文化博物馆</span><a href="../museum/">返回展馆</a></header>
+<main class="preview-page">
+  <span class="preview-notice">独立组件预览 · 也可在博物馆页面使用</span>
+  <h1>从喜欢的事物开始探索</h1>
+  <p>器物、纹样与手艺，每一幅影像都藏着一个故事。打开小齐，聊聊你感兴趣的山东文化。</p>
+  <div class="preview-grid">
+    <article class="preview-item"><img src="../museum/images/jiaxiang-rubbing.jpg" alt="嘉祥画像石拓片中的车马与人物"><h2>嘉祥画像石拓片</h2><p>从车马、楼阙与人物的排列里，细看画像石留下的图景。</p></article>
+    <article class="preview-item"><img src="../museum/images/linqing-bricks.jpg" alt="陈列中的明代临清贡砖"><h2>明代临清贡砖</h2><p>一方砖，连接起窑火与传统建筑中的手工技艺。</p></article>
+  </div>
+</main>
+<script type="module">
+  import { mountMuseumAssistant } from './assistant.mjs';
+  mountMuseumAssistant({ openInitially: true });
+</script>
+</body>
+</html>

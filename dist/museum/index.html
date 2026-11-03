@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="循着器物、纹样与手艺，在齐鲁文化博物馆发现山东文化的不同面貌。">
+  <title>齐鲁文化博物馆 · 一物见山东</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="museum.css">
+  <script type="module" src="museum.mjs"></script>
+</head>
+<body>
+<!-- MUSEUM-REFERENCE-v1
+THESIS: Explore Shandong through individual cultural images, not a sixteen-city directory.
+OWN-WORLD: User-pinned Moodboard Museum reference; deep pine green, soft white and photographic collage, restrained fine rules and Chinese display type.
+STORY: Enter a cultural image archive, explore themes or colors, read the image source, and keep a personal selection.
+FIRST VIEWPORT: Full-screen mosaic of real cultural imagery under a centered light exhibition label, with an unmistakable entry action.
+FORM: Reference-led cover-to-archive transition; pinned by the user, no generated comp asserted as approved.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip-link" href="#archive">跳到展品浏览</a>
+<main>
+  <section id="cover" class="cover" aria-labelledby="cover-title">
+    <div class="cover-mosaic mosaic" aria-hidden="true" data-mosaic></div>
+    <div class="cover-shade" aria-hidden="true"></div>
+    <a class="cover-return" href="../#/map">返回文化地图 <span aria-hidden="true">↗</span></a>
+    <div class="cover-label">
+      <div class="cover-label-inner">
+        <div class="cover-mark" aria-hidden="true"><span></span><i></i><span></span></div>
+        <h1 id="cover-title">齐鲁文化博物馆</h1>
+        <p class="cover-english" lang="en">A MUSEUM OF SHANDONG CULTURE</p>
+        <p class="cover-copy">从一件器物、一抹色彩开始，<br>遇见山东文化里动人的细节。</p>
+        <p class="cover-note">让过去的故事，与此刻的灵感相遇。</p>
+        <a class="enter-link" href="#archive">进入博物馆 <span aria-hidden="true">⟶</span></a>
+      </div>
+    </div>
+    <p class="cover-credit">一物见山东 · 文化影像探索</p>
+    <button class="mosaic-toggle cover-motion-toggle" type="button" data-mosaic-toggle hidden>暂停动态</button>
+  </section>
+
+  <section id="archive" class="archive" aria-labelledby="archive-title">
+    <header class="archive-banner">
+      <div class="banner-mosaic mosaic" aria-hidden="true" data-mosaic></div>
+      <div class="banner-shade" aria-hidden="true"></div>
+      <a class="banner-identity" href="#cover" aria-label="齐鲁文化博物馆，返回封面">
+        <span>齐鲁文化博物馆</span><small lang="en">A MUSEUM OF SHANDONG CULTURE</small>
+      </a>
+      <a class="back-to-map" href="../#/map">返回文化地图 <span aria-hidden="true">↗</span></a>
+      <button class="mosaic-toggle banner-motion-toggle" type="button" data-mosaic-toggle hidden>暂停动态</button>
+    </header>
+
+    <div class="archive-content">
+      <div class="archive-intro">
+        <div><h2 id="archive-title" tabindex="-1">从喜欢的事物开始探索</h2><p>器物、纹样与手艺，每一幅影像都藏着一个故事。</p></div>
+        <button class="board-trigger" type="button" data-open-board aria-haspopup="dialog">我的灵感板 <span data-board-count>0</span></button>
+      </div>
+
+      <div class="explore-controls">
+        <div class="mode-tabs" role="group" aria-label="选择浏览方式">
+          <button type="button" data-mode="theme" aria-pressed="true">按主题</button>
+          <button type="button" data-mode="color" aria-pressed="false">按色彩</button>
+        </div>
+        <form class="search-form" role="search">
+          <label class="sr-only" for="search-input">搜索展品、材质或关键词</label>
+          <input id="search-input" type="search" autocomplete="off" placeholder="试试搜索：黑陶、画像石、青铜、纹样……">
+          <button type="submit">搜索</button>
+        </form>
+        <div class="filter-group" data-theme-filters>
+          <p class="filter-label">从一个主题开始</p>
+          <div class="filter-list" role="group" aria-label="文化主题">
+            <button type="button" data-theme="all" aria-pressed="true">全部作品</button>
+            <button type="button" data-theme="earth" aria-pressed="false">陶与火</button>
+            <button type="button" data-theme="bronze" aria-pressed="false">金石器物</button>
+            <button type="button" data-theme="jadeglass" aria-pressed="false">玉与琉璃</button>
+            <button type="button" data-theme="painting" aria-pressed="false">画意与纹样</button>
+            <button type="button" data-theme="craft" aria-pressed="false">巧手与织造</button>
+          </div>
+        </div>
+        <div class="filter-group" data-color-filters hidden>
+          <p class="filter-label">按画面主色浏览 <span>· 人工整理</span></p>
+          <div class="filter-list color-list" role="group" aria-label="画面主色">
+            <button type="button" data-color="all" aria-pressed="true">全部色彩</button>
+            <button type="button" data-color="ink" aria-pressed="false"><i class="swatch ink"></i>墨黑</button>
+            <button type="button" data-color="earth" aria-pressed="false"><i class="swatch earth"></i>陶褐</button>
+            <button type="button" data-color="jade" aria-pressed="false"><i class="swatch jade"></i>青绿</button>
+            <button type="button" data-color="red" aria-pressed="false"><i class="swatch red"></i>朱红</button>
+            <button type="button" data-color="white" aria-pressed="false"><i class="swatch white"></i>素白</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-heading"><p id="results-status" role="status" aria-live="polite">正在整理展品…</p><button type="button" class="reset-filters" data-reset hidden>清除筛选</button></div>
+      <div class="artwork-grid" id="artwork-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><p>没有找到符合条件的作品。</p><button type="button" data-clear-search>查看全部作品</button></div>
+      <noscript><p class="empty-state">浏览和收藏功能需要启用 JavaScript，请启用后重新打开。</p></noscript>
+    </div>
+    <footer class="archive-footer"><p>一物见山东 <span>·</span> 齐鲁文化博物馆</p><p>从一件物，认识更广阔的文化世界。</p><a href="../#/map">回到文化地图 <span aria-hidden="true">⟶</span></a></footer>
+  </section>
+</main>
+
+<dialog class="board-dialog" id="board-dialog" aria-labelledby="board-title">
+  <div class="board-top"><div><p>一物见山东</p><h2 id="board-title">我的灵感板</h2></div><button class="board-close" type="button" data-close-board aria-label="关闭灵感板"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+  <p class="board-description">把喜欢的作品留在这里，慢慢看。收藏仅保存在当前浏览器。</p>
+  <div class="board-items" id="board-items"></div>
+  <div class="board-empty" id="board-empty"><p>还没有收藏作品</p><span>在展品旁点击「收藏」，就能把它放进灵感板。</span></div>
+  <p class="board-message" id="board-message" role="status" aria-live="polite"></p>
+</dialog>
+<p class="sr-only" id="live-message" role="status" aria-live="polite"></p>
+</body>
+</html>

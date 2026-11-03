@@ -26,6 +26,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .topbar{width:calc(100% - 64px);max-width:1800px;margin:auto;min-height:88px;display:flex;align-items:center;gap:32px}
 .identity{font-size:28px;letter-spacing:.1em;text-decoration:none;font-weight:600;white-space:nowrap}
 .header-line{font-size:14px;color:var(--muted);padding:2px 8px;background:rgba(247,246,240,.94)}
+.museum-entry{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:6px 12px;background:rgba(247,246,240,.94);border:1px solid #a9b7af;text-decoration:none;font-size:14px;white-space:nowrap}
+.museum-entry:hover{background:#e5ece6}
 .controls{margin-inline-start:auto;display:flex;align-items:center;gap:20px}
 .variants{display:flex;gap:6px}
 .controls button{font-size:14px}
@@ -126,6 +128,7 @@ body[data-transition=leaving] #city-links{pointer-events:auto}
   .topbar{width:calc(100% - 36px);min-height:0;padding-top:18px;gap:12px;flex-wrap:wrap}
   .identity{font-size:23px}
   .header-line{display:none}
+  .museum-entry{margin-left:auto;min-height:36px;font-size:12px}
   .controls{width:100%;margin:0;justify-content:space-between;padding-block:4px 8px}
   .controls button{padding-inline:16px}
   .map-view{min-height:0}
