@@ -88,6 +88,8 @@ export function createCityView(doc,data,{preview=false,review=false,candidates=f
       const tab=make('button');tab.type='button';tab.id='person-tab-'+item.id;tab.setAttribute('role','tab');tab.setAttribute('aria-controls','person-'+item.id);
       tab.append(make('span',item.name),make('small',data.city));
       const panel=make('article');panel.id='person-'+item.id;panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',tab.id);panel.tabIndex=0;
+      panel.dataset.guideKind='scene';panel.dataset.guideId='person-'+data.cityId+'-'+item.id;panel.dataset.guideTitle=data.city+' · '+item.name;
+      panel.dataset.guideSource=item.sources[0]?.url||'';
       panel.append(make('h3',item.name),make('p',item.connection,'connection'),make('p',item.intro),sourceLinks(item.sources));
       personEntries.push({item,tab,panel});tabs.append(tab);panels.append(panel);
       tab.addEventListener('click',()=>choosePerson(item.id));
@@ -150,6 +152,8 @@ export function createCityView(doc,data,{preview=false,review=false,candidates=f
     }
     trigger.type='button';trigger.id='object-trigger-'+item.id;trigger.setAttribute('aria-controls','object-'+item.id);trigger.append(make('span',item.name,'screen-name'),state);screen.append(trigger);
     const panel=make('article','','object-panel'),copy=make('div','','object-copy');panel.id='object-'+item.id;panel.setAttribute('aria-labelledby',trigger.id);
+    panel.dataset.guideKind='scene';panel.dataset.guideId='object-'+data.cityId+'-'+item.id;panel.dataset.guideTitle=data.city+' · '+item.name;
+    panel.dataset.guideSource=item.sources[0]?.url||'';
     copy.append(make('h3',item.name),make('p',item.category,'object-category'),make('p',item.connection),make('p',item.intro),sourceLinks(item.sources));
     panel.append(fullFigure(item),copy);screens.append(screen);details.append(panel);objectEntries.push({item,screen,image,trigger,state,panel});
     trigger.addEventListener('click',()=>chooseObject(item.id));

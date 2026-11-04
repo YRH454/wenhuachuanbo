@@ -24,7 +24,7 @@
 button, textarea { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: not-allowed; }
-button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible {
+button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible, summary:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
@@ -75,6 +75,25 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible 
 }
 .launcher > svg { margin-left: auto; }
 
+.guide-dock {
+  position: absolute;
+  right: 26px;
+  bottom: 96px;
+  width: min(290px, calc(100vw - 32px));
+  color: var(--ink);
+  pointer-events: auto;
+}
+:host([data-external-launcher]) .guide-dock { right: 160px; bottom: 32px; }
+.guide-reading { margin-bottom: 6px; background: #f8f1e5; box-shadow: 0 9px 24px rgb(52 38 27 / 15%); }
+.guide-reading-open { display: grid; gap: 7px; width: 100%; max-height: 155px; overflow: auto; padding: 14px 16px; border: 0; color: inherit; background: transparent; text-align: left; }
+.guide-reading-open:hover { background: #fff8ed; }
+.guide-reading-title { color: var(--accent); font-family: MuseumAssistantDisplay, "Songti SC", SimSun, serif; font-size: 15px; }
+.guide-reading-text { font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; white-space: pre-wrap; }
+.guide-controls { display: flex; justify-content: flex-end; gap: 4px; }
+.guide-controls button { min-height: 44px; padding: 8px 10px; border: 0; background: #f6ecdd; color: #634c3d; font-size: 12px; }
+.guide-controls button:hover { color: var(--accent); background: #fff6e9; }
+.guide-controls button[aria-pressed=true] { color: #8b3f2d; }
+.guide-controls button:disabled { color: #897a6d; }
 .panel {
   position: absolute;
   right: 24px;
@@ -117,7 +136,12 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible 
 .head-portrait { display: none; width: 31px; height: 31px; overflow: hidden; }
 .head-portrait img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .panel:has(.thread:not([hidden])) .head-portrait { display: block; }
-.head-actions { display: flex; align-items: center; gap: 3px; }
+.head-actions { position: relative; display: flex; align-items: center; gap: 3px; }
+.usage-details summary { display: grid; place-items: center; width: 44px; height: 44px; color: #6c584b; cursor: pointer; list-style: none; }
+.usage-details summary::-webkit-details-marker { display: none; }
+.usage-details summary span { display: grid; place-items: center; width: 18px; height: 18px; border: 1px solid currentColor; border-radius: 50%; font-family: Georgia, serif; font-size: 12px; line-height: 1; }
+.usage-details summary:hover { color: var(--accent); background: rgb(145 100 72 / 8%); }
+.usage-details p { position: absolute; z-index: 2; top: calc(100% + 8px); right: 0; width: min(286px, calc(100vw - 64px)); margin: 0; padding: 14px 16px; color: #59483c; background: #fff9ee; border: 1px solid #d2bea7; box-shadow: 0 7px 20px rgb(48 34 23 / 15%); font-size: 12px; line-height: 1.7; }
 .panel-head h2 {
   margin: 0;
   font-family: MuseumAssistantDisplay, "Songti SC", SimSun, serif;
@@ -133,6 +157,8 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible 
   background: transparent;
   color: #6c584b;
 }
+.guide-panel-toggle { min-height: 44px; padding: 8px 7px; border: 0; background: transparent; color: #754a38; font-size: 12px; white-space: nowrap; }
+.guide-panel-toggle:hover { color: var(--accent); background: rgb(145 100 72 / 8%); }
 .clear-button { font-size: 12px; }
 .clear-button:disabled { visibility: hidden; }
 .close-button { display: grid; place-items: center; }
@@ -237,7 +263,6 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible 
 .send-button:not(:disabled):hover { background: #7f382a; }
 .send-button:disabled { background: #dfd0bf; color: #765f4f; }
 .send-button svg { width: 18px; height: 18px; }
-.composer > p { margin: 9px 0 0; color: #705d4e; font-size: 11px; line-height: 1.5; }
 
 @keyframes panel-in {
   from { opacity: .6; transform: translateY(10px); }
@@ -249,6 +274,9 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible 
   .launcher img { width: 36px; height: 36px; }
   .launcher-copy span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .launcher > svg { display: none; }
+  .guide-dock { right: 16px; bottom: 76px; width: min(270px, calc(100vw - 32px)); }
+  :host([data-external-launcher]) .guide-dock { right: 12px; bottom: 12px; width: min(208px, calc(100vw - 32px)); }
+  .guide-reading-open { max-height: 80px; padding: 10px 12px; }
   .panel {
     right: 8px;
     bottom: max(8px, env(safe-area-inset-bottom));

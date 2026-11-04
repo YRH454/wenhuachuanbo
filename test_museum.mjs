@@ -73,7 +73,7 @@ test('museum retains the original collection identifiers and mounts Xiaoqi', () 
 test('assistant identity index matches the live museum and checked sources match their cards', () => {
   const index = JSON.parse(readFileSync(new URL('./dist/museum/artwork-context.json', import.meta.url), 'utf8'));
   const checked = JSON.parse(readFileSync(new URL('./dist/museum-assistant/verified-exhibits.json', import.meta.url), 'utf8'));
-  assert.deepEqual(index.records, artworks.map(({id, title}) => ({id, title})));
+  assert.deepEqual(index.records, artworks.map(({id, title, image}) => ({id, title, image})));
   for (const [id, record] of Object.entries(checked.records)) {
     const artwork = artworks.find(item => item.id === id);
     assert.ok(artwork, `${id}: checked record has no matching artwork`);

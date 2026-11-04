@@ -1,6 +1,8 @@
 // XIAOQI-SCROLL-A-v1: a local welcome, not a simulated model conversation.
 import {CITIES,isCity} from './people-culture-v1/model.mjs';
 import {createXiaoqiCompanion} from './xiaoqi-motion.mjs';
+import {mountMuseumAssistant} from './museum-assistant/assistant.mjs';
+import {mountUniversalGuide} from './museum-assistant/universal-guide.mjs';
 
 export function xiaoqiContext(hash) {
   const id=/^#\/city\/(\d{6})$/.exec(hash||'')?.[1];
@@ -8,7 +10,7 @@ export function xiaoqiContext(hash) {
   return {kind:!hash||hash==='#/map'?'map':'unknown',id:null,city:null};
 }
 
-export function createXiaoqiGuide(doc) {
+export function createXiaoqiGuide(doc,{assistant=null}={}) {
   const win=doc.defaultView,root=doc.getElementById('xiaoqi-root');
   if(!root)return null;
   const launcher=doc.getElementById('xiaoqi-launcher'),panel=doc.getElementById('xiaoqi-panel'),
@@ -35,6 +37,7 @@ export function createXiaoqiGuide(doc) {
     companion?.refresh();
   }
   function close({restoreFocus=true}={}) {
+    if(assistant?.isOpen())assistant.close();
     const wasOpen=!panel.hidden;
     panel.hidden=true;launcher.setAttribute('aria-expanded','false');launcher.setAttribute('aria-label','打开小齐文化向导');
     companion?.setPanelOpen(false);
@@ -42,11 +45,18 @@ export function createXiaoqiGuide(doc) {
   }
   function open() {
     if(disposed||!started)return;
+    if(assistant){assistant.open(launcher);return;}
     refresh();panel.hidden=false;launcher.setAttribute('aria-expanded','true');launcher.setAttribute('aria-label','收起小齐文化向导');
     companion?.setPanelOpen(true);
     title.focus({preventScroll:true});
   }
-  const toggle=()=>panel.hidden?open():close();
+  const toggle=()=>assistant?(assistant.isOpen()?close():open()):(panel.hidden?open():close());
+  const onAssistantVisibility=event=>{
+    const visible=Boolean(event.detail?.open);
+    launcher.setAttribute('aria-expanded',String(visible));
+    launcher.setAttribute('aria-label',visible?'收起小齐文化向导':'打开小齐文化向导');
+    companion?.setPanelOpen(visible);
+  };
   const onClose=()=>close();
   const onEscape=event=>{if(event.key==='Escape'&&!panel.hidden){event.preventDefault();close();}};
   const onOutside=event=>{if(!panel.hidden&&!root.contains(event.target))close({restoreFocus:false});};
@@ -79,6 +89,7 @@ export function createXiaoqiGuide(doc) {
       if(started||disposed)return;started=true;
       companion=createXiaoqiCompanion(doc,{onCollapse:()=>close({restoreFocus:false})});
       launcher.addEventListener('click',toggle);closeButton.addEventListener('click',onClose);
+      assistant?.host.addEventListener('assistantvisibility',onAssistantVisibility);
       primary.addEventListener('click',onPrimary);mapLink.addEventListener('click',onMap);
       doc.addEventListener('keydown',onEscape);doc.addEventListener('click',onOutside);
       win.addEventListener('hashchange',onHash);win.addEventListener('pagehide',pause);win.addEventListener('pageshow',observe);
@@ -89,6 +100,7 @@ export function createXiaoqiGuide(doc) {
       if(disposed)return;close({restoreFocus:false});disposed=true;observer?.disconnect();root.hidden=true;
       companion?.dispose();
       launcher.removeEventListener('click',toggle);closeButton.removeEventListener('click',onClose);
+      assistant?.host.removeEventListener('assistantvisibility',onAssistantVisibility);
       primary.removeEventListener('click',onPrimary);mapLink.removeEventListener('click',onMap);
       doc.removeEventListener('keydown',onEscape);doc.removeEventListener('click',onOutside);
       win.removeEventListener('hashchange',onHash);win.removeEventListener('pagehide',pause);win.removeEventListener('pageshow',observe);
@@ -96,4 +108,8 @@ export function createXiaoqiGuide(doc) {
     }
   };
 }
-if(typeof document!=='undefined')createXiaoqiGuide(document)?.start();
+if(typeof document!=='undefined'){
+  const assistant=mountMuseumAssistant({showLauncher:false});
+  createXiaoqiGuide(document,{assistant})?.start();
+  mountUniversalGuide({assistant});
+}

@@ -1,6 +1,7 @@
 import { artworks, filterArtworks } from './artworks.mjs';
 import { mountMosaics } from './mosaic.mjs';
 import { mountMuseumAssistant } from '../museum-assistant/assistant.mjs';
+import { mountUniversalGuide } from '../museum-assistant/universal-guide.mjs';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -8,6 +9,7 @@ const storageKey = 'yiwu-museum-board-v1';
 const state = { query: '', theme: 'all', color: 'all', mode: 'theme', saved: new Set() };
 const byId = new Map(artworks.map(item => [item.id, item]));
 const assistant = mountMuseumAssistant();
+mountUniversalGuide({ assistant });
 let storageAvailable = true;
 
 try {
@@ -51,7 +53,11 @@ function renderResults() {
   const grid = $('#artwork-grid'); grid.replaceChildren();
   for (const item of visible) {
     const card = document.createElement('article'); card.className = 'artwork';
-    const imageFrame = document.createElement('div'); imageFrame.className = 'artwork-image'; imageFrame.append(makeImage(item));
+    const imageFrame = document.createElement('button'); imageFrame.type = 'button'; imageFrame.className = 'artwork-image';
+    imageFrame.dataset.guideKind = 'exhibit'; imageFrame.dataset.guideId = item.id; imageFrame.dataset.guideTitle = item.title; imageFrame.dataset.guideSource = item.source;
+    imageFrame.setAttribute('aria-label', `让小齐看看：${item.title}`); imageFrame.title = '让小齐看看这幅画';
+    imageFrame.addEventListener('click', () => assistant.openForExhibit(item, imageFrame, { describe: true }));
+    imageFrame.append(makeImage(item));
     const meta = document.createElement('div'); meta.className = 'artwork-meta';
     const heading = document.createElement('div'); heading.className = 'artwork-heading';
     const labels = document.createElement('div'); labels.append(textElement('h3', '', item.title), textElement('p', 'artwork-date', item.date));

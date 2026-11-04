@@ -14,6 +14,7 @@
 .xiaoqi-companion-controls button[aria-pressed=true]{background:#e5ece6;color:var(--ink)}
 .xiaoqi-companion-controls button:disabled{cursor:default;color:var(--muted)}
 .xiaoqi-greeting{position:absolute;right:0;bottom:calc(100% + 12px);width:208px;padding:12px 15px;border:1px solid var(--line);border-radius:4px;background:var(--paper);font-size:15px;line-height:1.7;pointer-events:none}
+body:has([data-museum-assistant]) .xiaoqi-greeting{display:none}
 .xiaoqi[data-side=left] .xiaoqi-greeting{left:0;right:auto}
 .xiaoqi[data-greeting-below=true] .xiaoqi-greeting{top:calc(100% + 12px);bottom:auto}
 .xiaoqi-restore{position:absolute;top:var(--xiaoqi-restore-y,60%);right:0;min-width:44px;min-height:76px;padding:12px 10px;border:1px solid var(--line);border-right:0;border-radius:4px 0 0 4px;background:var(--paper);color:var(--ink);writing-mode:vertical-rl;font-size:14px;letter-spacing:.12em;pointer-events:auto}

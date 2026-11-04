@@ -50,3 +50,8 @@ body{margin:0;min-width:0}h1,h2,h3,p,figure{margin:0}a{color:inherit;text-decora
 .artwork-actions .source-link{margin-top:0;min-height:44px;display:inline-flex;align-items:center}
 .ask-assistant{min-height:44px;padding:9px 0;border:0;background:transparent;color:#9a4b2f;font-size:12px;line-height:1.5;text-decoration:underline;text-underline-offset:4px}
 .ask-assistant:hover{color:var(--deep)}
+
+/* The artwork itself opens the contextual guide without adding more labels. */
+button.artwork-image{display:block;width:100%;padding:0;border:0;text-align:left;cursor:pointer}
+button.artwork-image:hover{filter:brightness(.94)}
+button.artwork-image:focus-visible{outline:3px solid #9a4b2f;outline-offset:4px}

@@ -1,5 +1,10 @@
 import {CITIES,isCity,createCityLoader,pageRoute,cityUrl,topicUrl,topicReadingUrl,contentSection,cityStateAnnouncement} from './model.mjs';
 import {createCityView} from './view.mjs';
+import {mountMuseumAssistant} from '../museum-assistant/assistant.mjs';
+import {mountUniversalGuide} from '../museum-assistant/universal-guide.mjs';
+
+const assistant=mountMuseumAssistant();
+mountUniversalGuide({assistant});
 
 const doc=document,host=doc.getElementById('city-content'),status=doc.getElementById('load-status'),select=doc.getElementById('city-select');
 const title=doc.getElementById('page-title'),intro=doc.getElementById('page-intro'),topic=doc.getElementById('topic-link'),map=doc.getElementById('map-link');

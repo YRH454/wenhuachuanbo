@@ -64,7 +64,15 @@ try {
     assert.equal(geometry.composer.bottom <= viewport.height, true, 'composer is visible');
     assert.equal(geometry.animation, 'none', 'reduced motion disables entrance animation');
     assert.deepEqual(geometry.brokenImages, [], 'all preview and assistant images load');
-    assert.equal(await page.getByText('提问与所选展品会发送至阿里云，请勿输入隐私信息。AI 回答请核实。').count(), 1);
+    assert.equal(await page.locator('.composer > p').count(), 0, 'the composer has no explanatory copy underneath');
+    const usage = page.getByLabel('查看小齐使用说明');
+    const usageNote = page.getByText('提问与相关画面会发送至模型服务，可能产生费用。请勿输入隐私信息，AI 回答请核实。');
+    assert.equal(await usageNote.isVisible(), false, 'usage information starts collapsed');
+    await usage.focus();
+    await usage.press('Enter');
+    assert.equal(await usageNote.isVisible(), true, 'usage information can be opened with the keyboard');
+    await usage.press('Enter');
+    assert.equal(await usageNote.isVisible(), false, 'usage information can be closed with the keyboard');
     assert.equal(await page.locator('.prompt-button').count(), 3, 'the opening state keeps three concise suggestions');
     assert.equal(await page.locator('.head-portrait').isVisible(), false, 'the avatar is not duplicated in the welcome state');
     const targets = await page.locator('.prompt-button, .send-button, .close-button').evaluateAll(elements =>
@@ -121,7 +129,13 @@ try {
   const museumPage = await museumContext.newPage();
   const museumErrors = [];
   museumPage.on('pageerror', error => museumErrors.push(error.message));
-  await museumPage.route('**/api/museum-assistant/chat', route => route.fulfill({ json: { answer: '展馆接入测试回答。', sources: [] } }));
+  await museumPage.route('**/api/museum-assistant/chat', route => {
+    const body = route.request().postDataJSON();
+    const data = { answer: body.messages.at(-1).content === '你好' ? '展馆接入测试回答。' : '自动讲解模拟。', sources: [] };
+    if (body.sceneId) data.scene = { id: body.sceneId, evidence: 'draft' };
+    if (body.exhibitId) data.exhibit = { id: body.exhibitId, evidence: 'unverified' };
+    return route.fulfill({ json: data });
+  });
   await museumPage.goto(origin + '/museum/', { waitUntil: 'networkidle' });
   const museumLauncher = museumPage.getByRole('button', { name: /小齐.*陪你逛展/ });
   await museumLauncher.click();

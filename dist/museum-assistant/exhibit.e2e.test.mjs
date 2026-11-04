@@ -11,7 +11,7 @@ try { playwright = require('playwright'); }
 catch { playwright = require(join(homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright')); }
 const python = [
   'import museum_assistant_server as app',
-  'def fake_model(key, endpoint, messages, sources, exhibit=None):',
+  'def fake_model(key, endpoint, messages, sources, exhibit=None, *, guide=False):',
   '    if not exhibit: return "普通对话"',
   '    return exhibit["id"] + "：" + ("；".join(exhibit.get("facts", [])) or "资料待核实")',
   'app.call_model = fake_model',

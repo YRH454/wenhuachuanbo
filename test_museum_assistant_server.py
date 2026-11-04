@@ -1,10 +1,13 @@
 """No network or paid model calls: exercise the local service with mock responses."""
 import http.client
+import base64
 import json
 import socket
+import tempfile
 import threading
 import unittest
 import urllib.error
+from pathlib import Path
 from unittest.mock import patch
 
 import museum_assistant_server as app
@@ -75,6 +78,40 @@ class LocalServiceTest(unittest.TestCase):
             with self.subTest(exhibit_id=exhibit_id):
                 self.assertEqual(self.request({'messages': messages, 'exhibitId': exhibit_id})[0], 400)
         self.assertEqual(self.request({'messages': messages, 'exhibitId': 'sdu-egg', 'facts': ['伪造']})[0], 400)
+        self.assertEqual(self.request({'messages': messages, 'exhibitId': 'sdu-egg', 'image': 'https://example.com/x.jpg'})[0], 400)
+
+    def test_scene_is_selected_from_server_catalog_and_not_client_paths(self):
+        messages = [{'role': 'user', 'content': '介绍当前画面'}]
+        with patch.object(app, 'call_model', return_value='模拟城市讲解') as model:
+            status, data = self.request({'messages': messages, 'sceneId': 'city-370300'})
+        self.assertEqual(status, 200)
+        self.assertEqual(data['scene'], {'id': 'city-370300', 'evidence': 'draft', 'hasImage': True})
+        self.assertEqual(model.call_args.args[4]['title'], '淄博')
+        for body in [
+            {'messages': messages, 'sceneId': 'city-999999'},
+            {'messages': messages, 'sceneId': '../secret'},
+            {'messages': messages, 'sceneId': 'city-370300', 'image': 'https://example.com/x.jpg'},
+            {'messages': messages, 'sceneId': 'city-370300', 'exhibitId': 'sdu-egg'},
+            {'messages': messages, 'sceneId': 'city-370300', 'mode': 'other'},
+        ]:
+            with self.subTest(body=body): self.assertEqual(self.request(body)[0], 400)
+
+    def test_guide_mode_is_explicit_and_uses_the_selected_scene(self):
+        body = {'messages': [{'role': 'user', 'content': '简短讲解'}], 'sceneId': 'city-370300', 'mode': 'guide'}
+        with patch.object(app, 'call_model', return_value='模拟讲解') as model:
+            status, data = self.request(body)
+        self.assertEqual(status, 200)
+        self.assertEqual(data['scene']['id'], 'city-370300')
+        self.assertTrue(model.call_args.kwargs['guide'])
+
+    def test_unavailable_image_does_not_fall_back_to_a_text_only_model_request(self):
+        body = {'messages': [{'role': 'user', 'content': '看看这幅'}], 'exhibitId': 'sdu-egg'}
+        with patch.object(app, 'exhibit_image_data_url', side_effect=app.ExhibitImageError('missing')):
+            with patch.object(app.urllib.request, 'urlopen') as urlopen:
+                status, data = self.request(body)
+        self.assertEqual(status, 422)
+        self.assertIn('未发送识图请求', data['error'])
+        urlopen.assert_not_called()
 
     def test_invalid_history_and_oversized_input_are_rejected(self):
         invalid = [
@@ -139,6 +176,21 @@ class ConfigurationTest(unittest.TestCase):
         self.assertFalse(payload['enable_thinking'])
         self.assertEqual(request.get_header('Authorization'), 'Bearer test-only-credential')
 
+    def test_automatic_guide_uses_a_short_plain_text_instruction(self):
+        class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *_): return False
+            def read(self, _): return b'{"choices":[{"message":{"content":"OK"}}]}'
+        scene = app.load_scene_catalog()['city-370300']
+        with patch.object(app.urllib.request, 'urlopen', return_value=FakeResponse()) as urlopen, \
+                patch.object(app, 'scene_image_data_url', return_value='data:image/png;base64,AAA'):
+            app.call_model('test-only-credential', app.validated_endpoint(app.DEFAULT_BASE_URL),
+                           [{'role': 'user', 'content': '讲解'}], [], scene, guide=True)
+        payload = json.loads(urlopen.call_args.args[0].data)
+        self.assertEqual(payload['max_tokens'], 150)
+        self.assertIn('不要问候', payload['messages'][0]['content'])
+        self.assertIn('不要输出Markdown', payload['messages'][0]['content'])
+
     def test_provider_prompt_distinguishes_checked_and_unverified_exhibits(self):
         class FakeResponse:
             def __enter__(self): return self
@@ -148,7 +200,8 @@ class ConfigurationTest(unittest.TestCase):
         catalog = app.load_exhibit_catalog()
         messages = [{'role': 'user', 'content': '介绍一下这件'}]
         prompts = []
-        with patch.object(app.urllib.request, 'urlopen', return_value=FakeResponse()) as urlopen:
+        with patch.object(app.urllib.request, 'urlopen', return_value=FakeResponse()) as urlopen, \
+                patch.object(app, 'exhibit_image_data_url', return_value='data:image/jpeg;base64,AAA'):
             for exhibit_id in ['sdu-egg', 'sdu-fanghu']:
                 app.call_model('test-only-credential', app.validated_endpoint(app.DEFAULT_BASE_URL), messages, [], catalog[exhibit_id])
                 payload = json.loads(urlopen.call_args.args[0].data)
@@ -158,6 +211,89 @@ class ConfigurationTest(unittest.TestCase):
         self.assertIn('铜方壶', prompts[1])
         self.assertIn('没有逐项核对', prompts[1])
         self.assertNotIn('日照东海峪征集', prompts[1])
+
+    def test_provider_receives_selected_image_and_does_not_mutate_history(self):
+        class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *_): return False
+            def read(self, _): return b'{"choices":[{"message":{"content":"OK"}}]}'
+
+        catalog = app.load_exhibit_catalog()
+        messages = [{'role': 'user', 'content': '这幅是什么？'}]
+        data_urls = ['data:image/jpeg;base64,Zmlyc3Q=', 'data:image/png;base64,c2Vjb25k']
+        with patch.object(app.urllib.request, 'urlopen', return_value=FakeResponse()) as urlopen, \
+                patch.object(app, 'exhibit_image_data_url', side_effect=data_urls) as loader:
+            for index, exhibit_id in enumerate(['sdu-egg', 'folk-lantern']):
+                app.call_model('test-only-credential', app.validated_endpoint(app.DEFAULT_BASE_URL), messages, [], catalog[exhibit_id])
+                payload = json.loads(urlopen.call_args.args[0].data)
+                content = payload['messages'][-1]['content']
+                self.assertEqual(content[0], {'type': 'image_url', 'image_url': {'url': data_urls[index]}})
+                self.assertEqual(content[1], {'type': 'text', 'text': '这幅是什么？'})
+                self.assertEqual(loader.call_args.args[0]['id'], exhibit_id)
+                self.assertIn('视觉判断可能出错', payload['messages'][0]['content'])
+        self.assertEqual(messages, [{'role': 'user', 'content': '这幅是什么？'}])
+
+    def test_scene_payload_distinguishes_ai_illustration_from_missing_portrait(self):
+        class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *_): return False
+            def read(self, _): return b'{"choices":[{"message":{"content":"OK"}}]}'
+
+        scenes = app.load_scene_catalog()
+        messages = [{'role': 'user', 'content': '介绍当前画面'}]
+        with patch.object(app.urllib.request, 'urlopen', return_value=FakeResponse()) as urlopen, \
+                patch.object(app, 'scene_image_data_url', return_value='data:image/png;base64,AAA') as loader:
+            app.call_model('test-only-credential', app.validated_endpoint(app.DEFAULT_BASE_URL), messages, [], scenes['object-370300-zibo-boshan-glass'])
+            illustrated = json.loads(urlopen.call_args.args[0].data)
+            self.assertIn('AI创意插画', illustrated['messages'][0]['content'])
+            self.assertEqual(illustrated['messages'][-1]['content'][0]['type'], 'image_url')
+            loader.assert_called_once()
+            app.call_model('test-only-credential', app.validated_endpoint(app.DEFAULT_BASE_URL), messages, [], scenes['person-370300-zibo-wang-chunhua'])
+            portrait = json.loads(urlopen.call_args.args[0].data)
+            self.assertIn('没有提供图片', portrait['messages'][0]['content'])
+            self.assertEqual(portrait['messages'][-1]['content'], '介绍当前画面')
+            self.assertEqual(loader.call_count, 1)
+
+
+class ImageSafetyTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name) / 'museum'
+        self.images = self.root / 'images'
+        self.images.mkdir(parents=True)
+        self.root_patch = patch.object(app, 'MUSEUM_ROOT', self.root)
+        self.images_patch = patch.object(app, 'IMAGE_ROOT', self.images)
+        self.root_patch.start()
+        self.images_patch.start()
+
+    def tearDown(self):
+        self.images_patch.stop()
+        self.root_patch.stop()
+        self.tmp.cleanup()
+
+    def test_local_image_is_encoded_from_the_allowlisted_path(self):
+        data = b'\x89PNG\r\n\x1a\n' + b'test-image'
+        (self.images / 'sample.png').write_bytes(data)
+        result = app.exhibit_image_data_url({'image': 'images/sample.png'})
+        self.assertEqual(result, 'data:image/png;base64,' + base64.b64encode(data).decode('ascii'))
+
+    def test_rejects_invalid_paths_missing_files_non_images_and_oversize(self):
+        (self.images / 'wrong.jpg').write_bytes(b'not an image')
+        (self.images / 'oversize.jpg').write_bytes(b'\xff\xd8\xff' + b'x' * app.MAX_IMAGE_BYTES)
+        for image in ['../secret.jpg', 'images/../secret.jpg', 'https://example.com/a.jpg',
+                      'images/missing.jpg', 'images/wrong.jpg', 'images/oversize.jpg']:
+            with self.subTest(image=image), self.assertRaises(app.ExhibitImageError):
+                app.exhibit_image_data_url({'image': image})
+
+    def test_symlink_to_file_outside_images_is_rejected(self):
+        outside = self.root / 'outside.jpg'
+        outside.write_bytes(b'\xff\xd8\xffexternal')
+        try:
+            (self.images / 'linked.jpg').symlink_to(outside)
+        except OSError:
+            self.skipTest('Creating symlinks is not permitted on this system')
+        with self.assertRaises(app.ExhibitImageError):
+            app.exhibit_image_data_url({'image': 'images/linked.jpg'})
 
 
 if __name__ == '__main__':

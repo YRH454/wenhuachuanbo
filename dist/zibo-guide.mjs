@@ -51,6 +51,8 @@ export function createZiboGuide(doc){
   }
   for(const item of ZIBO_GUIDE.passages){
     const section=make('section','','zibo-passage'),title=make('h3',item.title),body=make('div','','zibo-passage-body');
+    section.dataset.guideKind='scene';section.dataset.guideId='topic-370300-'+item.id;section.dataset.guideTitle='淄博 · 博山琉璃 · '+item.title;
+    section.dataset.guideSource=ZIBO_GUIDE.sources[item.sources[0]]?.url||'';
     section.id=item.id;title.id=item.id+'-title';title.setAttribute('tabindex','-1');
     section.setAttribute('aria-labelledby',title.id);section.append(title);
     if(item.id==='zibo-overview'){

@@ -4,7 +4,8 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { artworks } from '../dist/museum/artworks.mjs';
 
 const target = new URL('../dist/museum/artwork-context.json', import.meta.url);
-const records = artworks.map(({ id, title }) => ({ id, title }));
+// The image is a server-side allowlist entry; clients only send an exhibit ID.
+const records = artworks.map(({ id, title, image }) => ({ id, title, image }));
 if (new Set(records.map(record => record.id)).size !== records.length) {
   throw new Error('Exhibit IDs must be unique.');
 }

@@ -55,7 +55,6 @@ Previous interface and evidence are retained separately; no old PASS is inherite
 <header class="topbar">
   <a class="identity" href="#/map" aria-label="一物见山东，返回地图">一物见山东</a>
   <p class="header-line">循一物，见一城。</p>
-  <a class="museum-entry" href="museum/">齐鲁文化博物馆 <span aria-hidden="true">↗</span></a>
   <div class="controls" aria-label="画作风格">
     <div class="variants" role="group" aria-label="选择画作风格">
       <button type="button" data-variant="A" aria-pressed="true">水墨</button>
@@ -72,6 +71,11 @@ Previous interface and evidence are retained separately; no old PASS is inherite
   </div>
   <section id="map-view" class="map-view" aria-labelledby="map-heading" hidden>
     <h1 id="map-heading" class="sr-only" tabindex="-1">山东十六城文化地图</h1>
+    <a class="museum-entry" href="museum/">
+      <span class="museum-entry-seal" aria-hidden="true">齐鲁</span>
+      <span class="museum-entry-copy"><strong>齐鲁文化博物馆</strong><small>山海齐鲁 · 文脉流长</small></span>
+      <span class="museum-entry-arrow" aria-hidden="true">↗</span>
+    </a>
     <figure class="map-figure">
       <svg id="map" class="map-canvas" viewBox="0 0 1200 880" role="group" aria-label="山东十六市地图，选择市域了解当地文化">
         <defs id="map-defs"></defs>

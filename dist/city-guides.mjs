@@ -153,6 +153,7 @@ export function createCityGuide(doc, {registry=CITY_GUIDES, loadGuide, getBackgr
   }
   function mediaFigure(ctx,asset,opening=false) {
     const figure=make('figure','',opening?'cg-material cg-body-art':'cg-media');
+    figure.dataset.guideKind='scene';figure.dataset.guideId='citymedia-'+ctx.id+'-'+asset.id;figure.dataset.guideTitle=artworkTitle(asset);
     const frame=make('div','','cg-art-frame'),img=make('img'),error=make('p','插画暂时无法显示，正文仍可阅读。','cg-art-error');
     figure.dataset.mediaId=asset.id;frame.style.setProperty('--cg-image-ratio',asset.width+' / '+asset.height);
     img.alt=artworkDescription(asset);img.width=asset.width;img.height=asset.height;img.loading='lazy';img.decoding='async';
@@ -183,6 +184,8 @@ export function createCityGuide(doc, {registry=CITY_GUIDES, loadGuide, getBackgr
     const passages=make('div','','cg-passages');
     for(const passage of data.passages) {
       const section=make('section','','cg-passage'),h=make('h3',passage.title),body=make('div','','cg-passage-body');
+      section.dataset.guideKind='scene';section.dataset.guideId='topic-'+ctx.id+'-'+passage.id;section.dataset.guideTitle=data.city+' · '+passage.title;
+      section.dataset.guideSource=data.sources[passage.sources[0]]?.url||'';
       section.id='city-guide-'+passage.id;h.id=section.id+'-title';h.setAttribute('tabindex','-1');section.setAttribute('aria-labelledby',h.id);section.append(h);
       if(passage.id==='overview'&&data.archive.length) {
         const archive=make('dl','','cg-archive');

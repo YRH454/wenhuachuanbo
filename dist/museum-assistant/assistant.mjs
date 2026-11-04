@@ -44,8 +44,20 @@ export function safeExhibit(value) {
   return { id: value.id, title: value.title.trim(), source };
 }
 
+function safeScene(value) {
+  if (!value || typeof value.id !== 'string' || value.id.length > 120
+      || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.id)
+      || typeof value.title !== 'string' || !value.title.trim() || value.title.length > 120) return null;
+  let source = '';
+  try {
+    const url = new URL(value.source);
+    if (url.protocol === 'https:' && !url.username && !url.password && !url.port) source = url.href;
+  } catch { /* The reference is optional. */ }
+  return { id: value.id, title: value.title.trim(), source, kind: 'scene' };
+}
+
 /** Mount the assistant without changing the host page's styles or routes. */
-export function mountMuseumAssistant({ container = document.body, openInitially = false } = {}) {
+export function mountMuseumAssistant({ container = document.body, openInitially = false, showLauncher = true } = {}) {
   if (!container?.ownerDocument) throw new TypeError('A page element is required as the assistant container.');
   const doc = container.ownerDocument;
   const win = doc.defaultView;
@@ -57,6 +69,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
 
   const host = doc.createElement('div');
   host.setAttribute('data-museum-assistant', '');
+  if (!showLauncher) host.setAttribute('data-external-launcher', '');
   const shadow = host.attachShadow({ mode: 'open' });
   const stylesheet = doc.createElement('link');
   stylesheet.rel = 'stylesheet';
@@ -73,7 +86,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     '<section class="panel" id="assistant-panel" role="dialog" aria-modal="false" aria-labelledby="assistant-title" hidden>',
     '  <header class="panel-head">',
     '    <div class="head-identity"><span class="head-portrait"><img src="' + AVATAR_URL + '" alt="" aria-hidden="true"></span><h2 id="assistant-title" tabindex="-1">小齐</h2></div>',
-    '    <div class="head-actions"><button class="clear-button" type="button" disabled>清空</button><button class="close-button" type="button" aria-label="关闭小齐对话"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>',
+    '    <div class="head-actions"><details class="usage-details"><summary aria-label="查看小齐使用说明" title="使用说明"><span aria-hidden="true">?</span></summary><p>提问与相关画面会发送至模型服务，可能产生费用。请勿输入隐私信息，AI 回答请核实。</p></details><button class="clear-button" type="button" disabled>清空</button><button class="close-button" type="button" aria-label="关闭小齐对话"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>',
     '  </header>',
     '  <div class="conversation-area">',
     '    <div class="exhibit-context" hidden><div class="exhibit-context-copy"><p>正在了解 <strong></strong></p><div class="exhibit-context-meta"><a target="_blank" rel="noopener noreferrer" hidden>查看资料</a><span class="exhibit-evidence" aria-live="polite"></span></div></div><button type="button" class="leave-exhibit" aria-label="退出当前展品，返回普通对话"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>',
@@ -82,13 +95,14 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     '    <div class="waiting" role="status" aria-live="polite" hidden><span class="waiting-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>小齐正在思考…</span></div>',
     '    <div class="prompt-section"><div class="prompt-list" role="group" aria-label="示例问题"></div></div>',
     '  </div>',
-    '  <form class="composer"><label class="visually-hidden" for="assistant-input">问问小齐</label><div class="input-wrap"><textarea id="assistant-input" rows="1" maxlength="400" placeholder="问问小齐…"></textarea><button class="send-button" type="submit" disabled><span>发送</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button></div><p>提问与所选展品会发送至阿里云，请勿输入隐私信息。AI 回答请核实。</p></form>',
+    '  <form class="composer"><label class="visually-hidden" for="assistant-input">问问小齐</label><div class="input-wrap"><textarea id="assistant-input" rows="1" maxlength="400" placeholder="问问小齐…"></textarea><button class="send-button" type="submit" disabled><span>发送</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button></div></form>',
     '</section>'
   ].join('');
   shadow.append(shell);
   container.append(host);
 
   const launcher = shadow.querySelector('.launcher');
+  launcher.hidden = !showLauncher;
   const panel = shadow.querySelector('.panel');
   const heading = shadow.querySelector('#assistant-title');
   const closeButton = shadow.querySelector('.close-button');
@@ -112,6 +126,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   let history = [];
   let currentExhibit = null;
   let evidenceStatus = '';
+  let autoDescribeRequested = false;
   let returnFocus = launcher;
   const sessions = new Map();
   let destroyed = false;
@@ -180,12 +195,13 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     contextSource.hidden = !currentExhibit.source;
     if (currentExhibit.source) contextSource.href = currentExhibit.source;
     else contextSource.removeAttribute('href');
-    contextEvidence.textContent = evidenceStatus === 'checked' ? '馆藏资料摘记已核对' : evidenceStatus === 'unverified' ? '展签资料待核实' : '';
+    contextEvidence.textContent = evidenceStatus === 'checked' ? '馆藏资料摘记已核对' : evidenceStatus === 'unverified' ? '展签资料待核实' : evidenceStatus === 'draft' ? '场景资料待核实' : '';
   }
 
   function selectExhibit(next) {
-    const previousKey = currentExhibit?.id || '';
-    const nextKey = next?.id || '';
+    const contextKey = value => value ? (value.kind === 'scene' ? 'scene:' : 'exhibit:') + value.id : '';
+    const previousKey = contextKey(currentExhibit);
+    const nextKey = contextKey(next);
     if (previousKey === nextKey) {
       currentExhibit = next;
       renderContext();
@@ -199,7 +215,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       if (!input.value.trim()) input.value = activeQuestion;
       activeQuestion = '';
     }
-    sessions.set(previousKey, { history: history.slice(), nodes: [...thread.childNodes], input: input.value, evidenceStatus });
+    sessions.set(previousKey, { history: history.slice(), nodes: [...thread.childNodes], input: input.value, evidenceStatus, autoDescribeRequested });
     currentExhibit = next;
     const saved = sessions.get(nextKey);
     history = saved?.history.slice() || [];
@@ -209,6 +225,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     promptSection.hidden = !!thread.childElementCount;
     input.value = saved?.input || '';
     evidenceStatus = saved?.evidenceStatus || '';
+    autoDescribeRequested = saved?.autoDescribeRequested || false;
     renderContext();
     renderPrompts();
     refreshControls();
@@ -222,7 +239,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       const response = await win.fetch('/api/museum-assistant/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [...previous, { role: 'user', content: question }], ...(exhibit ? { exhibitId: exhibit.id } : {}) }),
+        body: JSON.stringify({ messages: [...previous, { role: 'user', content: question }], ...(exhibit ? (exhibit.kind === 'scene' ? { sceneId: exhibit.id } : { exhibitId: exhibit.id }) : {}) }),
         signal: request.signal
       });
       let data;
@@ -234,10 +251,11 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       if (!response.ok) throw new Error(typeof data?.error === 'string' ? data.error.slice(0, 120) : '暂时无法连接模型，请稍后重试。');
       if (typeof data?.answer !== 'string' || !data.answer.trim()) throw new Error('小齐暂时没有收到回答，请重试。');
       if (activeRequest !== request || destroyed) return;
-      if (exhibit && (data?.exhibit?.id !== exhibit.id || !['checked', 'unverified'].includes(data.exhibit.evidence))) {
+      const received = exhibit?.kind === 'scene' ? data?.scene : data?.exhibit;
+      if (exhibit && (received?.id !== exhibit.id || !(exhibit.kind === 'scene' ? ['draft'] : ['checked', 'unverified']).includes(received.evidence))) {
         throw new Error('展品资料未能确认，请刷新页面或重启模型服务。');
       }
-      if (exhibit) { evidenceStatus = data.exhibit.evidence; renderContext(); }
+      if (exhibit) { evidenceStatus = received.evidence; renderContext(); }
       const answer = data.answer.trim().slice(0, 2000);
       history = [...previous, { role: 'user', content: question }, { role: 'assistant', content: answer }].slice(-6);
       addMessage('assistant', answer, safeRelatedSources(data.sources));
@@ -282,14 +300,16 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     launcher.hidden = true;
     launcher.setAttribute('aria-expanded', 'true');
     heading.focus({ preventScroll: true });
+    host.dispatchEvent(new win.CustomEvent('assistantvisibility', { detail: { open: true } }));
   }
 
   function close() {
     if (destroyed || panel.hidden) return;
     panel.hidden = true;
-    launcher.hidden = false;
+    launcher.hidden = !showLauncher;
     launcher.setAttribute('aria-expanded', 'false');
     (returnFocus?.isConnected ? returnFocus : launcher).focus({ preventScroll: true });
+    host.dispatchEvent(new win.CustomEvent('assistantvisibility', { detail: { open: false } }));
   }
 
   function clearConversation() {
@@ -297,6 +317,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     activeRequest = null;
     activeQuestion = '';
     history = [];
+    autoDescribeRequested = false;
     waiting.hidden = true;
     thread.replaceChildren();
     thread.hidden = true;
@@ -339,11 +360,37 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   const api = {
     open,
     close,
-    openForExhibit(value, trigger) {
+    isOpen() { return !panel.hidden; },
+    setContext(value) {
+      if (destroyed) return false;
+      const context = value?.kind === 'scene' ? safeScene(value) : safeExhibit(value);
+      if (!context) return false;
+      selectExhibit(context);
+      return true;
+    },
+    seedGuide(value, answer, sources = []) {
+      const keyMatches = currentExhibit && value && currentExhibit.id === value.id
+        && (currentExhibit.kind === 'scene') === (value.kind === 'scene');
+      if (!keyMatches || activeRequest || history.length || thread.childElementCount || typeof answer !== 'string' || !answer.trim()) return false;
+      const text = answer.trim().slice(0, 2000);
+      history = [{ role: 'user', content: '请简短介绍当前画面。' }, { role: 'assistant', content: text }];
+      evidenceStatus = currentExhibit.kind === 'scene' ? 'draft' : '';
+      renderContext();
+      welcome.hidden = true;
+      promptSection.hidden = true;
+      addMessage('assistant', text, safeRelatedSources(sources));
+      refreshControls();
+      return true;
+    },
+    openForExhibit(value, trigger, { describe = false } = {}) {
       const exhibit = safeExhibit(value);
       if (!exhibit || destroyed) return false;
       selectExhibit(exhibit);
       open(trigger || launcher);
+      if (describe && !autoDescribeRequested && !thread.childElementCount && activeRequest === null) {
+        autoDescribeRequested = true;
+        submitQuestion('请描述这幅画面，并说说有哪些值得留意的细节。');
+      }
       return true;
     },
     destroy() {
