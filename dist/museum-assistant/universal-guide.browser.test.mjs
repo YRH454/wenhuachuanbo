@@ -37,6 +37,21 @@ try {
     });
     const page = await context.newPage();
     const requests = [], errors = [];
+    const mobile = viewport.width <= 700;
+    async function openPanel() {
+      const companion = page.getByRole('button', { name: '打开小齐文化向导' });
+      if (await companion.isVisible()) await companion.click();
+      else await page.getByRole('button', { name: /小齐.*陪你逛展/ }).click();
+      const panel = page.getByRole('dialog', { name: '小齐' });
+      await panel.waitFor();
+      return panel;
+    }
+    async function toggleControl(from, to, pressed) {
+      const scope = mobile ? await openPanel() : page;
+      await scope.getByRole('button', { name: from, exact: true }).click();
+      assert.equal(await scope.getByRole('button', { name: to, exact: true }).getAttribute('aria-pressed'), pressed);
+      if (mobile) await scope.getByRole('button', { name: '关闭小齐对话' }).click();
+    }
     page.on('pageerror', error => errors.push(error.message));
     await page.route('**/api/museum-assistant/chat', async route => {
       const body = route.request().postDataJSON(); requests.push(body);
@@ -47,25 +62,23 @@ try {
       await route.fulfill({ json: data }).catch(() => {});
     });
     await page.goto(`http://127.0.0.1:${port}/?variant=A#/map`, { waitUntil: 'domcontentloaded' });
-    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 map' }).waitFor({ timeout: 15000 });
+    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 map' }).waitFor({ state: 'attached', timeout: 15000 });
     assert.equal(await page.locator('[data-museum-assistant]').count(), 1, 'the map has one shared assistant');
     assert.equal(await page.locator('.guide-disclosure').count(), 0, 'the narration dock has no persistent disclosure label');
     assert.equal(requests.filter(item => item.sceneId === 'map').length, 1, 'map narration is requested once');
     const screenshot = join(tmpdir(), `xiaoqi-universal-map-${viewport.width}.png`);
     await page.screenshot({ path: screenshot, animations: 'disabled' });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-    await page.getByRole('button', { name: '语音 · 关' }).click();
-    assert.equal(await page.getByRole('button', { name: '语音 · 开' }).getAttribute('aria-pressed'), 'true');
+    await toggleControl('语音 · 关', '语音 · 开', 'true');
     assert.deepEqual(await page.evaluate(() => window.__spoken), ['模拟讲解 map']);
 
-    await page.getByRole('button', { name: '自动讲解 · 开' }).click();
-    assert.equal(await page.getByRole('button', { name: '自动讲解 · 关' }).getAttribute('aria-pressed'), 'false');
+    await toggleControl('自动讲解 · 开', '自动讲解 · 关', 'false');
     const count = requests.length;
     await page.evaluate(() => { location.hash = '/city/370300'; });
     await page.waitForTimeout(4000);
     assert.equal(requests.length, count, 'turning automatic narration off prevents model calls after navigation');
-    await page.getByRole('button', { name: '自动讲解 · 关' }).click();
-    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 city-370300' }).waitFor({ timeout: 15000 });
+    await toggleControl('自动讲解 · 关', '自动讲解 · 开', 'true');
+    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 city-370300' }).waitFor({ state: 'attached', timeout: 15000 });
     assert.equal(requests.at(-1).sceneId, 'city-370300');
     const cityScreenshot = join(tmpdir(), `xiaoqi-universal-city-${viewport.width}.png`);
     await page.screenshot({ path: cityScreenshot, animations: 'disabled' });
@@ -107,25 +120,39 @@ try {
     const artwork = page.getByRole('button', { name: '让小齐看看：蛋壳陶高柄杯' });
     await artwork.scrollIntoViewIfNeeded();
     await artwork.focus();
-    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 sdu-egg' }).waitFor({ timeout: 15000 });
+    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 sdu-egg' }).waitFor({ state: 'attached', timeout: 15000 });
     assert.ok(requests.some(item => item.exhibitId === 'sdu-egg'));
     const museumScreenshot = join(tmpdir(), `xiaoqi-universal-museum-${viewport.width}.png`);
     await page.screenshot({ path: museumScreenshot, animations: 'disabled' });
+    await page.evaluate(() => {
+      const host = document.querySelector('[data-museum-assistant]');
+      window.__exhibitGuideVisibility = [];
+      host.addEventListener('assistantvisibility', event => window.__exhibitGuideVisibility.push({
+        open: event.detail.open, dockHidden: host.shadowRoot.querySelector('.guide-dock').hidden
+      }));
+    });
     await artwork.click();
     await page.getByRole('dialog', { name: '小齐' }).waitFor();
     assert.equal(await page.getByRole('dialog', { name: '小齐' }).getByText('模拟讲解 sdu-egg').count(), 1, 'picture click opens its own narration');
     await page.getByRole('button', { name: '关闭小齐对话' }).click();
-    await page.getByRole('button', { name: '自动讲解 · 开' }).click();
+    assert.deepEqual(await page.evaluate(() => window.__exhibitGuideVisibility.slice(-2)), [
+      { open: true, dockHidden: true }, { open: false, dockHidden: false }
+    ], 'exhibit panel and guide dock never overlap during open or close');
+    await toggleControl('自动讲解 · 开', '自动讲解 · 关', 'false');
     const stopped = requests.length;
     await page.goto(`http://127.0.0.1:${port}/people-culture-v1/?city=370300&preview=1#objects`, { waitUntil: 'domcontentloaded' });
-    assert.equal(await page.getByRole('button', { name: '自动讲解 · 关' }).count(), 1, 'off preference survives page navigation');
+    if (mobile) {
+      const settings = await openPanel();
+      assert.equal(await settings.getByRole('button', { name: '自动讲解 · 关' }).count(), 1, 'off preference survives page navigation');
+      await settings.getByRole('button', { name: '关闭小齐对话' }).click();
+    } else assert.equal(await page.getByRole('button', { name: '自动讲解 · 关' }).count(), 1, 'off preference survives page navigation');
     await page.waitForTimeout(2600);
     assert.equal(requests.length, stopped);
-    await page.getByRole('button', { name: '自动讲解 · 关' }).click();
+    await toggleControl('自动讲解 · 关', '自动讲解 · 开', 'true');
     const object = page.locator('#object-trigger-zibo-boshan-glass');
     await object.waitFor(); await object.click();
     await page.locator('#object-zibo-boshan-glass').scrollIntoViewIfNeeded();
-    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 object-370300-zibo-boshan-glass' }).waitFor({ timeout: 15000 });
+    await page.locator('.guide-reading-text').filter({ hasText: '模拟讲解 object-370300-zibo-boshan-glass' }).waitFor({ state: 'attached', timeout: 15000 });
     assert.equal(requests.at(-1).sceneId, 'object-370300-zibo-boshan-glass');
     assert.deepEqual(errors, []);
     reports.push({ viewport, screenshot, cityScreenshot, museumScreenshot, status: 'passed (mock model)' });

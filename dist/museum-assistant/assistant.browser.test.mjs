@@ -13,12 +13,13 @@ const browser = await chromium.launch({ headless: true, channel: 'chrome' });
 const reports = [];
 
 try {
-  for (const viewport of [{ width: 1440, height: 900 }, { width: 360, height: 640 }, { width: 320, height: 568 }]) {
+  for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 360, height: 640 }, { width: 320, height: 568 }]) {
     const context = await browser.newContext({ viewport, reducedMotion: 'reduce', deviceScaleFactor: 1 });
     const page = await context.newPage();
     const failures = [];
     const external = [];
     const requests = [];
+    let errorAttempts = 0;
     page.on('pageerror', error => failures.push(error.message));
     page.on('request', request => { if (!request.url().startsWith(origin)) external.push(request.url()); });
     page.on('response', response => {
@@ -28,7 +29,7 @@ try {
       const data = route.request().postDataJSON();
       requests.push(data);
       const question = data.messages.at(-1).content;
-      if (question === '模拟错误') {
+      if (question === '模拟错误' && errorAttempts++ === 0) {
         await route.fulfill({ status: 429, json: { error: '模型暂时繁忙或额度不足，请稍后再试。' } });
       } else if (question === '等待中的问题') {
         await new Promise(resolve => setTimeout(resolve, 800));
@@ -105,15 +106,22 @@ try {
     await input.press('Enter');
     await page.getByText('模型暂时繁忙或额度不足，请稍后再试。').waitFor();
     assert.equal(await input.inputValue(), '模拟错误', 'failed question remains available to retry');
+    await input.fill('保留的新草稿');
+    await page.getByRole('button', { name: '重新提问' }).click();
+    await page.getByText('这是模拟的模型回答。').last().waitFor();
+    assert.equal(await input.inputValue(), '保留的新草稿', 'retrying does not erase a newer draft');
     await page.getByRole('button', { name: '清空' }).click();
     assert.equal(await page.locator('.message').count(), 0);
 
     await input.fill('等待中的问题');
     await input.press('Enter');
     await page.getByText('小齐正在思考…').waitFor();
-    await page.getByRole('button', { name: '清空' }).click();
+    await page.getByRole('button', { name: '停止', exact: true }).click();
     await page.waitForTimeout(1000);
-    assert.equal(await page.locator('.message').count(), 0, 'clearing cancels the in-flight reply');
+    assert.equal(await page.getByText('取消后不应出现').count(), 0, 'stopping ignores the late reply');
+    assert.equal(await input.inputValue(), '等待中的问题', 'stopping restores the question');
+    assert.equal(await page.getByRole('button', { name: '重新提问' }).isVisible(), true);
+    await page.getByRole('button', { name: '清空' }).click();
     await input.press('Escape');
     const launcher = page.getByRole('button', { name: /小齐.*陪你逛展/ });
     assert.equal(await launcher.isVisible(), true);

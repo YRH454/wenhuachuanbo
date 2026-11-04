@@ -51,36 +51,79 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
   const dock = doc.createElement('aside');
   dock.className = 'guide-dock';
   dock.setAttribute('aria-label', '小齐自动讲解');
-  dock.innerHTML = '<div class="guide-reading" hidden><button class="guide-reading-open" type="button"><span class="guide-reading-title"></span><span class="guide-reading-text"></span></button></div>'
+  dock.innerHTML = '<div class="guide-reading" hidden><button class="guide-reading-open" type="button" aria-describedby="guide-reading-description"><span class="guide-reading-label"></span><span class="guide-reading-title"></span><span class="guide-reading-hint" aria-hidden="true">查看全文</span><span class="guide-reading-text" id="guide-reading-description"></span></button></div>'
     + '<div class="guide-controls"><button class="guide-toggle" type="button"></button><button class="guide-voice" type="button"></button></div>';
   shadow.querySelector('.assistant-shell').append(dock);
   const reading = dock.querySelector('.guide-reading'), openReading = dock.querySelector('.guide-reading-open');
-  const title = dock.querySelector('.guide-reading-title'), copy = dock.querySelector('.guide-reading-text');
+  const label = dock.querySelector('.guide-reading-label'), title = dock.querySelector('.guide-reading-title'), copy = dock.querySelector('.guide-reading-text');
   const toggle = dock.querySelector('.guide-toggle'), voice = dock.querySelector('.guide-voice');
+  const panelControls = doc.createElement('div');
+  panelControls.className = 'guide-panel-controls';
   const panelToggle = doc.createElement('button');
   panelToggle.type = 'button'; panelToggle.className = 'guide-panel-toggle';
-  shadow.querySelector('.head-actions').prepend(panelToggle);
+  const panelVoice = doc.createElement('button');
+  panelVoice.type = 'button'; panelVoice.className = 'guide-panel-voice';
+  panelControls.append(panelToggle, panelVoice);
+  shadow.querySelector('.panel-head').after(panelControls);
   const supportedVoice = Boolean(win.speechSynthesis && win.SpeechSynthesisUtterance);
   let local, session;
   try { local = win.localStorage; session = win.sessionStorage; } catch { /* Storage may be unavailable. */ }
   let enabled = storageGet(local, AUTO_KEY) !== 'off';
   let voiceEnabled = supportedVoice && storageGet(session, VOICE_KEY) === 'on';
   let current = null, request = null, timer = null, refreshTimer = null, disposed = false;
-  let shownText = '', lastAttempt = '', lastDelivered = '';
+  let shownText = '', guideState = 'idle', lastAttempt = '', lastDelivered = '', voiceAwaitingClose = false;
   const actor = doc.getElementById('xiaoqi-actor');
   function placeDock() {
-    if (!actor || dock.hidden) return;
-    const rect = actor.getBoundingClientRect();
-    if (!rect.width || !rect.height) return;
-    const width = dock.offsetWidth, height = dock.offsetHeight, gap = 12;
-    let left, top;
+    if (dock.hidden) return;
+    const actorRect = actor?.getBoundingClientRect();
+    const anchor = actorRect?.width && actorRect?.height ? actor : (doc.getElementById('xiaoqi-restore') || shadow.querySelector('.launcher'));
+    const rect = anchor?.getBoundingClientRect();
+    if (!rect?.width || !rect?.height) return;
+    const gap = 12;
+    let left, top, width, height;
     if (win.innerWidth > 700) {
+      delete dock.dataset.mobileLayout;
+      width = dock.offsetWidth; height = dock.offsetHeight;
+      if (!width || !height) return;
       left = rect.right - width;
       top = rect.top - height - gap;
       if (top < 8) top = rect.bottom + gap;
+      delete dock.dataset.occluded;
     } else {
-      left = rect.left > win.innerWidth / 2 ? 8 : win.innerWidth - width - 8;
-      top = rect.top;
+      // Try a readable summary first; fall back to the smaller cue when space is tight.
+      const protectedNodes = '.topbar,.museum-entry,#city-links .city-hit,.map-figure figcaption,.art-shelf,.artwork-image,.artwork-meta,.cg-scene-open,.zibo-scene-open,.cg-scene-back,.zibo-scene-back,.object-panel,[role="tabpanel"]';
+      const obstacles = [...doc.querySelectorAll(protectedNodes), anchor].map(node => node.getBoundingClientRect())
+        .filter(r => r.width && r.height && r.bottom > 0 && r.top < win.innerHeight && r.right > 0 && r.left < win.innerWidth);
+      const clamp = (value, low, high) => Math.max(low, Math.min(value, Math.max(low, high)));
+      function bestPosition(width, height) {
+        const xs = [8, win.innerWidth - width - 8, rect.right - width, rect.left];
+        const ys = [rect.top - height - gap, rect.bottom + gap, 8, win.innerHeight - height - 8,
+          ...obstacles.flatMap(r => [r.top - height - 8, r.bottom + 8])];
+        let best = null;
+        for (const x of xs) for (const y of ys) {
+          const candidate = { left: clamp(x, 8, win.innerWidth - width - 8), top: clamp(y, 8, win.innerHeight - height - 8) };
+          const area = obstacles.reduce((sum, r) => sum
+            + Math.max(0, Math.min(candidate.left + width, r.right) - Math.max(candidate.left, r.left))
+              * Math.max(0, Math.min(candidate.top + height, r.bottom) - Math.max(candidate.top, r.top)), 0);
+          const score = area * 1000 + Math.abs(candidate.left - rect.left) + Math.abs(candidate.top - rect.top);
+          if (!best || score < best.score) best = { ...candidate, area, score };
+        }
+        return best;
+      }
+      let best = null;
+      if (guideState === 'ready' && shownText && !reading.hidden) {
+        dock.dataset.mobileLayout = 'summary';
+        width = dock.offsetWidth; height = dock.offsetHeight;
+        if (width && height) best = bestPosition(width, height);
+      }
+      if (!best || best.area > 0) {
+        dock.dataset.mobileLayout = 'compact';
+        width = dock.offsetWidth; height = dock.offsetHeight;
+        if (!width || !height) return;
+        best = bestPosition(width, height);
+      }
+      left = best.left; top = best.top;
+      dock.dataset.occluded = String(best.area > 0);
     }
     dock.style.left = Math.max(8, Math.min(left, win.innerWidth - width - 8)) + 'px';
     dock.style.top = Math.max(8, Math.min(top, win.innerHeight - height - 8)) + 'px';
@@ -114,13 +157,20 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     voice.textContent = supportedVoice ? '语音 · ' + (voiceEnabled ? '开' : '关') : '语音不可用';
     voice.setAttribute('aria-pressed', String(voiceEnabled));
     voice.disabled = !supportedVoice;
-    dock.hidden = assistant.isOpen();
+    panelVoice.textContent = voice.textContent;
+    panelVoice.setAttribute('aria-pressed', String(voiceEnabled));
+    panelVoice.disabled = !supportedVoice;
+    dock.hidden = assistant.isOpen() || doc.hidden;
     placeDock();
   }
-  function show(text, context = current) {
+  function show(text, context = current, state = 'ready') {
     shownText = text || '';
+    guideState = state;
+    dock.dataset.state = state;
+    label.textContent = state === 'loading' ? '正在讲解' : state === 'error' ? '重试讲解' : state === 'paused' ? '继续讲解' : '小齐讲解';
     title.textContent = context?.title || '小齐';
     copy.textContent = shownText;
+    openReading.setAttribute('aria-label', label.textContent + ' · ' + title.textContent);
     reading.hidden = !enabled || !shownText;
     placeDock();
   }
@@ -136,13 +186,13 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     const saved = cache.get(key);
     if (saved && Date.now() - saved.time < CACHE_MS) {
       show(saved.answer, context);
-      assistant.seedGuide(context, saved.answer, saved.sources);
+      assistant.seedGuide(context, saved.answer, saved.sources, saved.evidence);
       if (lastDelivered !== key) { lastDelivered = key; speak(saved.answer); }
       return;
     }
     if (lastAttempt === key) return;
     lastAttempt = key;
-    show('正在准备讲解…', context);
+    show('正在准备讲解…', context, 'loading');
     const controller = new win.AbortController(); request = controller;
     const timeout = win.setTimeout(() => controller.abort(), 50000);
     try {
@@ -157,12 +207,13 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
       if (identity?.id !== context.id || typeof data.answer !== 'string' || !data.answer.trim()) throw new Error('场景资料暂未确认。');
       if (request !== controller || key !== contextKey(current) || !enabled) return;
       const answer = data.answer.trim().slice(0, 2000), sources = Array.isArray(data.sources) ? data.sources : [];
-      cache.set(key, { answer, sources, time: Date.now() }); saveCache();
-      assistant.seedGuide(context, answer, sources);
+      const evidence = context.kind === 'scene' ? 'draft' : (['checked', 'unverified'].includes(identity.evidence) ? identity.evidence : '');
+      cache.set(key, { answer, sources, evidence, time: Date.now() }); saveCache();
+      assistant.seedGuide(context, answer, sources, evidence);
       if (!assistant.isOpen() && !doc.hidden) { lastDelivered = key; show(answer, context); speak(answer); }
     } catch (error) {
       if (request !== controller || !enabled || assistant.isOpen() || key !== contextKey(current)) return;
-      show(error?.name === 'AbortError' ? '讲解暂时超时，请稍后重试。' : (error?.message || '暂时无法讲解，请稍后重试。'), context);
+      show(error?.name === 'AbortError' ? '讲解暂时超时，请重试。' : (error?.message || '暂时无法讲解，请重试。'), context, 'error');
     } finally {
       win.clearTimeout(timeout);
       if (request === controller) request = null;
@@ -194,12 +245,32 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
   }
   toggle.addEventListener('click', toggleAuto);
   panelToggle.addEventListener('click', toggleAuto);
-  voice.addEventListener('click', () => {
+  function toggleVoice() {
     voiceEnabled = !voiceEnabled; storageSet(session, VOICE_KEY, voiceEnabled ? 'on' : 'off');
-    controls(); if (voiceEnabled && shownText && !request) speak(shownText); else stopVoice();
+    voiceAwaitingClose = Boolean(voiceEnabled && assistant.isOpen() && shownText && !request && guideState === 'ready');
+    controls(); if (voiceEnabled && shownText && !request && guideState === 'ready') speak(shownText); else stopVoice();
+  }
+  voice.addEventListener('click', toggleVoice);
+  panelVoice.addEventListener('click', toggleVoice);
+  openReading.addEventListener('click', () => {
+    if ((guideState === 'error' || guideState === 'paused') && current) {
+      cancel(); lastAttempt = ''; void narrate(current); return;
+    }
+    if (current) assistant.setContext(current);
+    assistant.open(openReading);
   });
-  openReading.addEventListener('click', () => { if (current) assistant.setContext(current); assistant.open(openReading); });
-  const onVisibility = () => { win.clearTimeout(timer); timer = null; stopVoice(); schedule(); };
+  const onVisibility = () => {
+    if ((assistant.isOpen() || doc.hidden) && request) {
+      cancel(); lastAttempt = contextKey(current);
+      show('讲解已暂停，可继续。', current, 'paused');
+    } else { win.clearTimeout(timer); timer = null; stopVoice(); }
+    if (!assistant.isOpen() && !doc.hidden && voiceAwaitingClose) {
+      voiceAwaitingClose = false;
+      if (voiceEnabled && enabled && guideState === 'ready' && contextKey(currentPageContext(doc)) === contextKey(current)) speak(shownText);
+    }
+    win.clearTimeout(refreshTimer); refreshTimer = null;
+    refresh();
+  };
   const onStorage = event => { if (event.key === AUTO_KEY) { enabled = event.newValue !== 'off'; cancel(); show(''); schedule(); } };
   assistant.host.addEventListener('assistantvisibility', onVisibility);
   win.addEventListener('scroll', schedule, { passive: true });
@@ -219,7 +290,7 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     win.removeEventListener('scroll', schedule); win.removeEventListener('resize', schedule);
     win.removeEventListener('hashchange', schedule); win.removeEventListener('popstate', schedule);
     win.removeEventListener('storage', onStorage); doc.removeEventListener('visibilitychange', onVisibility); doc.removeEventListener('focusin', schedule);
-    dock.remove(); panelToggle.remove();
+    dock.remove(); panelControls.remove();
   } };
   dock.guideController = controller;
   controls(); schedule();

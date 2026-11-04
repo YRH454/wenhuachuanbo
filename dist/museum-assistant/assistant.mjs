@@ -9,38 +9,56 @@ export const EXHIBIT_QUESTIONS = Object.freeze([
   '有哪些细节值得看？',
   '它的资料来源是什么？'
 ]);
+const CONTEXT_QUESTIONS = Object.freeze({
+  map: ['山东地图有哪些文化线索？', '我可以从哪里开始逛？', '推荐一个文化主题'],
+  city: ['介绍一下这座城市', '这座城市有哪些文化线索？', '从哪件事物开始了解？'],
+  person: ['介绍一下这位人物', '这位人物与当地有何联系？', '哪里可以找到相关资料？'],
+  object: ['介绍一下这项文化', '它与当地有何联系？', '有哪些细节值得了解？'],
+  picture: ['这幅画面有哪些细节？', '画面与当地文化有何关联？', '哪些内容还需要核实？'],
+  topic: ['这一主题讲了什么？', '有哪些值得留意的细节？', '哪里可以找到相关资料？'],
+  museum: ['展馆有哪些文化主题？', '我可以从哪里开始逛？', '山东有哪些代表性手艺？']
+});
+
+export function questionsForContext(context) {
+  if (!context) return SUGGESTED_QUESTIONS;
+  if (context.kind !== 'scene') return EXHIBIT_QUESTIONS;
+  const id = context.id || '';
+  const kind = id === 'map' ? 'map' : id === 'museum-cover' ? 'museum'
+    : id.startsWith('city-') ? 'city' : id.startsWith('person-') ? 'person'
+    : id.startsWith('object-') ? 'object' : id.startsWith('citymedia-') ? 'picture' : 'topic';
+  return CONTEXT_QUESTIONS[kind];
+}
 
 const AVATAR_URL = new URL('../assets/xiaoqi/xiaoqi-scroll-a-d9cf1a109245.png', import.meta.url).href;
 const STYLE_URL = new URL('./assistant.css', import.meta.url).href;
-const TRUSTED_SOURCE_HOSTS = new Set([
-  'digitalarchive.npm.gov.tw', 'commons.wikimedia.org', 'www.ihchina.cn',
-  'museum.sdu.edu.cn', 'www.metmuseum.org', 'www.clevelandart.org'
-]);
+// The service supplies only its own registered related records, never URLs parsed from model text.
+function safeSourceUrl(value) {
+  if (typeof value !== 'string' || /[\u0000-\u001f\u007f]/.test(value)) return '';
+  try {
+    const authority = /^https:\/\/([^/?#]+)/i.exec(value.trim())?.[1] || '';
+    const url = new URL(value);
+    return url.protocol === 'https:' && !url.username && !url.password && !url.port && !/:\d+$/.test(authority) ? url.href : '';
+  } catch { return ''; }
+}
 
 // Related records are suggestions, not citations asserting support for every model claim.
 export function safeRelatedSources(value) {
   if (!Array.isArray(value)) return [];
-  return value.slice(0, 2).flatMap(source => {
-    if (!source || typeof source.label !== 'string' || typeof source.url !== 'string') return [];
-    try {
-      const url = new URL(source.url);
-      if (url.protocol !== 'https:' || url.username || url.password || url.port || !TRUSTED_SOURCE_HOSTS.has(url.hostname)) return [];
-      const label = source.label.trim().slice(0, 80);
-      return label ? [{ label, url: url.href }] : [];
-    } catch {
-      return [];
-    }
-  });
+  const results = [], seen = new Set();
+  for (const source of value.slice(0, 10)) {
+    if (!source || typeof source.label !== 'string' || /[\u0000-\u001f\u007f]/.test(source.label)) continue;
+    const label = source.label.trim().slice(0, 80), url = safeSourceUrl(source.url);
+    if (!label || !url || seen.has(url)) continue;
+    seen.add(url); results.push({ label, url });
+    if (results.length === 2) break;
+  }
+  return results;
 }
 
 export function safeExhibit(value) {
   if (!value || typeof value.id !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.id)
       || value.id.length > 80 || typeof value.title !== 'string' || !value.title.trim() || value.title.length > 120) return null;
-  let source = '';
-  try {
-    const url = new URL(value.source);
-    if (url.protocol === 'https:' && !url.username && !url.password && !url.port) source = url.href;
-  } catch { /* A source link is optional; never turn an invalid value into a link. */ }
+  const source = safeSourceUrl(value.source);
   return { id: value.id, title: value.title.trim(), source };
 }
 
@@ -48,11 +66,7 @@ function safeScene(value) {
   if (!value || typeof value.id !== 'string' || value.id.length > 120
       || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.id)
       || typeof value.title !== 'string' || !value.title.trim() || value.title.length > 120) return null;
-  let source = '';
-  try {
-    const url = new URL(value.source);
-    if (url.protocol === 'https:' && !url.username && !url.password && !url.port) source = url.href;
-  } catch { /* The reference is optional. */ }
+  const source = safeSourceUrl(value.source);
   return { id: value.id, title: value.title.trim(), source, kind: 'scene' };
 }
 
@@ -92,7 +106,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     '    <div class="exhibit-context" hidden><div class="exhibit-context-copy"><p>正在了解 <strong></strong></p><div class="exhibit-context-meta"><a target="_blank" rel="noopener noreferrer" hidden>查看资料</a><span class="exhibit-evidence" aria-live="polite"></span></div></div><button type="button" class="leave-exhibit" aria-label="退出当前展品，返回普通对话"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>',
     '    <div class="welcome"><div class="welcome-portrait"><img src="' + AVATAR_URL + '" alt="" aria-hidden="true"></div><div><h3>你好，我是小齐。</h3><p>从一件物，慢慢认识山东。</p></div></div>',
     '    <ol class="thread" role="log" aria-label="对话内容" aria-live="polite" aria-relevant="additions" hidden></ol>',
-    '    <div class="waiting" role="status" aria-live="polite" hidden><span class="waiting-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>小齐正在思考…</span></div>',
+    '    <div class="waiting" hidden><span class="waiting-message" role="status" aria-live="polite"><span class="waiting-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>小齐正在思考…</span></span><button class="stop-button" type="button">停止</button></div>',
     '    <div class="prompt-section"><div class="prompt-list" role="group" aria-label="示例问题"></div></div>',
     '  </div>',
     '  <form class="composer"><label class="visually-hidden" for="assistant-input">问问小齐</label><div class="input-wrap"><textarea id="assistant-input" rows="1" maxlength="400" placeholder="问问小齐…"></textarea><button class="send-button" type="submit" disabled><span>发送</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button></div></form>',
@@ -110,6 +124,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   const welcome = shadow.querySelector('.welcome');
   const thread = shadow.querySelector('.thread');
   const waiting = shadow.querySelector('.waiting');
+  const stopButton = shadow.querySelector('.stop-button');
   const area = shadow.querySelector('.conversation-area');
   const contextBox = shadow.querySelector('.exhibit-context');
   const contextTitle = contextBox.querySelector('strong');
@@ -136,6 +151,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     sendButton.disabled = busy || !input.value.trim();
     clearButton.disabled = !busy && thread.childElementCount === 0;
     for (const button of promptList.querySelectorAll('button')) button.disabled = busy;
+    for (const button of thread.querySelectorAll('.retry-button')) button.disabled = busy;
     thread.setAttribute('aria-busy', String(busy));
   }
 
@@ -174,11 +190,42 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     }
     thread.append(item);
     thread.hidden = false;
+    return item;
+  }
+
+  function addRetryNotice(message, question) {
+    const item = addMessage('notice', message);
+    const retry = doc.createElement('button');
+    retry.type = 'button';
+    retry.className = 'retry-button';
+    retry.textContent = '重新提问';
+    retry.addEventListener('click', () => {
+      if (activeRequest || destroyed) return;
+      const keepDraft = Boolean(input.value.trim() && input.value.trim() !== question);
+      item.remove();
+      submitQuestion(question, { retry: true, keepDraft });
+    });
+    item.append(retry);
+  }
+
+  function cancelQuestion(message) {
+    if (!activeRequest) return;
+    const question = activeQuestion;
+    activeRequest.abort();
+    activeRequest = null;
+    activeQuestion = '';
+    waiting.hidden = true;
+    if (question) {
+      addRetryNotice(message, question);
+      if (!input.value.trim()) input.value = question;
+    }
+    refreshControls();
+    scrollToLatest();
   }
 
   function renderPrompts() {
     promptList.replaceChildren();
-    for (const question of currentExhibit ? EXHIBIT_QUESTIONS : SUGGESTED_QUESTIONS) {
+    for (const question of questionsForContext(currentExhibit)) {
       const button = doc.createElement('button');
       button.type = 'button';
       button.className = 'prompt-button';
@@ -207,14 +254,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       renderContext();
       return;
     }
-    if (activeRequest) {
-      activeRequest.abort();
-      activeRequest = null;
-      waiting.hidden = true;
-      addMessage('notice', '切换展品，已取消上一次提问。');
-      if (!input.value.trim()) input.value = activeQuestion;
-      activeQuestion = '';
-    }
+    if (activeRequest) cancelQuestion('切换内容，已停止上一次提问。');
     sessions.set(previousKey, { history: history.slice(), nodes: [...thread.childNodes], input: input.value, evidenceStatus, autoDescribeRequested });
     currentExhibit = next;
     const saved = sessions.get(nextKey);
@@ -222,7 +262,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     thread.replaceChildren(...(saved?.nodes || []));
     thread.hidden = !thread.childElementCount;
     welcome.hidden = !!thread.childElementCount;
-    promptSection.hidden = !!thread.childElementCount;
+    promptSection.hidden = false;
     input.value = saved?.input || '';
     evidenceStatus = saved?.evidenceStatus || '';
     autoDescribeRequested = saved?.autoDescribeRequested || false;
@@ -259,10 +299,11 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       const answer = data.answer.trim().slice(0, 2000);
       history = [...previous, { role: 'user', content: question }, { role: 'assistant', content: answer }].slice(-6);
       addMessage('assistant', answer, safeRelatedSources(data.sources));
+      promptSection.hidden = false;
     } catch (error) {
       if (activeRequest !== request || destroyed) return;
       const message = timedOut ? '等待超时，请稍后重试。' : (error?.name === 'AbortError' ? '请求已取消。' : error?.message || '暂时无法连接模型，请稍后重试。');
-      addMessage('notice', message);
+      addRetryNotice(message, question);
       if (!input.value.trim()) input.value = question;
     } finally {
       win.clearTimeout(timeout);
@@ -276,13 +317,14 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     }
   }
 
-  function submitQuestion(value) {
+  function submitQuestion(value, { retry = false, keepDraft = false } = {}) {
     const question = String(value ?? '').trim().slice(0, 400);
     if (!question || activeRequest !== null || destroyed) return;
     welcome.hidden = true;
     promptSection.hidden = true;
-    addMessage('user', question);
-    input.value = '';
+    for (const button of thread.querySelectorAll('.retry-button')) button.remove();
+    if (!retry) addMessage('user', question);
+    if (!keepDraft) input.value = '';
     waiting.hidden = false;
     const request = new win.AbortController();
     activeRequest = request;
@@ -305,11 +347,15 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
 
   function close() {
     if (destroyed || panel.hidden) return;
+    if (activeRequest) cancelQuestion('已停止提问。');
     panel.hidden = true;
     launcher.hidden = !showLauncher;
     launcher.setAttribute('aria-expanded', 'false');
-    (returnFocus?.isConnected ? returnFocus : launcher).focus({ preventScroll: true });
+    const focusTarget = returnFocus?.isConnected ? returnFocus : launcher;
+    focusTarget.focus({ preventScroll: true });
     host.dispatchEvent(new win.CustomEvent('assistantvisibility', { detail: { open: false } }));
+    // The guide cue itself becomes focusable again in the synchronous visibility handler.
+    if (focusTarget.isConnected && focusTarget.getRootNode().activeElement !== focusTarget) focusTarget.focus({ preventScroll: true });
   }
 
   function clearConversation() {
@@ -352,6 +398,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   closeButton.addEventListener('click', close);
   leaveExhibit.addEventListener('click', () => { selectExhibit(null); heading.focus({ preventScroll: true }); });
   clearButton.addEventListener('click', clearConversation);
+  stopButton.addEventListener('click', () => { cancelQuestion('已停止提问。'); input.focus({ preventScroll: true }); });
   form.addEventListener('submit', onSubmit);
   input.addEventListener('input', refreshControls);
   input.addEventListener('keydown', onInputKeydown);
@@ -368,16 +415,16 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       selectExhibit(context);
       return true;
     },
-    seedGuide(value, answer, sources = []) {
+    seedGuide(value, answer, sources = [], evidence = '') {
       const keyMatches = currentExhibit && value && currentExhibit.id === value.id
         && (currentExhibit.kind === 'scene') === (value.kind === 'scene');
-      if (!keyMatches || activeRequest || history.length || thread.childElementCount || typeof answer !== 'string' || !answer.trim()) return false;
+      if (!keyMatches || activeRequest || history.length || thread.childElementCount || input.value.trim() || typeof answer !== 'string' || !answer.trim()) return false;
       const text = answer.trim().slice(0, 2000);
       history = [{ role: 'user', content: '请简短介绍当前画面。' }, { role: 'assistant', content: text }];
-      evidenceStatus = currentExhibit.kind === 'scene' ? 'draft' : '';
+      evidenceStatus = currentExhibit.kind === 'scene' ? 'draft' : (['checked', 'unverified'].includes(evidence) ? evidence : '');
       renderContext();
       welcome.hidden = true;
-      promptSection.hidden = true;
+      promptSection.hidden = false;
       addMessage('assistant', text, safeRelatedSources(sources));
       refreshControls();
       return true;

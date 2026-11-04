@@ -41,6 +41,13 @@ test('official archive fields and source identities are explicit',()=>{
   assert.equal(ZIBO_GUIDE.sources.person.url,'https://www.ihchina.cn/ccr_detail/30515.html');
   assert.equal(ZIBO_GUIDE.sources.project.url,'https://www.ihchina.cn/project_details/14445/');
 });
+test('the assistant scene index stays synchronized with the visible Zibo article',async()=>{
+  const index=JSON.parse(await readFile(new URL('./dist/museum-assistant/zibo-scene-context.json',import.meta.url),'utf8'));
+  assert.equal(index.version,1);
+  assert.equal(index.cityId,ZIBO_GUIDE.cityId);
+  assert.deepEqual(index.sources,ZIBO_GUIDE.sources);
+  assert.deepEqual(index.passages,ZIBO_GUIDE.passages.map(({id,title,paragraphs,sources})=>({id,title,paragraphs,sources})));
+});
 test('visitor copy contains no editing instructions or invented artwork identity',()=>{
   const body=JSON.stringify([...ZIBO_GUIDE.passages,...ZIBO_GUIDE.questions]);
   assert.doesNotMatch(body,/不混用|就回答|不要根据|不把报道时点|不将这些观察点写成/);

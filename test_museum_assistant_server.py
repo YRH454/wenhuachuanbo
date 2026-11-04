@@ -104,6 +104,71 @@ class LocalServiceTest(unittest.TestCase):
         self.assertEqual(data['scene']['id'], 'city-370300')
         self.assertTrue(model.call_args.kwargs['guide'])
 
+    def test_city_and_passage_use_their_own_catalogued_context_and_sources(self):
+        scenes = self.server.scenes
+        city = scenes['city-370900']
+        self.assertTrue(any('泰山皮影戏' in fact and '泰安市' in fact for fact in city['facts']))
+        self.assertEqual(city['sources'][0]['url'], 'https://www.ihchina.cn/project_details/13411/')
+        self.assertNotIn('潍坊', ' '.join(city['facts']))
+        passage = scenes['topic-370900-performance']
+        self.assertEqual(passage['sources'][0]['url'], 'https://www.ihchina.cn/ccr_detail/1947.html')
+        self.assertTrue(any('范正安' in fact for fact in passage['facts']))
+        body = {'messages': [{'role': 'user', 'content': '介绍这一段'}], 'sceneId': passage['id']}
+        with patch.object(app, 'call_model', return_value='模拟讲解'):
+            status, data = self.request(body)
+        self.assertEqual(status, 200)
+        self.assertEqual(data['scene']['evidence'], 'draft')
+        self.assertEqual(data['sources'], passage['sources'])
+        self.assertLessEqual(len(data['sources']), 2)
+
+    def test_zibo_guide_passages_match_the_selected_section(self):
+        craft = self.server.scenes['topic-370300-zibo-craft']
+        people = self.server.scenes['topic-370300-zibo-people']
+        self.assertTrue(any('吹制' in fact for fact in craft['facts']))
+        self.assertFalse(any('孙云浩' in fact for fact in craft['facts']))
+        self.assertTrue(any('孙云浩' in fact for fact in people['facts']))
+        self.assertEqual(people['sources'][1]['url'], 'https://www.ihchina.cn/ccr_detail/30515.html')
+
+    def test_all_sixteen_city_scenes_use_their_own_registered_records(self):
+        files = sorted((app.PEOPLE_ROOT / 'data').glob('[0-9][0-9][0-9][0-9][0-9][0-9].json'))
+        self.assertEqual(len(files), 16)
+        for path in files:
+            data = json.loads(path.read_text(encoding='utf-8'))
+            with self.subTest(city=data['city']):
+                scene = self.server.scenes['city-' + data['cityId']]
+                self.assertEqual(scene['title'], data['city'])
+                self.assertTrue(scene['facts'])
+                allowed_names = {item['name'] for item in data['objects']}
+                self.assertTrue(all(fact.split('：', 1)[0] in allowed_names for fact in scene['facts']))
+                allowed_urls = {source['url'] for item in data['objects'] for source in item.get('sources', [])}
+                self.assertTrue(all(source['url'] in allowed_urls for source in scene.get('sources', [])))
+
+    def test_only_the_shared_default_guide_is_cached(self):
+        guide = {'messages': [{'role': 'user', 'content': app.GUIDE_QUESTION}],
+                 'sceneId': 'city-370300', 'mode': 'guide'}
+        custom = {'messages': [{'role': 'user', 'content': '我家住这里吗？'}],
+                  'sceneId': 'city-370300', 'mode': 'guide'}
+        other = {**guide, 'sceneId': 'city-370900'}
+        with patch.object(app, 'call_model', side_effect=['淄博讲解', '私人问题一', '私人问题二', '泰安讲解']) as model:
+            self.assertEqual(self.request(guide)[1]['answer'], '淄博讲解')
+            self.assertEqual(self.request(guide)[1]['answer'], '淄博讲解')
+            self.assertEqual(self.request(custom)[1]['answer'], '私人问题一')
+            self.assertEqual(self.request(custom)[1]['answer'], '私人问题二')
+            self.assertEqual(self.request(other)[1]['answer'], '泰安讲解')
+        self.assertEqual(model.call_count, 4)
+
+    def test_model_budget_limits_new_calls_without_exposing_details(self):
+        self.server.request_budget = app.ModelRequestBudget(total_limit=1, client_limit=1)
+        body = {'messages': [{'role': 'user', 'content': '介绍一下'}], 'sceneId': 'city-370300'}
+        with patch.object(app, 'call_model', return_value='模拟回答') as model:
+            self.assertEqual(self.request(body)[0], 200)
+            status, response = self.request(body)
+        self.assertEqual(status, 429)
+        self.assertIn('稍后', response['error'])
+        self.assertEqual(model.call_count, 1)
+        self.assertTrue(self.server.model_slots.acquire(blocking=False))
+        self.server.model_slots.release()
+
     def test_unavailable_image_does_not_fall_back_to_a_text_only_model_request(self):
         body = {'messages': [{'role': 'user', 'content': '看看这幅'}], 'exhibitId': 'sdu-egg'}
         with patch.object(app, 'exhibit_image_data_url', side_effect=app.ExhibitImageError('missing')):
@@ -151,6 +216,45 @@ class LocalServiceTest(unittest.TestCase):
 
 
 class ConfigurationTest(unittest.TestCase):
+    def test_cache_expiration_and_capacity_are_bounded(self):
+        now = [0]
+        cache = app.GuideCache(clock=lambda: now[0], ttl=10, capacity=2)
+        cache.put('scene:a', {'answer': 'a'})
+        cache.put('scene:b', {'answer': 'b'})
+        self.assertEqual(cache.get('scene:a')['answer'], 'a')
+        cache.put('scene:c', {'answer': 'c'})
+        self.assertIsNone(cache.get('scene:b'))
+        now[0] = 10
+        self.assertIsNone(cache.get('scene:a'))
+        self.assertIsNone(cache.get('scene:c'))
+
+    def test_budget_limits_clients_and_expires_without_trusting_headers(self):
+        now = [0]
+        budget = app.ModelRequestBudget(clock=lambda: now[0], window=60, total_limit=2, client_limit=1, max_clients=2)
+        self.assertTrue(budget.allow('client-a'))
+        self.assertFalse(budget.allow('client-a'))
+        self.assertTrue(budget.allow('client-b'))
+        self.assertFalse(budget.allow('client-c'))
+        now[0] = 60
+        self.assertTrue(budget.allow('client-c'))
+
+    def test_catalog_sources_reject_invalid_or_injected_links_and_deduplicate(self):
+        records = [
+            {'title': '不安全', 'url': 'http://www.ihchina.cn/a'},
+            {'title': '不安全', 'url': 'https://user@www.ihchina.cn/a'},
+            {'title': '不安全', 'url': 'https://www.ihchina.cn:0/a'},
+            {'title': '不安全', 'url': 'https://[invalid/a'},
+            {'title': '  非遗资料  ', 'url': 'https://www.ihchina.cn/a'},
+            {'title': '重复', 'url': 'https://www.ihchina.cn/a'},
+            {'title': '第二条', 'url': 'https://www.ihchina.cn/b'},
+            {'title': '第三条', 'url': 'https://www.ihchina.cn/c'},
+        ]
+        self.assertEqual(app.catalog_sources(records), [
+            {'label': '非遗资料', 'url': 'https://www.ihchina.cn/a'},
+            {'label': '第二条', 'url': 'https://www.ihchina.cn/b'},
+        ])
+        self.assertEqual(app.referenced_sources({'safe': records[4]}, ['missing', 'safe']), [records[4]])
+
     def test_only_official_https_endpoints(self):
         self.assertEqual(app.validated_endpoint(app.DEFAULT_BASE_URL), app.DEFAULT_BASE_URL + '/chat/completions')
         for endpoint in ['http://dashscope.aliyuncs.com/compatible-mode/v1',

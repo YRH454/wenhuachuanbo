@@ -76,7 +76,7 @@ try {
     await page.getByRole('button', { name: '关闭小齐对话' }).click();
     await other.scrollIntoViewIfNeeded();
     await other.click();
-    assert.equal(await page.getByText('切换展品，已取消上一次提问。').count(), 1);
+    assert.equal(await page.getByText('已停止提问。').count(), 1, 'closing cancels and preserves the previous exhibit question');
     assert.equal(await input.inputValue(), '等待中的问题');
     await page.getByRole('button', { name: '退出当前展品，返回普通对话' }).click();
     assert.equal(await panel.getByText('铜方壶').isVisible(), false);

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "cityId": "370300",
+  "sources": {
+    "project": {
+      "title": "琉璃烧制技艺 · 中国非物质文化遗产网",
+      "short": "非遗项目档案",
+      "url": "https://www.ihchina.cn/project_details/14445/"
+    },
+    "person": {
+      "title": "孙云浩传承人条目 · 中国非物质文化遗产网",
+      "short": "孙云浩条目",
+      "url": "https://www.ihchina.cn/ccr_detail/30515.html"
+    },
+    "workshop": {
+      "title": "新华社 · 2026年5月工坊报道",
+      "short": "新华社工坊报道",
+      "url": "https://imgs.xinhuanet.com/photo/20260528/9d48e4bb6d824ed2a92c13c2f64672da/c.html"
+    }
+  },
+  "passages": [
+    {
+      "id": "zibo-overview",
+      "title": "项目概况",
+      "paragraphs": [
+        "博山琉璃烧制技艺流布于山东省淄博市博山区，采用传统工艺制作琉璃制品。从花瓶、陈设品到内画鼻烟壶、料珠饰品，色彩与造型共同呈现这门地方手艺的丰富面貌。"
+      ],
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "id": "zibo-craft",
+      "title": "看见技艺",
+      "paragraphs": [
+        "琉璃在一定温度范围内具有可塑性。吹制时，工匠用中空铁棍挑取玻璃料，在转动铁棍的同时吹气，让材料逐渐形成不同形状。",
+        "吹、拉、转、压，是理解博山琉璃的几个观察入口。不同制品还涉及内画、套料雕刻、灯工、铺丝等技法；一件作品的曲线与色彩，来自材料和手上功夫的相互配合。"
+      ],
+      "sources": [
+        "project"
+      ]
+    },
+    {
+      "id": "zibo-people",
+      "title": "当代传承",
+      "paragraphs": [
+        "博山琉璃的传习与师徒相授紧密相连，技艺在一代代艺人的学习和制作中延续。中国非物质文化遗产网的项目档案列有相关传承人孙云浩，可以沿着人物条目，继续了解技艺与人的联系。"
+      ],
+      "sources": [
+        "project",
+        "person"
+      ]
+    }
+  ]
+}
