@@ -1,5 +1,6 @@
 // CITY-GUIDES-v1: route-local extension. Zibo keeps its existing implementation.
 import {CITY_GUIDES} from './city-guide-index.mjs';
+import {optimizedAsset} from './optimized-assets.mjs';
 const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const text = value => typeof value === 'string' && value.trim().length > 0;
 const slug = value => typeof value === 'string' && /^[a-z][a-z0-9-]{0,47}$/.test(value);
@@ -158,8 +159,10 @@ export function createCityGuide(doc, {registry=CITY_GUIDES, loadGuide, getBackgr
     figure.dataset.mediaId=asset.id;frame.style.setProperty('--cg-image-ratio',asset.width+' / '+asset.height);
     img.alt=artworkDescription(asset);img.width=asset.width;img.height=asset.height;img.loading='lazy';img.decoding='async';
     error.hidden=true;error.setAttribute('role','status');
-    img.onerror=()=>{img.hidden=true;error.hidden=false;figure.dataset.state='error';};
-    img.src=registry[ctx.id].slice(0,registry[ctx.id].lastIndexOf('/')+1)+asset.src;
+    const original=registry[ctx.id].slice(0,registry[ctx.id].lastIndexOf('/')+1)+asset.src;
+    const preferred=optimizedAsset(original);let fallback=preferred!==original;
+    img.onerror=()=>{if(fallback){fallback=false;img.src=original;return;}img.hidden=true;error.hidden=false;figure.dataset.state='error';};
+    img.src=preferred;
     frame.append(img,error);figure.append(frame,make('figcaption',artworkTitle(asset)));return figure;
   }
   function fillArticle(ctx,data) {

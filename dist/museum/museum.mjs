@@ -2,6 +2,7 @@ import { artworks, filterArtworks } from './artworks.mjs';
 import { mountMosaics } from './mosaic.mjs';
 import { mountMuseumAssistant } from '../museum-assistant/assistant.mjs';
 import { mountUniversalGuide } from '../museum-assistant/universal-guide.mjs';
+import { optimizedAsset } from '../optimized-assets.mjs';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -25,10 +26,14 @@ function persist() {
 
 function makeImage(item, decorative = false) {
   const image = document.createElement('img');
-  image.src = decorative ? `images/mosaic/${item.id}.jpg?v=2` : item.image; image.alt = decorative ? '' : item.alt;
+  const mapped = optimizedAsset('museum/' + item.image);
+  const preferred = decorative ? `images/mosaic/${item.id}.jpg?v=2` : (mapped.startsWith('museum/') ? mapped.slice('museum/'.length) : item.image);
+  let fallback = !decorative && preferred !== item.image;
+  image.alt = decorative ? '' : item.alt;
   image.loading = decorative ? 'eager' : 'lazy'; image.decoding = 'async';
   image.style.objectPosition = item.position || 'center';
-  image.addEventListener('error', () => { image.classList.add('image-error'); image.alt = decorative ? '' : `${item.title}图片暂时无法载入`; }, {once: true});
+  image.addEventListener('error', () => { if (fallback) { fallback = false; image.src = item.image; return; } image.classList.add('image-error'); image.alt = decorative ? '' : `${item.title}图片暂时无法载入`; });
+  image.src = preferred;
   return image;
 }
 

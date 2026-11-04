@@ -1,7 +1,9 @@
 """No network or paid model calls: exercise the local service with mock responses."""
 import http.client
 import base64
+import io
 import json
+import random
 import socket
 import tempfile
 import threading
@@ -9,6 +11,8 @@ import unittest
 import urllib.error
 from pathlib import Path
 from unittest.mock import patch
+
+from PIL import Image
 
 import museum_assistant_server as app
 
@@ -95,6 +99,38 @@ class LocalServiceTest(unittest.TestCase):
             {'messages': messages, 'sceneId': 'city-370300', 'mode': 'other'},
         ]:
             with self.subTest(body=body): self.assertEqual(self.request(body)[0], 400)
+
+    def test_preloaded_context_index_never_calls_model_or_exposes_credentials(self):
+        client = http.client.HTTPConnection('127.0.0.1', self.server.server_port, timeout=3)
+        with patch.object(app, 'call_model') as model:
+            client.request('GET', '/api/museum-assistant/context-index')
+            response = client.getresponse()
+            data = json.loads(response.read().decode('utf-8'))
+            self.assertEqual(response.status, 200)
+            model.assert_not_called()
+        client.close()
+        self.assertEqual(data['version'], 1)
+        self.assertEqual(data['contexts']['exhibit:sdu-egg']['evidence'], 'checked')
+        self.assertEqual(data['contexts']['scene:city-370300']['evidence'], 'draft')
+        self.assertIn('淄博', data['contexts']['scene:map']['text'])
+        self.assertEqual(data['contexts']['scene:map-b']['text'], data['contexts']['scene:map']['text'])
+        self.assertNotIn('test-only-credential', json.dumps(data, ensure_ascii=False))
+
+    def test_map_uses_correct_assembled_image_and_city_records(self):
+        for scene_id, filename in [('map', 'guide-map-a.jpg'), ('map-b', 'guide-map-b.jpg')]:
+            with self.subTest(scene_id=scene_id):
+                scene = self.server.scenes[scene_id]
+                self.assertEqual(scene['image'], 'backgrounds/' + filename)
+                self.assertIn('不是观众屏幕的实时截图', scene['image_note'])
+                self.assertTrue(any('淄博' in fact for fact in scene['facts']))
+                self.assertTrue(any('潍坊' in fact for fact in scene['facts']))
+                self.assertTrue(app.scene_image_data_url(scene).startswith('data:image/jpeg;base64,'))
+                body = {'messages': [{'role': 'user', 'content': '山东地图有哪些文化线索？'}], 'sceneId': scene_id}
+                with patch.object(app, 'call_model', return_value='地图资料测试') as model:
+                    status, data = self.request(body)
+                self.assertEqual(status, 200)
+                self.assertTrue(data['scene']['hasImage'])
+                self.assertEqual(model.call_args.args[4]['image'], scene['image'])
 
     def test_guide_mode_is_explicit_and_uses_the_selected_scene(self):
         body = {'messages': [{'role': 'user', 'content': '简短讲解'}], 'sceneId': 'city-370300', 'mode': 'guide'}
@@ -276,7 +312,7 @@ class ConfigurationTest(unittest.TestCase):
         request = urlopen.call_args.args[0]
         payload = json.loads(request.data)
         self.assertEqual(payload['model'], 'qwen3.8-flash')
-        self.assertEqual(payload['max_tokens'], 400)
+        self.assertEqual(payload['max_tokens'], 256)
         self.assertFalse(payload['enable_thinking'])
         self.assertEqual(request.get_header('Authorization'), 'Bearer test-only-credential')
 
@@ -380,6 +416,27 @@ class ImageSafetyTest(unittest.TestCase):
         (self.images / 'sample.png').write_bytes(data)
         result = app.exhibit_image_data_url({'image': 'images/sample.png'})
         self.assertEqual(result, 'data:image/png;base64,' + base64.b64encode(data).decode('ascii'))
+
+    def test_large_image_is_reduced_only_for_model_without_modifying_original(self):
+        path = self.images / 'large.png'
+        image = Image.frombytes('RGB', (1500, 1000), random.Random(4).randbytes(1500 * 1000 * 3))
+        image.save(path, format='PNG')
+        original = path.read_bytes()
+        self.assertGreater(len(original), app.MAX_INLINE_IMAGE_BYTES)
+        result = app.exhibit_image_data_url({'image': 'images/large.png'})
+        self.assertTrue(result.startswith('data:image/jpeg;base64,'))
+        copied = base64.b64decode(result.split(',', 1)[1])
+        self.assertLess(len(copied), len(original))
+        with Image.open(io.BytesIO(copied)) as model_image:
+            self.assertLessEqual(max(model_image.size), app.MODEL_IMAGE_EDGE)
+            self.assertEqual(model_image.size, (1280, 853))
+        self.assertEqual(path.read_bytes(), original)
+
+    def test_large_corrupt_image_is_not_sent_to_model(self):
+        path = self.images / 'corrupt.png'
+        path.write_bytes(b'\x89PNG\r\n\x1a\n' + b'x' * app.MAX_INLINE_IMAGE_BYTES)
+        with self.assertRaises(app.ExhibitImageError):
+            app.exhibit_image_data_url({'image': 'images/corrupt.png'})
 
     def test_rejects_invalid_paths_missing_files_non_images_and_oversize(self):
         (self.images / 'wrong.jpg').write_bytes(b'not an image')

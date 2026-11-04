@@ -76,6 +76,29 @@ class RailwayServerTest(unittest.TestCase):
                 self.assertEqual(self.post(headers=headers, host=host).status_code, 403)
             self.assertEqual(model.call_count, 1)
 
+    def test_context_index_is_preloaded_and_respects_preview_auth(self):
+        self.assertEqual(self.client.get('/api/museum-assistant/context-index').status_code, 401)
+        with patch.object(assistant, 'call_model') as model:
+            response = self.client.get('/api/museum-assistant/context-index', headers=self.auth)
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json['contexts']['exhibit:sdu-egg']['evidence'], 'checked')
+            self.assertIn('scene:map', response.json['contexts'])
+            self.assertNotIn('fake-test-key', response.get_data(as_text=True))
+            model.assert_not_called()
+
+    def test_only_content_addressed_display_images_are_cached(self):
+        index = json.loads((assistant.DIST_ROOT / 'optimized-assets.json').read_text(encoding='utf-8'))
+        display = next(iter(index['entries'].values()))['src']
+        response = self.client.get('/' + display, headers=self.auth)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.content_type, 'image/webp')
+        self.assertIn('private', response.headers['Cache-Control'])
+        self.assertIn('immutable', response.headers['Cache-Control'])
+        response.close()
+        self.assertEqual(self.client.get('/' + display).headers['Cache-Control'], 'no-store')
+        self.assertEqual(self.client.get('/api/museum-assistant/context-index', headers=self.auth).headers['Cache-Control'], 'no-store')
+        self.assertEqual(self.client.get('/assets/optimized/missing-123456789abc.webp', headers=self.auth).headers['Cache-Control'], 'no-store')
+
     def test_access_is_fail_closed_without_key_password_or_public_opt_in(self):
         app = create_app({'PUBLIC_ORIGIN': self.origin, 'DASHSCOPE_API_KEY': 'fake-test-key'})
         client = app.test_client()

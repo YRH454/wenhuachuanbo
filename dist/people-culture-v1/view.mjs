@@ -1,4 +1,5 @@
 import {nextIndex} from './model.mjs';
+import {optimizedAsset} from '../optimized-assets.mjs';
 
 // The gallery stays in normal document flow. Animations never own visibility.
 export function createCityView(doc,data,{preview=false,review=false,candidates=false,mediaBase='',person=null,object=null,onSelect=()=>{}}={}) {
@@ -20,6 +21,13 @@ export function createCityView(doc,data,{preview=false,review=false,candidates=f
     for(const s of sources)nav.append(sourceLink(s));return nav;
   }
   const asset=path=>mediaBase+path;
+  function useObjectImage(image,path,onFailure) {
+    const original=asset(path), mapped=optimizedAsset('people-culture-v1/'+path);
+    const preferred=asset(mapped.startsWith('people-culture-v1/')?mapped.slice('people-culture-v1/'.length):path);
+    let fallback=preferred!==original;
+    image.addEventListener('error',()=>{if(disposed)return;if(fallback){fallback=false;image.src=original;return;}onFailure();});
+    image.src=preferred;
+  }
   const artworkAlt=media=>media.kind==='ai'?media.alt.replace(/^AI[^：:]*[：:]\s*/i,'').replace(/[，；。](?:非|不(?:是|代表|作为|用于|对应)).*$/,''):media.alt;
   const root=make('div','','pc-view');root.dataset.packageCity=data.cityId;
   if(preview&&review) {
@@ -114,13 +122,13 @@ export function createCityView(doc,data,{preview=false,review=false,candidates=f
       const image=make('img'),error=make('div','','image-error'),retry=make('button','重试图片');let attempts=0;
       image.width=m.width;image.height=m.height;image.alt=artworkAlt(m);image.loading='lazy';image.decoding='async';error.hidden=true;error.setAttribute('role','status');retry.type='button';
       error.append(make('p','画面暂时无法显示，介绍与来源仍可阅读。'),retry);
-      image.addEventListener('error',()=>{if(disposed)return;image.hidden=true;error.hidden=false;});
+      useObjectImage(image,m.src,()=>{image.hidden=true;error.hidden=false;});
       retry.addEventListener('click',()=>{
         image.hidden=false;error.hidden=true;image.src=asset(m.src)+'?retry='+(++attempts);figure.focus({preventScroll:true});
         const entry=objectEntries.find(e=>e.item.id===item.id);
         if(entry?.image){entry.image.hidden=false;entry.screen.dataset.hasImage='true';entry.image.src=image.src;entry.state.textContent='已展开';}
       });
-      image.src=asset(m.src);frame.append(image,error);
+      frame.append(image,error);
       caption.append(make('p',item.name));
       if(m.kind==='photo')caption.append(make('p',m.credit));
     }
@@ -148,7 +156,7 @@ export function createCityView(doc,data,{preview=false,review=false,candidates=f
     let image=null;
     if(item.media.kind!=='missing') {
       image=make('img');image.alt='';image.setAttribute('aria-hidden','true');image.loading='lazy';image.decoding='async';
-      image.addEventListener('error',()=>{if(disposed)return;image.hidden=true;screen.dataset.hasImage='false';state.textContent=(selectedObject===item.id?'已展开':'展开介绍')+' · 图片未载入';});image.src=asset(item.media.src);screen.append(image);
+      useObjectImage(image,item.media.src,()=>{image.hidden=true;screen.dataset.hasImage='false';state.textContent=(selectedObject===item.id?'已展开':'展开介绍')+' · 图片未载入';});screen.append(image);
     }
     trigger.type='button';trigger.id='object-trigger-'+item.id;trigger.setAttribute('aria-controls','object-'+item.id);trigger.append(make('span',item.name,'screen-name'),state);screen.append(trigger);
     const panel=make('article','','object-panel'),copy=make('div','','object-copy');panel.id='object-'+item.id;panel.setAttribute('aria-labelledby',trigger.id);

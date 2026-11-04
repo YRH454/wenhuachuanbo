@@ -22,6 +22,8 @@ python server.py
 
 `dist/` 中包含页面源代码和博物馆图片及其缩略图。项目负责人已确认本次图片可以上传；来源、署名及早期核验记录见 [博物馆素材说明](dist/museum/PUBLIC-ASSETS.md)。该确认不等于项目已独立核验每张图片的公开使用权。
 
+网页优先加载由原图生成的轻量展示副本，并在副本无法加载时尝试原图；原图和下载入口保留。修改地图、城市背景、展品或本城四物素材后，可执行 `python tools/build-optimized-images.py` 更新副本，再执行 `node tools/build-map-guide-preview.mjs` 更新模型使用的地图预览。前者需要 Pillow，后者需要 Playwright 和 Chrome。生成脚本不删除旧文件或覆盖原图。
+
 全站模型预览的启动方法见 [小齐组件说明](dist/museum-assistant/README.md)；静态服务 `server.py` 不提供模型接口。模型密钥只应通过本机安全输入或服务端环境变量提供，不应上传到 GitHub。Railway 入口、安全预览和上线条件见 [部署说明](DEPLOYMENT.md)。
 
 ## 测试

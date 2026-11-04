@@ -88,7 +88,8 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible,
 .guide-reading-open { display: grid; gap: 7px; width: 100%; max-height: 155px; overflow: auto; padding: 14px 16px; border: 0; color: inherit; background: transparent; text-align: left; }
 .guide-reading-open:hover { background: #fff8ed; }
 .guide-reading-label { display: none; color: var(--accent); font-size: 12px; }
-.guide-dock[data-state="error"] .guide-reading-label, .guide-dock[data-state="paused"] .guide-reading-label { display: block; }
+.guide-dock[data-state="error"] .guide-reading-label, .guide-dock[data-state="paused"] .guide-reading-label,
+.guide-dock[data-state="preview"] .guide-reading-label { display: block; }
 .guide-reading-title { color: var(--accent); font-family: MuseumAssistantDisplay, "Songti SC", SimSun, serif; font-size: 15px; }
 .guide-reading-hint { display: none; }
 .guide-reading-text { font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; white-space: pre-wrap; }
@@ -210,6 +211,11 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, h2:focus-visible,
 .message-source { display: grid; gap: 5px; margin-top: 13px; padding-top: 11px; border-top: 1px solid var(--line); }
 .message-source span { color: #705c4d; font-size: 11px; }
 .message-source a { width: fit-content; color: #844b37; font-size: 12px; line-height: 1.6; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.waiting-note { margin: 0 0 8px; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.waiting-note-label { color: #754a38; font-size: 11px; }
+.waiting-note-text { margin: 6px 0 0; color: var(--ink); font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; }
+.waiting-note-sources { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; }
+.waiting-note-sources a { color: #844b37; font-size: 12px; line-height: 1.5; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .waiting { display: flex; align-items: center; justify-content: space-between; gap: 9px; margin: 0 0 12px; color: #705c4d; font-size: 12px; }
 .waiting-message { display: flex; align-items: center; gap: 9px; }
 .waiting-dots { display: flex; gap: 3px; }

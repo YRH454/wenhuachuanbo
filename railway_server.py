@@ -14,6 +14,7 @@ from urllib.parse import urlsplit
 from flask import Flask, abort, jsonify, redirect, request, send_file
 
 import museum_assistant_server as assistant
+from server import OPTIMIZED_IMAGE_PATH
 
 
 def configured_origin(config):
@@ -53,6 +54,7 @@ def create_app(config=None):
             assistant.ModelRequestBudget(window=86400, total_limit=100, client_limit=100),
         ),
     )
+    service.quick_contexts = assistant.build_quick_contexts(service.exhibits, service.scenes)
     web = Flask(__name__, static_folder=None)
     web.config['MAX_CONTENT_LENGTH'] = assistant.MAX_REQUEST_BYTES
     web.config['ASSISTANT_SERVICE'] = service
@@ -78,7 +80,8 @@ def create_app(config=None):
 
     @web.after_request
     def security_headers(response):
-        response.headers['Cache-Control'] = 'no-store'
+        cacheable = request.method == 'GET' and response.status_code in (200, 304) and OPTIMIZED_IMAGE_PATH.fullmatch(request.path)
+        response.headers['Cache-Control'] = 'private, max-age=31536000, immutable' if cacheable else 'no-store'
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['X-Frame-Options'] = 'DENY'
         response.headers['Referrer-Policy'] = 'same-origin'
@@ -91,6 +94,10 @@ def create_app(config=None):
     @web.get('/healthz')
     def health():
         return 'ok', 200, {'Content-Type': 'text/plain; charset=utf-8'}
+
+    @web.get('/api/museum-assistant/context-index')
+    def context_index():
+        return jsonify(service.quick_contexts)
 
     @web.post('/api/museum-assistant/chat')
     def chat():

@@ -172,8 +172,11 @@ async function checkContexts() {
     return route.fulfill({ json: data });
   });
   try {
-    await page.goto(origin + '/museum-assistant/', { waitUntil: 'networkidle' });
+    // The index preload can remain pending or fail on a static-only preview;
+    // UI interaction should depend on DOM readiness, not global network idleness.
+    await page.goto(origin + '/museum-assistant/', { waitUntil: 'domcontentloaded' });
     const panel = page.getByRole('dialog', { name: '小齐' });
+    await panel.waitFor();
     const cases = [
       ['map', '山东文化地图', '山东地图有哪些文化线索？'],
       ['city-370300', '淄博', '介绍一下这座城市'],

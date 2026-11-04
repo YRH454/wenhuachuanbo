@@ -1,0 +1,1697 @@
+{
+  "version": 1,
+  "entries": {
+    "assets/tile-370100-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370100-A-map-base-v1-20261101-r1-46e54111c663.webp",
+      "sourceSha256": "4f72449ebd8344ffccc4ee19f615c79734fe78442d3c727de70e4f53daae4ad5",
+      "sha256": "46e54111c66377134c6daef1f05d8e02dcd600000994b709b395da179518dea5",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3842913,
+      "bytes": 237056
+    },
+    "assets/tile-370100-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370100-B-map-base-v1-20261101-r1-4ca3878df0a8.webp",
+      "sourceSha256": "0ff0a2b0e34bbc008d2098c61eacb16b4a83c7243ed03929f5f820753defe2a8",
+      "sha256": "4ca3878df0a80f3dcf44412a1529a50221df309a60ca9f7d6c7439577d072a66",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 4351898,
+      "bytes": 293282
+    },
+    "assets/tile-370200-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370200-A-map-base-v1-r1-f0f7e9c6879f.webp",
+      "sourceSha256": "41bc775425b70059addd91cf39ad4f00404a665ac18b50e37dab62453564236a",
+      "sha256": "f0f7e9c6879f7b84073ffd0cfd9615d93c8a2b39c7ebb55446c3cde9cee0dd64",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3587827,
+      "bytes": 210996
+    },
+    "assets/tile-370200-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370200-B-map-base-v1-r1-9d79459c7300.webp",
+      "sourceSha256": "b404e66aca8b36429ce734be41b4582f496b23a216da0cf1bb405173488ecc91",
+      "sha256": "9d79459c7300974f25b50fb84c589c099d77ac0c32ccdbbd86c602b8656c18a4",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3381112,
+      "bytes": 207632
+    },
+    "assets/tile-370300-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370300-A-map-base-v1-20261101-r1-e0668cbbcee9.webp",
+      "sourceSha256": "cceead5ad3614b300658c42bc8471ec9992eb76009131651e84b2736aae7fd01",
+      "sha256": "e0668cbbcee935d38ebaaa0d2f8cd0d0156da586706dc88ee2ecb972c34cf1cb",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3514159,
+      "bytes": 188684
+    },
+    "assets/tile-370300-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370300-B-map-base-v1-20261101-r1-b21dda0c2ca9.webp",
+      "sourceSha256": "87b9d0ec37676c370d94427507dbb2de70dbf349eabdea309f7d0c8f677208b2",
+      "sha256": "b21dda0c2ca9254f5864c00a45f35ee490adcba1378e5548d87ea025ebc0795f",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3371252,
+      "bytes": 188674
+    },
+    "assets/tile-370400-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370400-A-map-base-v1-r1-ef5ac70a8845.webp",
+      "sourceSha256": "cc2ef274dff3d428d0bf4bc719e45bc72f6b537985b5e20eb1b41c6f3490952f",
+      "sha256": "ef5ac70a88450e37befba96408f4a71d7ce82f5ac598f7e869b962d60fa56e36",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3417096,
+      "bytes": 184838
+    },
+    "assets/tile-370400-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370400-B-map-base-v1-r1-ae6fd950fcd4.webp",
+      "sourceSha256": "03490c01b713d62d6f75d66faeee1f27802edd994ffadb44e194498dfe173065",
+      "sha256": "ae6fd950fcd4be15ffb91a385cb5a81114aba40a4de2b0f9a2dab0c2c5bca6e7",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3309530,
+      "bytes": 176890
+    },
+    "assets/tile-370500-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370500-A-map-base-v1-20261101-r1-4af297717adf.webp",
+      "sourceSha256": "a2024e8c867d31b6eb55984ce43da3651445bf7a9ffb11931814f94e8d5f8318",
+      "sha256": "4af297717adf97b63bbc3fa8ae88e3049bb8012e1867cf470005d21bb3b887eb",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3447266,
+      "bytes": 182806
+    },
+    "assets/tile-370500-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370500-B-map-base-v1-20261101-r1-bc72626fef9a.webp",
+      "sourceSha256": "c1e8600fe797e9580250cb05670f7bfb5daa5a07e5aa76fd3d2362e9d5d2a9e7",
+      "sha256": "bc72626fef9a8e91b632c79f4c4212ea1ef75810e75eafb3fbff9accc0b82367",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3497441,
+      "bytes": 187798
+    },
+    "assets/tile-370600-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370600-A-map-base-v1-r1-3d355ba8d14b.webp",
+      "sourceSha256": "d97d672fdc641bff22fbafce3d0007e6ca925466e5404b7ea1665493ade65d53",
+      "sha256": "3d355ba8d14b17bfcb7a8758dd9c6870d9317749a6cd530d7bbdc4d5a2cc8acf",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3333121,
+      "bytes": 202778
+    },
+    "assets/tile-370600-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370600-B-map-base-v1-r1-35934c958129.webp",
+      "sourceSha256": "0503aaa933ce549c2520bc289e676c53d43832b92924c9b91b3e4fb413d70a6d",
+      "sha256": "35934c958129597143038e6278033d54ca8d489ed1cdfe4447ad7a8e200f7f09",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 2983560,
+      "bytes": 175238
+    },
+    "assets/tile-370700-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370700-A-map-base-v1-r1-7e5aab3bb6aa.webp",
+      "sourceSha256": "e93efdf5bab0edef91f82655aaff982f82d3c1d3361e9328403ff2113ff7a540",
+      "sha256": "7e5aab3bb6aabdee8c7895887e618f6318b6a7de6a2a5c134fd5798b9caebc4b",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3631497,
+      "bytes": 226770
+    },
+    "assets/tile-370700-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370700-B-map-base-v1-r1-076a2b9aea1f.webp",
+      "sourceSha256": "587c58b84274af6c78af24d1f3988d2affe4080d558533e28d6b3f7ec9770f14",
+      "sha256": "076a2b9aea1ff2b3ac6e94787d77fb3622c728b08d102841395685ab00308f4b",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3806452,
+      "bytes": 243878
+    },
+    "assets/tile-370800-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370800-A-map-base-v1-r1-9efd1c004fbe.webp",
+      "sourceSha256": "995deaecdba3a16c9c98cb78f0dfa56130f6119388dc19721a9c8e94e776d82a",
+      "sha256": "9efd1c004fbe5a159b51d95bce030ae0f3b8b32b281ec56bbf13fbb0a47f7b5b",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3547030,
+      "bytes": 197460
+    },
+    "assets/tile-370800-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-370800-B-map-base-v1-r1-c06501976ad1.webp",
+      "sourceSha256": "70dc61da19bcc046e62e9712ececdd4d7ce50fd920eb050ca218492424634db5",
+      "sha256": "c06501976ad10eeb0a1a12b1a081bd5b7028a66d6108b7c5373593679de62db4",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3606685,
+      "bytes": 212030
+    },
+    "assets/tile-370900-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370900-A-map-base-v1-20261101-r1-f1086d4e41c2.webp",
+      "sourceSha256": "97461fe905392d651c87666bfc98fe3c6b6db0dfd788ce9dca8c8bc840413d41",
+      "sha256": "f1086d4e41c2d0cfbebfa90f97961f3c2bb89ce2c8443f18f850bfc87ce4955d",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3098356,
+      "bytes": 141294
+    },
+    "assets/tile-370900-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-370900-B-map-base-v1-20261101-r1-e9012d311d0c.webp",
+      "sourceSha256": "c43e8ab7d2800925afdbdd00c391ec6cd60e8719effb280ee1b0924afcdd1044",
+      "sha256": "e9012d311d0c05aa0b503923e78c10296862739a85763d32bc0b335bb38422e6",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3425286,
+      "bytes": 175858
+    },
+    "assets/tile-371000-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-371000-A-map-base-v1-r1-68256a5f5d28.webp",
+      "sourceSha256": "ca32105ec1bb69bccf209c94edc87bb29159f8a993aa4db99a9e68ca9f3981e4",
+      "sha256": "68256a5f5d2850ac44cda89bf08d5041ae44ad68fc813b5a0cba943e20d123f2",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3511357,
+      "bytes": 186782
+    },
+    "assets/tile-371000-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-371000-B-map-base-v1-r1-cf78a4c1cce2.webp",
+      "sourceSha256": "3b0386942d18302b9189faef0586150e54bfd30f748bc9042f4ab4a074dd9094",
+      "sha256": "cf78a4c1cce20f5fe585ab1de14a874cef5101183e8feca6dfba33a581770277",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3418409,
+      "bytes": 180084
+    },
+    "assets/tile-371100-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-371100-A-map-base-v1-r1-f87934e1fa8f.webp",
+      "sourceSha256": "7bcb922ec1fce04353483b950eeea487ff2eb9afddbf00df6839d966ceba964a",
+      "sha256": "f87934e1fa8f6e1953dffb34b124d230c678077579b6c49f38e793f1e5a13013",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3380102,
+      "bytes": 194086
+    },
+    "assets/tile-371100-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-371100-B-map-base-v1-r1-57dafb38a764.webp",
+      "sourceSha256": "93f66782383f9989628a94f43e7a9e9655516297afea2a12830c37117913d2f0",
+      "sha256": "57dafb38a764d328634becf62e6ca57ee00368384e82c32f263dd62d3e0989ce",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3874483,
+      "bytes": 238460
+    },
+    "assets/tile-371300-A-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-371300-A-map-base-v1-r1-7308512e6ea6.webp",
+      "sourceSha256": "b84017120a2afbf22a02e02fd13a750482446cbf2bed1412eb33187ff16f4878",
+      "sha256": "7308512e6ea6fa10c63ed1c79dae6edfe27b8daeaa3c8ae4554f6a564275b6bc",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3197576,
+      "bytes": 181452
+    },
+    "assets/tile-371300-B-map-base-v1-r1.png": {
+      "src": "assets/optimized/tile-371300-B-map-base-v1-r1-ef2c4dd87c30.webp",
+      "sourceSha256": "892c8d4590fff698820ab81d346a73d7d9f1db2e1d00852ba28d9a2b06dadc68",
+      "sha256": "ef2c4dd87c301ac49d79fe0be388569966eee62e50e6dcd711d4410f303a5bd2",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3448897,
+      "bytes": 186990
+    },
+    "assets/tile-371400-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371400-A-map-base-v1-20261101-r1-1f3c61a91d5b.webp",
+      "sourceSha256": "23eba01edaf56382e16c3c49c3c3f79b2dff10b79130cf0dc55e8d427963e461",
+      "sha256": "1f3c61a91d5b88ee21e8945dc6cfcfa2626cfa6fc5939d9cf3fca71a810e3a6b",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3100922,
+      "bytes": 139060
+    },
+    "assets/tile-371400-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371400-B-map-base-v1-20261101-r1-47408817d4c8.webp",
+      "sourceSha256": "ac7b372777375b60297cbc90f26d5f3b1bbe575493e751a6de4538192c5a75dd",
+      "sha256": "47408817d4c8f1dc0069f71d036a437f52b5b2c8e976b869dcd82e709cfbcd55",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3505753,
+      "bytes": 175376
+    },
+    "assets/tile-371500-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371500-A-map-base-v1-20261101-r1-3992c19b46da.webp",
+      "sourceSha256": "bdaf3e133c9c94bc8e125264b79e5fcf083d8f5ee7ac079c48e84113818793c6",
+      "sha256": "3992c19b46da7f3cec31fe9edcdbaa75520941d2ba3d1d0a135e34bf87013a0f",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3299794,
+      "bytes": 169460
+    },
+    "assets/tile-371500-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371500-B-map-base-v1-20261101-r1-5d3e60fbbb4b.webp",
+      "sourceSha256": "5b99c57e6b03bfbeda166016032cb22fc7c051ee07b8a8f77ba5fda9c975bb38",
+      "sha256": "5d3e60fbbb4b0b0501e60f6d44e9c35c8cff83eeac7e437f6e4fadb999d0edeb",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3434493,
+      "bytes": 170586
+    },
+    "assets/tile-371600-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371600-A-map-base-v1-20261101-r1-e791fbd86415.webp",
+      "sourceSha256": "8076be38d331f1ed6362ee3276673591ab8f31652461d46355d0a85235df70a2",
+      "sha256": "e791fbd86415403aa4fc9a0ebf4070ae51a524abdd6962d7e5ef5fee195a7bb3",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3128364,
+      "bytes": 142186
+    },
+    "assets/tile-371600-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371600-B-map-base-v1-20261101-r1-bded656c12fb.webp",
+      "sourceSha256": "679755a019edbe146617cc49a0a51d1cc3c353502077de6e6305c2b19e3390a1",
+      "sha256": "bded656c12fbc890afac2f555ad0fc96671336008939302ecae65ac33a307d6b",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3425164,
+      "bytes": 168772
+    },
+    "assets/tile-371700-A-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371700-A-map-base-v1-20261101-r1-37a0dfd47cd7.webp",
+      "sourceSha256": "cfe57498bdf30679e58c96a688b12c186d981212e8cafeea1ee3c2d799694fe3",
+      "sha256": "37a0dfd47cd7177acd629ca513f93174dabd563b6eb96b2c309513832a94846b",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3150821,
+      "bytes": 150926
+    },
+    "assets/tile-371700-B-map-base-v1-20261101-r1.png": {
+      "src": "assets/optimized/tile-371700-B-map-base-v1-20261101-r1-b2d5c218f1ed.webp",
+      "sourceSha256": "f767d3e2d7c17bf966a818096c6f543590d9a534dabd5d0423e5df7b9f8b1439",
+      "sha256": "b2d5c218f1eda0d4f576c1e69f9bc4e06df917c0aec71b00f27466603e2a08c0",
+      "width": 768,
+      "height": 768,
+      "sourceBytes": 3058797,
+      "bytes": 145884
+    },
+    "backgrounds/cities/370100-e03f267b0ada.png": {
+      "src": "backgrounds/cities/optimized/370100-e03f267b0ada-6c0809c0ed31.webp",
+      "sourceSha256": "e03f267b0ada2a314b36e19206fb193ce0e1f73ba70459fac5c83c2026183dc6",
+      "sha256": "6c0809c0ed314dba11933c0b4be300fca5d8fa13a5ce86335e692bc22f1852bb",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3744111,
+      "bytes": 467146
+    },
+    "backgrounds/cities/370200-9ad84a609f60.png": {
+      "src": "backgrounds/cities/optimized/370200-9ad84a609f60-d362915e0dac.webp",
+      "sourceSha256": "9ad84a609f607cf54283be932b25d137946bd8cb692562772cdae48c61cc23f5",
+      "sha256": "d362915e0daca4e34359cee77fd1801c7626eb76868f632fb33f47ff9099a6b0",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2464707,
+      "bytes": 174976
+    },
+    "backgrounds/cities/370300-3c2b7e7dc4fa.png": {
+      "src": "backgrounds/cities/optimized/370300-3c2b7e7dc4fa-b22234650bf3.webp",
+      "sourceSha256": "3c2b7e7dc4fa1d70bd1671b7c192192af99d48ba148625b0bb769b4937c39aca",
+      "sha256": "b22234650bf3298b49e527607af41064fe37b631cea6f1d6b047ca4827cb0ecd",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2845160,
+      "bytes": 255392
+    },
+    "backgrounds/cities/370400-9a6014cdcf09.png": {
+      "src": "backgrounds/cities/optimized/370400-9a6014cdcf09-d9712d23dd6f.webp",
+      "sourceSha256": "9a6014cdcf096c6f8a108889b1e14ffebe14dab929e406c14e0d06d8013268e7",
+      "sha256": "d9712d23dd6ff8bb01f5289032b2ea876c5534dbff566a6289ee3e1a256ed4aa",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3162404,
+      "bytes": 384634
+    },
+    "backgrounds/cities/370500-9ae24a1f0977.png": {
+      "src": "backgrounds/cities/optimized/370500-9ae24a1f0977-077e6b52478d.webp",
+      "sourceSha256": "9ae24a1f097774e4fdbfe94f064503c1f0b4fd55a039410b2c4e42b41eb13f58",
+      "sha256": "077e6b52478d1bac8f37d18d174bf757bbffe0c852ae03edf3471ba4492aafe2",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3461019,
+      "bytes": 407962
+    },
+    "backgrounds/cities/370600-325cf69c75e7.png": {
+      "src": "backgrounds/cities/optimized/370600-325cf69c75e7-ac3d9937224b.webp",
+      "sourceSha256": "325cf69c75e7b5ca51d0a5358771277b13de5e856129224a0206a3810ccb0a48",
+      "sha256": "ac3d9937224b3349443dae5fc59bbab0ccf9f8e57cda8cba15c261daa06be3c5",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3141489,
+      "bytes": 340766
+    },
+    "backgrounds/cities/370700-3afe71885e1d.png": {
+      "src": "backgrounds/cities/optimized/370700-3afe71885e1d-6cb4bb7b38d5.webp",
+      "sourceSha256": "3afe71885e1d6d0b391204696776dcc4283c6d8a1742a9fbf0d4c0870c3fe72d",
+      "sha256": "6cb4bb7b38d5f6ee2783afcbd39477e82dc7689c6faab7aa28509bcb12a5fb12",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2749733,
+      "bytes": 309564
+    },
+    "backgrounds/cities/370800-dd6544f5d73c.png": {
+      "src": "backgrounds/cities/optimized/370800-dd6544f5d73c-21977dfb8939.webp",
+      "sourceSha256": "dd6544f5d73c0c7d5588f6a5a07c2136810e7d5060f74c3c0149ca1178272368",
+      "sha256": "21977dfb8939b3e22e27dd3b2737cb955e9e62233a003daf0a9134bea8075ad6",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2688410,
+      "bytes": 199252
+    },
+    "backgrounds/cities/370900-a1ea8ee179e9.png": {
+      "src": "backgrounds/cities/optimized/370900-a1ea8ee179e9-cbaa6034d992.webp",
+      "sourceSha256": "a1ea8ee179e90dab6461ed4fbd9601d236aea2710ef0ac655e9f1151ef693c74",
+      "sha256": "cbaa6034d992965150216a4bc795375303e87fb39f11a3f6c849a2faf67675f9",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2900297,
+      "bytes": 290770
+    },
+    "backgrounds/cities/371000-c77742fc72d2.png": {
+      "src": "backgrounds/cities/optimized/371000-c77742fc72d2-3d9b04f20854.webp",
+      "sourceSha256": "c77742fc72d2ee804d21d2ac22252572bc2d6e9a93f0fe0b8fb7818bb98c5187",
+      "sha256": "3d9b04f208546cc0d041faea04760e53e6aaa4d9b8d956a513b960eabd2181a3",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2953532,
+      "bytes": 284086
+    },
+    "backgrounds/cities/371100-4091d33dcb88.png": {
+      "src": "backgrounds/cities/optimized/371100-4091d33dcb88-495dd3397b3d.webp",
+      "sourceSha256": "4091d33dcb882282bc512147dc1f74b95cd8fe051b718058da9777ba866e9d35",
+      "sha256": "495dd3397b3db7d2194a9506690a3b917ae248496cc25b438e45dfde03743862",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 4218504,
+      "bytes": 639488
+    },
+    "backgrounds/cities/371300-72a02f5c5151.png": {
+      "src": "backgrounds/cities/optimized/371300-72a02f5c5151-d69dd43df5ca.webp",
+      "sourceSha256": "72a02f5c515183a202b5499f398c43e601e1cfe97a006932808045a7a3954575",
+      "sha256": "d69dd43df5cab2b6248ce42d26b4fd038c3ed791fdd6f5cfb54ef240a1ac9392",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3240876,
+      "bytes": 441838
+    },
+    "backgrounds/cities/371400-50344c6aaa91.png": {
+      "src": "backgrounds/cities/optimized/371400-50344c6aaa91-76a7b329e837.webp",
+      "sourceSha256": "50344c6aaa910d6c79b18a569e47a64215c8284804f0c7ca025329d41a7500da",
+      "sha256": "76a7b329e8370c5d41f043abfc63698b38f852bf806c6de83d0b0598c74df47e",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2873566,
+      "bytes": 285462
+    },
+    "backgrounds/cities/371500-fa354c8f0d29.png": {
+      "src": "backgrounds/cities/optimized/371500-fa354c8f0d29-155600d8dea4.webp",
+      "sourceSha256": "fa354c8f0d2910d3bcaa4101e24b9301e50c81507081114029acf917775f6faf",
+      "sha256": "155600d8dea482aaa784daf3dd833599babfbaa11df5a02b573e86ce9582d295",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3616253,
+      "bytes": 482284
+    },
+    "backgrounds/cities/371600-0f4c5f0a1a91.png": {
+      "src": "backgrounds/cities/optimized/371600-0f4c5f0a1a91-c2c6f27f5abb.webp",
+      "sourceSha256": "0f4c5f0a1a91613fd5635fa3fcc6124dc91d27fbff5d693fab5ad84cdcb1a119",
+      "sha256": "c2c6f27f5abbcd6c38bc0b4af2086219cb26877a9c7033b1d1234fe5bc9f8bb3",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3334105,
+      "bytes": 433492
+    },
+    "backgrounds/cities/371700-bad07e2ca961.png": {
+      "src": "backgrounds/cities/optimized/371700-bad07e2ca961-663bb7c1d6d1.webp",
+      "sourceSha256": "bad07e2ca961c68a6547cceed71ccef1d60bf334ff0c506ec7d0e70e72c24497",
+      "sha256": "663bb7c1d6d1edf3dfc4d69e926081cfede9c71d3feffc59d75fa22afce33d96",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 2508909,
+      "bytes": 178086
+    },
+    "backgrounds/user-selected-shanhai-20261101.png": {
+      "src": "backgrounds/optimized/user-selected-shanhai-20261101-edd9f0a1905a.webp",
+      "sourceSha256": "31aa4cbd4b1082bc9430405178462de69d8873f5d73fd67d3883a8a27349d5ba",
+      "sha256": "edd9f0a1905ac334ff2c4ae55b741b46b66eb586ad9aad55a372373160a2e090",
+      "width": 1800,
+      "height": 1016,
+      "sourceBytes": 4969102,
+      "bytes": 353976
+    },
+    "guides/370100/media/370100-body-a.png": {
+      "src": "guides/370100/media/optimized/370100-body-a-a675f7c28aac.webp",
+      "sourceSha256": "aba10df9c5df815c9492ae66a72ef484b172423d0ef68f629deb15b48dcf4543",
+      "sha256": "a675f7c28aac9da4be4c2bf6f76f7a4414d65aee13fc358bc929ffa56beda38b",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2665339,
+      "bytes": 158936
+    },
+    "guides/370200/media/370200-body-b.png": {
+      "src": "guides/370200/media/optimized/370200-body-b-99002257c620.webp",
+      "sourceSha256": "413f264f4ab80e8140515cdf371581aa59ff403268cba3189977d440c2a314bd",
+      "sha256": "99002257c620ba397d99df5ddfcde78c61f4ca0e4406e46f31c47df3f7556235",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3059444,
+      "bytes": 232378
+    },
+    "guides/370400/media/370400-body-a.png": {
+      "src": "guides/370400/media/optimized/370400-body-a-9c5180f4edcd.webp",
+      "sourceSha256": "60d2c3f6b583b5a254f85df6fb699ddd5c1dc2de521516ca864d9e3c8decbc1b",
+      "sha256": "9c5180f4edcdbbcced3a12626cf612b63e90e001e26544006b05623ba1e91acd",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2668990,
+      "bytes": 127628
+    },
+    "guides/370500/media/370500-body-b.png": {
+      "src": "guides/370500/media/optimized/370500-body-b-58e3dd7c3555.webp",
+      "sourceSha256": "68407ccf7e63ca986a4b55170ae1417995103d3e54acd99a47fcdac20e7452bd",
+      "sha256": "58e3dd7c35553eb86965b22dd6b8b47d1a5cf61d7af9aa2aa4eaaddf7f47eb0f",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 3570051,
+      "bytes": 290368
+    },
+    "guides/370600/media/370600-body-b.png": {
+      "src": "guides/370600/media/optimized/370600-body-b-f4356ae55bd5.webp",
+      "sourceSha256": "6a3fae3c4b6514caeeae6d0190e575fd6ed3b88872ba4fd75bd8e887cdf19a6b",
+      "sha256": "f4356ae55bd573142ee35df1ffbac01a499780b97557b5ea06a1f8f6545bbc22",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2897316,
+      "bytes": 135914
+    },
+    "guides/370700/media/370700-body-b-revised.png": {
+      "src": "guides/370700/media/optimized/370700-body-b-revised-207dcd155ade.webp",
+      "sourceSha256": "243149efbf769a7cf72a1d0fa30e1a6c5167768ef5e547905bb2ad375ba77988",
+      "sha256": "207dcd155ade82e984175461508dbd555899ce02551c65ba4fd4a95de5103786",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 3159649,
+      "bytes": 296278
+    },
+    "guides/370800/media/370800-body-b.png": {
+      "src": "guides/370800/media/optimized/370800-body-b-f77db566aba1.webp",
+      "sourceSha256": "5011fac806a8b2e9c3a7baac4c93dbce788198437578c325144a3e44a4623410",
+      "sha256": "f77db566aba18808f6299669c0b2fd87e256ece04050f167e85e2084d86851ad",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3299780,
+      "bytes": 244892
+    },
+    "guides/370900/media/370900-body-b.png": {
+      "src": "guides/370900/media/optimized/370900-body-b-2842cf2fd3fc.webp",
+      "sourceSha256": "f63a8e8f319a26ceea5d9a22addbfb91b9ac883dff72e919ce03ebd7d50bdb9e",
+      "sha256": "2842cf2fd3fc070b8435752de1bd36534207007a310d3fccff0d83c89901da6e",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2522158,
+      "bytes": 179572
+    },
+    "guides/371000/media/371000-body-b.png": {
+      "src": "guides/371000/media/optimized/371000-body-b-4ffec4973d96.webp",
+      "sourceSha256": "f840aaddba35ccd4e0503ca588cb02915308dccb2b19342b699e00ea953eaf3f",
+      "sha256": "4ffec4973d96e73095a106d58e3f9ccdde43c7aefcddb2647c7d3bc1d8f270f7",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2489932,
+      "bytes": 108250
+    },
+    "guides/371100/media/371100-body-b.png": {
+      "src": "guides/371100/media/optimized/371100-body-b-1c7a5137859e.webp",
+      "sourceSha256": "2529797cc71f5f3d9f852a65b58cb1ab251b719eeae6f2cf0c187a05b1daf447",
+      "sha256": "1c7a5137859e5abf9578cff414768b5c9a8e2dab03a0e0542d743e41c7753ac5",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 2628609,
+      "bytes": 110398
+    },
+    "guides/371300/media/371300-body-a.png": {
+      "src": "guides/371300/media/optimized/371300-body-a-11cd9840cd81.webp",
+      "sourceSha256": "80a886041b538dc04a61e05a867863c3fca186508dd9470f2f8d11d91bd0980e",
+      "sha256": "11cd9840cd8113f74e694931db102b51e571302b29d2234fa9cf117c1f45681e",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2680822,
+      "bytes": 139428
+    },
+    "guides/371400/media/371400-body-b.png": {
+      "src": "guides/371400/media/optimized/371400-body-b-bc19121c597b.webp",
+      "sourceSha256": "392d6080b4a0d1de13ea44b40251638230092c01c930b4ab474ce8736d7529b7",
+      "sha256": "bc19121c597bbbbdfe673a5f6407d289f4e279300b4fdde6c17d66bbd807d3ec",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2902270,
+      "bytes": 217928
+    },
+    "guides/371500/media/371500-body-b.png": {
+      "src": "guides/371500/media/optimized/371500-body-b-551e429f63a0.webp",
+      "sourceSha256": "8c2f2d0dc77a0814971081edcfda0abc2af1eb4cdaf6a572a461e8cddce5b63e",
+      "sha256": "551e429f63a0de3ee87dafd9b302f90280fe465646a960ad63f4d642e31d46f3",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 2892897,
+      "bytes": 172364
+    },
+    "guides/371600/media/371600-body-a.png": {
+      "src": "guides/371600/media/optimized/371600-body-a-7b3d846721e4.webp",
+      "sourceSha256": "4c0adecb100669c2ccb7364e035107c0af3c67f97427db1bf266f1039b4a0476",
+      "sha256": "7b3d846721e47c6973c6c7d8fad5ea0ecf0fa5b8d2a9e174005007a099f690ed",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2617092,
+      "bytes": 138594
+    },
+    "guides/371700/media/371700-body-b.png": {
+      "src": "guides/371700/media/optimized/371700-body-b-0e4322f5dd96.webp",
+      "sourceSha256": "3bdeeac8e52713f3aaf7b2b9101cf3756cf62574eadcbae8b4458596cf586826",
+      "sha256": "0e4322f5dd96cea3d952950ccd7691e4ccc83988166528ae7f19c5ca01dc45cf",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2980875,
+      "bytes": 228372
+    },
+    "museum/images/folk-lantern.png": {
+      "src": "museum/images/optimized/folk-lantern-d9961d1a4f32.webp",
+      "sourceSha256": "8850d32e466de232eed7438ae1e320fba03e024a4a2c6345927409f2fcb3cc7c",
+      "sha256": "d9961d1a4f32c691eba849a868bf950091083673727466eb640a607744e22c34",
+      "width": 1080,
+      "height": 796,
+      "sourceBytes": 1687242,
+      "bytes": 187112
+    },
+    "museum/images/folk-spring-ox.png": {
+      "src": "museum/images/optimized/folk-spring-ox-f4d51c4a0b0e.webp",
+      "sourceSha256": "ea1e7fe484bb0c66896b1a767dd42133f6268a6a2290f52ada5821d19723bd8c",
+      "sha256": "f4d51c4a0b0e51f21b528c1130554bad61792ab65c0c2186f206e758603e0f2d",
+      "width": 1080,
+      "height": 620,
+      "sourceBytes": 1321089,
+      "bytes": 138458
+    },
+    "museum/images/folk-zaowang.png": {
+      "src": "museum/images/optimized/folk-zaowang-efbb55ed2d62.webp",
+      "sourceSha256": "861f68315cc6a6a6db9f86a7927f67ff6f8c548b98ee4a37c02a1bc9537c2381",
+      "sha256": "efbb55ed2d620a04c486c9a4cb7cac5b68fc085192df9997c8f6c493474d643e",
+      "width": 1080,
+      "height": 791,
+      "sourceBytes": 1753194,
+      "bytes": 232468
+    },
+    "museum/images/glaze-guanyin-vase.jpg": {
+      "src": "museum/images/optimized/glaze-guanyin-vase-5913db739cc1.webp",
+      "sourceSha256": "93ecff06c4a0816d113746d23d24c7f4d45fbbdf41e8eb322070bf560566b01a",
+      "sha256": "5913db739cc1c9db3ab9d150069299bea7de4b690c712b28225224e806b6cadd",
+      "width": 929,
+      "height": 1280,
+      "sourceBytes": 40809,
+      "bytes": 15476
+    },
+    "museum/images/glaze-liyue.jpg": {
+      "src": "museum/images/optimized/glaze-liyue-8bc2d20ef018.webp",
+      "sourceSha256": "94885757fa66074db433b5fdbb80df5bcd8fcdb96dc081c2593bb466e95988a2",
+      "sha256": "8bc2d20ef018d5927275dbc3afffae89dce83cf049ac6fcc69b5ca8aded574b3",
+      "width": 853,
+      "height": 1280,
+      "sourceBytes": 98483,
+      "bytes": 36274
+    },
+    "museum/images/jiaxiang-rubbing.jpg": {
+      "src": "museum/images/optimized/jiaxiang-rubbing-edec4f642a48.webp",
+      "sourceSha256": "07518ab2480cee7062c0ea825d8d0cfe573da4eb96974b90a6aa7d53053b1b09",
+      "sha256": "edec4f642a483fa8aa1731404516c1c6ce3a7f2801cb47dfd1c5728b1236413d",
+      "width": 1280,
+      "height": 865,
+      "sourceBytes": 2420491,
+      "bytes": 297432
+    },
+    "museum/images/linqing-bricks.jpg": {
+      "src": "museum/images/optimized/linqing-bricks-3165f3a54daf.webp",
+      "sourceSha256": "4858053937139d0eca92b2b48437fe571a5d79cf8931be35480345e454a391e0",
+      "sha256": "3165f3a54dafe07af23cc177d026dcd99a6552063c332aa77d6685045fdcb50e",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2815088,
+      "bytes": 55558
+    },
+    "museum/images/new/cma-1985-73.jpg": {
+      "src": "museum/images/new/optimized/cma-1985-73-7813dc502b32.webp",
+      "sourceSha256": "679ddb2ce396c0fce0415292367df0181dd855bbb5e18f6ae63d442c785a281e",
+      "sha256": "7813dc502b3243a9817ef394b6b34a5c800606a359646b95e22e6fbe2d829c95",
+      "width": 1280,
+      "height": 494,
+      "sourceBytes": 1504666,
+      "bytes": 105638
+    },
+    "museum/images/new/gdm-gaomi-liukai.png": {
+      "src": "museum/images/new/optimized/gdm-gaomi-liukai-698ac3d2d776.webp",
+      "sourceSha256": "98d5d0de37cee140714cf0ed7ecd0af5b3cbed6c011173d0aa66887e0b3bcd8b",
+      "sha256": "698ac3d2d7767917d322c64c66faf6621359297bc5c61aa6ef64e5beb698dd32",
+      "width": 543,
+      "height": 523,
+      "sourceBytes": 606470,
+      "bytes": 76144
+    },
+    "museum/images/new/hanfu-feiyu-01.png": {
+      "src": "museum/images/new/optimized/hanfu-feiyu-01-76fa5a23e26e.webp",
+      "sourceSha256": "808848c3621b4fdedc214d64809dffd12ec8d00def39e76f99d9dd3fd01c6d68",
+      "sha256": "76fa5a23e26ef32cf7b673900053befe2e55af90fe59d1d2e990d490fd6f6666",
+      "width": 1080,
+      "height": 573,
+      "sourceBytes": 284180,
+      "bytes": 89004
+    },
+    "museum/images/new/hanfu-feiyu-02.png": {
+      "src": "museum/images/new/optimized/hanfu-feiyu-02-eef2a86d751f.webp",
+      "sourceSha256": "16ea8d1151117a4e15d1a217402dc555216fda27329b72539332a9d1a81e8563",
+      "sha256": "eef2a86d751fe0c6d2efe0106794ad5f18dcc83db1263c55d8357a5fdc383967",
+      "width": 758,
+      "height": 566,
+      "sourceBytes": 310439,
+      "bytes": 120928
+    },
+    "museum/images/new/hanfu-hongpao-01.png": {
+      "src": "museum/images/new/optimized/hanfu-hongpao-01-1df5f3190737.webp",
+      "sourceSha256": "7cce5ad4f3e6ba19d3fffdabe25058f1e57cb09b207ffff7e866cbecf43dc0bb",
+      "sha256": "1df5f319073710c7853d6057dc6450ab5f843564e13e2457e7fe96269dfd8acf",
+      "width": 1080,
+      "height": 620,
+      "sourceBytes": 243877,
+      "bytes": 33802
+    },
+    "museum/images/new/hanfu-hongpao-02.png": {
+      "src": "museum/images/new/optimized/hanfu-hongpao-02-6667ec80bc96.webp",
+      "sourceSha256": "b1dfc4cd28f00e41d91cac0524925b2b3a4a2c311e71a9355101ec4a9d404f75",
+      "sha256": "6667ec80bc9670af412afd9494e03eacb4ab160ed3dbe037b960fa1eab4dda60",
+      "width": 1080,
+      "height": 810,
+      "sourceBytes": 721848,
+      "bytes": 134350
+    },
+    "museum/images/new/hanfu-xiangshan-01.png": {
+      "src": "museum/images/new/optimized/hanfu-xiangshan-01-35a9a6304787.webp",
+      "sourceSha256": "192fbd4275884899b4c5ef060e4fc8491daadafd8057fe6b684271c68e32a998",
+      "sha256": "35a9a63047874c930e5cc855e23495c2d058046038791382f5cc17de64766f69",
+      "width": 1080,
+      "height": 649,
+      "sourceBytes": 494182,
+      "bytes": 110088
+    },
+    "museum/images/new/hanfu-xiangshan-02.png": {
+      "src": "museum/images/new/optimized/hanfu-xiangshan-02-52f20c69d10a.webp",
+      "sourceSha256": "f751bba7e075e95137f28100fe8041093921213c60cc8f5996e28e5351de8576",
+      "sha256": "52f20c69d10a2be141b0015a4e7b83d39b77ba8cc017f762de758cf7055e547f",
+      "width": 868,
+      "height": 900,
+      "sourceBytes": 517692,
+      "bytes": 148662
+    },
+    "museum/images/new/hanhua-paochu.png": {
+      "src": "museum/images/new/optimized/hanhua-paochu-8b3b40bb79e3.webp",
+      "sourceSha256": "ae35a0bbd57347d669a2fbd8aa08a26792877a23bbad8829dd433cc773d3625f",
+      "sha256": "8b3b40bb79e390ca9bb996e61b79bb4233815968c4ba214eac4344bb634e1333",
+      "width": 1053,
+      "height": 1080,
+      "sourceBytes": 859516,
+      "bytes": 317910
+    },
+    "museum/images/new/hanhua-riyue.png": {
+      "src": "museum/images/new/optimized/hanhua-riyue-f761dc16ae23.webp",
+      "sourceSha256": "7b5d79f935dec0a3a7fbddf8ad32b66cc58da82865171273707907b4516b06ff",
+      "sha256": "f761dc16ae233587c5e35b30e40a6e84dda4039b638c342fb64afba8b6fe3dd3",
+      "width": 720,
+      "height": 1280,
+      "sourceBytes": 1347855,
+      "bytes": 254422
+    },
+    "museum/images/new/hanhua-yinan-01.png": {
+      "src": "museum/images/new/optimized/hanhua-yinan-01-7668e6015d9e.webp",
+      "sourceSha256": "cd128418548dbe6de2c42d124188a565486ef3e505131730ef6d040ff93aac22",
+      "sha256": "7668e6015d9ee22f8af78af80db9cd2a99e7c0f32475c1318586a9a23c8da9d8",
+      "width": 1080,
+      "height": 234,
+      "sourceBytes": 231772,
+      "bytes": 95442
+    },
+    "museum/images/new/hanhua-yinan-02.png": {
+      "src": "museum/images/new/optimized/hanhua-yinan-02-1b4d285acd19.webp",
+      "sourceSha256": "f8613024a02515c471588b108d151e76fdd5e26f0a3586c10751638acea83d77",
+      "sha256": "1b4d285acd19327636e30d48729ca2e4390544994496e66b5e88b9418d3736cb",
+      "width": 1080,
+      "height": 609,
+      "sourceBytes": 597164,
+      "bytes": 249394
+    },
+    "museum/images/new/hanhua-yinan-03.png": {
+      "src": "museum/images/new/optimized/hanhua-yinan-03-28cdd4e5e21a.webp",
+      "sourceSha256": "5ff5e914a7ca3c66d6c71e20413d5f82291b80a714b22b3bedf7413e7b1a3b77",
+      "sha256": "28cdd4e5e21abfa2e58266bbecf6593eda76f7479b0d6e08faa2c334dc166fde",
+      "width": 1080,
+      "height": 623,
+      "sourceBytes": 626938,
+      "bytes": 275708
+    },
+    "museum/images/new/met-36441.jpg": {
+      "src": "museum/images/new/optimized/met-36441-ab0f36bb3e2b.webp",
+      "sourceSha256": "9feea7b65343bd4ce602b59aad384f069e71bca1286c3d513da73f2d77f5a3f3",
+      "sha256": "ab0f36bb3e2b866aa704409d2faf77149bd47b7918350fc45351f2a66b038b5b",
+      "width": 1280,
+      "height": 960,
+      "sourceBytes": 4491975,
+      "bytes": 86872
+    },
+    "museum/images/new/met-42698.jpg": {
+      "src": "museum/images/new/optimized/met-42698-d7507c161b6b.webp",
+      "sourceSha256": "d951684093c4f33bdd4c96f2969e363606ec0ee378b70b4fa433608691a7dd08",
+      "sha256": "d7507c161b6b72ce753d3ec48e696f55f1b3063502c1777e6213f9d8737e1158",
+      "width": 1025,
+      "height": 1280,
+      "sourceBytes": 1556033,
+      "bytes": 46458
+    },
+    "museum/images/new/met-42753.jpg": {
+      "src": "museum/images/new/optimized/met-42753-e25f163530ab.webp",
+      "sourceSha256": "1f3734861ea3ea6b402e754cbfdfe5a264b67900a81f2637f646139e0a9fe023",
+      "sha256": "e25f163530abf910d197746b6abe8c41bc20d4a977018d61546fa8b066e0b72b",
+      "width": 961,
+      "height": 1280,
+      "sourceBytes": 1577740,
+      "bytes": 47578
+    },
+    "museum/images/new/met-49379.jpg": {
+      "src": "museum/images/new/optimized/met-49379-e17b218f2c0c.webp",
+      "sourceSha256": "63678fbcca7769049dd8024653ba850aad849b12b7d0e4aa9976b4c6c70d1b90",
+      "sha256": "e17b218f2c0cab6889ca979c1bfccd749ac975d650447f7090d234ebd26ad658",
+      "width": 863,
+      "height": 1280,
+      "sourceBytes": 1625913,
+      "bytes": 65270
+    },
+    "museum/images/new/met-51280.jpg": {
+      "src": "museum/images/new/optimized/met-51280-a24c2258e48a.webp",
+      "sourceSha256": "14015327d2df0ca2a516eb708c0136d0ff136c6b810b11f513066865b2622d19",
+      "sha256": "a24c2258e48ae7d8f9b37412c64b573a246cbaad25a7d3d22d1ec1cfca3881b1",
+      "width": 1024,
+      "height": 1280,
+      "sourceBytes": 1214133,
+      "bytes": 30334
+    },
+    "museum/images/new/met-52532.jpg": {
+      "src": "museum/images/new/optimized/met-52532-6557c9823775.webp",
+      "sourceSha256": "c54092c726f740f094b47bb3071298ec7d203a70b498196c30bb2d22e0bfd420",
+      "sha256": "6557c98237759743d253a965294027a08d30ef05dbd7b91dfdbee8594260caa4",
+      "width": 1013,
+      "height": 1280,
+      "sourceBytes": 1302619,
+      "bytes": 63500
+    },
+    "museum/images/new/nianhua-fenglin.jpg": {
+      "src": "museum/images/new/optimized/nianhua-fenglin-e282269f21e2.webp",
+      "sourceSha256": "278819c3d7a3a395222643ec15899ecd50f70add413647f87ed39d2b25b76635",
+      "sha256": "e282269f21e2dd0b7478f1675ac53a809b36f8f979f9a46c99d6c6446885f9df",
+      "width": 934,
+      "height": 707,
+      "sourceBytes": 131545,
+      "bytes": 119922
+    },
+    "museum/images/new/nianhua-gusao.jpg": {
+      "src": "museum/images/new/optimized/nianhua-gusao-8e62d45db9ce.webp",
+      "sourceSha256": "2cc6617c49059ad1828430e5e791f5e26285928830cfffcf26f5a78fbb630121",
+      "sha256": "8e62d45db9ceb813c21e31ba4391393aecc5b4cc59012c283b8ba9533e75cfe8",
+      "width": 878,
+      "height": 809,
+      "sourceBytes": 102869,
+      "bytes": 78158
+    },
+    "museum/images/new/nianhua-jingniang.jpg": {
+      "src": "museum/images/new/optimized/nianhua-jingniang-a1690b87a94c.webp",
+      "sourceSha256": "7201812aac757cd8eb675c84dad8b0e2995745cf3fe33e40cf6fe56d9ff8f175",
+      "sha256": "a1690b87a94c21a7e98a5f369855571156d4e9267c37e348e60f4eae25c98444",
+      "width": 1033,
+      "height": 499,
+      "sourceBytes": 85298,
+      "bytes": 68510
+    },
+    "museum/images/new/nianhua-jinyu.jpg": {
+      "src": "museum/images/new/optimized/nianhua-jinyu-e7d212c6c0c6.webp",
+      "sourceSha256": "016cb5884e94a533461eb7eb804ea6f91a97bf70169c2758a891666070fac4b2",
+      "sha256": "e7d212c6c0c64de004fb90a31b1f9b810fa3a6aa1f4cd99099a097fd24144f97",
+      "width": 931,
+      "height": 739,
+      "sourceBytes": 131232,
+      "bytes": 119452
+    },
+    "museum/images/new/nianhua-kongcheng.jpg": {
+      "src": "museum/images/new/optimized/nianhua-kongcheng-b26e088d54ac.webp",
+      "sourceSha256": "64359377d82da7b00493806707c1566aee9d2b501f77226aa7c78a3716170097",
+      "sha256": "b26e088d54aca81c01975a92d6859828dc5cf3f349c22aa6c9f9699b48bca4d8",
+      "width": 512,
+      "height": 384,
+      "sourceBytes": 50274,
+      "bytes": 44718
+    },
+    "museum/images/new/nianhua-longdan.jpg": {
+      "src": "museum/images/new/optimized/nianhua-longdan-416a8e8103bd.webp",
+      "sourceSha256": "6f8e1a2b56dd01299e135b66faa0936bfe6fccc20c2af95efc79677d941dbd91",
+      "sha256": "416a8e8103bdcb6639ec08a123423e3950fa7e4471c1cd9626a6cf2f8884315f",
+      "width": 360,
+      "height": 748,
+      "sourceBytes": 55993,
+      "bytes": 49740
+    },
+    "museum/images/new/nianhua-nongjiale.png": {
+      "src": "museum/images/new/optimized/nianhua-nongjiale-b61d75124316.webp",
+      "sourceSha256": "7e954267785b4f78706e74f24859b9a2e357c022f611a79e93f26715b327ea6e",
+      "sha256": "b61d751243162b788dd8b1eef9e10cec310bff913b4b2faacf45e6b111d485d7",
+      "width": 851,
+      "height": 413,
+      "sourceBytes": 404291,
+      "bytes": 69438
+    },
+    "museum/images/new/nianhua-shangguan.jpg": {
+      "src": "museum/images/new/optimized/nianhua-shangguan-19d329d8d7de.webp",
+      "sourceSha256": "1b902b958ef8117130385319e64f0c5c6386d71238f030dc6e63ea0da938637e",
+      "sha256": "19d329d8d7de4455cd251da022194048a3e8ee8b29959e7191511470903dca26",
+      "width": 513,
+      "height": 745,
+      "sourceBytes": 122733,
+      "bytes": 120466
+    },
+    "museum/images/new/nianhua-tianquan.jpg": {
+      "src": "museum/images/new/optimized/nianhua-tianquan-869a1bbfbe98.webp",
+      "sourceSha256": "31f0f5cb579d1d2dbae3d1fd9d91cdf4fcb004b1eecd3c7716a6b61a716559ac",
+      "sha256": "869a1bbfbe9876adcfd46385095bd0c3c03ada28c93429633b6e8dad78623f5e",
+      "width": 444,
+      "height": 754,
+      "sourceBytes": 122258,
+      "bytes": 122626
+    },
+    "museum/images/new/nianhua-tijian.jpg": {
+      "src": "museum/images/new/optimized/nianhua-tijian-2569132a326f.webp",
+      "sourceSha256": "7404ea06143ed474178de7161a3694a36c30b458be2ec89e379e6a0947cdf4f8",
+      "sha256": "2569132a326f4aa37d383a12be245ecc43f6ac594516f1b60f216501462edc57",
+      "width": 798,
+      "height": 801,
+      "sourceBytes": 95167,
+      "bytes": 71448
+    },
+    "museum/images/new/nianhua-tractor.jpg": {
+      "src": "museum/images/new/optimized/nianhua-tractor-11da19de8f55.webp",
+      "sourceSha256": "567eddd66632f59364f2c0fbc101712c122414dbb88454b6a5953ebb006b53cc",
+      "sha256": "11da19de8f554bbf2cfc741d018102a9e41705aa14879b002ce57832f58c07c2",
+      "width": 512,
+      "height": 384,
+      "sourceBytes": 55633,
+      "bytes": 52266
+    },
+    "museum/images/new/nianhua-zhenzhai.jpg": {
+      "src": "museum/images/new/optimized/nianhua-zhenzhai-f3bdccf61a23.webp",
+      "sourceSha256": "4338940a353969d732f59abf245b910620454791f96359979c86e7e15f843798",
+      "sha256": "f3bdccf61a2379f6a052a5dc53ac2f7cee73e1a1878989949fdb246b6f4ffbda",
+      "width": 467,
+      "height": 814,
+      "sourceBytes": 120566,
+      "bytes": 117082
+    },
+    "museum/images/new/paris-2019-154.jpg": {
+      "src": "museum/images/new/optimized/paris-2019-154-3c32a0e3f8b5.webp",
+      "sourceSha256": "de59440566895250fa5af086c68618ad39e39d50216c40896590c61bcb5ce470",
+      "sha256": "3c32a0e3f8b5c59202c047f2ff68a84e722da8d11ca2fb044426437e8161ee84",
+      "width": 1280,
+      "height": 1024,
+      "sourceBytes": 750938,
+      "bytes": 72680
+    },
+    "museum/images/new/paris-9908.jpg": {
+      "src": "museum/images/new/optimized/paris-9908-729863e56b8a.webp",
+      "sourceSha256": "08c23f87453e4700f0ffdb367c607479391127c5d6fa2759766bb7367fc9336d",
+      "sha256": "729863e56b8aeb0f68f1419572a6340e27c4154507df8e353daf73a35e190d26",
+      "width": 960,
+      "height": 1280,
+      "sourceBytes": 189275,
+      "bytes": 30348
+    },
+    "museum/images/new/paris-9909.jpg": {
+      "src": "museum/images/new/optimized/paris-9909-a84035988ad6.webp",
+      "sourceSha256": "b689a26463e083a9f9d3d2eb7176142c33e15fb0217ebff1b6fb176991fee40c",
+      "sha256": "a84035988ad611b6d2de811d9a57133d29333fa7b05e84eac941f74c802a9f20",
+      "width": 1280,
+      "height": 960,
+      "sourceBytes": 449396,
+      "bytes": 50750
+    },
+    "museum/images/new/paris-9910.jpg": {
+      "src": "museum/images/new/optimized/paris-9910-022036ffeabc.webp",
+      "sourceSha256": "c9e8b41cb9922ea7a0bdc707eb28130bdfd60058e7fbfa42e0902c862aa2fce4",
+      "sha256": "022036ffeabcb439e7267a2c528a0c73ca43b8a57fa88caf1290e9bfd90d62e6",
+      "width": 960,
+      "height": 1280,
+      "sourceBytes": 273065,
+      "bytes": 68030
+    },
+    "museum/images/new/shandong-cut-baxian.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-baxian-d8afaba4eb3a.webp",
+      "sourceSha256": "16c759c456b13a44f688fa5c1df59073b3d6a3813b16e1994a57b0654f23b1ba",
+      "sha256": "d8afaba4eb3affdbf1b73f9e10b9a35d91e5a5b632910a10b99f9eab6776381b",
+      "width": 1000,
+      "height": 519,
+      "sourceBytes": 198240,
+      "bytes": 204948
+    },
+    "museum/images/new/shandong-cut-bianfu.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-bianfu-da25aec42301.webp",
+      "sourceSha256": "3131636b515f7b4f4fad56cfa6eea0763c4b073b471a85191bf2b047038b00f1",
+      "sha256": "da25aec423015746980597bf90722d72467dc7c4d09d5ff6e5fa236d6f991155",
+      "width": 839,
+      "height": 557,
+      "sourceBytes": 138793,
+      "bytes": 131584
+    },
+    "museum/images/new/shandong-cut-jinshan.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-jinshan-98d34e9aef1b.webp",
+      "sourceSha256": "26f7bd204ccf35df0793e406e733651fcd58accbfde5c944915fdd5e126c037b",
+      "sha256": "98d34e9aef1bef1c243c3f623dcf8da3449aba6493911bd2727f3e886ba71b05",
+      "width": 853,
+      "height": 557,
+      "sourceBytes": 83086,
+      "bytes": 72706
+    },
+    "museum/images/new/shandong-cut-jinyu.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-jinyu-4af675c9e675.webp",
+      "sourceSha256": "7985deb54b60be1cfd5ad43afeb11b43343e24462fbb482bdc41b52f3a8ed5df",
+      "sha256": "4af675c9e6752f06c0de18f37c2027c32bb5686cac85ca597e1daf603939d6c7",
+      "width": 893,
+      "height": 543,
+      "sourceBytes": 159200,
+      "bytes": 158374
+    },
+    "museum/images/new/shandong-cut-laoshu.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-laoshu-70d836293607.webp",
+      "sourceSha256": "ae2390bdd7d7945663d0468233b80873b6949584eeb36150b782883c83cd5592",
+      "sha256": "70d8362936075dade8c28d99c0899022dc37c37ab4a0257f57eafa58b3978f0a",
+      "width": 1200,
+      "height": 264,
+      "sourceBytes": 71462,
+      "bytes": 61052
+    },
+    "museum/images/new/shandong-cut-liangzhu.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-liangzhu-c27cad11df0f.webp",
+      "sourceSha256": "46f1626436e2f9ea75dcd5a80b12ff1eba8660504effcf07d0596a30dfa4c10e",
+      "sha256": "c27cad11df0fb43929413f8d7a869ada3a13aa5b89fe689866117e07716ef434",
+      "width": 591,
+      "height": 557,
+      "sourceBytes": 90984,
+      "bytes": 82238
+    },
+    "museum/images/new/shandong-cut-shuihu.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-shuihu-3b5f5d6d57de.webp",
+      "sourceSha256": "9d6937d393f44f116b9003ce11f8d723c229e6a60e4bce3ea503e894bb084f1b",
+      "sha256": "3b5f5d6d57de17035fd6fb002032c7911bc792b359be6813db16e5622fc12185",
+      "width": 785,
+      "height": 557,
+      "sourceBytes": 85843,
+      "bytes": 71960
+    },
+    "museum/images/new/shandong-cut-shuiman.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-shuiman-a9affb192f9c.webp",
+      "sourceSha256": "6077147419a9442882bea729c3d4bdd86f11b4466ef1491455700f11d995a252",
+      "sha256": "a9affb192f9c5efddcdd7862786947f6a007b2bfc41edfdf37d71c0a47c9f8a9",
+      "width": 1200,
+      "height": 396,
+      "sourceBytes": 108459,
+      "bytes": 96360
+    },
+    "museum/images/new/shandong-cut-tianhe.jpg": {
+      "src": "museum/images/new/optimized/shandong-cut-tianhe-b7ff43597654.webp",
+      "sourceSha256": "afa93ed3ad779f046a4f214b00fa39205e5884b68bf49c26532878440a55269c",
+      "sha256": "b7ff435976549b976eebcdc93964227c458b99e21a8e06133bb16cc949aeaa4d",
+      "width": 774,
+      "height": 557,
+      "sourceBytes": 176057,
+      "bytes": 168034
+    },
+    "museum/images/sdu-basin.jpg": {
+      "src": "museum/images/optimized/sdu-basin-52d2e227e158.webp",
+      "sourceSha256": "69bc45da2faee81053968263f3004e8071f60c7bc643d53486b3a6b7c0a96086",
+      "sha256": "52d2e227e15851e928c62b39f13a184a816ed75d6b90e547141c844ca797e20a",
+      "width": 1280,
+      "height": 1185,
+      "sourceBytes": 676109,
+      "bytes": 192408
+    },
+    "museum/images/sdu-bird.jpg": {
+      "src": "museum/images/optimized/sdu-bird-63a986991fda.webp",
+      "sourceSha256": "dce1d76788132acdc6bf5d9171c95f5e192e9afa3d5e21ec7f00e881117bb23f",
+      "sha256": "63a986991fdafbf9647e3610bf42dccb80b6c6b06585df1223d0dec6e3560831",
+      "width": 1015,
+      "height": 1280,
+      "sourceBytes": 165789,
+      "bytes": 34778
+    },
+    "museum/images/sdu-egg.jpg": {
+      "src": "museum/images/optimized/sdu-egg-5f62b60a6e16.webp",
+      "sourceSha256": "660c48b8702f909dc6c4203ac0bc3ae85812f169d070c968e238cccbd4fbe2f4",
+      "sha256": "5f62b60a6e1631b10e02525a3435390c0270941413dab2c11742d2ef0a527cd0",
+      "width": 826,
+      "height": 1280,
+      "sourceBytes": 89576,
+      "bytes": 14084
+    },
+    "museum/images/sdu-fanghu.jpg": {
+      "src": "museum/images/optimized/sdu-fanghu-3a143b780ca1.webp",
+      "sourceSha256": "3803feb999f54d265dd93ddfe4a91260e37825932fa608bd65bcae4ed7dbd166",
+      "sha256": "3a143b780ca1f3952b665ef3b500c436bb53577916d6142609feb739990b9e89",
+      "width": 1027,
+      "height": 1280,
+      "sourceBytes": 328627,
+      "bytes": 76918
+    },
+    "museum/images/sdu-he.jpg": {
+      "src": "museum/images/optimized/sdu-he-2be8fa3d5500.webp",
+      "sourceSha256": "c2ce2b3664d9c249b3527306b575ac1d9afc2aa3eca38250be2562a042f6304a",
+      "sha256": "2be8fa3d5500bbbb14cae140eb8ac311766be4cf4a3a6a76c802d73b28de844a",
+      "width": 1280,
+      "height": 1033,
+      "sourceBytes": 307840,
+      "bytes": 114490
+    },
+    "museum/images/sdu-horse.jpg": {
+      "src": "museum/images/optimized/sdu-horse-265762ad2b89.webp",
+      "sourceSha256": "fa88f7db1083602bad5d56d708a5f7a9f43656ad59ff13b183e8eb348ffb8df7",
+      "sha256": "265762ad2b898fc57ee83d2ea33b02d9973d04fbe185ddf01e71baebcb47d484",
+      "width": 1280,
+      "height": 1005,
+      "sourceBytes": 90311,
+      "bytes": 51246
+    },
+    "museum/images/sdu-jade-face.jpg": {
+      "src": "museum/images/optimized/sdu-jade-face-75b15ecdb137.webp",
+      "sourceSha256": "ebca66dd3828ce16f55ea63e422800298d3092f32f71d9903efece3650d95723",
+      "sha256": "75b15ecdb1373de27a5d7bb3270568969d6663db434173b0013edc3c31b47bac",
+      "width": 903,
+      "height": 1280,
+      "sourceBytes": 212742,
+      "bytes": 69102
+    },
+    "museum/images/sdu-jade-knife.jpg": {
+      "src": "museum/images/optimized/sdu-jade-knife-bb0e5af627ba.webp",
+      "sourceSha256": "ef6ae00a44368d88af741e7be2ef6b225f02619cdc5b677a2a4120c085a55917",
+      "sha256": "bb0e5af627ba1485cfdbff652efd602c4862fba5a2ead87272a7a09a9bbd3650",
+      "width": 1280,
+      "height": 854,
+      "sourceBytes": 177882,
+      "bytes": 44170
+    },
+    "museum/images/sdu-sancai.jpg": {
+      "src": "museum/images/optimized/sdu-sancai-4e10e6850cd1.webp",
+      "sourceSha256": "04cd4966975ba8f1e648ca09f99c1b35ea09a4cb0e2dbd86cb700a6b88ffb296",
+      "sha256": "4e10e6850cd1fd820a60b707d2e328bb61407773e793681eea115a44c883b054",
+      "width": 1280,
+      "height": 1005,
+      "sourceBytes": 190105,
+      "bytes": 63850
+    },
+    "people-culture-v1/assets/370100-jinan-jiyang-yangge-8e0f81eb8300.png": {
+      "src": "people-culture-v1/assets/optimized/370100-jinan-jiyang-yangge-8e0f81eb8300-011d27c480f5.webp",
+      "sourceSha256": "8e0f81eb8300d2a201cfd26e54c934c2b9d845dd3d94e3e9e4fa0b64affcc643",
+      "sha256": "011d27c480f5452db33cf8458e53bab89ddf2276a116bcae07bcc93d0865353c",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3089718,
+      "bytes": 251568
+    },
+    "people-culture-v1/assets/370100-jinan-liu-needle-ad-plate-dc6c83cf816b.png": {
+      "src": "people-culture-v1/assets/optimized/370100-jinan-liu-needle-ad-plate-dc6c83cf816b-09219e938a59.webp",
+      "sourceSha256": "dc6c83cf816be34fe3f1b47048e706cfef48547bc52dd9c9e50f6669057ab8ba",
+      "sha256": "09219e938a59a1fc7aa1b5bd7bc194bbdc6dc4c721488515ed949b323aa11356",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2637123,
+      "bytes": 146792
+    },
+    "people-culture-v1/assets/370100-jinan-rabbit-king-clay-6c2e6b3c27d2.png": {
+      "src": "people-culture-v1/assets/optimized/370100-jinan-rabbit-king-clay-6c2e6b3c27d2-07d0c6b16f54.webp",
+      "sourceSha256": "6c2e6b3c27d2093de91e6c7dacc48647b597fade6e29571640650d9d5ef73239",
+      "sha256": "07d0c6b16f546c393a58c8a36c60c3dbf31bbaab2290d3901c56dfa4528ccc99",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2268602,
+      "bytes": 65550
+    },
+    "people-culture-v1/assets/370100-jinan-spring-water-aba10df9c5df.png": {
+      "src": "people-culture-v1/assets/optimized/370100-jinan-spring-water-aba10df9c5df-a675f7c28aac.webp",
+      "sourceSha256": "aba10df9c5df815c9492ae66a72ef484b172423d0ef68f629deb15b48dcf4543",
+      "sha256": "a675f7c28aac9da4be4c2bf6f76f7a4414d65aee13fc358bc929ffa56beda38b",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2665339,
+      "bytes": 158936
+    },
+    "people-culture-v1/assets/370200-qd-object-jiaozhou-yangge-a86528be2201.png": {
+      "src": "people-culture-v1/assets/optimized/370200-qd-object-jiaozhou-yangge-a86528be2201-8238a7682385.webp",
+      "sourceSha256": "a86528be2201a9c28d88ede2148e4989003b410f0db209283c3150bc00a97066",
+      "sha256": "8238a7682385125536b668e033c5f904eada25139463b44dab63c57cf79a2b9c",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3055253,
+      "bytes": 231668
+    },
+    "people-culture-v1/assets/370200-qd-object-laoshan-green-tea-c0f2413af0c4.png": {
+      "src": "people-culture-v1/assets/optimized/370200-qd-object-laoshan-green-tea-c0f2413af0c4-12bce87f913f.webp",
+      "sourceSha256": "c0f2413af0c424a14af1fa6d367dc934167b033c723858caf30ec16a251d38e5",
+      "sha256": "12bce87f913f9b1d1c653c946bc2311d9d83372abc4a49e5d96b3d5f708ca4b7",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3233905,
+      "bytes": 221690
+    },
+    "people-culture-v1/assets/370200-qd-object-laoshan-stories-6ad8e75d7603.png": {
+      "src": "people-culture-v1/assets/optimized/370200-qd-object-laoshan-stories-6ad8e75d7603-f79b51ea99cf.webp",
+      "sourceSha256": "6ad8e75d76033dc26cb89f6a1e0243da467c8d9e55ca90f3fb360fdc85c66f81",
+      "sha256": "f79b51ea99cfd535713bc929917789c684073b376617b9c1326a9243a78e95e6",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3419920,
+      "bytes": 332820
+    },
+    "people-culture-v1/assets/370200-qd-object-shell-carving-413f264f4ab8.png": {
+      "src": "people-culture-v1/assets/optimized/370200-qd-object-shell-carving-413f264f4ab8-99002257c620.webp",
+      "sourceSha256": "413f264f4ab80e8140515cdf371581aa59ff403268cba3189977d440c2a314bd",
+      "sha256": "99002257c620ba397d99df5ddfcde78c61f4ca0e4406e46f31c47df3f7556235",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3059444,
+      "bytes": 232378
+    },
+    "people-culture-v1/assets/370300-zibo-boshan-glass-87b9d0ec3767.png": {
+      "src": "people-culture-v1/assets/optimized/370300-zibo-boshan-glass-87b9d0ec3767-4d5671f99892.webp",
+      "sourceSha256": "87b9d0ec37676c370d94427507dbb2de70dbf349eabdea309f7d0c8f677208b2",
+      "sha256": "4d5671f99892fba51de42125aa66bb9f53ff6dd9d543a6ab8df5f4063d6159af",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 3371252,
+      "bytes": 433642
+    },
+    "people-culture-v1/assets/370300-zibo-ceramic-firing-bca991c0167f.png": {
+      "src": "people-culture-v1/assets/optimized/370300-zibo-ceramic-firing-bca991c0167f-1f5fcd354859.webp",
+      "sourceSha256": "bca991c0167fd05cb914d59646eedb771bef6837f53a94644bbdaa79decaffb8",
+      "sha256": "1f5fcd354859a8c88de3ad97f25bbe08b0931a573e8394229531310d6bc0c4c0",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2578556,
+      "bytes": 123102
+    },
+    "people-culture-v1/assets/370300-zibo-liaozhai-liqu-812b5b0645af.png": {
+      "src": "people-culture-v1/assets/optimized/370300-zibo-liaozhai-liqu-812b5b0645af-fec08384c948.webp",
+      "sourceSha256": "812b5b0645af23f763b9714851b3669b6ddc119e6a617555ac2ba109eebe2593",
+      "sha256": "fec08384c9484ed2c29c74aaa9818b4ef6d0d61030f0ff45b1128faab5e06bef",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2872532,
+      "bytes": 196206
+    },
+    "people-culture-v1/assets/370300-zibo-zhou-cun-shaobing-af8def02ded3.png": {
+      "src": "people-culture-v1/assets/optimized/370300-zibo-zhou-cun-shaobing-af8def02ded3-e903f2ba0afb.webp",
+      "sourceSha256": "af8def02ded3d5d5a1712067a6c0684ea96592e4344b5a434c8a461c3cc60b79",
+      "sha256": "e903f2ba0afbddd478a8645cb6613b42161946a34923ccb638faa36acd33414a",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2803497,
+      "bytes": 176248
+    },
+    "people-culture-v1/assets/370400-fuli-pottery-60d2c3f6b583.png": {
+      "src": "people-culture-v1/assets/optimized/370400-fuli-pottery-60d2c3f6b583-9c5180f4edcd.webp",
+      "sourceSha256": "60d2c3f6b583b5a254f85df6fb699ddd5c1dc2de521516ca864d9e3c8decbc1b",
+      "sha256": "9c5180f4edcdbbcced3a12626cf612b63e90e001e26544006b05623ba1e91acd",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2668990,
+      "bytes": 127628
+    },
+    "people-culture-v1/assets/370400-liuqin-opera-1a43117c16a3.png": {
+      "src": "people-culture-v1/assets/optimized/370400-liuqin-opera-1a43117c16a3-7cce7fe57aa8.webp",
+      "sourceSha256": "1a43117c16a3e3ad8468f24f6ac1db8f770c5e5e9cae3158fb58b6e8f09c5eb2",
+      "sha256": "7cce7fe57aa8669a8f93be9ab761ee0e7a273b10e5f88cc8660f9e4c2ed971b9",
+      "width": 1280,
+      "height": 548,
+      "sourceBytes": 3072918,
+      "bytes": 196810
+    },
+    "people-culture-v1/assets/370400-luban-lock-d6e017c3c6a2.png": {
+      "src": "people-culture-v1/assets/optimized/370400-luban-lock-d6e017c3c6a2-12ab3397ee72.webp",
+      "sourceSha256": "d6e017c3c6a269e91854f6aefbd3aecf2851723657b53fd2a8ebec16dc7ac86a",
+      "sha256": "12ab3397ee7213632ceac6c69de9d7189b8438076ce8666959c18131b2e6ffb5",
+      "width": 1280,
+      "height": 640,
+      "sourceBytes": 3011828,
+      "bytes": 149854
+    },
+    "people-culture-v1/assets/370400-zaozhuang-spicy-chicken-90122ee53793.png": {
+      "src": "people-culture-v1/assets/optimized/370400-zaozhuang-spicy-chicken-90122ee53793-af48e38e798d.webp",
+      "sourceSha256": "90122ee537939b0bb9db97d451a8d1a0cb4283ecf8b1635a563775cb62a167c0",
+      "sha256": "af48e38e798dbacc82c96e3d269343370607903500720b984066cbc33590d4b9",
+      "width": 1280,
+      "height": 640,
+      "sourceBytes": 3294673,
+      "bytes": 251456
+    },
+    "people-culture-v1/assets/370500-dongying-damatou-reed-weaving-68407ccf7e63.png": {
+      "src": "people-culture-v1/assets/optimized/370500-dongying-damatou-reed-weaving-68407ccf7e63-58e3dd7c3555.webp",
+      "sourceSha256": "68407ccf7e63ca986a4b55170ae1417995103d3e54acd99a47fcdac20e7452bd",
+      "sha256": "58e3dd7c35553eb86965b22dd6b8b47d1a5cf61d7af9aa2aa4eaaddf7f47eb0f",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 3570051,
+      "bytes": 290368
+    },
+    "people-culture-v1/assets/370500-dongying-guangrao-qi-brush-e6d425ce328d.png": {
+      "src": "people-culture-v1/assets/optimized/370500-dongying-guangrao-qi-brush-e6d425ce328d-b08996b44cd6.webp",
+      "sourceSha256": "e6d425ce328d784af4f59c1468b87d5e0551502c9130cef4241d3a1a04af83b0",
+      "sha256": "b08996b44cd69c99eb3374ca02816870b131ca3bbdb373b93af80b17d229a321",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2681807,
+      "bytes": 107426
+    },
+    "people-culture-v1/assets/370500-dongying-lijin-pan-fried-bun-a9040b29f1b7.png": {
+      "src": "people-culture-v1/assets/optimized/370500-dongying-lijin-pan-fried-bun-a9040b29f1b7-7c3f7d491a8a.webp",
+      "sourceSha256": "a9040b29f1b7259c1466f4c3262ed47c2a932714aa07359ac1a35ed1d87d99ca",
+      "sha256": "7c3f7d491a8a184c354ddf6bf060c29e2feebd126bf9e8369138e8b2395e67ef",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2849114,
+      "bytes": 195656
+    },
+    "people-culture-v1/assets/370500-dongying-lvju-2dbfc69e36f2.png": {
+      "src": "people-culture-v1/assets/optimized/370500-dongying-lvju-2dbfc69e36f2-ea6da28480c7.webp",
+      "sourceSha256": "2dbfc69e36f23b3c58ffdcc4ef7b1a33f2004d9fcfc07e67336909b186622d83",
+      "sha256": "ea6da28480c7bf98e4db82b8d40da861d4c57a40beabd26756e9ebfbab97a8a5",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2982131,
+      "bytes": 206536
+    },
+    "people-culture-v1/assets/370600-yt-object-eight-immortals-a0c355a71053.png": {
+      "src": "people-culture-v1/assets/optimized/370600-yt-object-eight-immortals-a0c355a71053-7767eb0913ef.webp",
+      "sourceSha256": "a0c355a71053314fb1900e6872c53833cd09eef74091506196ce92d16c29c3b7",
+      "sha256": "7767eb0913ef0ee9e590af804269c84c5ff18e82aa3f4021761ef58940f65b90",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3344969,
+      "bytes": 324368
+    },
+    "people-culture-v1/assets/370600-yt-object-haiyang-yangge-8510b93425ca.png": {
+      "src": "people-culture-v1/assets/optimized/370600-yt-object-haiyang-yangge-8510b93425ca-ca382932d7b5.webp",
+      "sourceSha256": "8510b93425ca1d8b84b0070cda30cfc6b6ac4d12a3901e822f93e08b8d305814",
+      "sha256": "ca382932d7b538b9e038bf1f379faa71215423ce8cc97606153f4f521ac2fa41",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3143367,
+      "bytes": 296454
+    },
+    "people-culture-v1/assets/370600-yt-object-jiaodong-flower-bun-9497cd06765d.png": {
+      "src": "people-culture-v1/assets/optimized/370600-yt-object-jiaodong-flower-bun-9497cd06765d-876990b7959e.webp",
+      "sourceSha256": "9497cd06765d5fadbee686604064955c090136047d1bc198f9ca69378f0f3208",
+      "sha256": "876990b7959e8dc7393e810563ef4d74ba53870b610aafa7b3e40df49469fbcb",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2625206,
+      "bytes": 162202
+    },
+    "people-culture-v1/assets/370600-yt-object-laizhou-straw-6a3fae3c4b65.png": {
+      "src": "people-culture-v1/assets/optimized/370600-yt-object-laizhou-straw-6a3fae3c4b65-f4356ae55bd5.webp",
+      "sourceSha256": "6a3fae3c4b6514caeeae6d0190e575fd6ed3b88872ba4fd75bd8e887cdf19a6b",
+      "sha256": "f4356ae55bd573142ee35df1ffbac01a499780b97557b5ea06a1f8f6545bbc22",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2897316,
+      "bytes": 135914
+    },
+    "people-culture-v1/assets/370700-wf-object-chaotianguo-cf7099cae23c.png": {
+      "src": "people-culture-v1/assets/optimized/370700-wf-object-chaotianguo-cf7099cae23c-790119acde6b.webp",
+      "sourceSha256": "cf7099cae23cf191a12465378792c476fb305c38f1beb0a0d2c4752fd2399e45",
+      "sha256": "790119acde6b3b05a409882c05af4dfaae437b16ef0885eca5cd98247c2e00c9",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 2910222,
+      "bytes": 238236
+    },
+    "people-culture-v1/assets/370700-wf-object-gaomi-maoqiang-c5cd28f8ba9e.png": {
+      "src": "people-culture-v1/assets/optimized/370700-wf-object-gaomi-maoqiang-c5cd28f8ba9e-ca2e7984c9b3.webp",
+      "sourceSha256": "c5cd28f8ba9ef30f838aabdb61405fa536b17b734669c0ea18eb1cba32acc3eb",
+      "sha256": "ca2e7984c9b38035fdbb192ea2c982efaeb40f1f5349565fa3b0a64050435c3a",
+      "width": 1280,
+      "height": 548,
+      "sourceBytes": 2925014,
+      "bytes": 163038
+    },
+    "people-culture-v1/assets/370700-wf-object-kite-385acd7dc9fc.png": {
+      "src": "people-culture-v1/assets/optimized/370700-wf-object-kite-385acd7dc9fc-6a506774dbdb.webp",
+      "sourceSha256": "385acd7dc9fcfcd7fe8b0b43f6d5dd64071996f440fd05e4fdfb415825b5b416",
+      "sha256": "6a506774dbdb375ba3e63a73fc6277520b37440a43b4f647fa21e0bab0e19ca1",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2548789,
+      "bytes": 189568
+    },
+    "people-culture-v1/assets/370700-wf-object-niejiazhuang-clay-243149efbf76.png": {
+      "src": "people-culture-v1/assets/optimized/370700-wf-object-niejiazhuang-clay-243149efbf76-207dcd155ade.webp",
+      "sourceSha256": "243149efbf769a7cf72a1d0fa30e1a6c5167768ef5e547905bb2ad375ba77988",
+      "sha256": "207dcd155ade82e984175461508dbd555899ce02551c65ba4fd4a95de5103786",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 3159649,
+      "bytes": 296278
+    },
+    "people-culture-v1/assets/370800-kongfu-cuisine-0206d116fb58.png": {
+      "src": "people-culture-v1/assets/optimized/370800-kongfu-cuisine-0206d116fb58-10d742c1568c.webp",
+      "sourceSha256": "0206d116fb58bc04dbb9bde881fde90ebc61a5b998507e44ac50d0cba0b6736e",
+      "sha256": "10d742c1568cfd107c078df3f3ae51e17b3f28a5b9780dcdc32bcdd0b8139d1b",
+      "width": 1280,
+      "height": 533,
+      "sourceBytes": 2969685,
+      "bytes": 158246
+    },
+    "people-culture-v1/assets/370800-nishan-inkstone-5011fac806a8.png": {
+      "src": "people-culture-v1/assets/optimized/370800-nishan-inkstone-5011fac806a8-f77db566aba1.webp",
+      "sourceSha256": "5011fac806a8b2e9c3a7baac4c93dbce788198437578c325144a3e44a4623410",
+      "sha256": "f77db566aba18808f6299669c0b2fd87e256ece04050f167e85e2084d86851ad",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3299780,
+      "bytes": 244892
+    },
+    "people-culture-v1/assets/370800-qufu-kaimu-carving-57cecdedfd51.png": {
+      "src": "people-culture-v1/assets/optimized/370800-qufu-kaimu-carving-57cecdedfd51-c34acdf19d9b.webp",
+      "sourceSha256": "57cecdedfd51f0f27498cb58c67778c335b2abd20929a46010327aea2b91b726",
+      "sha256": "c34acdf19d9bd2f34d1085268a36bd8b83d2aade14ca1831c8edeca91c6f1455",
+      "width": 1280,
+      "height": 640,
+      "sourceBytes": 2896394,
+      "bytes": 163334
+    },
+    "people-culture-v1/assets/370800-zoucheng-pingpai-890fee2aa2d0.png": {
+      "src": "people-culture-v1/assets/optimized/370800-zoucheng-pingpai-890fee2aa2d0-5c46b47579ad.webp",
+      "sourceSha256": "890fee2aa2d07f26f2874752e39bfc3c7c09ee4befaaa486c1c619d9b3ef6abc",
+      "sha256": "5c46b47579ad9a598b186408dc4f0eb4676b8f7c8949128166d2e8e4dac068fe",
+      "width": 1280,
+      "height": 548,
+      "sourceBytes": 3463597,
+      "bytes": 217310
+    },
+    "people-culture-v1/assets/370900-taian-pancake-eab2cea624bb.png": {
+      "src": "people-culture-v1/assets/optimized/370900-taian-pancake-eab2cea624bb-234ca96ebc08.webp",
+      "sourceSha256": "eab2cea624bb3561a4e49de2f5f1a81ea317d57c6e03f9770f222490fdd20a6d",
+      "sha256": "234ca96ebc08871c8d8a84eb6e32a56e835299fe0eb21ff474e0b95e3c51751a",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2842289,
+      "bytes": 186044
+    },
+    "people-culture-v1/assets/370900-taian-shadow-theatre-f63a8e8f319a.png": {
+      "src": "people-culture-v1/assets/optimized/370900-taian-shadow-theatre-f63a8e8f319a-2842cf2fd3fc.webp",
+      "sourceSha256": "f63a8e8f319a26ceea5d9a22addbfb91b9ac883dff72e919ce03ebd7d50bdb9e",
+      "sha256": "2842cf2fd3fc070b8435752de1bd36534207007a310d3fccff0d83c89901da6e",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2522158,
+      "bytes": 179572
+    },
+    "people-culture-v1/assets/370900-taian-shigandang-custom-fcde33642deb.png": {
+      "src": "people-culture-v1/assets/optimized/370900-taian-shigandang-custom-fcde33642deb-d72bb512a52c.webp",
+      "sourceSha256": "fcde33642deb1e4d09dc928e41ef24da9d29a95f9930b89d3b5bc22b93148b61",
+      "sha256": "d72bb512a52c71700fb1b56eb01ff5edf145669b10d5a06f5c086cc126e41a7d",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3056155,
+      "bytes": 204022
+    },
+    "people-culture-v1/assets/370900-taian-xujiazhuang-woodblock-1ea07816f958.png": {
+      "src": "people-culture-v1/assets/optimized/370900-taian-xujiazhuang-woodblock-1ea07816f958-704de586cca4.webp",
+      "sourceSha256": "1ea07816f9586273d603b7dc7054af8b534f79de9ac24a5334eb2b37f1f601ed",
+      "sha256": "704de586cca46d7210e454dd46e23a4a5a5b9d9fcdc0f19c3bc369fca5beb97d",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3444446,
+      "bytes": 320592
+    },
+    "people-culture-v1/assets/371000-wh-object-fishing-net-mending-cd65346ef47b.png": {
+      "src": "people-culture-v1/assets/optimized/371000-wh-object-fishing-net-mending-cd65346ef47b-7afe9bddf957.webp",
+      "sourceSha256": "cd65346ef47b266ef6204432d5e68e06636853f3662a7772ad5440981684cf35",
+      "sha256": "7afe9bddf9576a0f156cb0ff9c078198ac7ab42e5eab308143c31600d02f0f5b",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3894337,
+      "bytes": 387558
+    },
+    "people-culture-v1/assets/371000-wh-object-rushan-ginger-honey-9ab0f71b130a.png": {
+      "src": "people-culture-v1/assets/optimized/371000-wh-object-rushan-ginger-honey-9ab0f71b130a-ddf938571584.webp",
+      "sourceSha256": "9ab0f71b130a83acdc0aaba7208201bf4dcf329b25ead09ed04bdb6bcedab623",
+      "sha256": "ddf9385715846c80019178e79c261f5efe806cd2176038e38852c1b68424426b",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2707454,
+      "bytes": 207326
+    },
+    "people-culture-v1/assets/371000-wh-object-seagrass-house-9ba487292547.png": {
+      "src": "people-culture-v1/assets/optimized/371000-wh-object-seagrass-house-9ba487292547-6aa920cdb2c4.webp",
+      "sourceSha256": "9ba487292547327a440a222caaef2b0617a713afbe5cfb462fa2b4ae4b51dbe8",
+      "sha256": "6aa920cdb2c4acc0179d1fcad4cbdc7d1818a887e120dee51cff63f398330daf",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3479756,
+      "bytes": 340636
+    },
+    "people-culture-v1/assets/371000-wh-object-tin-inlay-f840aaddba35.png": {
+      "src": "people-culture-v1/assets/optimized/371000-wh-object-tin-inlay-f840aaddba35-4ffec4973d96.webp",
+      "sourceSha256": "f840aaddba35ccd4e0503ca588cb02915308dccb2b19342b699e00ea953eaf3f",
+      "sha256": "4ffec4973d96e73095a106d58e3f9ccdde43c7aefcddb2647c7d3bc1d8f270f7",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2489932,
+      "bytes": 108250
+    },
+    "people-culture-v1/assets/371100-lanshan-fisherfolk-chants-bc13094faa3d.png": {
+      "src": "people-culture-v1/assets/optimized/371100-lanshan-fisherfolk-chants-bc13094faa3d-c1119d4201d6.webp",
+      "sourceSha256": "bc13094faa3d3a2d357d1f2e23ed99e360be88a32fd0a3fba2123d04103b59c3",
+      "sha256": "c1119d4201d6d37cc3567144f6f7789713848b9b50f4c911988ca11accc40a1b",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3926713,
+      "bytes": 407968
+    },
+    "people-culture-v1/assets/371100-rizhao-black-pottery-2529797cc71f.png": {
+      "src": "people-culture-v1/assets/optimized/371100-rizhao-black-pottery-2529797cc71f-1c7a5137859e.webp",
+      "sourceSha256": "2529797cc71f5f3d9f852a65b58cb1ab251b719eeae6f2cf0c187a05b1daf447",
+      "sha256": "1c7a5137859e5abf9578cff414768b5c9a8e2dab03a0e0542d743e41c7753ac5",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 2628609,
+      "bytes": 110398
+    },
+    "people-culture-v1/assets/371100-rizhao-green-tea-3df1b017d7cb.png": {
+      "src": "people-culture-v1/assets/optimized/371100-rizhao-green-tea-3df1b017d7cb-eb1510ddf7af.webp",
+      "sourceSha256": "3df1b017d7cbd62d5e8d182935cd60a54c63ef31126738787ad3ad23088d0447",
+      "sha256": "eb1510ddf7af9456e63043d32f5a098bde8885670a6d96bccf37eff886172636",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 3064243,
+      "bytes": 211210
+    },
+    "people-culture-v1/assets/371100-rizhao-peasant-painting-cc438429d1d8.png": {
+      "src": "people-culture-v1/assets/optimized/371100-rizhao-peasant-painting-cc438429d1d8-3d2e094e8adc.webp",
+      "sourceSha256": "cc438429d1d851299bd9deebfe10bdf8b68937d085cdd847bc758925b3d22b87",
+      "sha256": "3d2e094e8adc2e0c473ea8b73f043595bed64f1b4d90ceb7711e14b4b148507f",
+      "width": 1280,
+      "height": 533,
+      "sourceBytes": 3016718,
+      "bytes": 224358
+    },
+    "people-culture-v1/assets/371300-langya-straw-weaving-23acd5d8de30.png": {
+      "src": "people-culture-v1/assets/optimized/371300-langya-straw-weaving-23acd5d8de30-6c127fefbafd.webp",
+      "sourceSha256": "23acd5d8de30fd0cbe2671fc68963006c135e3e3260d723f764c1ef311e53ec3",
+      "sha256": "6c127fefbafd306014fbf07e83689d85dfded344def5bda31d86417038f59ee2",
+      "width": 1280,
+      "height": 562,
+      "sourceBytes": 2910777,
+      "bytes": 126396
+    },
+    "people-culture-v1/assets/371300-tancheng-wood-toy-80a886041b53.png": {
+      "src": "people-culture-v1/assets/optimized/371300-tancheng-wood-toy-80a886041b53-11cd9840cd81.webp",
+      "sourceSha256": "80a886041b538dc04a61e05a867863c3fca186508dd9470f2f8d11d91bd0980e",
+      "sha256": "11cd9840cd8113f74e694931db102b51e571302b29d2234fa9cf117c1f45681e",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2680822,
+      "bytes": 139428
+    },
+    "people-culture-v1/assets/371300-yimeng-pancake-55fbf4ed1691.png": {
+      "src": "people-culture-v1/assets/optimized/371300-yimeng-pancake-55fbf4ed1691-e8f402567096.webp",
+      "sourceSha256": "55fbf4ed1691b492749b495cb7216c3d9b1833b27210acf322609198e61b4544",
+      "sha256": "e8f4025670960a7dfb867914a6955a300e1e8e066150fd1062618e11237f3ce9",
+      "width": 1280,
+      "height": 548,
+      "sourceBytes": 3254122,
+      "bytes": 188484
+    },
+    "people-culture-v1/assets/371300-yimeng-song-76035937b636.png": {
+      "src": "people-culture-v1/assets/optimized/371300-yimeng-song-76035937b636-7b40d51e655c.webp",
+      "sourceSha256": "76035937b6367cb05f65d3247b25875696ad6cf2575dfb2891514f4f6428228f",
+      "sha256": "7b40d51e655c100dedd0eb95a8512d7f2e7bbf4c38b447f483990d3e8ae15a1a",
+      "width": 1280,
+      "height": 548,
+      "sourceBytes": 3238176,
+      "bytes": 185086
+    },
+    "people-culture-v1/assets/371400-dezhou-black-pottery-3ba8ca0853ec.png": {
+      "src": "people-culture-v1/assets/optimized/371400-dezhou-black-pottery-3ba8ca0853ec-8dc57737ce75.webp",
+      "sourceSha256": "3ba8ca0853ec1c2e3d7a55622fa7169113975b955807ea34805af6adb30e6b31",
+      "sha256": "8dc57737ce75edfde175a0b0d4c4a492e77e3a4a0316fa1e324d49ffd4665e58",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2672515,
+      "bytes": 131220
+    },
+    "people-culture-v1/assets/371400-dezhou-braised-chicken-392d6080b4a0.png": {
+      "src": "people-culture-v1/assets/optimized/371400-dezhou-braised-chicken-392d6080b4a0-bc19121c597b.webp",
+      "sourceSha256": "392d6080b4a0d1de13ea44b40251638230092c01c930b4ab474ce8736d7529b7",
+      "sha256": "bc19121c597bbbbdfe673a5f6407d289f4e279300b4fdde6c17d66bbd807d3ec",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2902270,
+      "bytes": 217928
+    },
+    "people-culture-v1/assets/371400-dezhou-gold-wire-color-paste-4ac778a3492e.png": {
+      "src": "people-culture-v1/assets/optimized/371400-dezhou-gold-wire-color-paste-4ac778a3492e-4c3a212e5dc7.webp",
+      "sourceSha256": "4ac778a3492e584c1410fdfd8a1375e3eefcd36f058653ead9c9d594a7ec011e",
+      "sha256": "4c3a212e5dc78f4dfa2d441dfea469ed9e658f10601df9b05a123f64d946fe97",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3404452,
+      "bytes": 264466
+    },
+    "people-culture-v1/assets/371400-dezhou-ningjin-acrobatics-24c472404d04.png": {
+      "src": "people-culture-v1/assets/optimized/371400-dezhou-ningjin-acrobatics-24c472404d04-08e85cd6e0df.webp",
+      "sourceSha256": "24c472404d045dba6b96ea8dc37bd456d9e4f2358f4aac6871f0bad46caf9c0c",
+      "sha256": "08e85cd6e0df5340d65f30a491cf3bd3d3aa72f23e09140704fd55489da91ca0",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2798898,
+      "bytes": 177824
+    },
+    "people-culture-v1/assets/371500-liaocheng-dongchang-gourd-carving-8c2f2d0dc77a.png": {
+      "src": "people-culture-v1/assets/optimized/371500-liaocheng-dongchang-gourd-carving-8c2f2d0dc77a-551e429f63a0.webp",
+      "sourceSha256": "8c2f2d0dc77a0814971081edcfda0abc2af1eb4cdaf6a572a461e8cddce5b63e",
+      "sha256": "551e429f63a0de3ee87dafd9b302f90280fe465646a960ad63f4d642e31d46f3",
+      "width": 1280,
+      "height": 720,
+      "sourceBytes": 2892897,
+      "bytes": 172364
+    },
+    "people-culture-v1/assets/371500-liaocheng-dongchangfu-woodblock-print-a2de004b96b2.png": {
+      "src": "people-culture-v1/assets/optimized/371500-liaocheng-dongchangfu-woodblock-print-a2de004b96b2-a522e9ed5611.webp",
+      "sourceSha256": "a2de004b96b22fcb35a86ae94e736a04e1d65da17e8801639a9c7b50bd6f7734",
+      "sha256": "a522e9ed5611ad33c9538a9b572c52bc360851a14ae20433dd182c693bebb4a6",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3548460,
+      "bytes": 339928
+    },
+    "people-culture-v1/assets/371500-liaocheng-linqing-canal-customs-b1df3dfa2455.png": {
+      "src": "people-culture-v1/assets/optimized/371500-liaocheng-linqing-canal-customs-b1df3dfa2455-31e8b1fbf9d7.webp",
+      "sourceSha256": "b1df3dfa2455c0c46673520e645077295e15e9713b638ca49ee4c54b283fe564",
+      "sha256": "31e8b1fbf9d7770aeeb4577e9d1e5258bb45f8be4705b1443945f8ff2982d5ea",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3197328,
+      "bytes": 212804
+    },
+    "people-culture-v1/assets/371500-liaocheng-linqing-shixiang-noodles-69cfea7a783e.png": {
+      "src": "people-culture-v1/assets/optimized/371500-liaocheng-linqing-shixiang-noodles-69cfea7a783e-7f65679c3b47.webp",
+      "sourceSha256": "69cfea7a783e770457c8e4171be31f52d428590a0cd3575129ce3decc8701f96",
+      "sha256": "7f65679c3b4726d1df95e06d049aba45d6603fb38d0ceffe4ed9672e17eb0022",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3316459,
+      "bytes": 308432
+    },
+    "people-culture-v1/assets/371600-binzhou-boxing-weaving-0d46d50546fb.png": {
+      "src": "people-culture-v1/assets/optimized/371600-binzhou-boxing-weaving-0d46d50546fb-7f525c94f0ba.webp",
+      "sourceSha256": "0d46d50546fb23342ec87e968db8bd8fa2363e12555c593878086cda2c5ef62a",
+      "sha256": "7f525c94f0ba76954bbc08e47c1b10bf0c2a8a9e5deaa79dd48feddd926e69db",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3472011,
+      "bytes": 281698
+    },
+    "people-culture-v1/assets/371600-binzhou-folk-paper-cutting-1b8387314760.png": {
+      "src": "people-culture-v1/assets/optimized/371600-binzhou-folk-paper-cutting-1b8387314760-4eca810870ad.webp",
+      "sourceSha256": "1b838731476084e71d34bd6ef42a70337e5c22da3616131274c8c4e8000c2466",
+      "sha256": "4eca810870adf0096e0e0bcc132f38785b623a93081c4e38bd70c9775d25fafd",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2678671,
+      "bytes": 162520
+    },
+    "people-culture-v1/assets/371600-binzhou-huimin-clay-dolls-e180c7c0c94a.png": {
+      "src": "people-culture-v1/assets/optimized/371600-binzhou-huimin-clay-dolls-e180c7c0c94a-a4958ef36518.webp",
+      "sourceSha256": "e180c7c0c94acd7f132442be7b4df6b1474c734f0938c8446888c56604f90df9",
+      "sha256": "a4958ef365182de9cdcedb8d396b055d100b744156c8507276d98d472eb8c41a",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2094294,
+      "bytes": 70414
+    },
+    "people-culture-v1/assets/371600-binzhou-zhanhua-winter-jujube-62c3b71bca7c.png": {
+      "src": "people-culture-v1/assets/optimized/371600-binzhou-zhanhua-winter-jujube-62c3b71bca7c-56f4353d7c70.webp",
+      "sourceSha256": "62c3b71bca7c8c36a8f77d8e7e6a0c4fa4954f55859552f95e2e8d56ab72678e",
+      "sha256": "56f4353d7c7071b6918cc19270f2cc96973afe80e98bb03b81f423a0b37d139a",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2593684,
+      "bytes": 129766
+    },
+    "people-culture-v1/assets/371700-heze-caoxian-woodcarving-3f41d150b3b3.png": {
+      "src": "people-culture-v1/assets/optimized/371700-heze-caoxian-woodcarving-3f41d150b3b3-0d58bee87957.webp",
+      "sourceSha256": "3f41d150b3b3c16f8aa46da3cc59d6b5f99c4eb2cd061b08bcec464d702f1ec9",
+      "sha256": "0d58bee8795700f105999d8eab8ee0162bef492110512d01133eaa15dc8851ec",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2296690,
+      "bytes": 92540
+    },
+    "people-culture-v1/assets/371700-heze-caozhou-dough-figurines-3bdeeac8e527.png": {
+      "src": "people-culture-v1/assets/optimized/371700-heze-caozhou-dough-figurines-3bdeeac8e527-0e4322f5dd96.webp",
+      "sourceSha256": "3bdeeac8e52713f3aaf7b2b9101cf3756cf62574eadcbae8b4458596cf586826",
+      "sha256": "0e4322f5dd96cea3d952950ccd7691e4ccc83988166528ae7f19c5ca01dc45cf",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 2980875,
+      "bytes": 228372
+    },
+    "people-culture-v1/assets/371700-heze-juancheng-lu-brocade-127c3b322007.png": {
+      "src": "people-culture-v1/assets/optimized/371700-heze-juancheng-lu-brocade-127c3b322007-175e1b7b4b18.webp",
+      "sourceSha256": "127c3b32200767107dfd83c6293945482bf8869af91ff1747f2027de45f81fe2",
+      "sha256": "175e1b7b4b181ce80e95de12ae2c0e380ad175b712fe3e249cb5f7a19056c0bd",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3221234,
+      "bytes": 261040
+    },
+    "people-culture-v1/assets/371700-heze-shanxian-mutton-soup-90902b2cdf6d.png": {
+      "src": "people-culture-v1/assets/optimized/371700-heze-shanxian-mutton-soup-90902b2cdf6d-399c55853dc0.webp",
+      "sourceSha256": "90902b2cdf6d6120a3d1c9b6964fa438e94d5ba1c2208085321df6721f04018e",
+      "sha256": "399c55853dc06abebe4f34dfa3180c54c5a8785318108fd1ab121573d3957d1c",
+      "width": 1280,
+      "height": 853,
+      "sourceBytes": 3031837,
+      "bytes": 202732
+    }
+  }
+}

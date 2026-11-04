@@ -1,4 +1,5 @@
 // The browser talks only to the same-origin service; credentials stay on the server.
+import { preloadQuickContexts, quickContextFor } from './quick-context.mjs';
 export const SUGGESTED_QUESTIONS = Object.freeze([
   '画像石里藏着什么？',
   '一块砖也能讲故事吗？',
@@ -23,7 +24,7 @@ export function questionsForContext(context) {
   if (!context) return SUGGESTED_QUESTIONS;
   if (context.kind !== 'scene') return EXHIBIT_QUESTIONS;
   const id = context.id || '';
-  const kind = id === 'map' ? 'map' : id === 'museum-cover' ? 'museum'
+  const kind = ['map', 'map-b'].includes(id) ? 'map' : id === 'museum-cover' ? 'museum'
     : id.startsWith('city-') ? 'city' : id.startsWith('person-') ? 'person'
     : id.startsWith('object-') ? 'object' : id.startsWith('citymedia-') ? 'picture' : 'topic';
   return CONTEXT_QUESTIONS[kind];
@@ -106,6 +107,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     '    <div class="exhibit-context" hidden><div class="exhibit-context-copy"><p>正在了解 <strong></strong></p><div class="exhibit-context-meta"><a target="_blank" rel="noopener noreferrer" hidden>查看资料</a><span class="exhibit-evidence" aria-live="polite"></span></div></div><button type="button" class="leave-exhibit" aria-label="退出当前展品，返回普通对话"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>',
     '    <div class="welcome"><div class="welcome-portrait"><img src="' + AVATAR_URL + '" alt="" aria-hidden="true"></div><div><h3>你好，我是小齐。</h3><p>从一件物，慢慢认识山东。</p></div></div>',
     '    <ol class="thread" role="log" aria-label="对话内容" aria-live="polite" aria-relevant="additions" hidden></ol>',
+    '    <div class="waiting-note" aria-live="polite" hidden><span class="waiting-note-label"></span><p class="waiting-note-text"></p><div class="waiting-note-sources"></div></div>',
     '    <div class="waiting" hidden><span class="waiting-message" role="status" aria-live="polite"><span class="waiting-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>小齐正在思考…</span></span><button class="stop-button" type="button">停止</button></div>',
     '    <div class="prompt-section"><div class="prompt-list" role="group" aria-label="示例问题"></div></div>',
     '  </div>',
@@ -124,6 +126,10 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   const welcome = shadow.querySelector('.welcome');
   const thread = shadow.querySelector('.thread');
   const waiting = shadow.querySelector('.waiting');
+  const waitingNote = shadow.querySelector('.waiting-note');
+  const waitingNoteLabel = shadow.querySelector('.waiting-note-label');
+  const waitingNoteText = shadow.querySelector('.waiting-note-text');
+  const waitingNoteSources = shadow.querySelector('.waiting-note-sources');
   const stopButton = shadow.querySelector('.stop-button');
   const area = shadow.querySelector('.conversation-area');
   const contextBox = shadow.querySelector('.exhibit-context');
@@ -138,6 +144,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   const sendButton = shadow.querySelector('.send-button');
   let activeRequest = null;
   let activeQuestion = '';
+  let pendingQuick = null;
   let history = [];
   let currentExhibit = null;
   let evidenceStatus = '';
@@ -145,6 +152,32 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
   let returnFocus = launcher;
   const sessions = new Map();
   let destroyed = false;
+  void preloadQuickContexts(win);
+
+  function hideQuickNote() {
+    pendingQuick = null;
+    waitingNote.hidden = true;
+    waitingNoteText.textContent = '';
+    waitingNoteSources.replaceChildren();
+  }
+
+  function showQuickNote(request, quick) {
+    void quick.then(note => {
+      if (!note || activeRequest !== request || destroyed) return;
+      pendingQuick = note;
+      waitingNoteLabel.textContent = note.evidence === 'checked' ? '馆藏资料摘记' : '资料线索 · 待核';
+      waitingNoteText.textContent = note.text;
+      waitingNoteSources.replaceChildren();
+      for (const source of safeRelatedSources(note.sources)) {
+        const link = doc.createElement('a');
+        link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+        link.textContent = source.label;
+        waitingNoteSources.append(link);
+      }
+      waitingNote.hidden = false;
+      scrollToLatest();
+    });
+  }
 
   function refreshControls() {
     const busy = activeRequest !== null;
@@ -206,6 +239,15 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
       submitQuestion(question, { retry: true, keepDraft });
     });
     item.append(retry);
+    return item;
+  }
+
+  function addQuickBefore(note, retryItem) {
+    if (!note || destroyed || retryItem.parentNode !== thread) return;
+    const item = addMessage('notice', note.text, safeRelatedSources(note.sources));
+    item.querySelector('.message-label').textContent = note.evidence === 'checked' ? '馆藏资料摘记' : '资料线索 · 待核';
+    thread.insertBefore(item, retryItem);
+    scrollToLatest();
   }
 
   function cancelQuestion(message) {
@@ -215,6 +257,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     activeRequest = null;
     activeQuestion = '';
     waiting.hidden = true;
+    hideQuickNote();
     if (question) {
       addRetryNotice(message, question);
       if (!input.value.trim()) input.value = question;
@@ -272,7 +315,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     area.scrollTop = 0;
   }
 
-  async function requestAnswer(question, request, previous, exhibit) {
+  async function requestAnswer(question, request, previous, exhibit, quick) {
     let timedOut = false;
     const timeout = win.setTimeout(() => { timedOut = true; request.abort(); }, 50000);
     try {
@@ -303,7 +346,9 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     } catch (error) {
       if (activeRequest !== request || destroyed) return;
       const message = timedOut ? '等待超时，请稍后重试。' : (error?.name === 'AbortError' ? '请求已取消。' : error?.message || '暂时无法连接模型，请稍后重试。');
-      addRetryNotice(message, question);
+      const retryItem = addRetryNotice(message, question);
+      if (pendingQuick) addQuickBefore(pendingQuick, retryItem);
+      else void quick.then(note => addQuickBefore(note, retryItem));
       if (!input.value.trim()) input.value = question;
     } finally {
       win.clearTimeout(timeout);
@@ -311,6 +356,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
         activeRequest = null;
         activeQuestion = '';
         waiting.hidden = true;
+        hideQuickNote();
         refreshControls();
         scrollToLatest();
       }
@@ -329,10 +375,13 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     const request = new win.AbortController();
     activeRequest = request;
     activeQuestion = question;
+    hideQuickNote();
+    const quick = quickContextFor(win, currentExhibit);
+    showQuickNote(request, quick);
     const previous = history.slice(-6);
     refreshControls();
     scrollToLatest();
-    void requestAnswer(question, request, previous, currentExhibit);
+    void requestAnswer(question, request, previous, currentExhibit, quick);
   }
 
   function open(target = launcher) {
@@ -365,6 +414,7 @@ export function mountMuseumAssistant({ container = document.body, openInitially 
     history = [];
     autoDescribeRequested = false;
     waiting.hidden = true;
+    hideQuickNote();
     thread.replaceChildren();
     thread.hidden = true;
     welcome.hidden = false;

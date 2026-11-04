@@ -1,4 +1,5 @@
 import { CITIES } from '../people-culture-v1/model.mjs';
+import { quickContextFor } from './quick-context.mjs';
 
 const AUTO_KEY = 'yiwu-xiaoqi-auto-v1';
 const VOICE_KEY = 'yiwu-xiaoqi-voice-v1';
@@ -39,7 +40,8 @@ export function currentPageContext(doc) {
   if (inMuseum) return { kind: 'scene', id: 'museum-cover', title: '齐鲁文化博物馆' };
   const cityId = inPeople ? doc.body.dataset.city : /^#\/city\/(\d{6})$/.exec(win.location.hash)?.[1];
   if (cityId && Object.hasOwn(CITIES, cityId)) return { kind: 'scene', id: 'city-' + cityId, title: CITIES[cityId] };
-  return inHome ? { kind: 'scene', id: 'map', title: '山东文化地图' } : null;
+  const mapId = new URLSearchParams(win.location.search).get('variant') === 'B' ? 'map-b' : 'map';
+  return inHome ? { kind: 'scene', id: mapId, title: '山东文化地图' } : null;
 }
 
 /** One unobtrusive guide for the site's map, city pages and museum. */
@@ -72,6 +74,7 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
   let voiceEnabled = supportedVoice && storageGet(session, VOICE_KEY) === 'on';
   let current = null, request = null, timer = null, refreshTimer = null, disposed = false;
   let shownText = '', guideState = 'idle', lastAttempt = '', lastDelivered = '', voiceAwaitingClose = false;
+  let quickPreview = null, previewAttempt = '', guideProblem = '';
   const actor = doc.getElementById('xiaoqi-actor');
   function placeDock() {
     if (dock.hidden) return;
@@ -167,7 +170,9 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     shownText = text || '';
     guideState = state;
     dock.dataset.state = state;
-    label.textContent = state === 'loading' ? '正在讲解' : state === 'error' ? '重试讲解' : state === 'paused' ? '继续讲解' : '小齐讲解';
+    label.textContent = state === 'loading' ? '正在讲解' : state === 'error' ? '重试讲解'
+      : state === 'paused' ? '继续讲解' : state === 'preview'
+        ? (quickPreview?.evidence === 'checked' ? '馆藏资料摘记' : '资料线索 · 待核') : '小齐讲解';
     title.textContent = context?.title || '小齐';
     copy.textContent = shownText;
     openReading.setAttribute('aria-label', label.textContent + ' · ' + title.textContent);
@@ -179,6 +184,18 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     if (request) request.abort();
     request = null;
     stopVoice();
+  }
+  function previewContext(context) {
+    const key = contextKey(context);
+    if (!key || previewAttempt === key) return;
+    previewAttempt = key;
+    void quickContextFor(win, context).then(note => {
+      if (!note || disposed || !enabled || assistant.isOpen() || doc.hidden || key !== contextKey(current)
+          || (guideState === 'ready' && shownText) || guideState === 'paused') return;
+      quickPreview = note;
+      if (guideState === 'error') show(guideProblem + ' 先参考资料：' + note.text, context, 'error');
+      else show(note.text, context, 'preview');
+    });
   }
   async function narrate(context) {
     const key = contextKey(context);
@@ -192,7 +209,8 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     }
     if (lastAttempt === key) return;
     lastAttempt = key;
-    show('正在准备讲解…', context, 'loading');
+    guideProblem = '';
+    if (guideState !== 'preview' || !shownText) show('正在准备讲解…', context, 'loading');
     const controller = new win.AbortController(); request = controller;
     const timeout = win.setTimeout(() => controller.abort(), 50000);
     try {
@@ -213,7 +231,8 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
       if (!assistant.isOpen() && !doc.hidden) { lastDelivered = key; show(answer, context); speak(answer); }
     } catch (error) {
       if (request !== controller || !enabled || assistant.isOpen() || key !== contextKey(current)) return;
-      show(error?.name === 'AbortError' ? '讲解暂时超时，请重试。' : (error?.message || '暂时无法讲解，请重试。'), context, 'error');
+      guideProblem = error?.name === 'AbortError' ? '讲解暂时超时，请重试。' : (error?.message || '暂时无法讲解，请重试。');
+      show(quickPreview ? guideProblem + ' 先参考资料：' + quickPreview.text : guideProblem, context, 'error');
     } finally {
       win.clearTimeout(timeout);
       if (request === controller) request = null;
@@ -226,10 +245,11 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     if (assistant.isOpen()) { win.clearTimeout(timer); timer = null; stopVoice(); return; }
     const next = currentPageContext(doc), changed = contextKey(next) !== contextKey(current);
     if (changed) {
-      cancel(); current = next; lastAttempt = ''; lastDelivered = ''; show('');
+      cancel(); current = next; lastAttempt = ''; lastDelivered = ''; quickPreview = null; previewAttempt = ''; guideProblem = ''; show('');
     }
     if (current) assistant.setContext(current);
     if (!enabled || !current || request || timer) return;
+    if (!shownText) previewContext(current);
     const captured = current;
     timer = win.setTimeout(() => { timer = null; void narrate(captured); }, DWELL_MS);
   }
@@ -241,7 +261,7 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
   }
   function toggleAuto() {
     enabled = !enabled; storageSet(local, AUTO_KEY, enabled ? 'on' : 'off');
-    cancel(); lastAttempt = ''; lastDelivered = ''; show(''); controls(); if (enabled) refresh();
+    cancel(); lastAttempt = ''; lastDelivered = ''; quickPreview = null; previewAttempt = ''; show(''); controls(); if (enabled) refresh();
   }
   toggle.addEventListener('click', toggleAuto);
   panelToggle.addEventListener('click', toggleAuto);
@@ -271,7 +291,7 @@ export function mountUniversalGuide({ assistant, doc = document } = {}) {
     win.clearTimeout(refreshTimer); refreshTimer = null;
     refresh();
   };
-  const onStorage = event => { if (event.key === AUTO_KEY) { enabled = event.newValue !== 'off'; cancel(); show(''); schedule(); } };
+  const onStorage = event => { if (event.key === AUTO_KEY) { enabled = event.newValue !== 'off'; cancel(); quickPreview = null; previewAttempt = ''; show(''); schedule(); } };
   assistant.host.addEventListener('assistantvisibility', onVisibility);
   win.addEventListener('scroll', schedule, { passive: true });
   win.addEventListener('resize', schedule);

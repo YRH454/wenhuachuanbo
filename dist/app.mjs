@@ -3,6 +3,7 @@ import {stories} from './city-stories.mjs';
 import {HOME_BACKGROUND,BackgroundCycle,backgroundSpec,validBackgroundData} from './backgrounds.mjs';
 import {createZiboGuide} from './zibo-guide.mjs';
 import {createCityGuide} from './city-guides.mjs';
+import {optimizedAsset} from './optimized-assets.mjs';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const ziboGuide=createZiboGuide(document);
 const cityGuide=createCityGuide(document,{getBackground:id=>backgroundData?.cities.find(c=>c.cityId===id)});
@@ -15,10 +16,11 @@ let origin=null,mapToken=0,detailToken=0,active=null,loadToken=0;
 let backgroundData=null,shownBackground=null,backgroundAnimations=[];
 const backdropCycle=new BackgroundCycle(src=>new Promise((resolve,reject)=>{
   const image=new Image(),timeout=setTimeout(()=>{image.onload=image.onerror=null;reject(Error('background timeout'));},15000);
+  const preferred=optimizedAsset(src);let triedOriginal=false;
   image.decoding='async';image.alt='';
   image.onload=()=>{clearTimeout(timeout);image.onload=image.onerror=null;resolve(image);};
-  image.onerror=()=>{clearTimeout(timeout);image.onload=image.onerror=null;reject(Error('background failed'));};
-  image.src=src;
+  image.onerror=()=>{if(!triedOriginal&&preferred!==src){triedOriginal=true;image.src=src;return;}clearTimeout(timeout);image.onload=image.onerror=null;reject(Error('background failed'));};
+  image.src=preferred;
 }));
 const text=(id,value)=>{$(id).textContent=value;};
 const safeAsset=value=>typeof value==='string'&&/^assets\/[a-z0-9_-]+\.png$/i.test(value);
@@ -65,6 +67,7 @@ function drawMap(){
     if(tile&&safeAsset(tile.src)){
       const[x,y,width,height]=city.referenceFrame.viewBox;
       const img=svg('image',{x,y,width,height,preserveAspectRatio:'xMidYMid meet','clip-path':'url(#clip-'+cid+')',class:'city-image','data-state':'loading'});
+      const preferred=optimizedAsset(tile.src);let triedOriginal=false;
       ++pending;let settled=false;
       const settle=state=>{
         if(token!==mapToken||settled)return;settled=true;img.dataset.state=state;--pending;
@@ -72,12 +75,14 @@ function drawMap(){
       };
       img.addEventListener('load',()=>settle('loaded'),{once:true});
       img.addEventListener('error',()=>{
-        if(token!==mapToken)return;failures.add(city.city);settle('error');img.remove();
+        if(token!==mapToken)return;
+        if(!triedOriginal&&preferred!==tile.src){triedOriginal=true;img.setAttribute('href',tile.src);return;}
+        failures.add(city.city);settle('error');img.remove();
         $('image-status').hidden=false;$('retry-images').hidden=false;
         const message=[...failures].join('、')+'画作未能载入，市域与城市名入口仍可使用。';
         text('image-status',message);text('live',message);
-      },{once:true});
-      img.setAttribute('href',tile.src);art.append(img);
+      });
+      img.setAttribute('href',preferred);art.append(img);
     }
     $('city-art').append(art);
     const link=svg('a',{href:'#/city/'+cid,id:'map-link-'+cid,tabindex:'0',class:'city-link','aria-label':cid==='370600'?'烟台，剪纸意象画作，阅读莱州草辫专题':cid==='370900'?'泰安，泰山山岳意象画作，阅读泰山皮影戏专题':city.city+'，'+story.object+'，进入城市文化介绍','data-city':cid});
@@ -101,9 +106,10 @@ function drawMap(){
     const fallback=document.createElement('span');fallback.className='thumb-fallback';fallback.textContent=tile?'画作载入中':'画作暂未到达';fallback.setAttribute('aria-hidden','true');frame.append(fallback);
     if(tile&&safeAsset(tile.src)){
       const thumb=document.createElement('img');thumb.alt='';thumb.width=1254;thumb.height=1254;thumb.loading='lazy';thumb.decoding='async';thumb.dataset.state='loading';
+      const preferred=optimizedAsset(tile.src);let triedOriginal=false;
       thumb.onload=()=>{if(token!==mapToken)return;thumb.dataset.state='loaded';fallback.hidden=true;};
-      thumb.onerror=()=>{if(token!==mapToken)return;thumb.dataset.state='error';thumb.hidden=true;fallback.hidden=false;fallback.textContent='图片未载入，仍可读城';};
-      thumb.src=tile.src;frame.append(thumb);
+      thumb.onerror=()=>{if(token!==mapToken)return;if(!triedOriginal&&preferred!==tile.src){triedOriginal=true;thumb.src=tile.src;return;}thumb.dataset.state='error';thumb.hidden=true;fallback.hidden=false;fallback.textContent='图片未载入，仍可读城';};
+      thumb.src=preferred;frame.append(thumb);
     }
     const name=document.createElement('span');name.className='city-name';name.textContent=city.city;entry.append(frame,name);
     if(['370600','370900'].includes(cid)){const note=document.createElement('span');note.className='cg-entry-note';note.textContent=cid==='370600'?'剪纸意象画作 · 阅读莱州草辫专题':'山岳意象画作 · 阅读泰山皮影戏专题';name.append(note);}

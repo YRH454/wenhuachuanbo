@@ -17,7 +17,7 @@ test('exhibit prompts are concise and exhibit values do not create unsafe links'
 });
 
 test('scene suggestions match the map, city, person, object, picture, topic and museum', () => {
-  for (const [id, word] of [['map', '地图'], ['city-370300', '城市'], ['person-370300-example', '人物'],
+  for (const [id, word] of [['map', '地图'], ['map-b', '地图'], ['city-370300', '城市'], ['person-370300-example', '人物'],
     ['object-370300-example', '文化'], ['citymedia-370300-example', '画面'], ['topic-370300-example', '主题'], ['museum-cover', '展馆']]) {
     const prompts = questionsForContext({ kind: 'scene', id });
     assert.equal(prompts.length, 3);
