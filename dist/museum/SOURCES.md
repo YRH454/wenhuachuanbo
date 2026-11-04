@@ -2,6 +2,8 @@
 
 此页面是比赛设计预览，不是山东博物馆或山东大学博物馆的官方网站。每张图片的来源也可从对应作品卡片打开。
 
+项目负责人在本次部署前确认当前使用的图片可以上传。以下保留采集时的原始来源、署名与历史权利核验记录；此次部署未独立核验所有图片许可。
+
 - `jiaxiang-rubbing.jpg`：东汉山东嘉祥楼阙人物车骑出行画像石拓片，台北故宫博物院开放数据，[馆藏资料](https://digitalarchive.npm.gov.tw/opendata/Pub/Detail?id=34384&dep=P&mode=full)，CC BY 4.0。网页展示时按容器比例缩放或裁切，原文件保存在共享图库。
 - `linqing-bricks.jpg`：明代临清贡砖，Gary Todd / Wikimedia Commons，[图片资料](https://commons.wikimedia.org/wiki/File:Ming_Linqing_Bricks_Chenghua,_Jiajing,_%26_Wanli_Reigns_(10129290003).jpg) 标记为 CC0；2026-11-03 通过 Wikimedia Commons 元数据核对。原文件保存在共享图库。
 - `sdu-*.jpg`：山东大学博物馆公开馆藏页面图片。逐件来源、原图链接、摄影者待核状态、尺寸、哈希与权利情况见共享素材目录 `博物馆真实图片/生图1/馆藏真实图片清单.json`；当前均未确认获得公开再发布授权。为网页性能制作了最大边 2200 像素的展示副本；馆方原始文件保持不变。

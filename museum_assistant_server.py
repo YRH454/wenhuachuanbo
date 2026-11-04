@@ -503,6 +503,67 @@ def call_model(api_key, endpoint, messages, sources, exhibit=None, *, guide=Fals
     return content.strip()[:MAX_ASSISTANT_CHARS]
 
 
+def process_chat(service, body, client):
+    """Shared model endpoint; transports handle origin, size and content type."""
+    try:
+        if not isinstance(body, dict) or set(body) not in ({'messages'}, {'messages', 'exhibitId'}, {'messages', 'sceneId'},
+                                                          {'messages', 'exhibitId', 'mode'}, {'messages', 'sceneId', 'mode'}):
+            raise ValueError('invalid body')
+        if 'mode' in body and body['mode'] != 'guide':
+            raise ValueError('invalid response mode')
+        messages = validate_messages(body['messages'])
+        exhibit = resolve_exhibit(body['exhibitId'], service.exhibits) if 'exhibitId' in body else None
+        if 'sceneId' in body:
+            exhibit = resolve_scene(body['sceneId'], service.scenes)
+    except (ValueError, UnicodeError):
+        return 400, {'error': '问题格式不正确，请重新输入。'}
+    if not service.api_key:
+        return 503, {'error': '模型服务尚未配置密钥。'}
+    cache_key = guide_cache_key(body, messages, exhibit)
+    if cache_key:
+        cached = service.guide_cache.get(cache_key)
+        if cached is not None:
+            return 200, cached
+    if not service.model_slots.acquire(blocking=False):
+        return 429, {'error': '小齐正在忙，请稍后再试。'}
+    budgets = [service.request_budget, *getattr(service, 'additional_budgets', ())]
+    if not all(budget.allow(client) for budget in budgets):
+        service.model_slots.release()
+        return 429, {'error': '讲解请求较多，请稍后再试。'}
+    sources = (exhibit.get('sources') or ([exhibit['source']] if exhibit.get('source') else [])) if exhibit else related_sources(messages)
+    try:
+        if body.get('mode') == 'guide':
+            answer = call_model(service.api_key, service.endpoint, messages, sources, exhibit, guide=True)
+        else:
+            answer = call_model(service.api_key, service.endpoint, messages, sources, exhibit)
+    except ExhibitImageError:
+        return 422, {'error': '当前画面图片暂时无法读取，未发送识图请求。请检查素材后重试。'}
+    except urllib.error.HTTPError as error:
+        if error.code == 401:
+            return 502, {'error': '模型认证失败，请检查服务端密钥。'}
+        if error.code == 403:
+            return 502, {'error': '模型调用权限或地域配置有误。'}
+        if error.code == 429:
+            return 429, {'error': '模型暂时繁忙或额度不足，请稍后再试。'}
+        return 502, {'error': '模型服务暂不可用，请稍后再试。'}
+    except (urllib.error.URLError, TimeoutError, socket.timeout, ValueError, KeyError, IndexError, TypeError):
+        return 502, {'error': '暂时无法连接模型，请稍后再试。'}
+    finally:
+        service.model_slots.release()
+    result = {
+        'answer': answer,
+        'sources': [{'label': item['label'], 'url': item['url']} for item in sources],
+    }
+    if exhibit:
+        if exhibit.get('scene'):
+            result['scene'] = {'id': exhibit['id'], 'evidence': 'draft', 'hasImage': bool(exhibit.get('image'))}
+        else:
+            result['exhibit'] = {'id': exhibit['id'], 'evidence': 'checked' if exhibit.get('facts') else 'unverified'}
+    if cache_key:
+        service.guide_cache.put(cache_key, result)
+    return 200, result
+
+
 class AssistantHandler(PreviewHandler):
     def log_message(self, format, *args):
         # Neither questions nor request details are written to server logs.
@@ -533,61 +594,10 @@ class AssistantHandler(PreviewHandler):
             if not 0 < length <= MAX_REQUEST_BYTES:
                 raise ValueError('invalid request length')
             body = json.loads(self.rfile.read(length).decode('utf-8'))
-            if not isinstance(body, dict) or set(body) not in ({'messages'}, {'messages', 'exhibitId'}, {'messages', 'sceneId'},
-                                                                  {'messages', 'exhibitId', 'mode'}, {'messages', 'sceneId', 'mode'}):
-                raise ValueError('invalid body')
-            if 'mode' in body and body['mode'] != 'guide':
-                raise ValueError('invalid response mode')
-            messages = validate_messages(body['messages'])
-            exhibit = resolve_exhibit(body['exhibitId'], self.server.exhibits) if 'exhibitId' in body else None
-            if 'sceneId' in body:
-                exhibit = resolve_scene(body['sceneId'], self.server.scenes)
         except (ValueError, UnicodeError, json.JSONDecodeError):
             return self.respond_json(400, {'error': '问题格式不正确，请重新输入。'})
-        if not self.server.api_key:
-            return self.respond_json(503, {'error': '模型服务尚未配置密钥。'})
-        cache_key = guide_cache_key(body, messages, exhibit)
-        if cache_key:
-            cached = self.server.guide_cache.get(cache_key)
-            if cached is not None:
-                return self.respond_json(200, cached)
-        if not self.server.model_slots.acquire(blocking=False):
-            return self.respond_json(429, {'error': '小齐正在忙，请稍后再试。'})
-        if not self.server.request_budget.allow(self.client_address[0]):
-            self.server.model_slots.release()
-            return self.respond_json(429, {'error': '讲解请求较多，请稍后再试。'})
-        sources = (exhibit.get('sources') or ([exhibit['source']] if exhibit.get('source') else [])) if exhibit else related_sources(messages)
-        try:
-            if body.get('mode') == 'guide':
-                answer = call_model(self.server.api_key, self.server.endpoint, messages, sources, exhibit, guide=True)
-            else:
-                answer = call_model(self.server.api_key, self.server.endpoint, messages, sources, exhibit)
-        except ExhibitImageError:
-            return self.respond_json(422, {'error': '当前画面图片暂时无法读取，未发送识图请求。请检查本地素材后重试。'})
-        except urllib.error.HTTPError as error:
-            if error.code == 401:
-                return self.respond_json(502, {'error': '模型认证失败，请检查服务端密钥。'})
-            if error.code == 403:
-                return self.respond_json(502, {'error': '模型调用权限或地域配置有误。'})
-            if error.code == 429:
-                return self.respond_json(429, {'error': '模型暂时繁忙或额度不足，请稍后再试。'})
-            return self.respond_json(502, {'error': '模型服务暂不可用，请稍后再试。'})
-        except (urllib.error.URLError, TimeoutError, socket.timeout, ValueError, KeyError, IndexError, TypeError):
-            return self.respond_json(502, {'error': '暂时无法连接模型，请稍后再试。'})
-        finally:
-            self.server.model_slots.release()
-        result = {
-            'answer': answer,
-            'sources': [{'label': item['label'], 'url': item['url']} for item in sources],
-        }
-        if exhibit:
-            if exhibit.get('scene'):
-                result['scene'] = {'id': exhibit['id'], 'evidence': 'draft', 'hasImage': bool(exhibit.get('image'))}
-            else:
-                result['exhibit'] = {'id': exhibit['id'], 'evidence': 'checked' if exhibit.get('facts') else 'unverified'}
-        if cache_key:
-            self.server.guide_cache.put(cache_key, result)
-        return self.respond_json(200, result)
+        status, result = process_chat(self.server, body, self.client_address[0])
+        return self.respond_json(status, result)
 
 
 def make_server(port, api_key, base_url=DEFAULT_BASE_URL):
